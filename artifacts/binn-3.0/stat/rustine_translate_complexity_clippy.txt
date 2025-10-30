@@ -1,0 +1,106 @@
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|v| &mut **v)` on an `Option` value
+warning: called `.as_mut().map(|v| v.as_mut_slice())` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut ()` -> `*mut ()`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut u8` -> `*mut u8`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: equality checks against false can be replaced by a negation
+warning: passing a unit value to a function
+warning: passing a unit value to a function
+warning: passing a unit value to a function
+warning: passing a unit value to a function
+warning: passing a unit value to a function
+warning: passing a unit value to a function
+warning: passing a unit value to a function
+warning: passing a unit value to a function
+warning: the following explicit lifetimes could be elided: 'a
+warning: the following explicit lifetimes could be elided: 'a
+warning: the following explicit lifetimes could be elided: 'a
+warning: this OR pattern can be rewritten using a range
+warning: this OR pattern can be rewritten using a range
+warning: this OR pattern can be rewritten using a range
+warning: this OR pattern can be rewritten using a range
+warning: this OR pattern can be rewritten using a range
+warning: this OR pattern can be rewritten using a range
+warning: this function has too many arguments (13/7)
+warning: using `Option.and_then(|x| Some(y))`, which is more succinctly expressed as `map(|x| y)`
+warning: using `clone` on type `[u8; 10]` which implements the `Copy` trait
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions

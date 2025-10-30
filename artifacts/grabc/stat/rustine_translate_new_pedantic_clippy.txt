@@ -1,0 +1,76 @@
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `extern` fn uses type `std::ffi::CStr`, which is not FFI-safe
+warning: adding items after statements is confusing, since items exist from the start of the scope
+warning: adding items after statements is confusing, since items exist from the start of the scope
+warning: adding items after statements is confusing, since items exist from the start of the scope
+warning: binding's name is too similar to existing binding
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `u8` may truncate the value
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: it is more concise to loop over references to containers instead of using explicit iteration methods
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: redundant else block
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: this could be rewritten as `let...else`
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function has too many lines (117/100)
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: unnecessary boolean `not` operation
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`

@@ -1,0 +1,9 @@
+typedef enum 
+{
+  BROTLI_STATE_READ_BLOCK_LENGTH_NONE,
+  BROTLI_STATE_READ_BLOCK_LENGTH_SUFFIX
+} BrotliRunningReadBlockLengthState
+/*** DEPENDENCIES:
+***/
+
+

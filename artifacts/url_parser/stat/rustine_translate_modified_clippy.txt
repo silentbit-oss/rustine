@@ -1,0 +1,48 @@
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::collections::BTreeMap`
+warning: value assigned to `protocol` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `parsed_data`
+warning: variable does not need to be mutable
+warning: unused variable: `url`
+warning: value assigned to `p_idx` is never read
+warning: unused variable: `second_slash`
+warning: variable does not need to be mutable
+warning: attempting to modify a `const` item
+warning: attempting to modify a `const` item
+warning: function `main` is never used
+warning: variables can be used directly in the `format!` string
+warning: manual implementation of `Option::map`
+warning: use of `char::is_digit` with literal radix of 10
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: called `map(..).flatten()` on `Option`
+warning: literal with an empty format string
+warning: returning the result of a `let` binding from a block
+warning: using `Option.and_then(|x| Some(y))`, which is more succinctly expressed as `map(|x| y)`
+warning: returning the result of a `let` binding from a block
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: you should use the `starts_with` method
+warning: variables can be used directly in the `format!` string
+warning: you should use the `starts_with` method
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: you should use the `starts_with` method
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: constant `unreserved` should have an upper case name
+warning: constant `subdelim` should have an upper case name

@@ -1,0 +1,26 @@
+warning: called `unwrap` on `stream` after checking its variant with `is_some`
+warning: called `unwrap` on `stream` after checking its variant with `is_some`
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: stripping a prefix manually
+warning: the variable `output_idx` is used as a loop counter
+warning: the variable `output_idx` is used as a loop counter
+warning: the variable `output_idx` is used as a loop counter
+warning: the variable `output_idx` is used as a loop counter
+warning: the variable `output_idx` is used as a loop counter
+warning: the variable `output_idx` is used as a loop counter
+warning: the variable `output_idx` is used as a loop counter
+warning: the variable `ppo_idx` is used as a loop counter
+warning: the variable `sine_idx` is used as a loop counter
+warning: the variable `trail` is used as a loop counter
+warning: the variable `trail` is used as a loop counter
+warning: the variable `trail` is used as a loop counter
+warning: the variable `trail` is used as a loop counter
+warning: the variable `trail` is used as a loop counter
+warning: the variable `trail` is used as a loop counter
+warning: this loop could be written as a `while let` loop

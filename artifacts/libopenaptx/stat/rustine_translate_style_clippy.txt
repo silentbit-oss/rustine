@@ -1,0 +1,13 @@
+warning: returning the result of a `let` binding from a block
+warning: the loop variable `channel` is only used to index `samples`
+warning: the loop variable `channel` is only used to index `samples`
+warning: the loop variable `channel` is used to index `samples`
+warning: the loop variable `channel` is used to index `samples`
+warning: the loop variable `i` is used to index `MAP`
+warning: the loop variable `subband` is used to index `subband_samples`
+warning: the loop variable `subband` is used to index `subband_samples`
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization

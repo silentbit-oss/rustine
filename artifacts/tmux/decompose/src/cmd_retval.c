@@ -1,0 +1,11 @@
+enum cmd_retval
+{
+  CMD_RETURN_ERROR = -1,
+  CMD_RETURN_NORMAL = 0,
+  CMD_RETURN_WAIT,
+  CMD_RETURN_STOP
+}
+/*** DEPENDENCIES:
+***/
+
+

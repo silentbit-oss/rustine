@@ -1,0 +1,11 @@
+enum window_tree_type
+{
+  WINDOW_TREE_NONE,
+  WINDOW_TREE_SESSION,
+  WINDOW_TREE_WINDOW,
+  WINDOW_TREE_PANE
+}
+/*** DEPENDENCIES:
+***/
+
+

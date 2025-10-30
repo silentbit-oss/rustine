@@ -1,0 +1,3147 @@
+{
+  "C": {
+    "blanks": 7352,
+    "children": {},
+    "code": 38036,
+    "comments": 6078,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/tmux/cmd-refresh-client.c",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 51,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-display-message.c",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 56,
+          "comments": 25
+        }
+      },
+      {
+        "name": "subjects/tmux/osdep-netbsd.c",
+        "stats": {
+          "blanks": 24,
+          "blobs": {},
+          "code": 99,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-set-option.c",
+        "stats": {
+          "blanks": 34,
+          "blobs": {},
+          "code": 348,
+          "comments": 34
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-queue.c",
+        "stats": {
+          "blanks": 77,
+          "blobs": {},
+          "code": 275,
+          "comments": 126
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-capture-pane.c",
+        "stats": {
+          "blanks": 36,
+          "blobs": {},
+          "code": 188,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-select-pane.c",
+        "stats": {
+          "blanks": 25,
+          "blobs": {},
+          "code": 134,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-join-pane.c",
+        "stats": {
+          "blanks": 29,
+          "blobs": {},
+          "code": 112,
+          "comments": 20
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-save-buffer.c",
+        "stats": {
+          "blanks": 27,
+          "blobs": {},
+          "code": 109,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/tmux.c",
+        "stats": {
+          "blanks": 43,
+          "blobs": {},
+          "code": 278,
+          "comments": 34
+        }
+      },
+      {
+        "name": "subjects/tmux/cfg.c",
+        "stats": {
+          "blanks": 54,
+          "blobs": {},
+          "code": 251,
+          "comments": 55
+        }
+      },
+      {
+        "name": "subjects/tmux/tty.c",
+        "stats": {
+          "blanks": 340,
+          "blobs": {},
+          "code": 1622,
+          "comments": 211
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/strcasestr.c",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 21,
+          "comments": 36
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/strtonum.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 43,
+          "comments": 17
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/strlcat.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 26,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/freezero.c",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 12,
+          "comments": 15
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/cfmakeraw.c",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 13,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/tmux/screen-redraw.c",
+        "stats": {
+          "blanks": 90,
+          "blobs": {},
+          "code": 504,
+          "comments": 53
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/recallocarray.c",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 45,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/tmux/window-copy.c",
+        "stats": {
+          "blanks": 321,
+          "blobs": {},
+          "code": 2086,
+          "comments": 120
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/getprogname.c",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 23,
+          "comments": 15
+        }
+      },
+      {
+        "name": "subjects/tmux/osdep-openbsd.c",
+        "stats": {
+          "blanks": 26,
+          "blobs": {},
+          "code": 115,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/forkpty-aix.c",
+        "stats": {
+          "blanks": 24,
+          "blobs": {},
+          "code": 80,
+          "comments": 15
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-detach-client.c",
+        "stats": {
+          "blanks": 20,
+          "blobs": {},
+          "code": 72,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/strnlen.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 11,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/tmux/grid.c",
+        "stats": {
+          "blanks": 117,
+          "blobs": {},
+          "code": 1063,
+          "comments": 90
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/fdforkpty.c",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 14,
+          "comments": 15
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/strsep.c",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 27,
+          "comments": 41
+        }
+      },
+      {
+        "name": "subjects/tmux/job.c",
+        "stats": {
+          "blanks": 41,
+          "blobs": {},
+          "code": 148,
+          "comments": 35
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/getopt.c",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 70,
+          "comments": 37
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/fgetln.c",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 38,
+          "comments": 18
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/reallocarray.c",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 16,
+          "comments": 20
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/explicit_bzero.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 7,
+          "comments": 5
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/daemon-darwin.c",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 28,
+          "comments": 45
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/getdtablecount.c",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 27,
+          "comments": 15
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/utf8proc.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 33,
+          "comments": 23
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/closefrom.c",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 77,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/memmem.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 20,
+          "comments": 35
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-swap-pane.c",
+        "stats": {
+          "blanks": 20,
+          "blobs": {},
+          "code": 89,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/vis.c",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 200,
+          "comments": 34
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/strndup.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 18,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/tmux/server.c",
+        "stats": {
+          "blanks": 72,
+          "blobs": {},
+          "code": 389,
+          "comments": 43
+        }
+      },
+      {
+        "name": "subjects/tmux/window-client.c",
+        "stats": {
+          "blanks": 56,
+          "blobs": {},
+          "code": 277,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/tmux/format.c",
+        "stats": {
+          "blanks": 218,
+          "blobs": {},
+          "code": 1231,
+          "comments": 101
+        }
+      },
+      {
+        "name": "subjects/tmux/control.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 56,
+          "comments": 31
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/forkpty-sunos.c",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 63,
+          "comments": 15
+        }
+      },
+      {
+        "name": "subjects/tmux/osdep-linux.c",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 69,
+          "comments": 17
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/err.c",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 59,
+          "comments": 15
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/setenv.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 26,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/tmux/resize.c",
+        "stats": {
+          "blanks": 21,
+          "blobs": {},
+          "code": 112,
+          "comments": 39
+        }
+      },
+      {
+        "name": "subjects/tmux/names.c",
+        "stats": {
+          "blanks": 29,
+          "blobs": {},
+          "code": 119,
+          "comments": 17
+        }
+      },
+      {
+        "name": "subjects/tmux/session.c",
+        "stats": {
+          "blanks": 137,
+          "blobs": {},
+          "code": 565,
+          "comments": 73
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-show-environment.c",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 103,
+          "comments": 20
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-send-keys.c",
+        "stats": {
+          "blanks": 26,
+          "blobs": {},
+          "code": 124,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/strlcpy.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 23,
+          "comments": 23
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-command-prompt.c",
+        "stats": {
+          "blanks": 40,
+          "blobs": {},
+          "code": 144,
+          "comments": 25
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/setproctitle.c",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 31,
+          "comments": 15
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-find.c",
+        "stats": {
+          "blanks": 161,
+          "blobs": {},
+          "code": 990,
+          "comments": 155
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/imsg.c",
+        "stats": {
+          "blanks": 56,
+          "blobs": {},
+          "code": 223,
+          "comments": 23
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/unvis.c",
+        "stats": {
+          "blanks": 21,
+          "blobs": {},
+          "code": 201,
+          "comments": 59
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/imsg-buffer.c",
+        "stats": {
+          "blanks": 52,
+          "blobs": {},
+          "code": 235,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/forkpty-hpux.c",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 61,
+          "comments": 15
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/fparseln.c",
+        "stats": {
+          "blanks": 38,
+          "blobs": {},
+          "code": 120,
+          "comments": 63
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/daemon.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 36,
+          "comments": 29
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/asprintf.c",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 35,
+          "comments": 15
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-break-pane.c",
+        "stats": {
+          "blanks": 21,
+          "blobs": {},
+          "code": 78,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-if-shell.c",
+        "stats": {
+          "blanks": 32,
+          "blobs": {},
+          "code": 141,
+          "comments": 20
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-split-window.c",
+        "stats": {
+          "blanks": 28,
+          "blobs": {},
+          "code": 141,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-select-layout.c",
+        "stats": {
+          "blanks": 30,
+          "blobs": {},
+          "code": 96,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/base64.c",
+        "stats": {
+          "blanks": 27,
+          "blobs": {},
+          "code": 156,
+          "comments": 132
+        }
+      },
+      {
+        "name": "subjects/tmux/osdep-hpux.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 18,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/tmux/notify.c",
+        "stats": {
+          "blanks": 42,
+          "blobs": {},
+          "code": 164,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-switch-client.c",
+        "stats": {
+          "blanks": 20,
+          "blobs": {},
+          "code": 103,
+          "comments": 20
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-list-windows.c",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 78,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-attach-session.c",
+        "stats": {
+          "blanks": 24,
+          "blobs": {},
+          "code": 127,
+          "comments": 20
+        }
+      },
+      {
+        "name": "subjects/tmux/environ.c",
+        "stats": {
+          "blanks": 41,
+          "blobs": {},
+          "code": 151,
+          "comments": 65
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-confirm-before.c",
+        "stats": {
+          "blanks": 28,
+          "blobs": {},
+          "code": 91,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-new-session.c",
+        "stats": {
+          "blanks": 39,
+          "blobs": {},
+          "code": 253,
+          "comments": 55
+        }
+      },
+      {
+        "name": "subjects/tmux/paste.c",
+        "stats": {
+          "blanks": 59,
+          "blobs": {},
+          "code": 217,
+          "comments": 38
+        }
+      },
+      {
+        "name": "subjects/tmux/osdep-cygwin.c",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 59,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-choose-tree.c",
+        "stats": {
+          "blanks": 20,
+          "blobs": {},
+          "code": 52,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-move-window.c",
+        "stats": {
+          "blanks": 24,
+          "blobs": {},
+          "code": 68,
+          "comments": 26
+        }
+      },
+      {
+        "name": "subjects/tmux/window.c",
+        "stats": {
+          "blanks": 286,
+          "blobs": {},
+          "code": 1232,
+          "comments": 76
+        }
+      },
+      {
+        "name": "subjects/tmux/input-keys.c",
+        "stats": {
+          "blanks": 32,
+          "blobs": {},
+          "code": 216,
+          "comments": 60
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-rename-session.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 45,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/layout-custom.c",
+        "stats": {
+          "blanks": 41,
+          "blobs": {},
+          "code": 220,
+          "comments": 33
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-find-window.c",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 57,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/layout.c",
+        "stats": {
+          "blanks": 130,
+          "blobs": {},
+          "code": 758,
+          "comments": 170
+        }
+      },
+      {
+        "name": "subjects/tmux/osdep-unknown.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 18,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-wait-for.c",
+        "stats": {
+          "blanks": 54,
+          "blobs": {},
+          "code": 190,
+          "comments": 20
+        }
+      },
+      {
+        "name": "subjects/tmux/xchecks/xchecks.c",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 39,
+          "comments": 2
+        }
+      },
+      {
+        "name": "subjects/tmux/key-bindings.c",
+        "stats": {
+          "blanks": 35,
+          "blobs": {},
+          "code": 381,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd.c",
+        "stats": {
+          "blanks": 65,
+          "blobs": {},
+          "code": 497,
+          "comments": 21
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-pipe-pane.c",
+        "stats": {
+          "blanks": 37,
+          "blobs": {},
+          "code": 150,
+          "comments": 33
+        }
+      },
+      {
+        "name": "subjects/tmux/utf8.c",
+        "stats": {
+          "blanks": 66,
+          "blobs": {},
+          "code": 361,
+          "comments": 63
+        }
+      },
+      {
+        "name": "subjects/tmux/tty-term.c",
+        "stats": {
+          "blanks": 59,
+          "blobs": {},
+          "code": 578,
+          "comments": 41
+        }
+      },
+      {
+        "name": "subjects/tmux/style.c",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 124,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tmux/osdep-sunos.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 69,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-load-buffer.c",
+        "stats": {
+          "blanks": 29,
+          "blobs": {},
+          "code": 124,
+          "comments": 21
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-run-shell.c",
+        "stats": {
+          "blanks": 31,
+          "blobs": {},
+          "code": 119,
+          "comments": 20
+        }
+      },
+      {
+        "name": "subjects/tmux/control-notify.c",
+        "stats": {
+          "blanks": 46,
+          "blobs": {},
+          "code": 186,
+          "comments": 26
+        }
+      },
+      {
+        "name": "subjects/tmux/grid-view.c",
+        "stats": {
+          "blanks": 43,
+          "blobs": {},
+          "code": 149,
+          "comments": 36
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-list-panes.c",
+        "stats": {
+          "blanks": 23,
+          "blobs": {},
+          "code": 95,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-display-panes.c",
+        "stats": {
+          "blanks": 25,
+          "blobs": {},
+          "code": 85,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/server-fn.c",
+        "stats": {
+          "blanks": 74,
+          "blobs": {},
+          "code": 372,
+          "comments": 31
+        }
+      },
+      {
+        "name": "subjects/tmux/window-buffer.c",
+        "stats": {
+          "blanks": 59,
+          "blobs": {},
+          "code": 300,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-unbind-key.c",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 62,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/mode-tree.c",
+        "stats": {
+          "blanks": 141,
+          "blobs": {},
+          "code": 810,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/tmux/hooks.c",
+        "stats": {
+          "blanks": 31,
+          "blobs": {},
+          "code": 100,
+          "comments": 43
+        }
+      },
+      {
+        "name": "subjects/tmux/screen-write.c",
+        "stats": {
+          "blanks": 276,
+          "blobs": {},
+          "code": 1104,
+          "comments": 274
+        }
+      },
+      {
+        "name": "subjects/tmux/tty-keys.c",
+        "stats": {
+          "blanks": 101,
+          "blobs": {},
+          "code": 706,
+          "comments": 142
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-kill-pane.c",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 32,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/input.c",
+        "stats": {
+          "blanks": 283,
+          "blobs": {},
+          "code": 1872,
+          "comments": 187
+        }
+      },
+      {
+        "name": "subjects/tmux/server-client.c",
+        "stats": {
+          "blanks": 259,
+          "blobs": {},
+          "code": 1421,
+          "comments": 210
+        }
+      },
+      {
+        "name": "subjects/tmux/osdep-darwin.c",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 67,
+          "comments": 20
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-kill-session.c",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 38,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tmux/options.c",
+        "stats": {
+          "blanks": 94,
+          "blobs": {},
+          "code": 544,
+          "comments": 49
+        }
+      },
+      {
+        "name": "subjects/tmux/xmalloc.c",
+        "stats": {
+          "blanks": 29,
+          "blobs": {},
+          "code": 85,
+          "comments": 34
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-swap-window.c",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 56,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/tty-acs.c",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 77,
+          "comments": 31
+        }
+      },
+      {
+        "name": "subjects/tmux/proc.c",
+        "stats": {
+          "blanks": 61,
+          "blobs": {},
+          "code": 241,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/tmux/attributes.c",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 61,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/tmux/log.c",
+        "stats": {
+          "blanks": 27,
+          "blobs": {},
+          "code": 82,
+          "comments": 58
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-show-messages.c",
+        "stats": {
+          "blanks": 20,
+          "blobs": {},
+          "code": 81,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-paste-buffer.c",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 66,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-set-hook.c",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 89,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-copy-mode.c",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 55,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-respawn-pane.c",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 62,
+          "comments": 20
+        }
+      },
+      {
+        "name": "subjects/tmux/xterm-keys.c",
+        "stats": {
+          "blanks": 28,
+          "blobs": {},
+          "code": 170,
+          "comments": 54
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-resize-pane.c",
+        "stats": {
+          "blanks": 25,
+          "blobs": {},
+          "code": 141,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/osdep-freebsd.c",
+        "stats": {
+          "blanks": 34,
+          "blobs": {},
+          "code": 153,
+          "comments": 20
+        }
+      },
+      {
+        "name": "subjects/tmux/options-table.c",
+        "stats": {
+          "blanks": 136,
+          "blobs": {},
+          "code": 783,
+          "comments": 26
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-list-buffers.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 36,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-rotate-window.c",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 78,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-bind-key.c",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 43,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-list-keys.c",
+        "stats": {
+          "blanks": 33,
+          "blobs": {},
+          "code": 121,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-set-buffer.c",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 82,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-kill-window.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 46,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-list-clients.c",
+        "stats": {
+          "blanks": 20,
+          "blobs": {},
+          "code": 50,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/status.c",
+        "stats": {
+          "blanks": 208,
+          "blobs": {},
+          "code": 1280,
+          "comments": 143
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-string.c",
+        "stats": {
+          "blanks": 48,
+          "blobs": {},
+          "code": 293,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tmux/client.c",
+        "stats": {
+          "blanks": 43,
+          "blobs": {},
+          "code": 623,
+          "comments": 60
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-list.c",
+        "stats": {
+          "blanks": 26,
+          "blobs": {},
+          "code": 84,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/tmux/window-clock.c",
+        "stats": {
+          "blanks": 37,
+          "blobs": {},
+          "code": 226,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/tmux/osdep-dragonfly.c",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 95,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-select-window.c",
+        "stats": {
+          "blanks": 26,
+          "blobs": {},
+          "code": 96,
+          "comments": 23
+        }
+      },
+      {
+        "name": "subjects/tmux/osdep-aix.c",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 64,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-show-options.c",
+        "stats": {
+          "blanks": 26,
+          "blobs": {},
+          "code": 145,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/arguments.c",
+        "stats": {
+          "blanks": 45,
+          "blobs": {},
+          "code": 158,
+          "comments": 47
+        }
+      },
+      {
+        "name": "subjects/tmux/variadic.c",
+        "stats": {
+          "blanks": 127,
+          "blobs": {},
+          "code": 626,
+          "comments": 27
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-new-window.c",
+        "stats": {
+          "blanks": 24,
+          "blobs": {},
+          "code": 115,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/tmux/alerts.c",
+        "stats": {
+          "blanks": 58,
+          "blobs": {},
+          "code": 231,
+          "comments": 34
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-set-environment.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 68,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-kill-server.c",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 28,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-list-sessions.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 46,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-respawn-window.c",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 73,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-lock-server.c",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 45,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-rename-window.c",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 29,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/screen.c",
+        "stats": {
+          "blanks": 79,
+          "blobs": {},
+          "code": 300,
+          "comments": 94
+        }
+      },
+      {
+        "name": "subjects/tmux/key-string.c",
+        "stats": {
+          "blanks": 34,
+          "blobs": {},
+          "code": 257,
+          "comments": 44
+        }
+      },
+      {
+        "name": "subjects/tmux/layout-set.c",
+        "stats": {
+          "blanks": 86,
+          "blobs": {},
+          "code": 350,
+          "comments": 84
+        }
+      },
+      {
+        "name": "subjects/tmux/cmd-source-file.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 63,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/tmux/colour.c",
+        "stats": {
+          "blanks": 23,
+          "blobs": {},
+          "code": 191,
+          "comments": 38
+        }
+      },
+      {
+        "name": "subjects/tmux/window-tree.c",
+        "stats": {
+          "blanks": 163,
+          "blobs": {},
+          "code": 1037,
+          "comments": 17
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 540,
+    "children": {},
+    "code": 3389,
+    "comments": 541,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/tmux/compat/tree.h",
+        "stats": {
+          "blanks": 37,
+          "blobs": {},
+          "code": 647,
+          "comments": 64
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/queue.h",
+        "stats": {
+          "blanks": 72,
+          "blobs": {},
+          "code": 340,
+          "comments": 121
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/vis.h",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 28,
+          "comments": 48
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/imsg.h",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 76,
+          "comments": 20
+        }
+      },
+      {
+        "name": "subjects/tmux/compat/bitstring.h",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 56,
+          "comments": 56
+        }
+      },
+      {
+        "name": "subjects/tmux/variadic.h",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 39,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/tmux/compat.h",
+        "stats": {
+          "blanks": 63,
+          "blobs": {},
+          "code": 264,
+          "comments": 41
+        }
+      },
+      {
+        "name": "subjects/tmux/tmux.h",
+        "stats": {
+          "blanks": 320,
+          "blobs": {},
+          "code": 1915,
+          "comments": 175
+        }
+      },
+      {
+        "name": "subjects/tmux/xmalloc.h",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 24,
+          "comments": 16
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 7892,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/tmux/cmd-refresh-client.c",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 51,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-display-message.c",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 56,
+            "comments": 25
+          }
+        },
+        {
+          "name": "subjects/tmux/osdep-netbsd.c",
+          "stats": {
+            "blanks": 24,
+            "blobs": {},
+            "code": 99,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-set-option.c",
+          "stats": {
+            "blanks": 34,
+            "blobs": {},
+            "code": 348,
+            "comments": 34
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-queue.c",
+          "stats": {
+            "blanks": 77,
+            "blobs": {},
+            "code": 275,
+            "comments": 126
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-capture-pane.c",
+          "stats": {
+            "blanks": 36,
+            "blobs": {},
+            "code": 188,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-select-pane.c",
+          "stats": {
+            "blanks": 25,
+            "blobs": {},
+            "code": 134,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-join-pane.c",
+          "stats": {
+            "blanks": 29,
+            "blobs": {},
+            "code": 112,
+            "comments": 20
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-save-buffer.c",
+          "stats": {
+            "blanks": 27,
+            "blobs": {},
+            "code": 109,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/tmux.c",
+          "stats": {
+            "blanks": 43,
+            "blobs": {},
+            "code": 278,
+            "comments": 34
+          }
+        },
+        {
+          "name": "subjects/tmux/cfg.c",
+          "stats": {
+            "blanks": 54,
+            "blobs": {},
+            "code": 251,
+            "comments": 55
+          }
+        },
+        {
+          "name": "subjects/tmux/tty.c",
+          "stats": {
+            "blanks": 340,
+            "blobs": {},
+            "code": 1622,
+            "comments": 211
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/strcasestr.c",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 21,
+            "comments": 36
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/strtonum.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 43,
+            "comments": 17
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/strlcat.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 26,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/freezero.c",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 12,
+            "comments": 15
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/cfmakeraw.c",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 13,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/tmux/screen-redraw.c",
+          "stats": {
+            "blanks": 90,
+            "blobs": {},
+            "code": 504,
+            "comments": 53
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/recallocarray.c",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 45,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/tmux/window-copy.c",
+          "stats": {
+            "blanks": 321,
+            "blobs": {},
+            "code": 2086,
+            "comments": 120
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/getprogname.c",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 23,
+            "comments": 15
+          }
+        },
+        {
+          "name": "subjects/tmux/osdep-openbsd.c",
+          "stats": {
+            "blanks": 26,
+            "blobs": {},
+            "code": 115,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/forkpty-aix.c",
+          "stats": {
+            "blanks": 24,
+            "blobs": {},
+            "code": 80,
+            "comments": 15
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-detach-client.c",
+          "stats": {
+            "blanks": 20,
+            "blobs": {},
+            "code": 72,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/strnlen.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 11,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/tmux/grid.c",
+          "stats": {
+            "blanks": 117,
+            "blobs": {},
+            "code": 1063,
+            "comments": 90
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/fdforkpty.c",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 14,
+            "comments": 15
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/strsep.c",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 27,
+            "comments": 41
+          }
+        },
+        {
+          "name": "subjects/tmux/job.c",
+          "stats": {
+            "blanks": 41,
+            "blobs": {},
+            "code": 148,
+            "comments": 35
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/getopt.c",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 70,
+            "comments": 37
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/fgetln.c",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 38,
+            "comments": 18
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/reallocarray.c",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 16,
+            "comments": 20
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/explicit_bzero.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 7,
+            "comments": 5
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/daemon-darwin.c",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 28,
+            "comments": 45
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/getdtablecount.c",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 27,
+            "comments": 15
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/utf8proc.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 33,
+            "comments": 23
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/closefrom.c",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 77,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/memmem.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 20,
+            "comments": 35
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-swap-pane.c",
+          "stats": {
+            "blanks": 20,
+            "blobs": {},
+            "code": 89,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/vis.c",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 200,
+            "comments": 34
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/strndup.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 18,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/tmux/server.c",
+          "stats": {
+            "blanks": 72,
+            "blobs": {},
+            "code": 389,
+            "comments": 43
+          }
+        },
+        {
+          "name": "subjects/tmux/window-client.c",
+          "stats": {
+            "blanks": 56,
+            "blobs": {},
+            "code": 277,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/tmux/format.c",
+          "stats": {
+            "blanks": 218,
+            "blobs": {},
+            "code": 1231,
+            "comments": 101
+          }
+        },
+        {
+          "name": "subjects/tmux/control.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 56,
+            "comments": 31
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/forkpty-sunos.c",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 63,
+            "comments": 15
+          }
+        },
+        {
+          "name": "subjects/tmux/osdep-linux.c",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 69,
+            "comments": 17
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/err.c",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 59,
+            "comments": 15
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/setenv.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 26,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/tmux/resize.c",
+          "stats": {
+            "blanks": 21,
+            "blobs": {},
+            "code": 112,
+            "comments": 39
+          }
+        },
+        {
+          "name": "subjects/tmux/names.c",
+          "stats": {
+            "blanks": 29,
+            "blobs": {},
+            "code": 119,
+            "comments": 17
+          }
+        },
+        {
+          "name": "subjects/tmux/session.c",
+          "stats": {
+            "blanks": 137,
+            "blobs": {},
+            "code": 565,
+            "comments": 73
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-show-environment.c",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 103,
+            "comments": 20
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-send-keys.c",
+          "stats": {
+            "blanks": 26,
+            "blobs": {},
+            "code": 124,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/strlcpy.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 23,
+            "comments": 23
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-command-prompt.c",
+          "stats": {
+            "blanks": 40,
+            "blobs": {},
+            "code": 144,
+            "comments": 25
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/setproctitle.c",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 31,
+            "comments": 15
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-find.c",
+          "stats": {
+            "blanks": 161,
+            "blobs": {},
+            "code": 990,
+            "comments": 155
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/imsg.c",
+          "stats": {
+            "blanks": 56,
+            "blobs": {},
+            "code": 223,
+            "comments": 23
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/unvis.c",
+          "stats": {
+            "blanks": 21,
+            "blobs": {},
+            "code": 201,
+            "comments": 59
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/imsg-buffer.c",
+          "stats": {
+            "blanks": 52,
+            "blobs": {},
+            "code": 235,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/forkpty-hpux.c",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 61,
+            "comments": 15
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/fparseln.c",
+          "stats": {
+            "blanks": 38,
+            "blobs": {},
+            "code": 120,
+            "comments": 63
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/daemon.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 36,
+            "comments": 29
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/asprintf.c",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 35,
+            "comments": 15
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-break-pane.c",
+          "stats": {
+            "blanks": 21,
+            "blobs": {},
+            "code": 78,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-if-shell.c",
+          "stats": {
+            "blanks": 32,
+            "blobs": {},
+            "code": 141,
+            "comments": 20
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-split-window.c",
+          "stats": {
+            "blanks": 28,
+            "blobs": {},
+            "code": 141,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-select-layout.c",
+          "stats": {
+            "blanks": 30,
+            "blobs": {},
+            "code": 96,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/base64.c",
+          "stats": {
+            "blanks": 27,
+            "blobs": {},
+            "code": 156,
+            "comments": 132
+          }
+        },
+        {
+          "name": "subjects/tmux/osdep-hpux.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 18,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/tmux/notify.c",
+          "stats": {
+            "blanks": 42,
+            "blobs": {},
+            "code": 164,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-switch-client.c",
+          "stats": {
+            "blanks": 20,
+            "blobs": {},
+            "code": 103,
+            "comments": 20
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-list-windows.c",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 78,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-attach-session.c",
+          "stats": {
+            "blanks": 24,
+            "blobs": {},
+            "code": 127,
+            "comments": 20
+          }
+        },
+        {
+          "name": "subjects/tmux/environ.c",
+          "stats": {
+            "blanks": 41,
+            "blobs": {},
+            "code": 151,
+            "comments": 65
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-confirm-before.c",
+          "stats": {
+            "blanks": 28,
+            "blobs": {},
+            "code": 91,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-new-session.c",
+          "stats": {
+            "blanks": 39,
+            "blobs": {},
+            "code": 253,
+            "comments": 55
+          }
+        },
+        {
+          "name": "subjects/tmux/paste.c",
+          "stats": {
+            "blanks": 59,
+            "blobs": {},
+            "code": 217,
+            "comments": 38
+          }
+        },
+        {
+          "name": "subjects/tmux/osdep-cygwin.c",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 59,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-choose-tree.c",
+          "stats": {
+            "blanks": 20,
+            "blobs": {},
+            "code": 52,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-move-window.c",
+          "stats": {
+            "blanks": 24,
+            "blobs": {},
+            "code": 68,
+            "comments": 26
+          }
+        },
+        {
+          "name": "subjects/tmux/window.c",
+          "stats": {
+            "blanks": 286,
+            "blobs": {},
+            "code": 1232,
+            "comments": 76
+          }
+        },
+        {
+          "name": "subjects/tmux/input-keys.c",
+          "stats": {
+            "blanks": 32,
+            "blobs": {},
+            "code": 216,
+            "comments": 60
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-rename-session.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 45,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/layout-custom.c",
+          "stats": {
+            "blanks": 41,
+            "blobs": {},
+            "code": 220,
+            "comments": 33
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-find-window.c",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 57,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/layout.c",
+          "stats": {
+            "blanks": 130,
+            "blobs": {},
+            "code": 758,
+            "comments": 170
+          }
+        },
+        {
+          "name": "subjects/tmux/osdep-unknown.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 18,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-wait-for.c",
+          "stats": {
+            "blanks": 54,
+            "blobs": {},
+            "code": 190,
+            "comments": 20
+          }
+        },
+        {
+          "name": "subjects/tmux/xchecks/xchecks.c",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 39,
+            "comments": 2
+          }
+        },
+        {
+          "name": "subjects/tmux/key-bindings.c",
+          "stats": {
+            "blanks": 35,
+            "blobs": {},
+            "code": 381,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd.c",
+          "stats": {
+            "blanks": 65,
+            "blobs": {},
+            "code": 497,
+            "comments": 21
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-pipe-pane.c",
+          "stats": {
+            "blanks": 37,
+            "blobs": {},
+            "code": 150,
+            "comments": 33
+          }
+        },
+        {
+          "name": "subjects/tmux/utf8.c",
+          "stats": {
+            "blanks": 66,
+            "blobs": {},
+            "code": 361,
+            "comments": 63
+          }
+        },
+        {
+          "name": "subjects/tmux/tty-term.c",
+          "stats": {
+            "blanks": 59,
+            "blobs": {},
+            "code": 578,
+            "comments": 41
+          }
+        },
+        {
+          "name": "subjects/tmux/style.c",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 124,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tmux/osdep-sunos.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 69,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-load-buffer.c",
+          "stats": {
+            "blanks": 29,
+            "blobs": {},
+            "code": 124,
+            "comments": 21
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-run-shell.c",
+          "stats": {
+            "blanks": 31,
+            "blobs": {},
+            "code": 119,
+            "comments": 20
+          }
+        },
+        {
+          "name": "subjects/tmux/control-notify.c",
+          "stats": {
+            "blanks": 46,
+            "blobs": {},
+            "code": 186,
+            "comments": 26
+          }
+        },
+        {
+          "name": "subjects/tmux/grid-view.c",
+          "stats": {
+            "blanks": 43,
+            "blobs": {},
+            "code": 149,
+            "comments": 36
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-list-panes.c",
+          "stats": {
+            "blanks": 23,
+            "blobs": {},
+            "code": 95,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-display-panes.c",
+          "stats": {
+            "blanks": 25,
+            "blobs": {},
+            "code": 85,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/server-fn.c",
+          "stats": {
+            "blanks": 74,
+            "blobs": {},
+            "code": 372,
+            "comments": 31
+          }
+        },
+        {
+          "name": "subjects/tmux/window-buffer.c",
+          "stats": {
+            "blanks": 59,
+            "blobs": {},
+            "code": 300,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-unbind-key.c",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 62,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/mode-tree.c",
+          "stats": {
+            "blanks": 141,
+            "blobs": {},
+            "code": 810,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/tmux/hooks.c",
+          "stats": {
+            "blanks": 31,
+            "blobs": {},
+            "code": 100,
+            "comments": 43
+          }
+        },
+        {
+          "name": "subjects/tmux/screen-write.c",
+          "stats": {
+            "blanks": 276,
+            "blobs": {},
+            "code": 1104,
+            "comments": 274
+          }
+        },
+        {
+          "name": "subjects/tmux/tty-keys.c",
+          "stats": {
+            "blanks": 101,
+            "blobs": {},
+            "code": 706,
+            "comments": 142
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-kill-pane.c",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 32,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/input.c",
+          "stats": {
+            "blanks": 283,
+            "blobs": {},
+            "code": 1872,
+            "comments": 187
+          }
+        },
+        {
+          "name": "subjects/tmux/server-client.c",
+          "stats": {
+            "blanks": 259,
+            "blobs": {},
+            "code": 1421,
+            "comments": 210
+          }
+        },
+        {
+          "name": "subjects/tmux/osdep-darwin.c",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 67,
+            "comments": 20
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-kill-session.c",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 38,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tmux/options.c",
+          "stats": {
+            "blanks": 94,
+            "blobs": {},
+            "code": 544,
+            "comments": 49
+          }
+        },
+        {
+          "name": "subjects/tmux/xmalloc.c",
+          "stats": {
+            "blanks": 29,
+            "blobs": {},
+            "code": 85,
+            "comments": 34
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-swap-window.c",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 56,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/tty-acs.c",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 77,
+            "comments": 31
+          }
+        },
+        {
+          "name": "subjects/tmux/proc.c",
+          "stats": {
+            "blanks": 61,
+            "blobs": {},
+            "code": 241,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/tmux/attributes.c",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 61,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/tmux/log.c",
+          "stats": {
+            "blanks": 27,
+            "blobs": {},
+            "code": 82,
+            "comments": 58
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-show-messages.c",
+          "stats": {
+            "blanks": 20,
+            "blobs": {},
+            "code": 81,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-paste-buffer.c",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 66,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-set-hook.c",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 89,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-copy-mode.c",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 55,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-respawn-pane.c",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 62,
+            "comments": 20
+          }
+        },
+        {
+          "name": "subjects/tmux/xterm-keys.c",
+          "stats": {
+            "blanks": 28,
+            "blobs": {},
+            "code": 170,
+            "comments": 54
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-resize-pane.c",
+          "stats": {
+            "blanks": 25,
+            "blobs": {},
+            "code": 141,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/osdep-freebsd.c",
+          "stats": {
+            "blanks": 34,
+            "blobs": {},
+            "code": 153,
+            "comments": 20
+          }
+        },
+        {
+          "name": "subjects/tmux/options-table.c",
+          "stats": {
+            "blanks": 136,
+            "blobs": {},
+            "code": 783,
+            "comments": 26
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-list-buffers.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 36,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-rotate-window.c",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 78,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-bind-key.c",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 43,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-list-keys.c",
+          "stats": {
+            "blanks": 33,
+            "blobs": {},
+            "code": 121,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-set-buffer.c",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 82,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-kill-window.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 46,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-list-clients.c",
+          "stats": {
+            "blanks": 20,
+            "blobs": {},
+            "code": 50,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/status.c",
+          "stats": {
+            "blanks": 208,
+            "blobs": {},
+            "code": 1280,
+            "comments": 143
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-string.c",
+          "stats": {
+            "blanks": 48,
+            "blobs": {},
+            "code": 293,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tmux/client.c",
+          "stats": {
+            "blanks": 43,
+            "blobs": {},
+            "code": 623,
+            "comments": 60
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-list.c",
+          "stats": {
+            "blanks": 26,
+            "blobs": {},
+            "code": 84,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/tmux/window-clock.c",
+          "stats": {
+            "blanks": 37,
+            "blobs": {},
+            "code": 226,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/tmux/osdep-dragonfly.c",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 95,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-select-window.c",
+          "stats": {
+            "blanks": 26,
+            "blobs": {},
+            "code": 96,
+            "comments": 23
+          }
+        },
+        {
+          "name": "subjects/tmux/osdep-aix.c",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 64,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-show-options.c",
+          "stats": {
+            "blanks": 26,
+            "blobs": {},
+            "code": 145,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/arguments.c",
+          "stats": {
+            "blanks": 45,
+            "blobs": {},
+            "code": 158,
+            "comments": 47
+          }
+        },
+        {
+          "name": "subjects/tmux/variadic.c",
+          "stats": {
+            "blanks": 127,
+            "blobs": {},
+            "code": 626,
+            "comments": 27
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-new-window.c",
+          "stats": {
+            "blanks": 24,
+            "blobs": {},
+            "code": 115,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/tmux/alerts.c",
+          "stats": {
+            "blanks": 58,
+            "blobs": {},
+            "code": 231,
+            "comments": 34
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-set-environment.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 68,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-kill-server.c",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 28,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-list-sessions.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 46,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-respawn-window.c",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 73,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-lock-server.c",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 45,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-rename-window.c",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 29,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/screen.c",
+          "stats": {
+            "blanks": 79,
+            "blobs": {},
+            "code": 300,
+            "comments": 94
+          }
+        },
+        {
+          "name": "subjects/tmux/key-string.c",
+          "stats": {
+            "blanks": 34,
+            "blobs": {},
+            "code": 257,
+            "comments": 44
+          }
+        },
+        {
+          "name": "subjects/tmux/layout-set.c",
+          "stats": {
+            "blanks": 86,
+            "blobs": {},
+            "code": 350,
+            "comments": 84
+          }
+        },
+        {
+          "name": "subjects/tmux/cmd-source-file.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 63,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/tmux/colour.c",
+          "stats": {
+            "blanks": 23,
+            "blobs": {},
+            "code": 191,
+            "comments": 38
+          }
+        },
+        {
+          "name": "subjects/tmux/window-tree.c",
+          "stats": {
+            "blanks": 163,
+            "blobs": {},
+            "code": 1037,
+            "comments": 17
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/tmux/compat/tree.h",
+          "stats": {
+            "blanks": 37,
+            "blobs": {},
+            "code": 647,
+            "comments": 64
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/queue.h",
+          "stats": {
+            "blanks": 72,
+            "blobs": {},
+            "code": 340,
+            "comments": 121
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/vis.h",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 28,
+            "comments": 48
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/imsg.h",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 76,
+            "comments": 20
+          }
+        },
+        {
+          "name": "subjects/tmux/compat/bitstring.h",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 56,
+            "comments": 56
+          }
+        },
+        {
+          "name": "subjects/tmux/variadic.h",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 39,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/tmux/compat.h",
+          "stats": {
+            "blanks": 63,
+            "blobs": {},
+            "code": 264,
+            "comments": 41
+          }
+        },
+        {
+          "name": "subjects/tmux/tmux.h",
+          "stats": {
+            "blanks": 320,
+            "blobs": {},
+            "code": 1915,
+            "comments": 175
+          }
+        },
+        {
+          "name": "subjects/tmux/xmalloc.h",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 24,
+            "comments": 16
+          }
+        }
+      ]
+    },
+    "code": 41425,
+    "comments": 6619,
+    "inaccurate": false,
+    "reports": []
+  }
+}

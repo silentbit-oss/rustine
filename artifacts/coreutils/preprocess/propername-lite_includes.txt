@@ -1,0 +1,12 @@
+#include <assert.h>
+#include <c-strcase.h>
+#include <config.h>
+#include <gettext.h>
+#include <libintl.h>
+#include <localcharset.h>
+#include <propername-lite.c>
+#include <propername.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdlib.h>
+#include <string.h>

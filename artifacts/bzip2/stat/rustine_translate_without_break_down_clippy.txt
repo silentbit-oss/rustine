@@ -1,0 +1,561 @@
+warning: unused import: `libc::FILE`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `libc::FILE`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: `PROG_NAME` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `PROG_NAME` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `PROG_NAME` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `PROG_NAME` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: unused import: `libc::FILE`
+warning: unused import: `std::io::stdin`
+warning: unused import: `std::io::stdout`
+warning: unused import: `std::io`
+warning: unused import: `std::ptr`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `rand::Rng`
+warning: unused import: `std::convert::TryInto`
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `std::process`
+warning: unused import: `libc::FILE`
+warning: unused import: `std::sync::atomic::AtomicBool`
+warning: unused import: `std::alloc`
+warning: unused import: `std::ptr`
+warning: unused import: `std::io::BufReader`
+warning: unused import: `std::io::Stdin`
+warning: unused import: `std::io::stdin`
+warning: unused import: `std::io::stdout`
+warning: unused import: `rand::Rng`
+warning: unused import: `rand::Rng`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `std::process`
+warning: unnecessary `>= y + 1` or `x - 1 >=`
+warning: unnecessary `>= y + 1` or `x - 1 >=`
+warning: unnecessary `>= y + 1` or `x - 1 >=`
+warning: unnecessary parentheses around index expression
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `std::process`
+warning: unused import: `libc::FILE`
+warning: unused import: `lazy_static::lazy_static`
+warning: unreachable statement
+warning: unreachable expression
+warning: unreachable expression
+warning: unreachable expression
+warning: unused variable: `addr`
+warning: unused variable: `opaque`
+warning: unused variable: `opaque`
+warning: unnecessary `unsafe` block
+warning: variable does not need to be mutable
+warning: unused variable: `s`
+warning: unused variable: `b`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `b`
+warning: unused variable: `arr1`
+warning: unused variable: `arr2`
+warning: unused variable: `ftab`
+warning: unused variable: `s_idx`
+warning: unused variable: `s`
+warning: unused variable: `progress`
+warning: value assigned to `k1` is never read
+warning: value assigned to `c_state_out_len` is never read
+warning: value assigned to `k1` is never read
+warning: variable does not need to be mutable
+warning: unused variable: `s_idx`
+warning: unnecessary `unsafe` block
+warning: unused variable: `v`
+warning: unused variable: `t`
+warning: unused variable: `i`
+warning: unused variable: `iter`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `zPend` is never read
+warning: unused variable: `fd`
+warning: unused variable: `mode`
+warning: unused variable: `srcName`
+warning: unused variable: `dstName`
+warning: unused variable: `n`
+warning: unused variable: `i`
+warning: unused variable: `j`
+warning: unused variable: `name_len`
+warning: unused variable: `n`
+warning: value assigned to `bzf` is never read
+warning: unused variable: `bzerr_dummy`
+warning: variable does not need to be mutable
+warning: value assigned to `in_str` is never read
+warning: unused variable: `in_str_idx`
+warning: value assigned to `all_ok` is never read
+warning: unused variable: `stat_buf`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `bzf` is never read
+warning: unused variable: `bzf_idx`
+warning: unused variable: `ret`
+warning: value assigned to `fd` is never read
+warning: value assigned to `nbytes_in_d` is never read
+warning: value assigned to `nbytes_out_d` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `bzf` is never read
+warning: value assigned to `nread` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `e`
+warning: unused variable: `e`
+warning: unused variable: `e`
+warning: value assigned to `in_str` is never read
+warning: value assigned to `out_str` is never read
+warning: value assigned to `n` is never read
+warning: unused variable: `i`
+warning: value assigned to `magic_number_ok` is never read
+warning: value assigned to `cant_guess` is never read
+warning: unused variable: `stat_buf`
+warning: value assigned to `in_str` is never read
+warning: value assigned to `out_str` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `numQSorted` is never read
+warning: value assigned to `s` is never read
+warning: variable does not need to be mutable
+warning: unused variable: `i`
+warning: variable does not need to be mutable
+warning: value assigned to `retVal` is never read
+warning: unused variable: `minLen`
+warning: unused variable: `maxLen`
+warning: value assigned to `i` is never read
+warning: value assigned to `j` is never read
+warning: value assigned to `t` is never read
+warning: value assigned to `alphaSize` is never read
+warning: value assigned to `nGroups` is never read
+warning: value assigned to `nSelectors` is never read
+warning: value assigned to `EOB` is never read
+warning: value assigned to `groupNo` is never read
+warning: value assigned to `groupPos` is never read
+warning: value assigned to `nextSym` is never read
+warning: value assigned to `nblockMAX` is never read
+warning: value assigned to `nblock` is never read
+warning: value assigned to `es` is never read
+warning: value assigned to `N` is never read
+warning: value assigned to `curr` is never read
+warning: value assigned to `zt` is never read
+warning: value assigned to `zn` is never read
+warning: value assigned to `zvec` is never read
+warning: value assigned to `zj` is never read
+warning: value assigned to `gSel` is never read
+warning: value assigned to `gMinlen` is never read
+warning: variable `gLimit_idx` is assigned to, but never used
+warning: variable `gBase_idx` is assigned to, but never used
+warning: variable `gPerm_idx` is assigned to, but never used
+warning: value assigned to `gLimit_idx` is never read
+warning: value assigned to `gBase_idx` is never read
+warning: value assigned to `gPerm_idx` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `i`
+warning: unused variable: `e`
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: redundant pattern matching, consider using `is_err()`
+warning: using `SeekFrom::Current` to start from current position
+warning: manual `!RangeInclusive::contains` implementation
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut ()` -> `*mut ()`)
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: this `match` expression can be replaced with `?`
+warning: use of `char::is_digit` with literal radix of 10
+warning: this let-binding has unit value
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: there is no need to manually implement bit rotation
+warning: useless conversion to the same type: `std::boxed::Box<[u8]>`
+warning: using `SeekFrom::Current` to start from current position
+warning: useless conversion to the same type: `std::boxed::Box<[u8]>`
+warning: unneeded late initialization
+warning: deref which would be done by auto-deref
+warning: redundant closure
+warning: this multiplication by -1 can be written more succinctly
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: left-hand side of `&&` operator has no effect
+warning: this looks like you are swapping `rtmp` and `yy[ryy_j_idx]` manually
+warning: there is no need to manually implement bit rotation
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: manual slice size calculation
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: casting to the same type is unnecessary (`char` -> `char`)
+warning: variables can be used directly in the `format!` string
+warning: use of `write!(stderr(), ...).unwrap()`
+warning: you are using an explicit closure for copying elements
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: this can be `std::io::Error::other(_)`
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: this can be `std::io::Error::other(_)`
+warning: redundant pattern matching, consider using `is_err()`
+warning: this can be `std::io::Error::other(_)`
+warning: this can be `std::io::Error::other(_)`
+warning: this can be `std::io::Error::other(_)`
+warning: this can be `std::io::Error::other(_)`
+warning: this can be `std::io::Error::other(_)`
+warning: variables can be used directly in the `format!` string
+warning: this OR pattern can be rewritten using a range
+warning: using `SeekFrom::Current` to start from current position
+warning: using `SeekFrom::Current` to start from current position
+warning: using `SeekFrom::Current` to start from current position
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: using `SeekFrom::Current` to start from current position
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: variables can be used directly in the `format!` string
+warning: the borrowed expression implements the required traits
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: the borrowed expression implements the required traits
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: the borrowed expression implements the required traits
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: the borrowed expression implements the required traits
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: the borrowed expression implements the required traits
+warning: this OR pattern can be rewritten using a range
+warning: the borrowed expression implements the required traits
+warning: this `if` statement can be collapsed
+warning: this function has too many arguments (8/7)
+warning: manual implementation of an assign operation
+warning: manual implementation of an assign operation
+warning: manual implementation of an assign operation
+warning: this boolean expression can be simplified
+warning: this function has too many arguments (8/7)
+warning: this boolean expression can be simplified
+warning: the loop variable `i` is used to index `runningOrder`
+warning: this boolean expression can be simplified
+warning: this looks like you are swapping elements of `fmap` manually
+warning: this looks like you are swapping elements of `fmap` manually
+warning: this looks like you are swapping elements of `fmap` manually
+warning: this looks like you are swapping elements of `fmap` manually
+warning: this looks like you are swapping elements of `fmap` manually
+warning: this boolean expression can be simplified
+warning: the loop variable `i` is only used to index `ftab`
+warning: it looks like you're manually copying between slices
+warning: the loop variable `i` is used to index `eclass8`
+warning: the loop variable `i` is only used to index `bhtab`
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: the loop variable `i` is used to index `parent`
+warning: the loop variable `i` is only used to index `weight`
+warning: the loop variable `i` is only used to index `limit`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: variables can be used directly in the `format!` string
+warning: use of `writeln!(stderr(), ...).unwrap()`
+31 | |         "{}: warning: output file(s) may be incomplete.",
+29 ~     eprintln!("{}: warning: output file(s) may be incomplete.",
+warning: variables can be used directly in the `format!` string
+31 | |         "{}: warning: output file(s) may be incomplete.",
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: variables can be used directly in the `format!` string
+warning: use of `writeln!(stderr(), ...).unwrap()`
+56 |     writeln!(io::stderr(), "{}: warning: output file(s) may be incomplete.", prog_name_str).unwrap();
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try: `eprintln!("{}: warning: output file(s) may be incomplete.", prog_name_str)`
+warning: variables can be used directly in the `format!` string
+56 |     writeln!(io::stderr(), "{}: warning: output file(s) may be incomplete.", prog_name_str).unwrap();
+56 -     writeln!(io::stderr(), "{}: warning: output file(s) may be incomplete.", prog_name_str).unwrap();
+56 +     writeln!(io::stderr(), "{prog_name_str}: warning: output file(s) may be incomplete.").unwrap();
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+64 |     eprintln!("{}: warning: output file(s) may be incomplete.", prog_name_str);
+64 -     eprintln!("{}: warning: output file(s) may be incomplete.", prog_name_str);
+64 +     eprintln!("{prog_name_str}: warning: output file(s) may be incomplete.");
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: static variable `smallMode` should have an upper case name
+warning: static variable `forceOverwrite` should have an upper case name
+warning: static variable `srcMode` should have an upper case name
+warning: static variable `bytesOut` should have an upper case name
+warning: static variable `bytesIn` should have an upper case name
+warning: function `BZ2_bzlibVersion` should have a snake case name
+warning: function `init_RL` should have a snake case name
+warning: function `BZ2_bzCompressInit` should have a snake case name
+warning: variable `blockSize100k` should have a snake case name
+warning: variable `workFactor` should have a snake case name
+warning: variable `workFactor` should have a snake case name
+warning: function `BZ2_bzWriteOpen` should have a snake case name
+warning: variable `blockSize100k` should have a snake case name
+warning: variable `workFactor` should have a snake case name
+warning: function `BZ2_bzDecompressInit` should have a snake case name
+warning: function `BZ2_bzReadOpen` should have a snake case name
+warning: variable `nUnused` should have a snake case name
+warning: variable `blockSize100k` should have a snake case name
+warning: variable `blockSize100k` should have a snake case name
+warning: function `BZ2_bzopen` should have a snake case name
+warning: function `BZ2_bzdopen` should have a snake case name
+warning: function `BZ2_bzflush` should have a snake case name
+warning: function `BZ2_bz__AssertH__fail` should have a snake case name
+warning: function `BZ2_indexIntoF` should have a snake case name
+warning: function `isempty_RL` should have a snake case name
+warning: function `BZ2_bzCompressEnd` should have a snake case name
+warning: function `BZ2_bzDecompressEnd` should have a snake case name
+warning: function `BZ2_bzReadGetUnused` should have a snake case name
+warning: variable `nUnused` should have a snake case name
+warning: function `flush_RL` should have a snake case name
+warning: function `BZ2_bzCompress` should have a snake case name
+warning: function `BZ2_bzWriteClose64` should have a snake case name
+warning: function `BZ2_bzWriteClose` should have a snake case name
+warning: function `unRLE_obuf_to_output_SMALL` should have a snake case name
+warning: function `unRLE_obuf_to_output_FAST` should have a snake case name
+warning: variable `s_save_nblockPP` should have a snake case name
+warning: variable `avail_out_INIT` should have a snake case name
+warning: function `BZ2_bzDecompress` should have a snake case name
+warning: function `BZ2_bzRead` should have a snake case name
+warning: function `BZ2_bzread` should have a snake case name
+warning: function `BZ2_bzWrite` should have a snake case name
+warning: function `BZ2_bzwrite` should have a snake case name
+warning: function `BZ2_bzerror` should have a snake case name
+warning: function `BZ2_bzReadClose` should have a snake case name
+warning: function `BZ2_bzclose` should have a snake case name
+warning: function `BZ2_bzBuffToBuffCompress` should have a snake case name
+warning: variable `destLen` should have a snake case name
+warning: variable `sourceLen` should have a snake case name
+warning: variable `blockSize100k` should have a snake case name
+warning: variable `workFactor` should have a snake case name
+warning: variable `workFactor` should have a snake case name
+warning: function `BZ2_bzBuffToBuffDecompress` should have a snake case name
+warning: variable `destLen` should have a snake case name
+warning: variable `sourceLen` should have a snake case name
+warning: structure field `origPtr` should have a snake case name
+warning: structure field `workFactor` should have a snake case name
+warning: structure field `rNToGo` should have a snake case name
+warning: structure field `rTPos` should have a snake case name
+warning: structure field `nblockMAX` should have a snake case name
+warning: structure field `numZ` should have a snake case name
+warning: structure field `nInUse` should have a snake case name
+warning: structure field `inUse` should have a snake case name
+warning: structure field `unseqToSeq` should have a snake case name
+warning: structure field `bsBuff` should have a snake case name
+warning: structure field `bsLive` should have a snake case name
+warning: structure field `blockCRC` should have a snake case name
+warning: structure field `combinedCRC` should have a snake case name
+warning: structure field `blockNo` should have a snake case name
+warning: structure field `blockSize100k` should have a snake case name
+warning: structure field `nMTF` should have a snake case name
+warning: structure field `mtfFreq` should have a snake case name
+warning: structure field `selectorMtf` should have a snake case name
+warning: function `BZ2_bsInitWrite` should have a snake case name
+warning: function `bsFinishWrite` should have a snake case name
+warning: function `makeMaps_e` should have a snake case name
+warning: function `bsW` should have a snake case name
+warning: function `sendMTFValues` should have a snake case name
+warning: variable `nSelectors` should have a snake case name
+warning: variable `alphaSize` should have a snake case name
+warning: variable `minLen` should have a snake case name
+warning: variable `maxLen` should have a snake case name
+warning: variable `selCtr` should have a snake case name
+warning: variable `nGroups` should have a snake case name
+warning: variable `nBytes` should have a snake case name
+warning: variable `nPart` should have a snake case name
+warning: variable `remF` should have a snake case name
+warning: variable `tFreq` should have a snake case name
+warning: variable `aFreq` should have a snake case name
+warning: variable `inUse16` should have a snake case name
+warning: function `generateMTFValues` should have a snake case name
+warning: variable `zPend` should have a snake case name
+warning: variable `EOB` should have a snake case name
+warning: function `bsPutUInt32` should have a snake case name
+warning: function `bsPutUChar` should have a snake case name
+warning: function `BZ2_compressBlock` should have a snake case name
+warning: structure field `bufN` should have a snake case name
+warning: structure field `lastErr` should have a snake case name
+warning: structure field `initialisedOk` should have a snake case name
+warning: function `applySavedFileAttrToOutputFile` should have a snake case name
+warning: function `saveInputFileMetaInfo` should have a snake case name
+warning: variable `srcName` should have a snake case name
+warning: function `applySavedTimeInfoToOutputFile` should have a snake case name
+warning: variable `dstName` should have a snake case name
+warning: function `containsDubiousChars` should have a snake case name
+warning: function `setExit` should have a snake case name
+warning: function `configError` should have a snake case name
+warning: function `showFileNames` should have a snake case name
+warning: function `cleanUpAndFail` should have a snake case name
+warning: function `outOfMemory` should have a snake case name
+warning: function `myMalloc` should have a snake case name
+warning: function `uInt64_to_double` should have a snake case name
+warning: function `uInt64_isZero` should have a snake case name
+warning: function `fileExists` should have a snake case name
+warning: function `notAStandardFile` should have a snake case name
+warning: function `countHardLinks` should have a snake case name
+warning: function `hasSuffix` should have a snake case name
+warning: function `mapSuffix` should have a snake case name
+warning: variable `oldSuffix` should have a snake case name
+warning: variable `newSuffix` should have a snake case name
+warning: variable `fullProgName` should have a snake case name
+warning: function `mkCell` should have a snake case name
+warning: function `ioError` should have a snake case name
+warning: function `copyFileName` should have a snake case name
+warning: function `uInt64_from_UInt32s` should have a snake case name
+warning: function `uInt64_qrm10` should have a snake case name
+warning: function `mySignalCatcher` should have a snake case name
+warning: function `crcError` should have a snake case name
+warning: function `addFlagsFromEnvVar` should have a snake case name
+warning: variable `argList` should have a snake case name
+warning: variable `varName` should have a snake case name
+warning: function `APPEND_FLAG` should have a snake case name
+warning: variable `_argList` should have a snake case name
+warning: function `snocString` should have a snake case name
+warning: function `compressedStreamEOF` should have a snake case name
+warning: function `uInt64_toAscii` should have a snake case name
+warning: variable `nBuf` should have a snake case name
+warning: function `mySIGSEGVorSIGBUScatcher` should have a snake case name
+warning: function `testStream` should have a snake case name
+warning: variable `zStream` should have a snake case name
+warning: variable `streamNo` should have a snake case name
+warning: variable `nUnused` should have a snake case name
+warning: variable `unusedTmp` should have a snake case name
+warning: function `compressStream` should have a snake case name
+warning: variable `zStream` should have a snake case name
+warning: variable `nIbuf` should have a snake case name
+warning: function `uncompressStream` should have a snake case name
+warning: variable `zStream` should have a snake case name
+warning: variable `streamNo` should have a snake case name
+warning: variable `nUnused` should have a snake case name
+warning: variable `unusedTmp` should have a snake case name
+warning: function `fallbackSimpleSort` should have a snake case name
+warning: function `mainGtU` should have a snake case name
+warning: function `mainSimpleSort` should have a snake case name
+warning: variable `bigN` should have a snake case name
+warning: function `mainQSort3` should have a snake case name
+warning: variable `loSt` should have a snake case name
+warning: variable `hiSt` should have a snake case name
+warning: variable `dSt` should have a snake case name
+warning: variable `unLo` should have a snake case name
+warning: variable `unHi` should have a snake case name
+warning: variable `ltLo` should have a snake case name
+warning: variable `gtHi` should have a snake case name
+warning: variable `stackLo` should have a snake case name
+warning: variable `stackHi` should have a snake case name
+warning: variable `stackD` should have a snake case name
+warning: variable `nextLo` should have a snake case name
+warning: variable `nextHi` should have a snake case name
+warning: variable `nextD` should have a snake case name
+warning: function `mainSort` should have a snake case name
+warning: variable `runningOrder` should have a snake case name
+warning: variable `bigDone` should have a snake case name
+warning: variable `copyStart` should have a snake case name
+warning: variable `copyEnd` should have a snake case name
+warning: variable `numQSorted` should have a snake case name
+warning: variable `bbStart` should have a snake case name
+warning: variable `bbSize` should have a snake case name
+warning: variable `qVal` should have a snake case name
+warning: function `fallbackQSort3` should have a snake case name
+warning: variable `loSt` should have a snake case name
+warning: variable `hiSt` should have a snake case name
+warning: variable `unLo` should have a snake case name
+warning: variable `unHi` should have a snake case name
+warning: variable `ltLo` should have a snake case name
+warning: variable `gtHi` should have a snake case name
+warning: variable `stackLo` should have a snake case name
+warning: variable `stackHi` should have a snake case name
+warning: function `fallbackSort` should have a snake case name
+warning: variable `ftabCopy` should have a snake case name
+warning: variable `H` should have a snake case name
+warning: variable `nNotDone` should have a snake case name
+warning: variable `nBhtab` should have a snake case name
+warning: function `BZ2_blockSort` should have a snake case name
+warning: function `makeMaps_d` should have a snake case name
+warning: function `BZ2_decompress` should have a snake case name
+warning: variable `retVal` should have a snake case name
+warning: variable `minLen` should have a snake case name
+warning: variable `maxLen` should have a snake case name
+warning: variable `alphaSize` should have a snake case name
+warning: variable `nGroups` should have a snake case name
+warning: variable `nSelectors` should have a snake case name
+warning: variable `EOB` should have a snake case name
+warning: variable `groupNo` should have a snake case name
+warning: variable `groupPos` should have a snake case name
+warning: variable `nextSym` should have a snake case name
+warning: variable `nblockMAX` should have a snake case name
+warning: variable `N` should have a snake case name
+warning: variable `gSel` should have a snake case name
+warning: variable `gMinlen` should have a snake case name
+warning: variable `gLimit` should have a snake case name
+warning: variable `gLimit_idx` should have a snake case name
+warning: variable `gBase` should have a snake case name
+warning: variable `gBase_idx` should have a snake case name
+warning: variable `gPerm` should have a snake case name
+warning: variable `gPerm_idx` should have a snake case name
+warning: function `BZ2_hbMakeCodeLengths` should have a snake case name
+warning: variable `alphaSize` should have a snake case name
+warning: variable `maxLen` should have a snake case name
+warning: variable `nNodes` should have a snake case name
+warning: variable `nHeap` should have a snake case name
+warning: variable `tooLong` should have a snake case name
+warning: function `BZ2_hbAssignCodes` should have a snake case name
+warning: variable `minLen` should have a snake case name
+warning: variable `maxLen` should have a snake case name
+warning: variable `alphaSize` should have a snake case name
+warning: function `BZ2_hbCreateDecodeTables` should have a snake case name
+warning: variable `minLen` should have a snake case name
+warning: variable `maxLen` should have a snake case name
+warning: variable `alphaSize` should have a snake case name
+warning: function `readError` should have a snake case name
+warning: function `writeError` should have a snake case name
+warning: function `endsInBz2` should have a snake case name
+warning: function `tooManyBlocks` should have a snake case name
+warning: function `bsGetBit` should have a snake case name
+warning: function `bsPutBit` should have a snake case name
+warning: function `bsClose` should have a snake case name

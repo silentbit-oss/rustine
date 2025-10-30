@@ -1,0 +1,28 @@
+[package]
+name = "translate"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lazy_static = "1.4.0"
+rand = "0.8.5"
+
+[[bin]]
+name="example1"
+path="src/example1.rs"
+
+[[bin]]
+name="example3"
+path="src/example3.rs"
+
+[[bin]]
+name="example2"
+path="src/example2.rs"
+
+[[bin]]
+name="example4"
+path="src/example4_main.rs"
+
+[[bin]]
+name="test"
+path="src/test_main.rs"

@@ -1,0 +1,40 @@
+warning: assigning the result of `Clone::clone()` may be inefficient
+warning: casting `u64` to `usize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `usize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `usize` may truncate the value on targets with 32-bit wide pointers
+warning: casts from `u8` to `u64` can be expressed infallibly using `From`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: manual implementation of `midpoint` which can overflow
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: used underscore-prefixed binding
+warning: used underscore-prefixed binding
+warning: used underscore-prefixed binding
+warning: used underscore-prefixed binding

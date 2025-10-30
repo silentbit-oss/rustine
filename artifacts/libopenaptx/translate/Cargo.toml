@@ -1,0 +1,15 @@
+[package]
+name = "translate"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lazy_static = "1.4.0"
+
+[[bin]]
+name="openaptxenc"
+path="src/openaptxenc_main.rs"
+
+[[bin]]
+name="openaptxdec"
+path="src/openaptxdec.rs"

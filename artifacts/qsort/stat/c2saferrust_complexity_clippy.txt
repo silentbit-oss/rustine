@@ -1,0 +1,3 @@
+warning: this looks like you are swapping `*a` and `*b` manually
+warning: use of `offset` with a `usize` casted to an `isize`
+warning: use of `offset` with a `usize` casted to an `isize`

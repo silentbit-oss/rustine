@@ -1,0 +1,17 @@
+warning: `extern` fn uses type `std::ffi::CStr`, which is not FFI-safe
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: transmute from a type (`u64`) to itself
+warning: using `clone` on type `Option<u64>` which implements the `Copy` trait
+warning: using `clone` on type `u64` which implements the `Copy` trait
+warning: using `clone` on type `u64` which implements the `Copy` trait

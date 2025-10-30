@@ -1,0 +1,499 @@
+{
+    "node": {
+        "source_code": "struct node\n{\n  int key;\n  struct node *left;\n  struct node *right;\n}",
+        "translated_code": "#[derive(Clone)]\npub struct Node {\n    pub key: i32,\n    pub left: Option<Box<Node>>,\n    pub right: Option<Box<Node>>,\n}",
+        "hint": "special_types",
+        "section": "src",
+        "file": "node.rs",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "type": "<class 'pycparser.c_ast.Struct'>",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "newNode": {
+        "source_code": "struct node *newNode(int item)\n{\n  struct node *temp = (struct node *) malloc(sizeof(struct node));\n  temp->key = item;\n  temp->left = 0;\n  temp->right = 0;\n  return temp;\n}\n\n",
+        "translated_code": "pub fn newNode(item: i32) -> Option<Box<Node>> {\n    Some(Box::new(Node {\n        key: item,\n        left: None,\n        right: None,\n    }))\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "node"
+        ],
+        "params": [
+            "int item"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "item",
+            "struct node"
+        ],
+        "calle": [
+            "malloc"
+        ],
+        "calle_c": [
+            "malloc"
+        ],
+        "key": "newNode",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "minValueNode": {
+        "source_code": "struct node *minValueNode(struct node *node)\n{\n  struct node *current = node;\n  unsigned int current_idx = 0;\n  while ((&current[current_idx]) && (current->left != 0))\n  {\n    current_idx = current_idx->left;\n  }\n\n  return current;\n}\n\n",
+        "translated_code": "pub fn minValueNode(node: Option<Box<Node>>) -> Option<Box<Node>> {\n    let mut current = node;\n    while let Some(ref mut current_node) = current {\n        if current_node.left.is_some() {\n            current = current_node.left.take();\n        } else {\n            break;\n        }\n    }\n    current\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "node"
+        ],
+        "params": [
+            "struct node *node"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "struct node",
+            "struct node",
+            "current_idx"
+        ],
+        "calle": [],
+        "calle_c": [],
+        "key": "minValueNode",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "inorder": {
+        "source_code": "void inorder(struct node *root)\n{\n  if (root != 0)\n  {\n    inorder(root->left);\n    printf(\"%d \", root->key);\n    inorder(root->right);\n  }\n}\n\n",
+        "translated_code": "pub fn inorder(root: Option<&Box<Node>>) {\n    if let Some(root) = root {\n        inorder(root.left.as_ref());\n        println!(\"{} \", root.key);\n        inorder(root.right.as_ref());\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "node"
+        ],
+        "params": [
+            "struct node *root"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "struct node"
+        ],
+        "calle": [
+            "inorder",
+            "printf"
+        ],
+        "calle_c": [
+            "inorder",
+            "printf"
+        ],
+        "key": "inorder",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "capture_inorder": {
+        "source_code": "char *capture_inorder(struct node *root)\n{\n  FILE *tmp = tmpfile();\n  if (!tmp)\n  {\n    perror(\"tmpfile\");\n    exit(1);\n  }\n  FILE *old_stdout = stdout;\n  fflush(stdout);\n  stdout = tmp;\n  inorder(root);\n  fflush(stdout);\n  stdout = old_stdout;\n  fseek(tmp, 0, 2);\n  long len = ftell(tmp);\n  rewind(tmp);\n  char *result = malloc(len + 1);\n  fread(result, 1, len, tmp);\n  result[len] = '\\0';\n  fclose(tmp);\n  return result;\n}\n\n",
+        "translated_code": "pub fn capture_inorder(root: Option<&Box<Node>>) -> Option<String> {\n    use libc::{dup, dup2, close, STDOUT_FILENO};\n    use std::os::fd::AsRawFd;\n    \n    // Create a temporary file (equivalent to tmpfile() in C)\n    let mut tmp = match tempfile::tempfile() {\n        Ok(file) => file,\n        Err(e) => {\n            eprintln!(\"tmpfile: {}\", e); // equivalent to perror(\"tmpfile\")\n            std::process::exit(1); // equivalent to exit(1)\n        }\n    };\n\n    // Flush stdout before redirection\n    std::io::stdout().flush().unwrap(); // equivalent to fflush(stdout)\n\n    // Save the original stdout file descriptor\n    let stdout_fd = unsafe { dup(STDOUT_FILENO) };\n    if stdout_fd == -1 {\n        eprintln!(\"dup: {}\", std::io::Error::last_os_error());\n        std::process::exit(1);\n    }\n\n    // Redirect stdout to our temporary file\n    let tmp_fd = tmp.as_raw_fd();\n    if unsafe { dup2(tmp_fd, STDOUT_FILENO) } == -1 {\n        eprintln!(\"dup2: {}\", std::io::Error::last_os_error());\n        std::process::exit(1);\n    }\n\n    // Perform the inorder traversal\n    inorder(root);\n\n    // Flush stdout after writing\n    std::io::stdout().flush().unwrap(); // equivalent to fflush(stdout)\n\n    // Restore original stdout\n    if unsafe { dup2(stdout_fd, STDOUT_FILENO) } == -1 {\n        eprintln!(\"dup2: {}\", std::io::Error::last_os_error());\n        std::process::exit(1);\n    }\n    unsafe { close(stdout_fd) };\n\n    // Get the length of the file\n    let len = tmp.seek(std::io::SeekFrom::End(0)).unwrap() as usize;\n    tmp.seek(std::io::SeekFrom::Start(0)).unwrap(); // equivalent to rewind(tmp)\n\n    // Read the file contents into a String\n    let mut result = String::with_capacity(len + 1);\n    tmp.read_to_string(&mut result).unwrap(); // equivalent to fread\n\n    Some(result)\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "inorder",
+            "node"
+        ],
+        "params": [
+            "struct node *root"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "struct node",
+            "tmp",
+            "old_stdout",
+            "len",
+            "result"
+        ],
+        "calle": [
+            "rewind",
+            "fseek",
+            "perror",
+            "fread",
+            "fflush",
+            "fclose",
+            "exit",
+            "malloc",
+            "ftell",
+            "tmpfile",
+            "inorder"
+        ],
+        "calle_c": [
+            "rewind",
+            "fseek",
+            "perror",
+            "fread",
+            "fflush",
+            "fclose",
+            "exit",
+            "malloc",
+            "ftell",
+            "tmpfile"
+        ],
+        "key": "capture_inorder",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "insert": {
+        "source_code": "struct node *insert(struct node *node, int key)\n{\n  if (node == 0)\n  {\n    return newNode(key);\n  }\n  if (key < node->key)\n  {\n    node->left = insert(node->left, key);\n  }\n  else\n    node->right = insert(node->right, key);\n  return node;\n}\n\n",
+        "translated_code": "pub fn insert(node: Option<Box<Node>>, key: i32) -> Option<Box<Node>> {\n    match node {\n        None => newNode(key), // Base case: create new node if current is None\n        Some(mut node_ptr) => {\n            if key < node_ptr.key {\n                // Recursively insert into left subtree\n                node_ptr.left = insert(node_ptr.left, key);\n            } else {\n                // Recursively insert into right subtree\n                node_ptr.right = insert(node_ptr.right, key);\n            }\n            Some(node_ptr) // Return the modified node\n        }\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "newNode",
+            "node"
+        ],
+        "params": [
+            "struct node *node",
+            "int key"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "struct node",
+            "key"
+        ],
+        "calle": [
+            "insert",
+            "newNode"
+        ],
+        "calle_c": [
+            "insert"
+        ],
+        "key": "insert",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "deleteNode": {
+        "source_code": "struct node *deleteNode(struct node *root, int key)\n{\n  if (root == 0)\n  {\n    return root;\n  }\n  if (key < root->key)\n  {\n    root->left = deleteNode(root->left, key);\n  }\n  else\n    if (key > root->key)\n  {\n    root->right = deleteNode(root->right, key);\n  }\n  else\n  {\n    if (root->left == 0)\n    {\n      struct node *temp = root->right;\n      free(root);\n      return temp;\n    }\n    else\n      if (root->right == 0)\n    {\n      struct node *temp = root->left;\n      free(root);\n      return temp;\n    }\n    struct node *temp = minValueNode(root->right);\n    root->key = temp->key;\n    root->right = deleteNode(root->right, temp->key);\n  }\n  return root;\n}\n\n",
+        "translated_code": "use std::mem;\n\npub fn deleteNode(root: Option<Box<Node>>, key: i32) -> Option<Box<Node>> {\n    let mut root = match root {\n        None => return None,\n        Some(node) => node,\n    };\n\n    if key < root.key {\n        root.left = deleteNode(root.left, key);\n    } else if key > root.key {\n        root.right = deleteNode(root.right, key);\n    } else {\n        if root.left.is_none() {\n            return root.right;\n        } else if root.right.is_none() {\n            return root.left;\n        }\n\n        let min_right = minValueNode(root.right.clone()).unwrap();\n        root.key = min_right.key;\n        root.right = deleteNode(root.right, min_right.key);\n    }\n\n    Some(root)\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "minValueNode",
+            "node"
+        ],
+        "params": [
+            "struct node *root",
+            "int key"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "struct node",
+            "key",
+            "struct node",
+            "struct node",
+            "struct node"
+        ],
+        "calle": [
+            "free",
+            "deleteNode",
+            "minValueNode"
+        ],
+        "calle_c": [
+            "free",
+            "deleteNode"
+        ],
+        "key": "deleteNode",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_insert_and_inorder": {
+        "source_code": "void test_insert_and_inorder()\n{\n  struct node *root = 0;\n  unsigned int root_idx = 0;\n  root_idx = insert(root_idx, 50);\n  root_idx = insert(root_idx, 30);\n  root_idx = insert(root_idx, 20);\n  root_idx = insert(root_idx, 40);\n  root_idx = insert(root_idx, 70);\n  root_idx = insert(root_idx, 60);\n  root_idx = insert(root_idx, 80);\n  char *result = capture_inorder(root);\n  assert(strcmp(result, \"20 30 40 50 60 70 80 \") == 0);\n  printf(\"test_insert_and_inorder passed\\n\");\n  free(result);\n}\n\n",
+        "translated_code": "use std::assert;\n\npub fn test_insert_and_inorder() {\n    let mut root = None;\n    root = insert(root, 50);\n    root = insert(root, 30);\n    root = insert(root, 20);\n    root = insert(root, 40);\n    root = insert(root, 70);\n    root = insert(root, 60);\n    root = insert(root, 80);\n\n    let result = capture_inorder(root.as_ref());\n    assert!(result.as_ref().map_or(false, |s| s == \"20 30 40 50 60 70 80 \"));\n    println!(\"test_insert_and_inorder passed\");\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "capture_inorder",
+            "insert",
+            "node"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "struct node",
+            "root_idx",
+            "result"
+        ],
+        "calle": [
+            "free",
+            "capture_inorder",
+            "strcmp",
+            "insert",
+            "printf",
+            "assert"
+        ],
+        "calle_c": [
+            "free",
+            "strcmp",
+            "printf",
+            "assert"
+        ],
+        "key": "test_insert_and_inorder",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "test_min_value_node": {
+        "source_code": "void test_min_value_node()\n{\n  struct node *root = 0;\n  unsigned int root_idx = 0;\n  root_idx = insert(root_idx, 20);\n  root_idx = insert(root_idx, 10);\n  root_idx = insert(root_idx, 30);\n  root_idx = insert(root_idx, 5);\n  struct node *min = minValueNode(root);\n  assert(min->key == 5);\n  printf(\"test_min_value_node passed\\n\");\n}\n\n",
+        "translated_code": "use std::assert;\n\npub fn test_min_value_node() {\n    let mut root: Option<Box<Node>> = None;\n    root = insert(root, 20);\n    root = insert(root, 10);\n    root = insert(root, 30);\n    root = insert(root, 5);\n    let min = minValueNode(root);\n    assert!(min.as_ref().unwrap().key == 5);\n    println!(\"test_min_value_node passed\");\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "insert",
+            "minValueNode",
+            "node"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "struct node",
+            "root_idx",
+            "struct node"
+        ],
+        "calle": [
+            "assert",
+            "insert",
+            "printf",
+            "minValueNode"
+        ],
+        "calle_c": [
+            "printf",
+            "assert"
+        ],
+        "key": "test_min_value_node",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "test_delete_leaf": {
+        "source_code": "void test_delete_leaf()\n{\n  struct node *root = 0;\n  unsigned int root_idx = 0;\n  root_idx = insert(root_idx, 10);\n  root_idx = insert(root_idx, 5);\n  root_idx = insert(root_idx, 15);\n  root_idx = deleteNode(root_idx, 5);\n  char *result = capture_inorder(root);\n  assert(strcmp(result, \"10 15 \") == 0);\n  printf(\"test_delete_leaf passed\\n\");\n  free(result);\n}\n\n",
+        "translated_code": "pub fn test_delete_leaf() {\n    let mut root_idx: Option<Box<Node>> = None;\n    root_idx = insert(root_idx, 10);\n    root_idx = insert(root_idx, 5);\n    root_idx = insert(root_idx, 15);\n    root_idx = deleteNode(root_idx, 5);\n    \n    let result = capture_inorder(root_idx.as_ref());\n    assert_eq!(result.unwrap(), \"10 15 \");\n    println!(\"test_delete_leaf passed\");\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "capture_inorder",
+            "deleteNode",
+            "insert",
+            "node"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "struct node",
+            "root_idx",
+            "result"
+        ],
+        "calle": [
+            "free",
+            "capture_inorder",
+            "strcmp",
+            "insert",
+            "printf",
+            "deleteNode",
+            "assert"
+        ],
+        "calle_c": [
+            "free",
+            "strcmp",
+            "printf",
+            "assert"
+        ],
+        "key": "test_delete_leaf",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "test_delete_node_with_one_child": {
+        "source_code": "void test_delete_node_with_one_child()\n{\n  struct node *root = 0;\n  unsigned int root_idx = 0;\n  root_idx = insert(root_idx, 10);\n  root_idx = insert(root_idx, 5);\n  root_idx = insert(root_idx, 2);\n  root_idx = deleteNode(root_idx, 5);\n  char *result = capture_inorder(root);\n  assert(strcmp(result, \"2 10 \") == 0);\n  printf(\"test_delete_node_with_one_child passed\\n\");\n  free(result);\n}\n\n",
+        "translated_code": "pub fn test_delete_node_with_one_child() {\n    let mut root: Option<Box<Node>> = None;\n    root = insert(root, 10);\n    root = insert(root, 5);\n    root = insert(root, 2);\n    root = deleteNode(root, 5);\n    let result = capture_inorder(root.as_ref());\n    assert_eq!(result.unwrap(), \"2 10 \");\n    println!(\"test_delete_node_with_one_child passed\");\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "capture_inorder",
+            "deleteNode",
+            "insert",
+            "node"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "struct node",
+            "root_idx",
+            "result"
+        ],
+        "calle": [
+            "free",
+            "capture_inorder",
+            "strcmp",
+            "insert",
+            "printf",
+            "deleteNode",
+            "assert"
+        ],
+        "calle_c": [
+            "free",
+            "strcmp",
+            "printf",
+            "assert"
+        ],
+        "key": "test_delete_node_with_one_child",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "test_delete_node_with_two_children": {
+        "source_code": "void test_delete_node_with_two_children()\n{\n  struct node *root = 0;\n  unsigned int root_idx = 0;\n  root_idx = insert(root_idx, 50);\n  root_idx = insert(root_idx, 30);\n  root_idx = insert(root_idx, 70);\n  root_idx = insert(root_idx, 20);\n  root_idx = insert(root_idx, 40);\n  root_idx = insert(root_idx, 60);\n  root_idx = insert(root_idx, 80);\n  root_idx = deleteNode(root_idx, 50);\n  char *result = capture_inorder(root);\n  assert(strcmp(result, \"20 30 40 60 70 80 \") == 0);\n  printf(\"test_delete_node_with_two_children passed\\n\");\n  free(result);\n}\n\n",
+        "translated_code": "use std::assert_eq;\n\npub fn test_delete_node_with_two_children() {\n    let mut root: Option<Box<Node>> = None;\n    root = insert(root, 50);\n    root = insert(root, 30);\n    root = insert(root, 70);\n    root = insert(root, 20);\n    root = insert(root, 40);\n    root = insert(root, 60);\n    root = insert(root, 80);\n    root = deleteNode(root, 50);\n    \n    let result = capture_inorder(root.as_ref());\n    assert_eq!(result.unwrap(), \"20 30 40 60 70 80 \");\n    println!(\"test_delete_node_with_two_children passed\");\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "capture_inorder",
+            "deleteNode",
+            "insert",
+            "node"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "struct node",
+            "root_idx",
+            "result"
+        ],
+        "calle": [
+            "free",
+            "capture_inorder",
+            "strcmp",
+            "insert",
+            "printf",
+            "deleteNode",
+            "assert"
+        ],
+        "calle_c": [
+            "free",
+            "strcmp",
+            "printf",
+            "assert"
+        ],
+        "key": "test_delete_node_with_two_children",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "test_delete_nonexistent_node": {
+        "source_code": "void test_delete_nonexistent_node()\n{\n  struct node *root = 0;\n  unsigned int root_idx = 0;\n  root_idx = insert(root_idx, 10);\n  root_idx = insert(root_idx, 5);\n  root_idx = insert(root_idx, 15);\n  root_idx = deleteNode(root_idx, 42);\n  char *result = capture_inorder(root);\n  assert(strcmp(result, \"5 10 15 \") == 0);\n  printf(\"test_delete_nonexistent_node passed\\n\");\n  free(result);\n}\n\n",
+        "translated_code": "use std::assert_eq;\n\npub fn test_delete_nonexistent_node() {\n    let mut root: Option<Box<Node>> = None;\n    root = insert(root, 10);\n    root = insert(root, 5);\n    root = insert(root, 15);\n    root = deleteNode(root, 42);\n    \n    let result = capture_inorder(root.as_ref());\n    assert_eq!(result.unwrap(), \"5 10 15 \");\n    println!(\"test_delete_nonexistent_node passed\");\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "capture_inorder",
+            "deleteNode",
+            "insert",
+            "node"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "struct node",
+            "root_idx",
+            "result"
+        ],
+        "calle": [
+            "free",
+            "capture_inorder",
+            "strcmp",
+            "insert",
+            "printf",
+            "deleteNode",
+            "assert"
+        ],
+        "calle_c": [
+            "free",
+            "strcmp",
+            "printf",
+            "assert"
+        ],
+        "key": "test_delete_nonexistent_node",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "main#test": {
+        "source_code": "int main()\n{\n  test_insert_and_inorder();\n  test_min_value_node();\n  test_delete_leaf();\n  test_delete_node_with_one_child();\n  test_delete_node_with_two_children();\n  test_delete_nonexistent_node();\n  printf(\"All tests passed.\\n\");\n  return 0;\n}\n\n",
+        "translated_code": "pub fn main() {\n    test_insert_and_inorder();\n    test_min_value_node();\n    test_delete_leaf();\n    test_delete_node_with_one_child();\n    test_delete_node_with_two_children();\n    test_delete_nonexistent_node();\n    println!(\"All tests passed.\");\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "test_delete_leaf",
+            "test_delete_node_with_one_child",
+            "test_delete_node_with_two_children",
+            "test_delete_nonexistent_node",
+            "test_insert_and_inorder",
+            "test_min_value_node"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [],
+        "calle": [
+            "test_insert_and_inorder",
+            "test_delete_leaf",
+            "test_min_value_node",
+            "test_delete_node_with_two_children",
+            "printf",
+            "test_delete_nonexistent_node",
+            "test_delete_node_with_one_child"
+        ],
+        "calle_c": [
+            "printf"
+        ],
+        "key": "main#test",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    }
+}

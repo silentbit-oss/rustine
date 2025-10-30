@@ -1,0 +1,4 @@
+warning: the loop variable `i` is used to index `alloc`
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string

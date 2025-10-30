@@ -1,0 +1,3 @@
+warning: unused return value of `std::boxed::Box::<T, A>::into_raw` that must be used
+warning: unused return value of `std::boxed::Box::<T, A>::into_raw` that must be used
+warning: unused return value of `std::boxed::Box::<T>::from_raw` that must be used

@@ -1,0 +1,9 @@
+#include <assert.h>
+#include <heman.h>
+#include <image.h>
+#include <lighting.c>
+#include <math.h>
+#include <memory.h>
+#include <stdlib.h>
+#include <utility.h>
+#include <vec3.h>

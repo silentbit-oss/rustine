@@ -1,0 +1,1820 @@
+{
+    "special_type": [
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "struct ht\n{\n  ht_entry *entries;\n  size_t capacity;\n  size_t length;\n}",
+            "name": "ht",
+            "names": [
+                "typedef struct ht ht"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "entries",
+                        "type": "ht_entry *",
+                        "definition": [
+                            "ht_entry *entries"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "capacity",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t capacity"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "length",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t length"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "typedef struct \n{\n  const char *key;\n  void *value;\n  ht *_table;\n  size_t _index;\n} hti",
+            "name": "hti",
+            "names": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "value",
+                        "type": "void *",
+                        "definition": [
+                            "void *value"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "_table",
+                        "type": "ht *",
+                        "definition": [
+                            "ht *_table"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "_index",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t _index"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "typedef struct \n{\n  const char *key;\n  void *value;\n} ht_entry",
+            "name": "ht_entry",
+            "names": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "value",
+                        "type": "void *",
+                        "definition": [
+                            "void *value"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "typedef struct \n{\n  char *key;\n  int value;\n} item",
+            "name": "item",
+            "names": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "char *",
+                        "definition": [
+                            "char *key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "value",
+                        "type": "int",
+                        "definition": [
+                            "int value"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        }
+    ],
+    "global_variable": [
+        {
+            "path": null,
+            "name": "found",
+            "type": "void *",
+            "definition": [
+                "void *found"
+            ]
+        },
+        {
+            "path": null,
+            "name": "items",
+            "type": "item []",
+            "definition": [
+                "item items[] = {{\"aoo\", 0}, {\"bar\", 1}, {\"cazz\", 2}, {\"duzz\", 3}, {\"eaddle\", 4}, {\"fche\", 5}, {\"garf\", 6}, {\"hache\", 7}, {\"iya\", 8}, {\"jay\", 9}, {\"kay\", 10}, {\"lell\", 11}, {\"memm\", 12}, {\"noo\", 0}, {\"oar\", 1}, {\"pazz\", 2}, {\"quzz\", 3}, {\"raddle\", 4}, {\"sche\", 5}, {\"tarf\", 6}, {\"uache\", 7}, {\"vya\", 8}, {\"way\", 9}, {\"xay\", 10}, {\"yell\", 11}, {\"zemm\", 12}}"
+            ]
+        },
+        {
+            "path": null,
+            "name": "value",
+            "type": "int *",
+            "definition": [
+                "int *value"
+            ]
+        }
+    ],
+    "function": [
+        {
+            "path": null,
+            "name": "ht_create",
+            "header": "ht *ht_create(void)",
+            "params": [
+                "void"
+            ],
+            "definition": "ht *ht_create(void)\n{\n  ht *table = malloc(sizeof(ht));\n  if (table == 0)\n  {\n    return 0;\n  }\n  table->length = 0;\n  table->capacity = 16;\n  table->entries = calloc(table->capacity, sizeof(ht_entry));\n  if (table->entries == 0)\n  {\n    free(table);\n    return 0;\n  }\n  return table;\n}\n\n",
+            "calle": [
+                "calloc",
+                "free",
+                "malloc"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": null,
+                        "type": "void",
+                        "definition": [
+                            "void"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "table",
+                        "type": "ht *",
+                        "definition": [
+                            "ht *table = malloc(sizeof(ht))"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "ht_destroy",
+            "header": "void ht_destroy(ht *table)",
+            "params": [
+                "ht *table"
+            ],
+            "definition": "void ht_destroy(ht *table)\n{\n  for (size_t i = 0; i < table->capacity; i += 1)\n  {\n    free((void *) table->entries[i].key);\n  }\n\n  free(table->entries);\n  free(table);\n}\n\n",
+            "calle": [
+                "free"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "table",
+                        "type": "ht *",
+                        "definition": [
+                            "ht *table"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t i = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "ht_get",
+            "header": "void *ht_get(ht *table, const char *key)",
+            "params": [
+                "ht *table",
+                "const char *key"
+            ],
+            "definition": "void *ht_get(ht *table, const char *key)\n{\n  uint64_t hash = hash_key(key);\n  size_t index = (size_t) (hash & ((uint64_t) (table->capacity - 1)));\n  while (table->entries[index].key != 0)\n  {\n    if (strcmp(key, table->entries[index].key) == 0)\n    {\n      return table->entries[index].value;\n    }\n    index += 1;\n    if (index >= table->capacity)\n    {\n      index = 0;\n    }\n  }\n\n  return 0;\n}\n\n",
+            "calle": [
+                "hash_key",
+                "strcmp"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "table",
+                        "type": "ht *",
+                        "definition": [
+                            "ht *table"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hash",
+                        "type": "uint64_t",
+                        "definition": [
+                            "uint64_t hash = hash_key(key)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "index",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t index = (size_t) (hash & ((uint64_t) (table->capacity - 1)))"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "ht_set",
+            "header": "const char *ht_set(ht *table, const char *key, void *value)",
+            "params": [
+                "ht *table",
+                "const char *key",
+                "void *value"
+            ],
+            "definition": "const char *ht_set(ht *table, const char *key, void *value)\n{\n  assert(value != 0);\n  if (value == 0)\n  {\n    return 0;\n  }\n  if (table->length >= (table->capacity / 2))\n  {\n    if (!ht_expand(table))\n    {\n      return 0;\n    }\n  }\n  return ht_set_entry(table->entries, table->capacity, key, value, &table->length);\n}\n\n",
+            "calle": [
+                "assert",
+                "ht_expand",
+                "ht_set_entry"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "table",
+                        "type": "ht *",
+                        "definition": [
+                            "ht *table"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "value",
+                        "type": "void *",
+                        "definition": [
+                            "void *value"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "ht_length",
+            "header": "size_t ht_length(ht *table)",
+            "params": [
+                "ht *table"
+            ],
+            "definition": "size_t ht_length(ht *table)\n{\n  return table->length;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "table",
+                        "type": "ht *",
+                        "definition": [
+                            "ht *table"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "ht_iterator",
+            "header": "hti ht_iterator(ht *table)",
+            "params": [
+                "ht *table"
+            ],
+            "definition": "hti ht_iterator(ht *table)\n{\n  hti it;\n  it._table = table;\n  it._index = 0;\n  return it;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "table",
+                        "type": "ht *",
+                        "definition": [
+                            "ht *table"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "it",
+                        "type": "hti",
+                        "definition": [
+                            "hti it"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "ht_next",
+            "header": "bool ht_next(hti *it)",
+            "params": [
+                "hti *it"
+            ],
+            "definition": "bool ht_next(hti *it)\n{\n  ht *table = it->_table;\n  while (it->_index < table->capacity)\n  {\n    size_t i = it->_index;\n    it->_index += 1;\n    if (table->entries[i].key != 0)\n    {\n      ht_entry entry = table->entries[i];\n      it->key = entry.key;\n      it->value = entry.value;\n      return 1;\n    }\n  }\n\n  return 0;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "it",
+                        "type": "hti *",
+                        "definition": [
+                            "hti *it"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "table",
+                        "type": "ht *",
+                        "definition": [
+                            "ht *table = it->_table"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t i = it->_index"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "entry",
+                        "type": "ht_entry",
+                        "definition": [
+                            "ht_entry entry = table->entries[i]"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "hash_key",
+            "header": "",
+            "params": [
+                "const char *key"
+            ],
+            "definition": "static uint64_t hash_key(const char *key)\n{\n  uint64_t hash = 14695981039346656037UL;\n  for (const char *p = key; p[p_idx]; p_idx += 1)\n  {\n    hash ^= (uint64_t) ((unsigned char) p[p_idx]);\n    hash *= 1099511628211UL;\n  }\n\n  unsigned int p_idx = 0;\n  return hash;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hash",
+                        "type": "uint64_t",
+                        "definition": [
+                            "uint64_t hash = 14695981039346656037UL"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *p = key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "ht_set_entry",
+            "header": "",
+            "params": [
+                "ht_entry *entries",
+                "size_t capacity",
+                "const char *key",
+                "void *value",
+                "size_t *plength"
+            ],
+            "definition": "static const char *ht_set_entry(ht_entry *entries, size_t capacity, const char *key, void *value, size_t *plength)\n{\n  unsigned int key_idx = 0;\n  uint64_t hash = hash_key(key);\n  size_t index = (size_t) (hash & ((uint64_t) (capacity - 1)));\n  while (entries[index].key != 0)\n  {\n    if (strcmp(key, entries[index].key) == 0)\n    {\n      entries[index].value = value;\n      return entries[index].key;\n    }\n    index += 1;\n    if (index >= capacity)\n    {\n      index = 0;\n    }\n  }\n\n  if (plength != 0)\n  {\n    key_idx = strdup(key_idx);\n    if ((&key[key_idx]) == 0)\n    {\n      return 0;\n    }\n    *plength += 1;\n  }\n  entries[index].key = (char *) key;\n  entries[index].value = value;\n  return key;\n}\n\n",
+            "calle": [
+                "hash_key",
+                "strcmp",
+                "strdup"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "entries",
+                        "type": "ht_entry *",
+                        "definition": [
+                            "ht_entry *entries"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "capacity",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t capacity"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "value",
+                        "type": "void *",
+                        "definition": [
+                            "void *value"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "plength",
+                        "type": "size_t *",
+                        "definition": [
+                            "size_t *plength"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int key_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hash",
+                        "type": "uint64_t",
+                        "definition": [
+                            "uint64_t hash = hash_key(key)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "index",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t index = (size_t) (hash & ((uint64_t) (capacity - 1)))"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "ht_expand",
+            "header": "",
+            "params": [
+                "ht *table"
+            ],
+            "definition": "static bool ht_expand(ht *table)\n{\n  size_t new_capacity = table->capacity * 2;\n  if (new_capacity < table->capacity)\n  {\n    return 0;\n  }\n  ht_entry *new_entries = calloc(new_capacity, sizeof(ht_entry));\n  if (new_entries == 0)\n  {\n    return 0;\n  }\n  for (size_t i = 0; i < table->capacity; i += 1)\n  {\n    ht_entry entry = table->entries[i];\n    if (entry.key != 0)\n    {\n      ht_set_entry(new_entries, new_capacity, entry.key, entry.value, 0);\n    }\n  }\n\n  free(table->entries);\n  table->entries = new_entries;\n  table->capacity = new_capacity;\n  return 1;\n}\n\n",
+            "calle": [
+                "calloc",
+                "free",
+                "ht_set_entry"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "table",
+                        "type": "ht *",
+                        "definition": [
+                            "ht *table"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "new_capacity",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t new_capacity = table->capacity * 2"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "new_entries",
+                        "type": "ht_entry *",
+                        "definition": [
+                            "ht_entry *new_entries = calloc(new_capacity, sizeof(ht_entry))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t i = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "entry",
+                        "type": "ht_entry",
+                        "definition": [
+                            "ht_entry entry = table->entries[i]"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "exit_nomem",
+            "header": "",
+            "params": [
+                "void"
+            ],
+            "definition": "void exit_nomem(void)\n{\n  fprintf(stderr, \"out of memory\\n\");\n  exit(1);\n}\n\n",
+            "calle": [
+                "exit",
+                "fprintf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": null,
+                        "type": "void",
+                        "definition": [
+                            "void"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "get_probe_len",
+            "header": "",
+            "params": [
+                "ht *table",
+                "const char *key"
+            ],
+            "definition": "size_t get_probe_len(ht *table, const char *key)\n{\n  uint64_t hash = hash_key(key);\n  size_t index = (size_t) (hash & ((uint64_t) (table->capacity - 1)));\n  size_t probe_len = 0;\n  while (table->entries[index].key != 0)\n  {\n    probe_len += 1;\n    if (strcmp(key, table->entries[index].key) == 0)\n    {\n      return probe_len;\n    }\n    index += 1;\n    if (index >= table->capacity)\n    {\n      index = 0;\n    }\n  }\n\n  return probe_len;\n}\n\n",
+            "calle": [
+                "hash_key",
+                "strcmp"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "table",
+                        "type": "ht *",
+                        "definition": [
+                            "ht *table"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hash",
+                        "type": "uint64_t",
+                        "definition": [
+                            "uint64_t hash = hash_key(key)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "index",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t index = (size_t) (hash & ((uint64_t) (table->capacity - 1)))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "probe_len",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t probe_len = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#stats",
+            "header": "",
+            "params": [
+                "void"
+            ],
+            "definition": "int main(void)\n{\n  ht *counts = ht_create();\n  if (counts == 0)\n  {\n    exit_nomem();\n  }\n  char word[101];\n  while (scanf(\"%100s\", word) != EOF)\n  {\n    void *value = ht_get(counts, word);\n    if (value != 0)\n    {\n      int *pcount = (int *) value;\n      *pcount += 1;\n      continue;\n    }\n    int *pcount = malloc(sizeof(int));\n    if (pcount == 0)\n    {\n      exit_nomem();\n    }\n    *pcount = 1;\n    if (ht_set(counts, word, pcount) == 0)\n    {\n      exit_nomem();\n    }\n  }\n\n  hti it = ht_iterator(counts);\n  size_t total_probes = 0;\n  while (ht_next(&it))\n  {\n    total_probes += get_probe_len(counts, it.key);\n    free(it.value);\n  }\n\n  printf(\"len=%lu cap=%lu avgprobe=%.3f\\n\", ht_length(counts), counts->capacity, ((double) total_probes) / ht_length(counts));\n  ht_destroy(counts);\n  return 0;\n}\n\n",
+            "calle": [
+                "exit_nomem",
+                "free",
+                "get_probe_len",
+                "ht_create",
+                "ht_destroy",
+                "ht_get",
+                "ht_iterator",
+                "ht_length",
+                "ht_next",
+                "ht_set",
+                "malloc",
+                "printf",
+                "scanf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": null,
+                        "type": "void",
+                        "definition": [
+                            "void"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "counts",
+                        "type": "ht *",
+                        "definition": [
+                            "ht *counts = ht_create()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "word",
+                        "type": "char [101]",
+                        "definition": [
+                            "char word[101]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "value",
+                        "type": "void *",
+                        "definition": [
+                            "void *value = ht_get(counts, word)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "pcount",
+                        "type": "int *",
+                        "definition": [
+                            "int *pcount = (int *) value",
+                            "int *pcount = malloc(sizeof(int))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "it",
+                        "type": "hti",
+                        "definition": [
+                            "hti it = ht_iterator(counts)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "total_probes",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t total_probes = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#perfset",
+            "header": "",
+            "params": [
+                "int argc",
+                "char **argv"
+            ],
+            "definition": "int main(int argc, char **argv)\n{\n  if (argc < 2)\n  {\n    fprintf(stderr, \"usage: perftest file\\n\");\n    return 1;\n  }\n  FILE *f = fopen(argv[1], \"rb\");\n  if (f == 0)\n  {\n    fprintf(stderr, \"can't open file: %s\\n\", argv[1]);\n    return 1;\n  }\n  fseek(f, 0, 2);\n  long size = ftell(f);\n  fseek(f, 0, 0);\n  char *contents = (char *) malloc(size + 1);\n  if (contents == 0)\n  {\n    exit_nomem();\n  }\n  size_t nread = fread(contents, 1, size, f);\n  if (((long) nread) != size)\n  {\n    fprintf(stderr, \"read %ld bytes instead of %ld\", (long) nread, size);\n    return 1;\n  }\n  fclose(f);\n  contents[size] = 0;\n  ht *counts = ht_create();\n  if (counts == 0)\n  {\n    exit_nomem();\n  }\n  for (char *p = contents; p[p_idx]; p_idx += 1)\n  {\n    while (p[p_idx] && (p[p_idx] <= ' '))\n    {\n      p_idx += 1;\n    }\n\n    char *word = p;\n    while (p[p_idx] && (p[p_idx] > ' '))\n    {\n      p_idx += 1;\n    }\n\n    if (p[p_idx] != 0)\n    {\n      p[p_idx] = 0;\n    }\n    void *value = ht_get(counts, word);\n    if (value != 0)\n    {\n      int *pcount = (int *) value;\n      *pcount += 1;\n      continue;\n    }\n    int *pcount = malloc(sizeof(int));\n    if (pcount == 0)\n    {\n      exit_nomem();\n    }\n    *pcount = 1;\n    if (ht_set(counts, word, pcount) == 0)\n    {\n      exit_nomem();\n    }\n  }\n\n  unsigned int p_idx = 0;\n  const char **keys = malloc(ht_length(counts) * (sizeof(char *)));\n  if (keys == 0)\n  {\n    exit_nomem();\n  }\n  hti it = ht_iterator(counts);\n  int i = 0;\n  while (ht_next(&it))\n  {\n    keys[i] = it.key;\n    i += 1;\n  }\n\n  ht *table = ht_create();\n  if (table == 0)\n  {\n    exit_nomem();\n  }\n  int value = 1;\n  clock_t start = clock();\n  for (int i = 0; i < ht_length(counts); i += 1)\n  {\n    if (ht_set(table, keys[i], &value) == 0)\n    {\n      exit_nomem();\n    }\n  }\n\n  clock_t end = clock();\n  double elapsed_ms = (((double) (end - start)) / CLOCKS_PER_SEC) * 1000;\n  printf(\"setting %lu keys: %.09fms\\n\", ht_length(counts), elapsed_ms);\n  return 0;\n}\n\n",
+            "calle": [
+                "clock",
+                "exit_nomem",
+                "fclose",
+                "fopen",
+                "fprintf",
+                "fread",
+                "fseek",
+                "ftell",
+                "ht_create",
+                "ht_get",
+                "ht_iterator",
+                "ht_length",
+                "ht_next",
+                "ht_set",
+                "malloc",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "argc",
+                        "type": "int",
+                        "definition": [
+                            "int argc"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv",
+                        "type": "char **",
+                        "definition": [
+                            "char **argv"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "f",
+                        "type": "FILE *",
+                        "definition": [
+                            "FILE *f = fopen(argv[1], \"rb\")"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "size",
+                        "type": "long",
+                        "definition": [
+                            "long size = ftell(f)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "contents",
+                        "type": "char *",
+                        "definition": [
+                            "char *contents = (char *) malloc(size + 1)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "nread",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t nread = fread(contents, 1, size, f)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "counts",
+                        "type": "ht *",
+                        "definition": [
+                            "ht *counts = ht_create()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "char *",
+                        "definition": [
+                            "char *p = contents"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "word",
+                        "type": "char *",
+                        "definition": [
+                            "char *word = p"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "value",
+                        "type": "void *",
+                        "definition": [
+                            "int value = 1",
+                            "void *value = ht_get(counts, word)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "pcount",
+                        "type": "int *",
+                        "definition": [
+                            "int *pcount = (int *) value",
+                            "int *pcount = malloc(sizeof(int))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "keys",
+                        "type": "const char **",
+                        "definition": [
+                            "const char **keys = malloc(ht_length(counts) * (sizeof(char *)))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "it",
+                        "type": "hti",
+                        "definition": [
+                            "hti it = ht_iterator(counts)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "table",
+                        "type": "ht *",
+                        "definition": [
+                            "ht *table = ht_create()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "start",
+                        "type": "clock_t",
+                        "definition": [
+                            "clock_t start = clock()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "end",
+                        "type": "clock_t",
+                        "definition": [
+                            "clock_t end = clock()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "elapsed_ms",
+                        "type": "double",
+                        "definition": [
+                            "double elapsed_ms = (((double) (end - start)) / CLOCKS_PER_SEC) * 1000"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "linear_search",
+            "header": "",
+            "params": [
+                "item *items",
+                "size_t size",
+                "const char *key"
+            ],
+            "definition": "item *linear_search(item *items, size_t size, const char *key)\n{\n  for (size_t i = 0; i < size; i += 1)\n  {\n    if (strcmp(items[i].key, key) == 0)\n    {\n      return &items[i];\n    }\n  }\n\n  return 0;\n}\n\n",
+            "calle": [
+                "strcmp"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "items",
+                        "type": "item *",
+                        "definition": [
+                            "item *items"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "size",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t size"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t i = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "binary_search",
+            "header": "",
+            "params": [
+                "item *items",
+                "size_t size",
+                "const char *key"
+            ],
+            "definition": "item *binary_search(item *items, size_t size, const char *key)\n{\n  size_t low = 0;\n  size_t high = size;\n  while (low < high)\n  {\n    size_t mid = (low + high) / 2;\n    int c = strcmp(items[mid].key, key);\n    if (c == 0)\n    {\n      return &items[mid];\n    }\n    if (c < 0)\n    {\n      low = mid + 1;\n    }\n    else\n    {\n      high = mid;\n    }\n  }\n\n  if ((low < size) && (strcmp(items[low].key, key) == 0))\n  {\n    return &items[low];\n  }\n  return 0;\n}\n\n",
+            "calle": [
+                "strcmp"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "items",
+                        "type": "item *",
+                        "definition": [
+                            "item *items"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "size",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t size"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "low",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t low = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "high",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t high = size"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "mid",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t mid = (low + high) / 2"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "c",
+                        "type": "int",
+                        "definition": [
+                            "int c = strcmp(items[mid].key, key)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#perflbh",
+            "header": "",
+            "params": [
+                "int argc",
+                "char **argv"
+            ],
+            "definition": "int main(int argc, char **argv)\n{\n  int runs = 5000000;\n  for (int num_items = 1; num_items < ((sizeof(items)) / (sizeof(item))); num_items += 1)\n  {\n    printf(\"NUM ITEMS: %d\\n\", num_items);\n    clock_t start = clock();\n    for (int item_index = 0; item_index < num_items; item_index += 1)\n    {\n      char *key = items[item_index].key;\n      for (int run = 0; run < runs; run += 1)\n      {\n        found = linear_search(items, num_items, key);\n      }\n\n    }\n\n    clock_t end = clock();\n    double elapsed = (((double) (end - start)) / CLOCKS_PER_SEC) / num_items;\n    printf(\"  linear, %d runs: %.09fs\\n\", runs, elapsed);\n    start = clock();\n    for (int item_index = 0; item_index < num_items; item_index += 1)\n    {\n      char *key = items[item_index].key;\n      for (int run = 0; run < runs; run += 1)\n      {\n        found = binary_search(items, num_items, key);\n      }\n\n    }\n\n    end = clock();\n    elapsed = (((double) (end - start)) / CLOCKS_PER_SEC) / num_items;\n    printf(\"  binary, %d runs: %.09fs\\n\", runs, elapsed);\n    ht *table = ht_create();\n    if (table == 0)\n    {\n      exit_nomem();\n    }\n    for (int item_index = 0; item_index < num_items; item_index += 1)\n    {\n      int *pn = malloc(sizeof(int));\n      if (pn == 0)\n      {\n        exit_nomem();\n      }\n      *pn = items[item_index].value;\n      const char *p = ht_set(table, items[item_index].key, pn);\n      if (p == 0)\n      {\n        exit_nomem();\n      }\n    }\n\n    start = clock();\n    for (int item_index = 0; item_index < num_items; item_index += 1)\n    {\n      char *key = items[item_index].key;\n      for (int run = 0; run < runs; run += 1)\n      {\n        value = (int *) ht_get(table, key);\n      }\n\n    }\n\n    end = clock();\n    elapsed = (((double) (end - start)) / CLOCKS_PER_SEC) / num_items;\n    printf(\"  hash  , %d runs: %.09fs\\n\", runs, elapsed);\n  }\n\n}\n\n",
+            "calle": [
+                "binary_search",
+                "clock",
+                "exit_nomem",
+                "ht_create",
+                "ht_get",
+                "ht_set",
+                "linear_search",
+                "malloc",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "argc",
+                        "type": "int",
+                        "definition": [
+                            "int argc"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv",
+                        "type": "char **",
+                        "definition": [
+                            "char **argv"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "runs",
+                        "type": "int",
+                        "definition": [
+                            "int runs = 5000000"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "num_items",
+                        "type": "int",
+                        "definition": [
+                            "int num_items = 1"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "start",
+                        "type": "clock_t",
+                        "definition": [
+                            "clock_t start = clock()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "item_index",
+                        "type": "int",
+                        "definition": [
+                            "int item_index = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "char *",
+                        "definition": [
+                            "char *key = items[item_index].key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "run",
+                        "type": "int",
+                        "definition": [
+                            "int run = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "end",
+                        "type": "clock_t",
+                        "definition": [
+                            "clock_t end = clock()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "elapsed",
+                        "type": "double",
+                        "definition": [
+                            "double elapsed = (((double) (end - start)) / CLOCKS_PER_SEC) / num_items"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "table",
+                        "type": "ht *",
+                        "definition": [
+                            "ht *table = ht_create()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "pn",
+                        "type": "int *",
+                        "definition": [
+                            "int *pn = malloc(sizeof(int))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *p = ht_set(table, items[item_index].key, pn)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "items",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "found",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "value",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#perfget",
+            "header": "",
+            "params": [
+                "int argc",
+                "char **argv"
+            ],
+            "definition": "int main(int argc, char **argv)\n{\n  if (argc < 2)\n  {\n    fprintf(stderr, \"usage: perftest file\\n\");\n    return 1;\n  }\n  FILE *f = fopen(argv[1], \"rb\");\n  if (f == 0)\n  {\n    fprintf(stderr, \"can't open file: %s\\n\", argv[1]);\n    return 1;\n  }\n  fseek(f, 0, 2);\n  long size = ftell(f);\n  fseek(f, 0, 0);\n  char *contents = (char *) malloc(size + 1);\n  if (contents == 0)\n  {\n    exit_nomem();\n  }\n  size_t nread = fread(contents, 1, size, f);\n  if (((long) nread) != size)\n  {\n    fprintf(stderr, \"read %ld bytes instead of %ld\", (long) nread, size);\n    return 1;\n  }\n  fclose(f);\n  contents[size] = 0;\n  ht *counts = ht_create();\n  if (counts == 0)\n  {\n    exit_nomem();\n  }\n  for (char *p = contents; p[p_idx]; p_idx += 1)\n  {\n    while (p[p_idx] && (p[p_idx] <= ' '))\n    {\n      p_idx += 1;\n    }\n\n    char *word = p;\n    while (p[p_idx] && (p[p_idx] > ' '))\n    {\n      p_idx += 1;\n    }\n\n    if (p[p_idx] != 0)\n    {\n      p[p_idx] = 0;\n    }\n    void *value = ht_get(counts, word);\n    if (value != 0)\n    {\n      int *pcount = (int *) value;\n      *pcount += 1;\n      continue;\n    }\n    int *pcount = malloc(sizeof(int));\n    if (pcount == 0)\n    {\n      exit_nomem();\n    }\n    *pcount = 1;\n    if (ht_set(counts, word, pcount) == 0)\n    {\n      exit_nomem();\n    }\n  }\n\n  unsigned int p_idx = 0;\n  const char **keys = malloc(ht_length(counts) * (sizeof(char *)));\n  if (keys == 0)\n  {\n    exit_nomem();\n  }\n  hti it = ht_iterator(counts);\n  int i = 0;\n  while (ht_next(&it))\n  {\n    keys[i] = it.key;\n    i += 1;\n  }\n\n  int runs = 10;\n  clock_t start = clock();\n  for (int run = 0; run < runs; run += 1)\n  {\n    for (int i = 0; i < ht_length(counts); i += 1)\n    {\n      found = ht_get(counts, keys[i]);\n    }\n\n  }\n\n  clock_t end = clock();\n  double elapsed_ms = (((double) (end - start)) / CLOCKS_PER_SEC) * 1000;\n  printf(\"%d runs getting %lu keys: %.03fms\\n\", runs, ht_length(counts), elapsed_ms);\n  return 0;\n}\n\n",
+            "calle": [
+                "clock",
+                "exit_nomem",
+                "fclose",
+                "fopen",
+                "fprintf",
+                "fread",
+                "fseek",
+                "ftell",
+                "ht_create",
+                "ht_get",
+                "ht_iterator",
+                "ht_length",
+                "ht_next",
+                "ht_set",
+                "malloc",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "argc",
+                        "type": "int",
+                        "definition": [
+                            "int argc"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv",
+                        "type": "char **",
+                        "definition": [
+                            "char **argv"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "f",
+                        "type": "FILE *",
+                        "definition": [
+                            "FILE *f = fopen(argv[1], \"rb\")"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "size",
+                        "type": "long",
+                        "definition": [
+                            "long size = ftell(f)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "contents",
+                        "type": "char *",
+                        "definition": [
+                            "char *contents = (char *) malloc(size + 1)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "nread",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t nread = fread(contents, 1, size, f)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "counts",
+                        "type": "ht *",
+                        "definition": [
+                            "ht *counts = ht_create()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "char *",
+                        "definition": [
+                            "char *p = contents"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "word",
+                        "type": "char *",
+                        "definition": [
+                            "char *word = p"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "value",
+                        "type": "void *",
+                        "definition": [
+                            "void *value = ht_get(counts, word)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "pcount",
+                        "type": "int *",
+                        "definition": [
+                            "int *pcount = (int *) value",
+                            "int *pcount = malloc(sizeof(int))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "keys",
+                        "type": "const char **",
+                        "definition": [
+                            "const char **keys = malloc(ht_length(counts) * (sizeof(char *)))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "it",
+                        "type": "hti",
+                        "definition": [
+                            "hti it = ht_iterator(counts)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "runs",
+                        "type": "int",
+                        "definition": [
+                            "int runs = 10"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "start",
+                        "type": "clock_t",
+                        "definition": [
+                            "clock_t start = clock()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "run",
+                        "type": "int",
+                        "definition": [
+                            "int run = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "end",
+                        "type": "clock_t",
+                        "definition": [
+                            "clock_t end = clock()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "elapsed_ms",
+                        "type": "double",
+                        "definition": [
+                            "double elapsed_ms = (((double) (end - start)) / CLOCKS_PER_SEC) * 1000"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "found",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#lsearch",
+            "header": "",
+            "params": [
+                "void"
+            ],
+            "definition": "int main(void)\n{\n  item items[] = {{\"foo\", 10}, {\"bar\", 42}, {\"bazz\", 36}, {\"buzz\", 7}, {\"bob\", 11}, {\"jane\", 100}, {\"x\", 200}};\n  size_t num_items = (sizeof(items)) / (sizeof(item));\n  item *found = linear_search(items, num_items, \"bob\");\n  if (found == 0)\n  {\n    return 1;\n  }\n  printf(\"linear_search: value of 'bob' is %d\\n\", found->value);\n  return 0;\n}\n\n",
+            "calle": [
+                "linear_search",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": null,
+                        "type": "void",
+                        "definition": [
+                            "void"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "items",
+                        "type": "item []",
+                        "definition": [
+                            "item items[] = {{\"foo\", 10}, {\"bar\", 42}, {\"bazz\", 36}, {\"buzz\", 7}, {\"bob\", 11}, {\"jane\", 100}, {\"x\", 200}}"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "num_items",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t num_items = (sizeof(items)) / (sizeof(item))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "found",
+                        "type": "item *",
+                        "definition": [
+                            "item *found = linear_search(items, num_items, \"bob\")"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#dump",
+            "header": "",
+            "params": [
+                "void"
+            ],
+            "definition": "int main(void)\n{\n  item items[] = {{\"foo\", 10}, {\"bar\", 42}, {\"bazz\", 36}, {\"buzz\", 7}, {\"bob\", 11}, {\"jane\", 100}, {\"x\", 200}};\n  size_t num_items = (sizeof(items)) / (sizeof(item));\n  ht *table = ht_create();\n  if (table == 0)\n  {\n    exit_nomem();\n  }\n  for (int i = 0; i < num_items; i += 1)\n  {\n    if (ht_set(table, items[i].key, &items[i].value) == 0)\n    {\n      exit_nomem();\n    }\n  }\n\n  for (int i = 0; i < table->capacity; i += 1)\n  {\n    if (table->entries[i].key != 0)\n    {\n      printf(\"index %d: key %s, value %d\\n\", i, table->entries[i].key, *((int *) table->entries[i].value));\n    }\n    else\n    {\n      printf(\"index %d: empty\\n\", i);\n    }\n  }\n\n  return 0;\n}\n\n",
+            "calle": [
+                "exit_nomem",
+                "ht_create",
+                "ht_set",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": null,
+                        "type": "void",
+                        "definition": [
+                            "void"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "items",
+                        "type": "item []",
+                        "definition": [
+                            "item items[] = {{\"foo\", 10}, {\"bar\", 42}, {\"bazz\", 36}, {\"buzz\", 7}, {\"bob\", 11}, {\"jane\", 100}, {\"x\", 200}}"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "num_items",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t num_items = (sizeof(items)) / (sizeof(item))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "table",
+                        "type": "ht *",
+                        "definition": [
+                            "ht *table = ht_create()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#demo",
+            "header": "",
+            "params": [
+                "void"
+            ],
+            "definition": "int main(void)\n{\n  ht *counts = ht_create();\n  if (counts == 0)\n  {\n    exit_nomem();\n  }\n  char word[101];\n  while (scanf(\"%100s\", word) != EOF)\n  {\n    void *value = ht_get(counts, word);\n    if (value != 0)\n    {\n      int *pcount = (int *) value;\n      *pcount += 1;\n      continue;\n    }\n    int *pcount = malloc(sizeof(int));\n    if (pcount == 0)\n    {\n      exit_nomem();\n    }\n    *pcount = 1;\n    if (ht_set(counts, word, pcount) == 0)\n    {\n      exit_nomem();\n    }\n  }\n\n  hti it = ht_iterator(counts);\n  while (ht_next(&it))\n  {\n    printf(\"%s %d\\n\", it.key, *((int *) it.value));\n    free(it.value);\n  }\n\n  printf(\"%d\\n\", (int) ht_length(counts));\n  ht_destroy(counts);\n  return 0;\n}\n\n",
+            "calle": [
+                "exit_nomem",
+                "free",
+                "ht_create",
+                "ht_destroy",
+                "ht_get",
+                "ht_iterator",
+                "ht_length",
+                "ht_next",
+                "ht_set",
+                "malloc",
+                "printf",
+                "scanf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": null,
+                        "type": "void",
+                        "definition": [
+                            "void"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "counts",
+                        "type": "ht *",
+                        "definition": [
+                            "ht *counts = ht_create()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "word",
+                        "type": "char [101]",
+                        "definition": [
+                            "char word[101]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "value",
+                        "type": "void *",
+                        "definition": [
+                            "void *value = ht_get(counts, word)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "pcount",
+                        "type": "int *",
+                        "definition": [
+                            "int *pcount = (int *) value",
+                            "int *pcount = malloc(sizeof(int))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "it",
+                        "type": "hti",
+                        "definition": [
+                            "hti it = ht_iterator(counts)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "cmp",
+            "header": "",
+            "params": [
+                "const void *a",
+                "const void *b"
+            ],
+            "definition": "int cmp(const void *a, const void *b)\n{\n  item *item_a = (item *) a;\n  item *item_b = (item *) b;\n  return strcmp(item_a->key, item_b->key);\n}\n\n",
+            "calle": [
+                "strcmp"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "const void *",
+                        "definition": [
+                            "const void *a"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "b",
+                        "type": "const void *",
+                        "definition": [
+                            "const void *b"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "item_a",
+                        "type": "item *",
+                        "definition": [
+                            "item *item_a = (item *) a"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "item_b",
+                        "type": "item *",
+                        "definition": [
+                            "item *item_b = (item *) b"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#bsearch",
+            "header": "",
+            "params": [
+                "void"
+            ],
+            "definition": "int main(void)\n{\n  item items[] = {{\"bar\", 42}, {\"bazz\", 36}, {\"bob\", 11}, {\"buzz\", 7}, {\"foo\", 10}, {\"jane\", 100}, {\"x\", 200}};\n  size_t num_items = (sizeof(items)) / (sizeof(item));\n  item key = {\"bob\", 0};\n  item *found = bsearch(&key, items, num_items, sizeof(item), cmp);\n  unsigned int found_idx = 0;\n  if ((&found[found_idx]) == 0)\n  {\n    return 1;\n  }\n  printf(\"bsearch: value of 'bob' is %d\\n\", found->value);\n  found_idx = binary_search(items, num_items, \"bob\");\n  if ((&found[found_idx]) == 0)\n  {\n    return 1;\n  }\n  printf(\"binary_search: value of 'bob' is %d\\n\", found->value);\n  return 0;\n}\n\n",
+            "calle": [
+                "binary_search",
+                "bsearch",
+                "cmp",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": null,
+                        "type": "void",
+                        "definition": [
+                            "void"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "items",
+                        "type": "item []",
+                        "definition": [
+                            "item items[] = {{\"bar\", 42}, {\"bazz\", 36}, {\"bob\", 11}, {\"buzz\", 7}, {\"foo\", 10}, {\"jane\", 100}, {\"x\", 200}}"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "num_items",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t num_items = (sizeof(items)) / (sizeof(item))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "item",
+                        "definition": [
+                            "item key = {\"bob\", 0}"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "found",
+                        "type": "item *",
+                        "definition": [
+                            "item *found = bsearch(&key, items, num_items, sizeof(item), cmp)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "found_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int found_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        }
+    ],
+    "typedefs": []
+}

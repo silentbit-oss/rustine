@@ -1,0 +1,6 @@
+#include <assert.h>
+#include <decay.c>
+#include <indicators.h>
+#include <math.h>
+#include <stdlib.h>
+#include <string.h>

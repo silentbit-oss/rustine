@@ -1,0 +1,2452 @@
+{
+  "Rust": {
+    "blanks": 3,
+    "children": {},
+    "code": 195110,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/tmux/others/c2rust/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 150,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_set_buffer.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1072,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_run_shell.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1194,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/colour.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 603,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_list_clients.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1018,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/compat/fgetln.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 107,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/compat/getprogname.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 8,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/compat/strtonum.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 83,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_bind_key.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 993,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/compat/getopt.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 159,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/compat/imsg_buffer.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 440,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/compat/fdforkpty.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 48,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/compat/imsg.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 571,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/server.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1955,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_lock_server.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1037,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_resize_pane.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1178,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/window_copy.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 4715,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/attributes.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 176,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_unbind_key.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1007,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/utf8.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 660,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_refresh_client.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1003,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_list_windows.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1040,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/tty.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 3833,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/layout_custom.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1324,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/window_buffer.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1610,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/names.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1176,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_kill_window.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1021,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_pipe_pane.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1256,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/variadic.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 2074,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/tmux.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1083,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_respawn_pane.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1074,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/compat/unvis.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 275,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/format.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 4680,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/compat/recallocarray.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 92,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/compat/freezero.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 17,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/compat/getdtablecount.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 73,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/compat/fparseln.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 239,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/compat/setproctitle.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/window_tree.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 3119,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_detach_client.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1078,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/xmalloc.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 161,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_list_sessions.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1006,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/proc.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 886,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/screen.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 563,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/server_client.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 3862,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/compat/vis.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1100,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1702,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_join_pane.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1158,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/grid_view.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 403,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_source_file.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1089,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_swap_window.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1035,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_display_message.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1015,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_set_environment.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1026,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/arguments.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 816,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_save_buffer.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1184,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_attach_session.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1186,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_break_pane.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1087,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/xchecks/xchecks.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 53,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_find_window.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1041,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_list_panes.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1062,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/log.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 200,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_set_option.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1740,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_switch_client.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1089,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_list_buffers.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 975,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/server_fn.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1821,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/hooks.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1554,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_select_window.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1145,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_select_pane.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1182,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/style.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 311,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_paste_buffer.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1045,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/window_client.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1630,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_show_messages.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1311,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_command_prompt.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1216,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_show_options.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1229,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/environ.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1725,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_new_window.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1159,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/xterm_keys.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 693,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_send_keys.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1193,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_string.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1527,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/alerts.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1570,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_respawn_window.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1100,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/tty_acs.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1410,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/window.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 5385,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_kill_pane.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 970,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_new_session.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1642,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/control_notify.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1231,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/layout_set.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1661,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/notify.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1395,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/options_table.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 2060,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_copy_mode.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1044,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_swap_pane.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1068,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/paste.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1374,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_rotate_window.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1060,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_list_keys.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1206,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_load_buffer.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1214,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_rename_window.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 988,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/mode_tree.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 2429,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/tty_keys.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 4017,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_kill_server.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 977,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/session.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 3133,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_display_panes.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1106,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_queue.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1412,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/job.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1248,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_kill_session.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1003,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_wait_for.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1760,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_show_environment.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1097,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/options.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 2425,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_rename_session.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1013,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/client.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 2452,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_if_shell.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1202,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_move_window.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1085,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_choose_tree.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1047,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/control.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1024,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_find.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 2687,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_confirm_before.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1115,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cfg.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1502,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/grid.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1915,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_list.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1084,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/layout.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 2104,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/window_clock.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1842,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_set_hook.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1103,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_split_window.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1285,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_select_layout.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1108,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/osdep_linux.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 171,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/input.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 6013,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/input_keys.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1958,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/cmd_capture_pane.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1301,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/screen_write.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 3443,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/resize.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1126,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/screen_redraw.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1958,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/key_string.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1269,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/tty_term.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 2444,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/key_bindings.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 2652,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tmux/others/c2rust/src/status.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 14794,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/tmux/others/c2rust/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 150,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_set_buffer.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1072,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_run_shell.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1194,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/colour.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 603,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_list_clients.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1018,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/compat/fgetln.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 107,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/compat/getprogname.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 8,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/compat/strtonum.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 83,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_bind_key.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 993,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/compat/getopt.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 159,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/compat/imsg_buffer.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 440,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/compat/fdforkpty.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 48,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/compat/imsg.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 571,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/server.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1955,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_lock_server.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1037,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_resize_pane.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1178,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/window_copy.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 4715,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/attributes.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 176,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_unbind_key.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1007,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/utf8.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 660,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_refresh_client.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1003,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_list_windows.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1040,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/tty.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 3833,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/layout_custom.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1324,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/window_buffer.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1610,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/names.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1176,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_kill_window.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1021,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_pipe_pane.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1256,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/variadic.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 2074,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/tmux.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1083,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_respawn_pane.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1074,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/compat/unvis.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 275,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/format.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 4680,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/compat/recallocarray.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 92,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/compat/freezero.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 17,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/compat/getdtablecount.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 73,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/compat/fparseln.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 239,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/compat/setproctitle.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/window_tree.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 3119,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_detach_client.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1078,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/xmalloc.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 161,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_list_sessions.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1006,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/proc.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 886,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/screen.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 563,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/server_client.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 3862,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/compat/vis.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1100,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1702,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_join_pane.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1158,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/grid_view.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 403,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_source_file.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1089,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_swap_window.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1035,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_display_message.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1015,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_set_environment.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1026,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/arguments.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 816,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_save_buffer.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1184,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_attach_session.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1186,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_break_pane.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1087,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/xchecks/xchecks.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 53,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_find_window.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1041,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_list_panes.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1062,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/log.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 200,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_set_option.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1740,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_switch_client.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1089,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_list_buffers.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 975,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/server_fn.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1821,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/hooks.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1554,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_select_window.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1145,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_select_pane.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1182,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/style.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 311,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_paste_buffer.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1045,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/window_client.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1630,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_show_messages.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1311,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_command_prompt.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1216,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_show_options.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1229,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/environ.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1725,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_new_window.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1159,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/xterm_keys.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 693,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_send_keys.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1193,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_string.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1527,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/alerts.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1570,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_respawn_window.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1100,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/tty_acs.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1410,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/window.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 5385,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_kill_pane.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 970,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_new_session.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1642,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/control_notify.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1231,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/layout_set.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1661,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/notify.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1395,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/options_table.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 2060,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_copy_mode.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1044,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_swap_pane.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1068,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/paste.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1374,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_rotate_window.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1060,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_list_keys.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1206,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_load_buffer.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1214,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_rename_window.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 988,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/mode_tree.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 2429,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/tty_keys.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 4017,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_kill_server.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 977,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/session.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 3133,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_display_panes.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1106,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_queue.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1412,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/job.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1248,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_kill_session.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1003,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_wait_for.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1760,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_show_environment.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1097,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/options.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 2425,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_rename_session.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1013,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/client.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 2452,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_if_shell.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1202,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_move_window.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1085,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_choose_tree.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1047,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/control.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1024,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_find.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 2687,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_confirm_before.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1115,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cfg.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1502,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/grid.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1915,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_list.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1084,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/layout.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 2104,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/window_clock.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1842,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_set_hook.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1103,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_split_window.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1285,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_select_layout.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1108,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/osdep_linux.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 171,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/input.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 6013,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/input_keys.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1958,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/cmd_capture_pane.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1301,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/screen_write.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 3443,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/resize.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1126,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/screen_redraw.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1958,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/key_string.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1269,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/tty_term.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 2444,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/key_bindings.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 2652,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tmux/others/c2rust/src/status.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 14794,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 195110,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

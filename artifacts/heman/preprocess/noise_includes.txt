@@ -1,0 +1,7 @@
+#include <errno.h>
+#include <math.h>
+#include <noise.c>
+#include <noise.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>

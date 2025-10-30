@@ -1,0 +1,490 @@
+{
+  "Rust": {
+    "blanks": 157,
+    "children": {},
+    "code": 12553,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/heman/others/crown/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/kazmath/ray3.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 62,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/kazmath/utility.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 57,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/kazmath/mat3.rs",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 563,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/kazmath/vec2.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 299,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/kazmath/vec3.rs",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 495,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/kazmath/quaternion.rs",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 654,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/src/distance.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 544,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/src/draw.rs",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 251,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/src/import.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 39,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/lib.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 45,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/src/color.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 399,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/kazmath/aabb2.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 196,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/kazmath/plane.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 248,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/src/ops.rs",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 1219,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/src/noise.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 3309,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/kazmath/vec4.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 226,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/kazmath/mat4.rs",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 1008,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/kazmath/aabb3.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 227,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/kazmath/ray2.rs",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 328,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/src/gaussian.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 82,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/src/export.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 285,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/src/image.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 216,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/src/generate.rs",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 755,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/src/points.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 590,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/crown/src/src/lighting.rs",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 450,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 157,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/heman/others/crown/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/kazmath/ray3.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 62,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/kazmath/utility.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 57,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/kazmath/mat3.rs",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 563,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/kazmath/vec2.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 299,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/kazmath/vec3.rs",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 495,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/kazmath/quaternion.rs",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 654,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/src/distance.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 544,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/src/draw.rs",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 251,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/src/import.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 39,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/lib.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 45,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/src/color.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 399,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/kazmath/aabb2.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 196,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/kazmath/plane.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 248,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/src/ops.rs",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 1219,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/src/noise.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 3309,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/kazmath/vec4.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 226,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/kazmath/mat4.rs",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 1008,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/kazmath/aabb3.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 227,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/kazmath/ray2.rs",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 328,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/src/gaussian.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 82,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/src/export.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 285,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/src/image.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 216,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/src/generate.rs",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 755,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/src/points.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 590,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/crown/src/src/lighting.rs",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 450,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 12553,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

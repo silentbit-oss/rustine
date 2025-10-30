@@ -1,0 +1,2356 @@
+warning: `if` expression with an `else if`, but without a final `else`
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: missing documentation for the crate
+warning: incorrect ordering of items (module item groupings specify another order)
+warning: used import from `std` instead of `alloc`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `alloc`
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: this ident consists of a single char
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `#[inline]` for a function
+warning: default numeric fallback might occur
+warning: missing `#[inline]` for a function
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: integer division
+warning: use of / has been disallowed in this context
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `#[inline]` for a function
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: used `expect()` on an `Option` value
+warning: used `expect()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `#[inline]` for a function
+warning: unsafe block missing a safety comment
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: use of `eprintln!`
+warning: usage of `process::exit`
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `#[inline]` for a function
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: unsafe block missing a safety comment
+warning: this `unsafe` block contains 34 unsafe operations, expected only one
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: integer division
+warning: use of / has been disallowed in this context
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: integer division
+warning: use of / has been disallowed in this context
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: integer division
+warning: use of / has been disallowed in this context
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: integer division
+warning: use of / has been disallowed in this context
+warning: `new_width` is shadowed
+warning: `new_height` is shadowed
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: missing `#[inline]` for a function
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: this ident consists of a single char
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: this ident consists of a single char
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: integer division
+warning: use of / has been disallowed in this context
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: missing `#[inline]` for a function
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: this ident consists of a single char
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: this ident consists of a single char
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: unsafe block missing a safety comment
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: integer division
+warning: use of / has been disallowed in this context
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider moving the `;` outside the block for consistent formatting
+warning: unsafe block missing a safety comment
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: consider moving the `;` outside the block for consistent formatting
+warning: unsafe block missing a safety comment
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: missing `#[inline]` for a function
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: this ident consists of a single char
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: this ident consists of a single char
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: unsafe block missing a safety comment
+warning: this `unsafe` block contains 3 unsafe operations, expected only one
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: unsafe block missing a safety comment
+warning: this `unsafe` block contains 3 unsafe operations, expected only one
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: unsafe block missing a safety comment
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: integer division
+warning: use of / has been disallowed in this context
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: `p2step` shadows a previous, unrelated binding
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: `i` shadows a previous, unrelated binding
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: `mut k` shadows a previous, unrelated binding
+warning: this ident consists of a single char
+warning: slicing may panic
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: slicing may panic
+warning: this ident consists of a single char
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: missing `#[inline]` for a function
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: consider moving the `;` outside the block for consistent formatting
+warning: unsafe block missing a safety comment
+warning: this `unsafe` block contains 3 unsafe operations, expected only one
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: unsafe block missing a safety comment
+warning: this `unsafe` block contains 7 unsafe operations, expected only one
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: unsafe block missing a safety comment
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: unsafe block missing a safety comment
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: unsafe block missing a safety comment
+warning: consider moving the `;` outside the block for consistent formatting
+warning: unsafe block missing a safety comment
+warning: this `unsafe` block contains 7 unsafe operations, expected only one
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: this `unsafe` block contains 5 unsafe operations, expected only one
+warning: unsafe block missing a safety comment
+warning: this `unsafe` block contains 3 unsafe operations, expected only one
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: unsafe block missing a safety comment
+warning: this `unsafe` block contains 7 unsafe operations, expected only one
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: unsafe block missing a safety comment
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: unsafe block missing a safety comment
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: unsafe block missing a safety comment
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider moving the `;` outside the block for consistent formatting
+warning: unsafe block missing a safety comment
+warning: this `unsafe` block contains 4 unsafe operations, expected only one
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: missing documentation for a function
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: usage of `process::exit`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: integer division
+warning: use of / has been disallowed in this context
+warning: using a potentially dangerous silent `as` conversion
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: usage of `process::exit`
+warning: consider bringing this path into scope with the `use` keyword
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: unsafe block missing a safety comment
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: unsafe block missing a safety comment
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: unsafe block missing a safety comment
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: unsafe block missing a safety comment
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: missing `#[inline]` for a function
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `return` statement
+warning: used `expect()` on a `Result` value
+warning: consider bringing this path into scope with the `use` keyword
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: usage of `process::exit`
+warning: using a potentially dangerous silent `as` conversion
+warning: unsafe block missing a safety comment
+warning: this function is only used once

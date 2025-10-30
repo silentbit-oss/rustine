@@ -1,0 +1,55 @@
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: casting the result of `as_ptr` to *mut ()
+warning: casting the result of `as_ptr` to *mut u8
+warning: casting the result of `as_ptr` to *mut u8
+warning: casting the result of `as_ptr` to *mut u8
+warning: casting the result of `as_ptr` to *mut u8
+warning: casting the result of `as_ptr` to *mut u8
+warning: casting the result of `as_ptr` to *mut u8
+warning: collection is never read
+warning: collection is never read
+warning: some fields in `BinnStruct` are not safe to be sent to another thread
+warning: some fields in `FreeFnWrapper` are not safe to be sent to another thread
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: the function has a cognitive complexity of (128/25)
+warning: the function has a cognitive complexity of (136/25)
+warning: the function has a cognitive complexity of (201/25)
+warning: the function has a cognitive complexity of (27/25)
+warning: the function has a cognitive complexity of (40/25)
+warning: the function has a cognitive complexity of (42/25)
+warning: the function has a cognitive complexity of (45/25)
+warning: the function has a cognitive complexity of (49/25)
+warning: the function has a cognitive complexity of (63/25)
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: unused return value of `std::boxed::Box::<T, A>::into_raw` that must be used
+warning: unused return value of `std::boxed::Box::<T, A>::into_raw` that must be used
+warning: unused return value of `std::boxed::Box::<T>::from_raw` that must be used
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else

@@ -1,0 +1,164 @@
+{
+    "swap": {
+        "source_code": "void swap(int *a, int *b)\n{\n  int t = *a;\n  *a = *b;\n  *b = t;\n}\n\n",
+        "translated_code": "pub fn swap(a: &mut i32, b: &mut i32) {\n    let t = *a;\n    *a = *b;\n    *b = t;\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "qsort.rs",
+        "error": "",
+        "dependent": [],
+        "header": "void swap(int *a, int *b)",
+        "params": [
+            "int *a",
+            "int *b"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "a",
+            "b",
+            "t"
+        ],
+        "calle": [],
+        "calle_c": [],
+        "key": "swap",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "partition": {
+        "source_code": "int partition(int arr[], int low, int high)\n{\n  int pivot = arr[high];\n  int i = low - 1;\n  for (int j = low; j <= (high - 1); j += 1)\n  {\n    if (arr[j] <= pivot)\n    {\n      i += 1;\n      swap(&arr[i], &arr[j]);\n    }\n  }\n\n  swap(&arr[i + 1], &arr[high]);\n  return i + 1;\n}\n\n",
+        "translated_code": "pub fn partition(arr: &mut [i32], low: usize, high: usize) -> usize {\n    let pivot = arr[high];\n    let mut i = low as i32 - 1;\n\n    for j in low..high {\n        if arr[j] <= pivot {\n            i += 1;\n            // Use separate scopes to avoid overlapping mutable borrows\n            {\n                let (a, b) = arr.split_at_mut(j);\n                swap(&mut a[i as usize], &mut b[0]);\n            }\n        }\n    }\n\n    let final_pos = (i + 1) as usize;\n    {\n        let (a, b) = arr.split_at_mut(high);\n        swap(&mut a[final_pos], &mut b[0]);\n    }\n\n    final_pos\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "qsort.rs",
+        "error": "",
+        "dependent": [
+            "swap"
+        ],
+        "header": "int partition(int arr[], int low, int high)",
+        "params": [
+            "int arr[]",
+            "int low",
+            "int high"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "arr",
+            "low",
+            "high",
+            "pivot",
+            "i",
+            "j"
+        ],
+        "calle": [
+            "swap"
+        ],
+        "calle_c": [],
+        "key": "partition",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "quickSort": {
+        "source_code": "void quickSort(int arr[], int low, int high)\n{\n  if (low < high)\n  {\n    int i = partition(arr, low, high);\n    quickSort(arr, low, i - 1);\n    quickSort(arr, i + 1, high);\n  }\n}\n\n",
+        "translated_code": "pub fn quickSort(arr: &mut [i32], low: usize, high: usize) {\n    if low < high {\n        let i = partition(arr, low, high);\n        quickSort(arr, low, i.saturating_sub(1)); // Use saturating_sub to prevent underflow\n        quickSort(arr, i + 1, high);\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "qsort.rs",
+        "error": "",
+        "dependent": [
+            "partition"
+        ],
+        "header": "void quickSort(int arr[], int low, int high)",
+        "params": [
+            "int arr[]",
+            "int low",
+            "int high"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "arr",
+            "low",
+            "high",
+            "i"
+        ],
+        "calle": [
+            "quickSort",
+            "partition"
+        ],
+        "calle_c": [],
+        "key": "quickSort",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_quickSort": {
+        "source_code": "void test_quickSort()\n{\n  int arr1[] = {12, 11, 13, 5, 6, 7};\n  int expected1[] = {5, 6, 7, 11, 12, 13};\n  int n1 = (sizeof(arr1)) / (sizeof(arr1[0]));\n  quickSort(arr1, 0, n1 - 1);\n  for (int i = 0; i < n1; i += 1)\n  {\n    assert(arr1[i] == expected1[i]);\n  }\n\n  int arr2[] = {3, 3, 3, 3, 3, 3};\n  int expected2[] = {3, 3, 3, 3, 3, 3};\n  int n2 = (sizeof(arr2)) / (sizeof(arr2[0]));\n  quickSort(arr2, 0, n2 - 1);\n  for (int i = 0; i < n2; i += 1)\n  {\n    assert(arr2[i] == expected2[i]);\n  }\n\n  int arr3[] = {1, 2, 3, 4, 5, 6};\n  int expected3[] = {1, 2, 3, 4, 5, 6};\n  int n3 = (sizeof(arr3)) / (sizeof(arr3[0]));\n  quickSort(arr3, 0, n3 - 1);\n  for (int i = 0; i < n3; i += 1)\n  {\n    assert(arr3[i] == expected3[i]);\n  }\n\n  int arr4[] = {42};\n  int expected4[] = {42};\n  int n4 = (sizeof(arr4)) / (sizeof(arr4[0]));\n  quickSort(arr4, 0, n4 - 1);\n  assert(arr4[0] == expected4[0]);\n  int arr5[] = {};\n  int n5 = (sizeof(arr5)) / (sizeof(arr5[0]));\n  quickSort(arr5, 0, n5 - 1);\n  assert(n5 == 0);\n}\n\n",
+        "translated_code": "pub fn test_quickSort() {\n    let mut arr1 = [12, 11, 13, 5, 6, 7];\n    let expected1 = [5, 6, 7, 11, 12, 13];\n    let n1 = arr1.len();\n    quickSort(&mut arr1, 0, n1 - 1);\n    for i in 0..n1 {\n        assert_eq!(arr1[i], expected1[i]);\n    }\n\n    let mut arr2 = [3, 3, 3, 3, 3, 3];\n    let expected2 = [3, 3, 3, 3, 3, 3];\n    let n2 = arr2.len();\n    quickSort(&mut arr2, 0, n2 - 1);\n    for i in 0..n2 {\n        assert_eq!(arr2[i], expected2[i]);\n    }\n\n    let mut arr3 = [1, 2, 3, 4, 5, 6];\n    let expected3 = [1, 2, 3, 4, 5, 6];\n    let n3 = arr3.len();\n    quickSort(&mut arr3, 0, n3 - 1);\n    for i in 0..n3 {\n        assert_eq!(arr3[i], expected3[i]);\n    }\n\n    let mut arr4 = [42];\n    let expected4 = [42];\n    let n4 = arr4.len();\n    quickSort(&mut arr4, 0, n4 - 1);\n    assert_eq!(arr4[0], expected4[0]);\n\n    let arr5: [i32; 0] = [];\n    let n5 = arr5.len();\n    quickSort(&mut [], 0, n5.saturating_sub(1));\n    assert_eq!(n5, 0);\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "quickSort"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "arr1",
+            "expected1",
+            "n1",
+            "i",
+            "arr2",
+            "expected2",
+            "n2",
+            "arr3",
+            "expected3",
+            "n3",
+            "arr4",
+            "expected4",
+            "n4",
+            "arr5",
+            "n5"
+        ],
+        "calle": [
+            "assert",
+            "quickSort"
+        ],
+        "calle_c": [
+            "assert"
+        ],
+        "key": "test_quickSort",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "main#test": {
+        "source_code": "int main()\n{\n  test_quickSort();\n  printf(\"All tests passed successfully!\\n\");\n  return 0;\n}\n\n",
+        "translated_code": "pub fn main() {\n    test_quickSort();\n    println!(\"All tests passed successfully!\");\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "test_quickSort"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [],
+        "calle": [
+            "test_quickSort",
+            "printf"
+        ],
+        "calle_c": [
+            "printf"
+        ],
+        "key": "main#test",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    }
+}

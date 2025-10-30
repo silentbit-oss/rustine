@@ -1,0 +1,637 @@
+warning: the feature `label_break_value` has been stable since 1.65.0 and no longer requires an attribute to enable
+warning: unused variable: `byte`
+warning: unused variable: `f1`
+warning: unused variable: `d1`
+warning: unused variable: `pstr`
+warning: unused variable: `dest_type`
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: unneeded `return` statement
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: this OR pattern can be rewritten using a range
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: this `if` statement can be collapsed
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: statement with no effect
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: statement with no effect
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: statement with no effect
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: statement with no effect
+warning: wildcard pattern covers any other pattern as it will match anyway
+warning: statement with no effect
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: this OR pattern can be rewritten using a range
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: `0 as *const _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: `0 as *const _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: statement with no effect
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: statement with no effect
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: `0 as *const _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: `0 as *const _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: `0 as *const _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: this OR pattern can be rewritten using a range
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: this OR pattern can be rewritten using a range
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: this OR pattern can be rewritten using a range
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: wildcard pattern covers any other pattern as it will match anyway
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: `0 as *const _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: `0 as *const _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: `0 as *const _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: `0 as *const _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: `0 as *const _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: `0 as *const _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: unneeded `return` statement
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: this OR pattern can be rewritten using a range
+warning: path statement with no effect
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: function pointer comparisons do not produce meaningful results since their addresses are not guaranteed to be unique
+warning: path statement with no effect
+warning: function pointer comparisons do not produce meaningful results since their addresses are not guaranteed to be unique
+warning: function pointer comparisons do not produce meaningful results since their addresses are not guaranteed to be unique
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect

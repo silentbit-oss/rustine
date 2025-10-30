@@ -1,0 +1,16 @@
+warning: unused import: `crate::*`
+warning: type `Ht_Entry` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: unused variable: `p_idx`
+warning: unused variable: `entry`
+warning: unused variable: `table`
+warning: local variable doesn't need to be boxed here
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this loop could be written as a `while let` loop
+warning: replacing an `Option` with `None`
+warning: this block may be rewritten with the `?` operator
+warning: this `if` statement can be collapsed
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: this `match` expression can be replaced with `?`

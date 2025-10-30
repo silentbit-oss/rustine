@@ -1,0 +1,66 @@
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: type `size_t` should have an upper camel case name
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: unused import: `std::alloc::Layout`
+warning: unused import: `std::alloc::dealloc`
+warning: unused import: `std::alloc::realloc`
+warning: unused import: `std::cmp`
+warning: unused import: `std::ffi::c_void`
+warning: unreachable statement
+warning: value assigned to `vp_idx` is never read
+warning: value assigned to `entry_pos` is never read
+warning: value assigned to `pstate` is never read
+warning: value assigned to `entry_pos` is never read
+warning: value assigned to `quoted` is never read
+warning: value assigned to `spaces` is never read
+warning: value assigned to `pstate` is never read
+warning: value assigned to `entry_pos` is never read
+warning: value assigned to `quoted` is never read
+warning: value assigned to `spaces` is never read
+warning: value assigned to `pstate` is never read
+warning: value assigned to `entry_pos` is never read
+warning: value assigned to `quoted` is never read
+warning: value assigned to `spaces` is never read
+warning: value assigned to `pstate` is never read
+warning: value assigned to `entry_pos` is never read
+warning: value assigned to `quoted` is never read
+warning: value assigned to `spaces` is never read
+warning: value assigned to `pstate` is never read
+warning: value assigned to `entry_pos` is never read
+warning: value assigned to `quoted` is never read
+warning: value assigned to `spaces` is never read
+warning: value assigned to `result` is never read
+warning: comparing with null is better expressed by the `.is_null()` method
+warning: manual `!Range::contains` implementation
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: called `unwrap` on `cb1` after checking its variant with `is_some`
+warning: comparing with null is better expressed by the `.is_null()` method
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: called `unwrap` on `cb1` after checking its variant with `is_some`
+warning: called `unwrap` on `cb2` after checking its variant with `is_some`
+warning: called `unwrap` on `cb2` after checking its variant with `is_some`
+warning: called `unwrap` on `cb1` after checking its variant with `is_some`
+warning: called `unwrap` on `cb1` after checking its variant with `is_some`
+warning: called `unwrap` on `cb1` after checking its variant with `is_some`
+warning: called `unwrap` on `cb2` after checking its variant with `is_some`
+warning: called `unwrap` on `cb1` after checking its variant with `is_some`
+warning: called `unwrap` on `cb1` after checking its variant with `is_some`
+warning: called `unwrap` on `cb2` after checking its variant with `is_some`
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: variables can be used directly in the `format!` string
+warning: needlessly taken reference of both operands
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this function has too many arguments (9/7)
+warning: static variable `row` should have an upper case name
+warning: static variable `col` should have an upper case name
+warning: references are not nullable, so checking them for null will always return false
+warning: function pointer comparisons do not produce meaningful results since their addresses are not guaranteed to be unique
+warning: function pointer comparisons do not produce meaningful results since their addresses are not guaranteed to be unique
+warning: references are not nullable, so checking them for null will always return false
+warning: static variable `event_ptr` should have an upper case name

@@ -1,0 +1,7 @@
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this looks like a formatting argument but it is not part of a formatting macro
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else

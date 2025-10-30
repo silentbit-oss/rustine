@@ -1,0 +1,110 @@
+37 ~     eprintln!("{}: warning: output file(s) may be incomplete.",
+39 | |         "{}: warning: output file(s) may be incomplete.",
+warning: called `.as_mut().map(|r| &mut **r)` on an `Option` value
+warning: called `.as_ref().map(|cs| cs.as_c_str())` on an `Option` value
+warning: called `.as_ref().map(|cs| cs.as_c_str())` on an `Option` value
+warning: called `unwrap` on `root` after checking its variant with `is_none`
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut ()` -> `*mut ()`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: clamp-like pattern without using clamp function
+warning: manual implementation of `ok`
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this call to `as_ref.map(...)` does nothing
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (12/7)
+warning: this function has too many arguments (12/7)
+warning: this function has too many arguments (12/7)
+warning: this function has too many arguments (13/7)
+warning: this function has too many arguments (13/7)
+warning: this function has too many arguments (13/7)
+warning: this function has too many arguments (14/7)
+warning: this function has too many arguments (14/7)
+warning: this function has too many arguments (14/7)
+warning: this function has too many arguments (16/7)
+warning: this function has too many arguments (16/7)
+warning: this function has too many arguments (17/7)
+warning: this function has too many arguments (17/7)
+warning: this function has too many arguments (18/7)
+warning: this function has too many arguments (19/7)
+warning: this function has too many arguments (20/7)
+warning: this function has too many arguments (22/7)
+warning: this function has too many arguments (22/7)
+warning: this function has too many arguments (23/7)
+warning: this function has too many arguments (31/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (9/7)
+warning: this if-then-else expression returns a bool literal
+warning: this looks like you are swapping `tmp` and `pos[j as usize]` manually
+warning: this looks like you are swapping elements of `fmap` manually
+warning: this looks like you are swapping elements of `fmap` manually
+warning: this looks like you are swapping elements of `fmap` manually
+warning: this looks like you are swapping elements of `fmap` manually
+warning: this looks like you are swapping elements of `fmap` manually
+warning: this looks like you are swapping elements of `nextD` manually
+warning: this looks like you are swapping elements of `nextD` manually
+warning: this looks like you are swapping elements of `nextD` manually
+warning: this looks like you are swapping elements of `nextHi` manually
+warning: this looks like you are swapping elements of `nextHi` manually
+warning: this looks like you are swapping elements of `nextHi` manually
+warning: this looks like you are swapping elements of `nextLo` manually
+warning: this looks like you are swapping elements of `nextLo` manually
+warning: this looks like you are swapping elements of `nextLo` manually
+warning: this looks like you are swapping elements of `ptr` manually
+warning: this looks like you are swapping elements of `ptr` manually
+warning: this looks like you are swapping elements of `ptr` manually
+warning: this looks like you are swapping elements of `ptr` manually
+warning: this looks like you are swapping elements of `ptr` manually
+warning: this loop could be written as a `while let` loop
+warning: this operation has no effect
+warning: this operation has no effect
+warning: unnecessary `>= y + 1` or `x - 1 >=`
+warning: unnecessary `>= y + 1` or `x - 1 >=`
+warning: unnecessary `>= y + 1` or `x - 1 >=`
+warning: use of `write!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: using `Option.and_then(|x| Some(y))`, which is more succinctly expressed as `map(|x| y)`
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions

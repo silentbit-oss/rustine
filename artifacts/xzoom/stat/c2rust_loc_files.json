@@ -1,0 +1,76 @@
+{
+  "Rust": {
+    "blanks": 3,
+    "children": {},
+    "code": 2541,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/xzoom/others/c2rust/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 5,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/xzoom/others/c2rust/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/xzoom/others/c2rust/src/xzoom.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 2530,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/xzoom/others/c2rust/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 5,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/xzoom/others/c2rust/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/xzoom/others/c2rust/src/xzoom.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 2530,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 2541,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

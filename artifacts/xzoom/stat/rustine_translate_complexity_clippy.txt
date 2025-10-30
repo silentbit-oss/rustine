@@ -1,0 +1,17 @@
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut ffi::_XDisplay` -> `*mut ffi::_XDisplay`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut ffi::_XDisplay` -> `*mut ffi::_XDisplay`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut ffi::_XDisplay` -> `*mut ffi::_XDisplay`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut ffi::_XDisplay` -> `*mut ffi::_XDisplay`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut ffi::_XDisplay` -> `*mut ffi::_XDisplay`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: this function has too many arguments (13/7)
+warning: this function has too many arguments (8/7)

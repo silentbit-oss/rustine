@@ -1,0 +1,23 @@
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (12/7)
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: using `clone` on type `[u8; 6]` which implements the `Copy` trait

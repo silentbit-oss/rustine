@@ -1,0 +1,9 @@
+warning: statement with no effect
+warning: statement with no effect
+warning: statement with no effect
+warning: statement with no effect
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut *mut i8` -> `*mut *mut i8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut *mut i8` -> `*mut *mut i8`)
+warning: statement with no effect
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut *mut i8` -> `*mut *mut i8`)
+warning: statement with no effect

@@ -1,0 +1,18 @@
+{
+    "translate (lib)": {
+        "warning": 28,
+        "error": 0
+    },
+    "example2 (bin)": {
+        "warning": 2,
+        "error": 0
+    },
+    "example3 (bin)": {
+        "warning": 5,
+        "error": 0
+    },
+    "example1 (bin)": {
+        "warning": 2,
+        "error": 0
+    }
+}

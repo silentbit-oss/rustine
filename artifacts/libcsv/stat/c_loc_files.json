@@ -1,0 +1,159 @@
+{
+  "C": {
+    "blanks": 188,
+    "children": {},
+    "code": 965,
+    "comments": 148,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/libcsv/examples/csvvalid.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 51,
+          "comments": 4
+        }
+      },
+      {
+        "name": "subjects/libcsv/examples/csvfix.c",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 60,
+          "comments": 4
+        }
+      },
+      {
+        "name": "subjects/libcsv/examples/csvinfo.c",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 66,
+          "comments": 4
+        }
+      },
+      {
+        "name": "subjects/libcsv/examples/csvtest.c",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 32,
+          "comments": 4
+        }
+      },
+      {
+        "name": "subjects/libcsv/libcsv.c",
+        "stats": {
+          "blanks": 74,
+          "blobs": {},
+          "code": 405,
+          "comments": 66
+        }
+      },
+      {
+        "name": "subjects/libcsv/test_csv.c",
+        "stats": {
+          "blanks": 65,
+          "blobs": {},
+          "code": 351,
+          "comments": 66
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 12,
+    "children": {},
+    "code": 70,
+    "comments": 25,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/libcsv/csv.h",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 70,
+          "comments": 25
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 200,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/libcsv/examples/csvvalid.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 51,
+            "comments": 4
+          }
+        },
+        {
+          "name": "subjects/libcsv/examples/csvfix.c",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 60,
+            "comments": 4
+          }
+        },
+        {
+          "name": "subjects/libcsv/examples/csvinfo.c",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 66,
+            "comments": 4
+          }
+        },
+        {
+          "name": "subjects/libcsv/examples/csvtest.c",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 32,
+            "comments": 4
+          }
+        },
+        {
+          "name": "subjects/libcsv/libcsv.c",
+          "stats": {
+            "blanks": 74,
+            "blobs": {},
+            "code": 405,
+            "comments": 66
+          }
+        },
+        {
+          "name": "subjects/libcsv/test_csv.c",
+          "stats": {
+            "blanks": 65,
+            "blobs": {},
+            "code": 351,
+            "comments": 66
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/libcsv/csv.h",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 70,
+            "comments": 25
+          }
+        }
+      ]
+    },
+    "code": 1035,
+    "comments": 173,
+    "inaccurate": false,
+    "reports": []
+  }
+}

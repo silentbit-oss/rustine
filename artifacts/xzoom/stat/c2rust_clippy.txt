@@ -1,0 +1,189 @@
+warning: type `size_t` should have an upper camel case name
+warning: type `__off_t` should have an upper camel case name
+warning: type `__off64_t` should have an upper camel case name
+warning: type `__time_t` should have an upper camel case name
+warning: type `__useconds_t` should have an upper camel case name
+warning: type `__suseconds_t` should have an upper camel case name
+warning: type `_IO_lock_t` should have an upper camel case name
+warning: type `__sighandler_t` should have an upper camel case name
+warning: value assigned to `signum` is never read
+warning: value assigned to `i` is never read
+warning: value assigned to `data` is never read
+warning: value assigned to `i` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `i` is never read
+warning: value assigned to `j` is never read
+warning: value assigned to `k` is never read
+warning: value assigned to `p1` is never read
+warning: value assigned to `p2` is never read
+warning: value assigned to `p2step` is never read
+warning: value assigned to `p1_save` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `i` is never read
+warning: value assigned to `j` is never read
+warning: value assigned to `k` is never read
+warning: value assigned to `p1` is never read
+warning: value assigned to `p2` is never read
+warning: value assigned to `p2step` is never read
+warning: value assigned to `p1_save` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `i` is never read
+warning: value assigned to `j` is never read
+warning: value assigned to `k` is never read
+warning: value assigned to `p1` is never read
+warning: value assigned to `p2` is never read
+warning: value assigned to `p2step` is never read
+warning: value assigned to `p1_save` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `DT` is never read
+warning: unused variable: `buttonpressed`
+warning: variable does not need to be mutable
+warning: value assigned to `ch` is never read
+warning: value assigned to `copy_from_src_mask` is never read
+warning: unsafe function's docs are missing a `# Safety` section
+warning: self-assignment of `signum` to `signum`
+warning: unsafe function's docs are missing a `# Safety` section
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: `0 as *mut _` detected
+warning: used `expect()` on `Some` value
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: `0 as *mut _` detected
+warning: this boolean expression can be simplified
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: wildcard pattern covers any other pattern as it will match anyway
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut *mut i8` -> `*mut *mut i8`)
+warning: structure field `_IO_read_ptr` should have a snake case name
+warning: structure field `_IO_read_end` should have a snake case name
+warning: structure field `_IO_read_base` should have a snake case name
+warning: structure field `_IO_write_base` should have a snake case name
+warning: structure field `_IO_write_ptr` should have a snake case name
+warning: structure field `_IO_write_end` should have a snake case name
+warning: structure field `_IO_buf_base` should have a snake case name
+warning: structure field `_IO_buf_end` should have a snake case name
+warning: structure field `_IO_save_base` should have a snake case name
+warning: structure field `_IO_backup_base` should have a snake case name
+warning: structure field `_IO_save_end` should have a snake case name
+warning: path statement with no effect
+warning: creating a mutable reference to mutable static
+warning: path statement with no effect
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: variable `DT` should have a snake case name
+warning: path statement with no effect
+warning: path statement with no effect
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: path statement with no effect
+warning: path statement with no effect
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect

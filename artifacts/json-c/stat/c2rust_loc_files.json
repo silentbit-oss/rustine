@@ -1,0 +1,796 @@
+{
+  "Rust": {
+    "blanks": 3,
+    "children": {},
+    "code": 28567,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/json-c/others/c2rust/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 60,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_strerror.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 32,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_object_iterator.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 78,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_set_serializer.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 283,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test4.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 248,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_visit.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 263,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_json_patch.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 483,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_parse_int64.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 211,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/parse_flags.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 83,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/testReplaceExisting.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 241,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_deep_copy.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1123,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_locale.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 106,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_printbuf.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 385,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_compare.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 508,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_set_value.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1388,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test2.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 44,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_double_serializer.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 320,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_float.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 48,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_int_add.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 715,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_null.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 80,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test1.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 845,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_charcase.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 232,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_cast.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 193,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/json_util.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 475,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_util_file.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 575,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/json_patch.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 573,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/json_object_iterator.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 143,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_int_get.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 2038,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_parse.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 3627,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/debug.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 112,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/arraylist.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 363,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/linkhash.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1093,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/random_seed.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 9,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/apps/json_parse.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 609,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/json_c_version.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 10,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/printbuf.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 205,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/json_pointer.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 538,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/json_visit.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 263,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/strerror_override.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 391,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/tests/test_json_pointer.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 3949,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/json_tokener.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 2265,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/c2rust/src/json_object.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 3354,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/json-c/others/c2rust/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 60,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_strerror.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 32,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_object_iterator.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 78,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_set_serializer.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 283,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test4.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 248,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_visit.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 263,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_json_patch.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 483,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_parse_int64.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 211,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/parse_flags.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 83,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/testReplaceExisting.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 241,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_deep_copy.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1123,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_locale.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 106,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_printbuf.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 385,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_compare.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 508,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_set_value.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1388,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test2.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 44,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_double_serializer.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 320,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_float.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 48,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_int_add.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 715,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_null.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 80,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test1.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 845,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_charcase.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 232,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_cast.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 193,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/json_util.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 475,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_util_file.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 575,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/json_patch.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 573,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/json_object_iterator.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 143,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_int_get.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 2038,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_parse.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 3627,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/debug.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 112,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/arraylist.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 363,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/linkhash.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1093,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/random_seed.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 9,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/apps/json_parse.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 609,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/json_c_version.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 10,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/printbuf.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 205,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/json_pointer.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 538,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/json_visit.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 263,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/strerror_override.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 391,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/tests/test_json_pointer.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 3949,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/json_tokener.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 2265,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/c2rust/src/json_object.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 3354,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 28567,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

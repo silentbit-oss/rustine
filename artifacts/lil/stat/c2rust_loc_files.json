@@ -1,0 +1,94 @@
+{
+  "Rust": {
+    "blanks": 3,
+    "children": {},
+    "code": 6202,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/lil/others/c2rust/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 13,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/lil/others/c2rust/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/lil/others/c2rust/src/main.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 449,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/lil/others/c2rust/src/lil.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 5734,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/lil/others/c2rust/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 13,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/lil/others/c2rust/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/lil/others/c2rust/src/main.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 449,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/lil/others/c2rust/src/lil.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 5734,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 6202,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,200 @@
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: `if _ { .. } else { .. }` is an expression
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: all if blocks contain the same code at the end
+warning: this could be a `const fn`
+warning: `if _ { .. } else { .. }` is an expression
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: `if _ { .. } else { .. }` is an expression
+warning: the function has a cognitive complexity of (59/25)
+warning: the function has a cognitive complexity of (70/25)
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: the function has a cognitive complexity of (51/25)
+warning: the function has a cognitive complexity of (51/25)
+warning: the function has a cognitive complexity of (51/25)
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: all if blocks contain the same code at the start
+warning: this could be a `const fn`
+warning: the function has a cognitive complexity of (26/25)
+warning: all if blocks contain the same code at the start
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: all if blocks contain the same code at the end
+warning: the function has a cognitive complexity of (27/25)
+warning: all if blocks contain the same code at the end
+warning: the function has a cognitive complexity of (28/25)
+warning: this could be a `const fn`
+warning: all if blocks contain the same code at the end
+warning: `if _ { .. } else { .. }` is an expression
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: the function has a cognitive complexity of (29/25)
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: all if blocks contain the same code at the end
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: the function has a cognitive complexity of (27/25)
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: the function has a cognitive complexity of (173/25)
+warning: the function has a cognitive complexity of (61/25)
+warning: this could be a `const fn`
+warning: all if blocks contain the same code at the end

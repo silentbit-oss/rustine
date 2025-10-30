@@ -1,0 +1,5 @@
+{
+    "test": {
+        "output": "GENANN TEST SUITE\n\tbasic         /c2rust/subjects/genann/test.c:44 (0.5 != 0)\n/c2rust/subjects/genann/test.c:47 (0.5 != 0)\n/c2rust/subjects/genann/test.c:50 (0.5 != 0)\n/c2rust/subjects/genann/test.c:55 (0.5 != 0)\n/c2rust/subjects/genann/test.c:60 (1 != 0)\npass: 2   fail: 5      0ms\n\txor           /c2rust/subjects/genann/test.c:95 (1 != 0)\n/c2rust/subjects/genann/test.c:95 (1 != 0)\npass: 3   fail: 2      0ms\n\tbackprop      /c2rust/subjects/genann/test.c:114 error\npass: 0   fail: 1      0ms\n\ttrain and     /c2rust/subjects/genann/test.c:138 (1 != 0)\npass: 3   fail: 1      0ms\n\ttrain or      /c2rust/subjects/genann/test.c:161 (1 != 0)\n/c2rust/subjects/genann/test.c:162 (1 != 0)\n/c2rust/subjects/genann/test.c:163 (1 != 0)\npass: 1   fail: 3      0ms\n\ttrain xor     pass: 4   fail: 0      2ms\n\tpersist       /c2rust/subjects/genann/test.c:212 (60760 != 0)\npass: 4   fail: 1   18259ms\n\tcopy          pass:60765   fail: 0     61ms\n\tsigmoid       pass:400001   fail: 0      2ms\nSOME TESTS FAILED (460783 / 460796)"
+    }
+}

@@ -1,0 +1,870 @@
+warning: unused import: `crate::*`
+warning: type `heman_byte` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: `_GAMMA` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: unused import: `rand::Rng`
+warning: unused import: `std::f32::consts::E`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `rand::Rng`
+warning: unused import: `rand::Rng`
+warning: unused import: `std::cmp::max`
+warning: unused import: `std::cmp::min`
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unused import: `crate::*`
+warning: unused import: `std::f32::consts::SQRT_2`
+warning: unused import: `libm::sqrtf`
+warning: unused import: `std::sync::Arc`
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `rand::Rng`
+warning: unused import: `std::f32::consts::SQRT_2`
+warning: unused import: `std::sync::Arc`
+warning: unnecessary parentheses around block return value
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `rand::Rng`
+warning: unused import: `std::f32::consts::PI`
+warning: unused import: `std::f32::consts::PI`
+warning: unused import: `std::f32::consts::SQRT_2`
+warning: unused import: `libm::sqrtf`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::f32::consts::SQRT_2`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `rand::Rng`
+warning: unused import: `std::f32::consts::PI`
+warning: unused import: `std::f32::consts::PI`
+warning: unnecessary parentheses around block return value
+warning: unused import: `rand::Rng`
+warning: unused import: `rand::Rng`
+warning: unused import: `rand::Rng`
+warning: unused import: `rayon::iter::IntoParallelIterator`
+warning: unused import: `rand::Rng`
+warning: unused import: `rand::Rng`
+warning: unused variable: `ctx`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `rng`
+warning: variable does not need to be mutable
+warning: value assigned to `dx_ext0` is never read
+warning: value assigned to `dy_ext0` is never read
+warning: value assigned to `dz_ext0` is never read
+warning: value assigned to `dx_ext1` is never read
+warning: value assigned to `dy_ext1` is never read
+warning: value assigned to `dz_ext1` is never read
+warning: value assigned to `xsv_ext0` is never read
+warning: value assigned to `ysv_ext0` is never read
+warning: value assigned to `zsv_ext0` is never read
+warning: value assigned to `xsv_ext1` is never read
+warning: value assigned to `ysv_ext1` is never read
+warning: value assigned to `zsv_ext1` is never read
+warning: value assigned to `a_score` is never read
+warning: value assigned to `b_score` is never read
+warning: value assigned to `a_score` is never read
+warning: value assigned to `b_score` is never read
+warning: unused variable: `img`
+warning: value assigned to `pt_new` is never read
+warning: variable does not need to be mutable
+warning: unused variable: `texel`
+warning: unused variable: `u_noised`
+warning: unused variable: `v_noised`
+warning: unused variable: `img`
+warning: variable does not need to be mutable
+warning: unused variable: `pIn`
+warning: unused variable: `s`
+warning: unused variable: `box_`
+warning: unused variable: `p1`
+warning: unused variable: `p2`
+warning: unused variable: `p3`
+warning: unused variable: `p_in`
+warning: unused variable: `p_in`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `tmp_copy`
+warning: unused variable: `t1_copy`
+warning: unused variable: `t2_copy`
+warning: unused variable: `ray`
+warning: unused variable: `centre`
+warning: unused variable: `radius`
+warning: unused variable: `intersection`
+warning: unused variable: `intersect`
+warning: variable does not need to be mutable
+warning: unused variable: `pOut`
+warning: unused variable: `pV`
+warning: unused variable: `pM`
+warning: variable does not need to be mutable
+warning: unused variable: `texel_slice`
+warning: unused variable: `texel`
+warning: unused variable: `texel`
+warning: unused variable: `blend_mode`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: the variable `src_idx` is used as a loop counter
+warning: the variable `texel_idx` is used as a loop counter
+warning: it looks like you're manually copying between slices
+warning: casting to the same type is unnecessary (`i16` -> `i16`)
+warning: this function has too many arguments (9/7)
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: the loop variable `i` is used to index `source`
+warning: casting to the same type is unnecessary (`i64` -> `i64`)
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: the variable `dst_idx` is used as a loop counter
+warning: useless conversion to the same type: `std::ops::Range<i32>`
+warning: casting to the same type is unnecessary (`f64` -> `f64`)
+warning: casting to the same type is unnecessary (`f64` -> `f64`)
+warning: casting to the same type is unnecessary (`f64` -> `f64`)
+warning: casting to the same type is unnecessary (`f64` -> `f64`)
+warning: the loop variable `i` is only used to index `images`
+warning: the loop variable `tile` is used to index `images`
+warning: deref which would be done by auto-deref
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `match` expression can be replaced with `?`
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: the loop variable `x` is used to index `row`
+warning: the variable `pheight_idx` is used as a loop counter
+warning: this operation has no effect
+warning: this operation has no effect
+warning: casting to the same type is unnecessary (`f64` -> `f64`)
+warning: casting to the same type is unnecessary (`f64` -> `f64`)
+warning: casting to the same type is unnecessary (`f64` -> `f64`)
+warning: casting to the same type is unnecessary (`f64` -> `f64`)
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: manual slice size calculation
+warning: float has excessive precision
+warning: importing a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: the loop variable `q` is used to index `d`
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: usage of a legacy numeric constant
+warning: the loop variable `i` is only used to index `pptr`
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: this `match` expression can be replaced with `?`
+warning: usage of a legacy numeric constant
+warning: redundant pattern matching, consider using `is_err()`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref on an immutable reference
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (8/7)
+warning: redundant pattern matching, consider using `is_err()`
+warning: this `match` expression can be replaced with `?`
+warning: redundant pattern matching, consider using `is_err()`
+warning: the loop variable `dst_idx` is only used to index `dst`
+warning: the variable `dst_idx` is used as a loop counter
+warning: float has excessive precision
+warning: approximate value of `f{32, 64}::consts::FRAC_2_PI` found
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: `assert!(false, ..)` should probably be replaced
+warning: `assert!(false, ..)` should probably be replaced
+warning: the loop variable `i` is only used to index `corners`
+warning: this `match` expression can be replaced with `?`
+warning: the loop variable `i` is used to index `mat`
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this block may be rewritten with the `?` operator
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: this block may be rewritten with the `?` operator
+warning: `assert!(false, ..)` should probably be replaced
+warning: `assert!(false, ..)` should probably be replaced
+warning: this `match` expression can be replaced with `?`
+warning: this `else { if .. }` block can be collapsed
+warning: `assert!(false, ..)` should probably be replaced
+warning: manual `RangeInclusive::contains` implementation
+warning: manual `RangeInclusive::contains` implementation
+warning: manual `RangeInclusive::contains` implementation
+warning: `assert!(false, ..)` should probably be replaced
+warning: this `match` expression can be replaced with `?`
+warning: clamp-like pattern without using clamp function
+warning: this `match` expression can be replaced with `?`
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: this `match` expression can be replaced with `?`
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: this operation has no effect
+warning: the loop variable `c` is only used to index `texel`
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: module `k_m__p_o_i_n_t__c_l_a_s_s_i_f_i_c_a_t_i_o_n` should have a snake case name
+warning: function `fastFloor` should have a snake case name
+warning: function `kmSQR` should have a snake case name
+warning: function `kmDegreesToRadians` should have a snake case name
+warning: function `kmRadiansToDegrees` should have a snake case name
+warning: function `kmMin` should have a snake case name
+warning: function `kmMax` should have a snake case name
+warning: function `kmAlmostEqual` should have a snake case name
+warning: function `kmClamp` should have a snake case name
+warning: function `kmLerp` should have a snake case name
+warning: variable `L` should have a snake case name
+warning: variable `L_in` should have a snake case name
+warning: variable `N` should have a snake case name
+warning: variable `N_in` should have a snake case name
+warning: function `kmAABB2Sanitize` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmAABB2DiameterX` should have a snake case name
+warning: function `kmAABB2DiameterY` should have a snake case name
+warning: function `kmAABB2ContainsPoint` should have a snake case name
+warning: variable `pBox` should have a snake case name
+warning: variable `pPoint` should have a snake case name
+warning: function `kmAABB2Assign` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmAABB2Scale` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmAABB2ExpandToContain` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmAABB2Initialize` should have a snake case name
+warning: variable `pBox` should have a snake case name
+warning: variable `pBox` should have a snake case name
+warning: function `kmAABB2Translate` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmAABB2ScaleWithPivot` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmAABB2ContainsAABB` should have a snake case name
+warning: variable `nContains` should have a snake case name
+warning: function `kmAABB2Centre` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmAABB3Scale` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmAABB3DiameterX` should have a snake case name
+warning: function `kmAABB3DiameterY` should have a snake case name
+warning: function `kmAABB3DiameterZ` should have a snake case name
+warning: function `kmAABB3ContainsPoint` should have a snake case name
+warning: variable `pBox` should have a snake case name
+warning: variable `pPoint` should have a snake case name
+warning: function `kmAABB3Assign` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmAABB3ContainsAABB` should have a snake case name
+warning: function `kmAABB3IntersectsAABB` should have a snake case name
+warning: function `kmAABB3ExpandToContain` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmAABB3Initialize` should have a snake case name
+warning: variable `pBox` should have a snake case name
+warning: variable `pBox` should have a snake case name
+warning: function `kmAABB3Centre` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmMat3Fill` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pMat` should have a snake case name
+warning: variable `pMat` should have a snake case name
+warning: function `kmMat3Adjugate` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmMat3Identity` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmMat3IsIdentity` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmMat3Transpose` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmMat3Determinant` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmMat3Multiply` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pM1` should have a snake case name
+warning: variable `pM2` should have a snake case name
+warning: function `kmMat3ScalarMultiply` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pM` should have a snake case name
+warning: variable `pFactor` should have a snake case name
+warning: function `kmMat3Assign` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmMat3AreEqual` should have a snake case name
+warning: variable `pMat1` should have a snake case name
+warning: variable `pMat2` should have a snake case name
+warning: variable `pMat1` should have a snake case name
+warning: variable `pMat2` should have a snake case name
+warning: function `kmMat3RotationX` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmMat3RotationY` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmMat3RotationZ` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmMat3Rotation` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmMat3AssignMat4` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmMat3Scaling` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmMat3Translation` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmMat3GetUpVec3` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmMat3GetRightVec3` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmMat3GetForwardVec3` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmMat3Inverse` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pM` should have a snake case name
+warning: variable `pM` should have a snake case name
+warning: variable `detInv` should have a snake case name
+warning: function `kmMat3RotationToAxisAngle` should have a snake case name
+warning: variable `pAxis` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmMat3LookAt` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pEye` should have a snake case name
+warning: variable `pCenter` should have a snake case name
+warning: variable `pUp` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pEye` should have a snake case name
+warning: variable `pCenter` should have a snake case name
+warning: variable `pUp` should have a snake case name
+warning: function `kmMat4Fill` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pMat` should have a snake case name
+warning: variable `pMat` should have a snake case name
+warning: function `kmMat4Identity` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmMat4Inverse` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pM` should have a snake case name
+warning: function `kmMat4IsIdentity` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmMat4Transpose` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmMat4Multiply` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pM1` should have a snake case name
+warning: variable `pM2` should have a snake case name
+warning: function `kmMat4Assign` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmMat4AreEqual` should have a snake case name
+warning: variable `pMat1` should have a snake case name
+warning: variable `pMat2` should have a snake case name
+warning: function `kmMat4RotationX` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmMat4RotationY` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmMat4RotationZ` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmMat4Scaling` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmMat4Translation` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmMat4OrthographicProjection` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `nearVal` should have a snake case name
+warning: variable `farVal` should have a snake case name
+warning: function `kmMat4ExtractRotation` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmMat4ExtractPlane` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmMat4AssignMat3` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmMat4RotationTranslation` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmMat4PerspectiveProjection` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `fovY` should have a snake case name
+warning: variable `zNear` should have a snake case name
+warning: variable `zFar` should have a snake case name
+warning: variable `deltaZ` should have a snake case name
+warning: function `kmMat4RotationYawPitchRoll` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmMat4GetUpVec3` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmMat4GetRightVec3` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmMat4GetForwardVec3RH` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmMat4GetForwardVec3LH` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmMat4RotationToAxisAngle` should have a snake case name
+warning: variable `pAxis` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pAxis` should have a snake case name
+warning: function `kmMat4LookAt` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pEye` should have a snake case name
+warning: variable `pCenter` should have a snake case name
+warning: variable `pUp` should have a snake case name
+warning: variable `pEye` should have a snake case name
+warning: variable `pCenter` should have a snake case name
+warning: variable `pUp` should have a snake case name
+warning: function `kmPlaneFill` should have a snake case name
+warning: function `kmPlaneScale` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pP` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pP` should have a snake case name
+warning: function `kmPlaneDot` should have a snake case name
+warning: variable `pP` should have a snake case name
+warning: variable `pV` should have a snake case name
+warning: variable `pP` should have a snake case name
+warning: variable `pV` should have a snake case name
+warning: function `kmPlaneDotCoord` should have a snake case name
+warning: variable `pP` should have a snake case name
+warning: variable `pV` should have a snake case name
+warning: variable `pP` should have a snake case name
+warning: variable `pV` should have a snake case name
+warning: function `kmPlaneDotNormal` should have a snake case name
+warning: variable `pP` should have a snake case name
+warning: variable `pV` should have a snake case name
+warning: variable `pP` should have a snake case name
+warning: variable `pV` should have a snake case name
+warning: function `kmPlaneFromNormalAndDistance` should have a snake case name
+warning: function `kmPlaneFromPointAndNormal` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pPoint` should have a snake case name
+warning: variable `pNormal` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pPoint` should have a snake case name
+warning: variable `pNormal` should have a snake case name
+warning: function `kmPlaneClassifyPoint` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pP` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pP` should have a snake case name
+warning: function `kmPlaneNormalize` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pP` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pP` should have a snake case name
+warning: function `kmPlaneExtractFromMat4` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmPlaneIntersectLine` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pP` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pP` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmPlaneFromPoints` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmPlaneGetIntersection` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmQuaternionAreEqual` should have a snake case name
+warning: function `kmQuaternionFill` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmQuaternionDot` should have a snake case name
+warning: function `kmQuaternionIdentity` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmQuaternionIsIdentity` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmQuaternionLengthSq` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmQuaternionScale` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmQuaternionAssign` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmQuaternionAdd` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pQ1` should have a snake case name
+warning: variable `pQ2` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pQ1` should have a snake case name
+warning: variable `pQ2` should have a snake case name
+warning: function `kmQuaternionSubtract` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pQ1` should have a snake case name
+warning: variable `pQ2` should have a snake case name
+warning: function `kmQuaternionLength` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmQuaternionInverse` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmQuaternionMultiply` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmQuaternionRotationMatrix` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmQuaternionNormalize` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmQuaternionRotationAxisAngle` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV` should have a snake case name
+warning: function `kmQuaternionToAxisAngle` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pAxis` should have a snake case name
+warning: variable `pAngle` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pAxis` should have a snake case name
+warning: variable `pAngle` should have a snake case name
+warning: variable `tempAngle` should have a snake case name
+warning: function `kmQuaternionMultiplyVec3` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmQuaternionGetUpVec3` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmQuaternionGetRightVec3` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmQuaternionGetForwardVec3RH` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmQuaternionGetForwardVec3LH` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmQuaternionSlerp` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmQuaternionLookRotation` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmQuaternionRotationBetweenVec3` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmRay2Fill` should have a snake case name
+warning: function `kmLine2WithLineIntersection` should have a snake case name
+warning: variable `ptA` should have a snake case name
+warning: variable `vecA` should have a snake case name
+warning: variable `ptB` should have a snake case name
+warning: variable `vecB` should have a snake case name
+warning: variable `outTA` should have a snake case name
+warning: variable `outTB` should have a snake case name
+warning: variable `outIntersection` should have a snake case name
+warning: function `kmRay2FillWithEndpoints` should have a snake case name
+warning: function `kmRay2IntersectCircle` should have a snake case name
+warning: function `kmSegment2WithSegmentIntersection` should have a snake case name
+warning: variable `segmentA` should have a snake case name
+warning: variable `segmentB` should have a snake case name
+warning: function `kmRay2IntersectLineSegment` should have a snake case name
+warning: function `kmRay2IntersectTriangle` should have a snake case name
+warning: function `kmRay2IntersectBox` should have a snake case name
+warning: function `kmRay3Fill` should have a snake case name
+warning: function `kmRay3FromPointAndDirection` should have a snake case name
+warning: function `kmRay3IntersectPlane` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmVec2Fill` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmVec2Lerp` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmVec2Add` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmVec2Dot` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmVec2Cross` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmVec2Subtract` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmVec2Mul` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmVec2Div` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmVec2Scale` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmVec2AreEqual` should have a snake case name
+warning: function `kmVec2Assign` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmVec2Length` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmVec2LengthSq` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmVec2Transform` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV` should have a snake case name
+warning: variable `pM` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV` should have a snake case name
+warning: variable `pM` should have a snake case name
+warning: function `kmVec2TransformCoord` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV` should have a snake case name
+warning: variable `pM` should have a snake case name
+warning: function `kmVec2RotateBy` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmVec2MidPointBetween` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmVec2Normalize` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmVec2DistanceBetween` should have a snake case name
+warning: function `kmVec2Reflect` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmVec2DegreesBetween` should have a snake case name
+warning: function `kmVec3Fill` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmVec3Lerp` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmVec3Cross` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmVec3Dot` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmVec3Add` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmVec3Subtract` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmVec3Mul` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmVec3Div` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmVec3Scale` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmVec3AreEqual` should have a snake case name
+warning: function `kmVec3Assign` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmVec3Zero` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmVec3Length` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmVec3LengthSq` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmVec3MultiplyMat3` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV` should have a snake case name
+warning: variable `pM` should have a snake case name
+warning: function `kmVec3MultiplyMat4` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV` should have a snake case name
+warning: variable `pM` should have a snake case name
+warning: function `kmVec3TransformNormal` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV` should have a snake case name
+warning: variable `pM` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV` should have a snake case name
+warning: variable `pM` should have a snake case name
+warning: function `kmVec3InverseTransform` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pVect` should have a snake case name
+warning: variable `pM` should have a snake case name
+warning: function `kmVec3InverseTransformNormal` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pVect` should have a snake case name
+warning: variable `pM` should have a snake case name
+warning: function `kmVec3GetHorizontalAngle` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmVec3RotationToDirection` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pseudoMatrix` should have a snake case name
+warning: function `kmVec3Normalize` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmVec3Transform` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV` should have a snake case name
+warning: variable `pM` should have a snake case name
+warning: function `kmVec3Reflect` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmVec3TransformCoord` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV` should have a snake case name
+warning: variable `pM` should have a snake case name
+warning: variable `inV` should have a snake case name
+warning: function `kmVec3ProjectOnToPlane` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmVec4Fill` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: function `kmVec4Add` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmVec4Dot` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmVec4Lerp` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmVec4Subtract` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmVec4Mul` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmVec4Div` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV1` should have a snake case name
+warning: variable `pV2` should have a snake case name
+warning: function `kmVec4AreEqual` should have a snake case name
+warning: function `kmVec4Assign` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmVec4Length` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmVec4LengthSq` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmVec4Normalize` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmVec4Scale` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pIn` should have a snake case name
+warning: function `kmVec4MultiplyMat4` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV` should have a snake case name
+warning: variable `pM` should have a snake case name
+warning: function `kmVec4Transform` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `pV` should have a snake case name
+warning: variable `pM` should have a snake case name
+warning: function `kmVec4TransformArray` should have a snake case name
+warning: variable `pOut` should have a snake case name
+warning: variable `outStride` should have a snake case name
+warning: variable `pV` should have a snake case name
+warning: variable `vStride` should have a snake case name
+warning: variable `pM` should have a snake case name

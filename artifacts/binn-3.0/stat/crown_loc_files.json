@@ -1,0 +1,76 @@
+{
+  "Rust": {
+    "blanks": 3,
+    "children": {},
+    "code": 4376,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/binn-3.0/others/crown/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 17,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/binn-3.0/others/crown/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/binn-3.0/others/crown/src/binn.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 4353,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/binn-3.0/others/crown/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 17,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/binn-3.0/others/crown/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/binn-3.0/others/crown/src/binn.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 4353,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 4376,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

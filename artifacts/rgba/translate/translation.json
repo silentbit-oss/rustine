@@ -1,0 +1,708 @@
+{
+    "rgba_t": {
+        "source_code": "typedef struct \n{\n  double r;\n  double g;\n  double b;\n  double a;\n} rgba_t",
+        "translated_code": "#[derive(Clone)]\npub struct RgbaT {\n    pub r: f64,\n    pub g: f64,\n    pub b: f64,\n    pub a: f64,\n}",
+        "hint": "special_types",
+        "section": "src",
+        "file": "rgba_t.rs",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "type": "<class 'pycparser.c_ast.Struct'>",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "named_colors": {
+        "source_code": "static struct named_color\n{\n  const char *name;\n  uint32_t val;\n} named_colors[] = {{\"transparent\", 0xFFFFFF00}, {\"aliceblue\", 0xF0F8FFFF}, {\"antiquewhite\", 0xFAEBD7FF}, {\"aqua\", 0x00FFFFFF}, {\"aquamarine\", 0x7FFFD4FF}, {\"azure\", 0xF0FFFFFF}, {\"beige\", 0xF5F5DCFF}, {\"bisque\", 0xFFE4C4FF}, {\"black\", 0x000000FF}, {\"blanchedalmond\", 0xFFEBCDFF}, {\"blue\", 0x0000FFFF}, {\"blueviolet\", 0x8A2BE2FF}, {\"brown\", 0xA52A2AFF}, {\"burlywood\", 0xDEB887FF}, {\"cadetblue\", 0x5F9EA0FF}, {\"chartreuse\", 0x7FFF00FF}, {\"chocolate\", 0xD2691EFF}, {\"coral\", 0xFF7F50FF}, {\"cornflowerblue\", 0x6495EDFF}, {\"cornsilk\", 0xFFF8DCFF}, {\"crimson\", 0xDC143CFF}, {\"cyan\", 0x00FFFFFF}, {\"darkblue\", 0x00008BFF}, {\"darkcyan\", 0x008B8BFF}, {\"darkgoldenrod\", 0xB8860BFF}, {\"darkgray\", 0xA9A9A9FF}, {\"darkgreen\", 0x006400FF}, {\"darkgrey\", 0xA9A9A9FF}, {\"darkkhaki\", 0xBDB76BFF}, {\"darkmagenta\", 0x8B008BFF}, {\"darkolivegreen\", 0x556B2FFF}, {\"darkorange\", 0xFF8C00FF}, {\"darkorchid\", 0x9932CCFF}, {\"darkred\", 0x8B0000FF}, {\"darksalmon\", 0xE9967AFF}, {\"darkseagreen\", 0x8FBC8FFF}, {\"darkslateblue\", 0x483D8BFF}, {\"darkslategray\", 0x2F4F4FFF}, {\"darkslategrey\", 0x2F4F4FFF}, {\"darkturquoise\", 0x00CED1FF}, {\"darkviolet\", 0x9400D3FF}, {\"deeppink\", 0xFF1493FF}, {\"deepskyblue\", 0x00BFFFFF}, {\"dimgray\", 0x696969FF}, {\"dimgrey\", 0x696969FF}, {\"dodgerblue\", 0x1E90FFFF}, {\"firebrick\", 0xB22222FF}, {\"floralwhite\", 0xFFFAF0FF}, {\"forestgreen\", 0x228B22FF}, {\"fuchsia\", 0xFF00FFFF}, {\"gainsboro\", 0xDCDCDCFF}, {\"ghostwhite\", 0xF8F8FFFF}, {\"gold\", 0xFFD700FF}, {\"goldenrod\", 0xDAA520FF}, {\"gray\", 0x808080FF}, {\"green\", 0x008000FF}, {\"greenyellow\", 0xADFF2FFF}, {\"grey\", 0x808080FF}, {\"honeydew\", 0xF0FFF0FF}, {\"hotpink\", 0xFF69B4FF}, {\"indianred\", 0xCD5C5CFF}, {\"indigo\", 0x4B0082FF}, {\"ivory\", 0xFFFFF0FF}, {\"khaki\", 0xF0E68CFF}, {\"lavender\", 0xE6E6FAFF}, {\"lavenderblush\", 0xFFF0F5FF}, {\"lawngreen\", 0x7CFC00FF}, {\"lemonchiffon\", 0xFFFACDFF}, {\"lightblue\", 0xADD8E6FF}, {\"lightcoral\", 0xF08080FF}, {\"lightcyan\", 0xE0FFFFFF}, {\"lightgoldenrodyellow\", 0xFAFAD2FF}, {\"lightgray\", 0xD3D3D3FF}, {\"lightgreen\", 0x90EE90FF}, {\"lightgrey\", 0xD3D3D3FF}, {\"lightpink\", 0xFFB6C1FF}, {\"lightsalmon\", 0xFFA07AFF}, {\"lightseagreen\", 0x20B2AAFF}, {\"lightskyblue\", 0x87CEFAFF}, {\"lightslategray\", 0x778899FF}, {\"lightslategrey\", 0x778899FF}, {\"lightsteelblue\", 0xB0C4DEFF}, {\"lightyellow\", 0xFFFFE0FF}, {\"lime\", 0x00FF00FF}, {\"limegreen\", 0x32CD32FF}, {\"linen\", 0xFAF0E6FF}, {\"magenta\", 0xFF00FFFF}, {\"maroon\", 0x800000FF}, {\"mediumaquamarine\", 0x66CDAAFF}, {\"mediumblue\", 0x0000CDFF}, {\"mediumorchid\", 0xBA55D3FF}, {\"mediumpurple\", 0x9370DBFF}, {\"mediumseagreen\", 0x3CB371FF}, {\"mediumslateblue\", 0x7B68EEFF}, {\"mediumspringgreen\", 0x00FA9AFF}, {\"mediumturquoise\", 0x48D1CCFF}, {\"mediumvioletred\", 0xC71585FF}, {\"midnightblue\", 0x191970FF}, {\"mintcream\", 0xF5FFFAFF}, {\"mistyrose\", 0xFFE4E1FF}, {\"moccasin\", 0xFFE4B5FF}, {\"navajowhite\", 0xFFDEADFF}, {\"navy\", 0x000080FF}, {\"oldlace\", 0xFDF5E6FF}, {\"olive\", 0x808000FF}, {\"olivedrab\", 0x6B8E23FF}, {\"orange\", 0xFFA500FF}, {\"orangered\", 0xFF4500FF}, {\"orchid\", 0xDA70D6FF}, {\"palegoldenrod\", 0xEEE8AAFF}, {\"palegreen\", 0x98FB98FF}, {\"paleturquoise\", 0xAFEEEEFF}, {\"palevioletred\", 0xDB7093FF}, {\"papayawhip\", 0xFFEFD5FF}, {\"peachpuff\", 0xFFDAB9FF}, {\"peru\", 0xCD853FFF}, {\"pink\", 0xFFC0CBFF}, {\"plum\", 0xDDA0DDFF}, {\"powderblue\", 0xB0E0E6FF}, {\"purple\", 0x800080FF}, {\"red\", 0xFF0000FF}, {\"rosybrown\", 0xBC8F8FFF}, {\"royalblue\", 0x4169E1FF}, {\"saddlebrown\", 0x8B4513FF}, {\"salmon\", 0xFA8072FF}, {\"sandybrown\", 0xF4A460FF}, {\"seagreen\", 0x2E8B57FF}, {\"seashell\", 0xFFF5EEFF}, {\"sienna\", 0xA0522DFF}, {\"silver\", 0xC0C0C0FF}, {\"skyblue\", 0x87CEEBFF}, {\"slateblue\", 0x6A5ACDFF}, {\"slategray\", 0x708090FF}, {\"slategrey\", 0x708090FF}, {\"snow\", 0xFFFAFAFF}, {\"springgreen\", 0x00FF7FFF}, {\"steelblue\", 0x4682B4FF}, {\"tan\", 0xD2B48CFF}, {\"teal\", 0x008080FF}, {\"thistle\", 0xD8BFD8FF}, {\"tomato\", 0xFF6347FF}, {\"turquoise\", 0x40E0D0FF}, {\"violet\", 0xEE82EEFF}, {\"wheat\", 0xF5DEB3FF}, {\"white\", 0xFFFFFFFF}, {\"whitesmoke\", 0xF5F5F5FF}, {\"yellow\", 0xFFFF00FF}, {\"yellowgreen\", 0x9ACD32FF}, {0, 0}}",
+        "translated_code": "use lazy_static::lazy_static;\n\n#[derive(Debug)]\npub struct NamedColor {\n    pub name: &'static str,\n    pub val: u32,\n}\n\nlazy_static! {\n    pub static ref NAMED_COLORS: Vec<NamedColor> = vec![\n        NamedColor { name: \"transparent\", val: 0xFFFFFF00 },\n        NamedColor { name: \"aliceblue\", val: 0xF0F8FFFF },\n        NamedColor { name: \"antiquewhite\", val: 0xFAEBD7FF },\n        NamedColor { name: \"aqua\", val: 0x00FFFFFF },\n        NamedColor { name: \"aquamarine\", val: 0x7FFFD4FF },\n        NamedColor { name: \"azure\", val: 0xF0FFFFFF },\n        NamedColor { name: \"beige\", val: 0xF5F5DCFF },\n        NamedColor { name: \"bisque\", val: 0xFFE4C4FF },\n        NamedColor { name: \"black\", val: 0x000000FF },\n        NamedColor { name: \"blanchedalmond\", val: 0xFFEBCDFF },\n        NamedColor { name: \"blue\", val: 0x0000FFFF },\n        NamedColor { name: \"blueviolet\", val: 0x8A2BE2FF },\n        NamedColor { name: \"brown\", val: 0xA52A2AFF },\n        NamedColor { name: \"burlywood\", val: 0xDEB887FF },\n        NamedColor { name: \"cadetblue\", val: 0x5F9EA0FF },\n        NamedColor { name: \"chartreuse\", val: 0x7FFF00FF },\n        NamedColor { name: \"chocolate\", val: 0xD2691EFF },\n        NamedColor { name: \"coral\", val: 0xFF7F50FF },\n        NamedColor { name: \"cornflowerblue\", val: 0x6495EDFF },\n        NamedColor { name: \"cornsilk\", val: 0xFFF8DCFF },\n        NamedColor { name: \"crimson\", val: 0xDC143CFF },\n        NamedColor { name: \"cyan\", val: 0x00FFFFFF },\n        NamedColor { name: \"darkblue\", val: 0x00008BFF },\n        NamedColor { name: \"darkcyan\", val: 0x008B8BFF },\n        NamedColor { name: \"darkgoldenrod\", val: 0xB8860BFF },\n        NamedColor { name: \"darkgray\", val: 0xA9A9A9FF },\n        NamedColor { name: \"darkgreen\", val: 0x006400FF },\n        NamedColor { name: \"darkgrey\", val: 0xA9A9A9FF },\n        NamedColor { name: \"darkkhaki\", val: 0xBDB76BFF },\n        NamedColor { name: \"darkmagenta\", val: 0x8B008BFF },\n        NamedColor { name: \"darkolivegreen\", val: 0x556B2FFF },\n        NamedColor { name: \"darkorange\", val: 0xFF8C00FF },\n        NamedColor { name: \"darkorchid\", val: 0x9932CCFF },\n        NamedColor { name: \"darkred\", val: 0x8B0000FF },\n        NamedColor { name: \"darksalmon\", val: 0xE9967AFF },\n        NamedColor { name: \"darkseagreen\", val: 0x8FBC8FFF },\n        NamedColor { name: \"darkslateblue\", val: 0x483D8BFF },\n        NamedColor { name: \"darkslategray\", val: 0x2F4F4FFF },\n        NamedColor { name: \"darkslategrey\", val: 0x2F4F4FFF },\n        NamedColor { name: \"darkturquoise\", val: 0x00CED1FF },\n        NamedColor { name: \"darkviolet\", val: 0x9400D3FF },\n        NamedColor { name: \"deeppink\", val: 0xFF1493FF },\n        NamedColor { name: \"deepskyblue\", val: 0x00BFFFFF },\n        NamedColor { name: \"dimgray\", val: 0x696969FF },\n        NamedColor { name: \"dimgrey\", val: 0x696969FF },\n        NamedColor { name: \"dodgerblue\", val: 0x1E90FFFF },\n        NamedColor { name: \"firebrick\", val: 0xB22222FF },\n        NamedColor { name: \"floralwhite\", val: 0xFFFAF0FF },\n        NamedColor { name: \"forestgreen\", val: 0x228B22FF },\n        NamedColor { name: \"fuchsia\", val: 0xFF00FFFF },\n        NamedColor { name: \"gainsboro\", val: 0xDCDCDCFF },\n        NamedColor { name: \"ghostwhite\", val: 0xF8F8FFFF },\n        NamedColor { name: \"gold\", val: 0xFFD700FF },\n        NamedColor { name: \"goldenrod\", val: 0xDAA520FF },\n        NamedColor { name: \"gray\", val: 0x808080FF },\n        NamedColor { name: \"green\", val: 0x008000FF },\n        NamedColor { name: \"greenyellow\", val: 0xADFF2FFF },\n        NamedColor { name: \"grey\", val: 0x808080FF },\n        NamedColor { name: \"honeydew\", val: 0xF0FFF0FF },\n        NamedColor { name: \"hotpink\", val: 0xFF69B4FF },\n        NamedColor { name: \"indianred\", val: 0xCD5C5CFF },\n        NamedColor { name: \"indigo\", val: 0x4B0082FF },\n        NamedColor { name: \"ivory\", val: 0xFFFFF0FF },\n        NamedColor { name: \"khaki\", val: 0xF0E68CFF },\n        NamedColor { name: \"lavender\", val: 0xE6E6FAFF },\n        NamedColor { name: \"lavenderblush\", val: 0xFFF0F5FF },\n        NamedColor { name: \"lawngreen\", val: 0x7CFC00FF },\n        NamedColor { name: \"lemonchiffon\", val: 0xFFFACDFF },\n        NamedColor { name: \"lightblue\", val: 0xADD8E6FF },\n        NamedColor { name: \"lightcoral\", val: 0xF08080FF },\n        NamedColor { name: \"lightcyan\", val: 0xE0FFFFFF },\n        NamedColor { name: \"lightgoldenrodyellow\", val: 0xFAFAD2FF },\n        NamedColor { name: \"lightgray\", val: 0xD3D3D3FF },\n        NamedColor { name: \"lightgreen\", val: 0x90EE90FF },\n        NamedColor { name: \"lightgrey\", val: 0xD3D3D3FF },\n        NamedColor { name: \"lightpink\", val: 0xFFB6C1FF },\n        NamedColor { name: \"lightsalmon\", val: 0xFFA07AFF },\n        NamedColor { name: \"lightseagreen\", val: 0x20B2AAFF },\n        NamedColor { name: \"lightskyblue\", val: 0x87CEFAFF },\n        NamedColor { name: \"lightslategray\", val: 0x778899FF },\n        NamedColor { name: \"lightslategrey\", val: 0x778899FF },\n        NamedColor { name: \"lightsteelblue\", val: 0xB0C4DEFF },\n        NamedColor { name: \"lightyellow\", val: 0xFFFFE0FF },\n        NamedColor { name: \"lime\", val: 0x00FF00FF },\n        NamedColor { name: \"limegreen\", val: 0x32CD32FF },\n        NamedColor { name: \"linen\", val: 0xFAF0E6FF },\n        NamedColor { name: \"magenta\", val: 0xFF00FFFF },\n        NamedColor { name: \"maroon\", val: 0x800000FF },\n        NamedColor { name: \"mediumaquamarine\", val: 0x66CDAAFF },\n        NamedColor { name: \"mediumblue\", val: 0x0000CDFF },\n        NamedColor { name: \"mediumorchid\", val: 0xBA55D3FF },\n        NamedColor { name: \"mediumpurple\", val: 0x9370DBFF },\n        NamedColor { name: \"mediumseagreen\", val: 0x3CB371FF },\n        NamedColor { name: \"mediumslateblue\", val: 0x7B68EEFF },\n        NamedColor { name: \"mediumspringgreen\", val: 0x00FA9AFF },\n        NamedColor { name: \"mediumturquoise\", val: 0x48D1CCFF },\n        NamedColor { name: \"mediumvioletred\", val: 0xC71585FF },\n        NamedColor { name: \"midnightblue\", val: 0x191970FF },\n        NamedColor { name: \"mintcream\", val: 0xF5FFFAFF },\n        NamedColor { name: \"mistyrose\", val: 0xFFE4E1FF },\n        NamedColor { name: \"moccasin\", val: 0xFFE4B5FF },\n        NamedColor { name: \"navajowhite\", val: 0xFFDEADFF },\n        NamedColor { name: \"navy\", val: 0x000080FF },\n        NamedColor { name: \"oldlace\", val: 0xFDF5E6FF },\n        NamedColor { name: \"olive\", val: 0x808000FF },\n        NamedColor { name: \"olivedrab\", val: 0x6B8E23FF },\n        NamedColor { name: \"orange\", val: 0xFFA500FF },\n        NamedColor { name: \"orangered\", val: 0xFF4500FF },\n        NamedColor { name: \"orchid\", val: 0xDA70D6FF },\n        NamedColor { name: \"palegoldenrod\", val: 0xEEE8AAFF },\n        NamedColor { name: \"palegreen\", val: 0x98FB98FF },\n        NamedColor { name: \"paleturquoise\", val: 0xAFEEEEFF },\n        NamedColor { name: \"palevioletred\", val: 0xDB7093FF },\n        NamedColor { name: \"papayawhip\", val: 0xFFEFD5FF },\n        NamedColor { name: \"peachpuff\", val: 0xFFDAB9FF },\n        NamedColor { name: \"peru\", val: 0xCD853FFF },\n        NamedColor { name: \"pink\", val: 0xFFC0CBFF },\n        NamedColor { name: \"plum\", val: 0xDDA0DDFF },\n        NamedColor { name: \"powderblue\", val: 0xB0E0E6FF },\n        NamedColor { name: \"purple\", val: 0x800080FF },\n        NamedColor { name: \"red\", val: 0xFF0000FF },\n        NamedColor { name: \"rosybrown\", val: 0xBC8F8FFF },\n        NamedColor { name: \"royalblue\", val: 0x4169E1FF },\n        NamedColor { name: \"saddlebrown\", val: 0x8B4513FF },\n        NamedColor { name: \"salmon\", val: 0xFA8072FF },\n        NamedColor { name: \"sandybrown\", val: 0xF4A460FF },\n        NamedColor { name: \"seagreen\", val: 0x2E8B57FF },\n        NamedColor { name: \"seashell\", val: 0xFFF5EEFF },\n        NamedColor { name: \"sienna\", val: 0xA0522DFF },\n        NamedColor { name: \"silver\", val: 0xC0C0C0FF },\n        NamedColor { name: \"skyblue\", val: 0x87CEEBFF },\n        NamedColor { name: \"slateblue\", val: 0x6A5ACDFF },\n        NamedColor { name: \"slategray\", val: 0x708090FF },\n        NamedColor { name: \"slategrey\", val: 0x708090FF },\n        NamedColor { name: \"snow\", val: 0xFFFAFAFF },\n        NamedColor { name: \"springgreen\", val: 0x00FF7FFF },\n        NamedColor { name: \"steelblue\", val: 0x4682B4FF },\n        NamedColor { name: \"tan\", val: 0xD2B48CFF },\n        NamedColor { name: \"teal\", val: 0x008080FF },\n        NamedColor { name: \"thistle\", val: 0xD8BFD8FF },\n        NamedColor { name: \"tomato\", val: 0xFF6347FF },\n        NamedColor { name: \"turquoise\", val: 0x40E0D0FF },\n        NamedColor { name: \"violet\", val: 0xEE82EEFF },\n        NamedColor { name: \"wheat\", val: 0xF5DEB3FF },\n        NamedColor { name: \"white\", val: 0xFFFFFFFF },\n        NamedColor { name: \"whitesmoke\", val: 0xF5F5F5FF },\n        NamedColor { name: \"yellow\", val: 0xFFFF00FF },\n        NamedColor { name: \"yellowgreen\", val: 0x9ACD32FF },\n        NamedColor { name: \"\", val: 0 }\n    ];\n}",
+        "hint": "global_variables",
+        "section": "src",
+        "file": "globals.rs",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "type": "struct named_color\n{\n  const char *name;\n  uint32_t val;\n} []",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "rgba_inspect": {
+        "source_code": "void rgba_inspect(uint32_t rgba)\n{\n  printf(\"rgba(%d,%d,%d,%d)\\n\", (rgba >> 24) & 0xff, (rgba >> 16) & 0xff, (rgba >> 8) & 0xff, rgba & 0xff);\n}\n\n",
+        "translated_code": "pub fn rgba_inspect(rgba: u32) {\n    println!(\n        \"rgba({},{},{},{})\",\n        (rgba >> 24) & 0xff,\n        (rgba >> 16) & 0xff,\n        (rgba >> 8) & 0xff,\n        rgba & 0xff\n    );\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "rgba.rs",
+        "error": "",
+        "dependent": [],
+        "header": "void rgba_inspect(uint32_t rgba)",
+        "params": [
+            "uint32_t rgba"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "rgba"
+        ],
+        "calle": [
+            "printf"
+        ],
+        "calle_c": [
+            "printf"
+        ],
+        "key": "rgba_inspect",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "h": {
+        "source_code": "static int h(char c)\n{\n  switch (c)\n  {\n    case '0':\n\n    case '1':\n\n    case '2':\n\n    case '3':\n\n    case '4':\n\n    case '5':\n\n    case '6':\n\n    case '7':\n\n    case '8':\n\n    case '9':\n    {\n      return c - '0';\n    }\n\n    case 'a':\n\n    case 'b':\n\n    case 'c':\n\n    case 'd':\n\n    case 'e':\n\n    case 'f':\n    {\n      return (c - 'a') + 10;\n    }\n\n    case 'A':\n\n    case 'B':\n\n    case 'C':\n\n    case 'D':\n\n    case 'E':\n\n    case 'F':\n    {\n      return (c - 'A') + 10;\n    }\n\n  }\n\n  return 0;\n}\n\n",
+        "translated_code": "pub fn h(c: char) -> i32 {\n    match c {\n        '0'..='9' => (c as i32) - ('0' as i32),\n        'a'..='f' => (c as i32) - ('a' as i32) + 10,\n        'A'..='F' => (c as i32) - ('A' as i32) + 10,\n        _ => 0,\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "rgba.rs",
+        "error": "",
+        "dependent": [],
+        "params": [
+            "char c"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "c"
+        ],
+        "calle": [],
+        "calle_c": [],
+        "key": "h",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "rgba_from_rgba": {
+        "source_code": "inline static uint32_t rgba_from_rgba(uint8_t r, uint8_t g, uint8_t b, uint8_t a)\n{\n  return (((r << 24) | (g << 16)) | (b << 8)) | a;\n}\n\n",
+        "translated_code": "pub fn rgba_from_rgba(r: u8, g: u8, b: u8, a: u8) -> u32 {\n    ((r as u32) << 24) | ((g as u32) << 16) | ((b as u32) << 8) | (a as u32)\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "rgba.rs",
+        "error": "",
+        "dependent": [],
+        "params": [
+            "uint8_t r",
+            "uint8_t g",
+            "uint8_t b",
+            "uint8_t a"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "r",
+            "g",
+            "b",
+            "a"
+        ],
+        "calle": [],
+        "calle_c": [],
+        "key": "rgba_from_rgba",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "helper_rgba_from_rgba_string_1": {
+        "source_code": "int32_t helper_rgba_from_rgba_string_1(unsigned int * const str_idx_ref, const char * const str, short * const ok)\n{\n  unsigned int str_idx = *str_idx_ref;\n  str_idx += 5;\n  while (' ' == str[str_idx])\n  {\n    str_idx += 1;\n  }\n\n  ;\n  uint8_t r = 0;\n  uint8_t g = 0;\n  uint8_t b = 0;\n  int c;\n  float a = 0;\n  c = 0;\n  if ((str[str_idx] >= '0') && (str[str_idx] <= '9'))\n  {\n    do\n    {\n      c *= 10;\n      c += str[str_idx] - '0';\n      str_idx += 1;\n    }\n    while ((str[str_idx] >= '0') && (str[str_idx] <= '9'));\n  }\n  else\n  {\n    return 0;\n  }\n  if (c > 255)\n  {\n    c = 255;\n  }\n  r = c;\n  while ((' ' == str[str_idx]) || (',' == str[str_idx]))\n  {\n    str_idx += 1;\n  }\n\n  ;\n  c = 0;\n  if ((str[str_idx] >= '0') && (str[str_idx] <= '9'))\n  {\n    do\n    {\n      c *= 10;\n      c += str[str_idx] - '0';\n      str_idx += 1;\n    }\n    while ((str[str_idx] >= '0') && (str[str_idx] <= '9'));\n  }\n  else\n  {\n    return 0;\n  }\n  if (c > 255)\n  {\n    c = 255;\n  }\n  g = c;\n  while ((' ' == str[str_idx]) || (',' == str[str_idx]))\n  {\n    str_idx += 1;\n  }\n\n  ;\n  c = 0;\n  if ((str[str_idx] >= '0') && (str[str_idx] <= '9'))\n  {\n    do\n    {\n      c *= 10;\n      c += str[str_idx] - '0';\n      str_idx += 1;\n    }\n    while ((str[str_idx] >= '0') && (str[str_idx] <= '9'));\n  }\n  else\n  {\n    return 0;\n  }\n  if (c > 255)\n  {\n    c = 255;\n  }\n  b = c;\n  while ((' ' == str[str_idx]) || (',' == str[str_idx]))\n  {\n    str_idx += 1;\n  }\n\n  ;\n  if ((str[str_idx] >= '1') && (str[str_idx] <= '9'))\n  {\n    a = 1;\n  }\n  else\n  {\n    if ('0' == str[str_idx])\n    {\n      str_idx += 1;\n    }\n    if ('.' == str[str_idx])\n    {\n      str_idx += 1;\n      float n = .1;\n      while ((str[str_idx] >= '0') && (str[str_idx] <= '9'))\n      {\n        a += (str[str_idx] - '0') * n;\n        str_idx += 1;\n        n *= .1;\n      }\n\n    }\n  }\n  return *ok = 1, rgba_from_rgba(r, g, b, (int) (a * 255));\n  *str_idx_ref = str_idx;\n}\n\n",
+        "translated_code": "pub fn helper_rgba_from_rgba_string_1(\n    str_idx_ref: &mut usize,\n    str: &str,\n    ok: &mut bool,\n) -> u32 {\n    let mut str_idx = *str_idx_ref;\n    str_idx += 5;\n    \n    // Skip whitespace\n    while str.chars().nth(str_idx) == Some(' ') {\n        str_idx += 1;\n    }\n\n    // Parse red component\n    let mut r = 0u8;\n    let mut c = 0;\n    if let Some(ch) = str.chars().nth(str_idx) {\n        if ch.is_ascii_digit() {\n            while let Some(ch) = str.chars().nth(str_idx) {\n                if !ch.is_ascii_digit() {\n                    break;\n                }\n                c *= 10;\n                c += ch.to_digit(10).unwrap() as i32;\n                str_idx += 1;\n            }\n        } else {\n            return 0;\n        }\n    }\n    r = c.min(255) as u8;\n\n    // Skip whitespace and commas\n    while str.chars().nth(str_idx).map_or(false, |c| c == ' ' || c == ',') {\n        str_idx += 1;\n    }\n\n    // Parse green component\n    let mut g = 0u8;\n    c = 0;\n    if let Some(ch) = str.chars().nth(str_idx) {\n        if ch.is_ascii_digit() {\n            while let Some(ch) = str.chars().nth(str_idx) {\n                if !ch.is_ascii_digit() {\n                    break;\n                }\n                c *= 10;\n                c += ch.to_digit(10).unwrap() as i32;\n                str_idx += 1;\n            }\n        } else {\n            return 0;\n        }\n    }\n    g = c.min(255) as u8;\n\n    // Skip whitespace and commas\n    while str.chars().nth(str_idx).map_or(false, |c| c == ' ' || c == ',') {\n        str_idx += 1;\n    }\n\n    // Parse blue component\n    let mut b = 0u8;\n    c = 0;\n    if let Some(ch) = str.chars().nth(str_idx) {\n        if ch.is_ascii_digit() {\n            while let Some(ch) = str.chars().nth(str_idx) {\n                if !ch.is_ascii_digit() {\n                    break;\n                }\n                c *= 10;\n                c += ch.to_digit(10).unwrap() as i32;\n                str_idx += 1;\n            }\n        } else {\n            return 0;\n        }\n    }\n    b = c.min(255) as u8;\n\n    // Skip whitespace and commas\n    while str.chars().nth(str_idx).map_or(false, |c| c == ' ' || c == ',') {\n        str_idx += 1;\n    }\n\n    // Parse alpha component\n    let mut a = 0.0;\n    if let Some(ch) = str.chars().nth(str_idx) {\n        match ch {\n            '1'..='9' => a = 1.0,\n            '0' => {\n                str_idx += 1;\n                if str.chars().nth(str_idx) == Some('.') {\n                    str_idx += 1;\n                    let mut n = 0.1;\n                    while let Some(ch) = str.chars().nth(str_idx) {\n                        if !ch.is_ascii_digit() {\n                            break;\n                        }\n                        a += (ch.to_digit(10).unwrap() as f32) * n;\n                        str_idx += 1;\n                        n *= 0.1;\n                    }\n                }\n            }\n            _ => {}\n        }\n    }\n\n    *ok = true;\n    *str_idx_ref = str_idx;\n    rgba_from_rgba(r, g, b, (a * 255.0) as u8)\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "rgba.rs",
+        "error": "",
+        "dependent": [
+            "rgba_from_rgba"
+        ],
+        "params": [
+            "unsigned int * const str_idx_ref",
+            "const char * const str",
+            "short * const ok"
+        ],
+        "lifetime_hint": [
+            "str_idx_ref is a mutable refrence to unsigned int"
+        ],
+        "global_variables": [
+            "str_idx_ref",
+            "str",
+            "ok",
+            "str_idx",
+            "r",
+            "g",
+            "b",
+            "c",
+            "a",
+            "n"
+        ],
+        "calle": [
+            "rgba_from_rgba"
+        ],
+        "calle_c": [],
+        "key": "helper_rgba_from_rgba_string_1",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "rgba_from_rgba_string": {
+        "source_code": "static int32_t rgba_from_rgba_string(const char *str, short *ok)\n{\n  unsigned int str_idx = 0;\n  if ((&str[str_idx]) == strstr(str, \"rgba(\"))\n  {\n    helper_rgba_from_rgba_string_1(&str_idx, str, ok);\n  }\n  return *ok = 0;\n}\n\n",
+        "translated_code": "pub fn rgba_from_rgba_string(str: &str, ok: &mut bool) -> u32 {\n    let mut str_idx = 0;\n    \n    if str.starts_with(\"rgba(\") {\n        helper_rgba_from_rgba_string_1(&mut str_idx, str, ok);\n    }\n    \n    *ok = false;\n    0\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "rgba.rs",
+        "error": "",
+        "dependent": [
+            "helper_rgba_from_rgba_string_1"
+        ],
+        "params": [
+            "const char *str",
+            "short *ok"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "str",
+            "ok",
+            "str_idx"
+        ],
+        "calle": [
+            "helper_rgba_from_rgba_string_1",
+            "strstr"
+        ],
+        "calle_c": [
+            "helper_rgba_from_rgba_string_1",
+            "strstr"
+        ],
+        "key": "rgba_from_rgba_string",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "rgba_from_rgb": {
+        "source_code": "static int32_t rgba_from_rgb(uint8_t r, uint8_t g, uint8_t b)\n{\n  return rgba_from_rgba(r, g, b, 255);\n}\n\n",
+        "translated_code": "pub fn rgba_from_rgb(r: u8, g: u8, b: u8) -> u32 {\n    rgba_from_rgba(r, g, b, 255)\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "rgba.rs",
+        "error": "",
+        "dependent": [
+            "rgba_from_rgba"
+        ],
+        "params": [
+            "uint8_t r",
+            "uint8_t g",
+            "uint8_t b"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "r",
+            "g",
+            "b"
+        ],
+        "calle": [
+            "rgba_from_rgba"
+        ],
+        "calle_c": [],
+        "key": "rgba_from_rgb",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "helper_rgba_from_rgb_string_1": {
+        "source_code": "int32_t helper_rgba_from_rgb_string_1(unsigned int * const str_idx_ref, const char * const str, short * const ok)\n{\n  unsigned int str_idx = *str_idx_ref;\n  str_idx += 4;\n  while (' ' == str[str_idx])\n  {\n    str_idx += 1;\n  }\n\n  ;\n  uint8_t r = 0;\n  uint8_t g = 0;\n  uint8_t b = 0;\n  int c;\n  c = 0;\n  if ((str[str_idx] >= '0') && (str[str_idx] <= '9'))\n  {\n    do\n    {\n      c *= 10;\n      c += str[str_idx] - '0';\n      str_idx += 1;\n    }\n    while ((str[str_idx] >= '0') && (str[str_idx] <= '9'));\n  }\n  else\n  {\n    return 0;\n  }\n  if (c > 255)\n  {\n    c = 255;\n  }\n  r = c;\n  while ((' ' == str[str_idx]) || (',' == str[str_idx]))\n  {\n    str_idx += 1;\n  }\n\n  ;\n  c = 0;\n  if ((str[str_idx] >= '0') && (str[str_idx] <= '9'))\n  {\n    do\n    {\n      c *= 10;\n      c += str[str_idx] - '0';\n      str_idx += 1;\n    }\n    while ((str[str_idx] >= '0') && (str[str_idx] <= '9'));\n  }\n  else\n  {\n    return 0;\n  }\n  if (c > 255)\n  {\n    c = 255;\n  }\n  g = c;\n  while ((' ' == str[str_idx]) || (',' == str[str_idx]))\n  {\n    str_idx += 1;\n  }\n\n  ;\n  c = 0;\n  if ((str[str_idx] >= '0') && (str[str_idx] <= '9'))\n  {\n    do\n    {\n      c *= 10;\n      c += str[str_idx] - '0';\n      str_idx += 1;\n    }\n    while ((str[str_idx] >= '0') && (str[str_idx] <= '9'));\n  }\n  else\n  {\n    return 0;\n  }\n  if (c > 255)\n  {\n    c = 255;\n  }\n  b = c;\n  while ((' ' == str[str_idx]) || (',' == str[str_idx]))\n  {\n    str_idx += 1;\n  }\n\n  ;\n  return *ok = 1, rgba_from_rgb(r, g, b);\n  *str_idx_ref = str_idx;\n}\n\n",
+        "translated_code": "use std::convert::TryFrom;\n\npub fn helper_rgba_from_rgb_string_1(\n    str_idx_ref: &mut u32,\n    str: &str,\n    ok: &mut i16,\n) -> u32 {\n    let mut str_idx = *str_idx_ref;\n    str_idx += 4;\n\n    // Skip whitespace\n    while str.chars().nth(str_idx as usize) == Some(' ') {\n        str_idx += 1;\n    }\n\n    // Parse red component\n    let r = match parse_color_component(&str, &mut str_idx) {\n        Some(value) => value,\n        None => {\n            *ok = 0;\n            return 0;\n        }\n    };\n\n    // Skip whitespace and commas\n    skip_separators(&str, &mut str_idx);\n\n    // Parse green component\n    let g = match parse_color_component(&str, &mut str_idx) {\n        Some(value) => value,\n        None => {\n            *ok = 0;\n            return 0;\n        }\n    };\n\n    // Skip whitespace and commas\n    skip_separators(&str, &mut str_idx);\n\n    // Parse blue component\n    let b = match parse_color_component(&str, &mut str_idx) {\n        Some(value) => value,\n        None => {\n            *ok = 0;\n            return 0;\n        }\n    };\n\n    // Skip whitespace and commas\n    skip_separators(&str, &mut str_idx);\n\n    *ok = 1;\n    *str_idx_ref = str_idx;\n    rgba_from_rgb(r, g, b)\n}\n\nfn parse_color_component(str: &str, str_idx: &mut u32) -> Option<u8> {\n    let mut c = 0;\n    let mut has_digits = false;\n\n    while let Some(ch) = str.chars().nth(*str_idx as usize) {\n        if ch >= '0' && ch <= '9' {\n            has_digits = true;\n            c *= 10;\n            c += ch as u32 - '0' as u32;\n            *str_idx += 1;\n        } else {\n            break;\n        }\n    }\n\n    if !has_digits {\n        return None;\n    }\n\n    Some(u8::try_from(c.min(255)).unwrap())\n}\n\nfn skip_separators(str: &str, str_idx: &mut u32) {\n    while let Some(ch) = str.chars().nth(*str_idx as usize) {\n        if ch == ' ' || ch == ',' {\n            *str_idx += 1;\n        } else {\n            break;\n        }\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "rgba.rs",
+        "error": "",
+        "dependent": [
+            "rgba_from_rgb"
+        ],
+        "params": [
+            "unsigned int * const str_idx_ref",
+            "const char * const str",
+            "short * const ok"
+        ],
+        "lifetime_hint": [
+            "str_idx_ref is a mutable refrence to unsigned int"
+        ],
+        "global_variables": [
+            "str_idx_ref",
+            "str",
+            "ok",
+            "str_idx",
+            "r",
+            "g",
+            "b",
+            "c"
+        ],
+        "calle": [
+            "rgba_from_rgb"
+        ],
+        "calle_c": [],
+        "key": "helper_rgba_from_rgb_string_1",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "rgba_from_rgb_string": {
+        "source_code": "static int32_t rgba_from_rgb_string(const char *str, short *ok)\n{\n  unsigned int str_idx = 0;\n  if ((&str[str_idx]) == strstr(str, \"rgb(\"))\n  {\n    helper_rgba_from_rgb_string_1(&str_idx, str, ok);\n  }\n  return *ok = 0;\n}\n\n",
+        "translated_code": "use std::ffi::CStr;\n\npub fn rgba_from_rgb_string(str: Option<&str>, ok: &mut i16) -> i32 {\n    let mut str_idx: u32 = 0;\n    \n    // Check if the string starts with \"rgb(\"\n    if let Some(s) = str {\n        if s.starts_with(\"rgb(\") {\n            helper_rgba_from_rgb_string_1(&mut str_idx, s, ok);\n        }\n    }\n    \n    *ok = 0;\n    0  // Return value matches C's int32_t (i32 in Rust)\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "rgba.rs",
+        "error": "",
+        "dependent": [
+            "helper_rgba_from_rgb_string_1"
+        ],
+        "params": [
+            "const char *str",
+            "short *ok"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "str",
+            "ok",
+            "str_idx"
+        ],
+        "calle": [
+            "helper_rgba_from_rgb_string_1",
+            "strstr"
+        ],
+        "calle_c": [
+            "helper_rgba_from_rgb_string_1",
+            "strstr"
+        ],
+        "key": "rgba_from_rgb_string",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "rgba_from_name_string": {
+        "source_code": "static int32_t rgba_from_name_string(const char *str, short *ok)\n{\n  int i = 0;\n  struct named_color color;\n  while ((color = named_colors[i++]).name)\n  {\n    if (((*str) == (*color.name)) && (0 == strcmp(str, color.name)))\n    {\n      return *ok = 1, color.val;\n    }\n  }\n\n  return *ok = 0;\n}\n\n",
+        "translated_code": "use std::ffi::CStr;\nuse std::os::raw::c_char;\n\npub fn rgba_from_name_string(str: *const c_char, ok: &mut i16) -> i32 {\n    // Convert C string to Rust &str safely\n    let str_cstr = unsafe { CStr::from_ptr(str) };\n    let str_slice = match str_cstr.to_str() {\n        Ok(s) => s,\n        Err(_) => {\n            *ok = 0;\n            return 0;\n        }\n    };\n\n    // Iterate through named colors\n    for color in NAMED_COLORS.iter() {\n        if color.name == str_slice {\n            *ok = 1;\n            return color.val as i32;\n        }\n    }\n\n    *ok = 0;\n    0\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "rgba.rs",
+        "error": "",
+        "dependent": [
+            "named_colors"
+        ],
+        "params": [
+            "const char *str",
+            "short *ok"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "str",
+            "ok",
+            "i",
+            "color",
+            "named_colors"
+        ],
+        "calle": [
+            "strcmp"
+        ],
+        "calle_c": [
+            "strcmp"
+        ],
+        "key": "rgba_from_name_string",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "rgba_from_hex6_string": {
+        "source_code": "static uint32_t rgba_from_hex6_string(const char *str)\n{\n  return rgba_from_rgb((h(str[0]) << 4) + h(str[1]), (h(str[2]) << 4) + h(str[3]), (h(str[4]) << 4) + h(str[5]));\n}\n\n",
+        "translated_code": "pub fn rgba_from_hex6_string(str: &str) -> u32 {\n    let chars: Vec<char> = str.chars().collect();\n    rgba_from_rgb(\n        ((h(chars[0]) << 4) + h(chars[1])) as u8,\n        ((h(chars[2]) << 4) + h(chars[3])) as u8,\n        ((h(chars[4]) << 4) + h(chars[5])) as u8,\n    )\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "rgba.rs",
+        "error": "",
+        "dependent": [
+            "h",
+            "rgba_from_rgb"
+        ],
+        "params": [
+            "const char *str"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "str"
+        ],
+        "calle": [
+            "h",
+            "rgba_from_rgb"
+        ],
+        "calle_c": [],
+        "key": "rgba_from_hex6_string",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "rgba_from_hex3_string": {
+        "source_code": "static int32_t rgba_from_hex3_string(const char *str)\n{\n  return rgba_from_rgb((h(str[0]) << 4) + h(str[0]), (h(str[1]) << 4) + h(str[1]), (h(str[2]) << 4) + h(str[2]));\n}\n\n",
+        "translated_code": "pub fn rgba_from_hex3_string(str: Option<&str>) -> Option<u32> {\n    // Check if input is None (equivalent to NULL check in C)\n    let str = str?; // Early return if None\n    \n    // Convert &str to a slice of chars for safe indexing\n    let chars: Vec<char> = str.chars().collect();\n    \n    // Ensure we have at least 3 characters (like C would require)\n    if chars.len() < 3 {\n        return None;\n    }\n    \n    // Calculate components using the h function\n    let r = (h(chars[0]) << 4) + h(chars[0]);\n    let g = (h(chars[1]) << 4) + h(chars[1]);\n    let b = (h(chars[2]) << 4) + h(chars[2]);\n    \n    // Convert to u8 with bounds checking (since rgba_from_rgb expects u8)\n    let r = r.clamp(0, 255) as u8;\n    let g = g.clamp(0, 255) as u8;\n    let b = b.clamp(0, 255) as u8;\n    \n    Some(rgba_from_rgb(r, g, b))\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "rgba.rs",
+        "error": "",
+        "dependent": [
+            "h",
+            "rgba_from_rgb"
+        ],
+        "params": [
+            "const char *str"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "str"
+        ],
+        "calle": [
+            "h",
+            "rgba_from_rgb"
+        ],
+        "calle_c": [],
+        "key": "rgba_from_hex3_string",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "rgba_from_hex_string": {
+        "source_code": "static int32_t rgba_from_hex_string(const char *str, short *ok)\n{\n  size_t len = strlen(str);\n  *ok = 1;\n  if (6 == len)\n  {\n    return rgba_from_hex6_string(str);\n  }\n  if (3 == len)\n  {\n    return rgba_from_hex3_string(str);\n  }\n  return *ok = 0;\n}\n\n",
+        "translated_code": "pub fn rgba_from_hex_string(str: Option<&str>, ok: &mut bool) -> Option<u32> {\n    *ok = true;\n    let str = match str {\n        Some(s) => s,\n        None => {\n            *ok = false;\n            return None;\n        }\n    };\n\n    let len = str.len();\n    match len {\n        6 => Some(rgba_from_hex6_string(str)),\n        3 => rgba_from_hex3_string(Some(str)),\n        _ => {\n            *ok = false;\n            None\n        }\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "rgba.rs",
+        "error": "",
+        "dependent": [
+            "rgba_from_hex3_string",
+            "rgba_from_hex6_string"
+        ],
+        "params": [
+            "const char *str",
+            "short *ok"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "str",
+            "ok",
+            "len"
+        ],
+        "calle": [
+            "rgba_from_hex6_string",
+            "strlen",
+            "rgba_from_hex3_string"
+        ],
+        "calle_c": [
+            "strlen"
+        ],
+        "key": "rgba_from_hex_string",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "rgba_from_string": {
+        "source_code": "uint32_t rgba_from_string(const char *str, short *ok)\n{\n  unsigned int str_idx = 0;\n  if ('#' == str[0 + str_idx])\n  {\n    str_idx += 1;\n    return rgba_from_hex_string(str, ok);\n  }\n  if ((&str[str_idx]) == strstr(str, \"rgba\"))\n  {\n    return rgba_from_rgba_string(str, ok);\n  }\n  if ((&str[str_idx]) == strstr(str, \"rgb\"))\n  {\n    return rgba_from_rgb_string(str, ok);\n  }\n  return rgba_from_name_string(str, ok);\n}\n\n",
+        "translated_code": "pub fn rgba_from_string(str: Option<&str>, ok: &mut i16) -> u32 {\n    let str = match str {\n        Some(s) => s,\n        None => {\n            *ok = 0;\n            return 0;\n        }\n    };\n\n    let mut str_idx = 0;\n\n    if str.starts_with('#') {\n        str_idx += 1;\n        let mut bool_ok = false;\n        let result = rgba_from_hex_string(Some(&str[str_idx..]), &mut bool_ok);\n        *ok = bool_ok as i16;\n        return result.unwrap_or(0);\n    }\n\n    if str[str_idx..].starts_with(\"rgba\") {\n        let mut bool_ok = false;\n        let result = rgba_from_rgba_string(&str[str_idx..], &mut bool_ok);\n        *ok = bool_ok as i16;\n        return result;\n    }\n\n    if str[str_idx..].starts_with(\"rgb\") {\n        return rgba_from_rgb_string(Some(&str[str_idx..]), ok) as u32;\n    }\n\n    // For rgba_from_name_string, we need to convert &str to *const c_char\n    let c_str = std::ffi::CString::new(str).unwrap();\n    rgba_from_name_string(c_str.as_ptr(), ok) as u32\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "rgba.rs",
+        "error": "",
+        "dependent": [
+            "rgba_from_hex_string",
+            "rgba_from_name_string",
+            "rgba_from_rgb_string",
+            "rgba_from_rgba_string"
+        ],
+        "header": "uint32_t rgba_from_string(const char *str, short *ok)",
+        "params": [
+            "const char *str",
+            "short *ok"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "str",
+            "ok",
+            "str_idx"
+        ],
+        "calle": [
+            "rgba_from_rgb_string",
+            "rgba_from_name_string",
+            "strstr",
+            "rgba_from_hex_string",
+            "rgba_from_rgba_string"
+        ],
+        "calle_c": [
+            "strstr"
+        ],
+        "key": "rgba_from_string",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "test_named": {
+        "source_code": "void test_named()\n{\n  short ok;\n  int32_t val = rgba_from_string(\"olive\", &ok);\n  assert(ok);\n  assert(0x808000FF == val);\n}\n\n",
+        "translated_code": "pub fn test_named() {\n    let mut ok: i16 = 0;\n    let val = rgba_from_string(Some(\"olive\"), &mut ok);\n    assert!(ok != 0);\n    assert_eq!(0x808000FF, val);\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "rgba_from_string"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "ok",
+            "val"
+        ],
+        "calle": [
+            "rgba_from_string",
+            "assert"
+        ],
+        "calle_c": [
+            "assert"
+        ],
+        "key": "test_named",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_rgb": {
+        "source_code": "void test_rgb()\n{\n  short ok;\n  int32_t val = rgba_from_string(\"rgb(255, 30   , 0)\", &ok);\n  assert(ok);\n  assert(0xff1e00ff == val);\n  val = rgba_from_string(\"rgb(0,0,0)\", &ok);\n  assert(ok);\n  assert(0x000000ff == val);\n}\n\n",
+        "translated_code": "pub fn test_rgb() {\n    let mut ok: i16 = 0;\n    let mut val = rgba_from_string(Some(\"rgb(255, 30   , 0)\"), &mut ok);\n    assert!(ok != 0);\n    assert_eq!(0xff1e00ff, val);\n    val = rgba_from_string(Some(\"rgb(0,0,0)\"), &mut ok);\n    assert!(ok != 0);\n    assert_eq!(0x000000ff, val);\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "rgba_from_string"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "ok",
+            "val"
+        ],
+        "calle": [
+            "rgba_from_string",
+            "assert"
+        ],
+        "calle_c": [
+            "assert"
+        ],
+        "key": "test_rgb",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_rgba": {
+        "source_code": "void test_rgba()\n{\n  short ok;\n  int32_t val = rgba_from_string(\"rgba(255, 30   , 0, .5)\", &ok);\n  assert(ok);\n  assert(0xff1e007f == val);\n  val = rgba_from_string(\"rgba(0,0,0, 1)\", &ok);\n  assert(ok);\n  assert(0x000000ff == val);\n}\n\n",
+        "translated_code": "pub fn test_rgba() {\n    let mut ok: i16 = 0;\n    let mut val = rgba_from_string(Some(\"rgba(255, 30   , 0, .5)\"), &mut ok);\n    assert!(ok != 0);\n    assert_eq!(0xff1e007f, val);\n    \n    val = rgba_from_string(Some(\"rgba(0,0,0, 1)\"), &mut ok);\n    assert!(ok != 0);\n    assert_eq!(0x000000ff, val);\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "rgba_from_string"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "ok",
+            "val"
+        ],
+        "calle": [
+            "rgba_from_string",
+            "assert"
+        ],
+        "calle_c": [
+            "assert"
+        ],
+        "key": "test_rgba",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_hex": {
+        "source_code": "void test_hex()\n{\n  short ok;\n  int32_t val = rgba_from_string(\"#ff1e00\", &ok);\n  assert(ok);\n  assert(0xff1e00ff == val);\n  val = rgba_from_string(\"#ffffff\", &ok);\n  assert(ok);\n  assert(0xffffffff == val);\n  val = rgba_from_string(\"#ffcc00\", &ok);\n  assert(ok);\n  assert(0xffcc00ff == val);\n  val = rgba_from_string(\"#fco\", &ok);\n  assert(ok);\n  assert(0xffcc00ff == val);\n}\n\n",
+        "translated_code": "pub fn test_hex() {\n    let mut ok: i16 = 0;\n    let mut val = rgba_from_string(Some(\"#ff1e00\"), &mut ok);\n    assert!(ok != 0);\n    assert_eq!(0xff1e00ff, val);\n    \n    val = rgba_from_string(Some(\"#ffffff\"), &mut ok);\n    assert!(ok != 0);\n    assert_eq!(0xffffffff, val);\n    \n    val = rgba_from_string(Some(\"#ffcc00\"), &mut ok);\n    assert!(ok != 0);\n    assert_eq!(0xffcc00ff, val);\n    \n    val = rgba_from_string(Some(\"#fco\"), &mut ok);\n    assert!(ok != 0);\n    assert_eq!(0xffcc00ff, val);\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "rgba_from_string"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "ok",
+            "val"
+        ],
+        "calle": [
+            "rgba_from_string",
+            "assert"
+        ],
+        "calle_c": [
+            "assert"
+        ],
+        "key": "test_hex",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "rgba_new": {
+        "source_code": "rgba_t rgba_new(uint32_t rgba)\n{\n  rgba_t color;\n  color.r = ((double) (rgba >> 24)) / 255;\n  color.g = ((double) ((rgba >> 16) & 0xff)) / 255;\n  color.b = ((double) ((rgba >> 8) & 0xff)) / 255;\n  color.a = ((double) (rgba & 0xff)) / 255;\n  return color;\n}\n\n",
+        "translated_code": "pub fn rgba_new(rgba: u32) -> RgbaT {\n    RgbaT {\n        r: ((rgba >> 24) as f64) / 255.0,\n        g: (((rgba >> 16) & 0xff) as f64) / 255.0,\n        b: (((rgba >> 8) & 0xff) as f64) / 255.0,\n        a: ((rgba & 0xff) as f64) / 255.0,\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "rgba.rs",
+        "error": "",
+        "dependent": [
+            "rgba_t"
+        ],
+        "header": "rgba_t rgba_new(uint32_t rgba)",
+        "params": [
+            "uint32_t rgba"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "rgba",
+            "color"
+        ],
+        "calle": [],
+        "calle_c": [],
+        "key": "rgba_new",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "rgba_to_string": {
+        "source_code": "void rgba_to_string(rgba_t rgba, char *buf, size_t len)\n{\n  if (1 == rgba.a)\n  {\n    snprintf(buf, len, \"#%.2x%.2x%.2x\", (int) (rgba.r * 255), (int) (rgba.g * 255), (int) (rgba.b * 255));\n  }\n  else\n  {\n    snprintf(buf, len, \"rgba(%d, %d, %d, %.2f)\", (int) (rgba.r * 255), (int) (rgba.g * 255), (int) (rgba.b * 255), rgba.a);\n  }\n}\n\n",
+        "translated_code": "pub fn rgba_to_string(rgba: RgbaT, buf: &mut [u8]) -> Option<&str> {\n    if rgba.a == 1.0 {\n        let written = unsafe {\n            std::ffi::CString::new(format!(\n                \"#{:02x}{:02x}{:02x}\",\n                (rgba.r * 255.0) as u8,\n                (rgba.g * 255.0) as u8,\n                (rgba.b * 255.0) as u8\n            ))\n            .unwrap()\n            .as_bytes_with_nul()\n            .len()\n        };\n        if written > buf.len() {\n            return None;\n        }\n        let s = format!(\n            \"#{:02x}{:02x}{:02x}\",\n            (rgba.r * 255.0) as u8,\n            (rgba.g * 255.0) as u8,\n            (rgba.b * 255.0) as u8\n        );\n        buf[..s.len()].copy_from_slice(s.as_bytes());\n        Some(std::str::from_utf8(&buf[..s.len()]).unwrap())\n    } else {\n        let written = unsafe {\n            std::ffi::CString::new(format!(\n                \"rgba({}, {}, {}, {:.2})\",\n                (rgba.r * 255.0) as u8,\n                (rgba.g * 255.0) as u8,\n                (rgba.b * 255.0) as u8,\n                rgba.a\n            ))\n            .unwrap()\n            .as_bytes_with_nul()\n            .len()\n        };\n        if written > buf.len() {\n            return None;\n        }\n        let s = format!(\n            \"rgba({}, {}, {}, {:.2})\",\n            (rgba.r * 255.0) as u8,\n            (rgba.g * 255.0) as u8,\n            (rgba.b * 255.0) as u8,\n            rgba.a\n        );\n        buf[..s.len()].copy_from_slice(s.as_bytes());\n        Some(std::str::from_utf8(&buf[..s.len()]).unwrap())\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "rgba.rs",
+        "error": "",
+        "dependent": [
+            "rgba_t"
+        ],
+        "header": "void rgba_to_string(rgba_t rgba, char *buf, size_t len)",
+        "params": [
+            "rgba_t rgba",
+            "char *buf",
+            "size_t len"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "rgba",
+            "buf",
+            "len"
+        ],
+        "calle": [
+            "snprintf"
+        ],
+        "calle_c": [
+            "snprintf"
+        ],
+        "key": "rgba_to_string",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_to_string": {
+        "source_code": "void test_to_string()\n{\n  char buf[256];\n  rgba_t color = rgba_new(0xffcc00ff);\n  rgba_to_string(color, buf, 256);\n  assert(0 == strcmp(\"#ffcc00\", buf));\n  color = rgba_new(0xffcc0050);\n  rgba_to_string(color, buf, 256);\n  assert(0 == strcmp(\"rgba(255, 204, 0, 0.31)\", buf));\n}\n\n",
+        "translated_code": "pub fn test_to_string() {\n    let mut buf = [0u8; 256];\n    \n    let color = rgba_new(0xffcc00ff);\n    rgba_to_string(color, &mut buf).unwrap();\n    assert_eq!(\"#ffcc00\", std::str::from_utf8(&buf).unwrap().trim_end_matches('\\0'));\n    \n    let color = rgba_new(0xffcc0050);\n    rgba_to_string(color, &mut buf).unwrap();\n    assert_eq!(\"rgba(255, 204, 0, 0.31)\", std::str::from_utf8(&buf).unwrap().trim_end_matches('\\0'));\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "rgba_new",
+            "rgba_t",
+            "rgba_to_string"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "buf",
+            "color"
+        ],
+        "calle": [
+            "rgba_new",
+            "strcmp",
+            "rgba_to_string",
+            "assert"
+        ],
+        "calle_c": [
+            "strcmp",
+            "assert"
+        ],
+        "key": "test_to_string",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "main#test": {
+        "source_code": "int main(int argc, char **argv)\n{\n  test_named();\n  test_rgb();\n  test_rgba();\n  test_hex();\n  test_to_string();\n  printf(\"\\n  \\e[32m\\u2713 \\e[90mok\\e[0m\\n\\n\");\n  return 0;\n}\n\n",
+        "translated_code": "use std::env;\n\npub fn main() {\n    test_named();\n    test_rgb();\n    test_rgba();\n    test_hex();\n    test_to_string();\n    println!(\"\\n  \\x1b[32m\\u{2713} \\x1b[90mok\\x1b[0m\\n\\n\");\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "test_hex",
+            "test_named",
+            "test_rgb",
+            "test_rgba",
+            "test_to_string"
+        ],
+        "params": [
+            "int argc",
+            "char **argv"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "argc",
+            "argv"
+        ],
+        "calle": [
+            "printf",
+            "test_named",
+            "test_to_string",
+            "test_hex",
+            "test_rgba",
+            "test_rgb"
+        ],
+        "calle_c": [
+            "printf"
+        ],
+        "key": "main#test",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    }
+}

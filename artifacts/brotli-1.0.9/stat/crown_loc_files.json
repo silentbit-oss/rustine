@@ -1,0 +1,598 @@
+{
+  "Rust": {
+    "blanks": 244,
+    "children": {},
+    "code": 535473,
+    "comments": 23,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/lib.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 50,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/enc/fast_log.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 260,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/enc/literal_cost.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 789,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/enc/entropy_encode.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 806,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/enc/metablock.rs",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 2563,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/enc/compress_fragment.rs",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 3015,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/enc/memory.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 57,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/enc/compress_fragment_two_pass.rs",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 3430,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/dec/huffman.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 841,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/enc/static_dict.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 1694,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/common/constants.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 196,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/dec/state.rs",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 293,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/common/transform.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 787,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/enc/encode.rs",
+        "stats": {
+          "blanks": 65,
+          "blobs": {},
+          "code": 6739,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/enc/cluster.rs",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 1718,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/enc/bit_cost.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 589,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/enc/histogram.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 203,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/dec/bit_reader.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 195,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/dec/decode.rs",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 11882,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/common/platform.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 20,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/common/context.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 2054,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/enc/utf8_util.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 104,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/enc/backward_references_hq.rs",
+        "stats": {
+          "blanks": 29,
+          "blobs": {},
+          "code": 2235,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/enc/brotli_bit_stream.rs",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 7595,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/enc/command.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 111,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/enc/dictionary_hash.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 65547,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/enc/block_splitter.rs",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 4430,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/tools/brotli.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 1769,
+          "comments": 19
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/enc/backward_references.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6160,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/common/dictionary.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 122883,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/brotli-1.0.9/others/crown/src/enc/encoder_dict.rs",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 286452,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 244,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/lib.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 50,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/enc/fast_log.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 260,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/enc/literal_cost.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 789,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/enc/entropy_encode.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 806,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/enc/metablock.rs",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 2563,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/enc/compress_fragment.rs",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 3015,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/enc/memory.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 57,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/enc/compress_fragment_two_pass.rs",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 3430,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/dec/huffman.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 841,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/enc/static_dict.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 1694,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/common/constants.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 196,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/dec/state.rs",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 293,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/common/transform.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 787,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/enc/encode.rs",
+          "stats": {
+            "blanks": 65,
+            "blobs": {},
+            "code": 6739,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/enc/cluster.rs",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 1718,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/enc/bit_cost.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 589,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/enc/histogram.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 203,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/dec/bit_reader.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 195,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/dec/decode.rs",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 11882,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/common/platform.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 20,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/common/context.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 2054,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/enc/utf8_util.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 104,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/enc/backward_references_hq.rs",
+          "stats": {
+            "blanks": 29,
+            "blobs": {},
+            "code": 2235,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/enc/brotli_bit_stream.rs",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 7595,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/enc/command.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 111,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/enc/dictionary_hash.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 65547,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/enc/block_splitter.rs",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 4430,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/tools/brotli.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 1769,
+            "comments": 19
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/enc/backward_references.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6160,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/common/dictionary.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 122883,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/brotli-1.0.9/others/crown/src/enc/encoder_dict.rs",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 286452,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 535473,
+    "comments": 23,
+    "inaccurate": false,
+    "reports": []
+  }
+}

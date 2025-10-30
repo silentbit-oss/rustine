@@ -1,0 +1,40 @@
+{
+  "C": {
+    "blanks": 86,
+    "children": {},
+    "code": 490,
+    "comments": 55,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/grabc/grabc.c",
+        "stats": {
+          "blanks": 86,
+          "blobs": {},
+          "code": 490,
+          "comments": 55
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 86,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/grabc/grabc.c",
+          "stats": {
+            "blanks": 86,
+            "blobs": {},
+            "code": 490,
+            "comments": 55
+          }
+        }
+      ]
+    },
+    "code": 490,
+    "comments": 55,
+    "inaccurate": false,
+    "reports": []
+  }
+}

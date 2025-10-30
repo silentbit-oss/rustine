@@ -1,0 +1,80 @@
+warning: `assert!(false, ..)` should probably be replaced
+warning: `assert!(false, ..)` should probably be replaced
+warning: `assert!(false, ..)` should probably be replaced
+warning: `assert!(false, ..)` should probably be replaced
+warning: `assert!(false, ..)` should probably be replaced
+warning: `assert!(false, ..)` should probably be replaced
+warning: float has excessive precision
+warning: float has excessive precision
+warning: importing a legacy numeric constant
+warning: manual `RangeInclusive::contains` implementation
+warning: manual `RangeInclusive::contains` implementation
+warning: manual `RangeInclusive::contains` implementation
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: the loop variable `c` is only used to index `texel`
+warning: the loop variable `dst_idx` is only used to index `dst`
+warning: the loop variable `i` is only used to index `corners`
+warning: the loop variable `i` is only used to index `images`
+warning: the loop variable `i` is only used to index `pptr`
+warning: the loop variable `i` is used to index `mat`
+warning: the loop variable `i` is used to index `source`
+warning: the loop variable `q` is used to index `d`
+warning: the loop variable `tile` is used to index `images`
+warning: the loop variable `x` is used to index `row`
+warning: this `else { if .. }` block can be collapsed
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this block may be rewritten with the `?` operator
+warning: this block may be rewritten with the `?` operator
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string

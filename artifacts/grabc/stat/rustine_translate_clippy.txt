@@ -1,0 +1,647 @@
+warning: type `wchar_t` should have an upper camel case name
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: `Visual` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Screen` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `XErrorEvent` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `XEvent` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `XColor` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `XEvent` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `XColor` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `XWindowAttributes` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `XWindowAttributes` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `XColor` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: unused import: `crate::*`
+warning: ambiguous glob re-exports
+warning: unused import: `types::*`
+warning: unused import: `x_error_event::*`
+warning: unused import: `x_window_attributes::*`
+warning: ambiguous glob re-exports
+warning: `Window` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Window` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Window` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Window` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Window` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Window` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Window` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Window` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Window` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Window` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Window` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Window` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Window` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: unused import: `crate::*`
+warning: ambiguous glob re-exports
+warning: `Cursor` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Cursor` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Cursor` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: ambiguous glob re-exports
+warning: `Display` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Display` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Display` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Display` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Display` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Display` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Display` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Display` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Display` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Display` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Display` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: unused import: `crate::*`
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: `Colormap` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Colormap` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: unused import: `crate::*`
+warning: unused import: `x_color::*`
+warning: unused import: `x_event::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: ambiguous glob re-exports
+warning: unused import: `x_set_window_attributes::*`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: unused import: `std::sync::atomic::AtomicI32`
+warning: unused import: `std::sync::atomic::AtomicU32`
+warning: unused import: `std::process::exit`
+warning: unused import: `std::os::raw`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::str::FromStr`
+warning: unused variable: `fmt`
+warning: unused variable: `display`
+warning: value assigned to `rc` is never read
+warning: unnecessary `unsafe` block
+warning: value assigned to `status` is never read
+warning: value assigned to `option_idx` is never read
+warning: literal with an empty format string
+warning: variables can be used directly in the `format!` string
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: variables can be used directly in the `format!` string
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: variables can be used directly in the `format!` string
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: this function has too many arguments (8/7)
+warning: `format!` in `format_args!` args
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: this function has too many arguments (10/7)
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: literal with an empty format string
+warning: constant `XlibSpecificationRelease` should have an upper case name
+warning: constant `None` should have an upper case name
+warning: constant `ParentRelative` should have an upper case name
+warning: constant `CopyFromParent` should have an upper case name
+warning: constant `PointerWindow` should have an upper case name
+warning: constant `InputFocus` should have an upper case name
+warning: constant `PointerRoot` should have an upper case name
+warning: constant `AnyPropertyType` should have an upper case name
+warning: constant `AnyKey` should have an upper case name
+warning: constant `AnyButton` should have an upper case name
+warning: constant `AllTemporary` should have an upper case name
+warning: constant `CurrentTime` should have an upper case name
+warning: constant `NoSymbol` should have an upper case name
+warning: constant `NoEventMask` should have an upper case name
+warning: constant `KeyPressMask` should have an upper case name
+warning: constant `KeyReleaseMask` should have an upper case name
+warning: constant `ButtonPressMask` should have an upper case name
+warning: constant `ButtonReleaseMask` should have an upper case name
+warning: constant `EnterWindowMask` should have an upper case name
+warning: constant `LeaveWindowMask` should have an upper case name
+warning: constant `PointerMotionMask` should have an upper case name
+warning: constant `PointerMotionHintMask` should have an upper case name
+warning: constant `Button1MotionMask` should have an upper case name
+warning: constant `Button2MotionMask` should have an upper case name
+warning: constant `Button3MotionMask` should have an upper case name
+warning: constant `Button4MotionMask` should have an upper case name
+warning: constant `Button5MotionMask` should have an upper case name
+warning: constant `ButtonMotionMask` should have an upper case name
+warning: constant `KeymapStateMask` should have an upper case name
+warning: constant `ExposureMask` should have an upper case name
+warning: constant `VisibilityChangeMask` should have an upper case name
+warning: constant `StructureNotifyMask` should have an upper case name
+warning: constant `ResizeRedirectMask` should have an upper case name
+warning: constant `SubstructureNotifyMask` should have an upper case name
+warning: constant `SubstructureRedirectMask` should have an upper case name
+warning: constant `FocusChangeMask` should have an upper case name
+warning: constant `PropertyChangeMask` should have an upper case name
+warning: constant `ColormapChangeMask` should have an upper case name
+warning: constant `OwnerGrabButtonMask` should have an upper case name
+warning: constant `KeyPress` should have an upper case name
+warning: constant `KeyRelease` should have an upper case name
+warning: constant `ButtonPress` should have an upper case name
+warning: constant `ButtonRelease` should have an upper case name
+warning: constant `MotionNotify` should have an upper case name
+warning: constant `EnterNotify` should have an upper case name
+warning: constant `LeaveNotify` should have an upper case name
+warning: constant `FocusIn` should have an upper case name
+warning: constant `FocusOut` should have an upper case name
+warning: constant `KeymapNotify` should have an upper case name
+warning: constant `Expose` should have an upper case name
+warning: constant `GraphicsExpose` should have an upper case name
+warning: constant `NoExpose` should have an upper case name
+warning: constant `VisibilityNotify` should have an upper case name
+warning: constant `CreateNotify` should have an upper case name
+warning: constant `DestroyNotify` should have an upper case name
+warning: constant `UnmapNotify` should have an upper case name
+warning: constant `MapNotify` should have an upper case name
+warning: constant `MapRequest` should have an upper case name
+warning: constant `ReparentNotify` should have an upper case name
+warning: constant `ConfigureNotify` should have an upper case name
+warning: constant `ConfigureRequest` should have an upper case name
+warning: constant `GravityNotify` should have an upper case name
+warning: constant `ResizeRequest` should have an upper case name
+warning: constant `CirculateNotify` should have an upper case name
+warning: constant `CirculateRequest` should have an upper case name
+warning: constant `PropertyNotify` should have an upper case name
+warning: constant `SelectionClear` should have an upper case name
+warning: constant `SelectionRequest` should have an upper case name
+warning: constant `SelectionNotify` should have an upper case name
+warning: constant `ColormapNotify` should have an upper case name
+warning: constant `ClientMessage` should have an upper case name
+warning: constant `MappingNotify` should have an upper case name
+warning: constant `GenericEvent` should have an upper case name
+warning: constant `LASTEvent` should have an upper case name
+warning: constant `ShiftMask` should have an upper case name
+warning: constant `LockMask` should have an upper case name
+warning: constant `ControlMask` should have an upper case name
+warning: constant `Mod1Mask` should have an upper case name
+warning: constant `Mod2Mask` should have an upper case name
+warning: constant `Mod3Mask` should have an upper case name
+warning: constant `Mod4Mask` should have an upper case name
+warning: constant `Mod5Mask` should have an upper case name
+warning: constant `ShiftMapIndex` should have an upper case name
+warning: constant `LockMapIndex` should have an upper case name
+warning: constant `ControlMapIndex` should have an upper case name
+warning: constant `Mod1MapIndex` should have an upper case name
+warning: constant `Mod2MapIndex` should have an upper case name
+warning: constant `Mod3MapIndex` should have an upper case name
+warning: constant `Mod4MapIndex` should have an upper case name
+warning: constant `Mod5MapIndex` should have an upper case name
+warning: constant `Button1Mask` should have an upper case name
+warning: constant `Button2Mask` should have an upper case name
+warning: constant `Button3Mask` should have an upper case name
+warning: constant `Button4Mask` should have an upper case name
+warning: constant `Button5Mask` should have an upper case name
+warning: constant `AnyModifier` should have an upper case name
+warning: constant `Button1` should have an upper case name
+warning: constant `Button2` should have an upper case name
+warning: constant `Button3` should have an upper case name
+warning: constant `Button4` should have an upper case name
+warning: constant `Button5` should have an upper case name
+warning: constant `NotifyNormal` should have an upper case name
+warning: constant `NotifyGrab` should have an upper case name
+warning: constant `NotifyUngrab` should have an upper case name
+warning: constant `NotifyWhileGrabbed` should have an upper case name
+warning: constant `NotifyHint` should have an upper case name
+warning: constant `NotifyAncestor` should have an upper case name
+warning: constant `NotifyVirtual` should have an upper case name
+warning: constant `NotifyInferior` should have an upper case name
+warning: constant `NotifyNonlinear` should have an upper case name
+warning: constant `NotifyNonlinearVirtual` should have an upper case name
+warning: constant `NotifyPointer` should have an upper case name
+warning: constant `NotifyPointerRoot` should have an upper case name
+warning: constant `NotifyDetailNone` should have an upper case name
+warning: constant `VisibilityUnobscured` should have an upper case name
+warning: constant `VisibilityPartiallyObscured` should have an upper case name
+warning: constant `VisibilityFullyObscured` should have an upper case name
+warning: constant `PlaceOnTop` should have an upper case name
+warning: constant `PlaceOnBottom` should have an upper case name
+warning: constant `FamilyInternet` should have an upper case name
+warning: constant `FamilyDECnet` should have an upper case name
+warning: constant `FamilyChaos` should have an upper case name
+warning: constant `FamilyInternet6` should have an upper case name
+warning: constant `FamilyServerInterpreted` should have an upper case name
+warning: constant `PropertyNewValue` should have an upper case name
+warning: constant `PropertyDelete` should have an upper case name
+warning: constant `ColormapUninstalled` should have an upper case name
+warning: constant `ColormapInstalled` should have an upper case name
+warning: constant `GrabModeSync` should have an upper case name
+warning: constant `GrabModeAsync` should have an upper case name
+warning: constant `GrabSuccess` should have an upper case name
+warning: constant `AlreadyGrabbed` should have an upper case name
+warning: constant `GrabInvalidTime` should have an upper case name
+warning: constant `GrabNotViewable` should have an upper case name
+warning: constant `GrabFrozen` should have an upper case name
+warning: constant `AsyncPointer` should have an upper case name
+warning: constant `SyncPointer` should have an upper case name
+warning: constant `ReplayPointer` should have an upper case name
+warning: constant `AsyncKeyboard` should have an upper case name
+warning: constant `SyncKeyboard` should have an upper case name
+warning: constant `ReplayKeyboard` should have an upper case name
+warning: constant `AsyncBoth` should have an upper case name
+warning: constant `SyncBoth` should have an upper case name
+warning: constant `RevertToParent` should have an upper case name
+warning: constant `Success` should have an upper case name
+warning: constant `BadRequest` should have an upper case name
+warning: constant `BadValue` should have an upper case name
+warning: constant `BadWindow` should have an upper case name
+warning: constant `BadPixmap` should have an upper case name
+warning: constant `BadAtom` should have an upper case name
+warning: constant `BadCursor` should have an upper case name
+warning: constant `BadFont` should have an upper case name
+warning: constant `BadMatch` should have an upper case name
+warning: constant `BadDrawable` should have an upper case name
+warning: constant `BadAccess` should have an upper case name
+warning: constant `BadAlloc` should have an upper case name
+warning: constant `BadColor` should have an upper case name
+warning: constant `BadGC` should have an upper case name
+warning: constant `BadIDChoice` should have an upper case name
+warning: constant `BadName` should have an upper case name
+warning: constant `BadLength` should have an upper case name
+warning: constant `BadImplementation` should have an upper case name
+warning: constant `FirstExtensionError` should have an upper case name
+warning: constant `LastExtensionError` should have an upper case name
+warning: constant `InputOutput` should have an upper case name
+warning: constant `InputOnly` should have an upper case name
+warning: constant `CWBackPixmap` should have an upper case name
+warning: constant `CWBackPixel` should have an upper case name
+warning: constant `CWBorderPixmap` should have an upper case name
+warning: constant `CWBorderPixel` should have an upper case name
+warning: constant `CWBitGravity` should have an upper case name
+warning: constant `CWWinGravity` should have an upper case name
+warning: constant `CWBackingStore` should have an upper case name
+warning: constant `CWBackingPlanes` should have an upper case name
+warning: constant `CWBackingPixel` should have an upper case name
+warning: constant `CWOverrideRedirect` should have an upper case name
+warning: constant `CWSaveUnder` should have an upper case name
+warning: constant `CWEventMask` should have an upper case name
+warning: constant `CWDontPropagate` should have an upper case name
+warning: constant `CWColormap` should have an upper case name
+warning: constant `CWCursor` should have an upper case name
+warning: constant `CWWidth` should have an upper case name
+warning: constant `CWHeight` should have an upper case name
+warning: constant `CWBorderWidth` should have an upper case name
+warning: constant `CWSibling` should have an upper case name
+warning: constant `CWStackMode` should have an upper case name
+warning: constant `ForgetGravity` should have an upper case name
+warning: constant `NorthWestGravity` should have an upper case name
+warning: constant `NorthGravity` should have an upper case name
+warning: constant `NorthEastGravity` should have an upper case name
+warning: constant `WestGravity` should have an upper case name
+warning: constant `CenterGravity` should have an upper case name
+warning: constant `EastGravity` should have an upper case name
+warning: constant `SouthWestGravity` should have an upper case name
+warning: constant `SouthGravity` should have an upper case name
+warning: constant `SouthEastGravity` should have an upper case name
+warning: constant `StaticGravity` should have an upper case name
+warning: constant `UnmapGravity` should have an upper case name
+warning: constant `NotUseful` should have an upper case name
+warning: constant `WhenMapped` should have an upper case name
+warning: constant `Always` should have an upper case name
+warning: constant `IsUnmapped` should have an upper case name
+warning: constant `IsUnviewable` should have an upper case name
+warning: constant `IsViewable` should have an upper case name
+warning: constant `SetModeInsert` should have an upper case name
+warning: constant `SetModeDelete` should have an upper case name
+warning: constant `DestroyAll` should have an upper case name
+warning: constant `RetainPermanent` should have an upper case name
+warning: constant `RetainTemporary` should have an upper case name
+warning: constant `Above` should have an upper case name
+warning: constant `Below` should have an upper case name
+warning: constant `TopIf` should have an upper case name
+warning: constant `BottomIf` should have an upper case name
+warning: constant `Opposite` should have an upper case name
+warning: constant `RaiseLowest` should have an upper case name
+warning: constant `LowerHighest` should have an upper case name
+warning: constant `PropModeReplace` should have an upper case name
+warning: constant `PropModePrepend` should have an upper case name
+warning: constant `PropModeAppend` should have an upper case name
+warning: constant `GXclear` should have an upper case name
+warning: constant `GXand` should have an upper case name
+warning: constant `GXandReverse` should have an upper case name
+warning: constant `GXcopy` should have an upper case name
+warning: constant `GXandInverted` should have an upper case name
+warning: constant `GXnoop` should have an upper case name
+warning: constant `GXxor` should have an upper case name
+warning: constant `GXor` should have an upper case name
+warning: constant `GXnor` should have an upper case name
+warning: constant `GXequiv` should have an upper case name
+warning: constant `GXinvert` should have an upper case name
+warning: constant `GXorReverse` should have an upper case name
+warning: constant `GXcopyInverted` should have an upper case name
+warning: constant `GXorInverted` should have an upper case name
+warning: constant `GXnand` should have an upper case name
+warning: constant `GXset` should have an upper case name
+warning: constant `LineSolid` should have an upper case name
+warning: constant `LineOnOffDash` should have an upper case name
+warning: constant `LineDoubleDash` should have an upper case name
+warning: constant `CapNotLast` should have an upper case name
+warning: constant `CapButt` should have an upper case name
+warning: constant `CapRound` should have an upper case name
+warning: constant `CapProjecting` should have an upper case name
+warning: constant `JoinMiter` should have an upper case name
+warning: constant `JoinRound` should have an upper case name
+warning: constant `JoinBevel` should have an upper case name
+warning: constant `FillSolid` should have an upper case name
+warning: constant `FillTiled` should have an upper case name
+warning: constant `FillStippled` should have an upper case name
+warning: constant `FillOpaqueStippled` should have an upper case name
+warning: constant `EvenOddRule` should have an upper case name
+warning: constant `WindingRule` should have an upper case name
+warning: constant `ClipByChildren` should have an upper case name
+warning: constant `IncludeInferiors` should have an upper case name
+warning: constant `Unsorted` should have an upper case name
+warning: constant `YSorted` should have an upper case name
+warning: constant `YXSorted` should have an upper case name
+warning: constant `YXBanded` should have an upper case name
+warning: constant `CoordModeOrigin` should have an upper case name
+warning: constant `CoordModePrevious` should have an upper case name
+warning: constant `Complex` should have an upper case name
+warning: constant `Nonconvex` should have an upper case name
+warning: constant `Convex` should have an upper case name
+warning: constant `ArcChord` should have an upper case name
+warning: constant `ArcPieSlice` should have an upper case name
+warning: constant `GCFunction` should have an upper case name
+warning: constant `GCPlaneMask` should have an upper case name
+warning: constant `GCForeground` should have an upper case name
+warning: constant `GCBackground` should have an upper case name
+warning: constant `GCLineWidth` should have an upper case name
+warning: constant `GCLineStyle` should have an upper case name
+warning: constant `GCCapStyle` should have an upper case name
+warning: constant `GCJoinStyle` should have an upper case name
+warning: constant `GCFillStyle` should have an upper case name
+warning: constant `GCFillRule` should have an upper case name
+warning: constant `GCTile` should have an upper case name
+warning: constant `GCStipple` should have an upper case name
+warning: constant `GCTileStipXOrigin` should have an upper case name
+warning: constant `GCTileStipYOrigin` should have an upper case name
+warning: constant `GCFont` should have an upper case name
+warning: constant `GCSubwindowMode` should have an upper case name
+warning: constant `GCGraphicsExposures` should have an upper case name
+warning: constant `GCClipXOrigin` should have an upper case name
+warning: constant `GCClipYOrigin` should have an upper case name
+warning: constant `GCClipMask` should have an upper case name
+warning: constant `GCDashOffset` should have an upper case name
+warning: constant `GCDashList` should have an upper case name
+warning: constant `GCArcMode` should have an upper case name
+warning: constant `GCLastBit` should have an upper case name
+warning: constant `FontLeftToRight` should have an upper case name
+warning: constant `FontRightToLeft` should have an upper case name
+warning: constant `FontChange` should have an upper case name
+warning: constant `XYBitmap` should have an upper case name
+warning: constant `XYPixmap` should have an upper case name
+warning: constant `ZPixmap` should have an upper case name
+warning: constant `AllocNone` should have an upper case name
+warning: constant `AllocAll` should have an upper case name
+warning: constant `DoRed` should have an upper case name
+warning: constant `DoGreen` should have an upper case name
+warning: constant `DoBlue` should have an upper case name
+warning: constant `CursorShape` should have an upper case name
+warning: constant `TileShape` should have an upper case name
+warning: constant `StippleShape` should have an upper case name
+warning: constant `AutoRepeatModeOff` should have an upper case name
+warning: constant `AutoRepeatModeOn` should have an upper case name
+warning: constant `AutoRepeatModeDefault` should have an upper case name
+warning: constant `LedModeOff` should have an upper case name
+warning: constant `LedModeOn` should have an upper case name
+warning: constant `KBKeyClickPercent` should have an upper case name
+warning: constant `KBBellPercent` should have an upper case name
+warning: constant `KBBellPitch` should have an upper case name
+warning: constant `KBBellDuration` should have an upper case name
+warning: constant `KBLed` should have an upper case name
+warning: constant `KBLedMode` should have an upper case name
+warning: constant `KBKey` should have an upper case name
+warning: constant `KBAutoRepeatMode` should have an upper case name
+warning: constant `MappingSuccess` should have an upper case name
+warning: constant `MappingBusy` should have an upper case name
+warning: constant `MappingFailed` should have an upper case name
+warning: constant `MappingModifier` should have an upper case name
+warning: constant `MappingKeyboard` should have an upper case name
+warning: constant `MappingPointer` should have an upper case name
+warning: constant `DontPreferBlanking` should have an upper case name
+warning: constant `PreferBlanking` should have an upper case name
+warning: constant `DefaultBlanking` should have an upper case name
+warning: constant `DisableScreenSaver` should have an upper case name
+warning: constant `DisableScreenInterval` should have an upper case name
+warning: constant `DontAllowExposures` should have an upper case name
+warning: constant `AllowExposures` should have an upper case name
+warning: constant `DefaultExposures` should have an upper case name
+warning: constant `ScreenSaverReset` should have an upper case name
+warning: constant `ScreenSaverActive` should have an upper case name
+warning: constant `HostInsert` should have an upper case name
+warning: constant `HostDelete` should have an upper case name
+warning: constant `EnableAccess` should have an upper case name
+warning: constant `DisableAccess` should have an upper case name
+warning: constant `StaticGray` should have an upper case name
+warning: constant `GrayScale` should have an upper case name
+warning: constant `StaticColor` should have an upper case name
+warning: constant `PseudoColor` should have an upper case name
+warning: constant `TrueColor` should have an upper case name
+warning: constant `DirectColor` should have an upper case name
+warning: constant `LSBFirst` should have an upper case name
+warning: constant `MSBFirst` should have an upper case name
+warning: constant `NeedFunctionPrototypes` should have an upper case name
+warning: constant `NeedVarargsPrototypes` should have an upper case name
+warning: constant `NeedNestedPrototypes` should have an upper case name
+warning: constant `NeedWidePrototypes` should have an upper case name
+warning: constant `True` should have an upper case name
+warning: constant `False` should have an upper case name
+warning: constant `QueuedAlready` should have an upper case name
+warning: constant `QueuedAfterReading` should have an upper case name
+warning: constant `QueuedAfterFlush` should have an upper case name
+warning: constant `XNRequiredCharSet` should have an upper case name
+warning: constant `XNQueryOrientation` should have an upper case name
+warning: constant `XNBaseFontName` should have an upper case name
+warning: constant `XNOMAutomatic` should have an upper case name
+warning: constant `XNMissingCharSet` should have an upper case name
+warning: constant `XNDefaultString` should have an upper case name
+warning: constant `XNOrientation` should have an upper case name
+warning: constant `XNDirectionalDependentDrawing` should have an upper case name
+warning: constant `XNContextualDrawing` should have an upper case name
+warning: constant `XNFontInfo` should have an upper case name
+warning: constant `XIMPreeditArea` should have an upper case name
+warning: constant `XIMPreeditCallbacks` should have an upper case name
+warning: constant `XIMPreeditPosition` should have an upper case name
+warning: constant `XIMPreeditNothing` should have an upper case name
+warning: constant `XIMPreeditNone` should have an upper case name
+warning: constant `XIMStatusArea` should have an upper case name
+warning: constant `XIMStatusCallbacks` should have an upper case name
+warning: constant `XIMStatusNothing` should have an upper case name
+warning: constant `XIMStatusNone` should have an upper case name
+warning: constant `XNVaNestedList` should have an upper case name
+warning: constant `XNQueryInputStyle` should have an upper case name
+warning: constant `XNClientWindow` should have an upper case name
+warning: constant `XNInputStyle` should have an upper case name
+warning: constant `XNFocusWindow` should have an upper case name
+warning: constant `XNResourceName` should have an upper case name
+warning: constant `XNResourceClass` should have an upper case name
+warning: constant `XNGeometryCallback` should have an upper case name
+warning: constant `XNDestroyCallback` should have an upper case name
+warning: constant `XNFilterEvents` should have an upper case name
+warning: constant `XNPreeditStartCallback` should have an upper case name
+warning: constant `XNPreeditDoneCallback` should have an upper case name
+warning: constant `XNPreeditDrawCallback` should have an upper case name
+warning: constant `XNPreeditCaretCallback` should have an upper case name
+warning: constant `XNPreeditStateNotifyCallback` should have an upper case name
+warning: constant `XNPreeditAttributes` should have an upper case name
+warning: constant `XNStatusStartCallback` should have an upper case name
+warning: constant `XNStatusDoneCallback` should have an upper case name
+warning: constant `XNStatusDrawCallback` should have an upper case name
+warning: constant `XNStatusAttributes` should have an upper case name
+warning: constant `XNArea` should have an upper case name
+warning: constant `XNAreaNeeded` should have an upper case name
+warning: constant `XNSpotLocation` should have an upper case name
+warning: constant `XNColormap` should have an upper case name
+warning: constant `XNStdColormap` should have an upper case name
+warning: constant `XNForeground` should have an upper case name
+warning: constant `XNBackground` should have an upper case name
+warning: constant `XNBackgroundPixmap` should have an upper case name
+warning: constant `XNFontSet` should have an upper case name
+warning: constant `XNLineSpace` should have an upper case name
+warning: constant `XNCursor` should have an upper case name
+warning: constant `XNQueryIMValuesList` should have an upper case name
+warning: constant `XNQueryICValuesList` should have an upper case name
+warning: constant `XNVisiblePosition` should have an upper case name
+warning: constant `XNR6PreeditCallback` should have an upper case name
+warning: constant `XNStringConversionCallback` should have an upper case name
+warning: constant `XNStringConversion` should have an upper case name
+warning: constant `XNResetState` should have an upper case name
+warning: constant `XNHotKey` should have an upper case name
+warning: constant `XNHotKeyState` should have an upper case name
+warning: constant `XNPreeditState` should have an upper case name
+warning: constant `XNSeparatorofNestedList` should have an upper case name
+warning: constant `XBufferOverflow` should have an upper case name
+warning: constant `XLookupNone` should have an upper case name
+warning: constant `XLookupChars` should have an upper case name
+warning: constant `XLookupKeySym` should have an upper case name
+warning: constant `XLookupBoth` should have an upper case name
+warning: constant `XIMReverse` should have an upper case name
+warning: constant `XIMUnderline` should have an upper case name
+warning: constant `XIMHighlight` should have an upper case name
+warning: constant `XIMPrimary` should have an upper case name
+warning: constant `XIMSecondary` should have an upper case name
+warning: constant `XIMTertiary` should have an upper case name
+warning: constant `XIMVisibleToForward` should have an upper case name
+warning: constant `XIMVisibleToBackword` should have an upper case name
+warning: constant `XIMVisibleToCenter` should have an upper case name
+warning: constant `XIMPreeditUnKnown` should have an upper case name
+warning: constant `XIMPreeditEnable` should have an upper case name
+warning: constant `XIMPreeditDisable` should have an upper case name
+warning: constant `XIMInitialState` should have an upper case name
+warning: constant `XIMPreserveState` should have an upper case name
+warning: constant `XIMStringConversionLeftEdge` should have an upper case name
+warning: constant `XIMStringConversionRightEdge` should have an upper case name
+warning: constant `XIMStringConversionTopEdge` should have an upper case name
+warning: constant `XIMStringConversionBottomEdge` should have an upper case name
+warning: constant `XIMStringConversionConcealed` should have an upper case name
+warning: constant `XIMStringConversionWrapped` should have an upper case name
+warning: constant `XIMStringConversionBuffer` should have an upper case name
+warning: constant `XIMStringConversionLine` should have an upper case name
+warning: constant `XIMStringConversionWord` should have an upper case name
+warning: constant `XIMStringConversionChar` should have an upper case name
+warning: constant `XIMStringConversionSubstitution` should have an upper case name
+warning: constant `XIMStringConversionRetrieval` should have an upper case name
+warning: constant `XIMHotKeyStateON` should have an upper case name
+warning: constant `XIMHotKeyStateOFF` should have an upper case name
+warning: constant `XOrientation_XOMOrientation_LTR_TTB` should have an upper case name
+warning: constant `XOrientation_XOMOrientation_RTL_TTB` should have an upper case name
+warning: constant `XOrientation_XOMOrientation_TTB_LTR` should have an upper case name
+warning: constant `XOrientation_XOMOrientation_TTB_RTL` should have an upper case name
+warning: constant `XOrientation_XOMOrientation_Context` should have an upper case name
+warning: constant `XIMCaretDirection_XIMForwardChar` should have an upper case name
+warning: constant `XIMCaretDirection_XIMBackwardChar` should have an upper case name
+warning: constant `XIMCaretDirection_XIMForwardWord` should have an upper case name
+warning: constant `XIMCaretDirection_XIMBackwardWord` should have an upper case name
+warning: constant `XIMCaretDirection_XIMCaretUp` should have an upper case name
+warning: constant `XIMCaretDirection_XIMCaretDown` should have an upper case name
+warning: constant `XIMCaretDirection_XIMNextLine` should have an upper case name
+warning: constant `XIMCaretDirection_XIMPreviousLine` should have an upper case name
+warning: constant `XIMCaretDirection_XIMLineStart` should have an upper case name
+warning: constant `XIMCaretDirection_XIMLineEnd` should have an upper case name
+warning: constant `XIMCaretDirection_XIMAbsolutePosition` should have an upper case name
+warning: constant `XIMCaretDirection_XIMDontChange` should have an upper case name
+warning: constant `XIMCaretStyle_XIMIsInvisible` should have an upper case name
+warning: constant `XIMCaretStyle_XIMIsPrimary` should have an upper case name
+warning: constant `XIMCaretStyle_XIMIsSecondary` should have an upper case name
+warning: constant `XIMStatusDataType_XIMTextType` should have an upper case name
+warning: constant `XIMStatusDataType_XIMBitmapType` should have an upper case name
+warning: function `findSubWindow` should have a snake case name
+warning: function `MXError` should have a snake case name
+warning: constant in pattern `X_GetGeometry` should have an upper case name
+warning: constant in pattern `X_GetWindowAttributes` should have an upper case name
+warning: constant in pattern `X_QueryTree` should have an upper case name
+warning: constant in pattern `X_QueryColors` should have an upper case name
+warning: constant `BadAlloc` should have an upper case name
+warning: constant `BadAccess` should have an upper case name
+warning: constant `BadDrawable` should have an upper case name
+warning: constant `BadWindow` should have an upper case name
+warning: constant `BadValue` should have an upper case name
+warning: constant `X_GetGeometry` should have an upper case name
+warning: constant `X_GetWindowAttributes` should have an upper case name
+warning: constant `X_QueryTree` should have an upper case name
+warning: constant `X_QueryColors` should have an upper case name
+warning: constant `IsViewable` should have an upper case name
+warning: `XGetWindowAttributes` redeclared with a different signature
+warning: `XQueryColor` redeclared with a different signature

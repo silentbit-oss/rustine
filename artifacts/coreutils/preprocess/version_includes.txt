@@ -1,0 +1,5 @@
+#include <assert.h>
+#include <config.h>
+#include <stdbool.h>
+#include <version.c>
+#include <version.h>

@@ -1,0 +1,6 @@
+#include <assert.h>
+#include <math.h>
+#include <quadtree.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <test.c>

@@ -1,0 +1,303 @@
+{
+  "C": {
+    "blanks": 1046,
+    "children": {},
+    "code": 5341,
+    "comments": 977,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/bzip2/decompress.c",
+        "stats": {
+          "blanks": 83,
+          "blobs": {},
+          "code": 508,
+          "comments": 61
+        }
+      },
+      {
+        "name": "subjects/bzip2/bzip2recover.c",
+        "stats": {
+          "blanks": 84,
+          "blobs": {},
+          "code": 388,
+          "comments": 72
+        }
+      },
+      {
+        "name": "subjects/bzip2/unzcrash.c",
+        "stats": {
+          "blanks": 21,
+          "blobs": {},
+          "code": 92,
+          "comments": 28
+        }
+      },
+      {
+        "name": "subjects/bzip2/spewG.c",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 23,
+          "comments": 23
+        }
+      },
+      {
+        "name": "subjects/bzip2/huffman.c",
+        "stats": {
+          "blanks": 35,
+          "blobs": {},
+          "code": 126,
+          "comments": 44
+        }
+      },
+      {
+        "name": "subjects/bzip2/mk251.c",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 8,
+          "comments": 18
+        }
+      },
+      {
+        "name": "subjects/bzip2/randtable.c",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 55,
+          "comments": 21
+        }
+      },
+      {
+        "name": "subjects/bzip2/blocksort.c",
+        "stats": {
+          "blanks": 142,
+          "blobs": {},
+          "code": 729,
+          "comments": 223
+        }
+      },
+      {
+        "name": "subjects/bzip2/dlltest.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 151,
+          "comments": 8
+        }
+      },
+      {
+        "name": "subjects/bzip2/crctable.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 67,
+          "comments": 27
+        }
+      },
+      {
+        "name": "subjects/bzip2/compress.c",
+        "stats": {
+          "blanks": 109,
+          "blobs": {},
+          "code": 439,
+          "comments": 123
+        }
+      },
+      {
+        "name": "subjects/bzip2/bzip2.c",
+        "stats": {
+          "blanks": 270,
+          "blobs": {},
+          "code": 1568,
+          "comments": 191
+        }
+      },
+      {
+        "name": "subjects/bzip2/bzlib.c",
+        "stats": {
+          "blanks": 255,
+          "blobs": {},
+          "code": 1187,
+          "comments": 138
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 179,
+    "children": {},
+    "code": 520,
+    "comments": 95,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/bzip2/bzlib_private.h",
+        "stats": {
+          "blanks": 126,
+          "blobs": {},
+          "code": 320,
+          "comments": 61
+        }
+      },
+      {
+        "name": "subjects/bzip2/bzlib.h",
+        "stats": {
+          "blanks": 53,
+          "blobs": {},
+          "code": 200,
+          "comments": 34
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 1225,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/bzip2/decompress.c",
+          "stats": {
+            "blanks": 83,
+            "blobs": {},
+            "code": 508,
+            "comments": 61
+          }
+        },
+        {
+          "name": "subjects/bzip2/bzip2recover.c",
+          "stats": {
+            "blanks": 84,
+            "blobs": {},
+            "code": 388,
+            "comments": 72
+          }
+        },
+        {
+          "name": "subjects/bzip2/unzcrash.c",
+          "stats": {
+            "blanks": 21,
+            "blobs": {},
+            "code": 92,
+            "comments": 28
+          }
+        },
+        {
+          "name": "subjects/bzip2/spewG.c",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 23,
+            "comments": 23
+          }
+        },
+        {
+          "name": "subjects/bzip2/huffman.c",
+          "stats": {
+            "blanks": 35,
+            "blobs": {},
+            "code": 126,
+            "comments": 44
+          }
+        },
+        {
+          "name": "subjects/bzip2/mk251.c",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 8,
+            "comments": 18
+          }
+        },
+        {
+          "name": "subjects/bzip2/randtable.c",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 55,
+            "comments": 21
+          }
+        },
+        {
+          "name": "subjects/bzip2/blocksort.c",
+          "stats": {
+            "blanks": 142,
+            "blobs": {},
+            "code": 729,
+            "comments": 223
+          }
+        },
+        {
+          "name": "subjects/bzip2/dlltest.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 151,
+            "comments": 8
+          }
+        },
+        {
+          "name": "subjects/bzip2/crctable.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 67,
+            "comments": 27
+          }
+        },
+        {
+          "name": "subjects/bzip2/compress.c",
+          "stats": {
+            "blanks": 109,
+            "blobs": {},
+            "code": 439,
+            "comments": 123
+          }
+        },
+        {
+          "name": "subjects/bzip2/bzip2.c",
+          "stats": {
+            "blanks": 270,
+            "blobs": {},
+            "code": 1568,
+            "comments": 191
+          }
+        },
+        {
+          "name": "subjects/bzip2/bzlib.c",
+          "stats": {
+            "blanks": 255,
+            "blobs": {},
+            "code": 1187,
+            "comments": 138
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/bzip2/bzlib_private.h",
+          "stats": {
+            "blanks": 126,
+            "blobs": {},
+            "code": 320,
+            "comments": 61
+          }
+        },
+        {
+          "name": "subjects/bzip2/bzlib.h",
+          "stats": {
+            "blanks": 53,
+            "blobs": {},
+            "code": 200,
+            "comments": 34
+          }
+        }
+      ]
+    },
+    "code": 5861,
+    "comments": 1072,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "Rust": {
+    "blanks": 4,
+    "children": {},
+    "code": 138,
+    "comments": 87,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/avl-tree/others/crown/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 16,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/avl-tree/others/crown/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/avl-tree/others/crown/src/avl.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 116,
+          "comments": 83
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 4,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/avl-tree/others/crown/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 16,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/avl-tree/others/crown/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/avl-tree/others/crown/src/avl.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 116,
+            "comments": 83
+          }
+        }
+      ]
+    },
+    "code": 138,
+    "comments": 87,
+    "inaccurate": false,
+    "reports": []
+  }
+}

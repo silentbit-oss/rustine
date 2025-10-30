@@ -1,0 +1,796 @@
+{
+  "Rust": {
+    "blanks": 442,
+    "children": {},
+    "code": 27263,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/json-c/others/crown/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_strerror.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 31,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_object_iterator.rs",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 57,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_set_serializer.rs",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 247,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/parse_flags.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 83,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_parse_int64.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 209,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_printbuf.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 364,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test2.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 39,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_float.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 41,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_null.rs",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 70,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_compare.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 490,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_deep_copy.rs",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 1077,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_charcase.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 195,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/json_util.rs",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 420,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/json_object_iterator.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 112,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/json_patch.rs",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 507,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_set_value.rs",
+        "stats": {
+          "blanks": 25,
+          "blobs": {},
+          "code": 1324,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/apps/json_parse.rs",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 590,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/arraylist.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 360,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/linkhash.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 1060,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/json_pointer.rs",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 487,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/printbuf.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 194,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_cast.rs",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 177,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/debug.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 78,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/random_seed.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 9,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_util_file.rs",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 517,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/json_c_version.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 10,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/json_visit.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 212,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/strerror_override.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 391,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_int_get.rs",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 2028,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/json_tokener.rs",
+        "stats": {
+          "blanks": 24,
+          "blobs": {},
+          "code": 2174,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_locale.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 92,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_int_add.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 706,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_json_pointer.rs",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 3904,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test1.rs",
+        "stats": {
+          "blanks": 34,
+          "blobs": {},
+          "code": 738,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_double_serializer.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 284,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_json_patch.rs",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 415,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/json_object.rs",
+        "stats": {
+          "blanks": 31,
+          "blobs": {},
+          "code": 3251,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/testReplaceExisting.rs",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 236,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 60,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_visit.rs",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 251,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test4.rs",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 202,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/json-c/others/crown/src/tests/test_parse.rs",
+        "stats": {
+          "blanks": 21,
+          "blobs": {},
+          "code": 3565,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 442,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/json-c/others/crown/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_strerror.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 31,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_object_iterator.rs",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 57,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_set_serializer.rs",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 247,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/parse_flags.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 83,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_parse_int64.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 209,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_printbuf.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 364,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test2.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 39,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_float.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 41,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_null.rs",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 70,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_compare.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 490,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_deep_copy.rs",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 1077,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_charcase.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 195,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/json_util.rs",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 420,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/json_object_iterator.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 112,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/json_patch.rs",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 507,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_set_value.rs",
+          "stats": {
+            "blanks": 25,
+            "blobs": {},
+            "code": 1324,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/apps/json_parse.rs",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 590,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/arraylist.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 360,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/linkhash.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 1060,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/json_pointer.rs",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 487,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/printbuf.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 194,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_cast.rs",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 177,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/debug.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 78,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/random_seed.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 9,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_util_file.rs",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 517,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/json_c_version.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 10,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/json_visit.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 212,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/strerror_override.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 391,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_int_get.rs",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 2028,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/json_tokener.rs",
+          "stats": {
+            "blanks": 24,
+            "blobs": {},
+            "code": 2174,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_locale.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 92,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_int_add.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 706,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_json_pointer.rs",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 3904,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test1.rs",
+          "stats": {
+            "blanks": 34,
+            "blobs": {},
+            "code": 738,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_double_serializer.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 284,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_json_patch.rs",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 415,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/json_object.rs",
+          "stats": {
+            "blanks": 31,
+            "blobs": {},
+            "code": 3251,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/testReplaceExisting.rs",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 236,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 60,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_visit.rs",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 251,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test4.rs",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 202,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/json-c/others/crown/src/tests/test_parse.rs",
+          "stats": {
+            "blanks": 21,
+            "blobs": {},
+            "code": 3565,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 27263,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

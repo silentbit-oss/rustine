@@ -1,0 +1,934 @@
+# 0 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/aabb3.c"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/aabb3.c"
+# 26 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/aabb3.c"
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/aabb3.h" 1
+# 29 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/aabb3.h"
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/vec3.h" 1
+# 29 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/vec3.h"
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/assert.h" 1
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/_fake_defines.h" 1
+# 2 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/assert.h" 2
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/_fake_typedefs.h" 1
+
+
+
+typedef int START_DELIMETER;
+typedef unsigned chtype;
+typedef chtype attr_t;
+typedef int socklen_t;
+typedef int size_t;
+typedef int __builtin_va_list;
+typedef int __gnuc_va_list;
+typedef int va_list;
+typedef int __int8_t;
+typedef int __uint8_t;
+typedef int __int16_t;
+typedef int __uint16_t;
+typedef int __int_least16_t;
+typedef int __uint_least16_t;
+typedef int __int32_t;
+typedef int __uint32_t;
+typedef int __int64_t;
+typedef int __uint64_t;
+typedef int __int_least32_t;
+typedef int __uint_least32_t;
+typedef int __s8;
+typedef int __u8;
+typedef int __s16;
+typedef int __u16;
+typedef int __s32;
+typedef int __u32;
+typedef int __s64;
+typedef int __u64;
+typedef int _LOCK_T;
+typedef int _LOCK_RECURSIVE_T;
+typedef int _off_t;
+typedef int __dev_t;
+typedef int __uid_t;
+typedef int __gid_t;
+typedef int _off64_t;
+typedef int _fpos_t;
+typedef int _ssize_t;
+typedef int wint_t;
+typedef int _mbstate_t;
+typedef int _flock_t;
+typedef int _iconv_t;
+typedef int __ULong;
+typedef int __FILE;
+typedef int ptrdiff_t;
+typedef int wchar_t;
+typedef int char16_t;
+typedef int char32_t;
+typedef int __off_t;
+typedef int __pid_t;
+typedef int __loff_t;
+typedef int u_char;
+typedef int u_short;
+typedef int u_int;
+typedef int u_long;
+typedef int ushort;
+typedef int uint;
+typedef int clock_t;
+typedef int time_t;
+typedef int daddr_t;
+typedef int caddr_t;
+typedef int ino_t;
+typedef int off_t;
+typedef int dev_t;
+typedef int uid_t;
+typedef int gid_t;
+typedef int pid_t;
+typedef int key_t;
+typedef int ssize_t;
+typedef int mode_t;
+typedef int nlink_t;
+typedef int fd_mask;
+typedef int _types_fd_set;
+typedef int clockid_t;
+typedef int timer_t;
+typedef int useconds_t;
+typedef int suseconds_t;
+typedef int FILE;
+typedef int fpos_t;
+typedef int cookie_read_function_t;
+typedef int cookie_write_function_t;
+typedef int cookie_seek_function_t;
+typedef int cookie_close_function_t;
+typedef int cookie_io_functions_t;
+typedef int div_t;
+typedef int ldiv_t;
+typedef int lldiv_t;
+typedef int sigset_t;
+typedef int __sigset_t;
+typedef int _sig_func_ptr;
+typedef int sig_atomic_t;
+typedef int __tzrule_type;
+typedef int __tzinfo_type;
+typedef int mbstate_t;
+typedef int sem_t;
+typedef int pthread_t;
+typedef int pthread_attr_t;
+typedef int pthread_mutex_t;
+typedef int pthread_mutexattr_t;
+typedef int pthread_cond_t;
+typedef int pthread_condattr_t;
+typedef int pthread_key_t;
+typedef int pthread_once_t;
+typedef int pthread_rwlock_t;
+typedef int pthread_rwlockattr_t;
+typedef int pthread_spinlock_t;
+typedef int pthread_barrier_t;
+typedef int pthread_barrierattr_t;
+typedef int jmp_buf;
+typedef int rlim_t;
+typedef int sa_family_t;
+typedef int sigjmp_buf;
+typedef int stack_t;
+typedef int siginfo_t;
+typedef int z_stream;
+
+
+typedef int int8_t;
+typedef int uint8_t;
+typedef int int16_t;
+typedef int uint16_t;
+typedef int int32_t;
+typedef int uint32_t;
+typedef int int64_t;
+typedef int uint64_t;
+
+
+typedef int int_least8_t;
+typedef int uint_least8_t;
+typedef int int_least16_t;
+typedef int uint_least16_t;
+typedef int int_least32_t;
+typedef int uint_least32_t;
+typedef int int_least64_t;
+typedef int uint_least64_t;
+
+
+typedef int int_fast8_t;
+typedef int uint_fast8_t;
+typedef int int_fast16_t;
+typedef int uint_fast16_t;
+typedef int int_fast32_t;
+typedef int uint_fast32_t;
+typedef int int_fast64_t;
+typedef int uint_fast64_t;
+
+
+typedef int intptr_t;
+typedef int uintptr_t;
+
+
+typedef int intmax_t;
+typedef int uintmax_t;
+
+
+typedef _Bool bool;
+
+
+typedef void* MirEGLNativeWindowType;
+typedef void* MirEGLNativeDisplayType;
+typedef struct MirConnection MirConnection;
+typedef struct MirSurface MirSurface;
+typedef struct MirSurfaceSpec MirSurfaceSpec;
+typedef struct MirScreencast MirScreencast;
+typedef struct MirPromptSession MirPromptSession;
+typedef struct MirBufferStream MirBufferStream;
+typedef struct MirPersistentId MirPersistentId;
+typedef struct MirBlob MirBlob;
+typedef struct MirDisplayConfig MirDisplayConfig;
+
+
+typedef struct xcb_connection_t xcb_connection_t;
+typedef uint32_t xcb_window_t;
+typedef uint32_t xcb_visualid_t;
+
+
+typedef _Atomic(_Bool) atomic_bool;
+typedef _Atomic(char) atomic_char;
+typedef _Atomic(signed char) atomic_schar;
+typedef _Atomic(unsigned char) atomic_uchar;
+typedef _Atomic(short) atomic_short;
+typedef _Atomic(unsigned short) atomic_ushort;
+typedef _Atomic(int) atomic_int;
+typedef _Atomic(unsigned int) atomic_uint;
+typedef _Atomic(long) atomic_long;
+typedef _Atomic(unsigned long) atomic_ulong;
+typedef _Atomic(long long) atomic_llong;
+typedef _Atomic(unsigned long long) atomic_ullong;
+typedef _Atomic(uint_least16_t) atomic_char16_t;
+typedef _Atomic(uint_least32_t) atomic_char32_t;
+typedef _Atomic(wchar_t) atomic_wchar_t;
+typedef _Atomic(int_least8_t) atomic_int_least8_t;
+typedef _Atomic(uint_least8_t) atomic_uint_least8_t;
+typedef _Atomic(int_least16_t) atomic_int_least16_t;
+typedef _Atomic(uint_least16_t) atomic_uint_least16_t;
+typedef _Atomic(int_least32_t) atomic_int_least32_t;
+typedef _Atomic(uint_least32_t) atomic_uint_least32_t;
+typedef _Atomic(int_least64_t) atomic_int_least64_t;
+typedef _Atomic(uint_least64_t) atomic_uint_least64_t;
+typedef _Atomic(int_fast8_t) atomic_int_fast8_t;
+typedef _Atomic(uint_fast8_t) atomic_uint_fast8_t;
+typedef _Atomic(int_fast16_t) atomic_int_fast16_t;
+typedef _Atomic(uint_fast16_t) atomic_uint_fast16_t;
+typedef _Atomic(int_fast32_t) atomic_int_fast32_t;
+typedef _Atomic(uint_fast32_t) atomic_uint_fast32_t;
+typedef _Atomic(int_fast64_t) atomic_int_fast64_t;
+typedef _Atomic(uint_fast64_t) atomic_uint_fast64_t;
+typedef _Atomic(intptr_t) atomic_intptr_t;
+typedef _Atomic(uintptr_t) atomic_uintptr_t;
+typedef _Atomic(size_t) atomic_size_t;
+typedef _Atomic(ptrdiff_t) atomic_ptrdiff_t;
+typedef _Atomic(intmax_t) atomic_intmax_t;
+typedef _Atomic(uintmax_t) atomic_uintmax_t;
+typedef struct atomic_flag { atomic_bool _Value; } atomic_flag;
+typedef enum memory_order {
+  memory_order_relaxed,
+  memory_order_consume,
+  memory_order_acquire,
+  memory_order_release,
+  memory_order_acq_rel,
+  memory_order_seq_cst
+} memory_order;
+
+typedef struct __locale_struct *__locale_t;
+typedef __locale_t locale_t;
+typedef int END_DELIMETER;
+# 3 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/assert.h" 2
+# 30 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/vec3.h" 2
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/utility.h" 1
+# 29 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/utility.h"
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/math.h" 1
+# 30 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/utility.h" 2
+# 81 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/utility.h"
+extern float kmSQR(float s);
+extern float kmDegreesToRadians(float degrees);
+extern float kmRadiansToDegrees(float radians);
+
+extern float kmMin(float lhs, float rhs);
+extern float kmMax(float lhs, float rhs);
+extern unsigned char kmAlmostEqual(float lhs, float rhs);
+
+extern float kmClamp(float x, float min, float max);
+extern float kmLerp(float x, float y, float factor);
+# 31 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/vec3.h" 2
+
+struct kmMat4;
+struct kmMat3;
+struct kmPlane;
+
+typedef struct kmVec3 {
+ float x;
+ float y;
+ float z;
+} kmVec3;
+
+
+
+
+
+kmVec3* kmVec3Fill(kmVec3* pOut, float x, float y, float z);
+float kmVec3Length(const kmVec3* pIn);
+float kmVec3LengthSq(const kmVec3* pIn);
+kmVec3* kmVec3Lerp(kmVec3* pOut, const kmVec3* pV1, const kmVec3* pV2, float t);
+kmVec3* kmVec3Normalize(kmVec3* pOut, const kmVec3* pIn);
+kmVec3* kmVec3Cross(kmVec3* pOut, const kmVec3* pV1, const kmVec3* pV2);
+float kmVec3Dot(const kmVec3* pV1, const kmVec3* pV2);
+kmVec3* kmVec3Add(kmVec3* pOut, const kmVec3* pV1, const kmVec3* pV2);
+kmVec3* kmVec3Subtract(kmVec3* pOut, const kmVec3* pV1, const kmVec3* pV2);
+kmVec3* kmVec3Mul( kmVec3* pOut,const kmVec3* pV1, const kmVec3* pV2 );
+kmVec3* kmVec3Div( kmVec3* pOut,const kmVec3* pV1, const kmVec3* pV2 );
+
+kmVec3* kmVec3MultiplyMat3(kmVec3 *pOut, const kmVec3 *pV, const struct kmMat3* pM);
+kmVec3* kmVec3MultiplyMat4(kmVec3* pOut, const kmVec3* pV, const struct kmMat4* pM);
+
+kmVec3* kmVec3Transform(kmVec3* pOut, const kmVec3* pV1, const struct kmMat4* pM);
+kmVec3* kmVec3TransformNormal(kmVec3* pOut, const kmVec3* pV, const struct kmMat4* pM);
+kmVec3* kmVec3TransformCoord(kmVec3* pOut, const kmVec3* pV, const struct kmMat4* pM);
+
+kmVec3* kmVec3Scale(kmVec3* pOut, const kmVec3* pIn, const float s);
+int kmVec3AreEqual(const kmVec3* p1, const kmVec3* p2);
+kmVec3* kmVec3InverseTransform(kmVec3* pOut, const kmVec3* pV, const struct kmMat4* pM);
+kmVec3* kmVec3InverseTransformNormal(kmVec3* pOut, const kmVec3* pVect, const struct kmMat4* pM);
+kmVec3* kmVec3Assign(kmVec3* pOut, const kmVec3* pIn);
+kmVec3* kmVec3Zero(kmVec3* pOut);
+kmVec3* kmVec3GetHorizontalAngle(kmVec3* pOut, const kmVec3 *pIn);
+kmVec3* kmVec3RotationToDirection(kmVec3* pOut, const kmVec3* pIn, const kmVec3* forwards);
+
+kmVec3* kmVec3ProjectOnToPlane(kmVec3* pOut, const kmVec3* point, const struct kmPlane* plane);
+
+kmVec3* kmVec3Reflect(kmVec3* pOut, const kmVec3* pIn, const kmVec3* normal);
+
+extern const kmVec3 KM_VEC3_NEG_Z;
+extern const kmVec3 KM_VEC3_POS_Z;
+extern const kmVec3 KM_VEC3_POS_Y;
+extern const kmVec3 KM_VEC3_NEG_Y;
+extern const kmVec3 KM_VEC3_NEG_X;
+extern const kmVec3 KM_VEC3_POS_X;
+extern const kmVec3 KM_VEC3_ZERO;
+# 30 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/aabb3.h" 2
+# 40 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/aabb3.h"
+typedef struct kmAABB3 {
+    kmVec3 min;
+    kmVec3 max;
+} kmAABB3;
+
+
+kmAABB3* kmAABB3Initialize(kmAABB3* pBox, const kmVec3* centre, const float width, const float height, const float depth);
+int kmAABB3ContainsPoint(const kmAABB3* pBox, const kmVec3* pPoint);
+kmAABB3* kmAABB3Assign(kmAABB3* pOut, const kmAABB3* pIn);
+kmAABB3* kmAABB3Scale(kmAABB3* pOut, const kmAABB3* pIn, float s);
+unsigned char kmAABB3IntersectsTriangle(kmAABB3* box, const kmVec3* p1, const kmVec3* p2, const kmVec3* p3);
+unsigned char kmAABB3IntersectsAABB(const kmAABB3* box, const kmAABB3* other);
+unsigned int kmAABB3ContainsAABB(const kmAABB3* container, const kmAABB3* to_check);
+float kmAABB3DiameterX(const kmAABB3* aabb);
+float kmAABB3DiameterY(const kmAABB3* aabb);
+float kmAABB3DiameterZ(const kmAABB3* aabb);
+kmVec3* kmAABB3Centre(const kmAABB3* aabb, kmVec3* pOut);
+kmAABB3* kmAABB3ExpandToContain(kmAABB3* pOut, const kmAABB3* pIn, const kmAABB3* other);
+# 27 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/aabb3.c" 2
+
+
+
+
+
+
+kmAABB3* kmAABB3Initialize(kmAABB3* pBox, const kmVec3* centre, const float width, const float height, const float depth) {
+    if(!pBox) return 0;
+
+    kmVec3 origin;
+    kmVec3* point = centre ? (kmVec3*) centre : &origin;
+    kmVec3Zero(&origin);
+
+    pBox->min.x = point->x - (width / 2);
+    pBox->min.y = point->y - (height / 2);
+    pBox->min.z = point->z - (depth / 2);
+
+    pBox->max.x = point->x + (width / 2);
+    pBox->max.y = point->y + (height / 2);
+    pBox->max.z = point->z + (depth / 2);
+
+    return pBox;
+}
+
+
+
+
+
+int kmAABB3ContainsPoint(const kmAABB3* pBox, const kmVec3* pPoint)
+{
+    if(pPoint->x >= pBox->min.x && pPoint->x <= pBox->max.x &&
+       pPoint->y >= pBox->min.y && pPoint->y <= pBox->max.y &&
+       pPoint->z >= pBox->min.z && pPoint->z <= pBox->max.z) {
+        return 1;
+    }
+
+    return 0;
+}
+
+
+
+
+kmAABB3* kmAABB3Assign(kmAABB3* pOut, const kmAABB3* pIn)
+{
+    kmVec3Assign(&pOut->min, &pIn->min);
+    kmVec3Assign(&pOut->max, &pIn->max);
+    return pOut;
+}
+
+
+
+
+kmAABB3* kmAABB3Scale(kmAABB3* pOut, const kmAABB3* pIn, float s)
+{
+ assert(0 && "Not implemented");
+    return pOut;
+}
+
+unsigned char kmAABB3IntersectsTriangle(kmAABB3* box, const kmVec3* p1, const kmVec3* p2, const kmVec3* p3) {
+    assert(0 && "Not implemented");
+    return 1;
+}
+
+unsigned char kmAABB3IntersectsAABB(const kmAABB3* box, const kmAABB3* other) {
+    return kmAABB3ContainsAABB(box, other) != (unsigned int)0;
+}
+
+unsigned int kmAABB3ContainsAABB(const kmAABB3* container, const kmAABB3* to_check) {
+    kmVec3 corners[8];
+    unsigned int result = (unsigned int)2;
+    unsigned char found = 0;
+
+    kmVec3Fill(&corners[0], to_check->min.x, to_check->min.y, to_check->min.z);
+    kmVec3Fill(&corners[1], to_check->max.x, to_check->min.y, to_check->min.z);
+    kmVec3Fill(&corners[2], to_check->max.x, to_check->max.y, to_check->min.z);
+    kmVec3Fill(&corners[3], to_check->min.x, to_check->max.y, to_check->min.z);
+    kmVec3Fill(&corners[4], to_check->min.x, to_check->min.y, to_check->max.z);
+    kmVec3Fill(&corners[5], to_check->max.x, to_check->min.y, to_check->max.z);
+    kmVec3Fill(&corners[6], to_check->max.x, to_check->max.y, to_check->max.z);
+    kmVec3Fill(&corners[7], to_check->min.x, to_check->max.y, to_check->max.z);
+
+    for(unsigned char i = 0; i < 8; ++i) {
+        if(!kmAABB3ContainsPoint(container, &corners[i])) {
+            result = (unsigned int)1;
+            if(found) {
+
+
+                return result;
+            }
+        } else {
+            found = 1;
+        }
+    }
+
+    if(!found) {
+        result = (unsigned int)0;
+    }
+
+    return result;
+}
+
+float kmAABB3DiameterX(const kmAABB3* aabb) {
+    return fabs(aabb->max.x - aabb->min.x);
+}
+
+float kmAABB3DiameterY(const kmAABB3* aabb) {
+    return fabs(aabb->max.y - aabb->min.y);
+}
+
+float kmAABB3DiameterZ(const kmAABB3* aabb) {
+    return fabs(aabb->max.z - aabb->min.z);
+}
+
+kmVec3* kmAABB3Centre(const kmAABB3* aabb, kmVec3* pOut) {
+    kmVec3Add(pOut, &aabb->min, &aabb->max);
+    kmVec3Scale(pOut, pOut, 0.5);
+    return pOut;
+}
+# 153 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/aabb3.c"
+kmAABB3* kmAABB3ExpandToContain(kmAABB3* pOut, const kmAABB3* pIn, const kmAABB3* other) {
+    kmAABB3 result;
+
+    result.min.x = (pIn->min.x < other->min.x)?pIn->min.x:other->min.x;
+    result.max.x = (pIn->max.x > other->max.x)?pIn->max.x:other->max.x;
+    result.min.y = (pIn->min.y < other->min.y)?pIn->min.y:other->min.y;
+    result.max.y = (pIn->max.y > other->max.y)?pIn->max.y:other->max.y;
+    result.min.z = (pIn->min.z < other->min.z)?pIn->min.z:other->min.z;
+    result.max.z = (pIn->max.z > other->max.z)?pIn->max.z:other->max.z;
+
+    kmAABB3Assign(pOut, &result);
+
+    return pOut;
+}
+# 0 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/aabb3.c"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/aabb3.c"
+# 26 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/aabb3.c"
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/aabb3.h" 1
+# 29 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/aabb3.h"
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/vec3.h" 1
+# 29 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/vec3.h"
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/assert.h" 1
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/_fake_defines.h" 1
+# 2 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/assert.h" 2
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/_fake_typedefs.h" 1
+
+
+
+typedef int START_DELIMETER;
+typedef unsigned chtype;
+typedef chtype attr_t;
+typedef int socklen_t;
+typedef int size_t;
+typedef int __builtin_va_list;
+typedef int __gnuc_va_list;
+typedef int va_list;
+typedef int __int8_t;
+typedef int __uint8_t;
+typedef int __int16_t;
+typedef int __uint16_t;
+typedef int __int_least16_t;
+typedef int __uint_least16_t;
+typedef int __int32_t;
+typedef int __uint32_t;
+typedef int __int64_t;
+typedef int __uint64_t;
+typedef int __int_least32_t;
+typedef int __uint_least32_t;
+typedef int __s8;
+typedef int __u8;
+typedef int __s16;
+typedef int __u16;
+typedef int __s32;
+typedef int __u32;
+typedef int __s64;
+typedef int __u64;
+typedef int _LOCK_T;
+typedef int _LOCK_RECURSIVE_T;
+typedef int _off_t;
+typedef int __dev_t;
+typedef int __uid_t;
+typedef int __gid_t;
+typedef int _off64_t;
+typedef int _fpos_t;
+typedef int _ssize_t;
+typedef int wint_t;
+typedef int _mbstate_t;
+typedef int _flock_t;
+typedef int _iconv_t;
+typedef int __ULong;
+typedef int __FILE;
+typedef int ptrdiff_t;
+typedef int wchar_t;
+typedef int char16_t;
+typedef int char32_t;
+typedef int __off_t;
+typedef int __pid_t;
+typedef int __loff_t;
+typedef int u_char;
+typedef int u_short;
+typedef int u_int;
+typedef int u_long;
+typedef int ushort;
+typedef int uint;
+typedef int clock_t;
+typedef int time_t;
+typedef int daddr_t;
+typedef int caddr_t;
+typedef int ino_t;
+typedef int off_t;
+typedef int dev_t;
+typedef int uid_t;
+typedef int gid_t;
+typedef int pid_t;
+typedef int key_t;
+typedef int ssize_t;
+typedef int mode_t;
+typedef int nlink_t;
+typedef int fd_mask;
+typedef int _types_fd_set;
+typedef int clockid_t;
+typedef int timer_t;
+typedef int useconds_t;
+typedef int suseconds_t;
+typedef int FILE;
+typedef int fpos_t;
+typedef int cookie_read_function_t;
+typedef int cookie_write_function_t;
+typedef int cookie_seek_function_t;
+typedef int cookie_close_function_t;
+typedef int cookie_io_functions_t;
+typedef int div_t;
+typedef int ldiv_t;
+typedef int lldiv_t;
+typedef int sigset_t;
+typedef int __sigset_t;
+typedef int _sig_func_ptr;
+typedef int sig_atomic_t;
+typedef int __tzrule_type;
+typedef int __tzinfo_type;
+typedef int mbstate_t;
+typedef int sem_t;
+typedef int pthread_t;
+typedef int pthread_attr_t;
+typedef int pthread_mutex_t;
+typedef int pthread_mutexattr_t;
+typedef int pthread_cond_t;
+typedef int pthread_condattr_t;
+typedef int pthread_key_t;
+typedef int pthread_once_t;
+typedef int pthread_rwlock_t;
+typedef int pthread_rwlockattr_t;
+typedef int pthread_spinlock_t;
+typedef int pthread_barrier_t;
+typedef int pthread_barrierattr_t;
+typedef int jmp_buf;
+typedef int rlim_t;
+typedef int sa_family_t;
+typedef int sigjmp_buf;
+typedef int stack_t;
+typedef int siginfo_t;
+typedef int z_stream;
+
+
+typedef int int8_t;
+typedef int uint8_t;
+typedef int int16_t;
+typedef int uint16_t;
+typedef int int32_t;
+typedef int uint32_t;
+typedef int int64_t;
+typedef int uint64_t;
+
+
+typedef int int_least8_t;
+typedef int uint_least8_t;
+typedef int int_least16_t;
+typedef int uint_least16_t;
+typedef int int_least32_t;
+typedef int uint_least32_t;
+typedef int int_least64_t;
+typedef int uint_least64_t;
+
+
+typedef int int_fast8_t;
+typedef int uint_fast8_t;
+typedef int int_fast16_t;
+typedef int uint_fast16_t;
+typedef int int_fast32_t;
+typedef int uint_fast32_t;
+typedef int int_fast64_t;
+typedef int uint_fast64_t;
+
+
+typedef int intptr_t;
+typedef int uintptr_t;
+
+
+typedef int intmax_t;
+typedef int uintmax_t;
+
+
+typedef _Bool bool;
+
+
+typedef void* MirEGLNativeWindowType;
+typedef void* MirEGLNativeDisplayType;
+typedef struct MirConnection MirConnection;
+typedef struct MirSurface MirSurface;
+typedef struct MirSurfaceSpec MirSurfaceSpec;
+typedef struct MirScreencast MirScreencast;
+typedef struct MirPromptSession MirPromptSession;
+typedef struct MirBufferStream MirBufferStream;
+typedef struct MirPersistentId MirPersistentId;
+typedef struct MirBlob MirBlob;
+typedef struct MirDisplayConfig MirDisplayConfig;
+
+
+typedef struct xcb_connection_t xcb_connection_t;
+typedef uint32_t xcb_window_t;
+typedef uint32_t xcb_visualid_t;
+
+
+typedef _Atomic(_Bool) atomic_bool;
+typedef _Atomic(char) atomic_char;
+typedef _Atomic(signed char) atomic_schar;
+typedef _Atomic(unsigned char) atomic_uchar;
+typedef _Atomic(short) atomic_short;
+typedef _Atomic(unsigned short) atomic_ushort;
+typedef _Atomic(int) atomic_int;
+typedef _Atomic(unsigned int) atomic_uint;
+typedef _Atomic(long) atomic_long;
+typedef _Atomic(unsigned long) atomic_ulong;
+typedef _Atomic(long long) atomic_llong;
+typedef _Atomic(unsigned long long) atomic_ullong;
+typedef _Atomic(uint_least16_t) atomic_char16_t;
+typedef _Atomic(uint_least32_t) atomic_char32_t;
+typedef _Atomic(wchar_t) atomic_wchar_t;
+typedef _Atomic(int_least8_t) atomic_int_least8_t;
+typedef _Atomic(uint_least8_t) atomic_uint_least8_t;
+typedef _Atomic(int_least16_t) atomic_int_least16_t;
+typedef _Atomic(uint_least16_t) atomic_uint_least16_t;
+typedef _Atomic(int_least32_t) atomic_int_least32_t;
+typedef _Atomic(uint_least32_t) atomic_uint_least32_t;
+typedef _Atomic(int_least64_t) atomic_int_least64_t;
+typedef _Atomic(uint_least64_t) atomic_uint_least64_t;
+typedef _Atomic(int_fast8_t) atomic_int_fast8_t;
+typedef _Atomic(uint_fast8_t) atomic_uint_fast8_t;
+typedef _Atomic(int_fast16_t) atomic_int_fast16_t;
+typedef _Atomic(uint_fast16_t) atomic_uint_fast16_t;
+typedef _Atomic(int_fast32_t) atomic_int_fast32_t;
+typedef _Atomic(uint_fast32_t) atomic_uint_fast32_t;
+typedef _Atomic(int_fast64_t) atomic_int_fast64_t;
+typedef _Atomic(uint_fast64_t) atomic_uint_fast64_t;
+typedef _Atomic(intptr_t) atomic_intptr_t;
+typedef _Atomic(uintptr_t) atomic_uintptr_t;
+typedef _Atomic(size_t) atomic_size_t;
+typedef _Atomic(ptrdiff_t) atomic_ptrdiff_t;
+typedef _Atomic(intmax_t) atomic_intmax_t;
+typedef _Atomic(uintmax_t) atomic_uintmax_t;
+typedef struct atomic_flag { atomic_bool _Value; } atomic_flag;
+typedef enum memory_order {
+  memory_order_relaxed,
+  memory_order_consume,
+  memory_order_acquire,
+  memory_order_release,
+  memory_order_acq_rel,
+  memory_order_seq_cst
+} memory_order;
+
+typedef struct __locale_struct *__locale_t;
+typedef __locale_t locale_t;
+typedef int END_DELIMETER;
+# 3 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/assert.h" 2
+# 30 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/vec3.h" 2
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/utility.h" 1
+# 29 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/utility.h"
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/math.h" 1
+# 30 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/utility.h" 2
+# 81 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/utility.h"
+extern float kmSQR(float s);
+extern float kmDegreesToRadians(float degrees);
+extern float kmRadiansToDegrees(float radians);
+
+extern float kmMin(float lhs, float rhs);
+extern float kmMax(float lhs, float rhs);
+extern unsigned char kmAlmostEqual(float lhs, float rhs);
+
+extern float kmClamp(float x, float min, float max);
+extern float kmLerp(float x, float y, float factor);
+# 31 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/vec3.h" 2
+
+struct kmMat4;
+struct kmMat3;
+struct kmPlane;
+
+typedef struct kmVec3 {
+ float x;
+ float y;
+ float z;
+} kmVec3;
+
+
+
+
+
+kmVec3* kmVec3Fill(kmVec3* pOut, float x, float y, float z);
+float kmVec3Length(const kmVec3* pIn);
+float kmVec3LengthSq(const kmVec3* pIn);
+kmVec3* kmVec3Lerp(kmVec3* pOut, const kmVec3* pV1, const kmVec3* pV2, float t);
+kmVec3* kmVec3Normalize(kmVec3* pOut, const kmVec3* pIn);
+kmVec3* kmVec3Cross(kmVec3* pOut, const kmVec3* pV1, const kmVec3* pV2);
+float kmVec3Dot(const kmVec3* pV1, const kmVec3* pV2);
+kmVec3* kmVec3Add(kmVec3* pOut, const kmVec3* pV1, const kmVec3* pV2);
+kmVec3* kmVec3Subtract(kmVec3* pOut, const kmVec3* pV1, const kmVec3* pV2);
+kmVec3* kmVec3Mul( kmVec3* pOut,const kmVec3* pV1, const kmVec3* pV2 );
+kmVec3* kmVec3Div( kmVec3* pOut,const kmVec3* pV1, const kmVec3* pV2 );
+
+kmVec3* kmVec3MultiplyMat3(kmVec3 *pOut, const kmVec3 *pV, const struct kmMat3* pM);
+kmVec3* kmVec3MultiplyMat4(kmVec3* pOut, const kmVec3* pV, const struct kmMat4* pM);
+
+kmVec3* kmVec3Transform(kmVec3* pOut, const kmVec3* pV1, const struct kmMat4* pM);
+kmVec3* kmVec3TransformNormal(kmVec3* pOut, const kmVec3* pV, const struct kmMat4* pM);
+kmVec3* kmVec3TransformCoord(kmVec3* pOut, const kmVec3* pV, const struct kmMat4* pM);
+
+kmVec3* kmVec3Scale(kmVec3* pOut, const kmVec3* pIn, const float s);
+int kmVec3AreEqual(const kmVec3* p1, const kmVec3* p2);
+kmVec3* kmVec3InverseTransform(kmVec3* pOut, const kmVec3* pV, const struct kmMat4* pM);
+kmVec3* kmVec3InverseTransformNormal(kmVec3* pOut, const kmVec3* pVect, const struct kmMat4* pM);
+kmVec3* kmVec3Assign(kmVec3* pOut, const kmVec3* pIn);
+kmVec3* kmVec3Zero(kmVec3* pOut);
+kmVec3* kmVec3GetHorizontalAngle(kmVec3* pOut, const kmVec3 *pIn);
+kmVec3* kmVec3RotationToDirection(kmVec3* pOut, const kmVec3* pIn, const kmVec3* forwards);
+
+kmVec3* kmVec3ProjectOnToPlane(kmVec3* pOut, const kmVec3* point, const struct kmPlane* plane);
+
+kmVec3* kmVec3Reflect(kmVec3* pOut, const kmVec3* pIn, const kmVec3* normal);
+
+extern const kmVec3 KM_VEC3_NEG_Z;
+extern const kmVec3 KM_VEC3_POS_Z;
+extern const kmVec3 KM_VEC3_POS_Y;
+extern const kmVec3 KM_VEC3_NEG_Y;
+extern const kmVec3 KM_VEC3_NEG_X;
+extern const kmVec3 KM_VEC3_POS_X;
+extern const kmVec3 KM_VEC3_ZERO;
+# 30 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/aabb3.h" 2
+# 40 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/aabb3.h"
+typedef struct kmAABB3 {
+    kmVec3 min;
+    kmVec3 max;
+} kmAABB3;
+
+
+kmAABB3* kmAABB3Initialize(kmAABB3* pBox, const kmVec3* centre, const float width, const float height, const float depth);
+int kmAABB3ContainsPoint(const kmAABB3* pBox, const kmVec3* pPoint);
+kmAABB3* kmAABB3Assign(kmAABB3* pOut, const kmAABB3* pIn);
+kmAABB3* kmAABB3Scale(kmAABB3* pOut, const kmAABB3* pIn, float s);
+unsigned char kmAABB3IntersectsTriangle(kmAABB3* box, const kmVec3* p1, const kmVec3* p2, const kmVec3* p3);
+unsigned char kmAABB3IntersectsAABB(const kmAABB3* box, const kmAABB3* other);
+unsigned int kmAABB3ContainsAABB(const kmAABB3* container, const kmAABB3* to_check);
+float kmAABB3DiameterX(const kmAABB3* aabb);
+float kmAABB3DiameterY(const kmAABB3* aabb);
+float kmAABB3DiameterZ(const kmAABB3* aabb);
+kmVec3* kmAABB3Centre(const kmAABB3* aabb, kmVec3* pOut);
+kmAABB3* kmAABB3ExpandToContain(kmAABB3* pOut, const kmAABB3* pIn, const kmAABB3* other);
+# 27 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/aabb3.c" 2
+
+
+
+
+
+
+kmAABB3* kmAABB3Initialize(kmAABB3* pBox, const kmVec3* centre, const float width, const float height, const float depth) {
+    if(!pBox) return 0;
+
+    kmVec3 origin;
+    kmVec3* point = centre ? (kmVec3*) centre : &origin;
+    kmVec3Zero(&origin);
+
+    pBox->min.x = point->x - (width / 2);
+    pBox->min.y = point->y - (height / 2);
+    pBox->min.z = point->z - (depth / 2);
+
+    pBox->max.x = point->x + (width / 2);
+    pBox->max.y = point->y + (height / 2);
+    pBox->max.z = point->z + (depth / 2);
+
+    return pBox;
+}
+
+
+
+
+
+int kmAABB3ContainsPoint(const kmAABB3* pBox, const kmVec3* pPoint)
+{
+    if(pPoint->x >= pBox->min.x && pPoint->x <= pBox->max.x &&
+       pPoint->y >= pBox->min.y && pPoint->y <= pBox->max.y &&
+       pPoint->z >= pBox->min.z && pPoint->z <= pBox->max.z) {
+        return 1;
+    }
+
+    return 0;
+}
+
+
+
+
+kmAABB3* kmAABB3Assign(kmAABB3* pOut, const kmAABB3* pIn)
+{
+    kmVec3Assign(&pOut->min, &pIn->min);
+    kmVec3Assign(&pOut->max, &pIn->max);
+    return pOut;
+}
+
+
+
+
+kmAABB3* kmAABB3Scale(kmAABB3* pOut, const kmAABB3* pIn, float s)
+{
+ assert(0 && "Not implemented");
+    return pOut;
+}
+
+unsigned char kmAABB3IntersectsTriangle(kmAABB3* box, const kmVec3* p1, const kmVec3* p2, const kmVec3* p3) {
+    assert(0 && "Not implemented");
+    return 1;
+}
+
+unsigned char kmAABB3IntersectsAABB(const kmAABB3* box, const kmAABB3* other) {
+    return kmAABB3ContainsAABB(box, other) != (unsigned int)0;
+}
+
+unsigned int kmAABB3ContainsAABB(const kmAABB3* container, const kmAABB3* to_check) {
+    kmVec3 corners[8];
+    unsigned int result = (unsigned int)2;
+    unsigned char found = 0;
+
+    kmVec3Fill(&corners[0], to_check->min.x, to_check->min.y, to_check->min.z);
+    kmVec3Fill(&corners[1], to_check->max.x, to_check->min.y, to_check->min.z);
+    kmVec3Fill(&corners[2], to_check->max.x, to_check->max.y, to_check->min.z);
+    kmVec3Fill(&corners[3], to_check->min.x, to_check->max.y, to_check->min.z);
+    kmVec3Fill(&corners[4], to_check->min.x, to_check->min.y, to_check->max.z);
+    kmVec3Fill(&corners[5], to_check->max.x, to_check->min.y, to_check->max.z);
+    kmVec3Fill(&corners[6], to_check->max.x, to_check->max.y, to_check->max.z);
+    kmVec3Fill(&corners[7], to_check->min.x, to_check->max.y, to_check->max.z);
+
+    for(unsigned char i = 0; i < 8; ++i) {
+        if(!kmAABB3ContainsPoint(container, &corners[i])) {
+            result = (unsigned int)1;
+            if(found) {
+
+
+                return result;
+            }
+        } else {
+            found = 1;
+        }
+    }
+
+    if(!found) {
+        result = (unsigned int)0;
+    }
+
+    return result;
+}
+
+float kmAABB3DiameterX(const kmAABB3* aabb) {
+    return fabs(aabb->max.x - aabb->min.x);
+}
+
+float kmAABB3DiameterY(const kmAABB3* aabb) {
+    return fabs(aabb->max.y - aabb->min.y);
+}
+
+float kmAABB3DiameterZ(const kmAABB3* aabb) {
+    return fabs(aabb->max.z - aabb->min.z);
+}
+
+kmVec3* kmAABB3Centre(const kmAABB3* aabb, kmVec3* pOut) {
+    kmVec3Add(pOut, &aabb->min, &aabb->max);
+    kmVec3Scale(pOut, pOut, 0.5);
+    return pOut;
+}
+# 153 "/home/enumclass/Documents/C2RustTranslation/bkp/heman/kazmath/aabb3.c"
+kmAABB3* kmAABB3ExpandToContain(kmAABB3* pOut, const kmAABB3* pIn, const kmAABB3* other) {
+    kmAABB3 result;
+
+    result.min.x = (pIn->min.x < other->min.x)?pIn->min.x:other->min.x;
+    result.max.x = (pIn->max.x > other->max.x)?pIn->max.x:other->max.x;
+    result.min.y = (pIn->min.y < other->min.y)?pIn->min.y:other->min.y;
+    result.max.y = (pIn->max.y > other->max.y)?pIn->max.y:other->max.y;
+    result.min.z = (pIn->min.z < other->min.z)?pIn->min.z:other->min.z;
+    result.max.z = (pIn->max.z > other->max.z)?pIn->max.z:other->max.z;
+
+    kmAABB3Assign(pOut, &result);
+
+    return pOut;
+}

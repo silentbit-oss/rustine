@@ -1,0 +1,27 @@
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: the function has a cognitive complexity of (122/25)
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: `if _ { .. } else { .. }` is an expression
+warning: casting the result of `as_ptr` to *mut i8
+warning: this could be a `const fn`
+warning: the function has a cognitive complexity of (131/25)
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: the function has a cognitive complexity of (34/25)
+warning: all if blocks contain the same code at the end

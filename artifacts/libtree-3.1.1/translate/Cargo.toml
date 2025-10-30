@@ -1,0 +1,13 @@
+[package]
+name = "translate"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lazy_static = "1.4.0"
+libc = "0.2.153"
+glob = "0.3.1"
+
+[[bin]]
+name="libtree"
+path="src/libtree_main.rs"

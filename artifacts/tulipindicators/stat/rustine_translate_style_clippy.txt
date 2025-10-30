@@ -1,0 +1,109 @@
+warning: accessing first element with `inputs.get(0)`
+warning: accessing first element with `inputs.get(0)`
+warning: accessing first element with `inputs.get(0)`
+warning: accessing first element with `inputs?.get(0)`
+warning: accessing first element with `inputs?.get(0)`
+warning: accessing first element with `inputs?.get(0)`
+warning: accessing first element with `options?.get(0)`
+warning: accessing first element with `options?.get(0)`
+warning: accessing first element with `options?.get(0)`
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: manual `!RangeInclusive::contains` implementation
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: the loop variable `i` is only used to index `in_data`
+warning: the loop variable `i` is only used to index `input`
+warning: the loop variable `i` is only used to index `input`
+warning: the loop variable `i` is only used to index `input`
+warning: the loop variable `i` is only used to index `input`
+warning: the loop variable `i` is only used to index `input`
+warning: the loop variable `i` is only used to index `inputs`
+warning: the loop variable `i` is only used to index `outputs`
+warning: the loop variable `i` is used to index `arr`
+warning: the loop variable `i` is used to index `input`
+warning: the loop variable `i` is used to index `input`
+warning: the loop variable `i` is used to index `input`
+warning: the loop variable `i` is used to index `input`
+warning: the loop variable `i` is used to index `input`
+warning: the loop variable `i` is used to index `input`
+warning: the loop variable `i` is used to index `outputs`
+warning: the loop variable `j` is used to index `outputs`
+warning: the loop variable `k` is only used to index `options`
+warning: this `else { if .. }` block can be collapsed
+warning: this `if` has identical blocks
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this manual char comparison can be written more succinctly
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`

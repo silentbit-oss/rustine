@@ -1,0 +1,10 @@
+#include <assert.h>
+#include <config.h>
+#include <dev-ino.h>
+#include <root-dev-ino.c>
+#include <root-dev-ino.h>
+#include <same-inode.h>
+#include <stat.h>
+#include <stdbool.h>
+#include <stdlib.h>
+#include <types.h>

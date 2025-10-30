@@ -1,0 +1,184 @@
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_ref().map(|c| &**c)` on an `Option` value
+warning: called `.as_ref().map(|s| &**s)` on an `Option` value
+warning: casting float literal to `f32` is unnecessary
+warning: casting float literal to `f32` is unnecessary
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i64` -> `i64`)
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: manual slice size calculation
+warning: the variable `dst_idx` is used as a loop counter
+warning: the variable `dst_idx` is used as a loop counter
+warning: the variable `dst_idx` is used as a loop counter
+warning: the variable `dst_idx` is used as a loop counter
+warning: the variable `src_idx` is used as a loop counter
+warning: the variable `src_idx` is used as a loop counter
+warning: the variable `texel_idx` is used as a loop counter
+warning: the variable `texel_idx` is used as a loop counter
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (12/7)
+warning: this function has too many arguments (13/7)
+warning: this function has too many arguments (14/7)
+warning: this function has too many arguments (17/7)
+warning: this function has too many arguments (18/7)
+warning: this function has too many arguments (19/7)
+warning: this function has too many arguments (20/7)
+warning: this function has too many arguments (20/7)
+warning: this function has too many arguments (20/7)
+warning: this function has too many arguments (20/7)
+warning: this function has too many arguments (20/7)
+warning: this function has too many arguments (21/7)
+warning: this function has too many arguments (21/7)
+warning: this function has too many arguments (21/7)
+warning: this function has too many arguments (22/7)
+warning: this function has too many arguments (22/7)
+warning: this function has too many arguments (22/7)
+warning: this function has too many arguments (23/7)
+warning: this function has too many arguments (24/7)
+warning: this function has too many arguments (24/7)
+warning: this function has too many arguments (34/7)
+warning: this function has too many arguments (34/7)
+warning: this function has too many arguments (34/7)
+warning: this function has too many arguments (34/7)
+warning: this function has too many arguments (34/7)
+warning: this function has too many arguments (34/7)
+warning: this function has too many arguments (35/7)
+warning: this function has too many arguments (35/7)
+warning: this function has too many arguments (35/7)
+warning: this function has too many arguments (35/7)
+warning: this function has too many arguments (36/7)
+warning: this function has too many arguments (36/7)
+warning: this function has too many arguments (39/7)
+warning: this function has too many arguments (39/7)
+warning: this function has too many arguments (39/7)
+warning: this function has too many arguments (39/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (9/7)
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: useless conversion to the same type: `std::ops::Range<i32>`

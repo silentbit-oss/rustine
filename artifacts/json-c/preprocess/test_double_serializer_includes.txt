@@ -1,0 +1,10 @@
+#include <config.h>
+#include <inttypes.h>
+#include <json_config.h>
+#include <json_inttypes.h>
+#include <json_object_private.h>
+#include <printbuf.h>
+#include <stddef.h>
+#include <stdio.h>
+#include <test_double_serializer.c>
+#include <unistd.h>

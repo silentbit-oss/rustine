@@ -1,0 +1,683 @@
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: statement with no effect
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: statement with no effect
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut [f32; 9]` -> `*mut [f32; 9]`)
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: derefed type is same as origin
+warning: statement with no effect
+warning: derefed type is same as origin
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: this boolean expression can be simplified
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: statement with no effect
+warning: derefed type is same as origin
+warning: this boolean expression can be simplified
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: this boolean expression can be simplified
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: this boolean expression can be simplified
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: this boolean expression can be simplified
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: statement with no effect
+warning: statement with no effect
+warning: statement with no effect
+warning: statement with no effect
+warning: statement with no effect
+warning: statement with no effect
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: statement with no effect
+warning: statement with no effect
+warning: statement with no effect
+warning: statement with no effect
+warning: this boolean expression can be simplified
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: statement with no effect
+warning: statement with no effect
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: the use of negated comparison operators on partially ordered types produces code that is hard to read and refactor, please consider using the `partial_cmp` method instead, to make it clear that the two values could be incomparable
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified

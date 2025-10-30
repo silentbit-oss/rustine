@@ -1,0 +1,12 @@
+#include <assert.h>
+#include <config.h>
+#include <errno.h>
+#include <idx.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <xalloc.h>
+#include <xgetcwd.c>
+#include <xgetcwd.h>

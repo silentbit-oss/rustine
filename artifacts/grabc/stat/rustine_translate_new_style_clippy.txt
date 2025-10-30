@@ -1,0 +1,6 @@
+warning: `extern` fn uses type `std::ffi::CStr`, which is not FFI-safe
+warning: literal with an empty format string
+warning: returning the result of a `let` binding from a block
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: unsafe function's docs are missing a `# Safety` section
+warning: variables can be used directly in the `format!` string

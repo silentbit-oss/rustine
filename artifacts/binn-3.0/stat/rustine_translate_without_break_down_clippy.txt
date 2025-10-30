@@ -1,0 +1,707 @@
+warning: unused import: `crate::*`
+warning: type `int64` should have an upper camel case name
+warning: type `uint64` should have an upper camel case name
+warning: type `u32` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: type `vuint32` should have an upper camel case name
+warning: type `vint16` should have an upper camel case name
+warning: type `vuint16` should have an upper camel case name
+warning: type `vuint8` should have an upper camel case name
+warning: type `vuint64` should have an upper camel case name
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: unused import: `std::ffi::CString`
+warning: unused import: `std::slice`
+warning: unused import: `libc::free`
+warning: unused import: `libc::strdup`
+warning: unused import: `std::mem`
+warning: unused import: `std::ptr`
+warning: unused import: `std::sync::atomic::AtomicI16`
+warning: unused import: `std::sync::atomic::AtomicI32`
+warning: unused import: `std::sync::atomic::AtomicI64`
+warning: unused import: `std::sync::atomic::AtomicI8`
+warning: unused import: `std::sync::atomic::AtomicU16`
+warning: unused import: `std::sync::atomic::AtomicU32`
+warning: unused import: `std::sync::atomic::AtomicU64`
+warning: unused import: `std::sync::atomic::AtomicU8`
+warning: type `binn` should have an upper camel case name
+warning: unnecessary `>= y + 1` or `x - 1 >=`
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: `BinnStruct` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnValue` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnValue` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnValue` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnValue` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnValue` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnValue` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnValue` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnValue` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnValue` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnValue` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnValue` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `BinnStruct` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: unused import: `binn_struct::*`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `d1` is never read
+warning: value assigned to `f1` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `id`
+warning: unused variable: `count`
+warning: unused variable: `header_size`
+warning: value assigned to `ptr` is never read
+warning: value assigned to `ptr_idx` is never read
+warning: unused variable: `p2`
+warning: unused variable: `p2_idx`
+warning: unused variable: `pstr`
+warning: unused variable: `pstr_idx`
+warning: unused variable: `key`
+warning: value assigned to `list` is never read
+warning: unused variable: `list_idx`
+warning: value assigned to `map` is never read
+warning: unused variable: `map_idx`
+warning: value assigned to `obj` is never read
+warning: unused variable: `obj_idx`
+warning: value assigned to `obj1` is never read
+warning: unused variable: `obj1_idx`
+warning: unused variable: `value`
+warning: value assigned to `pblob` is never read
+warning: unused variable: `pblob_idx`
+warning: unused variable: `pint16`
+warning: unused variable: `pint16_idx`
+warning: unused variable: `puint16`
+warning: unused variable: `puint16_idx`
+warning: unused variable: `pint32`
+warning: unused variable: `pint32_idx`
+warning: unused variable: `puint32`
+warning: unused variable: `puint32_idx`
+warning: unused variable: `pint64`
+warning: unused variable: `pint64_idx`
+warning: unused variable: `puint64`
+warning: unused variable: `puint64_idx`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `list_idx`
+warning: unused variable: `map_idx`
+warning: unused variable: `obj_idx`
+warning: variable `value` is assigned to, but never used
+warning: unused variable: `pblob_idx`
+warning: unused variable: `pstr`
+warning: unused variable: `pstr_idx`
+warning: value assigned to `str_wrapper` is never read
+warning: value assigned to `value` is never read
+warning: value assigned to `value` is never read
+warning: value assigned to `value` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `i` is never read
+warning: value assigned to `blobsize` is never read
+warning: value assigned to `ptr` is never read
+warning: variable `ptr_idx` is assigned to, but never used
+warning: unused variable: `p2`
+warning: unused variable: `p2_idx`
+warning: value assigned to `obj1` is never read
+warning: unused variable: `obj1_idx`
+warning: value assigned to `list` is never read
+warning: unused variable: `list_idx`
+warning: value assigned to `map` is never read
+warning: unused variable: `map_idx`
+warning: value assigned to `obj` is never read
+warning: unused variable: `obj_idx`
+warning: unused variable: `value`
+warning: value assigned to `vbyte` is never read
+warning: value assigned to `pblob` is never read
+warning: unused variable: `pblob_idx`
+warning: value assigned to `vint16` is never read
+warning: value assigned to `vuint16` is never read
+warning: value assigned to `vint32` is never read
+warning: value assigned to `vuint32` is never read
+warning: value assigned to `vint64_` is never read
+warning: value assigned to `vuint64_` is never read
+warning: value assigned to `ptr_idx` is never read
+warning: value assigned to `ptr_idx` is never read
+warning: value assigned to `ptr_idx` is never read
+warning: value assigned to `ptr_idx` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `list` is never read
+warning: variable `list_idx` is assigned to, but never used
+warning: variable `ptr_idx` is assigned to, but never used
+warning: value assigned to `list_idx` is never read
+warning: value assigned to `ptr_idx` is never read
+warning: unused variable: `value_idx`
+warning: variable `ptr` is assigned to, but never used
+warning: value assigned to `ptr_idx` is never read
+warning: variable `pblob` is assigned to, but never used
+warning: value assigned to `pblob_idx` is never read
+warning: value assigned to `ptr` is never read
+warning: value assigned to `ptr` is never read
+warning: value assigned to `ptr` is never read
+warning: value assigned to `pblob` is never read
+warning: value assigned to `ptr` is never read
+warning: value assigned to `value` is never read
+warning: value assigned to `value` is never read
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `listptr` is never read
+warning: unused variable: `listptr_idx`
+warning: value assigned to `ptr` is never read
+warning: variable `ptr_idx` is assigned to, but never used
+warning: unused variable: `value`
+warning: value assigned to `ptr_idx` is never read
+warning: value assigned to `ptr_idx` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable `list_idx` is assigned to, but never used
+warning: variable `map_idx` is assigned to, but never used
+warning: variable `obj_idx` is assigned to, but never used
+warning: variable `list2_idx` is assigned to, but never used
+warning: unused variable: `copy`
+warning: unused variable: `copy_idx`
+warning: unused variable: `iter2`
+warning: unused variable: `value`
+warning: unused variable: `value2`
+warning: value assigned to `blob_size` is never read
+warning: unused variable: `id`
+warning: unused variable: `id2`
+warning: value assigned to `list2size` is never read
+warning: value assigned to `ptr` is never read
+warning: variable `ptr_idx` is assigned to, but never used
+warning: variable `blob_ptr_idx` is assigned to, but never used
+warning: unused variable: `key2`
+warning: value assigned to `blob_ptr_idx` is never read
+warning: value assigned to `list_idx` is never read
+warning: value assigned to `list2_idx` is never read
+warning: value assigned to `map_idx` is never read
+warning: value assigned to `obj_idx` is never read
+warning: value assigned to `ptr_idx` is never read
+warning: value assigned to `ptr_idx` is never read
+warning: value assigned to `ptr_idx` is never read
+warning: value assigned to `ptr_idx` is never read
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `obj` is never read
+warning: value assigned to `ptr` is never read
+warning: value assigned to `ptr_idx` is never read
+warning: value assigned to `obj` is never read
+warning: unused variable: `obj_idx`
+warning: value assigned to `ptr` is never read
+warning: variable `ptr_idx` is assigned to, but never used
+warning: value assigned to `ptr_idx` is never read
+warning: variable does not need to be mutable
+warning: value assigned to `DataSize` is never read
+warning: value assigned to `p_idx` is never read
+warning: value assigned to `p_idx` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `ptr_idx`
+warning: value assigned to `id` is never read
+warning: unused variable: `plimit`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `ptr_idx`
+warning: unused variable: `p_idx`
+warning: unused variable: `ptr_idx`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `value`
+warning: variable does not need to be mutable
+warning: unused variable: `size`
+warning: unused variable: `ptr`
+warning: unused variable: `new_size`
+warning: unused variable: `item`
+warning: variable does not need to be mutable
+warning: unused variable: `new_buf`
+warning: unused variable: `pvalue_idx`
+warning: value assigned to `p_idx` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `value`
+warning: variable does not need to be mutable
+warning: unused variable: `e`
+warning: unused variable: `item_idx`
+warning: variable does not need to be mutable
+warning: unused variable: `item_idx`
+warning: variable does not need to be mutable
+warning: unused variable: `item_idx`
+warning: unused variable: `value_ref`
+warning: variable does not need to be mutable
+warning: unused variable: `allocated`
+warning: variable does not need to be mutable
+warning: unnecessary `unsafe` block
+warning: unused variable: `free_fn`
+warning: unused variable: `raw_ptr`
+warning: unused variable: `boxed_value`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `ptr_idx`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: trait `IntoSend` is never used
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: the loop variable `i` is used to index `buffers`
+warning: variables can be used directly in the `format!` string
+warning: unnecessary map of the identity function
+warning: variables can be used directly in the `format!` string
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut u8` -> `*mut u8`)
+warning: variables can be used directly in the `format!` string
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut u8` -> `*mut u8`)
+warning: variables can be used directly in the `format!` string
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut u8` -> `*mut u8`)
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: called `map(..).flatten()` on `Option`
+warning: called `map(..).flatten()` on `Option`
+warning: variables can be used directly in the `format!` string
+warning: manual implementation of `Option::map`
+warning: manual implementation of `ok`
+warning: called `.as_mut().map(|p| &mut **p)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: variables can be used directly in the `format!` string
+warning: used `assert_eq!` with a literal bool
+warning: used `assert_eq!` with a literal bool
+warning: used `assert_eq!` with a literal bool
+warning: this block may be rewritten with the `?` operator
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: variables can be used directly in the `format!` string
+warning: it looks like the same item is being pushed into this `Vec`
+warning: manually constructing a nul-terminated string
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: used `assert_eq!` with a literal bool
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: used `assert_eq!` with a literal bool
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: transmute from a reference to a pointer
+warning: transmute from a reference to a pointer
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: unneeded `return` statement
+warning: manual `!RangeInclusive::contains` implementation
+warning: this OR pattern can be rewritten using a range
+warning: this OR pattern can be rewritten using a range
+warning: this OR pattern can be rewritten using a range
+warning: this `if let` can be collapsed into the outer `if let`
+warning: length comparison to one
+warning: length comparison to one
+warning: length comparison to one
+warning: length comparison to one
+warning: length comparison to one
+warning: length comparison to one
+warning: this OR pattern can be rewritten using a range
+warning: equality checks against false can be replaced by a negation
+warning: this OR pattern can be rewritten using a range
+warning: this `match` expression can be replaced with `?`
+warning: the loop variable `i` is only used to index `chars`
+warning: manual `RangeInclusive::contains` implementation
+warning: returning the result of a `let` binding from a block
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: statement with no effect
+warning: this OR pattern can be rewritten using a range
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: this block may be rewritten with the `?` operator
+warning: called `.as_ref().map(|v| v.as_slice())` on an `Option` value
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut u8` -> `*mut u8`)
+warning: manual implementation of `ok`
+warning: this `match` expression can be replaced with `?`
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: static variable `vfloat32` should have an upper case name
+warning: static variable `vfloat64` should have an upper case name
+warning: static variable `vint64` should have an upper case name
+warning: static variable `vbool` should have an upper case name
+warning: function `AlmostEqualFloats` should have a snake case name
+warning: variable `A` should have a snake case name
+warning: variable `B` should have a snake case name
+warning: variable `maxUlps` should have a snake case name
+warning: variable `aInt` should have a snake case name
+warning: variable `bInt` should have a snake case name
+warning: variable `aInt` should have a snake case name
+warning: variable `bInt` should have a snake case name
+warning: variable `intDiff` should have a snake case name
+warning: function `AlmostEqualDoubles` should have a snake case name
+warning: variable `absDiff` should have a snake case name
+warning: variable `absA` should have a snake case name
+warning: variable `absB` should have a snake case name
+warning: variable `maxAbs` should have a snake case name
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: returned pointer of `as_ptr` call is never null, so checking it for null will always return false
+warning: function `CalcAllocation` should have a snake case name
+warning: function `GetWriteConvertedData` should have a snake case name
+warning: function `IsValidBinnHeader` should have a snake case name
+warning: function `GetValue` should have a snake case name
+warning: variable `DataSize` should have a snake case name
+warning: function `AdvanceDataPos` should have a snake case name
+warning: variable `DataSize` should have a snake case name
+warning: variable `DataSize` should have a snake case name
+warning: function `SearchForID` should have a snake case name
+warning: function `SearchForKey` should have a snake case name
+warning: unused return value of `std::boxed::Box::<T>::from_raw` that must be used
+warning: function `CheckAllocation` should have a snake case name
+warning: function `AddValue` should have a snake case name
+warning: variable `ArgSize` should have a snake case name
+warning: unused return value of `std::boxed::Box::<T, A>::into_raw` that must be used
+warning: unused return value of `std::boxed::Box::<T, A>::into_raw` that must be used

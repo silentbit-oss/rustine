@@ -1,0 +1,2 @@
+warning: match can be simplified with `.unwrap_or_default()`
+warning: unused `std::result::Result` that must be used

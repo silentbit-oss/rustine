@@ -1,0 +1,164 @@
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: an inclusive range would be more readable
+warning: binding to `_` prefixed variable with no side-effect
+warning: boolean to int conversion using if
+warning: boolean to int conversion using if
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i64` to `u64` may lose the sign of the value
+warning: casting `u64` to `usize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `usize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `usize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `usize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `usize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `usize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `usize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `usize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `usize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `usize` to `u8` may truncate the value
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut u64`) (1 < 8 bytes)
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut u64`) (1 < 8 bytes)
+warning: casts from `u32` to `u64` can be expressed infallibly using `From`
+warning: casts from `u32` to `u64` can be expressed infallibly using `From`
+warning: casts from `u32` to `u64` can be expressed infallibly using `From`
+warning: casts from `u32` to `u64` can be expressed infallibly using `From`
+warning: casts from `u32` to `u64` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: it is more concise to loop over references to containers instead of using explicit iteration methods
+warning: it is more concise to loop over references to containers instead of using explicit iteration methods
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: redundant closure
+warning: these match arms have identical bodies
+warning: these match arms have identical bodies
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function has too many lines (103/100)
+warning: this function has too many lines (133/100)
+warning: this function has too many lines (136/100)
+warning: this function has too many lines (495/100)
+warning: this function's return value is unnecessarily wrapped by `Result`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this method could have a `#[must_use]` attribute
+warning: unnecessary `!=` operation
+warning: unnecessary `!=` operation
+warning: unnecessary `!=` operation
+warning: unnecessary `!=` operation
+warning: unused `std::result::Result` that must be used
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: wildcard matches only a single variant and will also match any future added variants
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`

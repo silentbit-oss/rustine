@@ -1,0 +1,3702 @@
+int tty_term_has(struct tty_term *term, enum tty_code_code code)
+{
+  return term->codes[code].type != TTYCODE_NONE;
+}
+
+
+/*** DEPENDENCIES:
+enum tty_code_code
+{
+  TTYC_AX = 0,
+  TTYC_ACSC,
+  TTYC_BCE,
+  TTYC_BEL,
+  TTYC_BLINK,
+  TTYC_BOLD,
+  TTYC_CIVIS,
+  TTYC_CLEAR,
+  TTYC_CNORM,
+  TTYC_COLORS,
+  TTYC_CR,
+  TTYC_CS,
+  TTYC_CSR,
+  TTYC_CUB,
+  TTYC_CUB1,
+  TTYC_CUD,
+  TTYC_CUD1,
+  TTYC_CUF,
+  TTYC_CUF1,
+  TTYC_CUP,
+  TTYC_CUU,
+  TTYC_CUU1,
+  TTYC_CVVIS,
+  TTYC_DCH,
+  TTYC_DCH1,
+  TTYC_DIM,
+  TTYC_DL,
+  TTYC_DL1,
+  TTYC_E3,
+  TTYC_ECH,
+  TTYC_ED,
+  TTYC_EL,
+  TTYC_EL1,
+  TTYC_ENACS,
+  TTYC_FSL,
+  TTYC_HOME,
+  TTYC_HPA,
+  TTYC_ICH,
+  TTYC_ICH1,
+  TTYC_IL,
+  TTYC_IL1,
+  TTYC_INDN,
+  TTYC_INVIS,
+  TTYC_KCBT,
+  TTYC_KCUB1,
+  TTYC_KCUD1,
+  TTYC_KCUF1,
+  TTYC_KCUU1,
+  TTYC_KDC2,
+  TTYC_KDC3,
+  TTYC_KDC4,
+  TTYC_KDC5,
+  TTYC_KDC6,
+  TTYC_KDC7,
+  TTYC_KDCH1,
+  TTYC_KDN2,
+  TTYC_KDN3,
+  TTYC_KDN4,
+  TTYC_KDN5,
+  TTYC_KDN6,
+  TTYC_KDN7,
+  TTYC_KEND,
+  TTYC_KEND2,
+  TTYC_KEND3,
+  TTYC_KEND4,
+  TTYC_KEND5,
+  TTYC_KEND6,
+  TTYC_KEND7,
+  TTYC_KF1,
+  TTYC_KF10,
+  TTYC_KF11,
+  TTYC_KF12,
+  TTYC_KF13,
+  TTYC_KF14,
+  TTYC_KF15,
+  TTYC_KF16,
+  TTYC_KF17,
+  TTYC_KF18,
+  TTYC_KF19,
+  TTYC_KF2,
+  TTYC_KF20,
+  TTYC_KF21,
+  TTYC_KF22,
+  TTYC_KF23,
+  TTYC_KF24,
+  TTYC_KF25,
+  TTYC_KF26,
+  TTYC_KF27,
+  TTYC_KF28,
+  TTYC_KF29,
+  TTYC_KF3,
+  TTYC_KF30,
+  TTYC_KF31,
+  TTYC_KF32,
+  TTYC_KF33,
+  TTYC_KF34,
+  TTYC_KF35,
+  TTYC_KF36,
+  TTYC_KF37,
+  TTYC_KF38,
+  TTYC_KF39,
+  TTYC_KF4,
+  TTYC_KF40,
+  TTYC_KF41,
+  TTYC_KF42,
+  TTYC_KF43,
+  TTYC_KF44,
+  TTYC_KF45,
+  TTYC_KF46,
+  TTYC_KF47,
+  TTYC_KF48,
+  TTYC_KF49,
+  TTYC_KF5,
+  TTYC_KF50,
+  TTYC_KF51,
+  TTYC_KF52,
+  TTYC_KF53,
+  TTYC_KF54,
+  TTYC_KF55,
+  TTYC_KF56,
+  TTYC_KF57,
+  TTYC_KF58,
+  TTYC_KF59,
+  TTYC_KF6,
+  TTYC_KF60,
+  TTYC_KF61,
+  TTYC_KF62,
+  TTYC_KF63,
+  TTYC_KF7,
+  TTYC_KF8,
+  TTYC_KF9,
+  TTYC_KHOM2,
+  TTYC_KHOM3,
+  TTYC_KHOM4,
+  TTYC_KHOM5,
+  TTYC_KHOM6,
+  TTYC_KHOM7,
+  TTYC_KHOME,
+  TTYC_KIC2,
+  TTYC_KIC3,
+  TTYC_KIC4,
+  TTYC_KIC5,
+  TTYC_KIC6,
+  TTYC_KIC7,
+  TTYC_KICH1,
+  TTYC_KIND,
+  TTYC_KLFT2,
+  TTYC_KLFT3,
+  TTYC_KLFT4,
+  TTYC_KLFT5,
+  TTYC_KLFT6,
+  TTYC_KLFT7,
+  TTYC_KMOUS,
+  TTYC_KNP,
+  TTYC_KNXT2,
+  TTYC_KNXT3,
+  TTYC_KNXT4,
+  TTYC_KNXT5,
+  TTYC_KNXT6,
+  TTYC_KNXT7,
+  TTYC_KPP,
+  TTYC_KPRV2,
+  TTYC_KPRV3,
+  TTYC_KPRV4,
+  TTYC_KPRV5,
+  TTYC_KPRV6,
+  TTYC_KPRV7,
+  TTYC_KRI,
+  TTYC_KRIT2,
+  TTYC_KRIT3,
+  TTYC_KRIT4,
+  TTYC_KRIT5,
+  TTYC_KRIT6,
+  TTYC_KRIT7,
+  TTYC_KUP2,
+  TTYC_KUP3,
+  TTYC_KUP4,
+  TTYC_KUP5,
+  TTYC_KUP6,
+  TTYC_KUP7,
+  TTYC_MS,
+  TTYC_OP,
+  TTYC_REV,
+  TTYC_RGB,
+  TTYC_RI,
+  TTYC_RMACS,
+  TTYC_RMCUP,
+  TTYC_RMKX,
+  TTYC_SE,
+  TTYC_SETAB,
+  TTYC_SETAF,
+  TTYC_SETRGBB,
+  TTYC_SETRGBF,
+  TTYC_SGR0,
+  TTYC_SITM,
+  TTYC_SMACS,
+  TTYC_SMCUP,
+  TTYC_SMKX,
+  TTYC_SMSO,
+  TTYC_SMUL,
+  TTYC_SMXX,
+  TTYC_SS,
+  TTYC_TC,
+  TTYC_TSL,
+  TTYC_U8,
+  TTYC_VPA,
+  TTYC_XENL,
+  TTYC_XT
+}
+----------------------------
+None
+----------------------------
+***/
+
+
+const char *tty_term_string(struct tty_term *term, enum tty_code_code code)
+{
+  if (!tty_term_has(term, code))
+  {
+    return "";
+  }
+  if (term->codes[code].type != TTYCODE_STRING)
+  {
+    fatalx("not a string: %d", code);
+  }
+  return term->codes[code].value.string;
+}
+
+
+/*** DEPENDENCIES:
+int tty_term_has(struct tty_term *term, enum tty_code_code code)
+{
+  return term->codes[code].type != TTYCODE_NONE;
+}
+
+
+----------------------------
+enum tty_code_code
+{
+  TTYC_AX = 0,
+  TTYC_ACSC,
+  TTYC_BCE,
+  TTYC_BEL,
+  TTYC_BLINK,
+  TTYC_BOLD,
+  TTYC_CIVIS,
+  TTYC_CLEAR,
+  TTYC_CNORM,
+  TTYC_COLORS,
+  TTYC_CR,
+  TTYC_CS,
+  TTYC_CSR,
+  TTYC_CUB,
+  TTYC_CUB1,
+  TTYC_CUD,
+  TTYC_CUD1,
+  TTYC_CUF,
+  TTYC_CUF1,
+  TTYC_CUP,
+  TTYC_CUU,
+  TTYC_CUU1,
+  TTYC_CVVIS,
+  TTYC_DCH,
+  TTYC_DCH1,
+  TTYC_DIM,
+  TTYC_DL,
+  TTYC_DL1,
+  TTYC_E3,
+  TTYC_ECH,
+  TTYC_ED,
+  TTYC_EL,
+  TTYC_EL1,
+  TTYC_ENACS,
+  TTYC_FSL,
+  TTYC_HOME,
+  TTYC_HPA,
+  TTYC_ICH,
+  TTYC_ICH1,
+  TTYC_IL,
+  TTYC_IL1,
+  TTYC_INDN,
+  TTYC_INVIS,
+  TTYC_KCBT,
+  TTYC_KCUB1,
+  TTYC_KCUD1,
+  TTYC_KCUF1,
+  TTYC_KCUU1,
+  TTYC_KDC2,
+  TTYC_KDC3,
+  TTYC_KDC4,
+  TTYC_KDC5,
+  TTYC_KDC6,
+  TTYC_KDC7,
+  TTYC_KDCH1,
+  TTYC_KDN2,
+  TTYC_KDN3,
+  TTYC_KDN4,
+  TTYC_KDN5,
+  TTYC_KDN6,
+  TTYC_KDN7,
+  TTYC_KEND,
+  TTYC_KEND2,
+  TTYC_KEND3,
+  TTYC_KEND4,
+  TTYC_KEND5,
+  TTYC_KEND6,
+  TTYC_KEND7,
+  TTYC_KF1,
+  TTYC_KF10,
+  TTYC_KF11,
+  TTYC_KF12,
+  TTYC_KF13,
+  TTYC_KF14,
+  TTYC_KF15,
+  TTYC_KF16,
+  TTYC_KF17,
+  TTYC_KF18,
+  TTYC_KF19,
+  TTYC_KF2,
+  TTYC_KF20,
+  TTYC_KF21,
+  TTYC_KF22,
+  TTYC_KF23,
+  TTYC_KF24,
+  TTYC_KF25,
+  TTYC_KF26,
+  TTYC_KF27,
+  TTYC_KF28,
+  TTYC_KF29,
+  TTYC_KF3,
+  TTYC_KF30,
+  TTYC_KF31,
+  TTYC_KF32,
+  TTYC_KF33,
+  TTYC_KF34,
+  TTYC_KF35,
+  TTYC_KF36,
+  TTYC_KF37,
+  TTYC_KF38,
+  TTYC_KF39,
+  TTYC_KF4,
+  TTYC_KF40,
+  TTYC_KF41,
+  TTYC_KF42,
+  TTYC_KF43,
+  TTYC_KF44,
+  TTYC_KF45,
+  TTYC_KF46,
+  TTYC_KF47,
+  TTYC_KF48,
+  TTYC_KF49,
+  TTYC_KF5,
+  TTYC_KF50,
+  TTYC_KF51,
+  TTYC_KF52,
+  TTYC_KF53,
+  TTYC_KF54,
+  TTYC_KF55,
+  TTYC_KF56,
+  TTYC_KF57,
+  TTYC_KF58,
+  TTYC_KF59,
+  TTYC_KF6,
+  TTYC_KF60,
+  TTYC_KF61,
+  TTYC_KF62,
+  TTYC_KF63,
+  TTYC_KF7,
+  TTYC_KF8,
+  TTYC_KF9,
+  TTYC_KHOM2,
+  TTYC_KHOM3,
+  TTYC_KHOM4,
+  TTYC_KHOM5,
+  TTYC_KHOM6,
+  TTYC_KHOM7,
+  TTYC_KHOME,
+  TTYC_KIC2,
+  TTYC_KIC3,
+  TTYC_KIC4,
+  TTYC_KIC5,
+  TTYC_KIC6,
+  TTYC_KIC7,
+  TTYC_KICH1,
+  TTYC_KIND,
+  TTYC_KLFT2,
+  TTYC_KLFT3,
+  TTYC_KLFT4,
+  TTYC_KLFT5,
+  TTYC_KLFT6,
+  TTYC_KLFT7,
+  TTYC_KMOUS,
+  TTYC_KNP,
+  TTYC_KNXT2,
+  TTYC_KNXT3,
+  TTYC_KNXT4,
+  TTYC_KNXT5,
+  TTYC_KNXT6,
+  TTYC_KNXT7,
+  TTYC_KPP,
+  TTYC_KPRV2,
+  TTYC_KPRV3,
+  TTYC_KPRV4,
+  TTYC_KPRV5,
+  TTYC_KPRV6,
+  TTYC_KPRV7,
+  TTYC_KRI,
+  TTYC_KRIT2,
+  TTYC_KRIT3,
+  TTYC_KRIT4,
+  TTYC_KRIT5,
+  TTYC_KRIT6,
+  TTYC_KRIT7,
+  TTYC_KUP2,
+  TTYC_KUP3,
+  TTYC_KUP4,
+  TTYC_KUP5,
+  TTYC_KUP6,
+  TTYC_KUP7,
+  TTYC_MS,
+  TTYC_OP,
+  TTYC_REV,
+  TTYC_RGB,
+  TTYC_RI,
+  TTYC_RMACS,
+  TTYC_RMCUP,
+  TTYC_RMKX,
+  TTYC_SE,
+  TTYC_SETAB,
+  TTYC_SETAF,
+  TTYC_SETRGBB,
+  TTYC_SETRGBF,
+  TTYC_SGR0,
+  TTYC_SITM,
+  TTYC_SMACS,
+  TTYC_SMCUP,
+  TTYC_SMKX,
+  TTYC_SMSO,
+  TTYC_SMUL,
+  TTYC_SMXX,
+  TTYC_SS,
+  TTYC_TC,
+  TTYC_TSL,
+  TTYC_U8,
+  TTYC_VPA,
+  TTYC_XENL,
+  TTYC_XT
+}
+----------------------------
+void fatalx(const char *msg, ...)
+{
+  char *fmt;
+  va_list ap;
+  __builtin_va_start(ap);
+  if (asprintf(&fmt, "fatal: %s", msg) == (-1))
+  {
+    exit(1);
+  }
+  log_vwrite(fmt, ap);
+  ;
+  exit(1);
+}
+
+
+----------------------------
+None
+----------------------------
+***/
+
+
+const char *tty_term_ptr2(struct tty_term *term, enum tty_code_code code, const void *a, const void *b)
+{
+  return tparm((char *) tty_term_string(term, code), a, b, 0, 0, 0, 0, 0, 0, 0);
+}
+
+
+/*** DEPENDENCIES:
+enum tty_code_code
+{
+  TTYC_AX = 0,
+  TTYC_ACSC,
+  TTYC_BCE,
+  TTYC_BEL,
+  TTYC_BLINK,
+  TTYC_BOLD,
+  TTYC_CIVIS,
+  TTYC_CLEAR,
+  TTYC_CNORM,
+  TTYC_COLORS,
+  TTYC_CR,
+  TTYC_CS,
+  TTYC_CSR,
+  TTYC_CUB,
+  TTYC_CUB1,
+  TTYC_CUD,
+  TTYC_CUD1,
+  TTYC_CUF,
+  TTYC_CUF1,
+  TTYC_CUP,
+  TTYC_CUU,
+  TTYC_CUU1,
+  TTYC_CVVIS,
+  TTYC_DCH,
+  TTYC_DCH1,
+  TTYC_DIM,
+  TTYC_DL,
+  TTYC_DL1,
+  TTYC_E3,
+  TTYC_ECH,
+  TTYC_ED,
+  TTYC_EL,
+  TTYC_EL1,
+  TTYC_ENACS,
+  TTYC_FSL,
+  TTYC_HOME,
+  TTYC_HPA,
+  TTYC_ICH,
+  TTYC_ICH1,
+  TTYC_IL,
+  TTYC_IL1,
+  TTYC_INDN,
+  TTYC_INVIS,
+  TTYC_KCBT,
+  TTYC_KCUB1,
+  TTYC_KCUD1,
+  TTYC_KCUF1,
+  TTYC_KCUU1,
+  TTYC_KDC2,
+  TTYC_KDC3,
+  TTYC_KDC4,
+  TTYC_KDC5,
+  TTYC_KDC6,
+  TTYC_KDC7,
+  TTYC_KDCH1,
+  TTYC_KDN2,
+  TTYC_KDN3,
+  TTYC_KDN4,
+  TTYC_KDN5,
+  TTYC_KDN6,
+  TTYC_KDN7,
+  TTYC_KEND,
+  TTYC_KEND2,
+  TTYC_KEND3,
+  TTYC_KEND4,
+  TTYC_KEND5,
+  TTYC_KEND6,
+  TTYC_KEND7,
+  TTYC_KF1,
+  TTYC_KF10,
+  TTYC_KF11,
+  TTYC_KF12,
+  TTYC_KF13,
+  TTYC_KF14,
+  TTYC_KF15,
+  TTYC_KF16,
+  TTYC_KF17,
+  TTYC_KF18,
+  TTYC_KF19,
+  TTYC_KF2,
+  TTYC_KF20,
+  TTYC_KF21,
+  TTYC_KF22,
+  TTYC_KF23,
+  TTYC_KF24,
+  TTYC_KF25,
+  TTYC_KF26,
+  TTYC_KF27,
+  TTYC_KF28,
+  TTYC_KF29,
+  TTYC_KF3,
+  TTYC_KF30,
+  TTYC_KF31,
+  TTYC_KF32,
+  TTYC_KF33,
+  TTYC_KF34,
+  TTYC_KF35,
+  TTYC_KF36,
+  TTYC_KF37,
+  TTYC_KF38,
+  TTYC_KF39,
+  TTYC_KF4,
+  TTYC_KF40,
+  TTYC_KF41,
+  TTYC_KF42,
+  TTYC_KF43,
+  TTYC_KF44,
+  TTYC_KF45,
+  TTYC_KF46,
+  TTYC_KF47,
+  TTYC_KF48,
+  TTYC_KF49,
+  TTYC_KF5,
+  TTYC_KF50,
+  TTYC_KF51,
+  TTYC_KF52,
+  TTYC_KF53,
+  TTYC_KF54,
+  TTYC_KF55,
+  TTYC_KF56,
+  TTYC_KF57,
+  TTYC_KF58,
+  TTYC_KF59,
+  TTYC_KF6,
+  TTYC_KF60,
+  TTYC_KF61,
+  TTYC_KF62,
+  TTYC_KF63,
+  TTYC_KF7,
+  TTYC_KF8,
+  TTYC_KF9,
+  TTYC_KHOM2,
+  TTYC_KHOM3,
+  TTYC_KHOM4,
+  TTYC_KHOM5,
+  TTYC_KHOM6,
+  TTYC_KHOM7,
+  TTYC_KHOME,
+  TTYC_KIC2,
+  TTYC_KIC3,
+  TTYC_KIC4,
+  TTYC_KIC5,
+  TTYC_KIC6,
+  TTYC_KIC7,
+  TTYC_KICH1,
+  TTYC_KIND,
+  TTYC_KLFT2,
+  TTYC_KLFT3,
+  TTYC_KLFT4,
+  TTYC_KLFT5,
+  TTYC_KLFT6,
+  TTYC_KLFT7,
+  TTYC_KMOUS,
+  TTYC_KNP,
+  TTYC_KNXT2,
+  TTYC_KNXT3,
+  TTYC_KNXT4,
+  TTYC_KNXT5,
+  TTYC_KNXT6,
+  TTYC_KNXT7,
+  TTYC_KPP,
+  TTYC_KPRV2,
+  TTYC_KPRV3,
+  TTYC_KPRV4,
+  TTYC_KPRV5,
+  TTYC_KPRV6,
+  TTYC_KPRV7,
+  TTYC_KRI,
+  TTYC_KRIT2,
+  TTYC_KRIT3,
+  TTYC_KRIT4,
+  TTYC_KRIT5,
+  TTYC_KRIT6,
+  TTYC_KRIT7,
+  TTYC_KUP2,
+  TTYC_KUP3,
+  TTYC_KUP4,
+  TTYC_KUP5,
+  TTYC_KUP6,
+  TTYC_KUP7,
+  TTYC_MS,
+  TTYC_OP,
+  TTYC_REV,
+  TTYC_RGB,
+  TTYC_RI,
+  TTYC_RMACS,
+  TTYC_RMCUP,
+  TTYC_RMKX,
+  TTYC_SE,
+  TTYC_SETAB,
+  TTYC_SETAF,
+  TTYC_SETRGBB,
+  TTYC_SETRGBF,
+  TTYC_SGR0,
+  TTYC_SITM,
+  TTYC_SMACS,
+  TTYC_SMCUP,
+  TTYC_SMKX,
+  TTYC_SMSO,
+  TTYC_SMUL,
+  TTYC_SMXX,
+  TTYC_SS,
+  TTYC_TC,
+  TTYC_TSL,
+  TTYC_U8,
+  TTYC_VPA,
+  TTYC_XENL,
+  TTYC_XT
+}
+----------------------------
+const char *tty_term_string(struct tty_term *term, enum tty_code_code code)
+{
+  if (!tty_term_has(term, code))
+  {
+    return "";
+  }
+  if (term->codes[code].type != TTYCODE_STRING)
+  {
+    fatalx("not a string: %d", code);
+  }
+  return term->codes[code].value.string;
+}
+
+
+----------------------------
+None
+----------------------------
+***/
+
+
+const char *tty_term_string2(struct tty_term *term, enum tty_code_code code, int a, int b)
+{
+  return tparm((char *) tty_term_string(term, code), a, b, 0, 0, 0, 0, 0, 0, 0);
+}
+
+
+/*** DEPENDENCIES:
+enum tty_code_code
+{
+  TTYC_AX = 0,
+  TTYC_ACSC,
+  TTYC_BCE,
+  TTYC_BEL,
+  TTYC_BLINK,
+  TTYC_BOLD,
+  TTYC_CIVIS,
+  TTYC_CLEAR,
+  TTYC_CNORM,
+  TTYC_COLORS,
+  TTYC_CR,
+  TTYC_CS,
+  TTYC_CSR,
+  TTYC_CUB,
+  TTYC_CUB1,
+  TTYC_CUD,
+  TTYC_CUD1,
+  TTYC_CUF,
+  TTYC_CUF1,
+  TTYC_CUP,
+  TTYC_CUU,
+  TTYC_CUU1,
+  TTYC_CVVIS,
+  TTYC_DCH,
+  TTYC_DCH1,
+  TTYC_DIM,
+  TTYC_DL,
+  TTYC_DL1,
+  TTYC_E3,
+  TTYC_ECH,
+  TTYC_ED,
+  TTYC_EL,
+  TTYC_EL1,
+  TTYC_ENACS,
+  TTYC_FSL,
+  TTYC_HOME,
+  TTYC_HPA,
+  TTYC_ICH,
+  TTYC_ICH1,
+  TTYC_IL,
+  TTYC_IL1,
+  TTYC_INDN,
+  TTYC_INVIS,
+  TTYC_KCBT,
+  TTYC_KCUB1,
+  TTYC_KCUD1,
+  TTYC_KCUF1,
+  TTYC_KCUU1,
+  TTYC_KDC2,
+  TTYC_KDC3,
+  TTYC_KDC4,
+  TTYC_KDC5,
+  TTYC_KDC6,
+  TTYC_KDC7,
+  TTYC_KDCH1,
+  TTYC_KDN2,
+  TTYC_KDN3,
+  TTYC_KDN4,
+  TTYC_KDN5,
+  TTYC_KDN6,
+  TTYC_KDN7,
+  TTYC_KEND,
+  TTYC_KEND2,
+  TTYC_KEND3,
+  TTYC_KEND4,
+  TTYC_KEND5,
+  TTYC_KEND6,
+  TTYC_KEND7,
+  TTYC_KF1,
+  TTYC_KF10,
+  TTYC_KF11,
+  TTYC_KF12,
+  TTYC_KF13,
+  TTYC_KF14,
+  TTYC_KF15,
+  TTYC_KF16,
+  TTYC_KF17,
+  TTYC_KF18,
+  TTYC_KF19,
+  TTYC_KF2,
+  TTYC_KF20,
+  TTYC_KF21,
+  TTYC_KF22,
+  TTYC_KF23,
+  TTYC_KF24,
+  TTYC_KF25,
+  TTYC_KF26,
+  TTYC_KF27,
+  TTYC_KF28,
+  TTYC_KF29,
+  TTYC_KF3,
+  TTYC_KF30,
+  TTYC_KF31,
+  TTYC_KF32,
+  TTYC_KF33,
+  TTYC_KF34,
+  TTYC_KF35,
+  TTYC_KF36,
+  TTYC_KF37,
+  TTYC_KF38,
+  TTYC_KF39,
+  TTYC_KF4,
+  TTYC_KF40,
+  TTYC_KF41,
+  TTYC_KF42,
+  TTYC_KF43,
+  TTYC_KF44,
+  TTYC_KF45,
+  TTYC_KF46,
+  TTYC_KF47,
+  TTYC_KF48,
+  TTYC_KF49,
+  TTYC_KF5,
+  TTYC_KF50,
+  TTYC_KF51,
+  TTYC_KF52,
+  TTYC_KF53,
+  TTYC_KF54,
+  TTYC_KF55,
+  TTYC_KF56,
+  TTYC_KF57,
+  TTYC_KF58,
+  TTYC_KF59,
+  TTYC_KF6,
+  TTYC_KF60,
+  TTYC_KF61,
+  TTYC_KF62,
+  TTYC_KF63,
+  TTYC_KF7,
+  TTYC_KF8,
+  TTYC_KF9,
+  TTYC_KHOM2,
+  TTYC_KHOM3,
+  TTYC_KHOM4,
+  TTYC_KHOM5,
+  TTYC_KHOM6,
+  TTYC_KHOM7,
+  TTYC_KHOME,
+  TTYC_KIC2,
+  TTYC_KIC3,
+  TTYC_KIC4,
+  TTYC_KIC5,
+  TTYC_KIC6,
+  TTYC_KIC7,
+  TTYC_KICH1,
+  TTYC_KIND,
+  TTYC_KLFT2,
+  TTYC_KLFT3,
+  TTYC_KLFT4,
+  TTYC_KLFT5,
+  TTYC_KLFT6,
+  TTYC_KLFT7,
+  TTYC_KMOUS,
+  TTYC_KNP,
+  TTYC_KNXT2,
+  TTYC_KNXT3,
+  TTYC_KNXT4,
+  TTYC_KNXT5,
+  TTYC_KNXT6,
+  TTYC_KNXT7,
+  TTYC_KPP,
+  TTYC_KPRV2,
+  TTYC_KPRV3,
+  TTYC_KPRV4,
+  TTYC_KPRV5,
+  TTYC_KPRV6,
+  TTYC_KPRV7,
+  TTYC_KRI,
+  TTYC_KRIT2,
+  TTYC_KRIT3,
+  TTYC_KRIT4,
+  TTYC_KRIT5,
+  TTYC_KRIT6,
+  TTYC_KRIT7,
+  TTYC_KUP2,
+  TTYC_KUP3,
+  TTYC_KUP4,
+  TTYC_KUP5,
+  TTYC_KUP6,
+  TTYC_KUP7,
+  TTYC_MS,
+  TTYC_OP,
+  TTYC_REV,
+  TTYC_RGB,
+  TTYC_RI,
+  TTYC_RMACS,
+  TTYC_RMCUP,
+  TTYC_RMKX,
+  TTYC_SE,
+  TTYC_SETAB,
+  TTYC_SETAF,
+  TTYC_SETRGBB,
+  TTYC_SETRGBF,
+  TTYC_SGR0,
+  TTYC_SITM,
+  TTYC_SMACS,
+  TTYC_SMCUP,
+  TTYC_SMKX,
+  TTYC_SMSO,
+  TTYC_SMUL,
+  TTYC_SMXX,
+  TTYC_SS,
+  TTYC_TC,
+  TTYC_TSL,
+  TTYC_U8,
+  TTYC_VPA,
+  TTYC_XENL,
+  TTYC_XT
+}
+----------------------------
+const char *tty_term_string(struct tty_term *term, enum tty_code_code code)
+{
+  if (!tty_term_has(term, code))
+  {
+    return "";
+  }
+  if (term->codes[code].type != TTYCODE_STRING)
+  {
+    fatalx("not a string: %d", code);
+  }
+  return term->codes[code].value.string;
+}
+
+
+----------------------------
+None
+----------------------------
+***/
+
+
+int tty_term_number(struct tty_term *term, enum tty_code_code code)
+{
+  if (!tty_term_has(term, code))
+  {
+    return 0;
+  }
+  if (term->codes[code].type != TTYCODE_NUMBER)
+  {
+    fatalx("not a number: %d", code);
+  }
+  return term->codes[code].value.number;
+}
+
+
+/*** DEPENDENCIES:
+int tty_term_has(struct tty_term *term, enum tty_code_code code)
+{
+  return term->codes[code].type != TTYCODE_NONE;
+}
+
+
+----------------------------
+enum tty_code_code
+{
+  TTYC_AX = 0,
+  TTYC_ACSC,
+  TTYC_BCE,
+  TTYC_BEL,
+  TTYC_BLINK,
+  TTYC_BOLD,
+  TTYC_CIVIS,
+  TTYC_CLEAR,
+  TTYC_CNORM,
+  TTYC_COLORS,
+  TTYC_CR,
+  TTYC_CS,
+  TTYC_CSR,
+  TTYC_CUB,
+  TTYC_CUB1,
+  TTYC_CUD,
+  TTYC_CUD1,
+  TTYC_CUF,
+  TTYC_CUF1,
+  TTYC_CUP,
+  TTYC_CUU,
+  TTYC_CUU1,
+  TTYC_CVVIS,
+  TTYC_DCH,
+  TTYC_DCH1,
+  TTYC_DIM,
+  TTYC_DL,
+  TTYC_DL1,
+  TTYC_E3,
+  TTYC_ECH,
+  TTYC_ED,
+  TTYC_EL,
+  TTYC_EL1,
+  TTYC_ENACS,
+  TTYC_FSL,
+  TTYC_HOME,
+  TTYC_HPA,
+  TTYC_ICH,
+  TTYC_ICH1,
+  TTYC_IL,
+  TTYC_IL1,
+  TTYC_INDN,
+  TTYC_INVIS,
+  TTYC_KCBT,
+  TTYC_KCUB1,
+  TTYC_KCUD1,
+  TTYC_KCUF1,
+  TTYC_KCUU1,
+  TTYC_KDC2,
+  TTYC_KDC3,
+  TTYC_KDC4,
+  TTYC_KDC5,
+  TTYC_KDC6,
+  TTYC_KDC7,
+  TTYC_KDCH1,
+  TTYC_KDN2,
+  TTYC_KDN3,
+  TTYC_KDN4,
+  TTYC_KDN5,
+  TTYC_KDN6,
+  TTYC_KDN7,
+  TTYC_KEND,
+  TTYC_KEND2,
+  TTYC_KEND3,
+  TTYC_KEND4,
+  TTYC_KEND5,
+  TTYC_KEND6,
+  TTYC_KEND7,
+  TTYC_KF1,
+  TTYC_KF10,
+  TTYC_KF11,
+  TTYC_KF12,
+  TTYC_KF13,
+  TTYC_KF14,
+  TTYC_KF15,
+  TTYC_KF16,
+  TTYC_KF17,
+  TTYC_KF18,
+  TTYC_KF19,
+  TTYC_KF2,
+  TTYC_KF20,
+  TTYC_KF21,
+  TTYC_KF22,
+  TTYC_KF23,
+  TTYC_KF24,
+  TTYC_KF25,
+  TTYC_KF26,
+  TTYC_KF27,
+  TTYC_KF28,
+  TTYC_KF29,
+  TTYC_KF3,
+  TTYC_KF30,
+  TTYC_KF31,
+  TTYC_KF32,
+  TTYC_KF33,
+  TTYC_KF34,
+  TTYC_KF35,
+  TTYC_KF36,
+  TTYC_KF37,
+  TTYC_KF38,
+  TTYC_KF39,
+  TTYC_KF4,
+  TTYC_KF40,
+  TTYC_KF41,
+  TTYC_KF42,
+  TTYC_KF43,
+  TTYC_KF44,
+  TTYC_KF45,
+  TTYC_KF46,
+  TTYC_KF47,
+  TTYC_KF48,
+  TTYC_KF49,
+  TTYC_KF5,
+  TTYC_KF50,
+  TTYC_KF51,
+  TTYC_KF52,
+  TTYC_KF53,
+  TTYC_KF54,
+  TTYC_KF55,
+  TTYC_KF56,
+  TTYC_KF57,
+  TTYC_KF58,
+  TTYC_KF59,
+  TTYC_KF6,
+  TTYC_KF60,
+  TTYC_KF61,
+  TTYC_KF62,
+  TTYC_KF63,
+  TTYC_KF7,
+  TTYC_KF8,
+  TTYC_KF9,
+  TTYC_KHOM2,
+  TTYC_KHOM3,
+  TTYC_KHOM4,
+  TTYC_KHOM5,
+  TTYC_KHOM6,
+  TTYC_KHOM7,
+  TTYC_KHOME,
+  TTYC_KIC2,
+  TTYC_KIC3,
+  TTYC_KIC4,
+  TTYC_KIC5,
+  TTYC_KIC6,
+  TTYC_KIC7,
+  TTYC_KICH1,
+  TTYC_KIND,
+  TTYC_KLFT2,
+  TTYC_KLFT3,
+  TTYC_KLFT4,
+  TTYC_KLFT5,
+  TTYC_KLFT6,
+  TTYC_KLFT7,
+  TTYC_KMOUS,
+  TTYC_KNP,
+  TTYC_KNXT2,
+  TTYC_KNXT3,
+  TTYC_KNXT4,
+  TTYC_KNXT5,
+  TTYC_KNXT6,
+  TTYC_KNXT7,
+  TTYC_KPP,
+  TTYC_KPRV2,
+  TTYC_KPRV3,
+  TTYC_KPRV4,
+  TTYC_KPRV5,
+  TTYC_KPRV6,
+  TTYC_KPRV7,
+  TTYC_KRI,
+  TTYC_KRIT2,
+  TTYC_KRIT3,
+  TTYC_KRIT4,
+  TTYC_KRIT5,
+  TTYC_KRIT6,
+  TTYC_KRIT7,
+  TTYC_KUP2,
+  TTYC_KUP3,
+  TTYC_KUP4,
+  TTYC_KUP5,
+  TTYC_KUP6,
+  TTYC_KUP7,
+  TTYC_MS,
+  TTYC_OP,
+  TTYC_REV,
+  TTYC_RGB,
+  TTYC_RI,
+  TTYC_RMACS,
+  TTYC_RMCUP,
+  TTYC_RMKX,
+  TTYC_SE,
+  TTYC_SETAB,
+  TTYC_SETAF,
+  TTYC_SETRGBB,
+  TTYC_SETRGBF,
+  TTYC_SGR0,
+  TTYC_SITM,
+  TTYC_SMACS,
+  TTYC_SMCUP,
+  TTYC_SMKX,
+  TTYC_SMSO,
+  TTYC_SMUL,
+  TTYC_SMXX,
+  TTYC_SS,
+  TTYC_TC,
+  TTYC_TSL,
+  TTYC_U8,
+  TTYC_VPA,
+  TTYC_XENL,
+  TTYC_XT
+}
+----------------------------
+void fatalx(const char *msg, ...)
+{
+  char *fmt;
+  va_list ap;
+  __builtin_va_start(ap);
+  if (asprintf(&fmt, "fatal: %s", msg) == (-1))
+  {
+    exit(1);
+  }
+  log_vwrite(fmt, ap);
+  ;
+  exit(1);
+}
+
+
+----------------------------
+None
+----------------------------
+***/
+
+
+const char *tty_term_string1(struct tty_term *term, enum tty_code_code code, int a)
+{
+  return tparm((char *) tty_term_string(term, code), a, 0, 0, 0, 0, 0, 0, 0, 0);
+}
+
+
+/*** DEPENDENCIES:
+enum tty_code_code
+{
+  TTYC_AX = 0,
+  TTYC_ACSC,
+  TTYC_BCE,
+  TTYC_BEL,
+  TTYC_BLINK,
+  TTYC_BOLD,
+  TTYC_CIVIS,
+  TTYC_CLEAR,
+  TTYC_CNORM,
+  TTYC_COLORS,
+  TTYC_CR,
+  TTYC_CS,
+  TTYC_CSR,
+  TTYC_CUB,
+  TTYC_CUB1,
+  TTYC_CUD,
+  TTYC_CUD1,
+  TTYC_CUF,
+  TTYC_CUF1,
+  TTYC_CUP,
+  TTYC_CUU,
+  TTYC_CUU1,
+  TTYC_CVVIS,
+  TTYC_DCH,
+  TTYC_DCH1,
+  TTYC_DIM,
+  TTYC_DL,
+  TTYC_DL1,
+  TTYC_E3,
+  TTYC_ECH,
+  TTYC_ED,
+  TTYC_EL,
+  TTYC_EL1,
+  TTYC_ENACS,
+  TTYC_FSL,
+  TTYC_HOME,
+  TTYC_HPA,
+  TTYC_ICH,
+  TTYC_ICH1,
+  TTYC_IL,
+  TTYC_IL1,
+  TTYC_INDN,
+  TTYC_INVIS,
+  TTYC_KCBT,
+  TTYC_KCUB1,
+  TTYC_KCUD1,
+  TTYC_KCUF1,
+  TTYC_KCUU1,
+  TTYC_KDC2,
+  TTYC_KDC3,
+  TTYC_KDC4,
+  TTYC_KDC5,
+  TTYC_KDC6,
+  TTYC_KDC7,
+  TTYC_KDCH1,
+  TTYC_KDN2,
+  TTYC_KDN3,
+  TTYC_KDN4,
+  TTYC_KDN5,
+  TTYC_KDN6,
+  TTYC_KDN7,
+  TTYC_KEND,
+  TTYC_KEND2,
+  TTYC_KEND3,
+  TTYC_KEND4,
+  TTYC_KEND5,
+  TTYC_KEND6,
+  TTYC_KEND7,
+  TTYC_KF1,
+  TTYC_KF10,
+  TTYC_KF11,
+  TTYC_KF12,
+  TTYC_KF13,
+  TTYC_KF14,
+  TTYC_KF15,
+  TTYC_KF16,
+  TTYC_KF17,
+  TTYC_KF18,
+  TTYC_KF19,
+  TTYC_KF2,
+  TTYC_KF20,
+  TTYC_KF21,
+  TTYC_KF22,
+  TTYC_KF23,
+  TTYC_KF24,
+  TTYC_KF25,
+  TTYC_KF26,
+  TTYC_KF27,
+  TTYC_KF28,
+  TTYC_KF29,
+  TTYC_KF3,
+  TTYC_KF30,
+  TTYC_KF31,
+  TTYC_KF32,
+  TTYC_KF33,
+  TTYC_KF34,
+  TTYC_KF35,
+  TTYC_KF36,
+  TTYC_KF37,
+  TTYC_KF38,
+  TTYC_KF39,
+  TTYC_KF4,
+  TTYC_KF40,
+  TTYC_KF41,
+  TTYC_KF42,
+  TTYC_KF43,
+  TTYC_KF44,
+  TTYC_KF45,
+  TTYC_KF46,
+  TTYC_KF47,
+  TTYC_KF48,
+  TTYC_KF49,
+  TTYC_KF5,
+  TTYC_KF50,
+  TTYC_KF51,
+  TTYC_KF52,
+  TTYC_KF53,
+  TTYC_KF54,
+  TTYC_KF55,
+  TTYC_KF56,
+  TTYC_KF57,
+  TTYC_KF58,
+  TTYC_KF59,
+  TTYC_KF6,
+  TTYC_KF60,
+  TTYC_KF61,
+  TTYC_KF62,
+  TTYC_KF63,
+  TTYC_KF7,
+  TTYC_KF8,
+  TTYC_KF9,
+  TTYC_KHOM2,
+  TTYC_KHOM3,
+  TTYC_KHOM4,
+  TTYC_KHOM5,
+  TTYC_KHOM6,
+  TTYC_KHOM7,
+  TTYC_KHOME,
+  TTYC_KIC2,
+  TTYC_KIC3,
+  TTYC_KIC4,
+  TTYC_KIC5,
+  TTYC_KIC6,
+  TTYC_KIC7,
+  TTYC_KICH1,
+  TTYC_KIND,
+  TTYC_KLFT2,
+  TTYC_KLFT3,
+  TTYC_KLFT4,
+  TTYC_KLFT5,
+  TTYC_KLFT6,
+  TTYC_KLFT7,
+  TTYC_KMOUS,
+  TTYC_KNP,
+  TTYC_KNXT2,
+  TTYC_KNXT3,
+  TTYC_KNXT4,
+  TTYC_KNXT5,
+  TTYC_KNXT6,
+  TTYC_KNXT7,
+  TTYC_KPP,
+  TTYC_KPRV2,
+  TTYC_KPRV3,
+  TTYC_KPRV4,
+  TTYC_KPRV5,
+  TTYC_KPRV6,
+  TTYC_KPRV7,
+  TTYC_KRI,
+  TTYC_KRIT2,
+  TTYC_KRIT3,
+  TTYC_KRIT4,
+  TTYC_KRIT5,
+  TTYC_KRIT6,
+  TTYC_KRIT7,
+  TTYC_KUP2,
+  TTYC_KUP3,
+  TTYC_KUP4,
+  TTYC_KUP5,
+  TTYC_KUP6,
+  TTYC_KUP7,
+  TTYC_MS,
+  TTYC_OP,
+  TTYC_REV,
+  TTYC_RGB,
+  TTYC_RI,
+  TTYC_RMACS,
+  TTYC_RMCUP,
+  TTYC_RMKX,
+  TTYC_SE,
+  TTYC_SETAB,
+  TTYC_SETAF,
+  TTYC_SETRGBB,
+  TTYC_SETRGBF,
+  TTYC_SGR0,
+  TTYC_SITM,
+  TTYC_SMACS,
+  TTYC_SMCUP,
+  TTYC_SMKX,
+  TTYC_SMSO,
+  TTYC_SMUL,
+  TTYC_SMXX,
+  TTYC_SS,
+  TTYC_TC,
+  TTYC_TSL,
+  TTYC_U8,
+  TTYC_VPA,
+  TTYC_XENL,
+  TTYC_XT
+}
+----------------------------
+const char *tty_term_string(struct tty_term *term, enum tty_code_code code)
+{
+  if (!tty_term_has(term, code))
+  {
+    return "";
+  }
+  if (term->codes[code].type != TTYCODE_STRING)
+  {
+    fatalx("not a string: %d", code);
+  }
+  return term->codes[code].value.string;
+}
+
+
+----------------------------
+None
+----------------------------
+***/
+
+
+const char *tty_term_string3(struct tty_term *term, enum tty_code_code code, int a, int b, int c)
+{
+  return tparm((char *) tty_term_string(term, code), a, b, c, 0, 0, 0, 0, 0, 0);
+}
+
+
+/*** DEPENDENCIES:
+enum tty_code_code
+{
+  TTYC_AX = 0,
+  TTYC_ACSC,
+  TTYC_BCE,
+  TTYC_BEL,
+  TTYC_BLINK,
+  TTYC_BOLD,
+  TTYC_CIVIS,
+  TTYC_CLEAR,
+  TTYC_CNORM,
+  TTYC_COLORS,
+  TTYC_CR,
+  TTYC_CS,
+  TTYC_CSR,
+  TTYC_CUB,
+  TTYC_CUB1,
+  TTYC_CUD,
+  TTYC_CUD1,
+  TTYC_CUF,
+  TTYC_CUF1,
+  TTYC_CUP,
+  TTYC_CUU,
+  TTYC_CUU1,
+  TTYC_CVVIS,
+  TTYC_DCH,
+  TTYC_DCH1,
+  TTYC_DIM,
+  TTYC_DL,
+  TTYC_DL1,
+  TTYC_E3,
+  TTYC_ECH,
+  TTYC_ED,
+  TTYC_EL,
+  TTYC_EL1,
+  TTYC_ENACS,
+  TTYC_FSL,
+  TTYC_HOME,
+  TTYC_HPA,
+  TTYC_ICH,
+  TTYC_ICH1,
+  TTYC_IL,
+  TTYC_IL1,
+  TTYC_INDN,
+  TTYC_INVIS,
+  TTYC_KCBT,
+  TTYC_KCUB1,
+  TTYC_KCUD1,
+  TTYC_KCUF1,
+  TTYC_KCUU1,
+  TTYC_KDC2,
+  TTYC_KDC3,
+  TTYC_KDC4,
+  TTYC_KDC5,
+  TTYC_KDC6,
+  TTYC_KDC7,
+  TTYC_KDCH1,
+  TTYC_KDN2,
+  TTYC_KDN3,
+  TTYC_KDN4,
+  TTYC_KDN5,
+  TTYC_KDN6,
+  TTYC_KDN7,
+  TTYC_KEND,
+  TTYC_KEND2,
+  TTYC_KEND3,
+  TTYC_KEND4,
+  TTYC_KEND5,
+  TTYC_KEND6,
+  TTYC_KEND7,
+  TTYC_KF1,
+  TTYC_KF10,
+  TTYC_KF11,
+  TTYC_KF12,
+  TTYC_KF13,
+  TTYC_KF14,
+  TTYC_KF15,
+  TTYC_KF16,
+  TTYC_KF17,
+  TTYC_KF18,
+  TTYC_KF19,
+  TTYC_KF2,
+  TTYC_KF20,
+  TTYC_KF21,
+  TTYC_KF22,
+  TTYC_KF23,
+  TTYC_KF24,
+  TTYC_KF25,
+  TTYC_KF26,
+  TTYC_KF27,
+  TTYC_KF28,
+  TTYC_KF29,
+  TTYC_KF3,
+  TTYC_KF30,
+  TTYC_KF31,
+  TTYC_KF32,
+  TTYC_KF33,
+  TTYC_KF34,
+  TTYC_KF35,
+  TTYC_KF36,
+  TTYC_KF37,
+  TTYC_KF38,
+  TTYC_KF39,
+  TTYC_KF4,
+  TTYC_KF40,
+  TTYC_KF41,
+  TTYC_KF42,
+  TTYC_KF43,
+  TTYC_KF44,
+  TTYC_KF45,
+  TTYC_KF46,
+  TTYC_KF47,
+  TTYC_KF48,
+  TTYC_KF49,
+  TTYC_KF5,
+  TTYC_KF50,
+  TTYC_KF51,
+  TTYC_KF52,
+  TTYC_KF53,
+  TTYC_KF54,
+  TTYC_KF55,
+  TTYC_KF56,
+  TTYC_KF57,
+  TTYC_KF58,
+  TTYC_KF59,
+  TTYC_KF6,
+  TTYC_KF60,
+  TTYC_KF61,
+  TTYC_KF62,
+  TTYC_KF63,
+  TTYC_KF7,
+  TTYC_KF8,
+  TTYC_KF9,
+  TTYC_KHOM2,
+  TTYC_KHOM3,
+  TTYC_KHOM4,
+  TTYC_KHOM5,
+  TTYC_KHOM6,
+  TTYC_KHOM7,
+  TTYC_KHOME,
+  TTYC_KIC2,
+  TTYC_KIC3,
+  TTYC_KIC4,
+  TTYC_KIC5,
+  TTYC_KIC6,
+  TTYC_KIC7,
+  TTYC_KICH1,
+  TTYC_KIND,
+  TTYC_KLFT2,
+  TTYC_KLFT3,
+  TTYC_KLFT4,
+  TTYC_KLFT5,
+  TTYC_KLFT6,
+  TTYC_KLFT7,
+  TTYC_KMOUS,
+  TTYC_KNP,
+  TTYC_KNXT2,
+  TTYC_KNXT3,
+  TTYC_KNXT4,
+  TTYC_KNXT5,
+  TTYC_KNXT6,
+  TTYC_KNXT7,
+  TTYC_KPP,
+  TTYC_KPRV2,
+  TTYC_KPRV3,
+  TTYC_KPRV4,
+  TTYC_KPRV5,
+  TTYC_KPRV6,
+  TTYC_KPRV7,
+  TTYC_KRI,
+  TTYC_KRIT2,
+  TTYC_KRIT3,
+  TTYC_KRIT4,
+  TTYC_KRIT5,
+  TTYC_KRIT6,
+  TTYC_KRIT7,
+  TTYC_KUP2,
+  TTYC_KUP3,
+  TTYC_KUP4,
+  TTYC_KUP5,
+  TTYC_KUP6,
+  TTYC_KUP7,
+  TTYC_MS,
+  TTYC_OP,
+  TTYC_REV,
+  TTYC_RGB,
+  TTYC_RI,
+  TTYC_RMACS,
+  TTYC_RMCUP,
+  TTYC_RMKX,
+  TTYC_SE,
+  TTYC_SETAB,
+  TTYC_SETAF,
+  TTYC_SETRGBB,
+  TTYC_SETRGBF,
+  TTYC_SGR0,
+  TTYC_SITM,
+  TTYC_SMACS,
+  TTYC_SMCUP,
+  TTYC_SMKX,
+  TTYC_SMSO,
+  TTYC_SMUL,
+  TTYC_SMXX,
+  TTYC_SS,
+  TTYC_TC,
+  TTYC_TSL,
+  TTYC_U8,
+  TTYC_VPA,
+  TTYC_XENL,
+  TTYC_XT
+}
+----------------------------
+const char *tty_term_string(struct tty_term *term, enum tty_code_code code)
+{
+  if (!tty_term_has(term, code))
+  {
+    return "";
+  }
+  if (term->codes[code].type != TTYCODE_STRING)
+  {
+    fatalx("not a string: %d", code);
+  }
+  return term->codes[code].value.string;
+}
+
+
+----------------------------
+None
+----------------------------
+***/
+
+
+int tty_term_flag(struct tty_term *term, enum tty_code_code code)
+{
+  if (!tty_term_has(term, code))
+  {
+    return 0;
+  }
+  if (term->codes[code].type != TTYCODE_FLAG)
+  {
+    fatalx("not a flag: %d", code);
+  }
+  return term->codes[code].value.flag;
+}
+
+
+/*** DEPENDENCIES:
+int tty_term_has(struct tty_term *term, enum tty_code_code code)
+{
+  return term->codes[code].type != TTYCODE_NONE;
+}
+
+
+----------------------------
+enum tty_code_code
+{
+  TTYC_AX = 0,
+  TTYC_ACSC,
+  TTYC_BCE,
+  TTYC_BEL,
+  TTYC_BLINK,
+  TTYC_BOLD,
+  TTYC_CIVIS,
+  TTYC_CLEAR,
+  TTYC_CNORM,
+  TTYC_COLORS,
+  TTYC_CR,
+  TTYC_CS,
+  TTYC_CSR,
+  TTYC_CUB,
+  TTYC_CUB1,
+  TTYC_CUD,
+  TTYC_CUD1,
+  TTYC_CUF,
+  TTYC_CUF1,
+  TTYC_CUP,
+  TTYC_CUU,
+  TTYC_CUU1,
+  TTYC_CVVIS,
+  TTYC_DCH,
+  TTYC_DCH1,
+  TTYC_DIM,
+  TTYC_DL,
+  TTYC_DL1,
+  TTYC_E3,
+  TTYC_ECH,
+  TTYC_ED,
+  TTYC_EL,
+  TTYC_EL1,
+  TTYC_ENACS,
+  TTYC_FSL,
+  TTYC_HOME,
+  TTYC_HPA,
+  TTYC_ICH,
+  TTYC_ICH1,
+  TTYC_IL,
+  TTYC_IL1,
+  TTYC_INDN,
+  TTYC_INVIS,
+  TTYC_KCBT,
+  TTYC_KCUB1,
+  TTYC_KCUD1,
+  TTYC_KCUF1,
+  TTYC_KCUU1,
+  TTYC_KDC2,
+  TTYC_KDC3,
+  TTYC_KDC4,
+  TTYC_KDC5,
+  TTYC_KDC6,
+  TTYC_KDC7,
+  TTYC_KDCH1,
+  TTYC_KDN2,
+  TTYC_KDN3,
+  TTYC_KDN4,
+  TTYC_KDN5,
+  TTYC_KDN6,
+  TTYC_KDN7,
+  TTYC_KEND,
+  TTYC_KEND2,
+  TTYC_KEND3,
+  TTYC_KEND4,
+  TTYC_KEND5,
+  TTYC_KEND6,
+  TTYC_KEND7,
+  TTYC_KF1,
+  TTYC_KF10,
+  TTYC_KF11,
+  TTYC_KF12,
+  TTYC_KF13,
+  TTYC_KF14,
+  TTYC_KF15,
+  TTYC_KF16,
+  TTYC_KF17,
+  TTYC_KF18,
+  TTYC_KF19,
+  TTYC_KF2,
+  TTYC_KF20,
+  TTYC_KF21,
+  TTYC_KF22,
+  TTYC_KF23,
+  TTYC_KF24,
+  TTYC_KF25,
+  TTYC_KF26,
+  TTYC_KF27,
+  TTYC_KF28,
+  TTYC_KF29,
+  TTYC_KF3,
+  TTYC_KF30,
+  TTYC_KF31,
+  TTYC_KF32,
+  TTYC_KF33,
+  TTYC_KF34,
+  TTYC_KF35,
+  TTYC_KF36,
+  TTYC_KF37,
+  TTYC_KF38,
+  TTYC_KF39,
+  TTYC_KF4,
+  TTYC_KF40,
+  TTYC_KF41,
+  TTYC_KF42,
+  TTYC_KF43,
+  TTYC_KF44,
+  TTYC_KF45,
+  TTYC_KF46,
+  TTYC_KF47,
+  TTYC_KF48,
+  TTYC_KF49,
+  TTYC_KF5,
+  TTYC_KF50,
+  TTYC_KF51,
+  TTYC_KF52,
+  TTYC_KF53,
+  TTYC_KF54,
+  TTYC_KF55,
+  TTYC_KF56,
+  TTYC_KF57,
+  TTYC_KF58,
+  TTYC_KF59,
+  TTYC_KF6,
+  TTYC_KF60,
+  TTYC_KF61,
+  TTYC_KF62,
+  TTYC_KF63,
+  TTYC_KF7,
+  TTYC_KF8,
+  TTYC_KF9,
+  TTYC_KHOM2,
+  TTYC_KHOM3,
+  TTYC_KHOM4,
+  TTYC_KHOM5,
+  TTYC_KHOM6,
+  TTYC_KHOM7,
+  TTYC_KHOME,
+  TTYC_KIC2,
+  TTYC_KIC3,
+  TTYC_KIC4,
+  TTYC_KIC5,
+  TTYC_KIC6,
+  TTYC_KIC7,
+  TTYC_KICH1,
+  TTYC_KIND,
+  TTYC_KLFT2,
+  TTYC_KLFT3,
+  TTYC_KLFT4,
+  TTYC_KLFT5,
+  TTYC_KLFT6,
+  TTYC_KLFT7,
+  TTYC_KMOUS,
+  TTYC_KNP,
+  TTYC_KNXT2,
+  TTYC_KNXT3,
+  TTYC_KNXT4,
+  TTYC_KNXT5,
+  TTYC_KNXT6,
+  TTYC_KNXT7,
+  TTYC_KPP,
+  TTYC_KPRV2,
+  TTYC_KPRV3,
+  TTYC_KPRV4,
+  TTYC_KPRV5,
+  TTYC_KPRV6,
+  TTYC_KPRV7,
+  TTYC_KRI,
+  TTYC_KRIT2,
+  TTYC_KRIT3,
+  TTYC_KRIT4,
+  TTYC_KRIT5,
+  TTYC_KRIT6,
+  TTYC_KRIT7,
+  TTYC_KUP2,
+  TTYC_KUP3,
+  TTYC_KUP4,
+  TTYC_KUP5,
+  TTYC_KUP6,
+  TTYC_KUP7,
+  TTYC_MS,
+  TTYC_OP,
+  TTYC_REV,
+  TTYC_RGB,
+  TTYC_RI,
+  TTYC_RMACS,
+  TTYC_RMCUP,
+  TTYC_RMKX,
+  TTYC_SE,
+  TTYC_SETAB,
+  TTYC_SETAF,
+  TTYC_SETRGBB,
+  TTYC_SETRGBF,
+  TTYC_SGR0,
+  TTYC_SITM,
+  TTYC_SMACS,
+  TTYC_SMCUP,
+  TTYC_SMKX,
+  TTYC_SMSO,
+  TTYC_SMUL,
+  TTYC_SMXX,
+  TTYC_SS,
+  TTYC_TC,
+  TTYC_TSL,
+  TTYC_U8,
+  TTYC_VPA,
+  TTYC_XENL,
+  TTYC_XT
+}
+----------------------------
+void fatalx(const char *msg, ...)
+{
+  char *fmt;
+  va_list ap;
+  __builtin_va_start(ap);
+  if (asprintf(&fmt, "fatal: %s", msg) == (-1))
+  {
+    exit(1);
+  }
+  log_vwrite(fmt, ap);
+  ;
+  exit(1);
+}
+
+
+----------------------------
+None
+----------------------------
+***/
+
+
+const char *tty_term_ptr1(struct tty_term *term, enum tty_code_code code, const void *a)
+{
+  return tparm((char *) tty_term_string(term, code), a, 0, 0, 0, 0, 0, 0, 0, 0);
+}
+
+
+/*** DEPENDENCIES:
+enum tty_code_code
+{
+  TTYC_AX = 0,
+  TTYC_ACSC,
+  TTYC_BCE,
+  TTYC_BEL,
+  TTYC_BLINK,
+  TTYC_BOLD,
+  TTYC_CIVIS,
+  TTYC_CLEAR,
+  TTYC_CNORM,
+  TTYC_COLORS,
+  TTYC_CR,
+  TTYC_CS,
+  TTYC_CSR,
+  TTYC_CUB,
+  TTYC_CUB1,
+  TTYC_CUD,
+  TTYC_CUD1,
+  TTYC_CUF,
+  TTYC_CUF1,
+  TTYC_CUP,
+  TTYC_CUU,
+  TTYC_CUU1,
+  TTYC_CVVIS,
+  TTYC_DCH,
+  TTYC_DCH1,
+  TTYC_DIM,
+  TTYC_DL,
+  TTYC_DL1,
+  TTYC_E3,
+  TTYC_ECH,
+  TTYC_ED,
+  TTYC_EL,
+  TTYC_EL1,
+  TTYC_ENACS,
+  TTYC_FSL,
+  TTYC_HOME,
+  TTYC_HPA,
+  TTYC_ICH,
+  TTYC_ICH1,
+  TTYC_IL,
+  TTYC_IL1,
+  TTYC_INDN,
+  TTYC_INVIS,
+  TTYC_KCBT,
+  TTYC_KCUB1,
+  TTYC_KCUD1,
+  TTYC_KCUF1,
+  TTYC_KCUU1,
+  TTYC_KDC2,
+  TTYC_KDC3,
+  TTYC_KDC4,
+  TTYC_KDC5,
+  TTYC_KDC6,
+  TTYC_KDC7,
+  TTYC_KDCH1,
+  TTYC_KDN2,
+  TTYC_KDN3,
+  TTYC_KDN4,
+  TTYC_KDN5,
+  TTYC_KDN6,
+  TTYC_KDN7,
+  TTYC_KEND,
+  TTYC_KEND2,
+  TTYC_KEND3,
+  TTYC_KEND4,
+  TTYC_KEND5,
+  TTYC_KEND6,
+  TTYC_KEND7,
+  TTYC_KF1,
+  TTYC_KF10,
+  TTYC_KF11,
+  TTYC_KF12,
+  TTYC_KF13,
+  TTYC_KF14,
+  TTYC_KF15,
+  TTYC_KF16,
+  TTYC_KF17,
+  TTYC_KF18,
+  TTYC_KF19,
+  TTYC_KF2,
+  TTYC_KF20,
+  TTYC_KF21,
+  TTYC_KF22,
+  TTYC_KF23,
+  TTYC_KF24,
+  TTYC_KF25,
+  TTYC_KF26,
+  TTYC_KF27,
+  TTYC_KF28,
+  TTYC_KF29,
+  TTYC_KF3,
+  TTYC_KF30,
+  TTYC_KF31,
+  TTYC_KF32,
+  TTYC_KF33,
+  TTYC_KF34,
+  TTYC_KF35,
+  TTYC_KF36,
+  TTYC_KF37,
+  TTYC_KF38,
+  TTYC_KF39,
+  TTYC_KF4,
+  TTYC_KF40,
+  TTYC_KF41,
+  TTYC_KF42,
+  TTYC_KF43,
+  TTYC_KF44,
+  TTYC_KF45,
+  TTYC_KF46,
+  TTYC_KF47,
+  TTYC_KF48,
+  TTYC_KF49,
+  TTYC_KF5,
+  TTYC_KF50,
+  TTYC_KF51,
+  TTYC_KF52,
+  TTYC_KF53,
+  TTYC_KF54,
+  TTYC_KF55,
+  TTYC_KF56,
+  TTYC_KF57,
+  TTYC_KF58,
+  TTYC_KF59,
+  TTYC_KF6,
+  TTYC_KF60,
+  TTYC_KF61,
+  TTYC_KF62,
+  TTYC_KF63,
+  TTYC_KF7,
+  TTYC_KF8,
+  TTYC_KF9,
+  TTYC_KHOM2,
+  TTYC_KHOM3,
+  TTYC_KHOM4,
+  TTYC_KHOM5,
+  TTYC_KHOM6,
+  TTYC_KHOM7,
+  TTYC_KHOME,
+  TTYC_KIC2,
+  TTYC_KIC3,
+  TTYC_KIC4,
+  TTYC_KIC5,
+  TTYC_KIC6,
+  TTYC_KIC7,
+  TTYC_KICH1,
+  TTYC_KIND,
+  TTYC_KLFT2,
+  TTYC_KLFT3,
+  TTYC_KLFT4,
+  TTYC_KLFT5,
+  TTYC_KLFT6,
+  TTYC_KLFT7,
+  TTYC_KMOUS,
+  TTYC_KNP,
+  TTYC_KNXT2,
+  TTYC_KNXT3,
+  TTYC_KNXT4,
+  TTYC_KNXT5,
+  TTYC_KNXT6,
+  TTYC_KNXT7,
+  TTYC_KPP,
+  TTYC_KPRV2,
+  TTYC_KPRV3,
+  TTYC_KPRV4,
+  TTYC_KPRV5,
+  TTYC_KPRV6,
+  TTYC_KPRV7,
+  TTYC_KRI,
+  TTYC_KRIT2,
+  TTYC_KRIT3,
+  TTYC_KRIT4,
+  TTYC_KRIT5,
+  TTYC_KRIT6,
+  TTYC_KRIT7,
+  TTYC_KUP2,
+  TTYC_KUP3,
+  TTYC_KUP4,
+  TTYC_KUP5,
+  TTYC_KUP6,
+  TTYC_KUP7,
+  TTYC_MS,
+  TTYC_OP,
+  TTYC_REV,
+  TTYC_RGB,
+  TTYC_RI,
+  TTYC_RMACS,
+  TTYC_RMCUP,
+  TTYC_RMKX,
+  TTYC_SE,
+  TTYC_SETAB,
+  TTYC_SETAF,
+  TTYC_SETRGBB,
+  TTYC_SETRGBF,
+  TTYC_SGR0,
+  TTYC_SITM,
+  TTYC_SMACS,
+  TTYC_SMCUP,
+  TTYC_SMKX,
+  TTYC_SMSO,
+  TTYC_SMUL,
+  TTYC_SMXX,
+  TTYC_SS,
+  TTYC_TC,
+  TTYC_TSL,
+  TTYC_U8,
+  TTYC_VPA,
+  TTYC_XENL,
+  TTYC_XT
+}
+----------------------------
+const char *tty_term_string(struct tty_term *term, enum tty_code_code code)
+{
+  if (!tty_term_has(term, code))
+  {
+    return "";
+  }
+  if (term->codes[code].type != TTYCODE_STRING)
+  {
+    fatalx("not a string: %d", code);
+  }
+  return term->codes[code].value.string;
+}
+
+
+----------------------------
+None
+----------------------------
+***/
+
+
+u_int tty_term_ncodes(void)
+{
+  return (sizeof(tty_term_codes)) / (sizeof(tty_term_codes[0]));
+}
+
+
+/*** DEPENDENCIES:
+static const struct tty_term_code_entry tty_term_codes[] = {.TTYC_ACSC = {TTYCODE_STRING, "acsc"}, .TTYC_AX = {TTYCODE_FLAG, "AX"}, .TTYC_BCE = {TTYCODE_FLAG, "bce"}, .TTYC_BEL = {TTYCODE_STRING, "bel"}, .TTYC_BLINK = {TTYCODE_STRING, "blink"}, .TTYC_BOLD = {TTYCODE_STRING, "bold"}, .TTYC_CIVIS = {TTYCODE_STRING, "civis"}, .TTYC_CLEAR = {TTYCODE_STRING, "clear"}, .TTYC_CNORM = {TTYCODE_STRING, "cnorm"}, .TTYC_COLORS = {TTYCODE_NUMBER, "colors"}, .TTYC_CR = {TTYCODE_STRING, "Cr"}, .TTYC_CSR = {TTYCODE_STRING, "csr"}, .TTYC_CS = {TTYCODE_STRING, "Cs"}, .TTYC_CUB1 = {TTYCODE_STRING, "cub1"}, .TTYC_CUB = {TTYCODE_STRING, "cub"}, .TTYC_CUD1 = {TTYCODE_STRING, "cud1"}, .TTYC_CUD = {TTYCODE_STRING, "cud"}, .TTYC_CUF1 = {TTYCODE_STRING, "cuf1"}, .TTYC_CUF = {TTYCODE_STRING, "cuf"}, .TTYC_CUP = {TTYCODE_STRING, "cup"}, .TTYC_CUU1 = {TTYCODE_STRING, "cuu1"}, .TTYC_CUU = {TTYCODE_STRING, "cuu"}, .TTYC_CVVIS = {TTYCODE_STRING, "cvvis"}, .TTYC_DCH1 = {TTYCODE_STRING, "dch1"}, .TTYC_DCH = {TTYCODE_STRING, "dch"}, .TTYC_DIM = {TTYCODE_STRING, "dim"}, .TTYC_DL1 = {TTYCODE_STRING, "dl1"}, .TTYC_DL = {TTYCODE_STRING, "dl"}, .TTYC_E3 = {TTYCODE_STRING, "E3"}, .TTYC_ECH = {TTYCODE_STRING, "ech"}, .TTYC_ED = {TTYCODE_STRING, "ed"}, .TTYC_EL1 = {TTYCODE_STRING, "el1"}, .TTYC_EL = {TTYCODE_STRING, "el"}, .TTYC_ENACS = {TTYCODE_STRING, "enacs"}, .TTYC_FSL = {TTYCODE_STRING, "fsl"}, .TTYC_HOME = {TTYCODE_STRING, "home"}, .TTYC_HPA = {TTYCODE_STRING, "hpa"}, .TTYC_ICH1 = {TTYCODE_STRING, "ich1"}, .TTYC_ICH = {TTYCODE_STRING, "ich"}, .TTYC_IL1 = {TTYCODE_STRING, "il1"}, .TTYC_IL = {TTYCODE_STRING, "il"}, .TTYC_INDN = {TTYCODE_STRING, "indn"}, .TTYC_INVIS = {TTYCODE_STRING, "invis"}, .TTYC_KCBT = {TTYCODE_STRING, "kcbt"}, .TTYC_KCUB1 = {TTYCODE_STRING, "kcub1"}, .TTYC_KCUD1 = {TTYCODE_STRING, "kcud1"}, .TTYC_KCUF1 = {TTYCODE_STRING, "kcuf1"}, .TTYC_KCUU1 = {TTYCODE_STRING, "kcuu1"}, .TTYC_KDC2 = {TTYCODE_STRING, "kDC"}, .TTYC_KDC3 = {TTYCODE_STRING, "kDC3"}, .TTYC_KDC4 = {TTYCODE_STRING, "kDC4"}, .TTYC_KDC5 = {TTYCODE_STRING, "kDC5"}, .TTYC_KDC6 = {TTYCODE_STRING, "kDC6"}, .TTYC_KDC7 = {TTYCODE_STRING, "kDC7"}, .TTYC_KDCH1 = {TTYCODE_STRING, "kdch1"}, .TTYC_KDN2 = {TTYCODE_STRING, "kDN"}, .TTYC_KDN3 = {TTYCODE_STRING, "kDN3"}, .TTYC_KDN4 = {TTYCODE_STRING, "kDN4"}, .TTYC_KDN5 = {TTYCODE_STRING, "kDN5"}, .TTYC_KDN6 = {TTYCODE_STRING, "kDN6"}, .TTYC_KDN7 = {TTYCODE_STRING, "kDN7"}, .TTYC_KEND2 = {TTYCODE_STRING, "kEND"}, .TTYC_KEND3 = {TTYCODE_STRING, "kEND3"}, .TTYC_KEND4 = {TTYCODE_STRING, "kEND4"}, .TTYC_KEND5 = {TTYCODE_STRING, "kEND5"}, .TTYC_KEND6 = {TTYCODE_STRING, "kEND6"}, .TTYC_KEND7 = {TTYCODE_STRING, "kEND7"}, .TTYC_KEND = {TTYCODE_STRING, "kend"}, .TTYC_KF10 = {TTYCODE_STRING, "kf10"}, .TTYC_KF11 = {TTYCODE_STRING, "kf11"}, .TTYC_KF12 = {TTYCODE_STRING, "kf12"}, .TTYC_KF13 = {TTYCODE_STRING, "kf13"}, .TTYC_KF14 = {TTYCODE_STRING, "kf14"}, .TTYC_KF15 = {TTYCODE_STRING, "kf15"}, .TTYC_KF16 = {TTYCODE_STRING, "kf16"}, .TTYC_KF17 = {TTYCODE_STRING, "kf17"}, .TTYC_KF18 = {TTYCODE_STRING, "kf18"}, .TTYC_KF19 = {TTYCODE_STRING, "kf19"}, .TTYC_KF1 = {TTYCODE_STRING, "kf1"}, .TTYC_KF20 = {TTYCODE_STRING, "kf20"}, .TTYC_KF21 = {TTYCODE_STRING, "kf21"}, .TTYC_KF22 = {TTYCODE_STRING, "kf22"}, .TTYC_KF23 = {TTYCODE_STRING, "kf23"}, .TTYC_KF24 = {TTYCODE_STRING, "kf24"}, .TTYC_KF25 = {TTYCODE_STRING, "kf25"}, .TTYC_KF26 = {TTYCODE_STRING, "kf26"}, .TTYC_KF27 = {TTYCODE_STRING, "kf27"}, .TTYC_KF28 = {TTYCODE_STRING, "kf28"}, .TTYC_KF29 = {TTYCODE_STRING, "kf29"}, .TTYC_KF2 = {TTYCODE_STRING, "kf2"}, .TTYC_KF30 = {TTYCODE_STRING, "kf30"}, .TTYC_KF31 = {TTYCODE_STRING, "kf31"}, .TTYC_KF32 = {TTYCODE_STRING, "kf32"}, .TTYC_KF33 = {TTYCODE_STRING, "kf33"}, .TTYC_KF34 = {TTYCODE_STRING, "kf34"}, .TTYC_KF35 = {TTYCODE_STRING, "kf35"}, .TTYC_KF36 = {TTYCODE_STRING, "kf36"}, .TTYC_KF37 = {TTYCODE_STRING, "kf37"}, .TTYC_KF38 = {TTYCODE_STRING, "kf38"}, .TTYC_KF39 = {TTYCODE_STRING, "kf39"}, .TTYC_KF3 = {TTYCODE_STRING, "kf3"}, .TTYC_KF40 = {TTYCODE_STRING, "kf40"}, .TTYC_KF41 = {TTYCODE_STRING, "kf41"}, .TTYC_KF42 = {TTYCODE_STRING, "kf42"}, .TTYC_KF43 = {TTYCODE_STRING, "kf43"}, .TTYC_KF44 = {TTYCODE_STRING, "kf44"}, .TTYC_KF45 = {TTYCODE_STRING, "kf45"}, .TTYC_KF46 = {TTYCODE_STRING, "kf46"}, .TTYC_KF47 = {TTYCODE_STRING, "kf47"}, .TTYC_KF48 = {TTYCODE_STRING, "kf48"}, .TTYC_KF49 = {TTYCODE_STRING, "kf49"}, .TTYC_KF4 = {TTYCODE_STRING, "kf4"}, .TTYC_KF50 = {TTYCODE_STRING, "kf50"}, .TTYC_KF51 = {TTYCODE_STRING, "kf51"}, .TTYC_KF52 = {TTYCODE_STRING, "kf52"}, .TTYC_KF53 = {TTYCODE_STRING, "kf53"}, .TTYC_KF54 = {TTYCODE_STRING, "kf54"}, .TTYC_KF55 = {TTYCODE_STRING, "kf55"}, .TTYC_KF56 = {TTYCODE_STRING, "kf56"}, .TTYC_KF57 = {TTYCODE_STRING, "kf57"}, .TTYC_KF58 = {TTYCODE_STRING, "kf58"}, .TTYC_KF59 = {TTYCODE_STRING, "kf59"}, .TTYC_KF5 = {TTYCODE_STRING, "kf5"}, .TTYC_KF60 = {TTYCODE_STRING, "kf60"}, .TTYC_KF61 = {TTYCODE_STRING, "kf61"}, .TTYC_KF62 = {TTYCODE_STRING, "kf62"}, .TTYC_KF63 = {TTYCODE_STRING, "kf63"}, .TTYC_KF6 = {TTYCODE_STRING, "kf6"}, .TTYC_KF7 = {TTYCODE_STRING, "kf7"}, .TTYC_KF8 = {TTYCODE_STRING, "kf8"}, .TTYC_KF9 = {TTYCODE_STRING, "kf9"}, .TTYC_KHOM2 = {TTYCODE_STRING, "kHOM"}, .TTYC_KHOM3 = {TTYCODE_STRING, "kHOM3"}, .TTYC_KHOM4 = {TTYCODE_STRING, "kHOM4"}, .TTYC_KHOM5 = {TTYCODE_STRING, "kHOM5"}, .TTYC_KHOM6 = {TTYCODE_STRING, "kHOM6"}, .TTYC_KHOM7 = {TTYCODE_STRING, "kHOM7"}, .TTYC_KHOME = {TTYCODE_STRING, "khome"}, .TTYC_KIC2 = {TTYCODE_STRING, "kIC"}, .TTYC_KIC3 = {TTYCODE_STRING, "kIC3"}, .TTYC_KIC4 = {TTYCODE_STRING, "kIC4"}, .TTYC_KIC5 = {TTYCODE_STRING, "kIC5"}, .TTYC_KIC6 = {TTYCODE_STRING, "kIC6"}, .TTYC_KIC7 = {TTYCODE_STRING, "kIC7"}, .TTYC_KICH1 = {TTYCODE_STRING, "kich1"}, .TTYC_KIND = {TTYCODE_STRING, "kind"}, .TTYC_KLFT2 = {TTYCODE_STRING, "kLFT"}, .TTYC_KLFT3 = {TTYCODE_STRING, "kLFT3"}, .TTYC_KLFT4 = {TTYCODE_STRING, "kLFT4"}, .TTYC_KLFT5 = {TTYCODE_STRING, "kLFT5"}, .TTYC_KLFT6 = {TTYCODE_STRING, "kLFT6"}, .TTYC_KLFT7 = {TTYCODE_STRING, "kLFT7"}, .TTYC_KMOUS = {TTYCODE_STRING, "kmous"}, .TTYC_KNP = {TTYCODE_STRING, "knp"}, .TTYC_KNXT2 = {TTYCODE_STRING, "kNXT"}, .TTYC_KNXT3 = {TTYCODE_STRING, "kNXT3"}, .TTYC_KNXT4 = {TTYCODE_STRING, "kNXT4"}, .TTYC_KNXT5 = {TTYCODE_STRING, "kNXT5"}, .TTYC_KNXT6 = {TTYCODE_STRING, "kNXT6"}, .TTYC_KNXT7 = {TTYCODE_STRING, "kNXT7"}, .TTYC_KPP = {TTYCODE_STRING, "kpp"}, .TTYC_KPRV2 = {TTYCODE_STRING, "kPRV"}, .TTYC_KPRV3 = {TTYCODE_STRING, "kPRV3"}, .TTYC_KPRV4 = {TTYCODE_STRING, "kPRV4"}, .TTYC_KPRV5 = {TTYCODE_STRING, "kPRV5"}, .TTYC_KPRV6 = {TTYCODE_STRING, "kPRV6"}, .TTYC_KPRV7 = {TTYCODE_STRING, "kPRV7"}, .TTYC_KRIT2 = {TTYCODE_STRING, "kRIT"}, .TTYC_KRIT3 = {TTYCODE_STRING, "kRIT3"}, .TTYC_KRIT4 = {TTYCODE_STRING, "kRIT4"}, .TTYC_KRIT5 = {TTYCODE_STRING, "kRIT5"}, .TTYC_KRIT6 = {TTYCODE_STRING, "kRIT6"}, .TTYC_KRIT7 = {TTYCODE_STRING, "kRIT7"}, .TTYC_KRI = {TTYCODE_STRING, "kri"}, .TTYC_KUP2 = {TTYCODE_STRING, "kUP"}, .TTYC_KUP3 = {TTYCODE_STRING, "kUP3"}, .TTYC_KUP4 = {TTYCODE_STRING, "kUP4"}, .TTYC_KUP5 = {TTYCODE_STRING, "kUP5"}, .TTYC_KUP6 = {TTYCODE_STRING, "kUP6"}, .TTYC_KUP7 = {TTYCODE_STRING, "kUP7"}, .TTYC_MS = {TTYCODE_STRING, "Ms"}, .TTYC_OP = {TTYCODE_STRING, "op"}, .TTYC_REV = {TTYCODE_STRING, "rev"}, .TTYC_RGB = {TTYCODE_FLAG, "RGB"}, .TTYC_RI = {TTYCODE_STRING, "ri"}, .TTYC_RMACS = {TTYCODE_STRING, "rmacs"}, .TTYC_RMCUP = {TTYCODE_STRING, "rmcup"}, .TTYC_RMKX = {TTYCODE_STRING, "rmkx"}, .TTYC_SETAB = {TTYCODE_STRING, "setab"}, .TTYC_SETAF = {TTYCODE_STRING, "setaf"}, .TTYC_SETRGBB = {TTYCODE_STRING, "setrgbb"}, .TTYC_SETRGBF = {TTYCODE_STRING, "setrgbf"}, .TTYC_SE = {TTYCODE_STRING, "Se"}, .TTYC_SGR0 = {TTYCODE_STRING, "sgr0"}, .TTYC_SITM = {TTYCODE_STRING, "sitm"}, .TTYC_SMACS = {TTYCODE_STRING, "smacs"}, .TTYC_SMCUP = {TTYCODE_STRING, "smcup"}, .TTYC_SMKX = {TTYCODE_STRING, "smkx"}, .TTYC_SMSO = {TTYCODE_STRING, "smso"}, .TTYC_SMUL = {TTYCODE_STRING, "smul"}, .TTYC_SMXX = {TTYCODE_STRING, "smxx"}, .TTYC_SS = {TTYCODE_STRING, "Ss"}, .TTYC_TC = {TTYCODE_FLAG, "Tc"}, .TTYC_TSL = {TTYCODE_STRING, "tsl"}, .TTYC_U8 = {TTYCODE_NUMBER, "U8"}, .TTYC_VPA = {TTYCODE_STRING, "vpa"}, .TTYC_XENL = {TTYCODE_FLAG, "xenl"}, .TTYC_XT = {TTYCODE_FLAG, "XT"}}
+----------------------------
+***/
+
+
+static char *tty_term_strip(const char *s)
+{
+  const char *ptr;
+  unsigned int ptr_idx = 0;
+  static char buf[1024];
+  size_t len;
+  if (strchr(s, '$') == 0)
+  {
+    return xstrdup(s);
+  }
+  len = 0;
+  for (ptr_idx = s; ptr[ptr_idx] != '\0'; ptr_idx += 1)
+  {
+    if ((ptr[ptr_idx] == '$') && ((*((&ptr[ptr_idx]) + 1)) == '<'))
+    {
+      while ((ptr[ptr_idx] != '\0') && (ptr[ptr_idx] != '>'))
+      {
+        ptr_idx += 1;
+      }
+
+      if (ptr[ptr_idx] == '>')
+      {
+        ptr_idx += 1;
+      }
+    }
+    buf[len] = ptr[ptr_idx];
+    len += 1;
+    if (len == ((sizeof(buf)) - 1))
+    {
+      break;
+    }
+  }
+
+  buf[len] = '\0';
+  return xstrdup(buf);
+}
+
+
+/*** DEPENDENCIES:
+char *xstrdup(const char *str)
+{
+  char *cp;
+  unsigned int cp_idx = 0;
+  if ((cp_idx = strdup(str)) == 0)
+  {
+    fatalx("xstrdup: %s", strerror(errno));
+  }
+  return cp;
+}
+
+
+----------------------------
+***/
+
+
+void tty_term_free(struct tty_term *term)
+{
+  u_int i;
+  if ((--term->references) != 0)
+  {
+    return;
+  }
+  do
+  {
+    if (term->entry.le_next != 0)
+    {
+      term->entry.le_next->entry.le_prev = term->entry.le_prev;
+    }
+    *term->entry.le_prev = term->entry.le_next;
+    ;
+    ;
+  }
+  while (0);
+  for (i = 0; i < tty_term_ncodes(); i += 1)
+  {
+    if (term->codes[i].type == TTYCODE_STRING)
+    {
+      free(term->codes[i].value.string);
+    }
+  }
+
+  free(term->codes);
+  free(term->name);
+  free(term);
+}
+
+
+/*** DEPENDENCIES:
+u_int tty_term_ncodes(void)
+{
+  return (sizeof(tty_term_codes)) / (sizeof(tty_term_codes[0]));
+}
+
+
+----------------------------
+None
+----------------------------
+***/
+
+
+const char *tty_term_describe(struct tty_term *term, enum tty_code_code code)
+{
+  static char s[256];
+  char out[128];
+  switch (term->codes[code].type)
+  {
+    case TTYCODE_NONE:
+    {
+      xsnprintf(s, sizeof(s), "%4u: %s: [missing]", code, tty_term_codes[code].name);
+      break;
+    }
+
+    case TTYCODE_STRING:
+    {
+      strnvis(out, term->codes[code].value.string, sizeof(out), (0x01 | 0x08) | 0x10);
+      xsnprintf(s, sizeof(s), "%4u: %s: (string) %s", code, tty_term_codes[code].name, out);
+      break;
+    }
+
+    case TTYCODE_NUMBER:
+    {
+      xsnprintf(s, sizeof(s), "%4u: %s: (number) %d", code, tty_term_codes[code].name, term->codes[code].value.number);
+      break;
+    }
+
+    case TTYCODE_FLAG:
+    {
+      xsnprintf(s, sizeof(s), "%4u: %s: (flag) %s", code, tty_term_codes[code].name, (term->codes[code].value.flag) ? ("true") : ("false"));
+      break;
+    }
+
+  }
+
+  return s;
+}
+
+
+/*** DEPENDENCIES:
+static const struct tty_term_code_entry tty_term_codes[] = {.TTYC_ACSC = {TTYCODE_STRING, "acsc"}, .TTYC_AX = {TTYCODE_FLAG, "AX"}, .TTYC_BCE = {TTYCODE_FLAG, "bce"}, .TTYC_BEL = {TTYCODE_STRING, "bel"}, .TTYC_BLINK = {TTYCODE_STRING, "blink"}, .TTYC_BOLD = {TTYCODE_STRING, "bold"}, .TTYC_CIVIS = {TTYCODE_STRING, "civis"}, .TTYC_CLEAR = {TTYCODE_STRING, "clear"}, .TTYC_CNORM = {TTYCODE_STRING, "cnorm"}, .TTYC_COLORS = {TTYCODE_NUMBER, "colors"}, .TTYC_CR = {TTYCODE_STRING, "Cr"}, .TTYC_CSR = {TTYCODE_STRING, "csr"}, .TTYC_CS = {TTYCODE_STRING, "Cs"}, .TTYC_CUB1 = {TTYCODE_STRING, "cub1"}, .TTYC_CUB = {TTYCODE_STRING, "cub"}, .TTYC_CUD1 = {TTYCODE_STRING, "cud1"}, .TTYC_CUD = {TTYCODE_STRING, "cud"}, .TTYC_CUF1 = {TTYCODE_STRING, "cuf1"}, .TTYC_CUF = {TTYCODE_STRING, "cuf"}, .TTYC_CUP = {TTYCODE_STRING, "cup"}, .TTYC_CUU1 = {TTYCODE_STRING, "cuu1"}, .TTYC_CUU = {TTYCODE_STRING, "cuu"}, .TTYC_CVVIS = {TTYCODE_STRING, "cvvis"}, .TTYC_DCH1 = {TTYCODE_STRING, "dch1"}, .TTYC_DCH = {TTYCODE_STRING, "dch"}, .TTYC_DIM = {TTYCODE_STRING, "dim"}, .TTYC_DL1 = {TTYCODE_STRING, "dl1"}, .TTYC_DL = {TTYCODE_STRING, "dl"}, .TTYC_E3 = {TTYCODE_STRING, "E3"}, .TTYC_ECH = {TTYCODE_STRING, "ech"}, .TTYC_ED = {TTYCODE_STRING, "ed"}, .TTYC_EL1 = {TTYCODE_STRING, "el1"}, .TTYC_EL = {TTYCODE_STRING, "el"}, .TTYC_ENACS = {TTYCODE_STRING, "enacs"}, .TTYC_FSL = {TTYCODE_STRING, "fsl"}, .TTYC_HOME = {TTYCODE_STRING, "home"}, .TTYC_HPA = {TTYCODE_STRING, "hpa"}, .TTYC_ICH1 = {TTYCODE_STRING, "ich1"}, .TTYC_ICH = {TTYCODE_STRING, "ich"}, .TTYC_IL1 = {TTYCODE_STRING, "il1"}, .TTYC_IL = {TTYCODE_STRING, "il"}, .TTYC_INDN = {TTYCODE_STRING, "indn"}, .TTYC_INVIS = {TTYCODE_STRING, "invis"}, .TTYC_KCBT = {TTYCODE_STRING, "kcbt"}, .TTYC_KCUB1 = {TTYCODE_STRING, "kcub1"}, .TTYC_KCUD1 = {TTYCODE_STRING, "kcud1"}, .TTYC_KCUF1 = {TTYCODE_STRING, "kcuf1"}, .TTYC_KCUU1 = {TTYCODE_STRING, "kcuu1"}, .TTYC_KDC2 = {TTYCODE_STRING, "kDC"}, .TTYC_KDC3 = {TTYCODE_STRING, "kDC3"}, .TTYC_KDC4 = {TTYCODE_STRING, "kDC4"}, .TTYC_KDC5 = {TTYCODE_STRING, "kDC5"}, .TTYC_KDC6 = {TTYCODE_STRING, "kDC6"}, .TTYC_KDC7 = {TTYCODE_STRING, "kDC7"}, .TTYC_KDCH1 = {TTYCODE_STRING, "kdch1"}, .TTYC_KDN2 = {TTYCODE_STRING, "kDN"}, .TTYC_KDN3 = {TTYCODE_STRING, "kDN3"}, .TTYC_KDN4 = {TTYCODE_STRING, "kDN4"}, .TTYC_KDN5 = {TTYCODE_STRING, "kDN5"}, .TTYC_KDN6 = {TTYCODE_STRING, "kDN6"}, .TTYC_KDN7 = {TTYCODE_STRING, "kDN7"}, .TTYC_KEND2 = {TTYCODE_STRING, "kEND"}, .TTYC_KEND3 = {TTYCODE_STRING, "kEND3"}, .TTYC_KEND4 = {TTYCODE_STRING, "kEND4"}, .TTYC_KEND5 = {TTYCODE_STRING, "kEND5"}, .TTYC_KEND6 = {TTYCODE_STRING, "kEND6"}, .TTYC_KEND7 = {TTYCODE_STRING, "kEND7"}, .TTYC_KEND = {TTYCODE_STRING, "kend"}, .TTYC_KF10 = {TTYCODE_STRING, "kf10"}, .TTYC_KF11 = {TTYCODE_STRING, "kf11"}, .TTYC_KF12 = {TTYCODE_STRING, "kf12"}, .TTYC_KF13 = {TTYCODE_STRING, "kf13"}, .TTYC_KF14 = {TTYCODE_STRING, "kf14"}, .TTYC_KF15 = {TTYCODE_STRING, "kf15"}, .TTYC_KF16 = {TTYCODE_STRING, "kf16"}, .TTYC_KF17 = {TTYCODE_STRING, "kf17"}, .TTYC_KF18 = {TTYCODE_STRING, "kf18"}, .TTYC_KF19 = {TTYCODE_STRING, "kf19"}, .TTYC_KF1 = {TTYCODE_STRING, "kf1"}, .TTYC_KF20 = {TTYCODE_STRING, "kf20"}, .TTYC_KF21 = {TTYCODE_STRING, "kf21"}, .TTYC_KF22 = {TTYCODE_STRING, "kf22"}, .TTYC_KF23 = {TTYCODE_STRING, "kf23"}, .TTYC_KF24 = {TTYCODE_STRING, "kf24"}, .TTYC_KF25 = {TTYCODE_STRING, "kf25"}, .TTYC_KF26 = {TTYCODE_STRING, "kf26"}, .TTYC_KF27 = {TTYCODE_STRING, "kf27"}, .TTYC_KF28 = {TTYCODE_STRING, "kf28"}, .TTYC_KF29 = {TTYCODE_STRING, "kf29"}, .TTYC_KF2 = {TTYCODE_STRING, "kf2"}, .TTYC_KF30 = {TTYCODE_STRING, "kf30"}, .TTYC_KF31 = {TTYCODE_STRING, "kf31"}, .TTYC_KF32 = {TTYCODE_STRING, "kf32"}, .TTYC_KF33 = {TTYCODE_STRING, "kf33"}, .TTYC_KF34 = {TTYCODE_STRING, "kf34"}, .TTYC_KF35 = {TTYCODE_STRING, "kf35"}, .TTYC_KF36 = {TTYCODE_STRING, "kf36"}, .TTYC_KF37 = {TTYCODE_STRING, "kf37"}, .TTYC_KF38 = {TTYCODE_STRING, "kf38"}, .TTYC_KF39 = {TTYCODE_STRING, "kf39"}, .TTYC_KF3 = {TTYCODE_STRING, "kf3"}, .TTYC_KF40 = {TTYCODE_STRING, "kf40"}, .TTYC_KF41 = {TTYCODE_STRING, "kf41"}, .TTYC_KF42 = {TTYCODE_STRING, "kf42"}, .TTYC_KF43 = {TTYCODE_STRING, "kf43"}, .TTYC_KF44 = {TTYCODE_STRING, "kf44"}, .TTYC_KF45 = {TTYCODE_STRING, "kf45"}, .TTYC_KF46 = {TTYCODE_STRING, "kf46"}, .TTYC_KF47 = {TTYCODE_STRING, "kf47"}, .TTYC_KF48 = {TTYCODE_STRING, "kf48"}, .TTYC_KF49 = {TTYCODE_STRING, "kf49"}, .TTYC_KF4 = {TTYCODE_STRING, "kf4"}, .TTYC_KF50 = {TTYCODE_STRING, "kf50"}, .TTYC_KF51 = {TTYCODE_STRING, "kf51"}, .TTYC_KF52 = {TTYCODE_STRING, "kf52"}, .TTYC_KF53 = {TTYCODE_STRING, "kf53"}, .TTYC_KF54 = {TTYCODE_STRING, "kf54"}, .TTYC_KF55 = {TTYCODE_STRING, "kf55"}, .TTYC_KF56 = {TTYCODE_STRING, "kf56"}, .TTYC_KF57 = {TTYCODE_STRING, "kf57"}, .TTYC_KF58 = {TTYCODE_STRING, "kf58"}, .TTYC_KF59 = {TTYCODE_STRING, "kf59"}, .TTYC_KF5 = {TTYCODE_STRING, "kf5"}, .TTYC_KF60 = {TTYCODE_STRING, "kf60"}, .TTYC_KF61 = {TTYCODE_STRING, "kf61"}, .TTYC_KF62 = {TTYCODE_STRING, "kf62"}, .TTYC_KF63 = {TTYCODE_STRING, "kf63"}, .TTYC_KF6 = {TTYCODE_STRING, "kf6"}, .TTYC_KF7 = {TTYCODE_STRING, "kf7"}, .TTYC_KF8 = {TTYCODE_STRING, "kf8"}, .TTYC_KF9 = {TTYCODE_STRING, "kf9"}, .TTYC_KHOM2 = {TTYCODE_STRING, "kHOM"}, .TTYC_KHOM3 = {TTYCODE_STRING, "kHOM3"}, .TTYC_KHOM4 = {TTYCODE_STRING, "kHOM4"}, .TTYC_KHOM5 = {TTYCODE_STRING, "kHOM5"}, .TTYC_KHOM6 = {TTYCODE_STRING, "kHOM6"}, .TTYC_KHOM7 = {TTYCODE_STRING, "kHOM7"}, .TTYC_KHOME = {TTYCODE_STRING, "khome"}, .TTYC_KIC2 = {TTYCODE_STRING, "kIC"}, .TTYC_KIC3 = {TTYCODE_STRING, "kIC3"}, .TTYC_KIC4 = {TTYCODE_STRING, "kIC4"}, .TTYC_KIC5 = {TTYCODE_STRING, "kIC5"}, .TTYC_KIC6 = {TTYCODE_STRING, "kIC6"}, .TTYC_KIC7 = {TTYCODE_STRING, "kIC7"}, .TTYC_KICH1 = {TTYCODE_STRING, "kich1"}, .TTYC_KIND = {TTYCODE_STRING, "kind"}, .TTYC_KLFT2 = {TTYCODE_STRING, "kLFT"}, .TTYC_KLFT3 = {TTYCODE_STRING, "kLFT3"}, .TTYC_KLFT4 = {TTYCODE_STRING, "kLFT4"}, .TTYC_KLFT5 = {TTYCODE_STRING, "kLFT5"}, .TTYC_KLFT6 = {TTYCODE_STRING, "kLFT6"}, .TTYC_KLFT7 = {TTYCODE_STRING, "kLFT7"}, .TTYC_KMOUS = {TTYCODE_STRING, "kmous"}, .TTYC_KNP = {TTYCODE_STRING, "knp"}, .TTYC_KNXT2 = {TTYCODE_STRING, "kNXT"}, .TTYC_KNXT3 = {TTYCODE_STRING, "kNXT3"}, .TTYC_KNXT4 = {TTYCODE_STRING, "kNXT4"}, .TTYC_KNXT5 = {TTYCODE_STRING, "kNXT5"}, .TTYC_KNXT6 = {TTYCODE_STRING, "kNXT6"}, .TTYC_KNXT7 = {TTYCODE_STRING, "kNXT7"}, .TTYC_KPP = {TTYCODE_STRING, "kpp"}, .TTYC_KPRV2 = {TTYCODE_STRING, "kPRV"}, .TTYC_KPRV3 = {TTYCODE_STRING, "kPRV3"}, .TTYC_KPRV4 = {TTYCODE_STRING, "kPRV4"}, .TTYC_KPRV5 = {TTYCODE_STRING, "kPRV5"}, .TTYC_KPRV6 = {TTYCODE_STRING, "kPRV6"}, .TTYC_KPRV7 = {TTYCODE_STRING, "kPRV7"}, .TTYC_KRIT2 = {TTYCODE_STRING, "kRIT"}, .TTYC_KRIT3 = {TTYCODE_STRING, "kRIT3"}, .TTYC_KRIT4 = {TTYCODE_STRING, "kRIT4"}, .TTYC_KRIT5 = {TTYCODE_STRING, "kRIT5"}, .TTYC_KRIT6 = {TTYCODE_STRING, "kRIT6"}, .TTYC_KRIT7 = {TTYCODE_STRING, "kRIT7"}, .TTYC_KRI = {TTYCODE_STRING, "kri"}, .TTYC_KUP2 = {TTYCODE_STRING, "kUP"}, .TTYC_KUP3 = {TTYCODE_STRING, "kUP3"}, .TTYC_KUP4 = {TTYCODE_STRING, "kUP4"}, .TTYC_KUP5 = {TTYCODE_STRING, "kUP5"}, .TTYC_KUP6 = {TTYCODE_STRING, "kUP6"}, .TTYC_KUP7 = {TTYCODE_STRING, "kUP7"}, .TTYC_MS = {TTYCODE_STRING, "Ms"}, .TTYC_OP = {TTYCODE_STRING, "op"}, .TTYC_REV = {TTYCODE_STRING, "rev"}, .TTYC_RGB = {TTYCODE_FLAG, "RGB"}, .TTYC_RI = {TTYCODE_STRING, "ri"}, .TTYC_RMACS = {TTYCODE_STRING, "rmacs"}, .TTYC_RMCUP = {TTYCODE_STRING, "rmcup"}, .TTYC_RMKX = {TTYCODE_STRING, "rmkx"}, .TTYC_SETAB = {TTYCODE_STRING, "setab"}, .TTYC_SETAF = {TTYCODE_STRING, "setaf"}, .TTYC_SETRGBB = {TTYCODE_STRING, "setrgbb"}, .TTYC_SETRGBF = {TTYCODE_STRING, "setrgbf"}, .TTYC_SE = {TTYCODE_STRING, "Se"}, .TTYC_SGR0 = {TTYCODE_STRING, "sgr0"}, .TTYC_SITM = {TTYCODE_STRING, "sitm"}, .TTYC_SMACS = {TTYCODE_STRING, "smacs"}, .TTYC_SMCUP = {TTYCODE_STRING, "smcup"}, .TTYC_SMKX = {TTYCODE_STRING, "smkx"}, .TTYC_SMSO = {TTYCODE_STRING, "smso"}, .TTYC_SMUL = {TTYCODE_STRING, "smul"}, .TTYC_SMXX = {TTYCODE_STRING, "smxx"}, .TTYC_SS = {TTYCODE_STRING, "Ss"}, .TTYC_TC = {TTYCODE_FLAG, "Tc"}, .TTYC_TSL = {TTYCODE_STRING, "tsl"}, .TTYC_U8 = {TTYCODE_NUMBER, "U8"}, .TTYC_VPA = {TTYCODE_STRING, "vpa"}, .TTYC_XENL = {TTYCODE_FLAG, "xenl"}, .TTYC_XT = {TTYCODE_FLAG, "XT"}}
+----------------------------
+enum tty_code_code
+{
+  TTYC_AX = 0,
+  TTYC_ACSC,
+  TTYC_BCE,
+  TTYC_BEL,
+  TTYC_BLINK,
+  TTYC_BOLD,
+  TTYC_CIVIS,
+  TTYC_CLEAR,
+  TTYC_CNORM,
+  TTYC_COLORS,
+  TTYC_CR,
+  TTYC_CS,
+  TTYC_CSR,
+  TTYC_CUB,
+  TTYC_CUB1,
+  TTYC_CUD,
+  TTYC_CUD1,
+  TTYC_CUF,
+  TTYC_CUF1,
+  TTYC_CUP,
+  TTYC_CUU,
+  TTYC_CUU1,
+  TTYC_CVVIS,
+  TTYC_DCH,
+  TTYC_DCH1,
+  TTYC_DIM,
+  TTYC_DL,
+  TTYC_DL1,
+  TTYC_E3,
+  TTYC_ECH,
+  TTYC_ED,
+  TTYC_EL,
+  TTYC_EL1,
+  TTYC_ENACS,
+  TTYC_FSL,
+  TTYC_HOME,
+  TTYC_HPA,
+  TTYC_ICH,
+  TTYC_ICH1,
+  TTYC_IL,
+  TTYC_IL1,
+  TTYC_INDN,
+  TTYC_INVIS,
+  TTYC_KCBT,
+  TTYC_KCUB1,
+  TTYC_KCUD1,
+  TTYC_KCUF1,
+  TTYC_KCUU1,
+  TTYC_KDC2,
+  TTYC_KDC3,
+  TTYC_KDC4,
+  TTYC_KDC5,
+  TTYC_KDC6,
+  TTYC_KDC7,
+  TTYC_KDCH1,
+  TTYC_KDN2,
+  TTYC_KDN3,
+  TTYC_KDN4,
+  TTYC_KDN5,
+  TTYC_KDN6,
+  TTYC_KDN7,
+  TTYC_KEND,
+  TTYC_KEND2,
+  TTYC_KEND3,
+  TTYC_KEND4,
+  TTYC_KEND5,
+  TTYC_KEND6,
+  TTYC_KEND7,
+  TTYC_KF1,
+  TTYC_KF10,
+  TTYC_KF11,
+  TTYC_KF12,
+  TTYC_KF13,
+  TTYC_KF14,
+  TTYC_KF15,
+  TTYC_KF16,
+  TTYC_KF17,
+  TTYC_KF18,
+  TTYC_KF19,
+  TTYC_KF2,
+  TTYC_KF20,
+  TTYC_KF21,
+  TTYC_KF22,
+  TTYC_KF23,
+  TTYC_KF24,
+  TTYC_KF25,
+  TTYC_KF26,
+  TTYC_KF27,
+  TTYC_KF28,
+  TTYC_KF29,
+  TTYC_KF3,
+  TTYC_KF30,
+  TTYC_KF31,
+  TTYC_KF32,
+  TTYC_KF33,
+  TTYC_KF34,
+  TTYC_KF35,
+  TTYC_KF36,
+  TTYC_KF37,
+  TTYC_KF38,
+  TTYC_KF39,
+  TTYC_KF4,
+  TTYC_KF40,
+  TTYC_KF41,
+  TTYC_KF42,
+  TTYC_KF43,
+  TTYC_KF44,
+  TTYC_KF45,
+  TTYC_KF46,
+  TTYC_KF47,
+  TTYC_KF48,
+  TTYC_KF49,
+  TTYC_KF5,
+  TTYC_KF50,
+  TTYC_KF51,
+  TTYC_KF52,
+  TTYC_KF53,
+  TTYC_KF54,
+  TTYC_KF55,
+  TTYC_KF56,
+  TTYC_KF57,
+  TTYC_KF58,
+  TTYC_KF59,
+  TTYC_KF6,
+  TTYC_KF60,
+  TTYC_KF61,
+  TTYC_KF62,
+  TTYC_KF63,
+  TTYC_KF7,
+  TTYC_KF8,
+  TTYC_KF9,
+  TTYC_KHOM2,
+  TTYC_KHOM3,
+  TTYC_KHOM4,
+  TTYC_KHOM5,
+  TTYC_KHOM6,
+  TTYC_KHOM7,
+  TTYC_KHOME,
+  TTYC_KIC2,
+  TTYC_KIC3,
+  TTYC_KIC4,
+  TTYC_KIC5,
+  TTYC_KIC6,
+  TTYC_KIC7,
+  TTYC_KICH1,
+  TTYC_KIND,
+  TTYC_KLFT2,
+  TTYC_KLFT3,
+  TTYC_KLFT4,
+  TTYC_KLFT5,
+  TTYC_KLFT6,
+  TTYC_KLFT7,
+  TTYC_KMOUS,
+  TTYC_KNP,
+  TTYC_KNXT2,
+  TTYC_KNXT3,
+  TTYC_KNXT4,
+  TTYC_KNXT5,
+  TTYC_KNXT6,
+  TTYC_KNXT7,
+  TTYC_KPP,
+  TTYC_KPRV2,
+  TTYC_KPRV3,
+  TTYC_KPRV4,
+  TTYC_KPRV5,
+  TTYC_KPRV6,
+  TTYC_KPRV7,
+  TTYC_KRI,
+  TTYC_KRIT2,
+  TTYC_KRIT3,
+  TTYC_KRIT4,
+  TTYC_KRIT5,
+  TTYC_KRIT6,
+  TTYC_KRIT7,
+  TTYC_KUP2,
+  TTYC_KUP3,
+  TTYC_KUP4,
+  TTYC_KUP5,
+  TTYC_KUP6,
+  TTYC_KUP7,
+  TTYC_MS,
+  TTYC_OP,
+  TTYC_REV,
+  TTYC_RGB,
+  TTYC_RI,
+  TTYC_RMACS,
+  TTYC_RMCUP,
+  TTYC_RMKX,
+  TTYC_SE,
+  TTYC_SETAB,
+  TTYC_SETAF,
+  TTYC_SETRGBB,
+  TTYC_SETRGBF,
+  TTYC_SGR0,
+  TTYC_SITM,
+  TTYC_SMACS,
+  TTYC_SMCUP,
+  TTYC_SMKX,
+  TTYC_SMSO,
+  TTYC_SMUL,
+  TTYC_SMXX,
+  TTYC_SS,
+  TTYC_TC,
+  TTYC_TSL,
+  TTYC_U8,
+  TTYC_VPA,
+  TTYC_XENL,
+  TTYC_XT
+}
+----------------------------
+int xsnprintf(char *str, size_t len, const char *fmt, ...)
+{
+  va_list ap;
+  int i;
+  __builtin_va_start(ap);
+  i = xvsnprintf(str, len, fmt, ap);
+  ;
+  return i;
+}
+
+
+----------------------------
+int strnvis(char *dst, const char *src, size_t siz, int flag)
+{
+  unsigned int src_idx = 0;
+  unsigned int dst_idx = 0;
+  char *start;
+  unsigned int start_idx = 0;
+  char *end;
+  unsigned int end_idx = 0;
+  char tbuf[5];
+  int c;
+  int i;
+  i = 0;
+  for (start_idx = &dst[dst_idx], end_idx = ((&start[start_idx]) + siz) - 1; (c = src[src_idx]) && ((&dst[dst_idx]) < (&end[end_idx]));)
+  {
+    helper_strnvis_1(&src_idx, &dst_idx, &i, dst, src, flag, end, end_idx, tbuf, c);
+  }
+
+  if (siz > 0)
+  {
+    dst[dst_idx] = '\0';
+  }
+  if (((&dst[dst_idx]) + i) > (&end[end_idx]))
+  {
+    while (c = src[src_idx])
+    {
+      src_idx += 1;
+      dst_idx += vis(tbuf, c, flag, *(&src[src_idx])) - tbuf;
+    }
+
+  }
+  return (&dst[dst_idx]) - (&start[start_idx]);
+}
+
+
+----------------------------
+None
+----------------------------
+***/
+
+
+// hint:  ['ent_idx_ref is a mutable refrence to unsigned int', 'code_idx_ref is a mutable refrence to unsigned int', 'n_ref is a mutable refrence to int', 's_idx_ref is a mutable refrence to unsigned int']
+void helper_tty_term_find_1(unsigned int * const ent_idx_ref, unsigned int * const code_idx_ref, int * const n_ref, unsigned int * const s_idx_ref, struct tty_term * const term, const struct tty_term_code_entry * const ent, struct tty_code * const code, u_int i, const char * const s)
+{
+  unsigned int ent_idx = *ent_idx_ref;
+  unsigned int code_idx = *code_idx_ref;
+  int n = *n_ref;
+  unsigned int s_idx = *s_idx_ref;
+  ent_idx = &tty_term_codes[i];
+  code_idx = &term->codes[i];
+  code->type = TTYCODE_NONE;
+  switch (ent->type)
+  {
+    case TTYCODE_NONE:
+    {
+      break;
+    }
+
+    case TTYCODE_STRING:
+    {
+      s_idx = tigetstr((char *) ent->name);
+      if (((&s[s_idx]) == 0) || ((&s[s_idx]) == ((char *) (-1))))
+      {
+        break;
+      }
+      code->type = TTYCODE_STRING;
+      code->value.string = tty_term_strip(s);
+      break;
+    }
+
+    case TTYCODE_NUMBER:
+    {
+      n = tigetnum((char *) ent->name);
+      if ((n == (-1)) || (n == (-2)))
+      {
+        break;
+      }
+      code->type = TTYCODE_NUMBER;
+      code->value.number = n;
+      break;
+    }
+
+    case TTYCODE_FLAG:
+    {
+      n = tigetflag((char *) ent->name);
+      if (n == (-1))
+      {
+        break;
+      }
+      code->type = TTYCODE_FLAG;
+      code->value.flag = n;
+      break;
+    }
+
+  }
+
+  *ent_idx_ref = ent_idx;
+  *code_idx_ref = code_idx;
+  *n_ref = n;
+  *s_idx_ref = s_idx;
+}
+
+
+/*** DEPENDENCIES:
+static const struct tty_term_code_entry tty_term_codes[] = {.TTYC_ACSC = {TTYCODE_STRING, "acsc"}, .TTYC_AX = {TTYCODE_FLAG, "AX"}, .TTYC_BCE = {TTYCODE_FLAG, "bce"}, .TTYC_BEL = {TTYCODE_STRING, "bel"}, .TTYC_BLINK = {TTYCODE_STRING, "blink"}, .TTYC_BOLD = {TTYCODE_STRING, "bold"}, .TTYC_CIVIS = {TTYCODE_STRING, "civis"}, .TTYC_CLEAR = {TTYCODE_STRING, "clear"}, .TTYC_CNORM = {TTYCODE_STRING, "cnorm"}, .TTYC_COLORS = {TTYCODE_NUMBER, "colors"}, .TTYC_CR = {TTYCODE_STRING, "Cr"}, .TTYC_CSR = {TTYCODE_STRING, "csr"}, .TTYC_CS = {TTYCODE_STRING, "Cs"}, .TTYC_CUB1 = {TTYCODE_STRING, "cub1"}, .TTYC_CUB = {TTYCODE_STRING, "cub"}, .TTYC_CUD1 = {TTYCODE_STRING, "cud1"}, .TTYC_CUD = {TTYCODE_STRING, "cud"}, .TTYC_CUF1 = {TTYCODE_STRING, "cuf1"}, .TTYC_CUF = {TTYCODE_STRING, "cuf"}, .TTYC_CUP = {TTYCODE_STRING, "cup"}, .TTYC_CUU1 = {TTYCODE_STRING, "cuu1"}, .TTYC_CUU = {TTYCODE_STRING, "cuu"}, .TTYC_CVVIS = {TTYCODE_STRING, "cvvis"}, .TTYC_DCH1 = {TTYCODE_STRING, "dch1"}, .TTYC_DCH = {TTYCODE_STRING, "dch"}, .TTYC_DIM = {TTYCODE_STRING, "dim"}, .TTYC_DL1 = {TTYCODE_STRING, "dl1"}, .TTYC_DL = {TTYCODE_STRING, "dl"}, .TTYC_E3 = {TTYCODE_STRING, "E3"}, .TTYC_ECH = {TTYCODE_STRING, "ech"}, .TTYC_ED = {TTYCODE_STRING, "ed"}, .TTYC_EL1 = {TTYCODE_STRING, "el1"}, .TTYC_EL = {TTYCODE_STRING, "el"}, .TTYC_ENACS = {TTYCODE_STRING, "enacs"}, .TTYC_FSL = {TTYCODE_STRING, "fsl"}, .TTYC_HOME = {TTYCODE_STRING, "home"}, .TTYC_HPA = {TTYCODE_STRING, "hpa"}, .TTYC_ICH1 = {TTYCODE_STRING, "ich1"}, .TTYC_ICH = {TTYCODE_STRING, "ich"}, .TTYC_IL1 = {TTYCODE_STRING, "il1"}, .TTYC_IL = {TTYCODE_STRING, "il"}, .TTYC_INDN = {TTYCODE_STRING, "indn"}, .TTYC_INVIS = {TTYCODE_STRING, "invis"}, .TTYC_KCBT = {TTYCODE_STRING, "kcbt"}, .TTYC_KCUB1 = {TTYCODE_STRING, "kcub1"}, .TTYC_KCUD1 = {TTYCODE_STRING, "kcud1"}, .TTYC_KCUF1 = {TTYCODE_STRING, "kcuf1"}, .TTYC_KCUU1 = {TTYCODE_STRING, "kcuu1"}, .TTYC_KDC2 = {TTYCODE_STRING, "kDC"}, .TTYC_KDC3 = {TTYCODE_STRING, "kDC3"}, .TTYC_KDC4 = {TTYCODE_STRING, "kDC4"}, .TTYC_KDC5 = {TTYCODE_STRING, "kDC5"}, .TTYC_KDC6 = {TTYCODE_STRING, "kDC6"}, .TTYC_KDC7 = {TTYCODE_STRING, "kDC7"}, .TTYC_KDCH1 = {TTYCODE_STRING, "kdch1"}, .TTYC_KDN2 = {TTYCODE_STRING, "kDN"}, .TTYC_KDN3 = {TTYCODE_STRING, "kDN3"}, .TTYC_KDN4 = {TTYCODE_STRING, "kDN4"}, .TTYC_KDN5 = {TTYCODE_STRING, "kDN5"}, .TTYC_KDN6 = {TTYCODE_STRING, "kDN6"}, .TTYC_KDN7 = {TTYCODE_STRING, "kDN7"}, .TTYC_KEND2 = {TTYCODE_STRING, "kEND"}, .TTYC_KEND3 = {TTYCODE_STRING, "kEND3"}, .TTYC_KEND4 = {TTYCODE_STRING, "kEND4"}, .TTYC_KEND5 = {TTYCODE_STRING, "kEND5"}, .TTYC_KEND6 = {TTYCODE_STRING, "kEND6"}, .TTYC_KEND7 = {TTYCODE_STRING, "kEND7"}, .TTYC_KEND = {TTYCODE_STRING, "kend"}, .TTYC_KF10 = {TTYCODE_STRING, "kf10"}, .TTYC_KF11 = {TTYCODE_STRING, "kf11"}, .TTYC_KF12 = {TTYCODE_STRING, "kf12"}, .TTYC_KF13 = {TTYCODE_STRING, "kf13"}, .TTYC_KF14 = {TTYCODE_STRING, "kf14"}, .TTYC_KF15 = {TTYCODE_STRING, "kf15"}, .TTYC_KF16 = {TTYCODE_STRING, "kf16"}, .TTYC_KF17 = {TTYCODE_STRING, "kf17"}, .TTYC_KF18 = {TTYCODE_STRING, "kf18"}, .TTYC_KF19 = {TTYCODE_STRING, "kf19"}, .TTYC_KF1 = {TTYCODE_STRING, "kf1"}, .TTYC_KF20 = {TTYCODE_STRING, "kf20"}, .TTYC_KF21 = {TTYCODE_STRING, "kf21"}, .TTYC_KF22 = {TTYCODE_STRING, "kf22"}, .TTYC_KF23 = {TTYCODE_STRING, "kf23"}, .TTYC_KF24 = {TTYCODE_STRING, "kf24"}, .TTYC_KF25 = {TTYCODE_STRING, "kf25"}, .TTYC_KF26 = {TTYCODE_STRING, "kf26"}, .TTYC_KF27 = {TTYCODE_STRING, "kf27"}, .TTYC_KF28 = {TTYCODE_STRING, "kf28"}, .TTYC_KF29 = {TTYCODE_STRING, "kf29"}, .TTYC_KF2 = {TTYCODE_STRING, "kf2"}, .TTYC_KF30 = {TTYCODE_STRING, "kf30"}, .TTYC_KF31 = {TTYCODE_STRING, "kf31"}, .TTYC_KF32 = {TTYCODE_STRING, "kf32"}, .TTYC_KF33 = {TTYCODE_STRING, "kf33"}, .TTYC_KF34 = {TTYCODE_STRING, "kf34"}, .TTYC_KF35 = {TTYCODE_STRING, "kf35"}, .TTYC_KF36 = {TTYCODE_STRING, "kf36"}, .TTYC_KF37 = {TTYCODE_STRING, "kf37"}, .TTYC_KF38 = {TTYCODE_STRING, "kf38"}, .TTYC_KF39 = {TTYCODE_STRING, "kf39"}, .TTYC_KF3 = {TTYCODE_STRING, "kf3"}, .TTYC_KF40 = {TTYCODE_STRING, "kf40"}, .TTYC_KF41 = {TTYCODE_STRING, "kf41"}, .TTYC_KF42 = {TTYCODE_STRING, "kf42"}, .TTYC_KF43 = {TTYCODE_STRING, "kf43"}, .TTYC_KF44 = {TTYCODE_STRING, "kf44"}, .TTYC_KF45 = {TTYCODE_STRING, "kf45"}, .TTYC_KF46 = {TTYCODE_STRING, "kf46"}, .TTYC_KF47 = {TTYCODE_STRING, "kf47"}, .TTYC_KF48 = {TTYCODE_STRING, "kf48"}, .TTYC_KF49 = {TTYCODE_STRING, "kf49"}, .TTYC_KF4 = {TTYCODE_STRING, "kf4"}, .TTYC_KF50 = {TTYCODE_STRING, "kf50"}, .TTYC_KF51 = {TTYCODE_STRING, "kf51"}, .TTYC_KF52 = {TTYCODE_STRING, "kf52"}, .TTYC_KF53 = {TTYCODE_STRING, "kf53"}, .TTYC_KF54 = {TTYCODE_STRING, "kf54"}, .TTYC_KF55 = {TTYCODE_STRING, "kf55"}, .TTYC_KF56 = {TTYCODE_STRING, "kf56"}, .TTYC_KF57 = {TTYCODE_STRING, "kf57"}, .TTYC_KF58 = {TTYCODE_STRING, "kf58"}, .TTYC_KF59 = {TTYCODE_STRING, "kf59"}, .TTYC_KF5 = {TTYCODE_STRING, "kf5"}, .TTYC_KF60 = {TTYCODE_STRING, "kf60"}, .TTYC_KF61 = {TTYCODE_STRING, "kf61"}, .TTYC_KF62 = {TTYCODE_STRING, "kf62"}, .TTYC_KF63 = {TTYCODE_STRING, "kf63"}, .TTYC_KF6 = {TTYCODE_STRING, "kf6"}, .TTYC_KF7 = {TTYCODE_STRING, "kf7"}, .TTYC_KF8 = {TTYCODE_STRING, "kf8"}, .TTYC_KF9 = {TTYCODE_STRING, "kf9"}, .TTYC_KHOM2 = {TTYCODE_STRING, "kHOM"}, .TTYC_KHOM3 = {TTYCODE_STRING, "kHOM3"}, .TTYC_KHOM4 = {TTYCODE_STRING, "kHOM4"}, .TTYC_KHOM5 = {TTYCODE_STRING, "kHOM5"}, .TTYC_KHOM6 = {TTYCODE_STRING, "kHOM6"}, .TTYC_KHOM7 = {TTYCODE_STRING, "kHOM7"}, .TTYC_KHOME = {TTYCODE_STRING, "khome"}, .TTYC_KIC2 = {TTYCODE_STRING, "kIC"}, .TTYC_KIC3 = {TTYCODE_STRING, "kIC3"}, .TTYC_KIC4 = {TTYCODE_STRING, "kIC4"}, .TTYC_KIC5 = {TTYCODE_STRING, "kIC5"}, .TTYC_KIC6 = {TTYCODE_STRING, "kIC6"}, .TTYC_KIC7 = {TTYCODE_STRING, "kIC7"}, .TTYC_KICH1 = {TTYCODE_STRING, "kich1"}, .TTYC_KIND = {TTYCODE_STRING, "kind"}, .TTYC_KLFT2 = {TTYCODE_STRING, "kLFT"}, .TTYC_KLFT3 = {TTYCODE_STRING, "kLFT3"}, .TTYC_KLFT4 = {TTYCODE_STRING, "kLFT4"}, .TTYC_KLFT5 = {TTYCODE_STRING, "kLFT5"}, .TTYC_KLFT6 = {TTYCODE_STRING, "kLFT6"}, .TTYC_KLFT7 = {TTYCODE_STRING, "kLFT7"}, .TTYC_KMOUS = {TTYCODE_STRING, "kmous"}, .TTYC_KNP = {TTYCODE_STRING, "knp"}, .TTYC_KNXT2 = {TTYCODE_STRING, "kNXT"}, .TTYC_KNXT3 = {TTYCODE_STRING, "kNXT3"}, .TTYC_KNXT4 = {TTYCODE_STRING, "kNXT4"}, .TTYC_KNXT5 = {TTYCODE_STRING, "kNXT5"}, .TTYC_KNXT6 = {TTYCODE_STRING, "kNXT6"}, .TTYC_KNXT7 = {TTYCODE_STRING, "kNXT7"}, .TTYC_KPP = {TTYCODE_STRING, "kpp"}, .TTYC_KPRV2 = {TTYCODE_STRING, "kPRV"}, .TTYC_KPRV3 = {TTYCODE_STRING, "kPRV3"}, .TTYC_KPRV4 = {TTYCODE_STRING, "kPRV4"}, .TTYC_KPRV5 = {TTYCODE_STRING, "kPRV5"}, .TTYC_KPRV6 = {TTYCODE_STRING, "kPRV6"}, .TTYC_KPRV7 = {TTYCODE_STRING, "kPRV7"}, .TTYC_KRIT2 = {TTYCODE_STRING, "kRIT"}, .TTYC_KRIT3 = {TTYCODE_STRING, "kRIT3"}, .TTYC_KRIT4 = {TTYCODE_STRING, "kRIT4"}, .TTYC_KRIT5 = {TTYCODE_STRING, "kRIT5"}, .TTYC_KRIT6 = {TTYCODE_STRING, "kRIT6"}, .TTYC_KRIT7 = {TTYCODE_STRING, "kRIT7"}, .TTYC_KRI = {TTYCODE_STRING, "kri"}, .TTYC_KUP2 = {TTYCODE_STRING, "kUP"}, .TTYC_KUP3 = {TTYCODE_STRING, "kUP3"}, .TTYC_KUP4 = {TTYCODE_STRING, "kUP4"}, .TTYC_KUP5 = {TTYCODE_STRING, "kUP5"}, .TTYC_KUP6 = {TTYCODE_STRING, "kUP6"}, .TTYC_KUP7 = {TTYCODE_STRING, "kUP7"}, .TTYC_MS = {TTYCODE_STRING, "Ms"}, .TTYC_OP = {TTYCODE_STRING, "op"}, .TTYC_REV = {TTYCODE_STRING, "rev"}, .TTYC_RGB = {TTYCODE_FLAG, "RGB"}, .TTYC_RI = {TTYCODE_STRING, "ri"}, .TTYC_RMACS = {TTYCODE_STRING, "rmacs"}, .TTYC_RMCUP = {TTYCODE_STRING, "rmcup"}, .TTYC_RMKX = {TTYCODE_STRING, "rmkx"}, .TTYC_SETAB = {TTYCODE_STRING, "setab"}, .TTYC_SETAF = {TTYCODE_STRING, "setaf"}, .TTYC_SETRGBB = {TTYCODE_STRING, "setrgbb"}, .TTYC_SETRGBF = {TTYCODE_STRING, "setrgbf"}, .TTYC_SE = {TTYCODE_STRING, "Se"}, .TTYC_SGR0 = {TTYCODE_STRING, "sgr0"}, .TTYC_SITM = {TTYCODE_STRING, "sitm"}, .TTYC_SMACS = {TTYCODE_STRING, "smacs"}, .TTYC_SMCUP = {TTYCODE_STRING, "smcup"}, .TTYC_SMKX = {TTYCODE_STRING, "smkx"}, .TTYC_SMSO = {TTYCODE_STRING, "smso"}, .TTYC_SMUL = {TTYCODE_STRING, "smul"}, .TTYC_SMXX = {TTYCODE_STRING, "smxx"}, .TTYC_SS = {TTYCODE_STRING, "Ss"}, .TTYC_TC = {TTYCODE_FLAG, "Tc"}, .TTYC_TSL = {TTYCODE_STRING, "tsl"}, .TTYC_U8 = {TTYCODE_NUMBER, "U8"}, .TTYC_VPA = {TTYCODE_STRING, "vpa"}, .TTYC_XENL = {TTYCODE_FLAG, "xenl"}, .TTYC_XT = {TTYCODE_FLAG, "XT"}}
+----------------------------
+struct tty_term_code_entry
+{
+  enum tty_code_type type;
+  const char *name;
+}
+----------------------------
+static char *tty_term_strip(const char *s)
+{
+  const char *ptr;
+  unsigned int ptr_idx = 0;
+  static char buf[1024];
+  size_t len;
+  if (strchr(s, '$') == 0)
+  {
+    return xstrdup(s);
+  }
+  len = 0;
+  for (ptr_idx = s; ptr[ptr_idx] != '\0'; ptr_idx += 1)
+  {
+    if ((ptr[ptr_idx] == '$') && ((*((&ptr[ptr_idx]) + 1)) == '<'))
+    {
+      while ((ptr[ptr_idx] != '\0') && (ptr[ptr_idx] != '>'))
+      {
+        ptr_idx += 1;
+      }
+
+      if (ptr[ptr_idx] == '>')
+      {
+        ptr_idx += 1;
+      }
+    }
+    buf[len] = ptr[ptr_idx];
+    len += 1;
+    if (len == ((sizeof(buf)) - 1))
+    {
+      break;
+    }
+  }
+
+  buf[len] = '\0';
+  return xstrdup(buf);
+}
+
+
+----------------------------
+None
+----------------------------
+***/
+
+
+// hint:  ['ent_idx_ref is a mutable refrence to unsigned int', 'code_idx_ref is a mutable refrence to unsigned int', 'n_ref is a mutable refrence to int']
+void helper_helper_tty_term_override_1_1(unsigned int * const ent_idx_ref, unsigned int * const code_idx_ref, int * const n_ref, struct tty_term * const term, const struct tty_term_code_entry * const ent, struct tty_code * const code, char * const s, char * const value, const char * const errstr, u_int i, int remove)
+{
+  unsigned int ent_idx = *ent_idx_ref;
+  unsigned int code_idx = *code_idx_ref;
+  int n = *n_ref;
+  ent_idx = &tty_term_codes[i];
+  if (strcmp(s, ent->name) != 0)
+  {
+    continue;
+  }
+  code_idx = &term->codes[i];
+  if (remove)
+  {
+    code->type = TTYCODE_NONE;
+    continue;
+  }
+  switch (ent->type)
+  {
+    case TTYCODE_NONE:
+    {
+      break;
+    }
+
+    case TTYCODE_STRING:
+    {
+      if (code->type == TTYCODE_STRING)
+      {
+        free(code->value.string);
+      }
+      code->value.string = xstrdup(value);
+      code->type = ent->type;
+      break;
+    }
+
+    case TTYCODE_NUMBER:
+    {
+      n = strtonum(value, 0, 2147483647, &errstr);
+      if (errstr != 0)
+      {
+        break;
+      }
+      code->value.number = n;
+      code->type = ent->type;
+      break;
+    }
+
+    case TTYCODE_FLAG:
+    {
+      code->value.flag = 1;
+      code->type = ent->type;
+      break;
+    }
+
+  }
+
+  *ent_idx_ref = ent_idx;
+  *code_idx_ref = code_idx;
+  *n_ref = n;
+}
+
+
+/*** DEPENDENCIES:
+static const struct tty_term_code_entry tty_term_codes[] = {.TTYC_ACSC = {TTYCODE_STRING, "acsc"}, .TTYC_AX = {TTYCODE_FLAG, "AX"}, .TTYC_BCE = {TTYCODE_FLAG, "bce"}, .TTYC_BEL = {TTYCODE_STRING, "bel"}, .TTYC_BLINK = {TTYCODE_STRING, "blink"}, .TTYC_BOLD = {TTYCODE_STRING, "bold"}, .TTYC_CIVIS = {TTYCODE_STRING, "civis"}, .TTYC_CLEAR = {TTYCODE_STRING, "clear"}, .TTYC_CNORM = {TTYCODE_STRING, "cnorm"}, .TTYC_COLORS = {TTYCODE_NUMBER, "colors"}, .TTYC_CR = {TTYCODE_STRING, "Cr"}, .TTYC_CSR = {TTYCODE_STRING, "csr"}, .TTYC_CS = {TTYCODE_STRING, "Cs"}, .TTYC_CUB1 = {TTYCODE_STRING, "cub1"}, .TTYC_CUB = {TTYCODE_STRING, "cub"}, .TTYC_CUD1 = {TTYCODE_STRING, "cud1"}, .TTYC_CUD = {TTYCODE_STRING, "cud"}, .TTYC_CUF1 = {TTYCODE_STRING, "cuf1"}, .TTYC_CUF = {TTYCODE_STRING, "cuf"}, .TTYC_CUP = {TTYCODE_STRING, "cup"}, .TTYC_CUU1 = {TTYCODE_STRING, "cuu1"}, .TTYC_CUU = {TTYCODE_STRING, "cuu"}, .TTYC_CVVIS = {TTYCODE_STRING, "cvvis"}, .TTYC_DCH1 = {TTYCODE_STRING, "dch1"}, .TTYC_DCH = {TTYCODE_STRING, "dch"}, .TTYC_DIM = {TTYCODE_STRING, "dim"}, .TTYC_DL1 = {TTYCODE_STRING, "dl1"}, .TTYC_DL = {TTYCODE_STRING, "dl"}, .TTYC_E3 = {TTYCODE_STRING, "E3"}, .TTYC_ECH = {TTYCODE_STRING, "ech"}, .TTYC_ED = {TTYCODE_STRING, "ed"}, .TTYC_EL1 = {TTYCODE_STRING, "el1"}, .TTYC_EL = {TTYCODE_STRING, "el"}, .TTYC_ENACS = {TTYCODE_STRING, "enacs"}, .TTYC_FSL = {TTYCODE_STRING, "fsl"}, .TTYC_HOME = {TTYCODE_STRING, "home"}, .TTYC_HPA = {TTYCODE_STRING, "hpa"}, .TTYC_ICH1 = {TTYCODE_STRING, "ich1"}, .TTYC_ICH = {TTYCODE_STRING, "ich"}, .TTYC_IL1 = {TTYCODE_STRING, "il1"}, .TTYC_IL = {TTYCODE_STRING, "il"}, .TTYC_INDN = {TTYCODE_STRING, "indn"}, .TTYC_INVIS = {TTYCODE_STRING, "invis"}, .TTYC_KCBT = {TTYCODE_STRING, "kcbt"}, .TTYC_KCUB1 = {TTYCODE_STRING, "kcub1"}, .TTYC_KCUD1 = {TTYCODE_STRING, "kcud1"}, .TTYC_KCUF1 = {TTYCODE_STRING, "kcuf1"}, .TTYC_KCUU1 = {TTYCODE_STRING, "kcuu1"}, .TTYC_KDC2 = {TTYCODE_STRING, "kDC"}, .TTYC_KDC3 = {TTYCODE_STRING, "kDC3"}, .TTYC_KDC4 = {TTYCODE_STRING, "kDC4"}, .TTYC_KDC5 = {TTYCODE_STRING, "kDC5"}, .TTYC_KDC6 = {TTYCODE_STRING, "kDC6"}, .TTYC_KDC7 = {TTYCODE_STRING, "kDC7"}, .TTYC_KDCH1 = {TTYCODE_STRING, "kdch1"}, .TTYC_KDN2 = {TTYCODE_STRING, "kDN"}, .TTYC_KDN3 = {TTYCODE_STRING, "kDN3"}, .TTYC_KDN4 = {TTYCODE_STRING, "kDN4"}, .TTYC_KDN5 = {TTYCODE_STRING, "kDN5"}, .TTYC_KDN6 = {TTYCODE_STRING, "kDN6"}, .TTYC_KDN7 = {TTYCODE_STRING, "kDN7"}, .TTYC_KEND2 = {TTYCODE_STRING, "kEND"}, .TTYC_KEND3 = {TTYCODE_STRING, "kEND3"}, .TTYC_KEND4 = {TTYCODE_STRING, "kEND4"}, .TTYC_KEND5 = {TTYCODE_STRING, "kEND5"}, .TTYC_KEND6 = {TTYCODE_STRING, "kEND6"}, .TTYC_KEND7 = {TTYCODE_STRING, "kEND7"}, .TTYC_KEND = {TTYCODE_STRING, "kend"}, .TTYC_KF10 = {TTYCODE_STRING, "kf10"}, .TTYC_KF11 = {TTYCODE_STRING, "kf11"}, .TTYC_KF12 = {TTYCODE_STRING, "kf12"}, .TTYC_KF13 = {TTYCODE_STRING, "kf13"}, .TTYC_KF14 = {TTYCODE_STRING, "kf14"}, .TTYC_KF15 = {TTYCODE_STRING, "kf15"}, .TTYC_KF16 = {TTYCODE_STRING, "kf16"}, .TTYC_KF17 = {TTYCODE_STRING, "kf17"}, .TTYC_KF18 = {TTYCODE_STRING, "kf18"}, .TTYC_KF19 = {TTYCODE_STRING, "kf19"}, .TTYC_KF1 = {TTYCODE_STRING, "kf1"}, .TTYC_KF20 = {TTYCODE_STRING, "kf20"}, .TTYC_KF21 = {TTYCODE_STRING, "kf21"}, .TTYC_KF22 = {TTYCODE_STRING, "kf22"}, .TTYC_KF23 = {TTYCODE_STRING, "kf23"}, .TTYC_KF24 = {TTYCODE_STRING, "kf24"}, .TTYC_KF25 = {TTYCODE_STRING, "kf25"}, .TTYC_KF26 = {TTYCODE_STRING, "kf26"}, .TTYC_KF27 = {TTYCODE_STRING, "kf27"}, .TTYC_KF28 = {TTYCODE_STRING, "kf28"}, .TTYC_KF29 = {TTYCODE_STRING, "kf29"}, .TTYC_KF2 = {TTYCODE_STRING, "kf2"}, .TTYC_KF30 = {TTYCODE_STRING, "kf30"}, .TTYC_KF31 = {TTYCODE_STRING, "kf31"}, .TTYC_KF32 = {TTYCODE_STRING, "kf32"}, .TTYC_KF33 = {TTYCODE_STRING, "kf33"}, .TTYC_KF34 = {TTYCODE_STRING, "kf34"}, .TTYC_KF35 = {TTYCODE_STRING, "kf35"}, .TTYC_KF36 = {TTYCODE_STRING, "kf36"}, .TTYC_KF37 = {TTYCODE_STRING, "kf37"}, .TTYC_KF38 = {TTYCODE_STRING, "kf38"}, .TTYC_KF39 = {TTYCODE_STRING, "kf39"}, .TTYC_KF3 = {TTYCODE_STRING, "kf3"}, .TTYC_KF40 = {TTYCODE_STRING, "kf40"}, .TTYC_KF41 = {TTYCODE_STRING, "kf41"}, .TTYC_KF42 = {TTYCODE_STRING, "kf42"}, .TTYC_KF43 = {TTYCODE_STRING, "kf43"}, .TTYC_KF44 = {TTYCODE_STRING, "kf44"}, .TTYC_KF45 = {TTYCODE_STRING, "kf45"}, .TTYC_KF46 = {TTYCODE_STRING, "kf46"}, .TTYC_KF47 = {TTYCODE_STRING, "kf47"}, .TTYC_KF48 = {TTYCODE_STRING, "kf48"}, .TTYC_KF49 = {TTYCODE_STRING, "kf49"}, .TTYC_KF4 = {TTYCODE_STRING, "kf4"}, .TTYC_KF50 = {TTYCODE_STRING, "kf50"}, .TTYC_KF51 = {TTYCODE_STRING, "kf51"}, .TTYC_KF52 = {TTYCODE_STRING, "kf52"}, .TTYC_KF53 = {TTYCODE_STRING, "kf53"}, .TTYC_KF54 = {TTYCODE_STRING, "kf54"}, .TTYC_KF55 = {TTYCODE_STRING, "kf55"}, .TTYC_KF56 = {TTYCODE_STRING, "kf56"}, .TTYC_KF57 = {TTYCODE_STRING, "kf57"}, .TTYC_KF58 = {TTYCODE_STRING, "kf58"}, .TTYC_KF59 = {TTYCODE_STRING, "kf59"}, .TTYC_KF5 = {TTYCODE_STRING, "kf5"}, .TTYC_KF60 = {TTYCODE_STRING, "kf60"}, .TTYC_KF61 = {TTYCODE_STRING, "kf61"}, .TTYC_KF62 = {TTYCODE_STRING, "kf62"}, .TTYC_KF63 = {TTYCODE_STRING, "kf63"}, .TTYC_KF6 = {TTYCODE_STRING, "kf6"}, .TTYC_KF7 = {TTYCODE_STRING, "kf7"}, .TTYC_KF8 = {TTYCODE_STRING, "kf8"}, .TTYC_KF9 = {TTYCODE_STRING, "kf9"}, .TTYC_KHOM2 = {TTYCODE_STRING, "kHOM"}, .TTYC_KHOM3 = {TTYCODE_STRING, "kHOM3"}, .TTYC_KHOM4 = {TTYCODE_STRING, "kHOM4"}, .TTYC_KHOM5 = {TTYCODE_STRING, "kHOM5"}, .TTYC_KHOM6 = {TTYCODE_STRING, "kHOM6"}, .TTYC_KHOM7 = {TTYCODE_STRING, "kHOM7"}, .TTYC_KHOME = {TTYCODE_STRING, "khome"}, .TTYC_KIC2 = {TTYCODE_STRING, "kIC"}, .TTYC_KIC3 = {TTYCODE_STRING, "kIC3"}, .TTYC_KIC4 = {TTYCODE_STRING, "kIC4"}, .TTYC_KIC5 = {TTYCODE_STRING, "kIC5"}, .TTYC_KIC6 = {TTYCODE_STRING, "kIC6"}, .TTYC_KIC7 = {TTYCODE_STRING, "kIC7"}, .TTYC_KICH1 = {TTYCODE_STRING, "kich1"}, .TTYC_KIND = {TTYCODE_STRING, "kind"}, .TTYC_KLFT2 = {TTYCODE_STRING, "kLFT"}, .TTYC_KLFT3 = {TTYCODE_STRING, "kLFT3"}, .TTYC_KLFT4 = {TTYCODE_STRING, "kLFT4"}, .TTYC_KLFT5 = {TTYCODE_STRING, "kLFT5"}, .TTYC_KLFT6 = {TTYCODE_STRING, "kLFT6"}, .TTYC_KLFT7 = {TTYCODE_STRING, "kLFT7"}, .TTYC_KMOUS = {TTYCODE_STRING, "kmous"}, .TTYC_KNP = {TTYCODE_STRING, "knp"}, .TTYC_KNXT2 = {TTYCODE_STRING, "kNXT"}, .TTYC_KNXT3 = {TTYCODE_STRING, "kNXT3"}, .TTYC_KNXT4 = {TTYCODE_STRING, "kNXT4"}, .TTYC_KNXT5 = {TTYCODE_STRING, "kNXT5"}, .TTYC_KNXT6 = {TTYCODE_STRING, "kNXT6"}, .TTYC_KNXT7 = {TTYCODE_STRING, "kNXT7"}, .TTYC_KPP = {TTYCODE_STRING, "kpp"}, .TTYC_KPRV2 = {TTYCODE_STRING, "kPRV"}, .TTYC_KPRV3 = {TTYCODE_STRING, "kPRV3"}, .TTYC_KPRV4 = {TTYCODE_STRING, "kPRV4"}, .TTYC_KPRV5 = {TTYCODE_STRING, "kPRV5"}, .TTYC_KPRV6 = {TTYCODE_STRING, "kPRV6"}, .TTYC_KPRV7 = {TTYCODE_STRING, "kPRV7"}, .TTYC_KRIT2 = {TTYCODE_STRING, "kRIT"}, .TTYC_KRIT3 = {TTYCODE_STRING, "kRIT3"}, .TTYC_KRIT4 = {TTYCODE_STRING, "kRIT4"}, .TTYC_KRIT5 = {TTYCODE_STRING, "kRIT5"}, .TTYC_KRIT6 = {TTYCODE_STRING, "kRIT6"}, .TTYC_KRIT7 = {TTYCODE_STRING, "kRIT7"}, .TTYC_KRI = {TTYCODE_STRING, "kri"}, .TTYC_KUP2 = {TTYCODE_STRING, "kUP"}, .TTYC_KUP3 = {TTYCODE_STRING, "kUP3"}, .TTYC_KUP4 = {TTYCODE_STRING, "kUP4"}, .TTYC_KUP5 = {TTYCODE_STRING, "kUP5"}, .TTYC_KUP6 = {TTYCODE_STRING, "kUP6"}, .TTYC_KUP7 = {TTYCODE_STRING, "kUP7"}, .TTYC_MS = {TTYCODE_STRING, "Ms"}, .TTYC_OP = {TTYCODE_STRING, "op"}, .TTYC_REV = {TTYCODE_STRING, "rev"}, .TTYC_RGB = {TTYCODE_FLAG, "RGB"}, .TTYC_RI = {TTYCODE_STRING, "ri"}, .TTYC_RMACS = {TTYCODE_STRING, "rmacs"}, .TTYC_RMCUP = {TTYCODE_STRING, "rmcup"}, .TTYC_RMKX = {TTYCODE_STRING, "rmkx"}, .TTYC_SETAB = {TTYCODE_STRING, "setab"}, .TTYC_SETAF = {TTYCODE_STRING, "setaf"}, .TTYC_SETRGBB = {TTYCODE_STRING, "setrgbb"}, .TTYC_SETRGBF = {TTYCODE_STRING, "setrgbf"}, .TTYC_SE = {TTYCODE_STRING, "Se"}, .TTYC_SGR0 = {TTYCODE_STRING, "sgr0"}, .TTYC_SITM = {TTYCODE_STRING, "sitm"}, .TTYC_SMACS = {TTYCODE_STRING, "smacs"}, .TTYC_SMCUP = {TTYCODE_STRING, "smcup"}, .TTYC_SMKX = {TTYCODE_STRING, "smkx"}, .TTYC_SMSO = {TTYCODE_STRING, "smso"}, .TTYC_SMUL = {TTYCODE_STRING, "smul"}, .TTYC_SMXX = {TTYCODE_STRING, "smxx"}, .TTYC_SS = {TTYCODE_STRING, "Ss"}, .TTYC_TC = {TTYCODE_FLAG, "Tc"}, .TTYC_TSL = {TTYCODE_STRING, "tsl"}, .TTYC_U8 = {TTYCODE_NUMBER, "U8"}, .TTYC_VPA = {TTYCODE_STRING, "vpa"}, .TTYC_XENL = {TTYCODE_FLAG, "xenl"}, .TTYC_XT = {TTYCODE_FLAG, "XT"}}
+----------------------------
+long long strtonum(const char *numstr, long long minval, long long maxval, const char **errstrp)
+{
+  long long ll = 0;
+  char *ep;
+  int error = 0;
+  struct errval
+  {
+    const char *errstr;
+    int err;
+  } ev[4] = {{0, 0}, {"invalid", EINVAL}, {"too small", ERANGE}, {"too large", ERANGE}};
+  ev[0].err = errno;
+  errno = 0;
+  if (minval > maxval)
+  {
+    error = 1;
+  }
+  else
+  {
+    ll = strtoll(numstr, &ep, 10);
+    if ((numstr == ep) || ((*ep) != '\0'))
+    {
+      error = 1;
+    }
+    else
+      if (((ll == LLONG_MIN) && (errno == ERANGE)) || (ll < minval))
+    {
+      error = 2;
+    }
+    else
+      if (((ll == LLONG_MAX) && (errno == ERANGE)) || (ll > maxval))
+    {
+      error = 3;
+    }
+  }
+  if (errstrp != 0)
+  {
+    *errstrp = ev[error].errstr;
+  }
+  errno = ev[error].err;
+  if (error)
+  {
+    ll = 0;
+  }
+  return ll;
+}
+
+
+----------------------------
+struct tty_term_code_entry
+{
+  enum tty_code_type type;
+  const char *name;
+}
+----------------------------
+char *xstrdup(const char *str)
+{
+  char *cp;
+  unsigned int cp_idx = 0;
+  if ((cp_idx = strdup(str)) == 0)
+  {
+    fatalx("xstrdup: %s", strerror(errno));
+  }
+  return cp;
+}
+
+
+----------------------------
+None
+----------------------------
+***/
+
+
+// hint:  ['ent_idx_ref is a mutable refrence to unsigned int', 'code_idx_ref is a mutable refrence to unsigned int', 's_idx_ref is a mutable refrence to unsigned int', 'cp_idx_ref is a mutable refrence to unsigned int', 'value_idx_ref is a mutable refrence to unsigned int', 'i_ref is a mutable refrence to u_int', 'n_ref is a mutable refrence to int', 'remove_ref is a mutable refrence to int']
+void helper_tty_term_override_1(unsigned int * const ent_idx_ref, unsigned int * const code_idx_ref, unsigned int * const s_idx_ref, unsigned int * const cp_idx_ref, unsigned int * const value_idx_ref, u_int * const i_ref, int * const n_ref, int * const remove_ref, struct tty_term * const term, const struct tty_term_code_entry * const ent, struct tty_code * const code, char * const s, char * const cp, char * const value, const char * const errstr)
+{
+  unsigned int ent_idx = *ent_idx_ref;
+  unsigned int code_idx = *code_idx_ref;
+  unsigned int s_idx = *s_idx_ref;
+  unsigned int cp_idx = *cp_idx_ref;
+  unsigned int value_idx = *value_idx_ref;
+  u_int i = *i_ref;
+  int n = *n_ref;
+  int remove = *remove_ref;
+  if (s[s_idx] == '\0')
+  {
+    continue;
+  }
+  value_idx = 0;
+  remove = 0;
+  if ((cp_idx = strchr(s, '=')) != 0)
+  {
+    cp[cp_idx] = '\0';
+    cp_idx += 1;
+    value_idx = xstrdup(cp);
+    if (strunvis(value, cp) == (-1))
+    {
+      free(value);
+      value_idx = xstrdup(cp);
+    }
+  }
+  else
+    if (s[(strlen(s) - 1) + s_idx] == '@')
+  {
+    s[(strlen(s) - 1) + s_idx] = '\0';
+    remove = 1;
+  }
+  else
+    value_idx = xstrdup("");
+  if (remove)
+  {
+    log_debug("%s override: %s@", term->name, s);
+  }
+  else
+    log_debug("%s override: %s=%s", term->name, s, value);
+  for (i = 0; i < tty_term_ncodes(); i += 1)
+  {
+    helper_helper_tty_term_override_1_1(&ent_idx, &code_idx, &n, term, ent, code, s, value, errstr, i, remove);
+  }
+
+  free(value);
+  *ent_idx_ref = ent_idx;
+  *code_idx_ref = code_idx;
+  *s_idx_ref = s_idx;
+  *cp_idx_ref = cp_idx;
+  *value_idx_ref = value_idx;
+  *i_ref = i;
+  *n_ref = n;
+  *remove_ref = remove;
+}
+
+
+/*** DEPENDENCIES:
+int strunvis(char *dst, const char *src)
+{
+  unsigned int dst_idx = 0;
+  char c;
+  char *start = dst;
+  int state = 0;
+  while (c = *(src++))
+  {
+    again:
+    switch (unvis(dst, c, &state, 0))
+    {
+      case 1:
+      {
+        dst_idx += 1;
+        break;
+      }
+
+      case 2:
+      {
+        dst_idx += 1;
+        goto again;
+      }
+
+      case 0:
+
+      case 3:
+      {
+        break;
+      }
+
+      default:
+      {
+        dst[dst_idx] = '\0';
+        return -1;
+      }
+
+    }
+
+
+  }
+
+  if (unvis(dst, c, &state, 1) == 1)
+  {
+    dst_idx += 1;
+  }
+  dst[dst_idx] = '\0';
+  return (&dst[dst_idx]) - start;
+}
+
+
+----------------------------
+void helper_helper_tty_term_override_1_1(unsigned int * const ent_idx_ref, unsigned int * const code_idx_ref, int * const n_ref, struct tty_term * const term, const struct tty_term_code_entry * const ent, struct tty_code * const code, char * const s, char * const value, const char * const errstr, u_int i, int remove)
+{
+  unsigned int ent_idx = *ent_idx_ref;
+  unsigned int code_idx = *code_idx_ref;
+  int n = *n_ref;
+  ent_idx = &tty_term_codes[i];
+  if (strcmp(s, ent->name) != 0)
+  {
+    continue;
+  }
+  code_idx = &term->codes[i];
+  if (remove)
+  {
+    code->type = TTYCODE_NONE;
+    continue;
+  }
+  switch (ent->type)
+  {
+    case TTYCODE_NONE:
+    {
+      break;
+    }
+
+    case TTYCODE_STRING:
+    {
+      if (code->type == TTYCODE_STRING)
+      {
+        free(code->value.string);
+      }
+      code->value.string = xstrdup(value);
+      code->type = ent->type;
+      break;
+    }
+
+    case TTYCODE_NUMBER:
+    {
+      n = strtonum(value, 0, 2147483647, &errstr);
+      if (errstr != 0)
+      {
+        break;
+      }
+      code->value.number = n;
+      code->type = ent->type;
+      break;
+    }
+
+    case TTYCODE_FLAG:
+    {
+      code->value.flag = 1;
+      code->type = ent->type;
+      break;
+    }
+
+  }
+
+  *ent_idx_ref = ent_idx;
+  *code_idx_ref = code_idx;
+  *n_ref = n;
+}
+
+
+----------------------------
+u_int tty_term_ncodes(void)
+{
+  return (sizeof(tty_term_codes)) / (sizeof(tty_term_codes[0]));
+}
+
+
+----------------------------
+struct tty_term_code_entry
+{
+  enum tty_code_type type;
+  const char *name;
+}
+----------------------------
+char *xstrdup(const char *str)
+{
+  char *cp;
+  unsigned int cp_idx = 0;
+  if ((cp_idx = strdup(str)) == 0)
+  {
+    fatalx("xstrdup: %s", strerror(errno));
+  }
+  return cp;
+}
+
+
+----------------------------
+void log_debug(const char *msg, ...)
+{
+  va_list ap;
+  __builtin_va_start(ap);
+  log_vwrite(msg, ap);
+  ;
+}
+
+
+----------------------------
+None
+----------------------------
+***/
+
+
+static void tty_term_override(struct tty_term *term, const char *override)
+{
+  const struct tty_term_code_entry *ent;
+  unsigned int ent_idx = 0;
+  struct tty_code *code;
+  unsigned int code_idx = 0;
+  char *next;
+  char *s;
+  unsigned int s_idx = 0;
+  char *copy;
+  unsigned int copy_idx = 0;
+  char *cp;
+  unsigned int cp_idx = 0;
+  char *value;
+  unsigned int value_idx = 0;
+  const char *errstr;
+  u_int i;
+  int n;
+  int remove;
+  copy_idx = (next = xstrdup(override));
+  s_idx = strsep(&next, ":");
+  if ((((&s[s_idx]) == 0) || (next == 0)) || (fnmatch(s, term->name, 0) != 0))
+  {
+    free(copy);
+    return;
+  }
+  while ((s_idx = strsep(&next, ":")) != 0)
+  {
+    helper_tty_term_override_1(&ent_idx, &code_idx, &s_idx, &cp_idx, &value_idx, &i, &n, &remove, term, ent, code, s, cp, value, errstr);
+  }
+
+  free(s);
+}
+
+
+/*** DEPENDENCIES:
+void helper_tty_term_override_1(unsigned int * const ent_idx_ref, unsigned int * const code_idx_ref, unsigned int * const s_idx_ref, unsigned int * const cp_idx_ref, unsigned int * const value_idx_ref, u_int * const i_ref, int * const n_ref, int * const remove_ref, struct tty_term * const term, const struct tty_term_code_entry * const ent, struct tty_code * const code, char * const s, char * const cp, char * const value, const char * const errstr)
+{
+  unsigned int ent_idx = *ent_idx_ref;
+  unsigned int code_idx = *code_idx_ref;
+  unsigned int s_idx = *s_idx_ref;
+  unsigned int cp_idx = *cp_idx_ref;
+  unsigned int value_idx = *value_idx_ref;
+  u_int i = *i_ref;
+  int n = *n_ref;
+  int remove = *remove_ref;
+  if (s[s_idx] == '\0')
+  {
+    continue;
+  }
+  value_idx = 0;
+  remove = 0;
+  if ((cp_idx = strchr(s, '=')) != 0)
+  {
+    cp[cp_idx] = '\0';
+    cp_idx += 1;
+    value_idx = xstrdup(cp);
+    if (strunvis(value, cp) == (-1))
+    {
+      free(value);
+      value_idx = xstrdup(cp);
+    }
+  }
+  else
+    if (s[(strlen(s) - 1) + s_idx] == '@')
+  {
+    s[(strlen(s) - 1) + s_idx] = '\0';
+    remove = 1;
+  }
+  else
+    value_idx = xstrdup("");
+  if (remove)
+  {
+    log_debug("%s override: %s@", term->name, s);
+  }
+  else
+    log_debug("%s override: %s=%s", term->name, s, value);
+  for (i = 0; i < tty_term_ncodes(); i += 1)
+  {
+    helper_helper_tty_term_override_1_1(&ent_idx, &code_idx, &n, term, ent, code, s, value, errstr, i, remove);
+  }
+
+  free(value);
+  *ent_idx_ref = ent_idx;
+  *code_idx_ref = code_idx;
+  *s_idx_ref = s_idx;
+  *cp_idx_ref = cp_idx;
+  *value_idx_ref = value_idx;
+  *i_ref = i;
+  *n_ref = n;
+  *remove_ref = remove;
+}
+
+
+----------------------------
+struct tty_term_code_entry
+{
+  enum tty_code_type type;
+  const char *name;
+}
+----------------------------
+char *xstrdup(const char *str)
+{
+  char *cp;
+  unsigned int cp_idx = 0;
+  if ((cp_idx = strdup(str)) == 0)
+  {
+    fatalx("xstrdup: %s", strerror(errno));
+  }
+  return cp;
+}
+
+
+----------------------------
+None
+----------------------------
+***/
+
+
+struct tty_term *tty_term_find(char *name, int fd, char **cause)
+{
+  struct tty_term *term;
+  unsigned int term_idx = 0;
+  const struct tty_term_code_entry *ent;
+  unsigned int ent_idx = 0;
+  struct tty_code *code;
+  unsigned int code_idx = 0;
+  struct options_entry *o;
+  unsigned int o_idx = 0;
+  u_int size;
+  u_int i;
+  int n;
+  int error;
+  const char *s;
+  unsigned int s_idx = 0;
+  const char *acs;
+  unsigned int acs_idx = 0;
+  for (term_idx = (&tty_terms)->lh_first; (&term[term_idx]) != 0; term_idx = term_idx->entry.le_next)
+  {
+    if (strcmp(term->name, name) == 0)
+    {
+      term->references += 1;
+      return term;
+    }
+  }
+
+  log_debug("new term: %s", name);
+  term_idx = xmalloc(sizeof(*term_idx));
+  term->name = xstrdup(name);
+  term->references = 1;
+  term->flags = 0;
+  term->codes = xcalloc(tty_term_ncodes(), sizeof(*term->codes));
+  do
+  {
+    if ((term->entry.le_next = (&tty_terms)->lh_first) != 0)
+    {
+      (&tty_terms)->lh_first->entry.le_prev = &term->entry.le_next;
+    }
+    (&tty_terms)->lh_first = &term[term_idx];
+    term->entry.le_prev = &(&tty_terms)->lh_first;
+  }
+  while (0);
+  if (setupterm(name, fd, &error) != OK)
+  {
+    switch (error)
+    {
+      case 1:
+      {
+        xasprintf(cause, "can't use hardcopy terminal: %s", name);
+        break;
+      }
+
+      case 0:
+      {
+        xasprintf(cause, "missing or unsuitable terminal: %s", name);
+        break;
+      }
+
+      case -1:
+      {
+        xasprintf(cause, "can't find terminfo database");
+        break;
+      }
+
+      default:
+      {
+        xasprintf(cause, "unknown error");
+        break;
+      }
+
+    }
+
+    goto error;
+  }
+  for (i = 0; i < tty_term_ncodes(); i += 1)
+  {
+    helper_tty_term_find_1(&ent_idx, &code_idx, &n, &s_idx, term, ent, code, i, s);
+  }
+
+  o_idx = options_get_only(global_options, "terminal-overrides");
+  if (options_array_size(o, &size) != (-1))
+  {
+    for (i = 0; i < size; i += 1)
+    {
+      s_idx = options_array_get(o, i);
+      if ((&s[s_idx]) != 0)
+      {
+        tty_term_override(term, s);
+      }
+    }
+
+  }
+  del_curterm(cur_term);
+  if (!tty_term_has(term, TTYC_CLEAR))
+  {
+    xasprintf(cause, "terminal does not support clear");
+    goto error;
+  }
+  if (!tty_term_has(term, TTYC_CUP))
+  {
+    xasprintf(cause, "terminal does not support cup");
+    goto error;
+  }
+  if ((!tty_term_has(term, TTYC_CUD1)) && (!tty_term_has(term, TTYC_CUD)))
+  {
+    xasprintf(cause, "terminal does not support cud1 or cud");
+    goto error;
+  }
+  if (tty_term_number(term, TTYC_COLORS) == 256)
+  {
+    term->flags |= 0x1;
+  }
+  if (!tty_term_flag(term, TTYC_XENL))
+  {
+    term->flags |= 0x2;
+  }
+  memset(term->acs, 0, sizeof(term->acs));
+  if (tty_term_has(term, TTYC_ACSC))
+  {
+    acs_idx = tty_term_string(term, TTYC_ACSC);
+  }
+  else
+    acs_idx = "a#j+k+l+m+n+o-p-q-r-s-t+u+v+w+x|y<z>~.";
+  for (; (acs[0 + acs_idx] != '\0') && (acs[1 + acs_idx] != '\0'); acs_idx += 2)
+  {
+    term->acs[(u_char) acs[0 + acs_idx]][0] = acs[1 + acs_idx];
+  }
+
+  if ((tty_term_flag(term, TTYC_XT) && (!tty_term_has(term, TTYC_TSL))) && (!tty_term_has(term, TTYC_FSL)))
+  {
+    code_idx = &term->codes[TTYC_TSL];
+    code->value.string = xstrdup("\033]0;");
+    code->type = TTYCODE_STRING;
+    code_idx = &term->codes[TTYC_FSL];
+    code->value.string = xstrdup("\007");
+    code->type = TTYCODE_STRING;
+  }
+  if (((tty_term_flag(term, TTYC_TC) || tty_term_flag(term, TTYC_RGB)) && (!tty_term_has(term, TTYC_SETRGBF))) && (!tty_term_has(term, TTYC_SETRGBB)))
+  {
+    code_idx = &term->codes[TTYC_SETRGBF];
+    code->value.string = xstrdup("\033[38;2;%p1%d;%p2%d;%p3%dm");
+    code->type = TTYCODE_STRING;
+    code_idx = &term->codes[TTYC_SETRGBB];
+    code->value.string = xstrdup("\033[48;2;%p1%d;%p2%d;%p3%dm");
+    code->type = TTYCODE_STRING;
+  }
+  for (i = 0; i < tty_term_ncodes(); i += 1)
+  {
+    log_debug("%s%s", name, tty_term_describe(term, i));
+  }
+
+  return term;
+  error:
+  tty_term_free(term);
+
+  return 0;
+}
+
+
+/*** DEPENDENCIES:
+const char *options_array_get(struct options_entry *o, u_int idx)
+{
+  if (!((o->tableentry != 0) && (o->tableentry->type == OPTIONS_TABLE_ARRAY)))
+  {
+    return 0;
+  }
+  if (idx >= o->arraysize)
+  {
+    return 0;
+  }
+  return o->array[idx];
+}
+
+
+----------------------------
+struct tty_term_code_entry
+{
+  enum tty_code_type type;
+  const char *name;
+}
+----------------------------
+void tty_term_free(struct tty_term *term)
+{
+  u_int i;
+  if ((--term->references) != 0)
+  {
+    return;
+  }
+  do
+  {
+    if (term->entry.le_next != 0)
+    {
+      term->entry.le_next->entry.le_prev = term->entry.le_prev;
+    }
+    *term->entry.le_prev = term->entry.le_next;
+    ;
+    ;
+  }
+  while (0);
+  for (i = 0; i < tty_term_ncodes(); i += 1)
+  {
+    if (term->codes[i].type == TTYCODE_STRING)
+    {
+      free(term->codes[i].value.string);
+    }
+  }
+
+  free(term->codes);
+  free(term->name);
+  free(term);
+}
+
+
+----------------------------
+int tty_term_flag(struct tty_term *term, enum tty_code_code code)
+{
+  if (!tty_term_has(term, code))
+  {
+    return 0;
+  }
+  if (term->codes[code].type != TTYCODE_FLAG)
+  {
+    fatalx("not a flag: %d", code);
+  }
+  return term->codes[code].value.flag;
+}
+
+
+----------------------------
+int xasprintf(char **ret, const char *fmt, ...)
+{
+  va_list ap;
+  int i;
+  __builtin_va_start(ap);
+  i = xvasprintf(ret, fmt, ap);
+  ;
+  return i;
+}
+
+
+----------------------------
+struct options_entry *options_get_only(struct options *oo, const char *name)
+{
+  struct options_entry o;
+  o.name = name;
+  return options_tree_RB_FIND(&oo->tree, &o);
+}
+
+
+----------------------------
+const char *tty_term_describe(struct tty_term *term, enum tty_code_code code)
+{
+  static char s[256];
+  char out[128];
+  switch (term->codes[code].type)
+  {
+    case TTYCODE_NONE:
+    {
+      xsnprintf(s, sizeof(s), "%4u: %s: [missing]", code, tty_term_codes[code].name);
+      break;
+    }
+
+    case TTYCODE_STRING:
+    {
+      strnvis(out, term->codes[code].value.string, sizeof(out), (0x01 | 0x08) | 0x10);
+      xsnprintf(s, sizeof(s), "%4u: %s: (string) %s", code, tty_term_codes[code].name, out);
+      break;
+    }
+
+    case TTYCODE_NUMBER:
+    {
+      xsnprintf(s, sizeof(s), "%4u: %s: (number) %d", code, tty_term_codes[code].name, term->codes[code].value.number);
+      break;
+    }
+
+    case TTYCODE_FLAG:
+    {
+      xsnprintf(s, sizeof(s), "%4u: %s: (flag) %s", code, tty_term_codes[code].name, (term->codes[code].value.flag) ? ("true") : ("false"));
+      break;
+    }
+
+  }
+
+  return s;
+}
+
+
+----------------------------
+None
+----------------------------
+void helper_tty_term_find_1(unsigned int * const ent_idx_ref, unsigned int * const code_idx_ref, int * const n_ref, unsigned int * const s_idx_ref, struct tty_term * const term, const struct tty_term_code_entry * const ent, struct tty_code * const code, u_int i, const char * const s)
+{
+  unsigned int ent_idx = *ent_idx_ref;
+  unsigned int code_idx = *code_idx_ref;
+  int n = *n_ref;
+  unsigned int s_idx = *s_idx_ref;
+  ent_idx = &tty_term_codes[i];
+  code_idx = &term->codes[i];
+  code->type = TTYCODE_NONE;
+  switch (ent->type)
+  {
+    case TTYCODE_NONE:
+    {
+      break;
+    }
+
+    case TTYCODE_STRING:
+    {
+      s_idx = tigetstr((char *) ent->name);
+      if (((&s[s_idx]) == 0) || ((&s[s_idx]) == ((char *) (-1))))
+      {
+        break;
+      }
+      code->type = TTYCODE_STRING;
+      code->value.string = tty_term_strip(s);
+      break;
+    }
+
+    case TTYCODE_NUMBER:
+    {
+      n = tigetnum((char *) ent->name);
+      if ((n == (-1)) || (n == (-2)))
+      {
+        break;
+      }
+      code->type = TTYCODE_NUMBER;
+      code->value.number = n;
+      break;
+    }
+
+    case TTYCODE_FLAG:
+    {
+      n = tigetflag((char *) ent->name);
+      if (n == (-1))
+      {
+        break;
+      }
+      code->type = TTYCODE_FLAG;
+      code->value.flag = n;
+      break;
+    }
+
+  }
+
+  *ent_idx_ref = ent_idx;
+  *code_idx_ref = code_idx;
+  *n_ref = n;
+  *s_idx_ref = s_idx;
+}
+
+
+----------------------------
+void log_debug(const char *msg, ...)
+{
+  va_list ap;
+  __builtin_va_start(ap);
+  log_vwrite(msg, ap);
+  ;
+}
+
+
+----------------------------
+int tty_term_number(struct tty_term *term, enum tty_code_code code)
+{
+  if (!tty_term_has(term, code))
+  {
+    return 0;
+  }
+  if (term->codes[code].type != TTYCODE_NUMBER)
+  {
+    fatalx("not a number: %d", code);
+  }
+  return term->codes[code].value.number;
+}
+
+
+----------------------------
+struct tty_terms
+{
+  struct tty_term *lh_first;
+}
+----------------------------
+void *xmalloc(size_t size)
+{
+  void *ptr;
+  unsigned int ptr_idx = 0;
+  if (size == 0)
+  {
+    fatalx("xmalloc: zero size");
+  }
+  ptr_idx = malloc(size);
+  if ((&ptr[ptr_idx]) == 0)
+  {
+    fatalx("xmalloc: allocating %zu bytes: %s", size, strerror(errno));
+  }
+  return ptr;
+}
+
+
+----------------------------
+u_int tty_term_ncodes(void)
+{
+  return (sizeof(tty_term_codes)) / (sizeof(tty_term_codes[0]));
+}
+
+
+----------------------------
+void *xcalloc(size_t nmemb, size_t size)
+{
+  void *ptr;
+  unsigned int ptr_idx = 0;
+  if ((size == 0) || (nmemb == 0))
+  {
+    fatalx("xcalloc: zero size");
+  }
+  ptr_idx = calloc(nmemb, size);
+  if ((&ptr[ptr_idx]) == 0)
+  {
+    fatalx("xcalloc: allocating %zu * %zu bytes: %s", nmemb, size, strerror(errno));
+  }
+  return ptr;
+}
+
+
+----------------------------
+int tty_term_has(struct tty_term *term, enum tty_code_code code)
+{
+  return term->codes[code].type != TTYCODE_NONE;
+}
+
+
+----------------------------
+int options_array_size(struct options_entry *o, u_int *size)
+{
+  if (!((o->tableentry != 0) && (o->tableentry->type == OPTIONS_TABLE_ARRAY)))
+  {
+    return -1;
+  }
+  if (size != 0)
+  {
+    *size = o->arraysize;
+  }
+  return 0;
+}
+
+
+----------------------------
+static void tty_term_override(struct tty_term *term, const char *override)
+{
+  const struct tty_term_code_entry *ent;
+  unsigned int ent_idx = 0;
+  struct tty_code *code;
+  unsigned int code_idx = 0;
+  char *next;
+  char *s;
+  unsigned int s_idx = 0;
+  char *copy;
+  unsigned int copy_idx = 0;
+  char *cp;
+  unsigned int cp_idx = 0;
+  char *value;
+  unsigned int value_idx = 0;
+  const char *errstr;
+  u_int i;
+  int n;
+  int remove;
+  copy_idx = (next = xstrdup(override));
+  s_idx = strsep(&next, ":");
+  if ((((&s[s_idx]) == 0) || (next == 0)) || (fnmatch(s, term->name, 0) != 0))
+  {
+    free(copy);
+    return;
+  }
+  while ((s_idx = strsep(&next, ":")) != 0)
+  {
+    helper_tty_term_override_1(&ent_idx, &code_idx, &s_idx, &cp_idx, &value_idx, &i, &n, &remove, term, ent, code, s, cp, value, errstr);
+  }
+
+  free(s);
+}
+
+
+----------------------------
+char *xstrdup(const char *str)
+{
+  char *cp;
+  unsigned int cp_idx = 0;
+  if ((cp_idx = strdup(str)) == 0)
+  {
+    fatalx("xstrdup: %s", strerror(errno));
+  }
+  return cp;
+}
+
+
+----------------------------
+const char *tty_term_string(struct tty_term *term, enum tty_code_code code)
+{
+  if (!tty_term_has(term, code))
+  {
+    return "";
+  }
+  if (term->codes[code].type != TTYCODE_STRING)
+  {
+    fatalx("not a string: %d", code);
+  }
+  return term->codes[code].value.string;
+}
+
+
+----------------------------
+None
+----------------------------
+***/
+
+

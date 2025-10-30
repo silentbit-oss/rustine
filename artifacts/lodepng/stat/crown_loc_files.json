@@ -1,0 +1,76 @@
+{
+  "Rust": {
+    "blanks": 3,
+    "children": {},
+    "code": 13917,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/lodepng/others/crown/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 16,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/lodepng/others/crown/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/lodepng/others/crown/src/lodepng.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 13895,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/lodepng/others/crown/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 16,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/lodepng/others/crown/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/lodepng/others/crown/src/lodepng.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 13895,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 13917,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "Rust": {
+    "blanks": 3,
+    "children": {},
+    "code": 3127,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/libcsv/others/c2rust/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 14,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libcsv/others/c2rust/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/libcsv/others/c2rust/src/libcsv.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 997,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libcsv/others/c2rust/src/test_csv.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 2110,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/libcsv/others/c2rust/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 14,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libcsv/others/c2rust/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/libcsv/others/c2rust/src/libcsv.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 997,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libcsv/others/c2rust/src/test_csv.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 2110,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 3127,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

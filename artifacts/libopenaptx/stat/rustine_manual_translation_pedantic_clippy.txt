@@ -1,0 +1,617 @@
+warning: `as` casting between raw pointers without changing their constness
+warning: adding items after statements is confusing, since items exist from the start of the scope
+warning: adding items after statements is confusing, since items exist from the start of the scope
+warning: allocating a local array larger than 16384 bytes
+warning: boolean to int conversion using if
+warning: casting `i32` to `u16` may lose the sign of the value
+warning: casting `i32` to `u16` may truncate the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i64` to `i32` may truncate the value
+warning: casting `i64` to `i32` may truncate the value
+warning: casting `i64` to `i32` may truncate the value
+warning: casting `i64` to `i32` may truncate the value
+warning: casting `i64` to `i32` may truncate the value
+warning: casting `i64` to `i32` may truncate the value
+warning: casting `i64` to `i32` may truncate the value
+warning: casting `i8` to `u32` may lose the sign of the value
+warning: casting `u16` to `u8` may truncate the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `u8` may truncate the value
+warning: casting `u32` to `u8` may truncate the value
+warning: casting `u32` to `u8` may truncate the value
+warning: casting `u8` to `i8` may wrap around the value
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u8` may truncate the value
+warning: casting `usize` to `u8` may truncate the value
+warning: casting `usize` to `u8` may truncate the value
+warning: casting `usize` to `u8` may truncate the value
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `i16` to `i32` can be expressed infallibly using `From`
+warning: casts from `i16` to `i32` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `u16` can be expressed infallibly using `From`
+warning: casts from `u8` to `u16` can be expressed infallibly using `From`
+warning: casts from `u8` to `u32` can be expressed infallibly using `From`
+warning: casts from `u8` to `u32` can be expressed infallibly using `From`
+warning: casts from `u8` to `u32` can be expressed infallibly using `From`
+warning: casts from `u8` to `u32` can be expressed infallibly using `From`
+warning: casts from `u8` to `u32` can be expressed infallibly using `From`
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: manual implementation of `midpoint` which can overflow
+warning: reference as raw pointer
+warning: this argument is passed by value, but not consumed in the function body
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import

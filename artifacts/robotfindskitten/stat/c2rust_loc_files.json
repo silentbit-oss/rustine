@@ -1,0 +1,76 @@
+{
+  "Rust": {
+    "blanks": 3,
+    "children": {},
+    "code": 1481,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/robotfindskitten/others/c2rust/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 12,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/robotfindskitten/others/c2rust/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/robotfindskitten/others/c2rust/src/robotfindskitten.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1463,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/robotfindskitten/others/c2rust/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 12,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/robotfindskitten/others/c2rust/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/robotfindskitten/others/c2rust/src/robotfindskitten.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1463,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 1481,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

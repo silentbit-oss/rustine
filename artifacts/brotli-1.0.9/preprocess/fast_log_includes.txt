@@ -1,0 +1,9 @@
+#include <fast_log.c>
+#include <fast_log.h>
+#include <math.h>
+#include <platform.h>
+#include <port.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <string.h>
+#include <types.h>

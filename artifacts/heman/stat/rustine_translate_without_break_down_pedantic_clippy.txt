@@ -1,0 +1,1211 @@
+warning: 5 bindings with single-character names in scope
+warning: 5 bindings with single-character names in scope
+warning: 5 bindings with single-character names in scope
+warning: 5 bindings with single-character names in scope
+warning: 5 bindings with single-character names in scope
+warning: 5 bindings with single-character names in scope
+warning: 5 bindings with single-character names in scope
+warning: 5 bindings with single-character names in scope
+warning: 5 bindings with single-character names in scope
+warning: 5 bindings with single-character names in scope
+warning: 5 bindings with single-character names in scope
+warning: 5 bindings with single-character names in scope
+warning: 5 bindings with single-character names in scope
+warning: 6 bindings with single-character names in scope
+warning: 6 bindings with single-character names in scope
+warning: 6 bindings with single-character names in scope
+warning: 7 bindings with single-character names in scope
+warning: 7 bindings with single-character names in scope
+warning: 7 bindings with single-character names in scope
+warning: 8 bindings with single-character names in scope
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: adding items after statements is confusing, since items exist from the start of the scope
+warning: adding items after statements is confusing, since items exist from the start of the scope
+warning: assigning the result of `Clone::clone()` may be inefficient
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: boolean to int conversion using if
+warning: called `map(<f>).unwrap_or(<a>)` on an `Option` value
+warning: called `map(<f>).unwrap_or(<a>)` on an `Option` value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `u8` may lose the sign of the value
+warning: casting `f32` to `u8` may lose the sign of the value
+warning: casting `f32` to `u8` may lose the sign of the value
+warning: casting `f32` to `u8` may lose the sign of the value
+warning: casting `f32` to `u8` may truncate the value
+warning: casting `f32` to `u8` may truncate the value
+warning: casting `f32` to `u8` may truncate the value
+warning: casting `f32` to `u8` may truncate the value
+warning: casting `f32` to `usize` may lose the sign of the value
+warning: casting `f32` to `usize` may truncate the value
+warning: casting `f64` to `f32` may truncate the value
+warning: casting `f64` to `f32` may truncate the value
+warning: casting `f64` to `f32` may truncate the value
+warning: casting `f64` to `f32` may truncate the value
+warning: casting `f64` to `f32` may truncate the value
+warning: casting `f64` to `f32` may truncate the value
+warning: casting `f64` to `f32` may truncate the value
+warning: casting `f64` to `f32` may truncate the value
+warning: casting `f64` to `f32` may truncate the value
+warning: casting `f64` to `f32` may truncate the value
+warning: casting `f64` to `f32` may truncate the value
+warning: casting `f64` to `f32` may truncate the value
+warning: casting `f64` to `f32` may truncate the value
+warning: casting `f64` to `f32` may truncate the value
+warning: casting `f64` to `f32` may truncate the value
+warning: casting `f64` to `f32` may truncate the value
+warning: casting `f64` to `i32` may truncate the value
+warning: casting `i16` to `usize` may lose the sign of the value
+warning: casting `i16` to `usize` may lose the sign of the value
+warning: casting `i16` to `usize` may lose the sign of the value
+warning: casting `i16` to `usize` may lose the sign of the value
+warning: casting `i16` to `usize` may lose the sign of the value
+warning: casting `i16` to `usize` may lose the sign of the value
+warning: casting `i16` to `usize` may lose the sign of the value
+warning: casting `i16` to `usize` may lose the sign of the value
+warning: casting `i16` to `usize` may lose the sign of the value
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `i16` may truncate the value
+warning: casting `i32` to `i16` may truncate the value
+warning: casting `i32` to `i16` may truncate the value
+warning: casting `i32` to `i16` may truncate the value
+warning: casting `i32` to `i16` may truncate the value
+warning: casting `i32` to `i16` may truncate the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i64` to `i32` may truncate the value
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `f32` causes a loss of precision (`u32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `u32` to `u8` may truncate the value
+warning: casting `usize` to `f32` causes a loss of precision (`usize` is 32 or 64 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `usize` to `f32` causes a loss of precision (`usize` is 32 or 64 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `usize` to `f32` causes a loss of precision (`usize` is 32 or 64 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `usize` to `f32` causes a loss of precision (`usize` is 32 or 64 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `usize` to `f32` causes a loss of precision (`usize` is 32 or 64 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `usize` to `f32` causes a loss of precision (`usize` is 32 or 64 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `usize` to `f32` causes a loss of precision (`usize` is 32 or 64 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `usize` to `f32` causes a loss of precision (`usize` is 32 or 64 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `usize` to `f32` causes a loss of precision (`usize` is 32 or 64 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `usize` to `f32` causes a loss of precision (`usize` is 32 or 64 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `usize` to `f32` causes a loss of precision (`usize` is 32 or 64 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `usize` to `f32` causes a loss of precision (`usize` is 32 or 64 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `usize` to `f32` causes a loss of precision (`usize` is 32 or 64 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `usize` to `f32` causes a loss of precision (`usize` is 32 or 64 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `usize` to `f32` causes a loss of precision (`usize` is 32 or 64 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `usize` to `f32` causes a loss of precision (`usize` is 32 or 64 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `usize` to `f32` causes a loss of precision (`usize` is 32 or 64 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `usize` to `i16` may truncate the value
+warning: casting `usize` to `i16` may truncate the value
+warning: casting `usize` to `i16` may truncate the value
+warning: casting `usize` to `i16` may wrap around the value on targets with 16-bit wide pointers
+warning: casting `usize` to `i16` may wrap around the value on targets with 16-bit wide pointers
+warning: casting `usize` to `i16` may wrap around the value on targets with 16-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i64` may wrap around the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `bool` to `u8` can be expressed infallibly using `From`
+warning: casts from `bool` to `u8` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i8` to `f64` can be expressed infallibly using `From`
+warning: casts from `i8` to `f64` can be expressed infallibly using `From`
+warning: casts from `i8` to `f64` can be expressed infallibly using `From`
+warning: casts from `i8` to `f64` can be expressed infallibly using `From`
+warning: casts from `i8` to `f64` can be expressed infallibly using `From`
+warning: casts from `i8` to `f64` can be expressed infallibly using `From`
+warning: casts from `i8` to `f64` can be expressed infallibly using `From`
+warning: casts from `i8` to `f64` can be expressed infallibly using `From`
+warning: casts from `i8` to `f64` can be expressed infallibly using `From`
+warning: casts from `u16` to `f32` can be expressed infallibly using `From`
+warning: casts from `u16` to `f32` can be expressed infallibly using `From`
+warning: casts from `u16` to `f32` can be expressed infallibly using `From`
+warning: casts from `u16` to `f32` can be expressed infallibly using `From`
+warning: casts from `u16` to `f32` can be expressed infallibly using `From`
+warning: casts from `u16` to `f32` can be expressed infallibly using `From`
+warning: casts from `u16` to `f32` can be expressed infallibly using `From`
+warning: casts from `u16` to `f32` can be expressed infallibly using `From`
+warning: casts from `u16` to `f32` can be expressed infallibly using `From`
+warning: casts from `u16` to `f32` can be expressed infallibly using `From`
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: only a `panic!` in `if`-then statement
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: strict comparison of `f32` or `f64`
+warning: strict comparison of `f32` or `f64`
+warning: strict comparison of `f32` or `f64`
+warning: strict comparison of `f32` or `f64`
+warning: strict comparison of `f32` or `f64`
+warning: strict comparison of `f32` or `f64`
+warning: strict comparison of `f32` or `f64`
+warning: strict comparison of `f32` or `f64` arrays
+warning: strict comparison of `f32` or `f64` arrays
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this expression mutably borrows a mutable reference. Consider reborrowing
+warning: this expression mutably borrows a mutable reference. Consider reborrowing
+warning: this expression mutably borrows a mutable reference. Consider reborrowing
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function has too many lines (115/100)
+warning: this function has too many lines (134/100)
+warning: this function has too many lines (268/100)
+warning: this function has too many lines (492/100)
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: transmute from a reference to a reference
+warning: unnecessary `!=` operation
+warning: unnecessary `!=` operation
+warning: unnecessary `!=` operation
+warning: unnecessary `!=` operation
+warning: unnecessary boolean `not` operation
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import for enum variants
+warning: used underscore-prefixed item
+warning: used underscore-prefixed item
+warning: used underscore-prefixed item
+warning: used underscore-prefixed item
+warning: used underscore-prefixed item
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`

@@ -1,0 +1,10 @@
+#include <assert.h>
+#include <limits.h>
+#include <opngreduc.c>
+#include <opngreduc.h>
+#include <png.h>
+#include <pngconf.h>
+#include <pnglibconf.h>
+#include <stddef.h>
+#include <stdio.h>
+#include <string.h>

@@ -1,0 +1,76 @@
+{
+  "Rust": {
+    "blanks": 15,
+    "children": {},
+    "code": 1437,
+    "comments": 85,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/robotfindskitten/others/laertes/c2rust-lib.rs",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 15,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/robotfindskitten/others/laertes/build.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 3,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/robotfindskitten/others/laertes/src/robotfindskitten.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 1419,
+          "comments": 84
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 15,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/robotfindskitten/others/laertes/c2rust-lib.rs",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 15,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/robotfindskitten/others/laertes/build.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 3,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/robotfindskitten/others/laertes/src/robotfindskitten.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 1419,
+            "comments": 84
+          }
+        }
+      ]
+    },
+    "code": 1437,
+    "comments": 85,
+    "inaccurate": false,
+    "reports": []
+  }
+}

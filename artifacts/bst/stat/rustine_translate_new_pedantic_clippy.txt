@@ -1,0 +1,16 @@
+warning: `if` chain can be rewritten with `match`
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: this could be rewritten as `let...else`
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: usage of wildcard import
+warning: usage of wildcard import

@@ -1,0 +1,3512 @@
+# 0 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+# 83 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h" 1
+# 22 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h"
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h" 1
+# 56 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h" 1
+# 254 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h"
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/stddef.h" 1
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/_fake_defines.h" 1
+# 2 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/stddef.h" 2
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/_fake_typedefs.h" 1
+
+
+
+typedef int START_DELIMETER;
+typedef unsigned chtype;
+typedef chtype attr_t;
+typedef int socklen_t;
+typedef int size_t;
+typedef int __builtin_va_list;
+typedef int __gnuc_va_list;
+typedef int va_list;
+typedef int __int8_t;
+typedef int __uint8_t;
+typedef int __int16_t;
+typedef int __uint16_t;
+typedef int __int_least16_t;
+typedef int __uint_least16_t;
+typedef int __int32_t;
+typedef int __uint32_t;
+typedef int __int64_t;
+typedef int __uint64_t;
+typedef int __int_least32_t;
+typedef int __uint_least32_t;
+typedef int __s8;
+typedef int __u8;
+typedef int __s16;
+typedef int __u16;
+typedef int __s32;
+typedef int __u32;
+typedef int __s64;
+typedef int __u64;
+typedef int _LOCK_T;
+typedef int _LOCK_RECURSIVE_T;
+typedef int _off_t;
+typedef int __dev_t;
+typedef int __uid_t;
+typedef int __gid_t;
+typedef int _off64_t;
+typedef int _fpos_t;
+typedef int _ssize_t;
+typedef int wint_t;
+typedef int _mbstate_t;
+typedef int _flock_t;
+typedef int _iconv_t;
+typedef int __ULong;
+typedef int __FILE;
+typedef int ptrdiff_t;
+typedef int wchar_t;
+typedef int char16_t;
+typedef int char32_t;
+typedef int __off_t;
+typedef int __pid_t;
+typedef int __loff_t;
+typedef int u_char;
+typedef int u_short;
+typedef int u_int;
+typedef int u_long;
+typedef int ushort;
+typedef int uint;
+typedef int clock_t;
+typedef int time_t;
+typedef int daddr_t;
+typedef int caddr_t;
+typedef int ino_t;
+typedef int off_t;
+typedef int dev_t;
+typedef int uid_t;
+typedef int gid_t;
+typedef int pid_t;
+typedef int key_t;
+typedef int ssize_t;
+typedef int mode_t;
+typedef int nlink_t;
+typedef int fd_mask;
+typedef int _types_fd_set;
+typedef int clockid_t;
+typedef int timer_t;
+typedef int useconds_t;
+typedef int suseconds_t;
+typedef int FILE;
+typedef int fpos_t;
+typedef int cookie_read_function_t;
+typedef int cookie_write_function_t;
+typedef int cookie_seek_function_t;
+typedef int cookie_close_function_t;
+typedef int cookie_io_functions_t;
+typedef int div_t;
+typedef int ldiv_t;
+typedef int lldiv_t;
+typedef int sigset_t;
+typedef int __sigset_t;
+typedef int _sig_func_ptr;
+typedef int sig_atomic_t;
+typedef int __tzrule_type;
+typedef int __tzinfo_type;
+typedef int mbstate_t;
+typedef int sem_t;
+typedef int pthread_t;
+typedef int pthread_attr_t;
+typedef int pthread_mutex_t;
+typedef int pthread_mutexattr_t;
+typedef int pthread_cond_t;
+typedef int pthread_condattr_t;
+typedef int pthread_key_t;
+typedef int pthread_once_t;
+typedef int pthread_rwlock_t;
+typedef int pthread_rwlockattr_t;
+typedef int pthread_spinlock_t;
+typedef int pthread_barrier_t;
+typedef int pthread_barrierattr_t;
+typedef int jmp_buf;
+typedef int rlim_t;
+typedef int sa_family_t;
+typedef int sigjmp_buf;
+typedef int stack_t;
+typedef int siginfo_t;
+typedef int z_stream;
+
+
+typedef int int8_t;
+typedef int uint8_t;
+typedef int int16_t;
+typedef int uint16_t;
+typedef int int32_t;
+typedef int uint32_t;
+typedef int int64_t;
+typedef int uint64_t;
+
+
+typedef int int_least8_t;
+typedef int uint_least8_t;
+typedef int int_least16_t;
+typedef int uint_least16_t;
+typedef int int_least32_t;
+typedef int uint_least32_t;
+typedef int int_least64_t;
+typedef int uint_least64_t;
+
+
+typedef int int_fast8_t;
+typedef int uint_fast8_t;
+typedef int int_fast16_t;
+typedef int uint_fast16_t;
+typedef int int_fast32_t;
+typedef int uint_fast32_t;
+typedef int int_fast64_t;
+typedef int uint_fast64_t;
+
+
+typedef int intptr_t;
+typedef int uintptr_t;
+
+
+typedef int intmax_t;
+typedef int uintmax_t;
+
+
+typedef _Bool bool;
+
+
+typedef void* MirEGLNativeWindowType;
+typedef void* MirEGLNativeDisplayType;
+typedef struct MirConnection MirConnection;
+typedef struct MirSurface MirSurface;
+typedef struct MirSurfaceSpec MirSurfaceSpec;
+typedef struct MirScreencast MirScreencast;
+typedef struct MirPromptSession MirPromptSession;
+typedef struct MirBufferStream MirBufferStream;
+typedef struct MirPersistentId MirPersistentId;
+typedef struct MirBlob MirBlob;
+typedef struct MirDisplayConfig MirDisplayConfig;
+
+
+typedef struct xcb_connection_t xcb_connection_t;
+typedef uint32_t xcb_window_t;
+typedef uint32_t xcb_visualid_t;
+
+
+typedef _Atomic(_Bool) atomic_bool;
+typedef _Atomic(char) atomic_char;
+typedef _Atomic(signed char) atomic_schar;
+typedef _Atomic(unsigned char) atomic_uchar;
+typedef _Atomic(short) atomic_short;
+typedef _Atomic(unsigned short) atomic_ushort;
+typedef _Atomic(int) atomic_int;
+typedef _Atomic(unsigned int) atomic_uint;
+typedef _Atomic(long) atomic_long;
+typedef _Atomic(unsigned long) atomic_ulong;
+typedef _Atomic(long long) atomic_llong;
+typedef _Atomic(unsigned long long) atomic_ullong;
+typedef _Atomic(uint_least16_t) atomic_char16_t;
+typedef _Atomic(uint_least32_t) atomic_char32_t;
+typedef _Atomic(wchar_t) atomic_wchar_t;
+typedef _Atomic(int_least8_t) atomic_int_least8_t;
+typedef _Atomic(uint_least8_t) atomic_uint_least8_t;
+typedef _Atomic(int_least16_t) atomic_int_least16_t;
+typedef _Atomic(uint_least16_t) atomic_uint_least16_t;
+typedef _Atomic(int_least32_t) atomic_int_least32_t;
+typedef _Atomic(uint_least32_t) atomic_uint_least32_t;
+typedef _Atomic(int_least64_t) atomic_int_least64_t;
+typedef _Atomic(uint_least64_t) atomic_uint_least64_t;
+typedef _Atomic(int_fast8_t) atomic_int_fast8_t;
+typedef _Atomic(uint_fast8_t) atomic_uint_fast8_t;
+typedef _Atomic(int_fast16_t) atomic_int_fast16_t;
+typedef _Atomic(uint_fast16_t) atomic_uint_fast16_t;
+typedef _Atomic(int_fast32_t) atomic_int_fast32_t;
+typedef _Atomic(uint_fast32_t) atomic_uint_fast32_t;
+typedef _Atomic(int_fast64_t) atomic_int_fast64_t;
+typedef _Atomic(uint_fast64_t) atomic_uint_fast64_t;
+typedef _Atomic(intptr_t) atomic_intptr_t;
+typedef _Atomic(uintptr_t) atomic_uintptr_t;
+typedef _Atomic(size_t) atomic_size_t;
+typedef _Atomic(ptrdiff_t) atomic_ptrdiff_t;
+typedef _Atomic(intmax_t) atomic_intmax_t;
+typedef _Atomic(uintmax_t) atomic_uintmax_t;
+typedef struct atomic_flag { atomic_bool _Value; } atomic_flag;
+typedef enum memory_order {
+  memory_order_relaxed,
+  memory_order_consume,
+  memory_order_acquire,
+  memory_order_release,
+  memory_order_acq_rel,
+  memory_order_seq_cst
+} memory_order;
+
+typedef struct __locale_struct *__locale_t;
+typedef __locale_t locale_t;
+typedef int END_DELIMETER;
+# 3 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/stddef.h" 2
+# 255 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h" 2
+     typedef size_t z_size_t;
+# 401 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h"
+typedef unsigned char Byte;
+
+typedef unsigned int uInt;
+typedef unsigned long uLong;
+
+
+
+
+
+   typedef Byte Bytef;
+
+typedef char charf;
+typedef int intf;
+typedef uInt uIntf;
+typedef uLong uLongf;
+
+
+   typedef void const *voidpc;
+   typedef void *voidpf;
+   typedef void *voidp;
+
+
+
+
+
+
+
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/limits.h" 1
+# 429 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h" 2
+# 439 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h"
+   typedef unsigned z_crc_t;
+# 454 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h"
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/sys/types.h" 1
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/_fake_defines.h" 1
+# 2 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/sys/types.h" 2
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/_fake_typedefs.h" 1
+# 3 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/sys/types.h" 2
+# 455 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h" 2
+
+
+
+
+
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/stdarg.h" 1
+# 461 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h" 2
+# 492 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h"
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/unistd.h" 1
+# 493 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h" 2
+# 57 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h" 2
+# 103 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+typedef voidpf (*alloc_func)(voidpf opaque, uInt items, uInt size);
+typedef void (*free_func)(voidpf opaque, voidpf address);
+
+struct internal_state;
+
+typedef struct z_stream_s {
+    const Bytef *next_in;
+    uInt avail_in;
+    uLong total_in;
+
+    Bytef *next_out;
+    uInt avail_out;
+    uLong total_out;
+
+    const char *msg;
+    struct internal_state *state;
+
+    alloc_func zalloc;
+    free_func zfree;
+    voidpf opaque;
+
+    int data_type;
+
+    uLong adler;
+    uLong reserved;
+} z_stream;
+
+typedef z_stream *z_streamp;
+
+
+
+
+
+typedef struct gz_header_s {
+    int text;
+    uLong time;
+    int xflags;
+    int os;
+    Bytef *extra;
+    uInt extra_len;
+    uInt extra_max;
+    Bytef *name;
+    uInt name_max;
+    Bytef *comment;
+    uInt comm_max;
+    int hcrc;
+    int done;
+
+} gz_header;
+
+typedef gz_header *gz_headerp;
+# 242 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern const char * zlibVersion(void);
+# 272 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflate(z_streamp strm, int flush);
+# 385 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflateEnd(z_streamp strm);
+# 423 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflate(z_streamp strm, int flush);
+# 543 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflateEnd(z_streamp strm);
+# 633 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflateSetDictionary(z_streamp strm,
+                                         const Bytef *dictionary,
+                                         uInt dictLength);
+# 677 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflateGetDictionary(z_streamp strm,
+                                         Bytef *dictionary,
+                                         uInt *dictLength);
+# 699 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflateCopy(z_streamp dest,
+                                z_streamp source);
+# 717 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflateReset(z_streamp strm);
+# 728 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflateParams(z_streamp strm,
+                                  int level,
+                                  int strategy);
+# 766 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflateTune(z_streamp strm,
+                                int good_length,
+                                int max_lazy,
+                                int nice_length,
+                                int max_chain);
+# 783 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern uLong deflateBound(z_streamp strm,
+                                   uLong sourceLen);
+# 798 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflatePending(z_streamp strm,
+                                   unsigned *pending,
+                                   int *bits);
+# 813 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflatePrime(z_streamp strm,
+                                 int bits,
+                                 int value);
+# 830 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflateSetHeader(z_streamp strm,
+                                     gz_headerp head);
+# 910 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflateSetDictionary(z_streamp strm,
+                                         const Bytef *dictionary,
+                                         uInt dictLength);
+# 933 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflateGetDictionary(z_streamp strm,
+                                         Bytef *dictionary,
+                                         uInt *dictLength);
+# 948 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflateSync(z_streamp strm);
+# 967 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflateCopy(z_streamp dest,
+                                z_streamp source);
+# 983 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflateReset(z_streamp strm);
+# 994 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflateReset2(z_streamp strm,
+                                  int windowBits);
+# 1008 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflatePrime(z_streamp strm,
+                                 int bits,
+                                 int value);
+# 1029 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern long inflateMark(z_streamp strm);
+# 1057 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflateGetHeader(z_streamp strm,
+                                     gz_headerp head);
+# 1119 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+typedef unsigned (*in_func)(void *,
+                            const unsigned char * *);
+typedef int (*out_func)(void *, unsigned char *, unsigned);
+
+extern int inflateBack(z_streamp strm,
+                                in_func in, void *in_desc,
+                                out_func out, void *out_desc);
+# 1193 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflateBackEnd(z_streamp strm);
+
+
+
+
+
+
+
+extern uLong zlibCompileFlags(void);
+# 1254 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int compress(Bytef *dest, uLongf *destLen,
+                             const Bytef *source, uLong sourceLen);
+# 1269 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int compress2(Bytef *dest, uLongf *destLen,
+                              const Bytef *source, uLong sourceLen,
+                              int level);
+# 1285 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern uLong compressBound(uLong sourceLen);
+
+
+
+
+
+
+extern int uncompress(Bytef *dest, uLongf *destLen,
+                               const Bytef *source, uLong sourceLen);
+# 1310 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int uncompress2(Bytef *dest, uLongf *destLen,
+                                const Bytef *source, uLong *sourceLen);
+# 1327 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+typedef struct gzFile_s *gzFile;
+# 1367 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern gzFile gzdopen(int fd, const char *mode);
+# 1390 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzbuffer(gzFile file, unsigned size);
+# 1406 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzsetparams(gzFile file, int level, int strategy);
+# 1417 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzread(gzFile file, voidp buf, unsigned len);
+# 1447 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern z_size_t gzfread(voidp buf, z_size_t size, z_size_t nitems,
+                                 gzFile file);
+# 1473 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzwrite(gzFile file, voidpc buf, unsigned len);
+
+
+
+
+
+extern z_size_t gzfwrite(voidpc buf, z_size_t size,
+                                  z_size_t nitems, gzFile file);
+# 1493 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzprintf(gzFile file, const char *format, ...);
+# 1508 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzputs(gzFile file, const char *s);
+
+
+
+
+
+
+
+extern char * gzgets(gzFile file, char *buf, int len);
+# 1530 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzputc(gzFile file, int c);
+
+
+
+
+
+extern int gzgetc(gzFile file);
+# 1545 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzungetc(int c, gzFile file);
+# 1557 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzflush(gzFile file, int flush);
+# 1592 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzrewind(gzFile file);
+# 1620 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzeof(gzFile file);
+# 1635 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzdirect(gzFile file);
+# 1656 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzclose(gzFile file);
+# 1669 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzclose_r(gzFile file);
+extern int gzclose_w(gzFile file);
+# 1681 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern const char * gzerror(gzFile file, int *errnum);
+# 1697 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern void gzclearerr(gzFile file);
+# 1714 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern uLong adler32(uLong adler, const Bytef *buf, uInt len);
+# 1734 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern uLong adler32_z(uLong adler, const Bytef *buf,
+                                z_size_t len);
+# 1752 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern uLong crc32(uLong crc, const Bytef *buf, uInt len);
+# 1770 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern uLong crc32_z(uLong crc, const Bytef *buf,
+                              z_size_t len);
+# 1793 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern uLong crc32_combine_op(uLong crc1, uLong crc2, uLong op);
+# 1806 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflateInit_(z_streamp strm, int level,
+                                 const char *version, int stream_size);
+extern int inflateInit_(z_streamp strm,
+                                 const char *version, int stream_size);
+extern int deflateInit2_(z_streamp strm, int level, int method,
+                                  int windowBits, int memLevel,
+                                  int strategy, const char *version,
+                                  int stream_size);
+extern int inflateInit2_(z_streamp strm, int windowBits,
+                                  const char *version, int stream_size);
+extern int inflateBackInit_(z_streamp strm, int windowBits,
+                                     unsigned char *window,
+                                     const char *version,
+                                     int stream_size);
+# 1859 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+struct gzFile_s {
+    unsigned have;
+    unsigned char *next;
+    off_t pos;
+};
+extern int gzgetc_(gzFile file);
+# 1918 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+   extern gzFile gzopen(const char *, const char *);
+   extern off_t gzseek(gzFile, off_t, int);
+   extern off_t gztell(gzFile);
+   extern off_t gzoffset(gzFile);
+   extern uLong adler32_combine(uLong, uLong, off_t);
+   extern uLong crc32_combine(uLong, uLong, off_t);
+   extern uLong crc32_combine_gen(off_t);
+# 1936 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern const char * zError(int);
+extern int inflateSyncPoint(z_streamp);
+extern const z_crc_t * get_crc_table(void);
+extern int inflateUndermine(z_streamp, int);
+extern int inflateValidate(z_streamp, int);
+extern unsigned long inflateCodesUsed(z_streamp);
+extern int inflateResetKeep(z_streamp);
+extern int deflateResetKeep(z_streamp);
+
+
+
+
+
+
+extern int gzvprintf(gzFile file,
+                                           const char *format,
+                                           va_list va);
+# 23 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h" 2
+
+
+
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/stddef.h" 1
+# 27 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h" 2
+
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/string.h" 1
+# 29 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h" 2
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/stdlib.h" 1
+# 30 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h" 2
+# 39 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h"
+typedef unsigned char uch;
+typedef uch uchf;
+typedef unsigned short ush;
+typedef ush ushf;
+typedef unsigned long ulg;
+
+
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/limits.h" 1
+# 47 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h" 2
+# 56 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h"
+extern const char * const z_errmsg[10];
+# 194 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h"
+    extern uLong adler32_combine64(uLong, uLong, off_t);
+    extern uLong crc32_combine64(uLong, uLong, off_t);
+    extern uLong crc32_combine_gen64(off_t);
+# 261 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h"
+   voidpf zcalloc(voidpf opaque, unsigned items,
+                                unsigned size);
+   void zcfree(voidpf opaque, voidpf ptr);
+# 84 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c" 2
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inftrees.h" 1
+# 24 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inftrees.h"
+typedef struct {
+    unsigned char op;
+    unsigned char bits;
+    unsigned short val;
+} code;
+# 54 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inftrees.h"
+typedef enum {
+    CODES,
+    LENS,
+    DISTS
+} codetype;
+
+int inflate_table(codetype type, unsigned short *lens,
+                                unsigned codes, code * *table,
+                                unsigned *bits, unsigned short *work);
+# 85 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c" 2
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.h" 1
+# 20 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.h"
+typedef enum {
+    HEAD = 16180,
+    FLAGS,
+    TIME,
+    OS,
+    EXLEN,
+    EXTRA,
+    NAME,
+    COMMENT,
+    HCRC,
+    DICTID,
+    DICT,
+        TYPE,
+        TYPEDO,
+        STORED,
+        COPY_,
+        COPY,
+        TABLE,
+        LENLENS,
+        CODELENS,
+            LEN_,
+            LEN,
+            LENEXT,
+            DIST,
+            DISTEXT,
+            MATCH,
+            LIT,
+    CHECK,
+    LENGTH,
+    DONE,
+    BAD,
+    MEM,
+    SYNC
+} inflate_mode;
+# 82 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.h"
+struct inflate_state {
+    z_streamp strm;
+    inflate_mode mode;
+    int last;
+    int wrap;
+
+    int havedict;
+    int flags;
+
+    unsigned dmax;
+    unsigned long check;
+    unsigned long total;
+    gz_headerp head;
+
+    unsigned wbits;
+    unsigned wsize;
+    unsigned whave;
+    unsigned wnext;
+    unsigned char *window;
+
+    unsigned long hold;
+    unsigned bits;
+
+    unsigned length;
+    unsigned offset;
+
+    unsigned extra;
+
+    code const *lencode;
+    code const *distcode;
+    unsigned lenbits;
+    unsigned distbits;
+
+    unsigned ncode;
+    unsigned nlen;
+    unsigned ndist;
+    unsigned have;
+    code *next;
+    unsigned short lens[320];
+    unsigned short work[288];
+    code codes[(852 +592)];
+    int sane;
+    int back;
+    unsigned was;
+};
+# 86 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c" 2
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inffast.h" 1
+# 11 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inffast.h"
+void inflate_fast(z_streamp strm, unsigned start);
+# 87 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c" 2
+
+
+
+
+
+
+
+static int inflateStateCheck(z_streamp strm) {
+    struct inflate_state *state;
+    if (strm == 0 ||
+        strm->zalloc == (alloc_func)0 || strm->zfree == (free_func)0)
+        return 1;
+    state = (struct inflate_state *)strm->state;
+    if (state == 0 || state->strm != strm ||
+        state->mode < HEAD || state->mode > SYNC)
+        return 1;
+    return 0;
+}
+
+int inflateResetKeep(z_streamp strm) {
+    struct inflate_state *state;
+
+    if (inflateStateCheck(strm)) return (-2);
+    state = (struct inflate_state *)strm->state;
+    strm->total_in = strm->total_out = state->total = 0;
+    strm->msg = 0;
+    if (state->wrap)
+        strm->adler = state->wrap & 1;
+    state->mode = HEAD;
+    state->last = 0;
+    state->havedict = 0;
+    state->flags = -1;
+    state->dmax = 32768U;
+    state->head = 0;
+    state->hold = 0;
+    state->bits = 0;
+    state->lencode = state->distcode = state->next = state->codes;
+    state->sane = 1;
+    state->back = -1;
+    ;
+    return 0;
+}
+
+int inflateReset(z_streamp strm) {
+    struct inflate_state *state;
+
+    if (inflateStateCheck(strm)) return (-2);
+    state = (struct inflate_state *)strm->state;
+    state->wsize = 0;
+    state->whave = 0;
+    state->wnext = 0;
+    return inflateResetKeep(strm);
+}
+
+int inflateReset2(z_streamp strm, int windowBits) {
+    int wrap;
+    struct inflate_state *state;
+
+
+    if (inflateStateCheck(strm)) return (-2);
+    state = (struct inflate_state *)strm->state;
+
+
+    if (windowBits < 0) {
+        if (windowBits < -15)
+            return (-2);
+        wrap = 0;
+        windowBits = -windowBits;
+    }
+    else {
+        wrap = (windowBits >> 4) + 5;
+
+
+
+
+    }
+
+
+    if (windowBits && (windowBits < 8 || windowBits > 15))
+        return (-2);
+    if (state->window != 0 && state->wbits != (unsigned)windowBits) {
+        (*((strm)->zfree))((strm)->opaque, (voidpf)(state->window));
+        state->window = 0;
+    }
+
+
+    state->wrap = wrap;
+    state->wbits = (unsigned)windowBits;
+    return inflateReset(strm);
+}
+
+int inflateInit2_(z_streamp strm, int windowBits,
+                          const char *version, int stream_size) {
+    int ret;
+    struct inflate_state *state;
+
+    if (version == 0 || version[0] != "1.3-optipng"[0] ||
+        stream_size != (int)(sizeof(z_stream)))
+        return (-6);
+    if (strm == 0) return (-2);
+    strm->msg = 0;
+    if (strm->zalloc == (alloc_func)0) {
+
+
+
+        strm->zalloc = zcalloc;
+        strm->opaque = (voidpf)0;
+
+    }
+    if (strm->zfree == (free_func)0)
+
+
+
+        strm->zfree = zcfree;
+
+    state = (struct inflate_state *)
+            (*((strm)->zalloc))((strm)->opaque, (1), (sizeof(struct inflate_state)));
+    if (state == 0) return (-4);
+    ;
+    strm->state = (struct internal_state *)state;
+    state->strm = strm;
+    state->window = 0;
+    state->mode = HEAD;
+    ret = inflateReset2(strm, windowBits);
+    if (ret != 0) {
+        (*((strm)->zfree))((strm)->opaque, (voidpf)(state));
+        strm->state = 0;
+    }
+    return ret;
+}
+
+int inflateInit_(z_streamp strm, const char *version,
+                         int stream_size) {
+    return inflateInit2_(strm, 15, version, stream_size);
+}
+
+int inflatePrime(z_streamp strm, int bits, int value) {
+    struct inflate_state *state;
+
+    if (inflateStateCheck(strm)) return (-2);
+    if (bits == 0)
+        return 0;
+    state = (struct inflate_state *)strm->state;
+    if (bits < 0) {
+        state->hold = 0;
+        state->bits = 0;
+        return 0;
+    }
+    if (bits > 16 || state->bits + (uInt)bits > 32) return (-2);
+    value &= (1L << bits) - 1;
+    state->hold += (unsigned)value << state->bits;
+    state->bits += (uInt)bits;
+    return 0;
+}
+# 252 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+static void fixedtables(struct inflate_state *state) {
+# 285 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inffixed.h" 1
+# 10 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inffixed.h"
+    static const code lenfix[512] = {
+        {96,7,0},{0,8,80},{0,8,16},{20,8,115},{18,7,31},{0,8,112},{0,8,48},
+        {0,9,192},{16,7,10},{0,8,96},{0,8,32},{0,9,160},{0,8,0},{0,8,128},
+        {0,8,64},{0,9,224},{16,7,6},{0,8,88},{0,8,24},{0,9,144},{19,7,59},
+        {0,8,120},{0,8,56},{0,9,208},{17,7,17},{0,8,104},{0,8,40},{0,9,176},
+        {0,8,8},{0,8,136},{0,8,72},{0,9,240},{16,7,4},{0,8,84},{0,8,20},
+        {21,8,227},{19,7,43},{0,8,116},{0,8,52},{0,9,200},{17,7,13},{0,8,100},
+        {0,8,36},{0,9,168},{0,8,4},{0,8,132},{0,8,68},{0,9,232},{16,7,8},
+        {0,8,92},{0,8,28},{0,9,152},{20,7,83},{0,8,124},{0,8,60},{0,9,216},
+        {18,7,23},{0,8,108},{0,8,44},{0,9,184},{0,8,12},{0,8,140},{0,8,76},
+        {0,9,248},{16,7,3},{0,8,82},{0,8,18},{21,8,163},{19,7,35},{0,8,114},
+        {0,8,50},{0,9,196},{17,7,11},{0,8,98},{0,8,34},{0,9,164},{0,8,2},
+        {0,8,130},{0,8,66},{0,9,228},{16,7,7},{0,8,90},{0,8,26},{0,9,148},
+        {20,7,67},{0,8,122},{0,8,58},{0,9,212},{18,7,19},{0,8,106},{0,8,42},
+        {0,9,180},{0,8,10},{0,8,138},{0,8,74},{0,9,244},{16,7,5},{0,8,86},
+        {0,8,22},{64,8,0},{19,7,51},{0,8,118},{0,8,54},{0,9,204},{17,7,15},
+        {0,8,102},{0,8,38},{0,9,172},{0,8,6},{0,8,134},{0,8,70},{0,9,236},
+        {16,7,9},{0,8,94},{0,8,30},{0,9,156},{20,7,99},{0,8,126},{0,8,62},
+        {0,9,220},{18,7,27},{0,8,110},{0,8,46},{0,9,188},{0,8,14},{0,8,142},
+        {0,8,78},{0,9,252},{96,7,0},{0,8,81},{0,8,17},{21,8,131},{18,7,31},
+        {0,8,113},{0,8,49},{0,9,194},{16,7,10},{0,8,97},{0,8,33},{0,9,162},
+        {0,8,1},{0,8,129},{0,8,65},{0,9,226},{16,7,6},{0,8,89},{0,8,25},
+        {0,9,146},{19,7,59},{0,8,121},{0,8,57},{0,9,210},{17,7,17},{0,8,105},
+        {0,8,41},{0,9,178},{0,8,9},{0,8,137},{0,8,73},{0,9,242},{16,7,4},
+        {0,8,85},{0,8,21},{16,8,258},{19,7,43},{0,8,117},{0,8,53},{0,9,202},
+        {17,7,13},{0,8,101},{0,8,37},{0,9,170},{0,8,5},{0,8,133},{0,8,69},
+        {0,9,234},{16,7,8},{0,8,93},{0,8,29},{0,9,154},{20,7,83},{0,8,125},
+        {0,8,61},{0,9,218},{18,7,23},{0,8,109},{0,8,45},{0,9,186},{0,8,13},
+        {0,8,141},{0,8,77},{0,9,250},{16,7,3},{0,8,83},{0,8,19},{21,8,195},
+        {19,7,35},{0,8,115},{0,8,51},{0,9,198},{17,7,11},{0,8,99},{0,8,35},
+        {0,9,166},{0,8,3},{0,8,131},{0,8,67},{0,9,230},{16,7,7},{0,8,91},
+        {0,8,27},{0,9,150},{20,7,67},{0,8,123},{0,8,59},{0,9,214},{18,7,19},
+        {0,8,107},{0,8,43},{0,9,182},{0,8,11},{0,8,139},{0,8,75},{0,9,246},
+        {16,7,5},{0,8,87},{0,8,23},{64,8,0},{19,7,51},{0,8,119},{0,8,55},
+        {0,9,206},{17,7,15},{0,8,103},{0,8,39},{0,9,174},{0,8,7},{0,8,135},
+        {0,8,71},{0,9,238},{16,7,9},{0,8,95},{0,8,31},{0,9,158},{20,7,99},
+        {0,8,127},{0,8,63},{0,9,222},{18,7,27},{0,8,111},{0,8,47},{0,9,190},
+        {0,8,15},{0,8,143},{0,8,79},{0,9,254},{96,7,0},{0,8,80},{0,8,16},
+        {20,8,115},{18,7,31},{0,8,112},{0,8,48},{0,9,193},{16,7,10},{0,8,96},
+        {0,8,32},{0,9,161},{0,8,0},{0,8,128},{0,8,64},{0,9,225},{16,7,6},
+        {0,8,88},{0,8,24},{0,9,145},{19,7,59},{0,8,120},{0,8,56},{0,9,209},
+        {17,7,17},{0,8,104},{0,8,40},{0,9,177},{0,8,8},{0,8,136},{0,8,72},
+        {0,9,241},{16,7,4},{0,8,84},{0,8,20},{21,8,227},{19,7,43},{0,8,116},
+        {0,8,52},{0,9,201},{17,7,13},{0,8,100},{0,8,36},{0,9,169},{0,8,4},
+        {0,8,132},{0,8,68},{0,9,233},{16,7,8},{0,8,92},{0,8,28},{0,9,153},
+        {20,7,83},{0,8,124},{0,8,60},{0,9,217},{18,7,23},{0,8,108},{0,8,44},
+        {0,9,185},{0,8,12},{0,8,140},{0,8,76},{0,9,249},{16,7,3},{0,8,82},
+        {0,8,18},{21,8,163},{19,7,35},{0,8,114},{0,8,50},{0,9,197},{17,7,11},
+        {0,8,98},{0,8,34},{0,9,165},{0,8,2},{0,8,130},{0,8,66},{0,9,229},
+        {16,7,7},{0,8,90},{0,8,26},{0,9,149},{20,7,67},{0,8,122},{0,8,58},
+        {0,9,213},{18,7,19},{0,8,106},{0,8,42},{0,9,181},{0,8,10},{0,8,138},
+        {0,8,74},{0,9,245},{16,7,5},{0,8,86},{0,8,22},{64,8,0},{19,7,51},
+        {0,8,118},{0,8,54},{0,9,205},{17,7,15},{0,8,102},{0,8,38},{0,9,173},
+        {0,8,6},{0,8,134},{0,8,70},{0,9,237},{16,7,9},{0,8,94},{0,8,30},
+        {0,9,157},{20,7,99},{0,8,126},{0,8,62},{0,9,221},{18,7,27},{0,8,110},
+        {0,8,46},{0,9,189},{0,8,14},{0,8,142},{0,8,78},{0,9,253},{96,7,0},
+        {0,8,81},{0,8,17},{21,8,131},{18,7,31},{0,8,113},{0,8,49},{0,9,195},
+        {16,7,10},{0,8,97},{0,8,33},{0,9,163},{0,8,1},{0,8,129},{0,8,65},
+        {0,9,227},{16,7,6},{0,8,89},{0,8,25},{0,9,147},{19,7,59},{0,8,121},
+        {0,8,57},{0,9,211},{17,7,17},{0,8,105},{0,8,41},{0,9,179},{0,8,9},
+        {0,8,137},{0,8,73},{0,9,243},{16,7,4},{0,8,85},{0,8,21},{16,8,258},
+        {19,7,43},{0,8,117},{0,8,53},{0,9,203},{17,7,13},{0,8,101},{0,8,37},
+        {0,9,171},{0,8,5},{0,8,133},{0,8,69},{0,9,235},{16,7,8},{0,8,93},
+        {0,8,29},{0,9,155},{20,7,83},{0,8,125},{0,8,61},{0,9,219},{18,7,23},
+        {0,8,109},{0,8,45},{0,9,187},{0,8,13},{0,8,141},{0,8,77},{0,9,251},
+        {16,7,3},{0,8,83},{0,8,19},{21,8,195},{19,7,35},{0,8,115},{0,8,51},
+        {0,9,199},{17,7,11},{0,8,99},{0,8,35},{0,9,167},{0,8,3},{0,8,131},
+        {0,8,67},{0,9,231},{16,7,7},{0,8,91},{0,8,27},{0,9,151},{20,7,67},
+        {0,8,123},{0,8,59},{0,9,215},{18,7,19},{0,8,107},{0,8,43},{0,9,183},
+        {0,8,11},{0,8,139},{0,8,75},{0,9,247},{16,7,5},{0,8,87},{0,8,23},
+        {64,8,0},{19,7,51},{0,8,119},{0,8,55},{0,9,207},{17,7,15},{0,8,103},
+        {0,8,39},{0,9,175},{0,8,7},{0,8,135},{0,8,71},{0,9,239},{16,7,9},
+        {0,8,95},{0,8,31},{0,9,159},{20,7,99},{0,8,127},{0,8,63},{0,9,223},
+        {18,7,27},{0,8,111},{0,8,47},{0,9,191},{0,8,15},{0,8,143},{0,8,79},
+        {0,9,255}
+    };
+
+    static const code distfix[32] = {
+        {16,5,1},{23,5,257},{19,5,17},{27,5,4097},{17,5,5},{25,5,1025},
+        {21,5,65},{29,5,16385},{16,5,3},{24,5,513},{20,5,33},{28,5,8193},
+        {18,5,9},{26,5,2049},{22,5,129},{64,5,0},{16,5,2},{23,5,385},
+        {19,5,25},{27,5,6145},{17,5,7},{25,5,1537},{21,5,97},{29,5,24577},
+        {16,5,4},{24,5,769},{20,5,49},{28,5,12289},{18,5,13},{26,5,3073},
+        {22,5,193},{64,5,0}
+    };
+# 286 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c" 2
+
+    state->lencode = lenfix;
+    state->lenbits = 9;
+    state->distcode = distfix;
+    state->distbits = 5;
+}
+# 368 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+static int updatewindow(z_streamp strm, const Bytef *end, unsigned copy) {
+    struct inflate_state *state;
+    unsigned dist;
+
+    state = (struct inflate_state *)strm->state;
+
+
+    if (state->window == 0) {
+        state->window = (unsigned char *)
+                        (*((strm)->zalloc))((strm)->opaque, (1U << state->wbits), (sizeof(unsigned char)))
+                                                     ;
+        if (state->window == 0) return 1;
+    }
+
+
+    if (state->wsize == 0) {
+        state->wsize = 1U << state->wbits;
+        state->wnext = 0;
+        state->whave = 0;
+    }
+
+
+    if (copy >= state->wsize) {
+        memcpy(state->window, end - state->wsize, state->wsize);
+        state->wnext = 0;
+        state->whave = state->wsize;
+    }
+    else {
+        dist = state->wsize - state->wnext;
+        if (dist > copy) dist = copy;
+        memcpy(state->window + state->wnext, end - copy, dist);
+        copy -= dist;
+        if (copy) {
+            memcpy(state->window, end - copy, copy);
+            state->wnext = copy;
+            state->whave = state->wsize;
+        }
+        else {
+            state->wnext += dist;
+            if (state->wnext == state->wsize) state->wnext = 0;
+            if (state->whave < state->wsize) state->whave += dist;
+        }
+    }
+    return 0;
+}
+# 590 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+int inflate(z_streamp strm, int flush) {
+    struct inflate_state *state;
+    const unsigned char *next;
+    unsigned char *put;
+    unsigned have, left;
+    unsigned long hold;
+    unsigned bits;
+    unsigned in, out;
+    unsigned copy;
+    unsigned char *from;
+    code here;
+    code last;
+    unsigned len;
+    int ret;
+
+
+
+    static const unsigned short order[19] =
+        {16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15};
+
+    if (inflateStateCheck(strm) || strm->next_out == 0 ||
+        (strm->next_in == 0 && strm->avail_in != 0))
+        return (-2);
+
+    state = (struct inflate_state *)strm->state;
+    if (state->mode == TYPE) state->mode = TYPEDO;
+    do { put = strm->next_out; left = strm->avail_out; next = strm->next_in; have = strm->avail_in; hold = state->hold; bits = state->bits; } while (0);
+    in = have;
+    out = left;
+    ret = 0;
+    for (;;)
+        switch (state->mode) {
+        case HEAD:
+            if (state->wrap == 0) {
+                state->mode = TYPEDO;
+                break;
+            }
+            do { while (bits < (unsigned)(16)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+# 642 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+            if (
+
+                ((((unsigned)hold & ((1U << (8)) - 1)) << 8) + (hold >> 8)) % 31) {
+                strm->msg = (char *)"incorrect header check";
+                state->mode = BAD;
+                break;
+            }
+            if (((unsigned)hold & ((1U << (4)) - 1)) != 8) {
+                strm->msg = (char *)"unknown compression method";
+                state->mode = BAD;
+                break;
+            }
+            do { hold >>= (4); bits -= (unsigned)(4); } while (0);
+            len = ((unsigned)hold & ((1U << (4)) - 1)) + 8;
+            if (state->wbits == 0)
+                state->wbits = len;
+            if (len > 15 || len > state->wbits) {
+                strm->msg = (char *)"invalid window size";
+                state->mode = BAD;
+                break;
+            }
+            state->dmax = 1U << len;
+            state->flags = 0;
+            ;
+            strm->adler = state->check = adler32(0L, 0, 0);
+            state->mode = hold & 0x200 ? DICTID : TYPE;
+            do { hold = 0; bits = 0; } while (0);
+            break;
+# 810 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+        case DICTID:
+            do { while (bits < (unsigned)(32)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+            strm->adler = state->check = ((((hold) >> 24) & 0xff) + (((hold) >> 8) & 0xff00) + (((hold) & 0xff00) << 8) + (((hold) & 0xff) << 24));
+            do { hold = 0; bits = 0; } while (0);
+            state->mode = DICT;
+
+        case DICT:
+            if (state->havedict == 0) {
+                do { strm->next_out = put; strm->avail_out = left; strm->next_in = next; strm->avail_in = have; state->hold = hold; state->bits = bits; } while (0);
+                return 2;
+            }
+            strm->adler = state->check = adler32(0L, 0, 0);
+            state->mode = TYPE;
+
+        case TYPE:
+            if (flush == 5 || flush == 6) goto inf_leave;
+
+        case TYPEDO:
+            if (state->last) {
+                do { hold >>= bits & 7; bits -= bits & 7; } while (0);
+                state->mode = CHECK;
+                break;
+            }
+            do { while (bits < (unsigned)(3)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+            state->last = ((unsigned)hold & ((1U << (1)) - 1));
+            do { hold >>= (1); bits -= (unsigned)(1); } while (0);
+            switch (((unsigned)hold & ((1U << (2)) - 1))) {
+            case 0:
+               
+                                                      ;
+                state->mode = STORED;
+                break;
+            case 1:
+                fixedtables(state);
+               
+                                                      ;
+                state->mode = LEN_;
+                if (flush == 6) {
+                    do { hold >>= (2); bits -= (unsigned)(2); } while (0);
+                    goto inf_leave;
+                }
+                break;
+            case 2:
+               
+                                                      ;
+                state->mode = TABLE;
+                break;
+            case 3:
+                strm->msg = (char *)"invalid block type";
+                state->mode = BAD;
+            }
+            do { hold >>= (2); bits -= (unsigned)(2); } while (0);
+            break;
+        case STORED:
+            do { hold >>= bits & 7; bits -= bits & 7; } while (0);
+            do { while (bits < (unsigned)(32)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+            if ((hold & 0xffff) != ((hold >> 16) ^ 0xffff)) {
+                strm->msg = (char *)"invalid stored block lengths";
+                state->mode = BAD;
+                break;
+            }
+            state->length = (unsigned)hold & 0xffff;
+           
+                                   ;
+            do { hold = 0; bits = 0; } while (0);
+            state->mode = COPY_;
+            if (flush == 6) goto inf_leave;
+
+        case COPY_:
+            state->mode = COPY;
+
+        case COPY:
+            copy = state->length;
+            if (copy) {
+                if (copy > have) copy = have;
+                if (copy > left) copy = left;
+                if (copy == 0) goto inf_leave;
+                memcpy(put, next, copy);
+                have -= copy;
+                next += copy;
+                left -= copy;
+                put += copy;
+                state->length -= copy;
+                break;
+            }
+            ;
+            state->mode = TYPE;
+            break;
+        case TABLE:
+            do { while (bits < (unsigned)(14)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+            state->nlen = ((unsigned)hold & ((1U << (5)) - 1)) + 257;
+            do { hold >>= (5); bits -= (unsigned)(5); } while (0);
+            state->ndist = ((unsigned)hold & ((1U << (5)) - 1)) + 1;
+            do { hold >>= (5); bits -= (unsigned)(5); } while (0);
+            state->ncode = ((unsigned)hold & ((1U << (4)) - 1)) + 4;
+            do { hold >>= (4); bits -= (unsigned)(4); } while (0);
+
+            if (state->nlen > 286 || state->ndist > 30) {
+                strm->msg = (char *)"too many length or distance symbols";
+                state->mode = BAD;
+                break;
+            }
+
+            ;
+            state->have = 0;
+            state->mode = LENLENS;
+
+        case LENLENS:
+            while (state->have < state->ncode) {
+                do { while (bits < (unsigned)(3)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+                state->lens[order[state->have++]] = (unsigned short)((unsigned)hold & ((1U << (3)) - 1));
+                do { hold >>= (3); bits -= (unsigned)(3); } while (0);
+            }
+            while (state->have < 19)
+                state->lens[order[state->have++]] = 0;
+            state->next = state->codes;
+            state->lencode = (const code *)(state->next);
+            state->lenbits = 7;
+            ret = inflate_table(CODES, state->lens, 19, &(state->next),
+                                &(state->lenbits), state->work);
+            if (ret) {
+                strm->msg = (char *)"invalid code lengths set";
+                state->mode = BAD;
+                break;
+            }
+            ;
+            state->have = 0;
+            state->mode = CODELENS;
+
+        case CODELENS:
+            while (state->have < state->nlen + state->ndist) {
+                for (;;) {
+                    here = state->lencode[((unsigned)hold & ((1U << (state->lenbits)) - 1))];
+                    if ((unsigned)(here.bits) <= bits) break;
+                    do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0);
+                }
+                if (here.val < 16) {
+                    do { hold >>= (here.bits); bits -= (unsigned)(here.bits); } while (0);
+                    state->lens[state->have++] = here.val;
+                }
+                else {
+                    if (here.val == 16) {
+                        do { while (bits < (unsigned)(here.bits + 2)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+                        do { hold >>= (here.bits); bits -= (unsigned)(here.bits); } while (0);
+                        if (state->have == 0) {
+                            strm->msg = (char *)"invalid bit length repeat";
+                            state->mode = BAD;
+                            break;
+                        }
+                        len = state->lens[state->have - 1];
+                        copy = 3 + ((unsigned)hold & ((1U << (2)) - 1));
+                        do { hold >>= (2); bits -= (unsigned)(2); } while (0);
+                    }
+                    else if (here.val == 17) {
+                        do { while (bits < (unsigned)(here.bits + 3)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+                        do { hold >>= (here.bits); bits -= (unsigned)(here.bits); } while (0);
+                        len = 0;
+                        copy = 3 + ((unsigned)hold & ((1U << (3)) - 1));
+                        do { hold >>= (3); bits -= (unsigned)(3); } while (0);
+                    }
+                    else {
+                        do { while (bits < (unsigned)(here.bits + 7)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+                        do { hold >>= (here.bits); bits -= (unsigned)(here.bits); } while (0);
+                        len = 0;
+                        copy = 11 + ((unsigned)hold & ((1U << (7)) - 1));
+                        do { hold >>= (7); bits -= (unsigned)(7); } while (0);
+                    }
+                    if (state->have + copy > state->nlen + state->ndist) {
+                        strm->msg = (char *)"invalid bit length repeat";
+                        state->mode = BAD;
+                        break;
+                    }
+                    while (copy--)
+                        state->lens[state->have++] = (unsigned short)len;
+                }
+            }
+
+
+            if (state->mode == BAD) break;
+
+
+            if (state->lens[256] == 0) {
+                strm->msg = (char *)"invalid code -- missing end-of-block";
+                state->mode = BAD;
+                break;
+            }
+
+
+
+
+            state->next = state->codes;
+            state->lencode = (const code *)(state->next);
+            state->lenbits = 9;
+            ret = inflate_table(LENS, state->lens, state->nlen, &(state->next),
+                                &(state->lenbits), state->work);
+            if (ret) {
+                strm->msg = (char *)"invalid literal/lengths set";
+                state->mode = BAD;
+                break;
+            }
+            state->distcode = (const code *)(state->next);
+            state->distbits = 6;
+            ret = inflate_table(DISTS, state->lens + state->nlen, state->ndist,
+                            &(state->next), &(state->distbits), state->work);
+            if (ret) {
+                strm->msg = (char *)"invalid distances set";
+                state->mode = BAD;
+                break;
+            }
+            ;
+            state->mode = LEN_;
+            if (flush == 6) goto inf_leave;
+
+        case LEN_:
+            state->mode = LEN;
+
+        case LEN:
+            if (have >= 6 && left >= 258) {
+                do { strm->next_out = put; strm->avail_out = left; strm->next_in = next; strm->avail_in = have; state->hold = hold; state->bits = bits; } while (0);
+                inflate_fast(strm, out);
+                do { put = strm->next_out; left = strm->avail_out; next = strm->next_in; have = strm->avail_in; hold = state->hold; bits = state->bits; } while (0);
+                if (state->mode == TYPE)
+                    state->back = -1;
+                break;
+            }
+            state->back = 0;
+            for (;;) {
+                here = state->lencode[((unsigned)hold & ((1U << (state->lenbits)) - 1))];
+                if ((unsigned)(here.bits) <= bits) break;
+                do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0);
+            }
+            if (here.op && (here.op & 0xf0) == 0) {
+                last = here;
+                for (;;) {
+                    here = state->lencode[last.val +
+                            (((unsigned)hold & ((1U << (last.bits + last.op)) - 1)) >> last.bits)];
+                    if ((unsigned)(last.bits + here.bits) <= bits) break;
+                    do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0);
+                }
+                do { hold >>= (last.bits); bits -= (unsigned)(last.bits); } while (0);
+                state->back += last.bits;
+            }
+            do { hold >>= (here.bits); bits -= (unsigned)(here.bits); } while (0);
+            state->back += here.bits;
+            state->length = (unsigned)here.val;
+            if ((int)(here.op) == 0) {
+               
+
+                                                                       ;
+                state->mode = LIT;
+                break;
+            }
+            if (here.op & 32) {
+                ;
+                state->back = -1;
+                state->mode = TYPE;
+                break;
+            }
+            if (here.op & 64) {
+                strm->msg = (char *)"invalid literal/length code";
+                state->mode = BAD;
+                break;
+            }
+            state->extra = (unsigned)(here.op) & 15;
+            state->mode = LENEXT;
+
+        case LENEXT:
+            if (state->extra) {
+                do { while (bits < (unsigned)(state->extra)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+                state->length += ((unsigned)hold & ((1U << (state->extra)) - 1));
+                do { hold >>= (state->extra); bits -= (unsigned)(state->extra); } while (0);
+                state->back += state->extra;
+            }
+            ;
+            state->was = state->length;
+            state->mode = DIST;
+
+        case DIST:
+            for (;;) {
+                here = state->distcode[((unsigned)hold & ((1U << (state->distbits)) - 1))];
+                if ((unsigned)(here.bits) <= bits) break;
+                do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0);
+            }
+            if ((here.op & 0xf0) == 0) {
+                last = here;
+                for (;;) {
+                    here = state->distcode[last.val +
+                            (((unsigned)hold & ((1U << (last.bits + last.op)) - 1)) >> last.bits)];
+                    if ((unsigned)(last.bits + here.bits) <= bits) break;
+                    do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0);
+                }
+                do { hold >>= (last.bits); bits -= (unsigned)(last.bits); } while (0);
+                state->back += last.bits;
+            }
+            do { hold >>= (here.bits); bits -= (unsigned)(here.bits); } while (0);
+            state->back += here.bits;
+            if (here.op & 64) {
+                strm->msg = (char *)"invalid distance code";
+                state->mode = BAD;
+                break;
+            }
+            state->offset = (unsigned)here.val;
+            state->extra = (unsigned)(here.op) & 15;
+            state->mode = DISTEXT;
+
+        case DISTEXT:
+            if (state->extra) {
+                do { while (bits < (unsigned)(state->extra)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+                state->offset += ((unsigned)hold & ((1U << (state->extra)) - 1));
+                do { hold >>= (state->extra); bits -= (unsigned)(state->extra); } while (0);
+                state->back += state->extra;
+            }
+
+
+
+
+
+
+
+            ;
+            state->mode = MATCH;
+
+        case MATCH:
+            if (left == 0) goto inf_leave;
+            copy = out - left;
+            if (state->offset > copy) {
+                copy = state->offset - copy;
+                if (copy > state->whave) {
+                    if (state->sane) {
+                        strm->msg = (char *)"invalid distance too far back";
+                        state->mode = BAD;
+                        break;
+                    }
+# 1156 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+                }
+                if (copy > state->wnext) {
+                    copy -= state->wnext;
+                    from = state->window + (state->wsize - copy);
+                }
+                else
+                    from = state->window + (state->wnext - copy);
+                if (copy > state->length) copy = state->length;
+            }
+            else {
+                from = put - state->offset;
+                copy = state->length;
+            }
+            if (copy > left) copy = left;
+            left -= copy;
+            state->length -= copy;
+            do {
+                *put++ = *from++;
+            } while (--copy);
+            if (state->length == 0) state->mode = LEN;
+            break;
+        case LIT:
+            if (left == 0) goto inf_leave;
+            *put++ = (unsigned char)(state->length);
+            left--;
+            state->mode = LEN;
+            break;
+        case CHECK:
+            if (state->wrap) {
+                do { while (bits < (unsigned)(32)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+                out -= left;
+                strm->total_out += out;
+                state->total += out;
+                if ((state->wrap & 4) && out)
+                    strm->adler = state->check =
+                        adler32(state->check, put - out, out);
+                out = left;
+                if ((state->wrap & 4) && (
+
+
+
+                     ((((hold) >> 24) & 0xff) + (((hold) >> 8) & 0xff00) + (((hold) & 0xff00) << 8) + (((hold) & 0xff) << 24))) != state->check) {
+                    strm->msg = (char *)"incorrect data check";
+                    state->mode = BAD;
+                    break;
+                }
+                do { hold = 0; bits = 0; } while (0);
+                ;
+            }
+# 1220 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+            state->mode = DONE;
+
+        case DONE:
+            ret = 1;
+            goto inf_leave;
+        case BAD:
+            ret = (-3);
+            goto inf_leave;
+        case MEM:
+            return (-4);
+        case SYNC:
+
+        default:
+            return (-2);
+        }
+
+
+
+
+
+
+
+  inf_leave:
+    do { strm->next_out = put; strm->avail_out = left; strm->next_in = next; strm->avail_in = have; state->hold = hold; state->bits = bits; } while (0);
+    if (state->wsize || (out != strm->avail_out && state->mode < BAD &&
+            (state->mode < CHECK || flush != 4)))
+        if (updatewindow(strm, strm->next_out, out - strm->avail_out)) {
+            state->mode = MEM;
+            return (-4);
+        }
+    in -= strm->avail_in;
+    out -= strm->avail_out;
+    strm->total_in += in;
+    strm->total_out += out;
+    state->total += out;
+    if ((state->wrap & 4) && out)
+        strm->adler = state->check =
+            adler32(state->check, strm->next_out - out, out);
+    strm->data_type = (int)state->bits + (state->last ? 64 : 0) +
+                      (state->mode == TYPE ? 128 : 0) +
+                      (state->mode == LEN_ || state->mode == COPY_ ? 256 : 0);
+    if (((in == 0 && out == 0) || flush == 4) && ret == 0)
+        ret = (-5);
+    return ret;
+}
+
+int inflateEnd(z_streamp strm) {
+    struct inflate_state *state;
+    if (inflateStateCheck(strm))
+        return (-2);
+    state = (struct inflate_state *)strm->state;
+    if (state->window != 0) (*((strm)->zfree))((strm)->opaque, (voidpf)(state->window));
+    (*((strm)->zfree))((strm)->opaque, (voidpf)(strm->state));
+    strm->state = 0;
+    ;
+    return 0;
+}
+
+int inflateGetDictionary(z_streamp strm, Bytef *dictionary,
+                                 uInt *dictLength) {
+    struct inflate_state *state;
+
+
+    if (inflateStateCheck(strm)) return (-2);
+    state = (struct inflate_state *)strm->state;
+
+
+    if (state->whave && dictionary != 0) {
+        memcpy(dictionary, state->window + state->wnext,
+                state->whave - state->wnext);
+        memcpy(dictionary + state->whave - state->wnext,
+                state->window, state->wnext);
+    }
+    if (dictLength != 0)
+        *dictLength = state->whave;
+    return 0;
+}
+
+int inflateSetDictionary(z_streamp strm, const Bytef *dictionary,
+                                 uInt dictLength) {
+    struct inflate_state *state;
+    unsigned long dictid;
+    int ret;
+
+
+    if (inflateStateCheck(strm)) return (-2);
+    state = (struct inflate_state *)strm->state;
+    if (state->wrap != 0 && state->mode != DICT)
+        return (-2);
+
+
+    if (state->mode == DICT) {
+        dictid = adler32(0L, 0, 0);
+        dictid = adler32(dictid, dictionary, dictLength);
+        if (dictid != state->check)
+            return (-3);
+    }
+
+
+
+    ret = updatewindow(strm, dictionary + dictLength, dictLength);
+    if (ret) {
+        state->mode = MEM;
+        return (-4);
+    }
+    state->havedict = 1;
+    ;
+    return 0;
+}
+
+int inflateGetHeader(z_streamp strm, gz_headerp head) {
+    struct inflate_state *state;
+
+
+    if (inflateStateCheck(strm)) return (-2);
+    state = (struct inflate_state *)strm->state;
+    if ((state->wrap & 2) == 0) return (-2);
+
+
+    state->head = head;
+    head->done = 0;
+    return 0;
+}
+# 1355 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+static unsigned syncsearch(unsigned *have, const unsigned char *buf,
+                          unsigned len) {
+    unsigned got;
+    unsigned next;
+
+    got = *have;
+    next = 0;
+    while (next < len && got < 4) {
+        if ((int)(buf[next]) == (got < 2 ? 0 : 0xff))
+            got++;
+        else if (buf[next])
+            got = 0;
+        else
+            got = 4 - got;
+        next++;
+    }
+    *have = got;
+    return next;
+}
+
+int inflateSync(z_streamp strm) {
+    unsigned len;
+    int flags;
+    unsigned long in, out;
+    unsigned char buf[4];
+    struct inflate_state *state;
+
+
+    if (inflateStateCheck(strm)) return (-2);
+    state = (struct inflate_state *)strm->state;
+    if (strm->avail_in == 0 && state->bits < 8) return (-5);
+
+
+    if (state->mode != SYNC) {
+        state->mode = SYNC;
+        state->hold <<= state->bits & 7;
+        state->bits -= state->bits & 7;
+        len = 0;
+        while (state->bits >= 8) {
+            buf[len++] = (unsigned char)(state->hold);
+            state->hold >>= 8;
+            state->bits -= 8;
+        }
+        state->have = 0;
+        syncsearch(&(state->have), buf, len);
+    }
+
+
+    len = syncsearch(&(state->have), strm->next_in, strm->avail_in);
+    strm->avail_in -= len;
+    strm->next_in += len;
+    strm->total_in += len;
+
+
+    if (state->have != 4) return (-3);
+    if (state->flags == -1)
+        state->wrap = 0;
+    else
+        state->wrap &= ~4;
+    flags = state->flags;
+    in = strm->total_in; out = strm->total_out;
+    inflateReset(strm);
+    strm->total_in = in; strm->total_out = out;
+    state->flags = flags;
+    state->mode = TYPE;
+    return 0;
+}
+# 1431 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+int inflateSyncPoint(z_streamp strm) {
+    struct inflate_state *state;
+
+    if (inflateStateCheck(strm)) return (-2);
+    state = (struct inflate_state *)strm->state;
+    return state->mode == STORED && state->bits == 0;
+}
+
+int inflateCopy(z_streamp dest, z_streamp source) {
+    struct inflate_state *state;
+    struct inflate_state *copy;
+    unsigned char *window;
+    unsigned wsize;
+
+
+    if (inflateStateCheck(source) || dest == 0)
+        return (-2);
+    state = (struct inflate_state *)source->state;
+
+
+    copy = (struct inflate_state *)
+           (*((source)->zalloc))((source)->opaque, (1), (sizeof(struct inflate_state)));
+    if (copy == 0) return (-4);
+    window = 0;
+    if (state->window != 0) {
+        window = (unsigned char *)
+                 (*((source)->zalloc))((source)->opaque, (1U << state->wbits), (sizeof(unsigned char)));
+        if (window == 0) {
+            (*((source)->zfree))((source)->opaque, (voidpf)(copy));
+            return (-4);
+        }
+    }
+
+
+    memcpy((voidpf)dest, (voidpf)source, sizeof(z_stream));
+    memcpy((voidpf)copy, (voidpf)state, sizeof(struct inflate_state));
+    copy->strm = dest;
+    if (state->lencode >= state->codes &&
+        state->lencode <= state->codes + (852 +592) - 1) {
+        copy->lencode = copy->codes + (state->lencode - state->codes);
+        copy->distcode = copy->codes + (state->distcode - state->codes);
+    }
+    copy->next = copy->codes + (state->next - state->codes);
+    if (window != 0) {
+        wsize = 1U << state->wbits;
+        memcpy(window, state->window, wsize);
+    }
+    copy->window = window;
+    dest->state = (struct internal_state *)copy;
+    return 0;
+}
+
+int inflateUndermine(z_streamp strm, int subvert) {
+    struct inflate_state *state;
+
+    if (inflateStateCheck(strm)) return (-2);
+    state = (struct inflate_state *)strm->state;
+
+
+
+
+    (void)subvert;
+    state->sane = 1;
+    return (-3);
+
+}
+
+int inflateValidate(z_streamp strm, int check) {
+    struct inflate_state *state;
+
+    if (inflateStateCheck(strm)) return (-2);
+    state = (struct inflate_state *)strm->state;
+    if (check && state->wrap)
+        state->wrap |= 4;
+    else
+        state->wrap &= ~4;
+    return 0;
+}
+
+long inflateMark(z_streamp strm) {
+    struct inflate_state *state;
+
+    if (inflateStateCheck(strm))
+        return -(1L << 16);
+    state = (struct inflate_state *)strm->state;
+    return (long)(((unsigned long)((long)state->back)) << 16) +
+        (state->mode == COPY ? state->length :
+            (state->mode == MATCH ? state->was - state->length : 0));
+}
+
+unsigned long inflateCodesUsed(z_streamp strm) {
+    struct inflate_state *state;
+    if (inflateStateCheck(strm)) return (unsigned long)-1;
+    state = (struct inflate_state *)strm->state;
+    return (unsigned long)(state->next - state->codes);
+}
+# 0 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+# 83 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h" 1
+# 22 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h"
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h" 1
+# 56 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h" 1
+# 254 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h"
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/stddef.h" 1
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/_fake_defines.h" 1
+# 2 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/stddef.h" 2
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/_fake_typedefs.h" 1
+
+
+
+typedef int START_DELIMETER;
+typedef unsigned chtype;
+typedef chtype attr_t;
+typedef int socklen_t;
+typedef int size_t;
+typedef int __builtin_va_list;
+typedef int __gnuc_va_list;
+typedef int va_list;
+typedef int __int8_t;
+typedef int __uint8_t;
+typedef int __int16_t;
+typedef int __uint16_t;
+typedef int __int_least16_t;
+typedef int __uint_least16_t;
+typedef int __int32_t;
+typedef int __uint32_t;
+typedef int __int64_t;
+typedef int __uint64_t;
+typedef int __int_least32_t;
+typedef int __uint_least32_t;
+typedef int __s8;
+typedef int __u8;
+typedef int __s16;
+typedef int __u16;
+typedef int __s32;
+typedef int __u32;
+typedef int __s64;
+typedef int __u64;
+typedef int _LOCK_T;
+typedef int _LOCK_RECURSIVE_T;
+typedef int _off_t;
+typedef int __dev_t;
+typedef int __uid_t;
+typedef int __gid_t;
+typedef int _off64_t;
+typedef int _fpos_t;
+typedef int _ssize_t;
+typedef int wint_t;
+typedef int _mbstate_t;
+typedef int _flock_t;
+typedef int _iconv_t;
+typedef int __ULong;
+typedef int __FILE;
+typedef int ptrdiff_t;
+typedef int wchar_t;
+typedef int char16_t;
+typedef int char32_t;
+typedef int __off_t;
+typedef int __pid_t;
+typedef int __loff_t;
+typedef int u_char;
+typedef int u_short;
+typedef int u_int;
+typedef int u_long;
+typedef int ushort;
+typedef int uint;
+typedef int clock_t;
+typedef int time_t;
+typedef int daddr_t;
+typedef int caddr_t;
+typedef int ino_t;
+typedef int off_t;
+typedef int dev_t;
+typedef int uid_t;
+typedef int gid_t;
+typedef int pid_t;
+typedef int key_t;
+typedef int ssize_t;
+typedef int mode_t;
+typedef int nlink_t;
+typedef int fd_mask;
+typedef int _types_fd_set;
+typedef int clockid_t;
+typedef int timer_t;
+typedef int useconds_t;
+typedef int suseconds_t;
+typedef int FILE;
+typedef int fpos_t;
+typedef int cookie_read_function_t;
+typedef int cookie_write_function_t;
+typedef int cookie_seek_function_t;
+typedef int cookie_close_function_t;
+typedef int cookie_io_functions_t;
+typedef int div_t;
+typedef int ldiv_t;
+typedef int lldiv_t;
+typedef int sigset_t;
+typedef int __sigset_t;
+typedef int _sig_func_ptr;
+typedef int sig_atomic_t;
+typedef int __tzrule_type;
+typedef int __tzinfo_type;
+typedef int mbstate_t;
+typedef int sem_t;
+typedef int pthread_t;
+typedef int pthread_attr_t;
+typedef int pthread_mutex_t;
+typedef int pthread_mutexattr_t;
+typedef int pthread_cond_t;
+typedef int pthread_condattr_t;
+typedef int pthread_key_t;
+typedef int pthread_once_t;
+typedef int pthread_rwlock_t;
+typedef int pthread_rwlockattr_t;
+typedef int pthread_spinlock_t;
+typedef int pthread_barrier_t;
+typedef int pthread_barrierattr_t;
+typedef int jmp_buf;
+typedef int rlim_t;
+typedef int sa_family_t;
+typedef int sigjmp_buf;
+typedef int stack_t;
+typedef int siginfo_t;
+typedef int z_stream;
+
+
+typedef int int8_t;
+typedef int uint8_t;
+typedef int int16_t;
+typedef int uint16_t;
+typedef int int32_t;
+typedef int uint32_t;
+typedef int int64_t;
+typedef int uint64_t;
+
+
+typedef int int_least8_t;
+typedef int uint_least8_t;
+typedef int int_least16_t;
+typedef int uint_least16_t;
+typedef int int_least32_t;
+typedef int uint_least32_t;
+typedef int int_least64_t;
+typedef int uint_least64_t;
+
+
+typedef int int_fast8_t;
+typedef int uint_fast8_t;
+typedef int int_fast16_t;
+typedef int uint_fast16_t;
+typedef int int_fast32_t;
+typedef int uint_fast32_t;
+typedef int int_fast64_t;
+typedef int uint_fast64_t;
+
+
+typedef int intptr_t;
+typedef int uintptr_t;
+
+
+typedef int intmax_t;
+typedef int uintmax_t;
+
+
+typedef _Bool bool;
+
+
+typedef void* MirEGLNativeWindowType;
+typedef void* MirEGLNativeDisplayType;
+typedef struct MirConnection MirConnection;
+typedef struct MirSurface MirSurface;
+typedef struct MirSurfaceSpec MirSurfaceSpec;
+typedef struct MirScreencast MirScreencast;
+typedef struct MirPromptSession MirPromptSession;
+typedef struct MirBufferStream MirBufferStream;
+typedef struct MirPersistentId MirPersistentId;
+typedef struct MirBlob MirBlob;
+typedef struct MirDisplayConfig MirDisplayConfig;
+
+
+typedef struct xcb_connection_t xcb_connection_t;
+typedef uint32_t xcb_window_t;
+typedef uint32_t xcb_visualid_t;
+
+
+typedef _Atomic(_Bool) atomic_bool;
+typedef _Atomic(char) atomic_char;
+typedef _Atomic(signed char) atomic_schar;
+typedef _Atomic(unsigned char) atomic_uchar;
+typedef _Atomic(short) atomic_short;
+typedef _Atomic(unsigned short) atomic_ushort;
+typedef _Atomic(int) atomic_int;
+typedef _Atomic(unsigned int) atomic_uint;
+typedef _Atomic(long) atomic_long;
+typedef _Atomic(unsigned long) atomic_ulong;
+typedef _Atomic(long long) atomic_llong;
+typedef _Atomic(unsigned long long) atomic_ullong;
+typedef _Atomic(uint_least16_t) atomic_char16_t;
+typedef _Atomic(uint_least32_t) atomic_char32_t;
+typedef _Atomic(wchar_t) atomic_wchar_t;
+typedef _Atomic(int_least8_t) atomic_int_least8_t;
+typedef _Atomic(uint_least8_t) atomic_uint_least8_t;
+typedef _Atomic(int_least16_t) atomic_int_least16_t;
+typedef _Atomic(uint_least16_t) atomic_uint_least16_t;
+typedef _Atomic(int_least32_t) atomic_int_least32_t;
+typedef _Atomic(uint_least32_t) atomic_uint_least32_t;
+typedef _Atomic(int_least64_t) atomic_int_least64_t;
+typedef _Atomic(uint_least64_t) atomic_uint_least64_t;
+typedef _Atomic(int_fast8_t) atomic_int_fast8_t;
+typedef _Atomic(uint_fast8_t) atomic_uint_fast8_t;
+typedef _Atomic(int_fast16_t) atomic_int_fast16_t;
+typedef _Atomic(uint_fast16_t) atomic_uint_fast16_t;
+typedef _Atomic(int_fast32_t) atomic_int_fast32_t;
+typedef _Atomic(uint_fast32_t) atomic_uint_fast32_t;
+typedef _Atomic(int_fast64_t) atomic_int_fast64_t;
+typedef _Atomic(uint_fast64_t) atomic_uint_fast64_t;
+typedef _Atomic(intptr_t) atomic_intptr_t;
+typedef _Atomic(uintptr_t) atomic_uintptr_t;
+typedef _Atomic(size_t) atomic_size_t;
+typedef _Atomic(ptrdiff_t) atomic_ptrdiff_t;
+typedef _Atomic(intmax_t) atomic_intmax_t;
+typedef _Atomic(uintmax_t) atomic_uintmax_t;
+typedef struct atomic_flag { atomic_bool _Value; } atomic_flag;
+typedef enum memory_order {
+  memory_order_relaxed,
+  memory_order_consume,
+  memory_order_acquire,
+  memory_order_release,
+  memory_order_acq_rel,
+  memory_order_seq_cst
+} memory_order;
+
+typedef struct __locale_struct *__locale_t;
+typedef __locale_t locale_t;
+typedef int END_DELIMETER;
+# 3 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/stddef.h" 2
+# 255 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h" 2
+     typedef size_t z_size_t;
+# 401 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h"
+typedef unsigned char Byte;
+
+typedef unsigned int uInt;
+typedef unsigned long uLong;
+
+
+
+
+
+   typedef Byte Bytef;
+
+typedef char charf;
+typedef int intf;
+typedef uInt uIntf;
+typedef uLong uLongf;
+
+
+   typedef void const *voidpc;
+   typedef void *voidpf;
+   typedef void *voidp;
+
+
+
+
+
+
+
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/limits.h" 1
+# 429 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h" 2
+# 439 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h"
+   typedef unsigned z_crc_t;
+# 454 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h"
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/sys/types.h" 1
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/_fake_defines.h" 1
+# 2 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/sys/types.h" 2
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/_fake_typedefs.h" 1
+# 3 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/sys/types.h" 2
+# 455 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h" 2
+
+
+
+
+
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/stdarg.h" 1
+# 461 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h" 2
+# 492 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h"
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/unistd.h" 1
+# 493 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zconf.h" 2
+# 57 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h" 2
+# 103 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+typedef voidpf (*alloc_func)(voidpf opaque, uInt items, uInt size);
+typedef void (*free_func)(voidpf opaque, voidpf address);
+
+struct internal_state;
+
+typedef struct z_stream_s {
+    const Bytef *next_in;
+    uInt avail_in;
+    uLong total_in;
+
+    Bytef *next_out;
+    uInt avail_out;
+    uLong total_out;
+
+    const char *msg;
+    struct internal_state *state;
+
+    alloc_func zalloc;
+    free_func zfree;
+    voidpf opaque;
+
+    int data_type;
+
+    uLong adler;
+    uLong reserved;
+} z_stream;
+
+typedef z_stream *z_streamp;
+
+
+
+
+
+typedef struct gz_header_s {
+    int text;
+    uLong time;
+    int xflags;
+    int os;
+    Bytef *extra;
+    uInt extra_len;
+    uInt extra_max;
+    Bytef *name;
+    uInt name_max;
+    Bytef *comment;
+    uInt comm_max;
+    int hcrc;
+    int done;
+
+} gz_header;
+
+typedef gz_header *gz_headerp;
+# 242 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern const char * zlibVersion(void);
+# 272 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflate(z_streamp strm, int flush);
+# 385 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflateEnd(z_streamp strm);
+# 423 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflate(z_streamp strm, int flush);
+# 543 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflateEnd(z_streamp strm);
+# 633 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflateSetDictionary(z_streamp strm,
+                                         const Bytef *dictionary,
+                                         uInt dictLength);
+# 677 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflateGetDictionary(z_streamp strm,
+                                         Bytef *dictionary,
+                                         uInt *dictLength);
+# 699 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflateCopy(z_streamp dest,
+                                z_streamp source);
+# 717 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflateReset(z_streamp strm);
+# 728 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflateParams(z_streamp strm,
+                                  int level,
+                                  int strategy);
+# 766 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflateTune(z_streamp strm,
+                                int good_length,
+                                int max_lazy,
+                                int nice_length,
+                                int max_chain);
+# 783 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern uLong deflateBound(z_streamp strm,
+                                   uLong sourceLen);
+# 798 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflatePending(z_streamp strm,
+                                   unsigned *pending,
+                                   int *bits);
+# 813 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflatePrime(z_streamp strm,
+                                 int bits,
+                                 int value);
+# 830 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflateSetHeader(z_streamp strm,
+                                     gz_headerp head);
+# 910 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflateSetDictionary(z_streamp strm,
+                                         const Bytef *dictionary,
+                                         uInt dictLength);
+# 933 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflateGetDictionary(z_streamp strm,
+                                         Bytef *dictionary,
+                                         uInt *dictLength);
+# 948 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflateSync(z_streamp strm);
+# 967 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflateCopy(z_streamp dest,
+                                z_streamp source);
+# 983 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflateReset(z_streamp strm);
+# 994 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflateReset2(z_streamp strm,
+                                  int windowBits);
+# 1008 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflatePrime(z_streamp strm,
+                                 int bits,
+                                 int value);
+# 1029 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern long inflateMark(z_streamp strm);
+# 1057 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflateGetHeader(z_streamp strm,
+                                     gz_headerp head);
+# 1119 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+typedef unsigned (*in_func)(void *,
+                            const unsigned char * *);
+typedef int (*out_func)(void *, unsigned char *, unsigned);
+
+extern int inflateBack(z_streamp strm,
+                                in_func in, void *in_desc,
+                                out_func out, void *out_desc);
+# 1193 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int inflateBackEnd(z_streamp strm);
+
+
+
+
+
+
+
+extern uLong zlibCompileFlags(void);
+# 1254 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int compress(Bytef *dest, uLongf *destLen,
+                             const Bytef *source, uLong sourceLen);
+# 1269 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int compress2(Bytef *dest, uLongf *destLen,
+                              const Bytef *source, uLong sourceLen,
+                              int level);
+# 1285 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern uLong compressBound(uLong sourceLen);
+
+
+
+
+
+
+extern int uncompress(Bytef *dest, uLongf *destLen,
+                               const Bytef *source, uLong sourceLen);
+# 1310 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int uncompress2(Bytef *dest, uLongf *destLen,
+                                const Bytef *source, uLong *sourceLen);
+# 1327 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+typedef struct gzFile_s *gzFile;
+# 1367 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern gzFile gzdopen(int fd, const char *mode);
+# 1390 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzbuffer(gzFile file, unsigned size);
+# 1406 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzsetparams(gzFile file, int level, int strategy);
+# 1417 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzread(gzFile file, voidp buf, unsigned len);
+# 1447 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern z_size_t gzfread(voidp buf, z_size_t size, z_size_t nitems,
+                                 gzFile file);
+# 1473 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzwrite(gzFile file, voidpc buf, unsigned len);
+
+
+
+
+
+extern z_size_t gzfwrite(voidpc buf, z_size_t size,
+                                  z_size_t nitems, gzFile file);
+# 1493 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzprintf(gzFile file, const char *format, ...);
+# 1508 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzputs(gzFile file, const char *s);
+
+
+
+
+
+
+
+extern char * gzgets(gzFile file, char *buf, int len);
+# 1530 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzputc(gzFile file, int c);
+
+
+
+
+
+extern int gzgetc(gzFile file);
+# 1545 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzungetc(int c, gzFile file);
+# 1557 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzflush(gzFile file, int flush);
+# 1592 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzrewind(gzFile file);
+# 1620 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzeof(gzFile file);
+# 1635 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzdirect(gzFile file);
+# 1656 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzclose(gzFile file);
+# 1669 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int gzclose_r(gzFile file);
+extern int gzclose_w(gzFile file);
+# 1681 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern const char * gzerror(gzFile file, int *errnum);
+# 1697 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern void gzclearerr(gzFile file);
+# 1714 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern uLong adler32(uLong adler, const Bytef *buf, uInt len);
+# 1734 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern uLong adler32_z(uLong adler, const Bytef *buf,
+                                z_size_t len);
+# 1752 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern uLong crc32(uLong crc, const Bytef *buf, uInt len);
+# 1770 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern uLong crc32_z(uLong crc, const Bytef *buf,
+                              z_size_t len);
+# 1793 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern uLong crc32_combine_op(uLong crc1, uLong crc2, uLong op);
+# 1806 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern int deflateInit_(z_streamp strm, int level,
+                                 const char *version, int stream_size);
+extern int inflateInit_(z_streamp strm,
+                                 const char *version, int stream_size);
+extern int deflateInit2_(z_streamp strm, int level, int method,
+                                  int windowBits, int memLevel,
+                                  int strategy, const char *version,
+                                  int stream_size);
+extern int inflateInit2_(z_streamp strm, int windowBits,
+                                  const char *version, int stream_size);
+extern int inflateBackInit_(z_streamp strm, int windowBits,
+                                     unsigned char *window,
+                                     const char *version,
+                                     int stream_size);
+# 1859 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+struct gzFile_s {
+    unsigned have;
+    unsigned char *next;
+    off_t pos;
+};
+extern int gzgetc_(gzFile file);
+# 1918 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+   extern gzFile gzopen(const char *, const char *);
+   extern off_t gzseek(gzFile, off_t, int);
+   extern off_t gztell(gzFile);
+   extern off_t gzoffset(gzFile);
+   extern uLong adler32_combine(uLong, uLong, off_t);
+   extern uLong crc32_combine(uLong, uLong, off_t);
+   extern uLong crc32_combine_gen(off_t);
+# 1936 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zlib.h"
+extern const char * zError(int);
+extern int inflateSyncPoint(z_streamp);
+extern const z_crc_t * get_crc_table(void);
+extern int inflateUndermine(z_streamp, int);
+extern int inflateValidate(z_streamp, int);
+extern unsigned long inflateCodesUsed(z_streamp);
+extern int inflateResetKeep(z_streamp);
+extern int deflateResetKeep(z_streamp);
+
+
+
+
+
+
+extern int gzvprintf(gzFile file,
+                                           const char *format,
+                                           va_list va);
+# 23 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h" 2
+
+
+
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/stddef.h" 1
+# 27 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h" 2
+
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/string.h" 1
+# 29 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h" 2
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/stdlib.h" 1
+# 30 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h" 2
+# 39 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h"
+typedef unsigned char uch;
+typedef uch uchf;
+typedef unsigned short ush;
+typedef ush ushf;
+typedef unsigned long ulg;
+
+
+# 1 "/home/enumclass/Documents/C2RustTranslation/pipeline/preprocess/fake_libc_include/limits.h" 1
+# 47 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h" 2
+# 56 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h"
+extern const char * const z_errmsg[10];
+# 194 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h"
+    extern uLong adler32_combine64(uLong, uLong, off_t);
+    extern uLong crc32_combine64(uLong, uLong, off_t);
+    extern uLong crc32_combine_gen64(off_t);
+# 261 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/zutil.h"
+   voidpf zcalloc(voidpf opaque, unsigned items,
+                                unsigned size);
+   void zcfree(voidpf opaque, voidpf ptr);
+# 84 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c" 2
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inftrees.h" 1
+# 24 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inftrees.h"
+typedef struct {
+    unsigned char op;
+    unsigned char bits;
+    unsigned short val;
+} code;
+# 54 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inftrees.h"
+typedef enum {
+    CODES,
+    LENS,
+    DISTS
+} codetype;
+
+int inflate_table(codetype type, unsigned short *lens,
+                                unsigned codes, code * *table,
+                                unsigned *bits, unsigned short *work);
+# 85 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c" 2
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.h" 1
+# 20 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.h"
+typedef enum {
+    HEAD = 16180,
+    FLAGS,
+    TIME,
+    OS,
+    EXLEN,
+    EXTRA,
+    NAME,
+    COMMENT,
+    HCRC,
+    DICTID,
+    DICT,
+        TYPE,
+        TYPEDO,
+        STORED,
+        COPY_,
+        COPY,
+        TABLE,
+        LENLENS,
+        CODELENS,
+            LEN_,
+            LEN,
+            LENEXT,
+            DIST,
+            DISTEXT,
+            MATCH,
+            LIT,
+    CHECK,
+    LENGTH,
+    DONE,
+    BAD,
+    MEM,
+    SYNC
+} inflate_mode;
+# 82 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.h"
+struct inflate_state {
+    z_streamp strm;
+    inflate_mode mode;
+    int last;
+    int wrap;
+
+    int havedict;
+    int flags;
+
+    unsigned dmax;
+    unsigned long check;
+    unsigned long total;
+    gz_headerp head;
+
+    unsigned wbits;
+    unsigned wsize;
+    unsigned whave;
+    unsigned wnext;
+    unsigned char *window;
+
+    unsigned long hold;
+    unsigned bits;
+
+    unsigned length;
+    unsigned offset;
+
+    unsigned extra;
+
+    code const *lencode;
+    code const *distcode;
+    unsigned lenbits;
+    unsigned distbits;
+
+    unsigned ncode;
+    unsigned nlen;
+    unsigned ndist;
+    unsigned have;
+    code *next;
+    unsigned short lens[320];
+    unsigned short work[288];
+    code codes[(852 +592)];
+    int sane;
+    int back;
+    unsigned was;
+};
+# 86 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c" 2
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inffast.h" 1
+# 11 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inffast.h"
+void inflate_fast(z_streamp strm, unsigned start);
+# 87 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c" 2
+
+
+
+
+
+
+
+static int inflateStateCheck(z_streamp strm) {
+    struct inflate_state *state;
+    if (strm == 0 ||
+        strm->zalloc == (alloc_func)0 || strm->zfree == (free_func)0)
+        return 1;
+    state = (struct inflate_state *)strm->state;
+    if (state == 0 || state->strm != strm ||
+        state->mode < HEAD || state->mode > SYNC)
+        return 1;
+    return 0;
+}
+
+int inflateResetKeep(z_streamp strm) {
+    struct inflate_state *state;
+
+    if (inflateStateCheck(strm)) return (-2);
+    state = (struct inflate_state *)strm->state;
+    strm->total_in = strm->total_out = state->total = 0;
+    strm->msg = 0;
+    if (state->wrap)
+        strm->adler = state->wrap & 1;
+    state->mode = HEAD;
+    state->last = 0;
+    state->havedict = 0;
+    state->flags = -1;
+    state->dmax = 32768U;
+    state->head = 0;
+    state->hold = 0;
+    state->bits = 0;
+    state->lencode = state->distcode = state->next = state->codes;
+    state->sane = 1;
+    state->back = -1;
+    ;
+    return 0;
+}
+
+int inflateReset(z_streamp strm) {
+    struct inflate_state *state;
+
+    if (inflateStateCheck(strm)) return (-2);
+    state = (struct inflate_state *)strm->state;
+    state->wsize = 0;
+    state->whave = 0;
+    state->wnext = 0;
+    return inflateResetKeep(strm);
+}
+
+int inflateReset2(z_streamp strm, int windowBits) {
+    int wrap;
+    struct inflate_state *state;
+
+
+    if (inflateStateCheck(strm)) return (-2);
+    state = (struct inflate_state *)strm->state;
+
+
+    if (windowBits < 0) {
+        if (windowBits < -15)
+            return (-2);
+        wrap = 0;
+        windowBits = -windowBits;
+    }
+    else {
+        wrap = (windowBits >> 4) + 5;
+
+
+
+
+    }
+
+
+    if (windowBits && (windowBits < 8 || windowBits > 15))
+        return (-2);
+    if (state->window != 0 && state->wbits != (unsigned)windowBits) {
+        (*((strm)->zfree))((strm)->opaque, (voidpf)(state->window));
+        state->window = 0;
+    }
+
+
+    state->wrap = wrap;
+    state->wbits = (unsigned)windowBits;
+    return inflateReset(strm);
+}
+
+int inflateInit2_(z_streamp strm, int windowBits,
+                          const char *version, int stream_size) {
+    int ret;
+    struct inflate_state *state;
+
+    if (version == 0 || version[0] != "1.3-optipng"[0] ||
+        stream_size != (int)(sizeof(z_stream)))
+        return (-6);
+    if (strm == 0) return (-2);
+    strm->msg = 0;
+    if (strm->zalloc == (alloc_func)0) {
+
+
+
+        strm->zalloc = zcalloc;
+        strm->opaque = (voidpf)0;
+
+    }
+    if (strm->zfree == (free_func)0)
+
+
+
+        strm->zfree = zcfree;
+
+    state = (struct inflate_state *)
+            (*((strm)->zalloc))((strm)->opaque, (1), (sizeof(struct inflate_state)));
+    if (state == 0) return (-4);
+    ;
+    strm->state = (struct internal_state *)state;
+    state->strm = strm;
+    state->window = 0;
+    state->mode = HEAD;
+    ret = inflateReset2(strm, windowBits);
+    if (ret != 0) {
+        (*((strm)->zfree))((strm)->opaque, (voidpf)(state));
+        strm->state = 0;
+    }
+    return ret;
+}
+
+int inflateInit_(z_streamp strm, const char *version,
+                         int stream_size) {
+    return inflateInit2_(strm, 15, version, stream_size);
+}
+
+int inflatePrime(z_streamp strm, int bits, int value) {
+    struct inflate_state *state;
+
+    if (inflateStateCheck(strm)) return (-2);
+    if (bits == 0)
+        return 0;
+    state = (struct inflate_state *)strm->state;
+    if (bits < 0) {
+        state->hold = 0;
+        state->bits = 0;
+        return 0;
+    }
+    if (bits > 16 || state->bits + (uInt)bits > 32) return (-2);
+    value &= (1L << bits) - 1;
+    state->hold += (unsigned)value << state->bits;
+    state->bits += (uInt)bits;
+    return 0;
+}
+# 252 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+static void fixedtables(struct inflate_state *state) {
+# 285 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+# 1 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inffixed.h" 1
+# 10 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inffixed.h"
+    static const code lenfix[512] = {
+        {96,7,0},{0,8,80},{0,8,16},{20,8,115},{18,7,31},{0,8,112},{0,8,48},
+        {0,9,192},{16,7,10},{0,8,96},{0,8,32},{0,9,160},{0,8,0},{0,8,128},
+        {0,8,64},{0,9,224},{16,7,6},{0,8,88},{0,8,24},{0,9,144},{19,7,59},
+        {0,8,120},{0,8,56},{0,9,208},{17,7,17},{0,8,104},{0,8,40},{0,9,176},
+        {0,8,8},{0,8,136},{0,8,72},{0,9,240},{16,7,4},{0,8,84},{0,8,20},
+        {21,8,227},{19,7,43},{0,8,116},{0,8,52},{0,9,200},{17,7,13},{0,8,100},
+        {0,8,36},{0,9,168},{0,8,4},{0,8,132},{0,8,68},{0,9,232},{16,7,8},
+        {0,8,92},{0,8,28},{0,9,152},{20,7,83},{0,8,124},{0,8,60},{0,9,216},
+        {18,7,23},{0,8,108},{0,8,44},{0,9,184},{0,8,12},{0,8,140},{0,8,76},
+        {0,9,248},{16,7,3},{0,8,82},{0,8,18},{21,8,163},{19,7,35},{0,8,114},
+        {0,8,50},{0,9,196},{17,7,11},{0,8,98},{0,8,34},{0,9,164},{0,8,2},
+        {0,8,130},{0,8,66},{0,9,228},{16,7,7},{0,8,90},{0,8,26},{0,9,148},
+        {20,7,67},{0,8,122},{0,8,58},{0,9,212},{18,7,19},{0,8,106},{0,8,42},
+        {0,9,180},{0,8,10},{0,8,138},{0,8,74},{0,9,244},{16,7,5},{0,8,86},
+        {0,8,22},{64,8,0},{19,7,51},{0,8,118},{0,8,54},{0,9,204},{17,7,15},
+        {0,8,102},{0,8,38},{0,9,172},{0,8,6},{0,8,134},{0,8,70},{0,9,236},
+        {16,7,9},{0,8,94},{0,8,30},{0,9,156},{20,7,99},{0,8,126},{0,8,62},
+        {0,9,220},{18,7,27},{0,8,110},{0,8,46},{0,9,188},{0,8,14},{0,8,142},
+        {0,8,78},{0,9,252},{96,7,0},{0,8,81},{0,8,17},{21,8,131},{18,7,31},
+        {0,8,113},{0,8,49},{0,9,194},{16,7,10},{0,8,97},{0,8,33},{0,9,162},
+        {0,8,1},{0,8,129},{0,8,65},{0,9,226},{16,7,6},{0,8,89},{0,8,25},
+        {0,9,146},{19,7,59},{0,8,121},{0,8,57},{0,9,210},{17,7,17},{0,8,105},
+        {0,8,41},{0,9,178},{0,8,9},{0,8,137},{0,8,73},{0,9,242},{16,7,4},
+        {0,8,85},{0,8,21},{16,8,258},{19,7,43},{0,8,117},{0,8,53},{0,9,202},
+        {17,7,13},{0,8,101},{0,8,37},{0,9,170},{0,8,5},{0,8,133},{0,8,69},
+        {0,9,234},{16,7,8},{0,8,93},{0,8,29},{0,9,154},{20,7,83},{0,8,125},
+        {0,8,61},{0,9,218},{18,7,23},{0,8,109},{0,8,45},{0,9,186},{0,8,13},
+        {0,8,141},{0,8,77},{0,9,250},{16,7,3},{0,8,83},{0,8,19},{21,8,195},
+        {19,7,35},{0,8,115},{0,8,51},{0,9,198},{17,7,11},{0,8,99},{0,8,35},
+        {0,9,166},{0,8,3},{0,8,131},{0,8,67},{0,9,230},{16,7,7},{0,8,91},
+        {0,8,27},{0,9,150},{20,7,67},{0,8,123},{0,8,59},{0,9,214},{18,7,19},
+        {0,8,107},{0,8,43},{0,9,182},{0,8,11},{0,8,139},{0,8,75},{0,9,246},
+        {16,7,5},{0,8,87},{0,8,23},{64,8,0},{19,7,51},{0,8,119},{0,8,55},
+        {0,9,206},{17,7,15},{0,8,103},{0,8,39},{0,9,174},{0,8,7},{0,8,135},
+        {0,8,71},{0,9,238},{16,7,9},{0,8,95},{0,8,31},{0,9,158},{20,7,99},
+        {0,8,127},{0,8,63},{0,9,222},{18,7,27},{0,8,111},{0,8,47},{0,9,190},
+        {0,8,15},{0,8,143},{0,8,79},{0,9,254},{96,7,0},{0,8,80},{0,8,16},
+        {20,8,115},{18,7,31},{0,8,112},{0,8,48},{0,9,193},{16,7,10},{0,8,96},
+        {0,8,32},{0,9,161},{0,8,0},{0,8,128},{0,8,64},{0,9,225},{16,7,6},
+        {0,8,88},{0,8,24},{0,9,145},{19,7,59},{0,8,120},{0,8,56},{0,9,209},
+        {17,7,17},{0,8,104},{0,8,40},{0,9,177},{0,8,8},{0,8,136},{0,8,72},
+        {0,9,241},{16,7,4},{0,8,84},{0,8,20},{21,8,227},{19,7,43},{0,8,116},
+        {0,8,52},{0,9,201},{17,7,13},{0,8,100},{0,8,36},{0,9,169},{0,8,4},
+        {0,8,132},{0,8,68},{0,9,233},{16,7,8},{0,8,92},{0,8,28},{0,9,153},
+        {20,7,83},{0,8,124},{0,8,60},{0,9,217},{18,7,23},{0,8,108},{0,8,44},
+        {0,9,185},{0,8,12},{0,8,140},{0,8,76},{0,9,249},{16,7,3},{0,8,82},
+        {0,8,18},{21,8,163},{19,7,35},{0,8,114},{0,8,50},{0,9,197},{17,7,11},
+        {0,8,98},{0,8,34},{0,9,165},{0,8,2},{0,8,130},{0,8,66},{0,9,229},
+        {16,7,7},{0,8,90},{0,8,26},{0,9,149},{20,7,67},{0,8,122},{0,8,58},
+        {0,9,213},{18,7,19},{0,8,106},{0,8,42},{0,9,181},{0,8,10},{0,8,138},
+        {0,8,74},{0,9,245},{16,7,5},{0,8,86},{0,8,22},{64,8,0},{19,7,51},
+        {0,8,118},{0,8,54},{0,9,205},{17,7,15},{0,8,102},{0,8,38},{0,9,173},
+        {0,8,6},{0,8,134},{0,8,70},{0,9,237},{16,7,9},{0,8,94},{0,8,30},
+        {0,9,157},{20,7,99},{0,8,126},{0,8,62},{0,9,221},{18,7,27},{0,8,110},
+        {0,8,46},{0,9,189},{0,8,14},{0,8,142},{0,8,78},{0,9,253},{96,7,0},
+        {0,8,81},{0,8,17},{21,8,131},{18,7,31},{0,8,113},{0,8,49},{0,9,195},
+        {16,7,10},{0,8,97},{0,8,33},{0,9,163},{0,8,1},{0,8,129},{0,8,65},
+        {0,9,227},{16,7,6},{0,8,89},{0,8,25},{0,9,147},{19,7,59},{0,8,121},
+        {0,8,57},{0,9,211},{17,7,17},{0,8,105},{0,8,41},{0,9,179},{0,8,9},
+        {0,8,137},{0,8,73},{0,9,243},{16,7,4},{0,8,85},{0,8,21},{16,8,258},
+        {19,7,43},{0,8,117},{0,8,53},{0,9,203},{17,7,13},{0,8,101},{0,8,37},
+        {0,9,171},{0,8,5},{0,8,133},{0,8,69},{0,9,235},{16,7,8},{0,8,93},
+        {0,8,29},{0,9,155},{20,7,83},{0,8,125},{0,8,61},{0,9,219},{18,7,23},
+        {0,8,109},{0,8,45},{0,9,187},{0,8,13},{0,8,141},{0,8,77},{0,9,251},
+        {16,7,3},{0,8,83},{0,8,19},{21,8,195},{19,7,35},{0,8,115},{0,8,51},
+        {0,9,199},{17,7,11},{0,8,99},{0,8,35},{0,9,167},{0,8,3},{0,8,131},
+        {0,8,67},{0,9,231},{16,7,7},{0,8,91},{0,8,27},{0,9,151},{20,7,67},
+        {0,8,123},{0,8,59},{0,9,215},{18,7,19},{0,8,107},{0,8,43},{0,9,183},
+        {0,8,11},{0,8,139},{0,8,75},{0,9,247},{16,7,5},{0,8,87},{0,8,23},
+        {64,8,0},{19,7,51},{0,8,119},{0,8,55},{0,9,207},{17,7,15},{0,8,103},
+        {0,8,39},{0,9,175},{0,8,7},{0,8,135},{0,8,71},{0,9,239},{16,7,9},
+        {0,8,95},{0,8,31},{0,9,159},{20,7,99},{0,8,127},{0,8,63},{0,9,223},
+        {18,7,27},{0,8,111},{0,8,47},{0,9,191},{0,8,15},{0,8,143},{0,8,79},
+        {0,9,255}
+    };
+
+    static const code distfix[32] = {
+        {16,5,1},{23,5,257},{19,5,17},{27,5,4097},{17,5,5},{25,5,1025},
+        {21,5,65},{29,5,16385},{16,5,3},{24,5,513},{20,5,33},{28,5,8193},
+        {18,5,9},{26,5,2049},{22,5,129},{64,5,0},{16,5,2},{23,5,385},
+        {19,5,25},{27,5,6145},{17,5,7},{25,5,1537},{21,5,97},{29,5,24577},
+        {16,5,4},{24,5,769},{20,5,49},{28,5,12289},{18,5,13},{26,5,3073},
+        {22,5,193},{64,5,0}
+    };
+# 286 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c" 2
+
+    state->lencode = lenfix;
+    state->lenbits = 9;
+    state->distcode = distfix;
+    state->distbits = 5;
+}
+# 368 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+static int updatewindow(z_streamp strm, const Bytef *end, unsigned copy) {
+    struct inflate_state *state;
+    unsigned dist;
+
+    state = (struct inflate_state *)strm->state;
+
+
+    if (state->window == 0) {
+        state->window = (unsigned char *)
+                        (*((strm)->zalloc))((strm)->opaque, (1U << state->wbits), (sizeof(unsigned char)))
+                                                     ;
+        if (state->window == 0) return 1;
+    }
+
+
+    if (state->wsize == 0) {
+        state->wsize = 1U << state->wbits;
+        state->wnext = 0;
+        state->whave = 0;
+    }
+
+
+    if (copy >= state->wsize) {
+        memcpy(state->window, end - state->wsize, state->wsize);
+        state->wnext = 0;
+        state->whave = state->wsize;
+    }
+    else {
+        dist = state->wsize - state->wnext;
+        if (dist > copy) dist = copy;
+        memcpy(state->window + state->wnext, end - copy, dist);
+        copy -= dist;
+        if (copy) {
+            memcpy(state->window, end - copy, copy);
+            state->wnext = copy;
+            state->whave = state->wsize;
+        }
+        else {
+            state->wnext += dist;
+            if (state->wnext == state->wsize) state->wnext = 0;
+            if (state->whave < state->wsize) state->whave += dist;
+        }
+    }
+    return 0;
+}
+# 590 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+int inflate(z_streamp strm, int flush) {
+    struct inflate_state *state;
+    const unsigned char *next;
+    unsigned char *put;
+    unsigned have, left;
+    unsigned long hold;
+    unsigned bits;
+    unsigned in, out;
+    unsigned copy;
+    unsigned char *from;
+    code here;
+    code last;
+    unsigned len;
+    int ret;
+
+
+
+    static const unsigned short order[19] =
+        {16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15};
+
+    if (inflateStateCheck(strm) || strm->next_out == 0 ||
+        (strm->next_in == 0 && strm->avail_in != 0))
+        return (-2);
+
+    state = (struct inflate_state *)strm->state;
+    if (state->mode == TYPE) state->mode = TYPEDO;
+    do { put = strm->next_out; left = strm->avail_out; next = strm->next_in; have = strm->avail_in; hold = state->hold; bits = state->bits; } while (0);
+    in = have;
+    out = left;
+    ret = 0;
+    for (;;)
+        switch (state->mode) {
+        case HEAD:
+            if (state->wrap == 0) {
+                state->mode = TYPEDO;
+                break;
+            }
+            do { while (bits < (unsigned)(16)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+# 642 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+            if (
+
+                ((((unsigned)hold & ((1U << (8)) - 1)) << 8) + (hold >> 8)) % 31) {
+                strm->msg = (char *)"incorrect header check";
+                state->mode = BAD;
+                break;
+            }
+            if (((unsigned)hold & ((1U << (4)) - 1)) != 8) {
+                strm->msg = (char *)"unknown compression method";
+                state->mode = BAD;
+                break;
+            }
+            do { hold >>= (4); bits -= (unsigned)(4); } while (0);
+            len = ((unsigned)hold & ((1U << (4)) - 1)) + 8;
+            if (state->wbits == 0)
+                state->wbits = len;
+            if (len > 15 || len > state->wbits) {
+                strm->msg = (char *)"invalid window size";
+                state->mode = BAD;
+                break;
+            }
+            state->dmax = 1U << len;
+            state->flags = 0;
+            ;
+            strm->adler = state->check = adler32(0L, 0, 0);
+            state->mode = hold & 0x200 ? DICTID : TYPE;
+            do { hold = 0; bits = 0; } while (0);
+            break;
+# 810 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+        case DICTID:
+            do { while (bits < (unsigned)(32)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+            strm->adler = state->check = ((((hold) >> 24) & 0xff) + (((hold) >> 8) & 0xff00) + (((hold) & 0xff00) << 8) + (((hold) & 0xff) << 24));
+            do { hold = 0; bits = 0; } while (0);
+            state->mode = DICT;
+
+        case DICT:
+            if (state->havedict == 0) {
+                do { strm->next_out = put; strm->avail_out = left; strm->next_in = next; strm->avail_in = have; state->hold = hold; state->bits = bits; } while (0);
+                return 2;
+            }
+            strm->adler = state->check = adler32(0L, 0, 0);
+            state->mode = TYPE;
+
+        case TYPE:
+            if (flush == 5 || flush == 6) goto inf_leave;
+
+        case TYPEDO:
+            if (state->last) {
+                do { hold >>= bits & 7; bits -= bits & 7; } while (0);
+                state->mode = CHECK;
+                break;
+            }
+            do { while (bits < (unsigned)(3)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+            state->last = ((unsigned)hold & ((1U << (1)) - 1));
+            do { hold >>= (1); bits -= (unsigned)(1); } while (0);
+            switch (((unsigned)hold & ((1U << (2)) - 1))) {
+            case 0:
+               
+                                                      ;
+                state->mode = STORED;
+                break;
+            case 1:
+                fixedtables(state);
+               
+                                                      ;
+                state->mode = LEN_;
+                if (flush == 6) {
+                    do { hold >>= (2); bits -= (unsigned)(2); } while (0);
+                    goto inf_leave;
+                }
+                break;
+            case 2:
+               
+                                                      ;
+                state->mode = TABLE;
+                break;
+            case 3:
+                strm->msg = (char *)"invalid block type";
+                state->mode = BAD;
+            }
+            do { hold >>= (2); bits -= (unsigned)(2); } while (0);
+            break;
+        case STORED:
+            do { hold >>= bits & 7; bits -= bits & 7; } while (0);
+            do { while (bits < (unsigned)(32)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+            if ((hold & 0xffff) != ((hold >> 16) ^ 0xffff)) {
+                strm->msg = (char *)"invalid stored block lengths";
+                state->mode = BAD;
+                break;
+            }
+            state->length = (unsigned)hold & 0xffff;
+           
+                                   ;
+            do { hold = 0; bits = 0; } while (0);
+            state->mode = COPY_;
+            if (flush == 6) goto inf_leave;
+
+        case COPY_:
+            state->mode = COPY;
+
+        case COPY:
+            copy = state->length;
+            if (copy) {
+                if (copy > have) copy = have;
+                if (copy > left) copy = left;
+                if (copy == 0) goto inf_leave;
+                memcpy(put, next, copy);
+                have -= copy;
+                next += copy;
+                left -= copy;
+                put += copy;
+                state->length -= copy;
+                break;
+            }
+            ;
+            state->mode = TYPE;
+            break;
+        case TABLE:
+            do { while (bits < (unsigned)(14)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+            state->nlen = ((unsigned)hold & ((1U << (5)) - 1)) + 257;
+            do { hold >>= (5); bits -= (unsigned)(5); } while (0);
+            state->ndist = ((unsigned)hold & ((1U << (5)) - 1)) + 1;
+            do { hold >>= (5); bits -= (unsigned)(5); } while (0);
+            state->ncode = ((unsigned)hold & ((1U << (4)) - 1)) + 4;
+            do { hold >>= (4); bits -= (unsigned)(4); } while (0);
+
+            if (state->nlen > 286 || state->ndist > 30) {
+                strm->msg = (char *)"too many length or distance symbols";
+                state->mode = BAD;
+                break;
+            }
+
+            ;
+            state->have = 0;
+            state->mode = LENLENS;
+
+        case LENLENS:
+            while (state->have < state->ncode) {
+                do { while (bits < (unsigned)(3)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+                state->lens[order[state->have++]] = (unsigned short)((unsigned)hold & ((1U << (3)) - 1));
+                do { hold >>= (3); bits -= (unsigned)(3); } while (0);
+            }
+            while (state->have < 19)
+                state->lens[order[state->have++]] = 0;
+            state->next = state->codes;
+            state->lencode = (const code *)(state->next);
+            state->lenbits = 7;
+            ret = inflate_table(CODES, state->lens, 19, &(state->next),
+                                &(state->lenbits), state->work);
+            if (ret) {
+                strm->msg = (char *)"invalid code lengths set";
+                state->mode = BAD;
+                break;
+            }
+            ;
+            state->have = 0;
+            state->mode = CODELENS;
+
+        case CODELENS:
+            while (state->have < state->nlen + state->ndist) {
+                for (;;) {
+                    here = state->lencode[((unsigned)hold & ((1U << (state->lenbits)) - 1))];
+                    if ((unsigned)(here.bits) <= bits) break;
+                    do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0);
+                }
+                if (here.val < 16) {
+                    do { hold >>= (here.bits); bits -= (unsigned)(here.bits); } while (0);
+                    state->lens[state->have++] = here.val;
+                }
+                else {
+                    if (here.val == 16) {
+                        do { while (bits < (unsigned)(here.bits + 2)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+                        do { hold >>= (here.bits); bits -= (unsigned)(here.bits); } while (0);
+                        if (state->have == 0) {
+                            strm->msg = (char *)"invalid bit length repeat";
+                            state->mode = BAD;
+                            break;
+                        }
+                        len = state->lens[state->have - 1];
+                        copy = 3 + ((unsigned)hold & ((1U << (2)) - 1));
+                        do { hold >>= (2); bits -= (unsigned)(2); } while (0);
+                    }
+                    else if (here.val == 17) {
+                        do { while (bits < (unsigned)(here.bits + 3)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+                        do { hold >>= (here.bits); bits -= (unsigned)(here.bits); } while (0);
+                        len = 0;
+                        copy = 3 + ((unsigned)hold & ((1U << (3)) - 1));
+                        do { hold >>= (3); bits -= (unsigned)(3); } while (0);
+                    }
+                    else {
+                        do { while (bits < (unsigned)(here.bits + 7)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+                        do { hold >>= (here.bits); bits -= (unsigned)(here.bits); } while (0);
+                        len = 0;
+                        copy = 11 + ((unsigned)hold & ((1U << (7)) - 1));
+                        do { hold >>= (7); bits -= (unsigned)(7); } while (0);
+                    }
+                    if (state->have + copy > state->nlen + state->ndist) {
+                        strm->msg = (char *)"invalid bit length repeat";
+                        state->mode = BAD;
+                        break;
+                    }
+                    while (copy--)
+                        state->lens[state->have++] = (unsigned short)len;
+                }
+            }
+
+
+            if (state->mode == BAD) break;
+
+
+            if (state->lens[256] == 0) {
+                strm->msg = (char *)"invalid code -- missing end-of-block";
+                state->mode = BAD;
+                break;
+            }
+
+
+
+
+            state->next = state->codes;
+            state->lencode = (const code *)(state->next);
+            state->lenbits = 9;
+            ret = inflate_table(LENS, state->lens, state->nlen, &(state->next),
+                                &(state->lenbits), state->work);
+            if (ret) {
+                strm->msg = (char *)"invalid literal/lengths set";
+                state->mode = BAD;
+                break;
+            }
+            state->distcode = (const code *)(state->next);
+            state->distbits = 6;
+            ret = inflate_table(DISTS, state->lens + state->nlen, state->ndist,
+                            &(state->next), &(state->distbits), state->work);
+            if (ret) {
+                strm->msg = (char *)"invalid distances set";
+                state->mode = BAD;
+                break;
+            }
+            ;
+            state->mode = LEN_;
+            if (flush == 6) goto inf_leave;
+
+        case LEN_:
+            state->mode = LEN;
+
+        case LEN:
+            if (have >= 6 && left >= 258) {
+                do { strm->next_out = put; strm->avail_out = left; strm->next_in = next; strm->avail_in = have; state->hold = hold; state->bits = bits; } while (0);
+                inflate_fast(strm, out);
+                do { put = strm->next_out; left = strm->avail_out; next = strm->next_in; have = strm->avail_in; hold = state->hold; bits = state->bits; } while (0);
+                if (state->mode == TYPE)
+                    state->back = -1;
+                break;
+            }
+            state->back = 0;
+            for (;;) {
+                here = state->lencode[((unsigned)hold & ((1U << (state->lenbits)) - 1))];
+                if ((unsigned)(here.bits) <= bits) break;
+                do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0);
+            }
+            if (here.op && (here.op & 0xf0) == 0) {
+                last = here;
+                for (;;) {
+                    here = state->lencode[last.val +
+                            (((unsigned)hold & ((1U << (last.bits + last.op)) - 1)) >> last.bits)];
+                    if ((unsigned)(last.bits + here.bits) <= bits) break;
+                    do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0);
+                }
+                do { hold >>= (last.bits); bits -= (unsigned)(last.bits); } while (0);
+                state->back += last.bits;
+            }
+            do { hold >>= (here.bits); bits -= (unsigned)(here.bits); } while (0);
+            state->back += here.bits;
+            state->length = (unsigned)here.val;
+            if ((int)(here.op) == 0) {
+               
+
+                                                                       ;
+                state->mode = LIT;
+                break;
+            }
+            if (here.op & 32) {
+                ;
+                state->back = -1;
+                state->mode = TYPE;
+                break;
+            }
+            if (here.op & 64) {
+                strm->msg = (char *)"invalid literal/length code";
+                state->mode = BAD;
+                break;
+            }
+            state->extra = (unsigned)(here.op) & 15;
+            state->mode = LENEXT;
+
+        case LENEXT:
+            if (state->extra) {
+                do { while (bits < (unsigned)(state->extra)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+                state->length += ((unsigned)hold & ((1U << (state->extra)) - 1));
+                do { hold >>= (state->extra); bits -= (unsigned)(state->extra); } while (0);
+                state->back += state->extra;
+            }
+            ;
+            state->was = state->length;
+            state->mode = DIST;
+
+        case DIST:
+            for (;;) {
+                here = state->distcode[((unsigned)hold & ((1U << (state->distbits)) - 1))];
+                if ((unsigned)(here.bits) <= bits) break;
+                do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0);
+            }
+            if ((here.op & 0xf0) == 0) {
+                last = here;
+                for (;;) {
+                    here = state->distcode[last.val +
+                            (((unsigned)hold & ((1U << (last.bits + last.op)) - 1)) >> last.bits)];
+                    if ((unsigned)(last.bits + here.bits) <= bits) break;
+                    do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0);
+                }
+                do { hold >>= (last.bits); bits -= (unsigned)(last.bits); } while (0);
+                state->back += last.bits;
+            }
+            do { hold >>= (here.bits); bits -= (unsigned)(here.bits); } while (0);
+            state->back += here.bits;
+            if (here.op & 64) {
+                strm->msg = (char *)"invalid distance code";
+                state->mode = BAD;
+                break;
+            }
+            state->offset = (unsigned)here.val;
+            state->extra = (unsigned)(here.op) & 15;
+            state->mode = DISTEXT;
+
+        case DISTEXT:
+            if (state->extra) {
+                do { while (bits < (unsigned)(state->extra)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+                state->offset += ((unsigned)hold & ((1U << (state->extra)) - 1));
+                do { hold >>= (state->extra); bits -= (unsigned)(state->extra); } while (0);
+                state->back += state->extra;
+            }
+
+
+
+
+
+
+
+            ;
+            state->mode = MATCH;
+
+        case MATCH:
+            if (left == 0) goto inf_leave;
+            copy = out - left;
+            if (state->offset > copy) {
+                copy = state->offset - copy;
+                if (copy > state->whave) {
+                    if (state->sane) {
+                        strm->msg = (char *)"invalid distance too far back";
+                        state->mode = BAD;
+                        break;
+                    }
+# 1156 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+                }
+                if (copy > state->wnext) {
+                    copy -= state->wnext;
+                    from = state->window + (state->wsize - copy);
+                }
+                else
+                    from = state->window + (state->wnext - copy);
+                if (copy > state->length) copy = state->length;
+            }
+            else {
+                from = put - state->offset;
+                copy = state->length;
+            }
+            if (copy > left) copy = left;
+            left -= copy;
+            state->length -= copy;
+            do {
+                *put++ = *from++;
+            } while (--copy);
+            if (state->length == 0) state->mode = LEN;
+            break;
+        case LIT:
+            if (left == 0) goto inf_leave;
+            *put++ = (unsigned char)(state->length);
+            left--;
+            state->mode = LEN;
+            break;
+        case CHECK:
+            if (state->wrap) {
+                do { while (bits < (unsigned)(32)) do { if (have == 0) goto inf_leave; have--; hold += (unsigned long)(*next++) << bits; bits += 8; } while (0); } while (0);
+                out -= left;
+                strm->total_out += out;
+                state->total += out;
+                if ((state->wrap & 4) && out)
+                    strm->adler = state->check =
+                        adler32(state->check, put - out, out);
+                out = left;
+                if ((state->wrap & 4) && (
+
+
+
+                     ((((hold) >> 24) & 0xff) + (((hold) >> 8) & 0xff00) + (((hold) & 0xff00) << 8) + (((hold) & 0xff) << 24))) != state->check) {
+                    strm->msg = (char *)"incorrect data check";
+                    state->mode = BAD;
+                    break;
+                }
+                do { hold = 0; bits = 0; } while (0);
+                ;
+            }
+# 1220 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+            state->mode = DONE;
+
+        case DONE:
+            ret = 1;
+            goto inf_leave;
+        case BAD:
+            ret = (-3);
+            goto inf_leave;
+        case MEM:
+            return (-4);
+        case SYNC:
+
+        default:
+            return (-2);
+        }
+
+
+
+
+
+
+
+  inf_leave:
+    do { strm->next_out = put; strm->avail_out = left; strm->next_in = next; strm->avail_in = have; state->hold = hold; state->bits = bits; } while (0);
+    if (state->wsize || (out != strm->avail_out && state->mode < BAD &&
+            (state->mode < CHECK || flush != 4)))
+        if (updatewindow(strm, strm->next_out, out - strm->avail_out)) {
+            state->mode = MEM;
+            return (-4);
+        }
+    in -= strm->avail_in;
+    out -= strm->avail_out;
+    strm->total_in += in;
+    strm->total_out += out;
+    state->total += out;
+    if ((state->wrap & 4) && out)
+        strm->adler = state->check =
+            adler32(state->check, strm->next_out - out, out);
+    strm->data_type = (int)state->bits + (state->last ? 64 : 0) +
+                      (state->mode == TYPE ? 128 : 0) +
+                      (state->mode == LEN_ || state->mode == COPY_ ? 256 : 0);
+    if (((in == 0 && out == 0) || flush == 4) && ret == 0)
+        ret = (-5);
+    return ret;
+}
+
+int inflateEnd(z_streamp strm) {
+    struct inflate_state *state;
+    if (inflateStateCheck(strm))
+        return (-2);
+    state = (struct inflate_state *)strm->state;
+    if (state->window != 0) (*((strm)->zfree))((strm)->opaque, (voidpf)(state->window));
+    (*((strm)->zfree))((strm)->opaque, (voidpf)(strm->state));
+    strm->state = 0;
+    ;
+    return 0;
+}
+
+int inflateGetDictionary(z_streamp strm, Bytef *dictionary,
+                                 uInt *dictLength) {
+    struct inflate_state *state;
+
+
+    if (inflateStateCheck(strm)) return (-2);
+    state = (struct inflate_state *)strm->state;
+
+
+    if (state->whave && dictionary != 0) {
+        memcpy(dictionary, state->window + state->wnext,
+                state->whave - state->wnext);
+        memcpy(dictionary + state->whave - state->wnext,
+                state->window, state->wnext);
+    }
+    if (dictLength != 0)
+        *dictLength = state->whave;
+    return 0;
+}
+
+int inflateSetDictionary(z_streamp strm, const Bytef *dictionary,
+                                 uInt dictLength) {
+    struct inflate_state *state;
+    unsigned long dictid;
+    int ret;
+
+
+    if (inflateStateCheck(strm)) return (-2);
+    state = (struct inflate_state *)strm->state;
+    if (state->wrap != 0 && state->mode != DICT)
+        return (-2);
+
+
+    if (state->mode == DICT) {
+        dictid = adler32(0L, 0, 0);
+        dictid = adler32(dictid, dictionary, dictLength);
+        if (dictid != state->check)
+            return (-3);
+    }
+
+
+
+    ret = updatewindow(strm, dictionary + dictLength, dictLength);
+    if (ret) {
+        state->mode = MEM;
+        return (-4);
+    }
+    state->havedict = 1;
+    ;
+    return 0;
+}
+
+int inflateGetHeader(z_streamp strm, gz_headerp head) {
+    struct inflate_state *state;
+
+
+    if (inflateStateCheck(strm)) return (-2);
+    state = (struct inflate_state *)strm->state;
+    if ((state->wrap & 2) == 0) return (-2);
+
+
+    state->head = head;
+    head->done = 0;
+    return 0;
+}
+# 1355 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+static unsigned syncsearch(unsigned *have, const unsigned char *buf,
+                          unsigned len) {
+    unsigned got;
+    unsigned next;
+
+    got = *have;
+    next = 0;
+    while (next < len && got < 4) {
+        if ((int)(buf[next]) == (got < 2 ? 0 : 0xff))
+            got++;
+        else if (buf[next])
+            got = 0;
+        else
+            got = 4 - got;
+        next++;
+    }
+    *have = got;
+    return next;
+}
+
+int inflateSync(z_streamp strm) {
+    unsigned len;
+    int flags;
+    unsigned long in, out;
+    unsigned char buf[4];
+    struct inflate_state *state;
+
+
+    if (inflateStateCheck(strm)) return (-2);
+    state = (struct inflate_state *)strm->state;
+    if (strm->avail_in == 0 && state->bits < 8) return (-5);
+
+
+    if (state->mode != SYNC) {
+        state->mode = SYNC;
+        state->hold <<= state->bits & 7;
+        state->bits -= state->bits & 7;
+        len = 0;
+        while (state->bits >= 8) {
+            buf[len++] = (unsigned char)(state->hold);
+            state->hold >>= 8;
+            state->bits -= 8;
+        }
+        state->have = 0;
+        syncsearch(&(state->have), buf, len);
+    }
+
+
+    len = syncsearch(&(state->have), strm->next_in, strm->avail_in);
+    strm->avail_in -= len;
+    strm->next_in += len;
+    strm->total_in += len;
+
+
+    if (state->have != 4) return (-3);
+    if (state->flags == -1)
+        state->wrap = 0;
+    else
+        state->wrap &= ~4;
+    flags = state->flags;
+    in = strm->total_in; out = strm->total_out;
+    inflateReset(strm);
+    strm->total_in = in; strm->total_out = out;
+    state->flags = flags;
+    state->mode = TYPE;
+    return 0;
+}
+# 1431 "/home/enumclass/Documents/C2RustTranslation/bkp/optipng-0.7.8/third_party/zlib/inflate.c"
+int inflateSyncPoint(z_streamp strm) {
+    struct inflate_state *state;
+
+    if (inflateStateCheck(strm)) return (-2);
+    state = (struct inflate_state *)strm->state;
+    return state->mode == STORED && state->bits == 0;
+}
+
+int inflateCopy(z_streamp dest, z_streamp source) {
+    struct inflate_state *state;
+    struct inflate_state *copy;
+    unsigned char *window;
+    unsigned wsize;
+
+
+    if (inflateStateCheck(source) || dest == 0)
+        return (-2);
+    state = (struct inflate_state *)source->state;
+
+
+    copy = (struct inflate_state *)
+           (*((source)->zalloc))((source)->opaque, (1), (sizeof(struct inflate_state)));
+    if (copy == 0) return (-4);
+    window = 0;
+    if (state->window != 0) {
+        window = (unsigned char *)
+                 (*((source)->zalloc))((source)->opaque, (1U << state->wbits), (sizeof(unsigned char)));
+        if (window == 0) {
+            (*((source)->zfree))((source)->opaque, (voidpf)(copy));
+            return (-4);
+        }
+    }
+
+
+    memcpy((voidpf)dest, (voidpf)source, sizeof(z_stream));
+    memcpy((voidpf)copy, (voidpf)state, sizeof(struct inflate_state));
+    copy->strm = dest;
+    if (state->lencode >= state->codes &&
+        state->lencode <= state->codes + (852 +592) - 1) {
+        copy->lencode = copy->codes + (state->lencode - state->codes);
+        copy->distcode = copy->codes + (state->distcode - state->codes);
+    }
+    copy->next = copy->codes + (state->next - state->codes);
+    if (window != 0) {
+        wsize = 1U << state->wbits;
+        memcpy(window, state->window, wsize);
+    }
+    copy->window = window;
+    dest->state = (struct internal_state *)copy;
+    return 0;
+}
+
+int inflateUndermine(z_streamp strm, int subvert) {
+    struct inflate_state *state;
+
+    if (inflateStateCheck(strm)) return (-2);
+    state = (struct inflate_state *)strm->state;
+
+
+
+
+    (void)subvert;
+    state->sane = 1;
+    return (-3);
+
+}
+
+int inflateValidate(z_streamp strm, int check) {
+    struct inflate_state *state;
+
+    if (inflateStateCheck(strm)) return (-2);
+    state = (struct inflate_state *)strm->state;
+    if (check && state->wrap)
+        state->wrap |= 4;
+    else
+        state->wrap &= ~4;
+    return 0;
+}
+
+long inflateMark(z_streamp strm) {
+    struct inflate_state *state;
+
+    if (inflateStateCheck(strm))
+        return -(1L << 16);
+    state = (struct inflate_state *)strm->state;
+    return (long)(((unsigned long)((long)state->back)) << 16) +
+        (state->mode == COPY ? state->length :
+            (state->mode == MATCH ? state->was - state->length : 0));
+}
+
+unsigned long inflateCodesUsed(z_streamp strm) {
+    struct inflate_state *state;
+    if (inflateStateCheck(strm)) return (unsigned long)-1;
+    state = (struct inflate_state *)strm->state;
+    return (unsigned long)(state->next - state->codes);
+}

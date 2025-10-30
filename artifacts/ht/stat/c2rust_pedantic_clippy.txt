@@ -1,0 +1,643 @@
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: binding's name is too similar to existing binding
+warning: long literal lacking separators
+warning: binding's name is too similar to existing binding
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: binding's name is too similar to existing binding
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `u8` to `u64` can be expressed infallibly using `From`
+warning: casting `i8` to `u8` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: `as` casting between raw pointers while changing only its constness
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: `as` casting between raw pointers without changing their constness
+warning: unnecessary boolean `not` operation
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary boolean `not` operation
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: implicit borrow as raw pointer
+warning: used underscore-prefixed binding
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: used underscore-prefixed binding
+warning: used underscore-prefixed binding
+warning: used underscore-prefixed binding
+warning: used underscore-prefixed binding
+warning: used underscore-prefixed binding
+warning: used underscore-prefixed binding
+warning: used underscore-prefixed binding
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: borrow as raw pointer
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: unnecessary boolean `not` operation
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `u64` to `i32` may truncate the value
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: unnecessary boolean `not` operation
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: borrow as raw pointer
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: this function has too many lines (119/100)
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i64` to `u64` may lose the sign of the value
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i64` to `u64` may lose the sign of the value
+warning: casting `u64` to `i64` may wrap around the value
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `u64` to `i64` may wrap around the value
+warning: casting `i32` to `i8` may truncate the value
+warning: casting `i64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `i8` may truncate the value
+warning: unnecessary boolean `not` operation
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: implicit borrow as raw pointer
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i64` to `f64` causes a loss of precision (`i64` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `i64` to `f64` causes a loss of precision (`i64` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: docs for function which may panic missing `# Panics` section
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: `as` casting between raw pointers without changing their constness
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: borrow as raw pointer
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: borrow as raw pointer
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: borrow as raw pointer
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: this function has too many lines (101/100)
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i64` to `f64` causes a loss of precision (`i64` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `i64` to `f64` causes a loss of precision (`i64` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i64` to `f64` causes a loss of precision (`i64` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `i64` to `f64` causes a loss of precision (`i64` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i64` to `f64` causes a loss of precision (`i64` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `i64` to `f64` causes a loss of precision (`i64` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: docs for function which may panic missing `# Panics` section
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: `as` casting between raw pointers without changing their constness
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: this function has too many lines (125/100)
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i64` to `u64` may lose the sign of the value
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i64` to `u64` may lose the sign of the value
+warning: casting `u64` to `i64` may wrap around the value
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `u64` to `i64` may wrap around the value
+warning: casting `i32` to `i8` may truncate the value
+warning: casting `i64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `i8` may truncate the value
+warning: unnecessary boolean `not` operation
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: implicit borrow as raw pointer
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: casting `i64` to `f64` causes a loss of precision (`i64` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `i64` to `f64` causes a loss of precision (`i64` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: docs for function which may panic missing `# Panics` section
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: `as` casting between raw pointers without changing their constness
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casts from `u8` to `u64` can be expressed infallibly using `From`
+warning: casting `i8` to `u8` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: unnecessary boolean `not` operation
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `u64` to `f64` causes a loss of precision (`u64` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `u64` to `f64` causes a loss of precision (`u64` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)

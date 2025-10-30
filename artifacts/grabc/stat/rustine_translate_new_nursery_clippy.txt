@@ -1,0 +1,4 @@
+warning: `extern` fn uses type `std::ffi::CStr`, which is not FFI-safe
+warning: casting the result of `as_ptr` to *mut libc::c_void
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` in `if let` scrutinee will live until the end of the `if let` expression

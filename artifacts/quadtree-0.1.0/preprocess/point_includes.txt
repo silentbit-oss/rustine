@@ -1,0 +1,4 @@
+#include <math.h>
+#include <point.c>
+#include <quadtree.h>
+#include <stdlib.h>

@@ -1,0 +1,220 @@
+{
+  "Rust": {
+    "blanks": 3,
+    "children": {},
+    "code": 14956,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/bzip2/others/c2rust/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 21,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/c2rust/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/c2rust/src/randtable.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 517,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/c2rust/src/huffman.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 297,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/c2rust/src/crctable.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 261,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/c2rust/src/blocksort.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1601,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/c2rust/src/bzip2recover.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 650,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/c2rust/src/decompress.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 3372,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/c2rust/src/compress.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 2189,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/c2rust/src/bzlib.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 2730,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/c2rust/src/bzip2.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 3312,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/bzip2/others/c2rust/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 21,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/c2rust/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/c2rust/src/randtable.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 517,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/c2rust/src/huffman.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 297,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/c2rust/src/crctable.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 261,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/c2rust/src/blocksort.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1601,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/c2rust/src/bzip2recover.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 650,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/c2rust/src/decompress.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 3372,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/c2rust/src/compress.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 2189,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/c2rust/src/bzlib.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 2730,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/c2rust/src/bzip2.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 3312,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 14956,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,4 @@
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: unneeded `return` statement
+warning: unneeded `return` statement

@@ -1,0 +1,6 @@
+#include <assert.h>
+#include <config.h>
+#include <same-inode.c>
+#include <same-inode.h>
+#include <stat.h>
+#include <stdbool.h>

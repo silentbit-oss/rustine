@@ -1,0 +1,72 @@
+warning: unnecessary parentheses around `return` value
+warning: unnecessary parentheses around function argument
+warning: unused import: `crate::laertes_rt::*`
+warning: unused import: `crate::laertes_rt::*`
+warning: use of deprecated module `std::intrinsics`: import this function via `std::mem` instead
+warning: the feature `const_mut_refs` has been stable since 1.83.0 and no longer requires an attribute to enable
+warning: the feature `const_fn_fn_ptr_basics` has been stable since 1.61.0 and no longer requires an attribute to enable
+warning: the feature `label_break_value` has been stable since 1.65.0 and no longer requires an attribute to enable
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: the following explicit lifetimes could be elided: 'a1
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: `0 as *const _` detected
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: the following explicit lifetimes could be elided: 'a1
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: `0 as *mut _` detected
+warning: deref which would be done by auto-deref
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: unsafe function's docs are missing a `# Safety` section
+warning: the following explicit lifetimes could be elided: 'a1
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: this `if` statement can be collapsed
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: `0 as *const _` detected
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: unsafe function's docs are missing a `# Safety` section
+warning: the following explicit lifetimes could be elided: 'a1
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: use of `default` to create a unit struct
+warning: this `map_or` can be simplified
+warning: the following explicit lifetimes could be elided: 'a
+warning: the following explicit lifetimes could be elided: 'a
+warning: casting raw pointers to the same type and constness is unnecessary (`*const ()` -> `*const ()`)
+warning: empty `loop {}` wastes CPU cycles

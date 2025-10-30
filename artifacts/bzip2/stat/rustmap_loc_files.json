@@ -1,0 +1,2087 @@
+{
+  "Rust": {
+    "blanks": 1731,
+    "children": {
+      "Markdown": [
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/global_vars/combined.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 0,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/global_vars/bzip2_c1.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 0,
+            "comments": 1
+          }
+        }
+      ]
+    },
+    "code": 7717,
+    "comments": 1770,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_10_root_12_uInt64_qrm10.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_79_root_46_setExit.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 22,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_1_root_1_cadvise.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 34,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_96_configError.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 20,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_53_root_38_countHardLinks.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 26,
+          "comments": 7
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_55_root_40_containsDubiousChars.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 17,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_107_uncompress.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 2,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_80_cleanUpAndFail.rs",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 51,
+          "comments": 37
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_87_fileExists.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 26,
+          "comments": 7
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_98_uncompressStream.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_49_fopen_output_safely.rs",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 33,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_9_root_11_uInt64_isZero.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 27,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/mod.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 38,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_88_outOfMemory_scc_89_myMalloc.rs",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 53,
+          "comments": 12
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_95_mySIGSEGVorSIGBUScatcher.rs",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 25,
+          "comments": 5
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_52_mySIGSEGVorSIGBUScatcher.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 50,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_93_mySignalCatcher.rs",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 23,
+          "comments": 9
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_82_crcError_83_ioError.rs",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 25,
+          "comments": 7
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_50_root_36_pad.rs",
+        "stats": {
+          "blanks": 20,
+          "blobs": {},
+          "code": 30,
+          "comments": 6
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_100_testf.rs",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 46,
+          "comments": 29
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_84_applySavedTimeInfoToOutputFile_85_applySavedFileAttrToOutputFile_86_saveInputFileMetaInfo.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 48,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_81_compressedStreamEOF.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_87_panic.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_50_mySignalCatcher.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 9,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_108_compress.rs",
+        "stats": {
+          "blanks": 30,
+          "blobs": {},
+          "code": 117,
+          "comments": 49
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_90_mkCell_91_snoc_string_93_add_flags_from_env_var.rs",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 82,
+          "comments": 12
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_97_testStream.rs",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 10,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_52_fileExists.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 7,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_13_uInt64_toAscii.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 39,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/compress/scc_24_compress_root_19_bsFinishWrite.rs",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_99_compressStream.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 75,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_54_root_39_notAStandardFile.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 39,
+          "comments": 12
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_76_root_43_showFileNames.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 37,
+          "comments": 6
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_102_root_48_redundant.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 35,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_75_license.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 30,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_74_usage.rs",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 60,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_105_hasSuffix_106_mapSuffix.rs",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 36,
+          "comments": 7
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_43_root_30_uInt64_to_double_scc_44_root_31_uInt64_from_UInt32s.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 20,
+          "comments": 6
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/compress/scc_20_root_25_bsW.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 15,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_94_copyFileName.rs",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 38,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2recover/tooManyBlocks.rs",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 27,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_110_main.rs",
+        "stats": {
+          "blanks": 39,
+          "blobs": {},
+          "code": 271,
+          "comments": 83
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/compress/scc_63_sendMTFValues.rs",
+        "stats": {
+          "blanks": 41,
+          "blobs": {},
+          "code": 307,
+          "comments": 35
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2recover/bsPutBit_bsGetBit_bsPutUInt32.rs",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 44,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/compress/scc_28_root_21_BZ2_bsInitWrite.rs",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 5,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/compress/mod.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 6,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2recover/bsClose.rs",
+        "stats": {
+          "blanks": 23,
+          "blobs": {},
+          "code": 105,
+          "comments": 13
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2recover/readError.rs",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 21,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2recover/mallocFail.rs",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 12,
+          "comments": 5
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2recover/writeError.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 36,
+          "comments": 5
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_46_root_33_myfeof.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 36,
+          "comments": 10
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2recover/compress_bsPutBit_bsGetBit_bsPutUInt32.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 7,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/compress/scc_18_root_15_makeMaps_e_scc_19_generateMTFValues.rs",
+        "stats": {
+          "blanks": 58,
+          "blobs": {},
+          "code": 125,
+          "comments": 56
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/compress/scc_69_BZ2_compressBlock.rs",
+        "stats": {
+          "blanks": 60,
+          "blobs": {},
+          "code": 144,
+          "comments": 114
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2recover/mod.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 8,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzip2recover/endsInBz2.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 20,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_73_BZ2_bzWrite.rs",
+        "stats": {
+          "blanks": 21,
+          "blobs": {},
+          "code": 73,
+          "comments": 72
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_7_unRLE_obuf_to_output_SMALL.rs",
+        "stats": {
+          "blanks": 30,
+          "blobs": {},
+          "code": 77,
+          "comments": 21
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_16_root_13_BZ2_bzCompressEnd.rs",
+        "stats": {
+          "blanks": 20,
+          "blobs": {},
+          "code": 34,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_75_BZ2_bzCompress_76_BZ2_bzWriteClose64.rs",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 134,
+          "comments": 40
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_42_root_57_BZ2_bzlibVersion.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 14,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_6_root_5_BZ2_indexIntoF.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 27,
+          "comments": 5
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_3_BZ2_bzReadClose.rs",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 74,
+          "comments": 7
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_70_handle_compress.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 51,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_29_root_22_add_pair_to_block.rs",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 45,
+          "comments": 27
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_39_BZ2_bzDecompressInit_40_bzReadOpen.rs",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 104,
+          "comments": 16
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_2_root_2_BZ2_bzDecompressEnd.rs",
+        "stats": {
+          "blanks": 41,
+          "blobs": {},
+          "code": 160,
+          "comments": 8
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/huffman/scc_4_root_3_BZ2_hbCreateDecodeTables.rs",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 57,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/huffman/scc_62_BZ2_hbMakeCodeLengths.rs",
+        "stats": {
+          "blanks": 25,
+          "blobs": {},
+          "code": 123,
+          "comments": 13
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_30_root_20_mmed3.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 28,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/blocksort/mod.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 9,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_29_mainSimpleSort.rs",
+        "stats": {
+          "blanks": 36,
+          "blobs": {},
+          "code": 128,
+          "comments": 31
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/global_vars/bzip2_c3✅.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_71_fallbackSort.rs",
+        "stats": {
+          "blanks": 68,
+          "blobs": {},
+          "code": 231,
+          "comments": 62
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_9_root_7_BZ2_bzReadGetUnused.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 35,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_72_BZ2_blockSort.rs",
+        "stats": {
+          "blanks": 42,
+          "blobs": {},
+          "code": 308,
+          "comments": 93
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/global_vars/combined.rs",
+        "stats": {
+          "blanks": 62,
+          "blobs": {
+            "Markdown": {
+              "blanks": 0,
+              "blobs": {},
+              "code": 0,
+              "comments": 1
+            }
+          },
+          "code": 332,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/global_vars/bzip2_c6✅.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 3,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/global_vars/bzip2_c4.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/global_vars/bzip2_c4✅.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/global_vars/sleep_lib.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 5,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_25_root_33_prepare_new_block_init_RL_isempty_RL_flush_RL_bzlib_static.rs",
+        "stats": {
+          "blanks": 29,
+          "blobs": {},
+          "code": 61,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/decompress/scc_5_root_4_makeMaps_d.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 28,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_69_mainSortbk.rs",
+        "stats": {
+          "blanks": 63,
+          "blobs": {},
+          "code": 371,
+          "comments": 151
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_64_BZ2_bzDecompress_65_BZ2_bzRead.rs",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 12,
+          "comments": 84
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_8_root_6_unRLE_obuf_to_output_FAST.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 71,
+          "comments": 11
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_41_BZ2_bzCompressInit_42_BZ2_bzWriteOpen.rs",
+        "stats": {
+          "blanks": 54,
+          "blobs": {},
+          "code": 177,
+          "comments": 46
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/mod.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 21,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/bz_constants.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 20,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_36_root_27_default_bzfree_38_bz_config_ok_37_default_bzalloc.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 37,
+          "comments": 6
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/global_vars/bzip2_c1.rs",
+        "stats": {
+          "blanks": 96,
+          "blobs": {
+            "Markdown": {
+              "blanks": 0,
+              "blobs": {},
+              "code": 0,
+              "comments": 1
+            }
+          },
+          "code": 616,
+          "comments": 79
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_62_BZ2_bz__AssertH__fail.rs",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 64,
+          "comments": 6
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/huffman/scc_17_root_14_BZ2_hbAssignCodes.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 31,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/huffman/mod.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 3,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/lib.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 8,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_30_copy_input_until_stop_31_copy_output_until_stop.rs",
+        "stats": {
+          "blanks": 33,
+          "blobs": {},
+          "code": 134,
+          "comments": 67
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_28_root_19_mainGtU.rs",
+        "stats": {
+          "blanks": 23,
+          "blobs": {},
+          "code": 102,
+          "comments": 5
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/bin/main.rs",
+        "stats": {
+          "blanks": 40,
+          "blobs": {},
+          "code": 272,
+          "comments": 87
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_70_fallbackQSort3.rs",
+        "stats": {
+          "blanks": 32,
+          "blobs": {},
+          "code": 146,
+          "comments": 14
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_28_root_19_mainGtU -copy.rs",
+        "stats": {
+          "blanks": 39,
+          "blobs": {},
+          "code": 58,
+          "comments": 11
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_31_root_21_fallbackSimpleSort.rs",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 63,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/global_vars/bzip2_c6.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 3,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/global_vars/bzip2_c3.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/global_vars/bzip2_c2.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 30,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/global_vars/mod.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 8,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/global_vars/conversion.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 38,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/global_vars/bzip2_c5.rs",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 16,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/decompress/mod.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 2,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/decompress/scc_59_BZ2_decompress.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_68_mainQSort3.rs",
+        "stats": {
+          "blanks": 32,
+          "blobs": {},
+          "code": 179,
+          "comments": 8
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_69_mainSort.rs",
+        "stats": {
+          "blanks": 65,
+          "blobs": {},
+          "code": 378,
+          "comments": 137
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/rustmap/src/main.rs",
+        "stats": {
+          "blanks": 32,
+          "blobs": {},
+          "code": 267,
+          "comments": 73
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 1731,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_10_root_12_uInt64_qrm10.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_79_root_46_setExit.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 22,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_1_root_1_cadvise.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 34,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_96_configError.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 20,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_53_root_38_countHardLinks.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 26,
+            "comments": 7
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_55_root_40_containsDubiousChars.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 17,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_107_uncompress.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 2,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_80_cleanUpAndFail.rs",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 51,
+            "comments": 37
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_87_fileExists.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 26,
+            "comments": 7
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_98_uncompressStream.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 0,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_49_fopen_output_safely.rs",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 33,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_9_root_11_uInt64_isZero.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 27,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/mod.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 38,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_88_outOfMemory_scc_89_myMalloc.rs",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 53,
+            "comments": 12
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_95_mySIGSEGVorSIGBUScatcher.rs",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 25,
+            "comments": 5
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_52_mySIGSEGVorSIGBUScatcher.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 50,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_93_mySignalCatcher.rs",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 23,
+            "comments": 9
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_82_crcError_83_ioError.rs",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 25,
+            "comments": 7
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_50_root_36_pad.rs",
+          "stats": {
+            "blanks": 20,
+            "blobs": {},
+            "code": 30,
+            "comments": 6
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_100_testf.rs",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 46,
+            "comments": 29
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_84_applySavedTimeInfoToOutputFile_85_applySavedFileAttrToOutputFile_86_saveInputFileMetaInfo.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 48,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_81_compressedStreamEOF.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 0,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_87_panic.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 0,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_50_mySignalCatcher.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 9,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_108_compress.rs",
+          "stats": {
+            "blanks": 30,
+            "blobs": {},
+            "code": 117,
+            "comments": 49
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_90_mkCell_91_snoc_string_93_add_flags_from_env_var.rs",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 82,
+            "comments": 12
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_97_testStream.rs",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 10,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_52_fileExists.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 7,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_13_uInt64_toAscii.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 39,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/compress/scc_24_compress_root_19_bsFinishWrite.rs",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 0,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_99_compressStream.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 75,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_54_root_39_notAStandardFile.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 39,
+            "comments": 12
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_76_root_43_showFileNames.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 37,
+            "comments": 6
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_102_root_48_redundant.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 35,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_75_license.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 30,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_74_usage.rs",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 60,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_105_hasSuffix_106_mapSuffix.rs",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 36,
+            "comments": 7
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_43_root_30_uInt64_to_double_scc_44_root_31_uInt64_from_UInt32s.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 20,
+            "comments": 6
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/compress/scc_20_root_25_bsW.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 15,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_94_copyFileName.rs",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 38,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2recover/tooManyBlocks.rs",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 27,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2/scc_110_main.rs",
+          "stats": {
+            "blanks": 39,
+            "blobs": {},
+            "code": 271,
+            "comments": 83
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/compress/scc_63_sendMTFValues.rs",
+          "stats": {
+            "blanks": 41,
+            "blobs": {},
+            "code": 307,
+            "comments": 35
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2recover/bsPutBit_bsGetBit_bsPutUInt32.rs",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 44,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/compress/scc_28_root_21_BZ2_bsInitWrite.rs",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 5,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/compress/mod.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 6,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2recover/bsClose.rs",
+          "stats": {
+            "blanks": 23,
+            "blobs": {},
+            "code": 105,
+            "comments": 13
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2recover/readError.rs",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 21,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2recover/mallocFail.rs",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 12,
+            "comments": 5
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2recover/writeError.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 36,
+            "comments": 5
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_46_root_33_myfeof.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 36,
+            "comments": 10
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2recover/compress_bsPutBit_bsGetBit_bsPutUInt32.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 7,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/compress/scc_18_root_15_makeMaps_e_scc_19_generateMTFValues.rs",
+          "stats": {
+            "blanks": 58,
+            "blobs": {},
+            "code": 125,
+            "comments": 56
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/compress/scc_69_BZ2_compressBlock.rs",
+          "stats": {
+            "blanks": 60,
+            "blobs": {},
+            "code": 144,
+            "comments": 114
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2recover/mod.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 8,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzip2recover/endsInBz2.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 20,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_73_BZ2_bzWrite.rs",
+          "stats": {
+            "blanks": 21,
+            "blobs": {},
+            "code": 73,
+            "comments": 72
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_7_unRLE_obuf_to_output_SMALL.rs",
+          "stats": {
+            "blanks": 30,
+            "blobs": {},
+            "code": 77,
+            "comments": 21
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_16_root_13_BZ2_bzCompressEnd.rs",
+          "stats": {
+            "blanks": 20,
+            "blobs": {},
+            "code": 34,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_75_BZ2_bzCompress_76_BZ2_bzWriteClose64.rs",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 134,
+            "comments": 40
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_42_root_57_BZ2_bzlibVersion.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 14,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_6_root_5_BZ2_indexIntoF.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 27,
+            "comments": 5
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_3_BZ2_bzReadClose.rs",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 74,
+            "comments": 7
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_70_handle_compress.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 51,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_29_root_22_add_pair_to_block.rs",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 45,
+            "comments": 27
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_39_BZ2_bzDecompressInit_40_bzReadOpen.rs",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 104,
+            "comments": 16
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_2_root_2_BZ2_bzDecompressEnd.rs",
+          "stats": {
+            "blanks": 41,
+            "blobs": {},
+            "code": 160,
+            "comments": 8
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/huffman/scc_4_root_3_BZ2_hbCreateDecodeTables.rs",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 57,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/huffman/scc_62_BZ2_hbMakeCodeLengths.rs",
+          "stats": {
+            "blanks": 25,
+            "blobs": {},
+            "code": 123,
+            "comments": 13
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_30_root_20_mmed3.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 28,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/blocksort/mod.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 9,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_29_mainSimpleSort.rs",
+          "stats": {
+            "blanks": 36,
+            "blobs": {},
+            "code": 128,
+            "comments": 31
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/global_vars/bzip2_c3✅.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 0,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_71_fallbackSort.rs",
+          "stats": {
+            "blanks": 68,
+            "blobs": {},
+            "code": 231,
+            "comments": 62
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_9_root_7_BZ2_bzReadGetUnused.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 35,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_72_BZ2_blockSort.rs",
+          "stats": {
+            "blanks": 42,
+            "blobs": {},
+            "code": 308,
+            "comments": 93
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/global_vars/combined.rs",
+          "stats": {
+            "blanks": 62,
+            "blobs": {
+              "Markdown": {
+                "blanks": 0,
+                "blobs": {},
+                "code": 0,
+                "comments": 1
+              }
+            },
+            "code": 332,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/global_vars/bzip2_c6✅.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 3,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/global_vars/bzip2_c4.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/global_vars/bzip2_c4✅.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/global_vars/sleep_lib.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 5,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_25_root_33_prepare_new_block_init_RL_isempty_RL_flush_RL_bzlib_static.rs",
+          "stats": {
+            "blanks": 29,
+            "blobs": {},
+            "code": 61,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/decompress/scc_5_root_4_makeMaps_d.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 28,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_69_mainSortbk.rs",
+          "stats": {
+            "blanks": 63,
+            "blobs": {},
+            "code": 371,
+            "comments": 151
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_64_BZ2_bzDecompress_65_BZ2_bzRead.rs",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 12,
+            "comments": 84
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_8_root_6_unRLE_obuf_to_output_FAST.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 71,
+            "comments": 11
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_41_BZ2_bzCompressInit_42_BZ2_bzWriteOpen.rs",
+          "stats": {
+            "blanks": 54,
+            "blobs": {},
+            "code": 177,
+            "comments": 46
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/mod.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 21,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/bz_constants.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 20,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_36_root_27_default_bzfree_38_bz_config_ok_37_default_bzalloc.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 37,
+            "comments": 6
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/global_vars/bzip2_c1.rs",
+          "stats": {
+            "blanks": 96,
+            "blobs": {
+              "Markdown": {
+                "blanks": 0,
+                "blobs": {},
+                "code": 0,
+                "comments": 1
+              }
+            },
+            "code": 616,
+            "comments": 79
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_62_BZ2_bz__AssertH__fail.rs",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 64,
+            "comments": 6
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/huffman/scc_17_root_14_BZ2_hbAssignCodes.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 31,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/huffman/mod.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 3,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/lib.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 8,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bzlib/scc_30_copy_input_until_stop_31_copy_output_until_stop.rs",
+          "stats": {
+            "blanks": 33,
+            "blobs": {},
+            "code": 134,
+            "comments": 67
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_28_root_19_mainGtU.rs",
+          "stats": {
+            "blanks": 23,
+            "blobs": {},
+            "code": 102,
+            "comments": 5
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/bin/main.rs",
+          "stats": {
+            "blanks": 40,
+            "blobs": {},
+            "code": 272,
+            "comments": 87
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_70_fallbackQSort3.rs",
+          "stats": {
+            "blanks": 32,
+            "blobs": {},
+            "code": 146,
+            "comments": 14
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_28_root_19_mainGtU -copy.rs",
+          "stats": {
+            "blanks": 39,
+            "blobs": {},
+            "code": 58,
+            "comments": 11
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_31_root_21_fallbackSimpleSort.rs",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 63,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/global_vars/bzip2_c6.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 3,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/global_vars/bzip2_c3.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 0,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/global_vars/bzip2_c2.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 30,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/global_vars/mod.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 8,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/global_vars/conversion.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 38,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/global_vars/bzip2_c5.rs",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 16,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/decompress/mod.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 2,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/decompress/scc_59_BZ2_decompress.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 0,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_68_mainQSort3.rs",
+          "stats": {
+            "blanks": 32,
+            "blobs": {},
+            "code": 179,
+            "comments": 8
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/blocksort/scc_69_mainSort.rs",
+          "stats": {
+            "blanks": 65,
+            "blobs": {},
+            "code": 378,
+            "comments": 137
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/rustmap/src/main.rs",
+          "stats": {
+            "blanks": 32,
+            "blobs": {},
+            "code": 267,
+            "comments": 73
+          }
+        }
+      ]
+    },
+    "code": 7717,
+    "comments": 1770,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,61 @@
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: unused variable: `sig`
+warning: variable `dummy` is assigned to, but never used
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: statement with no effect
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: statement with no effect
+warning: statement with no effect
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut *mut i8` -> `*mut *mut i8`)
+warning: unused unary operation that must be used
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: unused unary operation that must be used
+warning: unused unary operation that must be used
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect

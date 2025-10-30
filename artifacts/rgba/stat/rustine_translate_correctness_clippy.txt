@@ -1,0 +1,1 @@
+warning: this public function might dereference a raw pointer but is not marked `unsafe`

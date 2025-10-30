@@ -1,0 +1,23 @@
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: this `map_or` can be simplified

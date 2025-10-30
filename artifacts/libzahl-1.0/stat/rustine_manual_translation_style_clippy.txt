@@ -1,0 +1,38 @@
+warning: importing legacy numeric constants
+warning: manual arithmetic check found
+warning: manual arithmetic check found
+warning: manual implementation of an assign operation
+warning: manually filling a slice
+warning: redundant closure
+warning: redundant closure
+warning: the loop variable `i` is only used to index `tmp_ds_copies`
+warning: the type `[std::option::Option<std::boxed::Box<[u32]>>; 64]` does not permit being left uninitialized
+warning: the type `[std::sync::atomic::AtomicUsize; 64]` does not permit being left uninitialized
+warning: this `else { if .. }` block can be collapsed
+warning: this `else { if .. }` block can be collapsed
+warning: this `else { if .. }` block can be collapsed
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string

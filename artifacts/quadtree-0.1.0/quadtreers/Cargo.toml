@@ -1,0 +1,14 @@
+[package]
+name = "quadtreers"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name="benchmark"
+path="src/benchmark_main.rs"
+
+[[bin]]
+name="test"
+path="src/test_main.rs"

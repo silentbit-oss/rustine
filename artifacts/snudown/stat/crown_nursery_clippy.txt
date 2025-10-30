@@ -1,0 +1,8 @@
+warning: `if _ { .. } else { .. }` is an expression
+warning: all if blocks contain the same code at the end
+warning: this could be a `const fn`
+warning: the function has a cognitive complexity of (52/25)
+warning: the function has a cognitive complexity of (29/25)
+warning: all if blocks contain the same code at the end
+warning: the function has a cognitive complexity of (54/25)
+warning: casting the result of `as_ptr` to *mut src::snudown::PyMethodDef

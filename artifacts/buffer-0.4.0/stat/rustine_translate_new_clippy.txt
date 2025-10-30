@@ -1,0 +1,23 @@
+warning: unused import: `crate::*`
+warning: unused import: `std::fmt`
+warning: unused import: `std::ffi::CStr`
+warning: unused import: `std::cmp::Ordering`
+warning: unused import: `std::ptr`
+warning: unused import: `std::ffi::CStr`
+warning: unused import: `std::fmt::Write`
+warning: unused import: `std::os::raw::c_char`
+warning: unused variable: `b_ref`
+warning: unused variable: `expected_len`
+warning: variable does not need to be mutable
+warning: unused variable: `format`
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: the loop variable `i` is used to index `alloc`
+warning: it looks like you're manually copying between slices
+warning: this comparison involving the minimum or maximum element for this type contains a case that is always true or always false
+warning: function `test_buffer_slice__range_error` should have a snake case name
+warning: function `test_buffer_slice__end` should have a snake case name
+warning: function `test_buffer_slice__end_overflow` should have a snake case name
+warning: function `test_buffer_append__grow` should have a snake case name
+warning: comparison is useless due to type limits

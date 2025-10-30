@@ -1,0 +1,4 @@
+warning: the function has a cognitive complexity of (32/25)
+warning: all if blocks contain the same code at the start
+warning: the function has a cognitive complexity of (56/25)
+warning: `if _ { .. } else { .. }` is an expression

@@ -1,0 +1,10 @@
+int json_c_get_random_seed(void)
+{
+  return arc4random();
+}
+
+
+/*** DEPENDENCIES:
+***/
+
+

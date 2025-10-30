@@ -1,0 +1,46 @@
+warning: calling `as_bytes()` on a string literal
+warning: calling `as_bytes()` on a string literal
+warning: casting the result of `as_ptr` to *mut ()
+warning: casting the result of `as_ptr` to *mut ()
+warning: casting the result of `as_ptr` to *mut u32
+warning: casting the result of `as_ptr` to *mut u8
+warning: casting the result of `as_ptr` to *mut u8
+warning: redundant clone
+warning: redundant clone
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: the function has a cognitive complexity of (31/25)
+warning: the function has a cognitive complexity of (38/25)
+warning: the function has a cognitive complexity of (42/25)
+warning: the function has a cognitive complexity of (49/25)
+warning: the function has a cognitive complexity of (52/25)
+warning: the function has a cognitive complexity of (83/25)
+warning: the function has a cognitive complexity of (93/25)
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else

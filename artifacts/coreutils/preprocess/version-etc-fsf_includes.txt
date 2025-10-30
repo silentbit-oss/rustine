@@ -1,0 +1,7 @@
+#include <assert.h>
+#include <config.h>
+#include <stdarg.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <version-etc-fsf.c>
+#include <version-etc.h>

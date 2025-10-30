@@ -1,0 +1,88 @@
+warning: `if` expression with an `else if`, but without a final `else`
+warning: `if` expression with an `else if`, but without a final `else`
+warning: `panic` should not be present in production code
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: assert without any message
+warning: assert without any message
+warning: assert without any message
+warning: assert without any message
+warning: assert without any message
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `return` statement
+warning: missing documentation for the crate
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: using `pub use`
+warning: using `pub use`
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion

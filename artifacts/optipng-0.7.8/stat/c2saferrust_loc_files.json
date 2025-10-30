@@ -1,0 +1,1048 @@
+{
+  "Rust": {
+    "blanks": 2919,
+    "children": {},
+    "code": 79404,
+    "comments": 5137,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/build.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/c2rust-lib.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 90,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pnmio/pnmutil.rs",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 83,
+          "comments": 30
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pngxtern/pngxio.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 0,
+          "comments": 18
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pngxtern/pngxrjpg.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 142,
+          "comments": 9
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pnmio/pnmin.rs",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 335,
+          "comments": 54
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pngxtern/pngxmem.rs",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 97,
+          "comments": 16
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pngxtern/pngxrpnm.rs",
+        "stats": {
+          "blanks": 39,
+          "blobs": {},
+          "code": 374,
+          "comments": 18
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngtrans.rs",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 155,
+          "comments": 35
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngwio.rs",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 138,
+          "comments": 75
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngmem.rs",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 180,
+          "comments": 81
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pngxtern/pngxset.rs",
+        "stats": {
+          "blanks": 21,
+          "blobs": {},
+          "code": 76,
+          "comments": 18
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pnmio/pnmout.rs",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 267,
+          "comments": 36
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pngxtern/pngxrgif.rs",
+        "stats": {
+          "blanks": 51,
+          "blobs": {},
+          "code": 247,
+          "comments": 30
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngget.rs",
+        "stats": {
+          "blanks": 33,
+          "blobs": {},
+          "code": 426,
+          "comments": 43
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pngxtern/pngxrtif.rs",
+        "stats": {
+          "blanks": 28,
+          "blobs": {},
+          "code": 263,
+          "comments": 20
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngread.rs",
+        "stats": {
+          "blanks": 152,
+          "blobs": {},
+          "code": 635,
+          "comments": 110
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/minitiff/tiffutil.rs",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 157,
+          "comments": 43
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pngxtern/pngxread.rs",
+        "stats": {
+          "blanks": 37,
+          "blobs": {},
+          "code": 237,
+          "comments": 29
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngwrite.rs",
+        "stats": {
+          "blanks": 96,
+          "blobs": {},
+          "code": 637,
+          "comments": 157
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/png.rs",
+        "stats": {
+          "blanks": 61,
+          "blobs": {},
+          "code": 908,
+          "comments": 203
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngwutil.rs",
+        "stats": {
+          "blanks": 136,
+          "blobs": {},
+          "code": 1798,
+          "comments": 240
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/inftrees.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 370,
+          "comments": 106
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pngxtern/pngxrbmp.rs",
+        "stats": {
+          "blanks": 50,
+          "blobs": {},
+          "code": 887,
+          "comments": 65
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/gzread.rs",
+        "stats": {
+          "blanks": 49,
+          "blobs": {},
+          "code": 631,
+          "comments": 132
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngpread.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 0,
+          "comments": 12
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/zutil.rs",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 114,
+          "comments": 12
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngtest.rs",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 25,
+          "comments": 12
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/crc32.rs",
+        "stats": {
+          "blanks": 43,
+          "blobs": {},
+          "code": 2329,
+          "comments": 66
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngset.rs",
+        "stats": {
+          "blanks": 81,
+          "blobs": {},
+          "code": 606,
+          "comments": 132
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngwtran.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 0,
+          "comments": 13
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/opngreduc/opngreduc.rs",
+        "stats": {
+          "blanks": 119,
+          "blobs": {},
+          "code": 1599,
+          "comments": 180
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngrio.rs",
+        "stats": {
+          "blanks": 20,
+          "blobs": {},
+          "code": 110,
+          "comments": 62
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngerror.rs",
+        "stats": {
+          "blanks": 41,
+          "blobs": {},
+          "code": 530,
+          "comments": 140
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/gzclose.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 17,
+          "comments": 7
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngrtran.rs",
+        "stats": {
+          "blanks": 32,
+          "blobs": {},
+          "code": 210,
+          "comments": 173
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/minitiff/tiffread.rs",
+        "stats": {
+          "blanks": 35,
+          "blobs": {},
+          "code": 768,
+          "comments": 67
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/gzlib.rs",
+        "stats": {
+          "blanks": 36,
+          "blobs": {},
+          "code": 465,
+          "comments": 64
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/test/minigzip.rs",
+        "stats": {
+          "blanks": 35,
+          "blobs": {},
+          "code": 307,
+          "comments": 30
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/inflate.rs",
+        "stats": {
+          "blanks": 83,
+          "blobs": {},
+          "code": 5411,
+          "comments": 263
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/trees.rs",
+        "stats": {
+          "blanks": 59,
+          "blobs": {},
+          "code": 3776,
+          "comments": 249
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/uncompr.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 110,
+          "comments": 22
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/deflate.rs",
+        "stats": {
+          "blanks": 82,
+          "blobs": {},
+          "code": 2515,
+          "comments": 433
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/compress.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 119,
+          "comments": 22
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/adler32.rs",
+        "stats": {
+          "blanks": 38,
+          "blobs": {},
+          "code": 171,
+          "comments": 29
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/optipng/ratio.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 162,
+          "comments": 52
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/optipng/ioutil.rs",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 484,
+          "comments": 74
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/test/example.rs",
+        "stats": {
+          "blanks": 109,
+          "blobs": {},
+          "code": 631,
+          "comments": 47
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/inffast.rs",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 362,
+          "comments": 82
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/gzwrite.rs",
+        "stats": {
+          "blanks": 24,
+          "blobs": {},
+          "code": 549,
+          "comments": 97
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/optipng/optipng.rs",
+        "stats": {
+          "blanks": 91,
+          "blobs": {},
+          "code": 917,
+          "comments": 182
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/optipng/wildargs.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 0,
+          "comments": 19
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/optipng/bitset.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 189,
+          "comments": 37
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/infback.rs",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 5139,
+          "comments": 93
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/gifread/gifread.rs",
+        "stats": {
+          "blanks": 51,
+          "blobs": {},
+          "code": 752,
+          "comments": 74
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/optipng/optim.rs",
+        "stats": {
+          "blanks": 224,
+          "blobs": {},
+          "code": 2946,
+          "comments": 316
+        }
+      },
+      {
+        "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngrutil.rs",
+        "stats": {
+          "blanks": 685,
+          "blobs": {},
+          "code": 38952,
+          "comments": 503
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 2919,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/build.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/c2rust-lib.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 90,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pnmio/pnmutil.rs",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 83,
+            "comments": 30
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pngxtern/pngxio.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 0,
+            "comments": 18
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pngxtern/pngxrjpg.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 142,
+            "comments": 9
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pnmio/pnmin.rs",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 335,
+            "comments": 54
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pngxtern/pngxmem.rs",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 97,
+            "comments": 16
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pngxtern/pngxrpnm.rs",
+          "stats": {
+            "blanks": 39,
+            "blobs": {},
+            "code": 374,
+            "comments": 18
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngtrans.rs",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 155,
+            "comments": 35
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngwio.rs",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 138,
+            "comments": 75
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngmem.rs",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 180,
+            "comments": 81
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pngxtern/pngxset.rs",
+          "stats": {
+            "blanks": 21,
+            "blobs": {},
+            "code": 76,
+            "comments": 18
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pnmio/pnmout.rs",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 267,
+            "comments": 36
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pngxtern/pngxrgif.rs",
+          "stats": {
+            "blanks": 51,
+            "blobs": {},
+            "code": 247,
+            "comments": 30
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngget.rs",
+          "stats": {
+            "blanks": 33,
+            "blobs": {},
+            "code": 426,
+            "comments": 43
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pngxtern/pngxrtif.rs",
+          "stats": {
+            "blanks": 28,
+            "blobs": {},
+            "code": 263,
+            "comments": 20
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngread.rs",
+          "stats": {
+            "blanks": 152,
+            "blobs": {},
+            "code": 635,
+            "comments": 110
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/minitiff/tiffutil.rs",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 157,
+            "comments": 43
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pngxtern/pngxread.rs",
+          "stats": {
+            "blanks": 37,
+            "blobs": {},
+            "code": 237,
+            "comments": 29
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngwrite.rs",
+          "stats": {
+            "blanks": 96,
+            "blobs": {},
+            "code": 637,
+            "comments": 157
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/png.rs",
+          "stats": {
+            "blanks": 61,
+            "blobs": {},
+            "code": 908,
+            "comments": 203
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngwutil.rs",
+          "stats": {
+            "blanks": 136,
+            "blobs": {},
+            "code": 1798,
+            "comments": 240
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/inftrees.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 370,
+            "comments": 106
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/pngxtern/pngxrbmp.rs",
+          "stats": {
+            "blanks": 50,
+            "blobs": {},
+            "code": 887,
+            "comments": 65
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/gzread.rs",
+          "stats": {
+            "blanks": 49,
+            "blobs": {},
+            "code": 631,
+            "comments": 132
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngpread.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 0,
+            "comments": 12
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/zutil.rs",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 114,
+            "comments": 12
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngtest.rs",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 25,
+            "comments": 12
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/crc32.rs",
+          "stats": {
+            "blanks": 43,
+            "blobs": {},
+            "code": 2329,
+            "comments": 66
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngset.rs",
+          "stats": {
+            "blanks": 81,
+            "blobs": {},
+            "code": 606,
+            "comments": 132
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngwtran.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 0,
+            "comments": 13
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/opngreduc/opngreduc.rs",
+          "stats": {
+            "blanks": 119,
+            "blobs": {},
+            "code": 1599,
+            "comments": 180
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngrio.rs",
+          "stats": {
+            "blanks": 20,
+            "blobs": {},
+            "code": 110,
+            "comments": 62
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngerror.rs",
+          "stats": {
+            "blanks": 41,
+            "blobs": {},
+            "code": 530,
+            "comments": 140
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/gzclose.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 17,
+            "comments": 7
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngrtran.rs",
+          "stats": {
+            "blanks": 32,
+            "blobs": {},
+            "code": 210,
+            "comments": 173
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/minitiff/tiffread.rs",
+          "stats": {
+            "blanks": 35,
+            "blobs": {},
+            "code": 768,
+            "comments": 67
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/gzlib.rs",
+          "stats": {
+            "blanks": 36,
+            "blobs": {},
+            "code": 465,
+            "comments": 64
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/test/minigzip.rs",
+          "stats": {
+            "blanks": 35,
+            "blobs": {},
+            "code": 307,
+            "comments": 30
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/inflate.rs",
+          "stats": {
+            "blanks": 83,
+            "blobs": {},
+            "code": 5411,
+            "comments": 263
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/trees.rs",
+          "stats": {
+            "blanks": 59,
+            "blobs": {},
+            "code": 3776,
+            "comments": 249
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/uncompr.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 110,
+            "comments": 22
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/deflate.rs",
+          "stats": {
+            "blanks": 82,
+            "blobs": {},
+            "code": 2515,
+            "comments": 433
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/compress.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 119,
+            "comments": 22
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/adler32.rs",
+          "stats": {
+            "blanks": 38,
+            "blobs": {},
+            "code": 171,
+            "comments": 29
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/optipng/ratio.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 162,
+            "comments": 52
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/optipng/ioutil.rs",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 484,
+            "comments": 74
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/test/example.rs",
+          "stats": {
+            "blanks": 109,
+            "blobs": {},
+            "code": 631,
+            "comments": 47
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/inffast.rs",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 362,
+            "comments": 82
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/gzwrite.rs",
+          "stats": {
+            "blanks": 24,
+            "blobs": {},
+            "code": 549,
+            "comments": 97
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/optipng/optipng.rs",
+          "stats": {
+            "blanks": 91,
+            "blobs": {},
+            "code": 917,
+            "comments": 182
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/optipng/wildargs.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 0,
+            "comments": 19
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/optipng/bitset.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 189,
+            "comments": 37
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/zlib/infback.rs",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 5139,
+            "comments": 93
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/gifread/gifread.rs",
+          "stats": {
+            "blanks": 51,
+            "blobs": {},
+            "code": 752,
+            "comments": 74
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/optipng/optim.rs",
+          "stats": {
+            "blanks": 224,
+            "blobs": {},
+            "code": 2946,
+            "comments": 316
+          }
+        },
+        {
+          "name": "artifacts/optipng-0.7.8/others/c2saferrust/src/libpng/pngrutil.rs",
+          "stats": {
+            "blanks": 685,
+            "blobs": {},
+            "code": 38952,
+            "comments": 503
+          }
+        }
+      ]
+    },
+    "code": 79404,
+    "comments": 5137,
+    "inaccurate": false,
+    "reports": []
+  }
+}

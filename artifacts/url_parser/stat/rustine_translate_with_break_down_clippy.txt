@@ -1,0 +1,56 @@
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: constants have by default a `'static` lifetime
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::error::Error`
+warning: unused import: `std::ffi::CStr`
+warning: unused import: `std::fmt`
+warning: value assigned to `hostname_end_idx` is never read
+warning: value assigned to `hostname_end_idx` is never read
+warning: unnecessary `unsafe` block
+warning: unused variable: `element`
+warning: variable does not need to be mutable
+warning: unused variable: `data`
+warning: unused variable: `fragment_end`
+warning: unused variable: `value`
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: this returns a `Result<_, ()>`
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: redundant pattern matching, consider using `is_err()`
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: you are using an explicit closure for cloning elements
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: you are using an explicit closure for cloning elements
+warning: you are using an explicit closure for cloning elements
+warning: you are using an explicit closure for cloning elements
+warning: you are using an explicit closure for cloning elements
+warning: you are using an explicit closure for cloning elements
+warning: variables can be used directly in the `format!` string
+warning: unused `std::result::Result` that must be used

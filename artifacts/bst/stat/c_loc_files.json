@@ -1,0 +1,40 @@
+{
+  "C": {
+    "blanks": 22,
+    "children": {},
+    "code": 65,
+    "comments": 71,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/bst/bst.c",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 65,
+          "comments": 71
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 22,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/bst/bst.c",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 65,
+            "comments": 71
+          }
+        }
+      ]
+    },
+    "code": 65,
+    "comments": 71,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,10 @@
+#include <assert.h>
+#include <config.h>
+#include <langinfo.h>
+#include <localcharset.c>
+#include <localcharset.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>

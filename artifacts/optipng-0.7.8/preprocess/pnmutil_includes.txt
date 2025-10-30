@@ -1,0 +1,6 @@
+#include <errno.h>
+#include <limits.h>
+#include <pnmio.h>
+#include <pnmutil.c>
+#include <stddef.h>
+#include <stdio.h>

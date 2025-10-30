@@ -1,0 +1,31 @@
+warning: unnecessary `>= y + 1` or `x - 1 >=`
+warning: unnecessary `>= y + 1` or `x - 1 >=`
+warning: unnecessary `>= y + 1` or `x - 1 >=`
+warning: this function has too many arguments (8/7)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: manual absolute difference pattern without using `abs_diff`
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: this function has too many arguments (9/7)
+warning: manually reimplementing `div_ceil`
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (12/7)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (10/7)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (8/7)

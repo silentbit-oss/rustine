@@ -1,0 +1,59 @@
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try: `eprintln!("{}: warning: output file(s) may be incomplete.", prog_name_str)`
+29 ~     eprintln!("{}: warning: output file(s) may be incomplete.",
+31 | |         "{}: warning: output file(s) may be incomplete.",
+56 |     writeln!(io::stderr(), "{}: warning: output file(s) may be incomplete.", prog_name_str).unwrap();
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `unwrap` on `path` after checking its variant with `is_none`
+warning: called `unwrap` on `root` after checking its variant with `is_none`
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut ()` -> `*mut ()`)
+warning: casting to the same type is unnecessary (`char` -> `char`)
+warning: deref which would be done by auto-deref
+warning: manual slice size calculation
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: this OR pattern can be rewritten using a range
+warning: this OR pattern can be rewritten using a range
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this looks like you are swapping `rtmp` and `yy[ryy_j_idx]` manually
+warning: this looks like you are swapping elements of `fmap` manually
+warning: this looks like you are swapping elements of `fmap` manually
+warning: this looks like you are swapping elements of `fmap` manually
+warning: this looks like you are swapping elements of `fmap` manually
+warning: this looks like you are swapping elements of `fmap` manually
+warning: unnecessary `>= y + 1` or `x - 1 >=`
+warning: unnecessary `>= y + 1` or `x - 1 >=`
+warning: unnecessary `>= y + 1` or `x - 1 >=`
+warning: use of `write!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: useless conversion to the same type: `std::boxed::Box<[u8]>`
+warning: useless conversion to the same type: `std::boxed::Box<[u8]>`
+warning: using `SeekFrom::Current` to start from current position
+warning: using `SeekFrom::Current` to start from current position
+warning: using `SeekFrom::Current` to start from current position
+warning: using `SeekFrom::Current` to start from current position
+warning: using `SeekFrom::Current` to start from current position
+warning: using `SeekFrom::Current` to start from current position
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions

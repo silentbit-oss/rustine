@@ -1,0 +1,38 @@
+warning: the feature `core_intrinsics` is internal to the compiler or standard library
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: the feature `raw_ref_op` has been stable since 1.82.0 and no longer requires an attribute to enable
+warning: the feature `strict_provenance` has been stable since 1.84.0 and no longer requires an attribute to enable
+warning: unused variable: `sig`
+warning: variable `dummy` is assigned to, but never used
+warning: this `impl` can be derived
+warning: this `impl` can be derived
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected

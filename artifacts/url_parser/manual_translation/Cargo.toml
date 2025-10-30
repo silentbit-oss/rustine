@@ -1,0 +1,15 @@
+[package]
+name = "translate_new"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lazy_static = "1.4.0"
+
+[[bin]]
+name="gen_char_category_table"
+path="src/gen_char_category_table_main.rs"
+
+[[bin]]
+name="test"
+path="src/test_main.rs"

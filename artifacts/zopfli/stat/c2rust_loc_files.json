@@ -1,0 +1,274 @@
+{
+  "Rust": {
+    "blanks": 3,
+    "children": {},
+    "code": 9343,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/zopfli/others/c2rust/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 23,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/c2rust/src/zopfli_lib.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 94,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/c2rust/src/blocksplitter.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 661,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/c2rust/src/squeeze.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1761,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/c2rust/src/gzip_container.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 692,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/c2rust/src/katajainen.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 357,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/c2rust/src/tree.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 186,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/c2rust/src/lz77.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1707,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/c2rust/src/deflate.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 3086,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/c2rust/src/zlib_container.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 254,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/c2rust/src/cache.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 286,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/c2rust/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/c2rust/src/util.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 20,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/c2rust/src/hash.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 210,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/zopfli/others/c2rust/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 23,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/c2rust/src/zopfli_lib.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 94,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/c2rust/src/blocksplitter.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 661,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/c2rust/src/squeeze.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1761,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/c2rust/src/gzip_container.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 692,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/c2rust/src/katajainen.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 357,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/c2rust/src/tree.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 186,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/c2rust/src/lz77.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1707,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/c2rust/src/deflate.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 3086,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/c2rust/src/zlib_container.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 254,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/c2rust/src/cache.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 286,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/c2rust/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/c2rust/src/util.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 20,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/c2rust/src/hash.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 210,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 9343,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

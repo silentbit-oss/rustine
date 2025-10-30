@@ -1,0 +1,1581 @@
+{
+  "C": {
+    "blanks": 1011,
+    "children": {},
+    "code": 18516,
+    "comments": 1312,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/cluster.c",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 37,
+          "comments": 7
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/entropy_encode.c",
+        "stats": {
+          "blanks": 28,
+          "blobs": {},
+          "code": 414,
+          "comments": 61
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/compress_fragment_two_pass.c",
+        "stats": {
+          "blanks": 50,
+          "blobs": {},
+          "code": 519,
+          "comments": 76
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/literal_cost.c",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 141,
+          "comments": 21
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/block_splitter.c",
+        "stats": {
+          "blanks": 21,
+          "blobs": {},
+          "code": 154,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/backward_references.c",
+        "stats": {
+          "blanks": 23,
+          "blobs": {},
+          "code": 104,
+          "comments": 18
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/metablock.c",
+        "stats": {
+          "blanks": 56,
+          "blobs": {},
+          "code": 564,
+          "comments": 43
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/static_dict.c",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 447,
+          "comments": 30
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/utf8_util.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 66,
+          "comments": 12
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/dec/decode.c",
+        "stats": {
+          "blanks": 173,
+          "blobs": {},
+          "code": 2112,
+          "comments": 323
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/common/context.c",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 132,
+          "comments": 15
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/common/transform.c",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 258,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/encoder_dict.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 21,
+          "comments": 5
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/brotli_bit_stream.c",
+        "stats": {
+          "blanks": 102,
+          "blobs": {},
+          "code": 1110,
+          "comments": 102
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/histogram.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 83,
+          "comments": 7
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/common/dictionary.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 5895,
+          "comments": 9
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/dec/state.c",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 127,
+          "comments": 10
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/dec/huffman.c",
+        "stats": {
+          "blanks": 26,
+          "blobs": {},
+          "code": 289,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/dec/bit_reader.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 56,
+          "comments": 10
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/common/constants.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 8,
+          "comments": 5
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/common/platform.c",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 11,
+          "comments": 7
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/compress_fragment.c",
+        "stats": {
+          "blanks": 68,
+          "blobs": {},
+          "code": 611,
+          "comments": 111
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/encode.c",
+        "stats": {
+          "blanks": 142,
+          "blobs": {},
+          "code": 1568,
+          "comments": 217
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/backward_references_hq.c",
+        "stats": {
+          "blanks": 63,
+          "blobs": {},
+          "code": 713,
+          "comments": 67
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/bit_cost.c",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 21,
+          "comments": 6
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/fast_log.c",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 95,
+          "comments": 6
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/tools/brotli.c",
+        "stats": {
+          "blanks": 88,
+          "blobs": {},
+          "code": 969,
+          "comments": 59
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/command.c",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 18,
+          "comments": 5
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/memory.c",
+        "stats": {
+          "blanks": 23,
+          "blobs": {},
+          "code": 138,
+          "comments": 9
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/dictionary_hash.c",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 1835,
+          "comments": 6
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 929,
+    "children": {},
+    "code": 12654,
+    "comments": 2116,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/utf8_util.h",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 15,
+          "comments": 9
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/memory.h",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 68,
+          "comments": 29
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/cluster.h",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 30,
+          "comments": 6
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/entropy_encode_static.h",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 514,
+          "comments": 6
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/params.h",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 32,
+          "comments": 7
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/hash.h",
+        "stats": {
+          "blanks": 61,
+          "blobs": {},
+          "code": 385,
+          "comments": 42
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/backward_references.h",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 22,
+          "comments": 10
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/metablock.h",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 78,
+          "comments": 14
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/hash_longest_match64_inc.h",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 194,
+          "comments": 51
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/find_match_length.h",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 61,
+          "comments": 11
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/histogram.h",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 44,
+          "comments": 7
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/backward_references_hq.h",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 50,
+          "comments": 32
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/bit_cost.h",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 47,
+          "comments": 7
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/fast_log.h",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 42,
+          "comments": 11
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/compress_fragment.h",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 23,
+          "comments": 31
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/block_splitter.h",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 35,
+          "comments": 6
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/hash_longest_match_quickly_inc.h",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 206,
+          "comments": 41
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/command.h",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 145,
+          "comments": 23
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/block_splitter_inc.h",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 402,
+          "comments": 20
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/dictionary_hash.h",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 12,
+          "comments": 6
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/brotli_bit_stream.h",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 42,
+          "comments": 29
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/dec/bit_reader.h",
+        "stats": {
+          "blanks": 36,
+          "blobs": {},
+          "code": 261,
+          "comments": 54
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/dec/huffman.h",
+        "stats": {
+          "blanks": 24,
+          "blobs": {},
+          "code": 60,
+          "comments": 37
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/dec/prefix.h",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 719,
+          "comments": 7
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/static_dict_lut.h",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 5847,
+          "comments": 7
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/include/brotli/port.h",
+        "stats": {
+          "blanks": 34,
+          "blobs": {},
+          "code": 244,
+          "comments": 10
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/common/version.h",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 5,
+          "comments": 14
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/common/transform.h",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 58,
+          "comments": 15
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/include/brotli/decode.h",
+        "stats": {
+          "blanks": 24,
+          "blobs": {},
+          "code": 98,
+          "comments": 222
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/common/context.h",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 15,
+          "comments": 89
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/ringbuffer.h",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 110,
+          "comments": 42
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/compress_fragment_two_pass.h",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 23,
+          "comments": 23
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/static_dict.h",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 19,
+          "comments": 13
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/hash_forgetful_chain_inc.h",
+        "stats": {
+          "blanks": 32,
+          "blobs": {},
+          "code": 209,
+          "comments": 52
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/hash_to_binary_tree_inc.h",
+        "stats": {
+          "blanks": 24,
+          "blobs": {},
+          "code": 238,
+          "comments": 67
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/hash_composite_inc.h",
+        "stats": {
+          "blanks": 20,
+          "blobs": {},
+          "code": 91,
+          "comments": 14
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/backward_references_inc.h",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 125,
+          "comments": 30
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/block_encoder_inc.h",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 20,
+          "comments": 9
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/dec/state.h",
+        "stats": {
+          "blanks": 45,
+          "blobs": {},
+          "code": 205,
+          "comments": 115
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/include/brotli/types.h",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 25,
+          "comments": 48
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/include/brotli/encode.h",
+        "stats": {
+          "blanks": 23,
+          "blobs": {},
+          "code": 66,
+          "comments": 359
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/common/dictionary.h",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 21,
+          "comments": 30
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/common/constants.h",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 88,
+          "comments": 90
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/hash_longest_match_inc.h",
+        "stats": {
+          "blanks": 23,
+          "blobs": {},
+          "code": 189,
+          "comments": 50
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/common/platform.h",
+        "stats": {
+          "blanks": 54,
+          "blobs": {},
+          "code": 471,
+          "comments": 69
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/hash_rolling_inc.h",
+        "stats": {
+          "blanks": 32,
+          "blobs": {},
+          "code": 153,
+          "comments": 27
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/histogram_inc.h",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 34,
+          "comments": 8
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/write_bits.h",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 52,
+          "comments": 27
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/encoder_dict.h",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 24,
+          "comments": 9
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/cluster_inc.h",
+        "stats": {
+          "blanks": 20,
+          "blobs": {},
+          "code": 259,
+          "comments": 41
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/bit_cost_inc.h",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 101,
+          "comments": 21
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/entropy_encode.h",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 74,
+          "comments": 34
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/metablock_inc.h",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 138,
+          "comments": 35
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/prefix.h",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 37,
+          "comments": 9
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/literal_cost.h",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 13,
+          "comments": 10
+        }
+      },
+      {
+        "name": "subjects/brotli-1.0.9/c/enc/quality.h",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 115,
+          "comments": 31
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 1940,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/cluster.c",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 37,
+            "comments": 7
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/entropy_encode.c",
+          "stats": {
+            "blanks": 28,
+            "blobs": {},
+            "code": 414,
+            "comments": 61
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/compress_fragment_two_pass.c",
+          "stats": {
+            "blanks": 50,
+            "blobs": {},
+            "code": 519,
+            "comments": 76
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/literal_cost.c",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 141,
+            "comments": 21
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/block_splitter.c",
+          "stats": {
+            "blanks": 21,
+            "blobs": {},
+            "code": 154,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/backward_references.c",
+          "stats": {
+            "blanks": 23,
+            "blobs": {},
+            "code": 104,
+            "comments": 18
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/metablock.c",
+          "stats": {
+            "blanks": 56,
+            "blobs": {},
+            "code": 564,
+            "comments": 43
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/static_dict.c",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 447,
+            "comments": 30
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/utf8_util.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 66,
+            "comments": 12
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/dec/decode.c",
+          "stats": {
+            "blanks": 173,
+            "blobs": {},
+            "code": 2112,
+            "comments": 323
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/common/context.c",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 132,
+            "comments": 15
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/common/transform.c",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 258,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/encoder_dict.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 21,
+            "comments": 5
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/brotli_bit_stream.c",
+          "stats": {
+            "blanks": 102,
+            "blobs": {},
+            "code": 1110,
+            "comments": 102
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/histogram.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 83,
+            "comments": 7
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/common/dictionary.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 5895,
+            "comments": 9
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/dec/state.c",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 127,
+            "comments": 10
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/dec/huffman.c",
+          "stats": {
+            "blanks": 26,
+            "blobs": {},
+            "code": 289,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/dec/bit_reader.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 56,
+            "comments": 10
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/common/constants.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 8,
+            "comments": 5
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/common/platform.c",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 11,
+            "comments": 7
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/compress_fragment.c",
+          "stats": {
+            "blanks": 68,
+            "blobs": {},
+            "code": 611,
+            "comments": 111
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/encode.c",
+          "stats": {
+            "blanks": 142,
+            "blobs": {},
+            "code": 1568,
+            "comments": 217
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/backward_references_hq.c",
+          "stats": {
+            "blanks": 63,
+            "blobs": {},
+            "code": 713,
+            "comments": 67
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/bit_cost.c",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 21,
+            "comments": 6
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/fast_log.c",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 95,
+            "comments": 6
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/tools/brotli.c",
+          "stats": {
+            "blanks": 88,
+            "blobs": {},
+            "code": 969,
+            "comments": 59
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/command.c",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 18,
+            "comments": 5
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/memory.c",
+          "stats": {
+            "blanks": 23,
+            "blobs": {},
+            "code": 138,
+            "comments": 9
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/dictionary_hash.c",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 1835,
+            "comments": 6
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/utf8_util.h",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 15,
+            "comments": 9
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/memory.h",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 68,
+            "comments": 29
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/cluster.h",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 30,
+            "comments": 6
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/entropy_encode_static.h",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 514,
+            "comments": 6
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/params.h",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 32,
+            "comments": 7
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/hash.h",
+          "stats": {
+            "blanks": 61,
+            "blobs": {},
+            "code": 385,
+            "comments": 42
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/backward_references.h",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 22,
+            "comments": 10
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/metablock.h",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 78,
+            "comments": 14
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/hash_longest_match64_inc.h",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 194,
+            "comments": 51
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/find_match_length.h",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 61,
+            "comments": 11
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/histogram.h",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 44,
+            "comments": 7
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/backward_references_hq.h",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 50,
+            "comments": 32
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/bit_cost.h",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 47,
+            "comments": 7
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/fast_log.h",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 42,
+            "comments": 11
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/compress_fragment.h",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 23,
+            "comments": 31
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/block_splitter.h",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 35,
+            "comments": 6
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/hash_longest_match_quickly_inc.h",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 206,
+            "comments": 41
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/command.h",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 145,
+            "comments": 23
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/block_splitter_inc.h",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 402,
+            "comments": 20
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/dictionary_hash.h",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 12,
+            "comments": 6
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/brotli_bit_stream.h",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 42,
+            "comments": 29
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/dec/bit_reader.h",
+          "stats": {
+            "blanks": 36,
+            "blobs": {},
+            "code": 261,
+            "comments": 54
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/dec/huffman.h",
+          "stats": {
+            "blanks": 24,
+            "blobs": {},
+            "code": 60,
+            "comments": 37
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/dec/prefix.h",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 719,
+            "comments": 7
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/static_dict_lut.h",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 5847,
+            "comments": 7
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/include/brotli/port.h",
+          "stats": {
+            "blanks": 34,
+            "blobs": {},
+            "code": 244,
+            "comments": 10
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/common/version.h",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 5,
+            "comments": 14
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/common/transform.h",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 58,
+            "comments": 15
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/include/brotli/decode.h",
+          "stats": {
+            "blanks": 24,
+            "blobs": {},
+            "code": 98,
+            "comments": 222
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/common/context.h",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 15,
+            "comments": 89
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/ringbuffer.h",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 110,
+            "comments": 42
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/compress_fragment_two_pass.h",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 23,
+            "comments": 23
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/static_dict.h",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 19,
+            "comments": 13
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/hash_forgetful_chain_inc.h",
+          "stats": {
+            "blanks": 32,
+            "blobs": {},
+            "code": 209,
+            "comments": 52
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/hash_to_binary_tree_inc.h",
+          "stats": {
+            "blanks": 24,
+            "blobs": {},
+            "code": 238,
+            "comments": 67
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/hash_composite_inc.h",
+          "stats": {
+            "blanks": 20,
+            "blobs": {},
+            "code": 91,
+            "comments": 14
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/backward_references_inc.h",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 125,
+            "comments": 30
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/block_encoder_inc.h",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 20,
+            "comments": 9
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/dec/state.h",
+          "stats": {
+            "blanks": 45,
+            "blobs": {},
+            "code": 205,
+            "comments": 115
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/include/brotli/types.h",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 25,
+            "comments": 48
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/include/brotli/encode.h",
+          "stats": {
+            "blanks": 23,
+            "blobs": {},
+            "code": 66,
+            "comments": 359
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/common/dictionary.h",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 21,
+            "comments": 30
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/common/constants.h",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 88,
+            "comments": 90
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/hash_longest_match_inc.h",
+          "stats": {
+            "blanks": 23,
+            "blobs": {},
+            "code": 189,
+            "comments": 50
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/common/platform.h",
+          "stats": {
+            "blanks": 54,
+            "blobs": {},
+            "code": 471,
+            "comments": 69
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/hash_rolling_inc.h",
+          "stats": {
+            "blanks": 32,
+            "blobs": {},
+            "code": 153,
+            "comments": 27
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/histogram_inc.h",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 34,
+            "comments": 8
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/write_bits.h",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 52,
+            "comments": 27
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/encoder_dict.h",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 24,
+            "comments": 9
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/cluster_inc.h",
+          "stats": {
+            "blanks": 20,
+            "blobs": {},
+            "code": 259,
+            "comments": 41
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/bit_cost_inc.h",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 101,
+            "comments": 21
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/entropy_encode.h",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 74,
+            "comments": 34
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/metablock_inc.h",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 138,
+            "comments": 35
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/prefix.h",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 37,
+            "comments": 9
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/literal_cost.h",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 13,
+            "comments": 10
+          }
+        },
+        {
+          "name": "subjects/brotli-1.0.9/c/enc/quality.h",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 115,
+            "comments": 31
+          }
+        }
+      ]
+    },
+    "code": 31170,
+    "comments": 3428,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,2815 @@
+{
+    "special_type": [
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "",
+            "name": "XErrorEvent",
+            "names": [
+                "typedef struct XErrorEvent XErrorEvent"
+            ]
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "",
+            "name": "XWindowAttributes",
+            "names": [
+                "typedef struct XWindowAttributes XWindowAttributes"
+            ]
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "",
+            "name": "Window",
+            "names": [
+                "typedef struct Window Window"
+            ]
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "",
+            "name": "Cursor",
+            "names": [
+                "typedef struct Cursor Cursor"
+            ]
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "",
+            "name": "Display",
+            "names": [
+                "typedef struct Display Display"
+            ]
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "",
+            "name": "Screen",
+            "names": [
+                "typedef struct Screen Screen"
+            ]
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "",
+            "name": "Status",
+            "names": [
+                "typedef struct Status Status"
+            ]
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "",
+            "name": "XColor",
+            "names": [
+                "typedef struct XColor XColor"
+            ]
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "",
+            "name": "XEvent",
+            "names": [
+                "typedef struct XEvent XEvent"
+            ]
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "",
+            "name": "XGCValues",
+            "names": [
+                "typedef struct XGCValues XGCValues"
+            ]
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "",
+            "name": "_XGC",
+            "names": [
+                "typedef struct _XGC *GC"
+            ]
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "",
+            "name": "XImage",
+            "names": [
+                "typedef struct _XImage XImage"
+            ]
+        }
+    ],
+    "global_variable": [
+        {
+            "path": null,
+            "name": "dpy",
+            "type": "Display *",
+            "definition": [
+                "Display *dpy"
+            ]
+        },
+        {
+            "path": null,
+            "name": "scr",
+            "type": "Screen *",
+            "definition": [
+                "Screen *scr"
+            ]
+        },
+        {
+            "path": null,
+            "name": "win",
+            "type": "Window",
+            "definition": [
+                "Window win"
+            ]
+        },
+        {
+            "path": null,
+            "name": "gc",
+            "type": "GC",
+            "definition": [
+                "GC gc"
+            ]
+        },
+        {
+            "path": null,
+            "name": "when_button",
+            "type": "Cursor",
+            "definition": [
+                "Cursor when_button"
+            ]
+        },
+        {
+            "path": null,
+            "name": "crosshair",
+            "type": "Cursor",
+            "definition": [
+                "Cursor crosshair"
+            ]
+        },
+        {
+            "path": null,
+            "name": "progname",
+            "type": "char *",
+            "definition": [
+                "char *progname"
+            ]
+        },
+        {
+            "path": null,
+            "name": "set_title",
+            "type": "int",
+            "definition": [
+                "int set_title"
+            ]
+        },
+        {
+            "path": null,
+            "name": "xgrab",
+            "type": "int",
+            "definition": [
+                "int xgrab"
+            ]
+        },
+        {
+            "path": null,
+            "name": "ygrab",
+            "type": "int",
+            "definition": [
+                "int ygrab"
+            ]
+        },
+        {
+            "path": null,
+            "name": "magx",
+            "type": "int",
+            "definition": [
+                "int magx = 2"
+            ]
+        },
+        {
+            "path": null,
+            "name": "magy",
+            "type": "int",
+            "definition": [
+                "int magy = 2"
+            ]
+        },
+        {
+            "path": null,
+            "name": "flipxy",
+            "type": "int",
+            "definition": [
+                "int flipxy = False"
+            ]
+        },
+        {
+            "path": null,
+            "name": "flipx",
+            "type": "int",
+            "definition": [
+                "int flipx = False"
+            ]
+        },
+        {
+            "path": null,
+            "name": "flipy",
+            "type": "int",
+            "definition": [
+                "int flipy = False"
+            ]
+        },
+        {
+            "path": null,
+            "name": "xzoom_flag",
+            "type": "int",
+            "definition": [
+                "int xzoom_flag = False"
+            ]
+        },
+        {
+            "path": null,
+            "name": "yzoom_flag",
+            "type": "int",
+            "definition": [
+                "int yzoom_flag = False"
+            ]
+        },
+        {
+            "path": null,
+            "name": "width",
+            "type": "int [2]",
+            "definition": [
+                "int width[2] = {0, 256}"
+            ]
+        },
+        {
+            "path": null,
+            "name": "height",
+            "type": "int [2]",
+            "definition": [
+                "int height[2] = {0, 256}"
+            ]
+        },
+        {
+            "path": null,
+            "name": "ximage",
+            "type": "XImage *[2]",
+            "definition": [
+                "XImage *ximage[2]"
+            ]
+        },
+        {
+            "path": null,
+            "name": "created_images",
+            "type": "int",
+            "definition": [
+                "int created_images = False"
+            ]
+        },
+        {
+            "path": null,
+            "name": "delays",
+            "type": "int [5]",
+            "definition": [
+                "int delays[5] = {200000, 100000, 50000, 10000, 0}"
+            ]
+        },
+        {
+            "path": null,
+            "name": "delay_index",
+            "type": "int",
+            "definition": [
+                "int delay_index = 0"
+            ]
+        },
+        {
+            "path": null,
+            "name": "delay",
+            "type": "int",
+            "definition": [
+                "int delay = 200000"
+            ]
+        }
+    ],
+    "function": [
+        {
+            "path": null,
+            "name": "timeout_func",
+            "header": "",
+            "params": [
+                "int signum"
+            ],
+            "definition": "void timeout_func(int signum)\n{\n  set_title = True;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "signum",
+                        "type": "int",
+                        "definition": [
+                            "int signum"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "set_title",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "allocate_images",
+            "header": "",
+            "params": [
+                "void"
+            ],
+            "definition": "void allocate_images(void)\n{\n  int i;\n  char *data;\n  unsigned int data_idx = 0;\n  for (i = 0; i < 2; i += 1)\n  {\n    data_idx = malloc(width[i] * height[i]);\n    ximage[i] = XCreateImage(dpy, DefaultVisualOfScreen(scr), DefaultDepthOfScreen(scr), ZPixmap, 0, data, width[i], height[i], 8, width[i]);\n    if (ximage[i] == 0)\n    {\n      perror(\"XCreateImage\");\n      exit(-1);\n    }\n  }\n\n  created_images = True;\n}\n\n",
+            "calle": [
+                "DefaultDepthOfScreen",
+                "DefaultVisualOfScreen",
+                "XCreateImage",
+                "exit",
+                "malloc",
+                "perror"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": null,
+                        "type": "void",
+                        "definition": [
+                            "void"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "char *",
+                        "definition": [
+                            "char *data"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int data_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "width",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "height",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "ximage",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "dpy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "scr",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "created_images",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "destroy_images",
+            "header": "",
+            "params": [
+                "void"
+            ],
+            "definition": "void destroy_images(void)\n{\n  int i;\n  for (i = 0; i < 2; i += 1)\n  {\n    free(ximage[i]->data);\n    ximage[i]->data = 0;\n    XDestroyImage(ximage[i]);\n  }\n\n}\n\n",
+            "calle": [
+                "XDestroyImage",
+                "free"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": null,
+                        "type": "void",
+                        "definition": [
+                            "void"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ximage",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "Usage",
+            "header": "",
+            "params": [
+                "void"
+            ],
+            "definition": "void Usage(void)\n{\n  fprintf(stderr, \"Usage: %s [ args ]\\nCommand line args:\\n-display displayname\\n-mag magnification [ magnification ]\\n-geometry geometry\\n-source geometry\\n-x\\n-y\\n-xy\\n\\nWindow commands:\\n+: Zoom in\\n-: Zoom out\\nx: Flip right and left\\ny: Flip top and bottom\\nz: Rotate 90 degrees counter-clockwize\\nw: Next '+' or '-' only change width scaling\\nh: Next '+' or '-' only change height scaling\\nd: Change delay between frames\\nq: Quit\\nArrow keys: Scroll in direction of arrow\\nMouse button drag: Set top-left corner of viewed area\\n\", progname);\n  exit(1);\n}\n\n",
+            "calle": [
+                "exit",
+                "fprintf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": null,
+                        "type": "void",
+                        "definition": [
+                            "void"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "progname",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "resize",
+            "header": "",
+            "params": [
+                "int new_width",
+                "int new_height"
+            ],
+            "definition": "void resize(int new_width, int new_height)\n{\n  if (created_images)\n  {\n    destroy_images();\n  }\n  if (flipxy)\n  {\n    height[0] = ((new_width + magx) - 1) / magx;\n    width[0] = ((new_height + magy) - 1) / magy;\n  }\n  else\n  {\n    width[0] = ((new_width + magx) - 1) / magx;\n    height[0] = ((new_height + magy) - 1) / magy;\n  }\n  if (width[0] > WidthOfScreen(scr))\n  {\n    width[0] = WidthOfScreen(scr);\n  }\n  if (height[0] > HeightOfScreen(scr))\n  {\n    height[0] = HeightOfScreen(scr);\n  }\n  if (flipxy)\n  {\n    width[1] = magx * height[0];\n    height[1] = magy * width[0];\n  }\n  else\n  {\n    width[1] = magx * width[0];\n    height[1] = magy * height[0];\n  }\n  allocate_images();\n  if (width[1] > new_width)\n  {\n    width[1] = new_width;\n  }\n  if (height[1] > new_height)\n  {\n    height[1] = new_height;\n  }\n}\n\n",
+            "calle": [
+                "HeightOfScreen",
+                "WidthOfScreen",
+                "allocate_images",
+                "destroy_images"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "new_width",
+                        "type": "int",
+                        "definition": [
+                            "int new_width"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "new_height",
+                        "type": "int",
+                        "definition": [
+                            "int new_height"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "created_images",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "flipxy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "height",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "magx",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "width",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "magy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "scr",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#xzoom",
+            "header": "",
+            "params": [
+                "int argc",
+                "char **argv"
+            ],
+            "definition": "int main(int argc, char **argv)\n{\n  unsigned int argv_idx = 0;\n  struct XSetWindowAttributes xswa;\n  int i;\n  int j;\n  int k;\n  char c;\n  char *p1;\n  unsigned int p1_idx = 0;\n  char *p2;\n  unsigned int p2_idx = 0;\n  XEvent event;\n  int buttonpressed = False;\n  int unmapped = True;\n  int scroll = 1;\n  char title[80];\n  XGCValues gcv;\n  char *dpyname = 0;\n  unsigned int dpyname_idx = 0;\n  int source_geom_mask = NoValue;\n  int dest_geom_mask = NoValue;\n  int copy_from_src_mask;\n  int xpos = 0;\n  int ypos = 0;\n  progname = strrchr(argv[0 + argv_idx], '/');\n  if (progname)\n  {\n    progname += 1;\n  }\n  else\n    progname = argv[0 + argv_idx];\n  while ((--argc) > 0)\n  {\n    helper_main_1(&argc, &argv_idx, &dpyname_idx, &source_geom_mask, &dest_geom_mask, argv, xpos, ypos);\n  }\n\n  if (!(dpy = XOpenDisplay(dpyname)))\n  {\n    perror(\"Cannot open display\");\n    exit(-1);\n  }\n  copy_from_src_mask = NoValue;\n  if (source_geom_mask & WidthValue)\n  {\n    if (flipxy)\n    {\n      height[1] = magy * width[0];\n      copy_from_src_mask |= HeightValue;\n    }\n    else\n    {\n      width[1] = magx * width[0];\n      copy_from_src_mask |= WidthValue;\n    }\n  }\n  if (source_geom_mask & HeightValue)\n  {\n    if (flipxy)\n    {\n      width[1] = magx * height[0];\n      copy_from_src_mask |= WidthValue;\n    }\n    else\n    {\n      height[1] = magy * height[0];\n      copy_from_src_mask |= HeightValue;\n    }\n  }\n  if (copy_from_src_mask & dest_geom_mask)\n  {\n    fprintf(stderr, \"Conflicting dimensions between source and dest geometry\\n\");\n    Usage();\n  }\n  scr = DefaultScreenOfDisplay(dpy);\n  if (DefaultDepthOfScreen(scr) != 8)\n  {\n    fprintf(stderr, \"%s: can work only with 8 bits/pixel\\n\", progname);\n    exit(1);\n  }\n  if (source_geom_mask & XNegative)\n  {\n    xgrab += WidthOfScreen(scr);\n  }\n  if (source_geom_mask & YNegative)\n  {\n    ygrab += HeightOfScreen(scr);\n  }\n  if (dest_geom_mask & XNegative)\n  {\n    xpos += WidthOfScreen(scr);\n  }\n  if (source_geom_mask & YNegative)\n  {\n    ypos += HeightOfScreen(scr);\n  }\n  xswa.event_mask = (ButtonPressMask | ButtonReleaseMask) | ButtonMotionMask;\n  xswa.event_mask |= StructureNotifyMask;\n  xswa.event_mask |= KeyPressMask | KeyReleaseMask;\n  xswa.background_pixel = BlackPixelOfScreen(scr);\n  win = XCreateWindow(dpy, RootWindowOfScreen(scr), xpos, ypos, width[1], height[1], 0, DefaultDepthOfScreen(scr), InputOutput, DefaultVisualOfScreen(scr), CWEventMask | CWBackPixel, &xswa);\n  XChangeProperty(dpy, win, XA_WM_ICON_NAME, XA_STRING, 8, PropModeReplace, (unsigned char *) progname, strlen(progname));\n  set_title = True;\n  XMapWindow(dpy, win);\n  gcv.plane_mask = AllPlanes;\n  gcv.subwindow_mode = IncludeInferiors;\n  gcv.function = GXcopy;\n  gcv.foreground = WhitePixelOfScreen(scr);\n  gcv.background = BlackPixelOfScreen(scr);\n  gc = XCreateGC(dpy, RootWindowOfScreen(scr), (((GCFunction | GCPlaneMask) | GCSubwindowMode) | GCForeground) | GCBackground, &gcv);\n  resize(width[1], height[1]);\n  when_button = XCreateFontCursor(dpy, XC_ul_angle);\n  crosshair = XCreateFontCursor(dpy, XC_crosshair);\n  XDefineCursor(dpy, win, crosshair);\n  for (;;)\n  {\n    helper_main_2(&i, &j, &k, &c, &p1_idx, &p2_idx, &buttonpressed, &unmapped, &scroll, p1, p2, event, title);\n  }\n\n}\n\n",
+            "calle": [
+                "BlackPixelOfScreen",
+                "DefaultDepthOfScreen",
+                "DefaultScreenOfDisplay",
+                "DefaultVisualOfScreen",
+                "HeightOfScreen",
+                "RootWindowOfScreen",
+                "Usage",
+                "WhitePixelOfScreen",
+                "WidthOfScreen",
+                "XChangeProperty",
+                "XCreateFontCursor",
+                "XCreateGC",
+                "XCreateWindow",
+                "XDefineCursor",
+                "XMapWindow",
+                "XOpenDisplay",
+                "exit",
+                "fprintf",
+                "helper_main_1",
+                "helper_main_2",
+                "perror",
+                "resize",
+                "strlen",
+                "strrchr"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "argc",
+                        "type": "int",
+                        "definition": [
+                            "int argc"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv",
+                        "type": "char **",
+                        "definition": [
+                            "char **argv"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int argv_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "xswa",
+                        "type": "struct XSetWindowAttributes",
+                        "definition": [
+                            "struct XSetWindowAttributes xswa"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k",
+                        "type": "int",
+                        "definition": [
+                            "int k"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "c",
+                        "type": "char",
+                        "definition": [
+                            "char c"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p1",
+                        "type": "char *",
+                        "definition": [
+                            "char *p1"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p1_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p1_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p2",
+                        "type": "char *",
+                        "definition": [
+                            "char *p2"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p2_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p2_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "event",
+                        "type": "XEvent",
+                        "definition": [
+                            "XEvent event"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "buttonpressed",
+                        "type": "int",
+                        "definition": [
+                            "int buttonpressed = False"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "unmapped",
+                        "type": "int",
+                        "definition": [
+                            "int unmapped = True"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "scroll",
+                        "type": "int",
+                        "definition": [
+                            "int scroll = 1"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "title",
+                        "type": "char [80]",
+                        "definition": [
+                            "char title[80]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "gcv",
+                        "type": "XGCValues",
+                        "definition": [
+                            "XGCValues gcv"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "dpyname",
+                        "type": "char *",
+                        "definition": [
+                            "char *dpyname = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "dpyname_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int dpyname_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "source_geom_mask",
+                        "type": "int",
+                        "definition": [
+                            "int source_geom_mask = NoValue"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "dest_geom_mask",
+                        "type": "int",
+                        "definition": [
+                            "int dest_geom_mask = NoValue"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "copy_from_src_mask",
+                        "type": "int",
+                        "definition": [
+                            "int copy_from_src_mask"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "xpos",
+                        "type": "int",
+                        "definition": [
+                            "int xpos = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ypos",
+                        "type": "int",
+                        "definition": [
+                            "int ypos = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "progname",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "dpy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "flipxy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "height",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "magy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "width",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "magx",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "scr",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "xgrab",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "ygrab",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "win",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "set_title",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "gc",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "when_button",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "crosshair",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_main_1",
+            "header": "",
+            "params": [
+                "int * const argc_ref",
+                "unsigned int * const argv_idx_ref",
+                "unsigned int * const dpyname_idx_ref",
+                "int * const source_geom_mask_ref",
+                "int * const dest_geom_mask_ref",
+                "char ** const argv",
+                "int xpos",
+                "int ypos"
+            ],
+            "definition": "void helper_main_1(int * const argc_ref, unsigned int * const argv_idx_ref, unsigned int * const dpyname_idx_ref, int * const source_geom_mask_ref, int * const dest_geom_mask_ref, char ** const argv, int xpos, int ypos)\n{\n  int argc = *argc_ref;\n  unsigned int argv_idx = *argv_idx_ref;\n  unsigned int dpyname_idx = *dpyname_idx_ref;\n  int source_geom_mask = *source_geom_mask_ref;\n  int dest_geom_mask = *dest_geom_mask_ref;\n  argv_idx += 1;\n  if (argv[0 + argv_idx][0] == '=')\n  {\n    dest_geom_mask = XParseGeometry(argv[0 + argv_idx], &xpos, &ypos, &width[1], &height[1]);\n    continue;\n  }\n  if (!strcmp(argv[0 + argv_idx], \"-mag\"))\n  {\n    helper_helper_main_1_5(&argc, &argv_idx, argv);\n  }\n  if (!strcmp(argv[0 + argv_idx], \"-x\"))\n  {\n    flipx = True;\n    continue;\n  }\n  if (!strcmp(argv[0 + argv_idx], \"-y\"))\n  {\n    flipy = True;\n    continue;\n  }\n  if ((!strcmp(argv[0 + argv_idx], \"-z\")) || (!strcmp(argv[0 + argv_idx], \"-xy\")))\n  {\n    flipxy = True;\n    continue;\n  }\n  if (!strcmp(argv[0 + argv_idx], \"-source\"))\n  {\n    helper_helper_main_1_1(&argc, &argv_idx, &source_geom_mask, argv);\n  }\n  if ((!strcmp(argv[0 + argv_idx], \"-dest\")) || (!strcmp(argv[0 + argv_idx], \"-geometry\")))\n  {\n    helper_helper_main_1_2(&argc, &argv_idx, &dest_geom_mask, argv, xpos, ypos);\n  }\n  if ((!strcmp(argv[0 + argv_idx], \"-d\")) || (!strcmp(argv[0 + argv_idx], \"-display\")))\n  {\n    helper_helper_main_1_3(&argc, &argv_idx, &dpyname_idx, argv);\n  }\n  if (!strcmp(argv[0 + argv_idx], \"-delay\"))\n  {\n    helper_helper_main_1_4(&argc, &argv_idx, argv);\n  }\n  Usage();\n  *argc_ref = argc;\n  *argv_idx_ref = argv_idx;\n  *dpyname_idx_ref = dpyname_idx;\n  *source_geom_mask_ref = source_geom_mask;\n  *dest_geom_mask_ref = dest_geom_mask;\n}\n\n",
+            "calle": [
+                "Usage",
+                "XParseGeometry",
+                "helper_helper_main_1_1",
+                "helper_helper_main_1_2",
+                "helper_helper_main_1_3",
+                "helper_helper_main_1_4",
+                "helper_helper_main_1_5",
+                "strcmp"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "argc_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const argc_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const argv_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "dpyname_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const dpyname_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "source_geom_mask_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const source_geom_mask_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "dest_geom_mask_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const dest_geom_mask_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv",
+                        "type": "char ** const",
+                        "definition": [
+                            "char ** const argv"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "xpos",
+                        "type": "int",
+                        "definition": [
+                            "int xpos"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ypos",
+                        "type": "int",
+                        "definition": [
+                            "int ypos"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argc",
+                        "type": "int",
+                        "definition": [
+                            "int argc = *argc_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int argv_idx = *argv_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "dpyname_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int dpyname_idx = *dpyname_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "source_geom_mask",
+                        "type": "int",
+                        "definition": [
+                            "int source_geom_mask = *source_geom_mask_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "dest_geom_mask",
+                        "type": "int",
+                        "definition": [
+                            "int dest_geom_mask = *dest_geom_mask_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "width",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "height",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "flipx",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "flipy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "flipxy",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_main_2",
+            "header": "",
+            "params": [
+                "int * const i_ref",
+                "int * const j_ref",
+                "int * const k_ref",
+                "char * const c_ref",
+                "unsigned int * const p1_idx_ref",
+                "unsigned int * const p2_idx_ref",
+                "int * const buttonpressed_ref",
+                "int * const unmapped_ref",
+                "int * const scroll_ref",
+                "char * const p1",
+                "char * const p2",
+                "XEvent event",
+                "char title[80]"
+            ],
+            "definition": "void helper_main_2(int * const i_ref, int * const j_ref, int * const k_ref, char * const c_ref, unsigned int * const p1_idx_ref, unsigned int * const p2_idx_ref, int * const buttonpressed_ref, int * const unmapped_ref, int * const scroll_ref, char * const p1, char * const p2, XEvent event, char title[80])\n{\n  int i = *i_ref;\n  int j = *j_ref;\n  int k = *k_ref;\n  char c = *c_ref;\n  unsigned int p1_idx = *p1_idx_ref;\n  unsigned int p2_idx = *p2_idx_ref;\n  int buttonpressed = *buttonpressed_ref;\n  int unmapped = *unmapped_ref;\n  int scroll = *scroll_ref;\n  while ((unmapped) ? ((XWindowEvent(dpy, win, (long) (-1), &event), 1)) : (XCheckWindowEvent(dpy, win, (long) (-1), &event)))\n  {\n    helper_helper_main_2_2(&buttonpressed, &unmapped, &scroll, event, title);\n  }\n\n  XGetSubImage(dpy, RootWindowOfScreen(scr), xgrab, ygrab, width[0], height[0], AllPlanes, ZPixmap, ximage[0], 0, 0);\n  for (j = (flipxy) ? (width[0]) : (height[0]); (--j) >= 0;)\n  {\n    helper_helper_main_2_1(&i, &k, &c, &p1_idx, &p2_idx, p1, p2, j);\n  }\n\n  XPutImage(dpy, win, gc, ximage[1], 0, 0, 0, 0, width[1], height[1]);\n  if (set_title)\n  {\n    if ((((magx == magy) && (!flipx)) && (!flipy)) && (!flipxy))\n    {\n      sprintf(title, \"%s x%d\", progname, magx);\n    }\n    else\n      sprintf(title, \"%s X %s%d%s Y %s%d\", progname, (flipx) ? (\"-\") : (\"\"), magx, (flipxy) ? (\" <=>\") : (\";\"), (flipy) ? (\"-\") : (\"\"), magy);\n    XChangeProperty(dpy, win, XA_WM_NAME, XA_STRING, 8, PropModeReplace, (unsigned char *) title, strlen(title));\n    set_title = False;\n  }\n  XSync(dpy, 0);\n  if ((!buttonpressed) && (delay > 0))\n  {\n    usleep(delay);\n  }\n  *i_ref = i;\n  *j_ref = j;\n  *k_ref = k;\n  *c_ref = c;\n  *p1_idx_ref = p1_idx;\n  *p2_idx_ref = p2_idx;\n  *buttonpressed_ref = buttonpressed;\n  *unmapped_ref = unmapped;\n  *scroll_ref = scroll;\n}\n\n",
+            "calle": [
+                "RootWindowOfScreen",
+                "XChangeProperty",
+                "XCheckWindowEvent",
+                "XGetSubImage",
+                "XPutImage",
+                "XSync",
+                "XWindowEvent",
+                "helper_helper_main_2_1",
+                "helper_helper_main_2_2",
+                "sprintf",
+                "strlen",
+                "usleep"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "i_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const i_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const j_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "c_ref",
+                        "type": "char * const",
+                        "definition": [
+                            "char * const c_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p1_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const p1_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p2_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const p2_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "buttonpressed_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const buttonpressed_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "unmapped_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const unmapped_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "scroll_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const scroll_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p1",
+                        "type": "char * const",
+                        "definition": [
+                            "char * const p1"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p2",
+                        "type": "char * const",
+                        "definition": [
+                            "char * const p2"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "event",
+                        "type": "XEvent",
+                        "definition": [
+                            "XEvent event"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "title",
+                        "type": "char [80]",
+                        "definition": [
+                            "char title[80]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i = *i_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j = *j_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k",
+                        "type": "int",
+                        "definition": [
+                            "int k = *k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "c",
+                        "type": "char",
+                        "definition": [
+                            "char c = *c_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p1_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p1_idx = *p1_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p2_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p2_idx = *p2_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "buttonpressed",
+                        "type": "int",
+                        "definition": [
+                            "int buttonpressed = *buttonpressed_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "unmapped",
+                        "type": "int",
+                        "definition": [
+                            "int unmapped = *unmapped_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "scroll",
+                        "type": "int",
+                        "definition": [
+                            "int scroll = *scroll_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "dpy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "win",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "scr",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "xgrab",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "ygrab",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "width",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "height",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "ximage",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "flipxy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "gc",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "set_title",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "magx",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "magy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "flipx",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "flipy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "progname",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "delay",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_helper_main_1_1",
+            "header": "",
+            "params": [
+                "int * const argc_ref",
+                "unsigned int * const argv_idx_ref",
+                "int * const source_geom_mask_ref",
+                "char ** const argv"
+            ],
+            "definition": "void helper_helper_main_1_1(int * const argc_ref, unsigned int * const argv_idx_ref, int * const source_geom_mask_ref, char ** const argv)\n{\n  int argc = *argc_ref;\n  unsigned int argv_idx = *argv_idx_ref;\n  int source_geom_mask = *source_geom_mask_ref;\n  argv_idx += 1;\n  argc -= 1;\n  if (argc < 1)\n  {\n    Usage();\n  }\n  source_geom_mask = XParseGeometry(argv[0 + argv_idx], &xgrab, &ygrab, &width[0], &height[0]);\n  continue;\n  *argc_ref = argc;\n  *argv_idx_ref = argv_idx;\n  *source_geom_mask_ref = source_geom_mask;\n}\n\n",
+            "calle": [
+                "Usage",
+                "XParseGeometry"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "argc_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const argc_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const argv_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "source_geom_mask_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const source_geom_mask_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv",
+                        "type": "char ** const",
+                        "definition": [
+                            "char ** const argv"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argc",
+                        "type": "int",
+                        "definition": [
+                            "int argc = *argc_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int argv_idx = *argv_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "source_geom_mask",
+                        "type": "int",
+                        "definition": [
+                            "int source_geom_mask = *source_geom_mask_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "xgrab",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "ygrab",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "width",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "height",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_helper_main_1_2",
+            "header": "",
+            "params": [
+                "int * const argc_ref",
+                "unsigned int * const argv_idx_ref",
+                "int * const dest_geom_mask_ref",
+                "char ** const argv",
+                "int xpos",
+                "int ypos"
+            ],
+            "definition": "void helper_helper_main_1_2(int * const argc_ref, unsigned int * const argv_idx_ref, int * const dest_geom_mask_ref, char ** const argv, int xpos, int ypos)\n{\n  int argc = *argc_ref;\n  unsigned int argv_idx = *argv_idx_ref;\n  int dest_geom_mask = *dest_geom_mask_ref;\n  argv_idx += 1;\n  argc -= 1;\n  if (argc < 1)\n  {\n    Usage();\n  }\n  dest_geom_mask = XParseGeometry(argv[0 + argv_idx], &xpos, &ypos, &width[1], &height[1]);\n  continue;\n  *argc_ref = argc;\n  *argv_idx_ref = argv_idx;\n  *dest_geom_mask_ref = dest_geom_mask;\n}\n\n",
+            "calle": [
+                "Usage",
+                "XParseGeometry"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "argc_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const argc_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const argv_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "dest_geom_mask_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const dest_geom_mask_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv",
+                        "type": "char ** const",
+                        "definition": [
+                            "char ** const argv"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "xpos",
+                        "type": "int",
+                        "definition": [
+                            "int xpos"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ypos",
+                        "type": "int",
+                        "definition": [
+                            "int ypos"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argc",
+                        "type": "int",
+                        "definition": [
+                            "int argc = *argc_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int argv_idx = *argv_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "dest_geom_mask",
+                        "type": "int",
+                        "definition": [
+                            "int dest_geom_mask = *dest_geom_mask_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "width",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "height",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_helper_main_1_3",
+            "header": "",
+            "params": [
+                "int * const argc_ref",
+                "unsigned int * const argv_idx_ref",
+                "unsigned int * const dpyname_idx_ref",
+                "char ** const argv"
+            ],
+            "definition": "void helper_helper_main_1_3(int * const argc_ref, unsigned int * const argv_idx_ref, unsigned int * const dpyname_idx_ref, char ** const argv)\n{\n  int argc = *argc_ref;\n  unsigned int argv_idx = *argv_idx_ref;\n  unsigned int dpyname_idx = *dpyname_idx_ref;\n  argv_idx += 1;\n  argc -= 1;\n  if (argc < 1)\n  {\n    Usage();\n  }\n  dpyname_idx = argv[0 + argv_idx];\n  continue;\n  *argc_ref = argc;\n  *argv_idx_ref = argv_idx;\n  *dpyname_idx_ref = dpyname_idx;\n}\n\n",
+            "calle": [
+                "Usage"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "argc_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const argc_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const argv_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "dpyname_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const dpyname_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv",
+                        "type": "char ** const",
+                        "definition": [
+                            "char ** const argv"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argc",
+                        "type": "int",
+                        "definition": [
+                            "int argc = *argc_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int argv_idx = *argv_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "dpyname_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int dpyname_idx = *dpyname_idx_ref"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_helper_main_1_4",
+            "header": "",
+            "params": [
+                "int * const argc_ref",
+                "unsigned int * const argv_idx_ref",
+                "char ** const argv"
+            ],
+            "definition": "void helper_helper_main_1_4(int * const argc_ref, unsigned int * const argv_idx_ref, char ** const argv)\n{\n  int argc = *argc_ref;\n  unsigned int argv_idx = *argv_idx_ref;\n  argv_idx += 1;\n  argc -= 1;\n  if (argc < 1)\n  {\n    Usage();\n  }\n  if (sscanf(argv[0 + argv_idx], \"%u\", &delay) != 1)\n  {\n    Usage();\n  }\n  delay *= 1000;\n  continue;\n  *argc_ref = argc;\n  *argv_idx_ref = argv_idx;\n}\n\n",
+            "calle": [
+                "Usage",
+                "sscanf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "argc_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const argc_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const argv_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv",
+                        "type": "char ** const",
+                        "definition": [
+                            "char ** const argv"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argc",
+                        "type": "int",
+                        "definition": [
+                            "int argc = *argc_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int argv_idx = *argv_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "delay",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_helper_main_1_5",
+            "header": "",
+            "params": [
+                "int * const argc_ref",
+                "unsigned int * const argv_idx_ref",
+                "char ** const argv"
+            ],
+            "definition": "void helper_helper_main_1_5(int * const argc_ref, unsigned int * const argv_idx_ref, char ** const argv)\n{\n  int argc = *argc_ref;\n  unsigned int argv_idx = *argv_idx_ref;\n  argv_idx += 1;\n  argc -= 1;\n  magx = (argc > 0) ? (atoi(argv[0 + argv_idx])) : (-1);\n  if (magx <= 0)\n  {\n    Usage();\n  }\n  magy = (argc > 1) ? (atoi(argv[1 + argv_idx])) : (-1);\n  if (magy <= 0)\n  {\n    magy = magx;\n  }\n  else\n  {\n    argv_idx += 1;\n    argc -= 1;\n  }\n  continue;\n  *argc_ref = argc;\n  *argv_idx_ref = argv_idx;\n}\n\n",
+            "calle": [
+                "Usage",
+                "atoi"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "argc_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const argc_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const argv_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv",
+                        "type": "char ** const",
+                        "definition": [
+                            "char ** const argv"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argc",
+                        "type": "int",
+                        "definition": [
+                            "int argc = *argc_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int argv_idx = *argv_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "magx",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "magy",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_helper_main_2_1",
+            "header": "",
+            "params": [
+                "int * const i_ref",
+                "int * const k_ref",
+                "char * const c_ref",
+                "unsigned int * const p1_idx_ref",
+                "unsigned int * const p2_idx_ref",
+                "char * const p1",
+                "char * const p2",
+                "int j"
+            ],
+            "definition": "void helper_helper_main_2_1(int * const i_ref, int * const k_ref, char * const c_ref, unsigned int * const p1_idx_ref, unsigned int * const p2_idx_ref, char * const p1, char * const p2, int j)\n{\n  int i = *i_ref;\n  int k = *k_ref;\n  char c = *c_ref;\n  unsigned int p1_idx = *p1_idx_ref;\n  unsigned int p2_idx = *p2_idx_ref;\n  p1_idx = &ximage[1]->data[ximage[1]->xoffset + ((j * magy) * ximage[1]->bytes_per_line)];\n  p2_idx = &ximage[0]->data[ximage[0]->xoffset + (((flipy) ? ((height[0] - 1) - j) : (j)) * ximage[0]->bytes_per_line)];\n  if (flipxy)\n  {\n    helper_helper_helper_main_2_1_2(&i, &k, &c, &p1_idx, &p2_idx, p1, p2, j);\n  }\n  else\n    if (flipx)\n  {\n    helper_helper_helper_main_2_1_1(&i, &k, &c, &p1_idx, &p2_idx, p1, p2);\n  }\n  else\n  {\n    for (i = width[0]; (--i) >= 0;)\n    {\n      c = (p1[p1_idx] = p2[p2_idx]);\n      p2_idx += 1;\n      p1_idx += 1;\n      for (k = magx; (--k) > 0;)\n        *((&p1[p1_idx])++) = c;\n\n    }\n\n  }\n  p1_idx = &ximage[1]->data[ximage[1]->xoffset + ((j * magy) * ximage[1]->bytes_per_line)];\n  p2_idx = (&p1[p1_idx]) + ximage[1]->bytes_per_line;\n  for (k = magy; (--k) > 0;)\n  {\n    memmove(p2, p1, width[1]);\n    p2_idx += ximage[1]->bytes_per_line;\n  }\n\n  *i_ref = i;\n  *k_ref = k;\n  *c_ref = c;\n  *p1_idx_ref = p1_idx;\n  *p2_idx_ref = p2_idx;\n}\n\n",
+            "calle": [
+                "helper_helper_helper_main_2_1_1",
+                "helper_helper_helper_main_2_1_2",
+                "memmove"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "i_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const i_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "c_ref",
+                        "type": "char * const",
+                        "definition": [
+                            "char * const c_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p1_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const p1_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p2_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const p2_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p1",
+                        "type": "char * const",
+                        "definition": [
+                            "char * const p1"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p2",
+                        "type": "char * const",
+                        "definition": [
+                            "char * const p2"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i = *i_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k",
+                        "type": "int",
+                        "definition": [
+                            "int k = *k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "c",
+                        "type": "char",
+                        "definition": [
+                            "char c = *c_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p1_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p1_idx = *p1_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p2_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p2_idx = *p2_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ximage",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "magy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "flipy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "height",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "flipxy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "flipx",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "width",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "magx",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_helper_main_2_2",
+            "header": "",
+            "params": [
+                "int * const buttonpressed_ref",
+                "int * const unmapped_ref",
+                "int * const scroll_ref",
+                "XEvent event",
+                "char title[80]"
+            ],
+            "definition": "void helper_helper_main_2_2(int * const buttonpressed_ref, int * const unmapped_ref, int * const scroll_ref, XEvent event, char title[80])\n{\n  int buttonpressed = *buttonpressed_ref;\n  int unmapped = *unmapped_ref;\n  int scroll = *scroll_ref;\n  switch (event.type)\n  {\n    case ConfigureNotify:\n    {\n      if ((event.xconfigure.width != width[1]) || (event.xconfigure.height != height[1]))\n      {\n        resize(event.xconfigure.width, event.xconfigure.height);\n      }\n      break;\n    }\n\n    case ReparentNotify:\n    {\n      break;\n    }\n\n    case MapNotify:\n    {\n      unmapped = False;\n      break;\n    }\n\n    case UnmapNotify:\n    {\n      unmapped = True;\n      break;\n    }\n\n    case KeyRelease:\n    {\n      switch (XKeycodeToKeysym(dpy, event.xkey.keycode, 0))\n      {\n        case XK_Control_L:\n\n        case XK_Control_R:\n        {\n          scroll = 1;\n          break;\n        }\n\n      }\n\n      break;\n    }\n\n    case KeyPress:\n    {\n      helper_helper_helper_main_2_2_1(&scroll, event, title);\n    }\n\n    case ButtonPress:\n    {\n      xgrab = event.xbutton.x_root;\n      ygrab = event.xbutton.y_root;\n      XDefineCursor(dpy, win, when_button);\n      buttonpressed = True;\n      break;\n    }\n\n    case ButtonRelease:\n    {\n      XDefineCursor(dpy, win, crosshair);\n      buttonpressed = False;\n      break;\n    }\n\n    case MotionNotify:\n    {\n      if (buttonpressed)\n      {\n        xgrab = event.xmotion.x_root;\n        ygrab = event.xmotion.y_root;\n      }\n      break;\n    }\n\n  }\n\n  if (xgrab < 0)\n  {\n    xgrab = 0;\n  }\n  if (xgrab > (WidthOfScreen(scr) - width[0]))\n  {\n    xgrab = WidthOfScreen(scr) - width[0];\n  }\n  if (ygrab < 0)\n  {\n    ygrab = 0;\n  }\n  if (ygrab > (HeightOfScreen(scr) - height[0]))\n  {\n    ygrab = HeightOfScreen(scr) - height[0];\n  }\n  *buttonpressed_ref = buttonpressed;\n  *unmapped_ref = unmapped;\n  *scroll_ref = scroll;\n}\n\n",
+            "calle": [
+                "HeightOfScreen",
+                "WidthOfScreen",
+                "XDefineCursor",
+                "XKeycodeToKeysym",
+                "helper_helper_helper_main_2_2_1",
+                "resize"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "buttonpressed_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const buttonpressed_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "unmapped_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const unmapped_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "scroll_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const scroll_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "event",
+                        "type": "XEvent",
+                        "definition": [
+                            "XEvent event"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "title",
+                        "type": "char [80]",
+                        "definition": [
+                            "char title[80]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "buttonpressed",
+                        "type": "int",
+                        "definition": [
+                            "int buttonpressed = *buttonpressed_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "unmapped",
+                        "type": "int",
+                        "definition": [
+                            "int unmapped = *unmapped_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "scroll",
+                        "type": "int",
+                        "definition": [
+                            "int scroll = *scroll_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "width",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "height",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "dpy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "xgrab",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "ygrab",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "win",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "when_button",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "crosshair",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "scr",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_helper_helper_main_2_1_1",
+            "header": "",
+            "params": [
+                "int * const i_ref",
+                "int * const k_ref",
+                "char * const c_ref",
+                "unsigned int * const p1_idx_ref",
+                "unsigned int * const p2_idx_ref",
+                "char * const p1",
+                "char * const p2"
+            ],
+            "definition": "void helper_helper_helper_main_2_1_1(int * const i_ref, int * const k_ref, char * const c_ref, unsigned int * const p1_idx_ref, unsigned int * const p2_idx_ref, char * const p1, char * const p2)\n{\n  int i = *i_ref;\n  int k = *k_ref;\n  char c = *c_ref;\n  unsigned int p1_idx = *p1_idx_ref;\n  unsigned int p2_idx = *p2_idx_ref;\n  p2_idx += width[0];\n  for (i = width[0]; (--i) >= 0;)\n  {\n    p2_idx -= 1;\n    c = (p1[p1_idx] = p2[p2_idx]);\n    p1_idx += 1;\n    for (k = magx; (--k) > 0;)\n      *((&p1[p1_idx])++) = c;\n\n  }\n\n  *i_ref = i;\n  *k_ref = k;\n  *c_ref = c;\n  *p1_idx_ref = p1_idx;\n  *p2_idx_ref = p2_idx;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "i_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const i_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "c_ref",
+                        "type": "char * const",
+                        "definition": [
+                            "char * const c_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p1_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const p1_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p2_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const p2_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p1",
+                        "type": "char * const",
+                        "definition": [
+                            "char * const p1"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p2",
+                        "type": "char * const",
+                        "definition": [
+                            "char * const p2"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i = *i_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k",
+                        "type": "int",
+                        "definition": [
+                            "int k = *k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "c",
+                        "type": "char",
+                        "definition": [
+                            "char c = *c_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p1_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p1_idx = *p1_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p2_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p2_idx = *p2_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "width",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "magx",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_helper_helper_main_2_1_2",
+            "header": "",
+            "params": [
+                "int * const i_ref",
+                "int * const k_ref",
+                "char * const c_ref",
+                "unsigned int * const p1_idx_ref",
+                "unsigned int * const p2_idx_ref",
+                "char * const p1",
+                "char * const p2",
+                "int j"
+            ],
+            "definition": "void helper_helper_helper_main_2_1_2(int * const i_ref, int * const k_ref, char * const c_ref, unsigned int * const p1_idx_ref, unsigned int * const p2_idx_ref, char * const p1, char * const p2, int j)\n{\n  int i = *i_ref;\n  int k = *k_ref;\n  char c = *c_ref;\n  unsigned int p1_idx = *p1_idx_ref;\n  unsigned int p2_idx = *p2_idx_ref;\n  int p2step = ximage[0]->bytes_per_line;\n  p2_idx = &ximage[0]->data[ximage[0]->xoffset + ((flipy) ? (j) : ((width[0] - 1) - j))];\n  if (flipx)\n  {\n    p2_idx += p2step * (height[0] - 1);\n    p2step = -p2step;\n  }\n  for (i = height[0]; (--i) >= 0;)\n  {\n    c = (p1[p1_idx] = p2[p2_idx]);\n    p1_idx += 1;\n    p2_idx += p2step;\n    for (k = magx; (--k) > 0;)\n      *((&p1[p1_idx])++) = c;\n\n  }\n\n  *i_ref = i;\n  *k_ref = k;\n  *c_ref = c;\n  *p1_idx_ref = p1_idx;\n  *p2_idx_ref = p2_idx;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "i_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const i_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "c_ref",
+                        "type": "char * const",
+                        "definition": [
+                            "char * const c_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p1_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const p1_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p2_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const p2_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p1",
+                        "type": "char * const",
+                        "definition": [
+                            "char * const p1"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p2",
+                        "type": "char * const",
+                        "definition": [
+                            "char * const p2"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i = *i_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k",
+                        "type": "int",
+                        "definition": [
+                            "int k = *k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "c",
+                        "type": "char",
+                        "definition": [
+                            "char c = *c_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p1_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p1_idx = *p1_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p2_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p2_idx = *p2_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p2step",
+                        "type": "int",
+                        "definition": [
+                            "int p2step = ximage[0]->bytes_per_line"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ximage",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "flipy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "width",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "flipx",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "height",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "magx",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_helper_helper_main_2_2_1",
+            "header": "",
+            "params": [
+                "int * const scroll_ref",
+                "XEvent event",
+                "char title[80]"
+            ],
+            "definition": "void helper_helper_helper_main_2_2_1(int * const scroll_ref, XEvent event, char title[80])\n{\n  int scroll = *scroll_ref;\n  switch (XKeycodeToKeysym(dpy, event.xkey.keycode, 0))\n  {\n    case XK_Control_L:\n\n    case XK_Control_R:\n    {\n      scroll = 10;\n      break;\n    }\n\n    case '+':\n\n    case '=':\n    {\n      helper_helper_helper_helper_main_2_2_1_2();\n    }\n\n    case '-':\n    {\n      helper_helper_helper_helper_main_2_2_1_4();\n    }\n\n    case XK_Left:\n    {\n      if (flipxy)\n      {\n        if (flipx)\n        {\n          ygrab += scroll;\n        }\n        else\n          ygrab -= scroll;\n      }\n      else\n        if (flipx)\n      {\n        xgrab += scroll;\n      }\n      else\n        xgrab -= scroll;\n      break;\n    }\n\n    case XK_Right:\n    {\n      if (flipxy)\n      {\n        if (flipx)\n        {\n          ygrab -= scroll;\n        }\n        else\n          ygrab += scroll;\n      }\n      else\n        if (flipx)\n      {\n        xgrab -= scroll;\n      }\n      else\n        xgrab += scroll;\n      break;\n    }\n\n    case XK_Up:\n    {\n      if (flipxy)\n      {\n        if (flipy)\n        {\n          xgrab -= scroll;\n        }\n        else\n          xgrab += scroll;\n      }\n      else\n        if (flipy)\n      {\n        ygrab += scroll;\n      }\n      else\n        ygrab -= scroll;\n      break;\n    }\n\n    case XK_Down:\n    {\n      if (flipxy)\n      {\n        if (flipy)\n        {\n          xgrab += scroll;\n        }\n        else\n          xgrab -= scroll;\n      }\n      else\n        if (flipy)\n      {\n        ygrab -= scroll;\n      }\n      else\n        ygrab += scroll;\n      break;\n    }\n\n    case 'x':\n    {\n      flipx = !flipx;\n      set_title = True;\n      break;\n    }\n\n    case 'y':\n    {\n      flipy = !flipy;\n      set_title = True;\n      break;\n    }\n\n    case 'z':\n    {\n      helper_helper_helper_helper_main_2_2_1_1();\n    }\n\n    case 'w':\n    {\n      xzoom_flag = True;\n      yzoom_flag = False;\n      break;\n    }\n\n    case 'h':\n    {\n      yzoom_flag = True;\n      xzoom_flag = False;\n      break;\n    }\n\n    case 'd':\n    {\n      helper_helper_helper_helper_main_2_2_1_3(title);\n    }\n\n    case 'q':\n    {\n      exit(0);\n      break;\n    }\n\n  }\n\n  break;\n  *scroll_ref = scroll;\n}\n\n",
+            "calle": [
+                "XKeycodeToKeysym",
+                "exit",
+                "helper_helper_helper_helper_main_2_2_1_1",
+                "helper_helper_helper_helper_main_2_2_1_2",
+                "helper_helper_helper_helper_main_2_2_1_3",
+                "helper_helper_helper_helper_main_2_2_1_4"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "scroll_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const scroll_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "event",
+                        "type": "XEvent",
+                        "definition": [
+                            "XEvent event"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "title",
+                        "type": "char [80]",
+                        "definition": [
+                            "char title[80]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "scroll",
+                        "type": "int",
+                        "definition": [
+                            "int scroll = *scroll_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "dpy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "flipxy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "flipx",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "ygrab",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "xgrab",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "flipy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "set_title",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "xzoom_flag",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "yzoom_flag",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_helper_helper_helper_main_2_2_1_1",
+            "header": "",
+            "params": [],
+            "definition": "void helper_helper_helper_helper_main_2_2_1_1()\n{\n  if ((flipx ^ flipy) ^ flipxy)\n  {\n    flipx = !flipx;\n    flipy = !flipy;\n  }\n  flipxy = !flipxy;\n  resize(width[1], height[1]);\n  set_title = True;\n  break;\n}\n\n",
+            "calle": [
+                "resize"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "flipx",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "flipy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "flipxy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "width",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "height",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "set_title",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_helper_helper_helper_main_2_2_1_2",
+            "header": "",
+            "params": [],
+            "definition": "void helper_helper_helper_helper_main_2_2_1_2()\n{\n  if (!yzoom_flag)\n  {\n    magx += 1;\n  }\n  if (!xzoom_flag)\n  {\n    magy += 1;\n  }\n  xzoom_flag = (yzoom_flag = False);\n  resize(width[1], height[1]);\n  set_title = True;\n  break;\n}\n\n",
+            "calle": [
+                "resize"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "yzoom_flag",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "magx",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "xzoom_flag",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "magy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "width",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "height",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "set_title",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_helper_helper_helper_main_2_2_1_3",
+            "header": "",
+            "params": [
+                "char title[80]"
+            ],
+            "definition": "void helper_helper_helper_helper_main_2_2_1_3(char title[80])\n{\n  if ((++delay_index) >= 5)\n  {\n    delay_index = 0;\n  }\n  delay = delays[delay_index];\n  sprintf(title, \"delay = %d ms\", delay / 1000);\n  XChangeProperty(dpy, win, XA_WM_NAME, XA_STRING, 8, PropModeReplace, (unsigned char *) title, strlen(title));\n  signal(SIGALRM, timeout_func);\n  alarm(2);\n  break;\n}\n\n",
+            "calle": [
+                "XChangeProperty",
+                "alarm",
+                "signal",
+                "sprintf",
+                "strlen",
+                "timeout_func"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "title",
+                        "type": "char [80]",
+                        "definition": [
+                            "char title[80]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "delay_index",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "delay",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "delays",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "dpy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "win",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_helper_helper_helper_main_2_2_1_4",
+            "header": "",
+            "params": [],
+            "definition": "void helper_helper_helper_helper_main_2_2_1_4()\n{\n  if (!yzoom_flag)\n  {\n    magx -= 1;\n  }\n  if (!xzoom_flag)\n  {\n    magy -= 1;\n  }\n  xzoom_flag = (yzoom_flag = False);\n  if (magx < 1)\n  {\n    magx = 1;\n  }\n  if (magy < 1)\n  {\n    magy = 1;\n  }\n  resize(width[1], height[1]);\n  set_title = True;\n  break;\n}\n\n",
+            "calle": [
+                "resize"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "yzoom_flag",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "magx",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "xzoom_flag",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "magy",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "width",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "height",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "set_title",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        }
+    ],
+    "typedefs": []
+}

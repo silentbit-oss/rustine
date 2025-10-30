@@ -1,0 +1,4 @@
+warning: a dangling pointer will be produced because the temporary `std::boxed::Box<[u8]>` will be dropped
+warning: creating a `Box` from a void raw pointer
+warning: match can be simplified with `.unwrap_or_default()`
+warning: transmute used without annotations

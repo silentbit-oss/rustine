@@ -1,0 +1,79 @@
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the start
+warning: collection is never read
+warning: collection is never read
+warning: dereferencing a reference to an uninhabited type is undefined behavior
+warning: dereferencing a reference to an uninhabited type is undefined behavior
+warning: dereferencing a reference to an uninhabited type is undefined behavior
+warning: dereferencing a reference to an uninhabited type is undefined behavior
+warning: dereferencing a reference to an uninhabited type is undefined behavior
+warning: dereferencing a reference to an uninhabited type is undefined behavior
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` in `if let` scrutinee will live until the end of the `if let` expression
+warning: the function has a cognitive complexity of (26/25)
+warning: the function has a cognitive complexity of (26/25)
+warning: the function has a cognitive complexity of (37/25)
+warning: this argument is a mutable reference, but not used mutably
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this function may allocate 800008 bytes on the stack
+warning: this function may allocate 800008 bytes on the stack
+warning: this function may allocate 800008 bytes on the stack
+warning: this function may allocate 800008 bytes on the stack
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else

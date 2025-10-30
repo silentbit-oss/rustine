@@ -1,0 +1,73 @@
+warning: the feature `core_intrinsics` is internal to the compiler or standard library
+warning: unused import: `std::ffi::CString`
+warning: type `size_t` should have an upper camel case name
+warning: type `__off_t` should have an upper camel case name
+warning: type `__off64_t` should have an upper camel case name
+warning: type `_IO_lock_t` should have an upper camel case name
+warning: unnecessary parentheses around function argument
+warning: `#[no_mangle]` has no effect on a foreign static
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign static
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: the feature `const_mut_refs` has been stable since 1.83.0 and no longer requires an attribute to enable
+warning: the feature `const_fn_fn_ptr_basics` has been stable since 1.61.0 and no longer requires an attribute to enable
+warning: unused variable: `argc`
+warning: unused variable: `root_window`
+warning: unnecessary `unsafe` block
+warning: unused variable: `display`
+warning: unused variable: `argv_ptr`
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: structure field `_IO_read_ptr` should have a snake case name
+warning: structure field `_IO_read_end` should have a snake case name
+warning: structure field `_IO_read_base` should have a snake case name
+warning: structure field `_IO_write_base` should have a snake case name
+warning: structure field `_IO_write_ptr` should have a snake case name
+warning: structure field `_IO_write_end` should have a snake case name
+warning: structure field `_IO_buf_base` should have a snake case name
+warning: structure field `_IO_buf_end` should have a snake case name
+warning: structure field `_IO_save_base` should have a snake case name
+warning: structure field `_IO_backup_base` should have a snake case name
+warning: structure field `_IO_save_end` should have a snake case name
+warning: static variable `cross_cursor` should have an upper case name
+warning: function `selectWindow` should have a snake case name
+warning: static variable `cross_cursor` should have an upper case name
+warning: function `findSubWindow` should have a snake case name
+warning: function `getWindowColor` should have a snake case name
+warning: function `MXError` should have a snake case name

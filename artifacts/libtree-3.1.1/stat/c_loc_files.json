@@ -1,0 +1,94 @@
+{
+  "C": {
+    "blanks": 255,
+    "children": {},
+    "code": 1412,
+    "comments": 180,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/libtree-3.1.1/tests/06_symbol_versions/v1.c",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/libtree-3.1.1/tests/06_symbol_versions/main.c",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 2,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/libtree-3.1.1/tests/06_symbol_versions/v2.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 4,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/libtree-3.1.1/libtree.c",
+        "stats": {
+          "blanks": 252,
+          "blobs": {},
+          "code": 1405,
+          "comments": 180
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 255,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/libtree-3.1.1/tests/06_symbol_versions/v1.c",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/libtree-3.1.1/tests/06_symbol_versions/main.c",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 2,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/libtree-3.1.1/tests/06_symbol_versions/v2.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 4,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/libtree-3.1.1/libtree.c",
+          "stats": {
+            "blanks": 252,
+            "blobs": {},
+            "code": 1405,
+            "comments": 180
+          }
+        }
+      ]
+    },
+    "code": 1412,
+    "comments": 180,
+    "inaccurate": false,
+    "reports": []
+  }
+}

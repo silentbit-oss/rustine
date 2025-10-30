@@ -1,0 +1,8 @@
+#include <limits.h>
+#include <png.h>
+#include <pngconf.h>
+#include <pnglibconf.h>
+#include <pngxset.c>
+#include <pngxutil.h>
+#include <stddef.h>
+#include <stdio.h>

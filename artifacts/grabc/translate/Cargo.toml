@@ -1,0 +1,15 @@
+[package]
+name = "translate"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libc = "0.2"
+lazy_static = "1.4.0"
+
+[build-dependencies]
+bindgen = "0.69.0"
+
+[[bin]]
+name="grabc"
+path="src/grabc_main.rs"

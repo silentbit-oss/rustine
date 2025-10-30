@@ -1,0 +1,6 @@
+#include <assert.h>
+#include <color.c>
+#include <heman.h>
+#include <image.h>
+#include <math.h>
+#include <stdlib.h>

@@ -1,0 +1,12 @@
+#include <assert.h>
+#include <benchmark.c>
+#include <candles.h>
+#include <ctype.h>
+#include <indicators.h>
+#include <math.h>
+#include <minmax.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>

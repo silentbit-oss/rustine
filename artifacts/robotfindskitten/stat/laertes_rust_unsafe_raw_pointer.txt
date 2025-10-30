@@ -1,0 +1,15 @@
+Could not obtain Cargo metadata
+Error during execution of `cargo metadata`: error: failed to get `c2rust_runtime` as a dependency of package `robotfindskitten v0.1.0 (/home/enumclass/Documents/C2RustTranslation/artifacts/robotfindskitten/others/laertes)`
+
+Caused by:
+  failed to load source for dependency `c2rust_runtime`
+
+Caused by:
+  Unable to update /home/enumclass/Documents/C2RustTranslation/c2rust/c2rust-refactor/runtime
+
+Caused by:
+  failed to read `/home/enumclass/Documents/C2RustTranslation/c2rust/c2rust-refactor/runtime/Cargo.toml`
+
+Caused by:
+  No such file or directory (os error 2)
+

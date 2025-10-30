@@ -1,0 +1,314 @@
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: long literal lacking separators
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: long literal lacking separators
+warning: 6 bindings with single-character names in scope
+warning: 8 bindings with single-character names in scope
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: this argument is passed by value, but not consumed in the function body
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: docs for function which may panic missing `# Panics` section
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: `as` casting between raw pointers while changing only its constness
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: this argument is passed by value, but not consumed in the function body
+warning: `as` casting between raw pointers without changing their constness
+warning: docs for function which may panic missing `# Panics` section
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: docs for function which may panic missing `# Panics` section
+warning: `#[no_mangle]` set on a function with the default (`Rust`) ABI
+warning: this argument is passed by value, but not consumed in the function body
+warning: strict comparison of `f32` or `f64`
+warning: strict comparison of `f32` or `f64`
+warning: strict comparison of `f32` or `f64`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: docs for function which may panic missing `# Panics` section
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: `as` casting between raw pointers while changing only its constness
+warning: `#[no_mangle]` set on a function with the default (`Rust`) ABI
+warning: adding items after statements is confusing, since items exist from the start of the scope
+warning: adding items after statements is confusing, since items exist from the start of the scope
+warning: adding items after statements is confusing, since items exist from the start of the scope
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `f64` to `i32` may truncate the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casting `u64` to `i32` may truncate the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting from `*mut i8` to a more-strictly-aligned pointer (`*mut f64`) (1 < 8 bytes)
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: docs for function which may panic missing `# Panics` section
+warning: `#[no_mangle]` set on a function with the default (`Rust`) ABI
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut example1::genann`) (1 < 8 bytes)
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut f64`) (1 < 8 bytes)
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: `#[no_mangle]` set on a function with the default (`Rust`) ABI
+warning: docs for function which may panic missing `# Panics` section
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: unnecessary semicolon
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: transmute from a reference to a reference
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: unnecessary semicolon
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: transmute from a reference to a reference
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: this function has too many lines (178/100)
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: unnecessary semicolon
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: transmute from a reference to a reference
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: `#[no_mangle]` set on a function with the default (`Rust`) ABI
+warning: `#[no_mangle]` set on a function with the default (`Rust`) ABI
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: `#[no_mangle]` set on a function with the default (`Rust`) ABI
+warning: `#[no_mangle]` set on a function with the default (`Rust`) ABI
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: `#[no_mangle]` set on a function with the default (`Rust`) ABI
+warning: implicit borrow as raw pointer
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: `#[no_mangle]` set on a function with the default (`Rust`) ABI
+warning: implicit borrow as raw pointer
+warning: `#[no_mangle]` set on a function with the default (`Rust`) ABI
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: strict comparison of `f32` or `f64`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `#[no_mangle]` set on a function with the default (`Rust`) ABI
+warning: `#[no_mangle]` set on a function with the default (`Rust`) ABI
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: docs for function which may panic missing `# Panics` section
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: `as` casting between raw pointers while changing only its constness

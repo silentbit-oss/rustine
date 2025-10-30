@@ -1,0 +1,37 @@
+use crate::*;
+
+#[derive(Clone)]
+pub struct Binn_Struct {
+    pub header: i32,
+    pub allocated: BOOL,
+    pub writable: BOOL,
+    pub dirty: BOOL,
+    pub pbuf: Option<Box<()>>,
+    pub pre_allocated: BOOL,
+    pub alloc_size: i32,
+    pub used_size: i32,
+    pub type_: i32,
+    pub ptr: Option<Box<()>>,
+    pub size: i32,
+    pub count: i32,
+    pub freefn: Binn_Mem_Free,
+    pub vint8: i8,
+    pub vint16: i16,
+    pub vint32: i32,
+    pub vint64: i64,
+    pub vuint8: u8,
+    pub vuint16: u16,
+    pub vuint32: u32,
+    pub vuint64: u64,
+    pub vchar: i8,
+    pub vuchar: u8,
+    pub vshort: i16,
+    pub vushort: u16,
+    pub vint: i32,
+    pub vuint: u32,
+    pub vfloat: f32,
+    pub vdouble: f64,
+    pub vbool: BOOL,
+    pub disable_int_compression: BOOL,
+}
+

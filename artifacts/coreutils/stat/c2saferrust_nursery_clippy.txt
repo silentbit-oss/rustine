@@ -1,0 +1,30 @@
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: the function has a cognitive complexity of (122/25)
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: `if _ { .. } else { .. }` is an expression
+warning: casting the result of `as_ptr` to *mut i8
+warning: this could be a `const fn`
+warning: use Option::map_or_else instead of an if let/else
+warning: function call inside of `ok_or`
+warning: the function has a cognitive complexity of (131/25)
+warning: this could be a `const fn`
+warning: the function has a cognitive complexity of (31/25)
+warning: all if blocks contain the same code at the end

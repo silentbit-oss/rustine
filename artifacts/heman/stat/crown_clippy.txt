@@ -1,0 +1,1412 @@
+warning: the feature `core_intrinsics` is internal to the compiler or standard library
+warning: unnecessary parentheses around function argument
+warning: unnecessary parentheses around function argument
+warning: unnecessary parentheses around function argument
+warning: unnecessary parentheses around function argument
+warning: unnecessary parentheses around function argument
+warning: unnecessary parentheses around function argument
+warning: unnecessary parentheses around function argument
+warning: unnecessary parentheses around function argument
+warning: unnecessary parentheses around function argument
+warning: unnecessary parentheses around function argument
+warning: unnecessary parentheses around function argument
+warning: unnecessary parentheses around function argument
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: operator precedence might not be obvious
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around block return value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around block return value
+warning: unnecessary parentheses around block return value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around function argument
+warning: unnecessary parentheses around function argument
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: unnecessary parentheses around function argument
+warning: unnecessary parentheses around block return value
+warning: unnecessary parentheses around block return value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: consider choosing a more descriptive name
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: the feature `label_break_value` has been stable since 1.65.0 and no longer requires an attribute to enable
+warning: the feature `raw_ref_op` has been stable since 1.82.0 and no longer requires an attribute to enable
+warning: the feature `strict_provenance` has been stable since 1.84.0 and no longer requires an attribute to enable
+warning: unreachable statement
+warning: unreachable statement
+warning: unreachable statement
+warning: unused variable: `depth`
+warning: unused variable: `pIn`
+warning: unused variable: `s`
+warning: unused variable: `box_0`
+warning: unused variable: `p1`
+warning: unused variable: `p2`
+warning: unused variable: `p3`
+warning: unused variable: `pOut`
+warning: unused variable: `pP`
+warning: unused variable: `s`
+warning: unused variable: `pOut`
+warning: unused variable: `pIn`
+warning: unused variable: `pOut`
+warning: unused variable: `pIn`
+warning: unused variable: `ray`
+warning: unused variable: `centre`
+warning: unused variable: `radius`
+warning: unused variable: `intersection`
+warning: unused variable: `pOut`
+warning: unused variable: `pV`
+warning: unused variable: `pM`
+warning: unused variable: `blend_mode`
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: statement with no effect
+warning: `0 as *mut _` detected
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: statement with no effect
+warning: `0 as *mut _` detected
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut [f32; 9]` -> `*mut [f32; 9]`)
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: statement with no effect
+warning: `0 as *mut _` detected
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: float has excessive precision
+warning: float has excessive precision
+warning: float has excessive precision
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: float has excessive precision
+warning: float has excessive precision
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: float has excessive precision
+warning: float has excessive precision
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: unneeded `return` statement
+warning: derefed type is same as origin
+warning: statement with no effect
+warning: derefed type is same as origin
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: statement with no effect
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: statement with no effect
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: statement with no effect
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: float has excessive precision
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: float has excessive precision
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: module has the same name as its containing module
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: unsafe function's docs are missing a `# Safety` section
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: unsafe function's docs are missing a `# Safety` section
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: unsafe function's docs are missing a `# Safety` section
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: manual implementation of an assign operation
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: approximate value of `f64::consts::PI` found
+warning: approximate value of `f64::consts::PI` found
+warning: unsafe function's docs are missing a `# Safety` section
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: manual implementation of an assign operation
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: unneeded `return` statement
+warning: manual implementation of an assign operation
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: unneeded `return` statement
+warning: manual implementation of an assign operation
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: statement with no effect
+warning: statement with no effect
+warning: statement with no effect
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: approximate value of `f64::consts::FRAC_2_PI` found
+warning: manual implementation of an assign operation
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: statement with no effect
+warning: statement with no effect
+warning: statement with no effect
+warning: statement with no effect
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: statement with no effect
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: statement with no effect
+warning: `0 as *mut _` detected
+warning: statement with no effect
+warning: `0 as *mut _` detected
+warning: statement with no effect
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: this boolean expression can be simplified
+warning: manual implementation of an assign operation
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: statement with no effect
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: statement with no effect
+warning: statement with no effect
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: the use of negated comparison operators on partially ordered types produces code that is hard to read and refactor, please consider using the `partial_cmp` method instead, to make it clear that the two values could be incomparable
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: manual implementation of an assign operation
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: manual implementation of an assign operation
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: unneeded `return` statement
+warning: manual implementation of an assign operation
+warning: manual implementation of an assign operation
+warning: manual implementation of an assign operation
+warning: manual implementation of an assign operation
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: unneeded `return` statement
+warning: manual implementation of an assign operation
+warning: manual implementation of an assign operation
+warning: manual implementation of an assign operation
+warning: manual implementation of an assign operation
+warning: references are not nullable, so checking them for null will always return false
+warning: references are not nullable, so checking them for null will always return false
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: references are not nullable, so checking them for null will always return false
+warning: references are not nullable, so checking them for null will always return false
+warning: references are not nullable, so checking them for null will always return false
+warning: references are not nullable, so checking them for null will always return false
+warning: references are not nullable, so checking them for null will always return false
+warning: references are not nullable, so checking them for null will always return false
+warning: references are not nullable, so checking them for null will always return false
+warning: references are not nullable, so checking them for null will always return false
+warning: creating a mutable reference to mutable static

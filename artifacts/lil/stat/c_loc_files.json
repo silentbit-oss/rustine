@@ -1,0 +1,105 @@
+{
+  "C": {
+    "blanks": 211,
+    "children": {},
+    "code": 3455,
+    "comments": 87,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/lil/main.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 172,
+          "comments": 23
+        }
+      },
+      {
+        "name": "subjects/lil/dll/lildll.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 5,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/lil/lil.c",
+        "stats": {
+          "blanks": 198,
+          "blobs": {},
+          "code": 3278,
+          "comments": 42
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 26,
+    "children": {},
+    "code": 105,
+    "comments": 22,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/lil/lil.h",
+        "stats": {
+          "blanks": 26,
+          "blobs": {},
+          "code": 105,
+          "comments": 22
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 237,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/lil/main.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 172,
+            "comments": 23
+          }
+        },
+        {
+          "name": "subjects/lil/dll/lildll.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 5,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/lil/lil.c",
+          "stats": {
+            "blanks": 198,
+            "blobs": {},
+            "code": 3278,
+            "comments": 42
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/lil/lil.h",
+          "stats": {
+            "blanks": 26,
+            "blobs": {},
+            "code": 105,
+            "comments": 22
+          }
+        }
+      ]
+    },
+    "code": 3560,
+    "comments": 109,
+    "inaccurate": false,
+    "reports": []
+  }
+}

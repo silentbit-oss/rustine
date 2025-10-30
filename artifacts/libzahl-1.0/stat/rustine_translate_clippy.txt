@@ -1,0 +1,207 @@
+warning: unused import: `crate::*`
+warning: unused import: `std::sync::Mutex`
+warning: type `zahl_char_t` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::ffi::CStr`
+warning: unused import: `std::os::raw::c_int`
+warning: unnecessary parentheses around const expression
+warning: unnecessary parentheses around const expression
+warning: unnecessary parentheses around const expression
+warning: unnecessary parentheses around const expression
+warning: unused import: `std::convert::TryInto`
+warning: unused import: `std::ptr`
+warning: unnecessary parentheses around assigned value
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::ptr::copy_nonoverlapping as memcpy`
+warning: unused import: `std::fmt::Write`
+warning: unused import: `std::ptr`
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::sync::Mutex`
+warning: unreachable expression
+warning: variable does not need to be mutable
+warning: unused variable: `new_idx`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `addend_idx` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `buf_idx` is never read
+warning: variable does not need to be mutable
+warning: variable `read_total` is assigned to, but never used
+warning: unreachable pattern
+warning: unreachable pattern
+warning: unnecessary `unsafe` block
+warning: variable does not need to be mutable
+warning: unused variable: `b`
+warning: variable does not need to be mutable
+warning: value assigned to `temp` is never read
+warning: variable `count` is assigned to, but never used
+warning: unused variable: `i`
+warning: unused variable: `j`
+warning: unused variable: `j`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: this call for this type may be undefined behavior
+warning: manually filling a slice
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: unneeded late initialization
+warning: manually reimplementing `div_ceil`
+warning: this loop could be written as a `while let` loop
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: this `map_or` can be simplified
+warning: unneeded late initialization
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: importing legacy numeric constants
+warning: unneeded late initialization
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: manual implementation of an assign operation
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: deref which would be done by auto-deref
+warning: manual implementation of `Option::map`
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: manual implementation of an assign operation
+warning: casting integer literal to `u32` is unnecessary
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: this `else { if .. }` block can be collapsed
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: this `else { if .. }` block can be collapsed
+warning: variables can be used directly in the `format!` string
+warning: manual arithmetic check found
+warning: variables can be used directly in the `format!` string
+warning: unneeded late initialization
+warning: this let-binding has unit value
+warning: this operation has no effect
+warning: deref which would be done by auto-deref
+warning: this operation has no effect
+warning: manual arithmetic check found
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: this `else { if .. }` block can be collapsed
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: this `map_or` can be simplified
+warning: you should use the `starts_with` method
+warning: you should use the `starts_with` method
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: the function `zmodsqr` doesn't need a mutable reference
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: this `if` has identical blocks
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: the type `[std::option::Option<std::boxed::Box<[u32]>>; 64]` does not permit being left uninitialized
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: `longjmp` redeclared with a different signature

@@ -1,0 +1,10 @@
+enum layout_type
+{
+  LAYOUT_LEFTRIGHT,
+  LAYOUT_TOPBOTTOM,
+  LAYOUT_WINDOWPANE
+}
+/*** DEPENDENCIES:
+***/
+
+

@@ -1,0 +1,18 @@
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: clamp-like pattern without using clamp function
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut src::main::opl_timbre_t` -> `*mut src::main::opl_timbre_t`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut src::main::opl_timbre_t` -> `*mut src::main::opl_timbre_t`)
+warning: this boolean expression can be simplified
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut src::main::opl_timbre_t` -> `*mut src::main::opl_timbre_t`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut src::main::opl_timbre_t` -> `*mut src::main::opl_timbre_t`)

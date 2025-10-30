@@ -1,0 +1,155 @@
+warning: adding items after statements is confusing, since items exist from the start of the scope
+warning: an exclusive range would be more readable
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: it is more concise to loop over references to containers instead of using explicit iteration methods
+warning: struct constructor field order is inconsistent with struct definition field order
+warning: this argument is passed by value, but not consumed in the function body
+warning: this function could have a `#[must_use]` attribute
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import

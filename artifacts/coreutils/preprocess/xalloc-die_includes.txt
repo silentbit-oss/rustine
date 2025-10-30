@@ -1,0 +1,14 @@
+#include <assert.h>
+#include <config.h>
+#include <error.h>
+#include <exitfail.h>
+#include <gettext.h>
+#include <idx.h>
+#include <libintl.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <xalloc-die.c>
+#include <xalloc.h>

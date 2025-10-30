@@ -1,0 +1,14 @@
+[package]
+name = "libopenaptxrs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name="openaptxenc"
+path="src/openaptxenc_main.rs"
+
+[[bin]]
+name="openaptxdec"
+path="src/openaptxdec.rs"

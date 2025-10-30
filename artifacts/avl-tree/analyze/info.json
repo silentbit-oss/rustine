@@ -1,0 +1,3979 @@
+{
+    "special_type": [
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Enum'>",
+            "definition": "enum avlbf\n{\n  LEFTHEAVY = -1,\n  BALANCED = 0,\n  RIGHTHEAVY = 1\n}",
+            "name": "avlbf",
+            "names": []
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Enum'>",
+            "definition": "enum avltraversal\n{\n  PREORDER,\n  INORDER,\n  POSTORDER\n}",
+            "name": "avltraversal",
+            "names": []
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "typedef struct avlnode\n{\n  struct avlnode *left;\n  struct avlnode *right;\n  struct avlnode *parent;\n  char bf;\n  void *data;\n} avlnode",
+            "name": "avlnode",
+            "names": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "struct avlnode",
+                        "type": "struct avlnode *",
+                        "definition": [
+                            "struct avlnode *left"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "struct avlnode",
+                        "type": "struct avlnode *",
+                        "definition": [
+                            "struct avlnode *right"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "struct avlnode",
+                        "type": "struct avlnode *",
+                        "definition": [
+                            "struct avlnode *parent"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "bf",
+                        "type": "char",
+                        "definition": [
+                            "char bf"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "void *",
+                        "definition": [
+                            "void *data"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "typedef struct \n{\n  int (*compare)(const void *, const void *);\n  void (*print)(void *);\n  void (*destroy)(void *);\n  avlnode root;\n  avlnode nil;\n  avlnode *min;\n} avltree",
+            "name": "avltree",
+            "names": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "compare",
+                        "type": "int (*)(const void *, const void *)",
+                        "definition": [
+                            "int (*compare)(const void *, const void *)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "print",
+                        "type": "void (*)(void *)",
+                        "definition": [
+                            "void (*print)(void *)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "destroy",
+                        "type": "void (*)(void *)",
+                        "definition": [
+                            "void (*destroy)(void *)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "root",
+                        "type": "avlnode",
+                        "definition": [
+                            "avlnode root"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "nil",
+                        "type": "avlnode",
+                        "definition": [
+                            "avlnode nil"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "min",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *min"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "typedef struct \n{\n  int key;\n} mydata",
+            "name": "mydata",
+            "names": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "int",
+                        "definition": [
+                            "int key"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        }
+    ],
+    "global_variable": [
+        {
+            "path": null,
+            "name": "mu_tests",
+            "type": "int",
+            "definition": [
+                "extern int mu_tests",
+                "int mu_tests = 0"
+            ]
+        },
+        {
+            "path": null,
+            "name": "mu_fails",
+            "type": "int",
+            "definition": [
+                "extern int mu_fails",
+                "int mu_fails = 0"
+            ]
+        },
+        {
+            "path": null,
+            "name": "permutation_error",
+            "type": "int",
+            "definition": [
+                "int permutation_error = 0"
+            ]
+        }
+    ],
+    "function": [
+        {
+            "path": null,
+            "name": "avl_create",
+            "header": "avltree *avl_create(int (*compare_func)(const void *, const void *), void (*destroy_func)(void *))",
+            "params": [
+                "int (*compare_func)(const void *, const void *)",
+                "void (*destroy_func)(void *)"
+            ],
+            "definition": "avltree *avl_create(int (*compare_func)(const void *, const void *), void (*destroy_func)(void *))\n{\n  avltree *avlt;\n  unsigned int avlt_idx = 0;\n  avlt_idx = (avltree *) malloc(sizeof(avltree));\n  if ((&avlt[avlt_idx]) == 0)\n  {\n    return 0;\n  }\n  avlt->compare = compare_func;\n  avlt->destroy = destroy_func;\n  avlt->nil.left = (avlt->nil.right = (avlt->nil.parent = &avlt->nil));\n  avlt->nil.bf = 0;\n  avlt->nil.data = 0;\n  avlt->root.left = (avlt->root.right = (avlt->root.parent = &avlt->nil));\n  avlt->root.bf = 0;\n  avlt->root.data = 0;\n  avlt->min = 0;\n  return avlt;\n}\n\n",
+            "calle": [
+                "destroy",
+                "malloc"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "compare_func",
+                        "type": "int (*)(const void *, const void *)",
+                        "definition": [
+                            "int (*compare_func)(const void *, const void *)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "destroy_func",
+                        "type": "void (*)(void *)",
+                        "definition": [
+                            "void (*destroy_func)(void *)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int avlt_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "avl_destroy",
+            "header": "void avl_destroy(avltree *avlt)",
+            "params": [
+                "avltree *avlt"
+            ],
+            "definition": "void avl_destroy(avltree *avlt)\n{\n  destroy(avlt, avlt->root.left);\n  free(avlt);\n}\n\n",
+            "calle": [
+                "destroy",
+                "free"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "avl_find",
+            "header": "avlnode *avl_find(avltree *avlt, void *data)",
+            "params": [
+                "avltree *avlt",
+                "void *data"
+            ],
+            "definition": "avlnode *avl_find(avltree *avlt, void *data)\n{\n  avlnode *p;\n  unsigned int p_idx = 0;\n  p_idx = avlt->root.left;\n  while ((&p[p_idx]) != (&avlt->nil))\n  {\n    int cmp;\n    cmp = avlt->compare(data, p->data);\n    if (cmp == 0)\n    {\n      return p;\n    }\n    p_idx = (cmp < 0) ? (p_idx->left) : (p_idx->right);\n  }\n\n  return 0;\n}\n\n",
+            "calle": [
+                "avlt->compare"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "void *",
+                        "definition": [
+                            "void *data"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *p"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "cmp",
+                        "type": "int",
+                        "definition": [
+                            "int cmp"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "avl_successor",
+            "header": "avlnode *avl_successor(avltree *avlt, avlnode *node)",
+            "params": [
+                "avltree *avlt",
+                "avlnode *node"
+            ],
+            "definition": "avlnode *avl_successor(avltree *avlt, avlnode *node)\n{\n  unsigned int node_idx = 0;\n  avlnode *p;\n  unsigned int p_idx = 0;\n  p_idx = node->right;\n  if ((&p[p_idx]) != (&avlt->nil))\n  {\n    for (; p->left != (&avlt->nil); p_idx = p_idx->left)\n      ;\n\n  }\n  else\n  {\n    for (p_idx = node->parent; (&node[node_idx]) == p->right; node_idx = &p[p_idx], p_idx = p_idx->parent)\n      ;\n\n    if ((&p[p_idx]) == (&avlt->root))\n    {\n      p_idx = 0;\n    }\n  }\n  return p;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *node"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "node_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int node_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *p"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "avl_apply",
+            "header": "int avl_apply(avltree *avlt, avlnode *node, int (*func)(void *, void *), void *cookie, enum avltraversal order)",
+            "params": [
+                "avltree *avlt",
+                "avlnode *node",
+                "int (*func)(void *, void *)",
+                "void *cookie",
+                "enum avltraversal order"
+            ],
+            "definition": "int avl_apply(avltree *avlt, avlnode *node, int (*func)(void *, void *), void *cookie, enum avltraversal order)\n{\n  int err;\n  if (node != (&avlt->nil))\n  {\n    if ((order == PREORDER) && ((err = func(node->data, cookie)) != 0))\n    {\n      return err;\n    }\n    if ((err = avl_apply(avlt, node->left, func, cookie, order)) != 0)\n    {\n      return err;\n    }\n    if ((order == INORDER) && ((err = func(node->data, cookie)) != 0))\n    {\n      return err;\n    }\n    if ((err = avl_apply(avlt, node->right, func, cookie, order)) != 0)\n    {\n      return err;\n    }\n    if ((order == POSTORDER) && ((err = func(node->data, cookie)) != 0))\n    {\n      return err;\n    }\n  }\n  return 0;\n}\n\n",
+            "calle": [
+                "avl_apply",
+                "func"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *node"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "func",
+                        "type": "int (*)(void *, void *)",
+                        "definition": [
+                            "int (*func)(void *, void *)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "cookie",
+                        "type": "void *",
+                        "definition": [
+                            "void *cookie"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "order",
+                        "type": "enum avltraversal",
+                        "definition": [
+                            "enum avltraversal order"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "err",
+                        "type": "int",
+                        "definition": [
+                            "int err"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "avl_print",
+            "header": "void avl_print(avltree *avlt, void (*print_func)(void *))",
+            "params": [
+                "avltree *avlt",
+                "void (*print_func)(void *)"
+            ],
+            "definition": "void avl_print(avltree *avlt, void (*print_func)(void *))\n{\n  printf(\"\\n--\\n\");\n  print(avlt, avlt->root.left, print_func, 0, \"T\");\n  printf(\"\\nheight = %d\\n\", check_height(avlt, avlt->root.left));\n}\n\n",
+            "calle": [
+                "check_height",
+                "print",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "print_func",
+                        "type": "void (*)(void *)",
+                        "definition": [
+                            "void (*print_func)(void *)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "avl_insert",
+            "header": "avlnode *avl_insert(avltree *avlt, void *data)",
+            "params": [
+                "avltree *avlt",
+                "void *data"
+            ],
+            "definition": "avlnode *avl_insert(avltree *avlt, void *data)\n{\n  avlnode *current;\n  unsigned int current_idx = 0;\n  avlnode *parent;\n  unsigned int parent_idx = 0;\n  avlnode *new_node;\n  current_idx = avlt->root.left;\n  parent_idx = &avlt->root;\n  while ((&current[current_idx]) != (&avlt->nil))\n  {\n    int cmp;\n    cmp = avlt->compare(data, current->data);\n    parent_idx = &current[current_idx];\n    current_idx = (cmp < 0) ? (current_idx->left) : (current_idx->right);\n  }\n\n  current_idx = (new_node = (avlnode *) malloc(sizeof(avlnode)));\n  if ((&current[current_idx]) == 0)\n  {\n    return 0;\n  }\n  current->left = (current->right = &avlt->nil);\n  current->parent = &parent[parent_idx];\n  current->bf = 0;\n  current->data = data;\n  if (((&parent[parent_idx]) == (&avlt->root)) || (avlt->compare(data, parent->data) < 0))\n  {\n    parent->left = &current[current_idx];\n  }\n  else\n    parent->right = &current[current_idx];\n  if ((avlt->min == 0) || (avlt->compare(current->data, avlt->min->data) < 0))\n  {\n    avlt->min = &current[current_idx];\n  }\n  while ((&current[current_idx]) != avlt->root.left)\n  {\n    helper_avl_insert_1(&current_idx, &parent_idx, avlt, current, parent);\n  }\n\n  return new_node;\n}\n\n",
+            "calle": [
+                "avlt->compare",
+                "helper_avl_insert_1",
+                "malloc"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "void *",
+                        "definition": [
+                            "void *data"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "current",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *current"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "current_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int current_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "parent",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *parent"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "parent_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int parent_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "new_node",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *new_node"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "cmp",
+                        "type": "int",
+                        "definition": [
+                            "int cmp"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "avl_delete",
+            "header": "void *avl_delete(avltree *avlt, avlnode *node, int keep)",
+            "params": [
+                "avltree *avlt",
+                "avlnode *node",
+                "int keep"
+            ],
+            "definition": "void *avl_delete(avltree *avlt, avlnode *node, int keep)\n{\n  avlnode *current;\n  unsigned int current_idx = 0;\n  avlnode *parent;\n  unsigned int parent_idx = 0;\n  avlnode *target;\n  unsigned int target_idx = 0;\n  void *data;\n  unsigned int data_idx = 0;\n  data_idx = node->data_idx;\n  if ((node->left == (&avlt->nil)) || (node->right == (&avlt->nil)))\n  {\n    target_idx = node;\n    if (avlt->min == (&target[target_idx]))\n    {\n      avlt->min = avl_successor(avlt, target);\n    }\n  }\n  else\n  {\n    target_idx = avl_successor(avlt, node);\n    node->data = target->data;\n  }\n  current_idx = &target[target_idx];\n  parent_idx = current->parent_idx;\n  while ((&current[current_idx]) != avlt->root.left)\n  {\n    helper_avl_delete_1(&current_idx, &parent_idx, avlt, current, parent);\n  }\n\n  avlnode *child;\n  unsigned int child_idx = 0;\n  child_idx = (target->left == (&avlt->nil)) ? (target->right) : (target->left);\n  if ((&child[child_idx]) != (&avlt->nil))\n  {\n    child->parent = target->parent;\n  }\n  if ((&target[target_idx]) == target->parent->left)\n  {\n    target->parent->left = &child[child_idx];\n  }\n  else\n    target->parent->right = &child[child_idx];\n  free(target);\n  if (keep == 0)\n  {\n    avlt->destroy(data);\n    data_idx = 0;\n  }\n  return data;\n}\n\n",
+            "calle": [
+                "avl_successor",
+                "avlt->destroy",
+                "free",
+                "helper_avl_delete_1"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *node"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "keep",
+                        "type": "int",
+                        "definition": [
+                            "int keep"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "current",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *current"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "current_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int current_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "parent",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *parent"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "parent_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int parent_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "target",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *target"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "target_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int target_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "void *",
+                        "definition": [
+                            "void *data"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int data_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "child",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *child"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "child_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int child_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "avl_check_order",
+            "header": "int avl_check_order(avltree *avlt, void *min, void *max)",
+            "params": [
+                "avltree *avlt",
+                "void *min",
+                "void *max"
+            ],
+            "definition": "int avl_check_order(avltree *avlt, void *min, void *max)\n{\n  return check_order(avlt, avlt->root.left, min, max);\n}\n\n",
+            "calle": [
+                "check_order"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "min",
+                        "type": "void *",
+                        "definition": [
+                            "void *min"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "max",
+                        "type": "void *",
+                        "definition": [
+                            "void *max"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "avl_check_height",
+            "header": "int avl_check_height(avltree *avlt)",
+            "params": [
+                "avltree *avlt"
+            ],
+            "definition": "int avl_check_height(avltree *avlt)\n{\n  int height;\n  height = check_height(avlt, avlt->root.left);\n  return (height < 0) ? (0) : (1);\n}\n\n",
+            "calle": [
+                "check_height"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "height",
+                        "type": "int",
+                        "definition": [
+                            "int height"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "rotate_left",
+            "header": "static avlnode *rotate_left(avltree *avlt, avlnode *x)",
+            "params": [
+                "avltree *avlt",
+                "avlnode *x"
+            ],
+            "definition": "avlnode *rotate_left(avltree *avlt, avlnode *x)\n{\n  avlnode *y;\n  unsigned int y_idx = 0;\n  y_idx = x->right;\n  x->right = y->left;\n  if (x->right != (&avlt->nil))\n  {\n    x->right->parent = x;\n  }\n  y->parent = x->parent;\n  if (x == x->parent->left)\n  {\n    x->parent->left = &y[y_idx];\n  }\n  else\n    x->parent->right = &y[y_idx];\n  y->left = x;\n  x->parent = &y[y_idx];\n  return y;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "x",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *x"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "y",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *y"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "y_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int y_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "rotate_right",
+            "header": "static avlnode *rotate_right(avltree *avlt, avlnode *x)",
+            "params": [
+                "avltree *avlt",
+                "avlnode *x"
+            ],
+            "definition": "avlnode *rotate_right(avltree *avlt, avlnode *x)\n{\n  avlnode *y;\n  unsigned int y_idx = 0;\n  y_idx = x->left;\n  x->left = y->right;\n  if (x->left != (&avlt->nil))\n  {\n    x->left->parent = x;\n  }\n  y->parent = x->parent;\n  if (x == x->parent->left)\n  {\n    x->parent->left = &y[y_idx];\n  }\n  else\n    x->parent->right = &y[y_idx];\n  y->right = x;\n  x->parent = &y[y_idx];\n  return y;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "x",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *x"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "y",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *y"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "y_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int y_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "fix_insert_leftimbalance",
+            "header": "static avlnode *fix_insert_leftimbalance(avltree *avlt, avlnode *p)",
+            "params": [
+                "avltree *avlt",
+                "avlnode *p"
+            ],
+            "definition": "avlnode *fix_insert_leftimbalance(avltree *avlt, avlnode *p)\n{\n  unsigned int p_idx = 0;\n  if (p->left->bf == p->bf)\n  {\n    p_idx = rotate_right(avlt, p_idx);\n    p->bf = (p->right->bf = 0);\n  }\n  else\n  {\n    int oldbf;\n    oldbf = p->left->right->bf;\n    rotate_left(avlt, p->left);\n    p_idx = rotate_right(avlt, p_idx);\n    p->bf = 0;\n    if (oldbf == (-1))\n    {\n      p->left->bf = 0;\n      p->right->bf = 1;\n    }\n    else\n      if (oldbf == 1)\n    {\n      p->left->bf = -1;\n      p->right->bf = 0;\n    }\n    else\n      if (oldbf == 0)\n    {\n      p->left->bf = (p->right->bf = 0);\n    }\n  }\n  return p;\n}\n\n",
+            "calle": [
+                "rotate_left",
+                "rotate_right"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *p"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "oldbf",
+                        "type": "int",
+                        "definition": [
+                            "int oldbf"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "fix_insert_rightimbalance",
+            "header": "static avlnode *fix_insert_rightimbalance(avltree *avlt, avlnode *p)",
+            "params": [
+                "avltree *avlt",
+                "avlnode *p"
+            ],
+            "definition": "avlnode *fix_insert_rightimbalance(avltree *avlt, avlnode *p)\n{\n  unsigned int p_idx = 0;\n  if (p->right->bf == p->bf)\n  {\n    p_idx = rotate_left(avlt, p_idx);\n    p->bf = (p->left->bf = 0);\n  }\n  else\n  {\n    int oldbf;\n    oldbf = p->right->left->bf;\n    rotate_right(avlt, p->right);\n    p_idx = rotate_left(avlt, p_idx);\n    p->bf = 0;\n    if (oldbf == (-1))\n    {\n      p->left->bf = 0;\n      p->right->bf = 1;\n    }\n    else\n      if (oldbf == 1)\n    {\n      p->left->bf = -1;\n      p->right->bf = 0;\n    }\n    else\n      if (oldbf == 0)\n    {\n      p->left->bf = (p->right->bf = 0);\n    }\n  }\n  return p;\n}\n\n",
+            "calle": [
+                "rotate_left",
+                "rotate_right"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *p"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "oldbf",
+                        "type": "int",
+                        "definition": [
+                            "int oldbf"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "fix_delete_leftimbalance",
+            "header": "static avlnode *fix_delete_leftimbalance(avltree *avlt, avlnode *p)",
+            "params": [
+                "avltree *avlt",
+                "avlnode *p"
+            ],
+            "definition": "avlnode *fix_delete_leftimbalance(avltree *avlt, avlnode *p)\n{\n  unsigned int p_idx = 0;\n  if (p->left->bf == (-1))\n  {\n    p_idx = rotate_right(avlt, p_idx);\n    p->bf = (p->right->bf = 0);\n  }\n  else\n    if (p->left->bf == 0)\n  {\n    p_idx = rotate_right(avlt, p_idx);\n    p->bf = 1;\n    p->right->bf = -1;\n  }\n  else\n    if (p->left->bf == 1)\n  {\n    int oldbf;\n    oldbf = p->left->right->bf;\n    rotate_left(avlt, p->left);\n    p_idx = rotate_right(avlt, p_idx);\n    p->bf = 0;\n    if (oldbf == (-1))\n    {\n      p->left->bf = 0;\n      p->right->bf = 1;\n    }\n    else\n      if (oldbf == 1)\n    {\n      p->left->bf = -1;\n      p->right->bf = 0;\n    }\n    else\n      if (oldbf == 0)\n    {\n      p->left->bf = (p->right->bf = 0);\n    }\n  }\n  return p;\n}\n\n",
+            "calle": [
+                "rotate_left",
+                "rotate_right"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *p"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "oldbf",
+                        "type": "int",
+                        "definition": [
+                            "int oldbf"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "fix_delete_rightimbalance",
+            "header": "static avlnode *fix_delete_rightimbalance(avltree *avlt, avlnode *p)",
+            "params": [
+                "avltree *avlt",
+                "avlnode *p"
+            ],
+            "definition": "avlnode *fix_delete_rightimbalance(avltree *avlt, avlnode *p)\n{\n  unsigned int p_idx = 0;\n  if (p->right->bf == 1)\n  {\n    p_idx = rotate_left(avlt, p_idx);\n    p->bf = (p->left->bf = 0);\n  }\n  else\n    if (p->right->bf == 0)\n  {\n    p_idx = rotate_left(avlt, p_idx);\n    p->bf = -1;\n    p->left->bf = 1;\n  }\n  else\n    if (p->right->bf == (-1))\n  {\n    int oldbf;\n    oldbf = p->right->left->bf;\n    rotate_right(avlt, p->right);\n    p_idx = rotate_left(avlt, p_idx);\n    p->bf = 0;\n    if (oldbf == (-1))\n    {\n      p->left->bf = 0;\n      p->right->bf = 1;\n    }\n    else\n      if (oldbf == 1)\n    {\n      p->left->bf = -1;\n      p->right->bf = 0;\n    }\n    else\n      if (oldbf == 0)\n    {\n      p->left->bf = (p->right->bf = 0);\n    }\n  }\n  return p;\n}\n\n",
+            "calle": [
+                "rotate_left",
+                "rotate_right"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *p"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "oldbf",
+                        "type": "int",
+                        "definition": [
+                            "int oldbf"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "check_order",
+            "header": "static int check_order(avltree *avlt, avlnode *n, void *min, void *max)",
+            "params": [
+                "avltree *avlt",
+                "avlnode *n",
+                "void *min",
+                "void *max"
+            ],
+            "definition": "int check_order(avltree *avlt, avlnode *n, void *min, void *max)\n{\n  if (n == (&avlt->nil))\n  {\n    return 1;\n  }\n  if ((avlt->compare(n->data, min) < 0) || (avlt->compare(n->data, max) > 0))\n  {\n    return 0;\n  }\n  return check_order(avlt, n->left, min, n->data) && check_order(avlt, n->right, n->data, max);\n}\n\n",
+            "calle": [
+                "avlt->compare",
+                "check_order"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "n",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *n"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "min",
+                        "type": "void *",
+                        "definition": [
+                            "void *min"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "max",
+                        "type": "void *",
+                        "definition": [
+                            "void *max"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "check_height",
+            "header": "static int check_height(avltree *avlt, avlnode *n)",
+            "params": [
+                "avltree *avlt",
+                "avlnode *n"
+            ],
+            "definition": "int check_height(avltree *avlt, avlnode *n)\n{\n  int lh;\n  int rh;\n  int cmp;\n  if (n == (&avlt->nil))\n  {\n    return 0;\n  }\n  lh = check_height(avlt, n->left);\n  if (lh < 0)\n  {\n    return lh;\n  }\n  rh = check_height(avlt, n->right);\n  if (rh < 0)\n  {\n    return rh;\n  }\n  cmp = rh - lh;\n  if (((cmp < (-1)) || (cmp > 1)) || (cmp != n->bf))\n  {\n    return -1;\n  }\n  return 1 + ((lh > rh) ? (lh) : (rh));\n}\n\n",
+            "calle": [
+                "check_height"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "n",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *n"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "lh",
+                        "type": "int",
+                        "definition": [
+                            "int lh"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "rh",
+                        "type": "int",
+                        "definition": [
+                            "int rh"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "cmp",
+                        "type": "int",
+                        "definition": [
+                            "int cmp"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "print",
+            "header": "static void print(avltree *avlt, avlnode *n, void (*print_func)(void *), int depth, char *label)",
+            "params": [
+                "avltree *avlt",
+                "avlnode *n",
+                "void (*print_func)(void *)",
+                "int depth",
+                "char *label"
+            ],
+            "definition": "void print(avltree *avlt, avlnode *n, void (*print_func)(void *), int depth, char *label)\n{\n  if (n != (&avlt->nil))\n  {\n    print(avlt, n->right, print_func, depth + 1, \"R\");\n    printf(\"%*s\", 8 * depth, \"\");\n    if (label)\n    {\n      printf(\"%s: \", label);\n    }\n    print_func(n->data);\n    printf(\" (%s%d)\\n\", (n->bf >= 0) ? (\"+\") : (\"\"), n->bf);\n    print(avlt, n->left, print_func, depth + 1, \"L\");\n  }\n}\n\n",
+            "calle": [
+                "print",
+                "print_func",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "n",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *n"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "print_func",
+                        "type": "void (*)(void *)",
+                        "definition": [
+                            "void (*print_func)(void *)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "depth",
+                        "type": "int",
+                        "definition": [
+                            "int depth"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "label",
+                        "type": "char *",
+                        "definition": [
+                            "char *label"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "destroy",
+            "header": "static void destroy(avltree *avlt, avlnode *n)",
+            "params": [
+                "avltree *avlt",
+                "avlnode *n"
+            ],
+            "definition": "void destroy(avltree *avlt, avlnode *n)\n{\n  if (n != (&avlt->nil))\n  {\n    destroy(avlt, n->left);\n    destroy(avlt, n->right);\n    avlt->destroy(n->data);\n    free(n);\n  }\n}\n\n",
+            "calle": [
+                "avlt->destroy",
+                "destroy",
+                "free"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "n",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *n"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_avl_insert_1",
+            "header": "",
+            "params": [
+                "unsigned int * const current_idx_ref",
+                "unsigned int * const parent_idx_ref",
+                "avltree * const avlt",
+                "avlnode * const current",
+                "avlnode * const parent"
+            ],
+            "definition": "void helper_avl_insert_1(unsigned int * const current_idx_ref, unsigned int * const parent_idx_ref, avltree * const avlt, avlnode * const current, avlnode * const parent)\n{\n  unsigned int current_idx = *current_idx_ref;\n  unsigned int parent_idx = *parent_idx_ref;\n  if ((&current[current_idx]) == parent->left)\n  {\n    if (parent->bf == 1)\n    {\n      parent->bf = 0;\n      break;\n    }\n    else\n      if (parent->bf == 0)\n    {\n      parent->bf = -1;\n    }\n    else\n      if (parent->bf == (-1))\n    {\n      fix_insert_leftimbalance(avlt, parent);\n      break;\n    }\n  }\n  else\n  {\n    if (parent->bf == (-1))\n    {\n      parent->bf = 0;\n      break;\n    }\n    else\n      if (parent->bf == 0)\n    {\n      parent->bf = 1;\n    }\n    else\n      if (parent->bf == 1)\n    {\n      fix_insert_rightimbalance(avlt, parent);\n      break;\n    }\n  }\n  current_idx = &parent[parent_idx];\n  parent_idx = current->parent_idx;\n  *current_idx_ref = current_idx;\n  *parent_idx_ref = parent_idx;\n}\n\n",
+            "calle": [
+                "fix_insert_leftimbalance",
+                "fix_insert_rightimbalance"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "current_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const current_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "parent_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const parent_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree * const",
+                        "definition": [
+                            "avltree * const avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "current",
+                        "type": "avlnode * const",
+                        "definition": [
+                            "avlnode * const current"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "parent",
+                        "type": "avlnode * const",
+                        "definition": [
+                            "avlnode * const parent"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "current_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int current_idx = *current_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "parent_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int parent_idx = *parent_idx_ref"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_avl_delete_1",
+            "header": "",
+            "params": [
+                "unsigned int * const current_idx_ref",
+                "unsigned int * const parent_idx_ref",
+                "avltree * const avlt",
+                "avlnode * const current",
+                "avlnode * const parent"
+            ],
+            "definition": "void helper_avl_delete_1(unsigned int * const current_idx_ref, unsigned int * const parent_idx_ref, avltree * const avlt, avlnode * const current, avlnode * const parent)\n{\n  unsigned int current_idx = *current_idx_ref;\n  unsigned int parent_idx = *parent_idx_ref;\n  if ((&current[current_idx]) == parent->left)\n  {\n    if (parent->bf == (-1))\n    {\n      parent->bf = 0;\n    }\n    else\n      if (parent->bf == 0)\n    {\n      parent->bf = 1;\n      break;\n    }\n    else\n      if (parent->bf == 1)\n    {\n      parent_idx = fix_delete_rightimbalance(avlt, parent_idx);\n      if (parent->bf == (-1))\n      {\n        break;\n      }\n    }\n  }\n  else\n  {\n    if (parent->bf == 1)\n    {\n      parent->bf = 0;\n    }\n    else\n      if (parent->bf == 0)\n    {\n      parent->bf = -1;\n      break;\n    }\n    else\n      if (parent->bf == (-1))\n    {\n      parent_idx = fix_delete_leftimbalance(avlt, parent_idx);\n      if (parent->bf == 1)\n      {\n        break;\n      }\n    }\n  }\n  current_idx = &parent[parent_idx];\n  parent_idx = current->parent_idx;\n  *current_idx_ref = current_idx;\n  *parent_idx_ref = parent_idx;\n}\n\n",
+            "calle": [
+                "fix_delete_leftimbalance",
+                "fix_delete_rightimbalance"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "current_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const current_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "parent_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const parent_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree * const",
+                        "definition": [
+                            "avltree * const avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "current",
+                        "type": "avlnode * const",
+                        "definition": [
+                            "avlnode * const current"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "parent",
+                        "type": "avlnode * const",
+                        "definition": [
+                            "avlnode * const parent"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "current_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int current_idx = *current_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "parent_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int parent_idx = *parent_idx_ref"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "makedata",
+            "header": "mydata *makedata(int key)",
+            "params": [
+                "int key"
+            ],
+            "definition": "mydata *makedata(int key)\n{\n  mydata *p;\n  unsigned int p_idx = 0;\n  p_idx = (mydata *) malloc(sizeof(mydata));\n  if ((&p[p_idx]) != 0)\n  {\n    p->key = key;\n  }\n  return p;\n}\n\n",
+            "calle": [
+                "malloc"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "int",
+                        "definition": [
+                            "int key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "mydata *",
+                        "definition": [
+                            "mydata *p"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "compare_func",
+            "header": "int compare_func(const void *d1, const void *d2)",
+            "params": [
+                "const void *d1",
+                "const void *d2"
+            ],
+            "definition": "int compare_func(const void *d1, const void *d2)\n{\n  mydata *p1;\n  unsigned int p1_idx = 0;\n  mydata *p2;\n  unsigned int p2_idx = 0;\n  assert(d1 != 0);\n  assert(d2 != 0);\n  p1_idx = (mydata *) d1;\n  p2_idx = (mydata *) d2;\n  if (p1->key == p2->key)\n  {\n    return 0;\n  }\n  else\n    if (p1->key > p2->key)\n  {\n    return 1;\n  }\n  else\n    return -1;\n}\n\n",
+            "calle": [
+                "assert"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "d1",
+                        "type": "const void *",
+                        "definition": [
+                            "const void *d1"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "d2",
+                        "type": "const void *",
+                        "definition": [
+                            "const void *d2"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p1",
+                        "type": "mydata *",
+                        "definition": [
+                            "mydata *p1"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p1_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p1_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p2",
+                        "type": "mydata *",
+                        "definition": [
+                            "mydata *p2"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p2_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p2_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "destroy_func",
+            "header": "void destroy_func(void *d)",
+            "params": [
+                "void *d"
+            ],
+            "definition": "void destroy_func(void *d)\n{\n  mydata *p;\n  unsigned int p_idx = 0;\n  assert(d != 0);\n  p_idx = (mydata *) d;\n  free(p);\n}\n\n",
+            "calle": [
+                "assert",
+                "free"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "d",
+                        "type": "void *",
+                        "definition": [
+                            "void *d"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "mydata *",
+                        "definition": [
+                            "mydata *p"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "print_func",
+            "header": "void print_func(void *d)",
+            "params": [
+                "void *d"
+            ],
+            "definition": "void print_func(void *d)\n{\n  mydata *p;\n  unsigned int p_idx = 0;\n  assert(d != 0);\n  p_idx = (mydata *) d;\n  printf(\"%d\", p->key);\n}\n\n",
+            "calle": [
+                "assert",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "d",
+                        "type": "void *",
+                        "definition": [
+                            "void *d"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "mydata *",
+                        "definition": [
+                            "mydata *p"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "print_char_func",
+            "header": "void print_char_func(void *d)",
+            "params": [
+                "void *d"
+            ],
+            "definition": "void print_char_func(void *d)\n{\n  mydata *p;\n  unsigned int p_idx = 0;\n  assert(d != 0);\n  p_idx = (mydata *) d;\n  printf(\"%c\", p->key & 127);\n}\n\n",
+            "calle": [
+                "assert",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "d",
+                        "type": "void *",
+                        "definition": [
+                            "void *d"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "mydata *",
+                        "definition": [
+                            "mydata *p"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#avl_example",
+            "header": "",
+            "params": [
+                "int argc",
+                "char *argv[]"
+            ],
+            "definition": "int main(int argc, char *argv[])\n{\n  avltree *avlt;\n  unsigned int avlt_idx = 0;\n  if ((avlt_idx = avl_create(compare_func, destroy_func)) == 0)\n  {\n    fprintf(stderr, \"create AVL tree failed\\n\");\n    return 1;\n  }\n  char a[] = {'R', 'E', 'D', 'S', 'O', 'X', 'C', 'U', 'B', 'T'};\n  int i;\n  mydata *data;\n  unsigned int data_idx = 0;\n  for (i = 0; i < ((sizeof(a)) / (sizeof(a[0]))); i += 1)\n  {\n    helper_main_1(&data_idx, avlt, a, i, data);\n  }\n\n  avlnode *node;\n  unsigned int node_idx = 0;\n  mydata query;\n  query.key = 'O';\n  printf(\"delete %c\", query.key);\n  if ((node_idx = avl_find(avlt, &query)) != 0)\n  {\n    avl_delete(avlt, node, 0);\n  }\n  avl_print(avlt, print_char_func);\n  while (node_idx = avlt->min)\n  {\n    printf(\"\\ndelete \");\n    print_char_func(node->data);\n    avl_delete(avlt, node, 0);\n    avl_print(avlt, print_char_func);\n  }\n\n  avl_destroy(avlt);\n  return 0;\n}\n\n",
+            "calle": [
+                "avl_create",
+                "avl_delete",
+                "avl_destroy",
+                "avl_find",
+                "avl_print",
+                "compare_func",
+                "destroy_func",
+                "fprintf",
+                "helper_main_1",
+                "print_char_func",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "argc",
+                        "type": "int",
+                        "definition": [
+                            "int argc"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv",
+                        "type": "char *[]",
+                        "definition": [
+                            "char *argv[]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int avlt_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "char []",
+                        "definition": [
+                            "char a[] = {'R', 'E', 'D', 'S', 'O', 'X', 'C', 'U', 'B', 'T'}"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "mydata *",
+                        "definition": [
+                            "mydata *data"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int data_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *node"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "node_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int node_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "query",
+                        "type": "mydata",
+                        "definition": [
+                            "mydata query"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_main_1",
+            "header": "",
+            "params": [
+                "unsigned int * const data_idx_ref",
+                "avltree * const avlt",
+                "char a[]",
+                "int i",
+                "mydata * const data"
+            ],
+            "definition": "void helper_main_1(unsigned int * const data_idx_ref, avltree * const avlt, char a[], int i, mydata * const data)\n{\n  unsigned int data_idx = *data_idx_ref;\n  if (((data_idx = makedata(a[i])) == 0) || (avl_insert(avlt, data) == 0))\n  {\n    fprintf(stderr, \"insert %c: out of memory\\n\", a[i]);\n    free(data);\n    break;\n  }\n  printf(\"insert %c\", a[i]);\n  avl_print(avlt, print_char_func);\n  printf(\"\\n\");\n  *data_idx_ref = data_idx;\n}\n\n",
+            "calle": [
+                "avl_insert",
+                "avl_print",
+                "fprintf",
+                "free",
+                "makedata",
+                "print_char_func",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "data_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const data_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree * const",
+                        "definition": [
+                            "avltree * const avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "char []",
+                        "definition": [
+                            "char a[]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "mydata * const",
+                        "definition": [
+                            "mydata * const data"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int data_idx = *data_idx_ref"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "tree_create",
+            "header": "static avltree *tree_create()",
+            "params": [],
+            "definition": "avltree *tree_create()\n{\n  return avl_create(compare_func, destroy_func);\n}\n\n",
+            "calle": [
+                "avl_create",
+                "compare_func",
+                "destroy_func"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "tree_find",
+            "header": "static avlnode *tree_find(avltree *avlt, int key)",
+            "params": [
+                "avltree *avlt",
+                "int key"
+            ],
+            "definition": "avlnode *tree_find(avltree *avlt, int key)\n{\n  mydata query;\n  query.key = key;\n  return avl_find(avlt, &query);\n}\n\n",
+            "calle": [
+                "avl_find"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "int",
+                        "definition": [
+                            "int key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "query",
+                        "type": "mydata",
+                        "definition": [
+                            "mydata query"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "tree_print",
+            "header": "static void tree_print(avltree *avlt)",
+            "params": [
+                "avltree *avlt"
+            ],
+            "definition": "void tree_print(avltree *avlt)\n{\n  avl_print(avlt, print_func);\n}\n\n",
+            "calle": [
+                "avl_print",
+                "print_func"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "tree_check",
+            "header": "static int tree_check(avltree *avlt)",
+            "params": [
+                "avltree *avlt"
+            ],
+            "definition": "int tree_check(avltree *avlt)\n{\n  mydata min;\n  mydata max;\n  int rc;\n  min.key = -2147483648;\n  max.key = 2147483647;\n  rc = 1;\n  if (avl_check_order(avlt, &min, &max) != 1)\n  {\n    fprintf(stdout, \"tree_check: invalid order\\n\");\n    rc = 0;\n  }\n  if (avl_check_height(avlt) != 1)\n  {\n    fprintf(stdout, \"tree_check: invalid height\\n\");\n    rc = 0;\n  }\n  return rc;\n}\n\n",
+            "calle": [
+                "avl_check_height",
+                "avl_check_order",
+                "fprintf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "min",
+                        "type": "mydata",
+                        "definition": [
+                            "mydata min"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "max",
+                        "type": "mydata",
+                        "definition": [
+                            "mydata max"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "rc",
+                        "type": "int",
+                        "definition": [
+                            "int rc"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "tree_insert",
+            "header": "static avlnode *tree_insert(avltree *avlt, int key)",
+            "params": [
+                "avltree *avlt",
+                "int key"
+            ],
+            "definition": "avlnode *tree_insert(avltree *avlt, int key)\n{\n  avlnode *node;\n  unsigned int node_idx = 0;\n  mydata *data;\n  unsigned int data_idx = 0;\n  if ((key < (-2147483648)) || (key > 2147483647))\n  {\n    fprintf(stdout, \"tree_insert: invalid key %d\\n\", key);\n    return 0;\n  }\n  if (((data_idx = makedata(key)) == 0) || ((node_idx = avl_insert(avlt, data)) == 0))\n  {\n    fprintf(stdout, \"tree_insert: insert %d failed\\n\", key);\n    free(data);\n    return 0;\n  }\n  return node;\n}\n\n",
+            "calle": [
+                "avl_insert",
+                "fprintf",
+                "free",
+                "makedata"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "int",
+                        "definition": [
+                            "int key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *node"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "node_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int node_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "mydata *",
+                        "definition": [
+                            "mydata *data"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int data_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "tree_delete",
+            "header": "static int tree_delete(avltree *avlt, int key)",
+            "params": [
+                "avltree *avlt",
+                "int key"
+            ],
+            "definition": "int tree_delete(avltree *avlt, int key)\n{\n  avlnode *node;\n  unsigned int node_idx = 0;\n  if ((node_idx = tree_find(avlt, key)) == 0)\n  {\n    fprintf(stdout, \"tree_delete: %d not found\\n\", key);\n    return 0;\n  }\n  avl_delete(avlt, node, 0);\n  if (tree_find(avlt, key) == (&node[node_idx]))\n  {\n    fprintf(stdout, \"tree_delete: delete %d failed\\n\", key);\n    return 0;\n  }\n  return 1;\n}\n\n",
+            "calle": [
+                "avl_delete",
+                "fprintf",
+                "tree_find"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "int",
+                        "definition": [
+                            "int key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *node"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "node_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int node_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "swap",
+            "header": "static void swap(char *x, char *y)",
+            "params": [
+                "char *x",
+                "char *y"
+            ],
+            "definition": "void swap(char *x, char *y)\n{\n  char temp;\n  temp = *x;\n  *x = *y;\n  *y = temp;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "x",
+                        "type": "char *",
+                        "definition": [
+                            "char *x"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "y",
+                        "type": "char *",
+                        "definition": [
+                            "char *y"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "temp",
+                        "type": "char",
+                        "definition": [
+                            "char temp"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "permute",
+            "header": "static void permute(char *a, int start, int end, void func(char *))",
+            "params": [
+                "char *a",
+                "int start",
+                "int end",
+                "void func(char *)"
+            ],
+            "definition": "void permute(char *a, int start, int end, void func(char *))\n{\n  if (start == end)\n  {\n    func(a);\n    return;\n  }\n  int i;\n  for (i = start; i <= end; i += 1)\n  {\n    swap(a + start, a + i);\n    permute(a, start + 1, end, func);\n    swap(a + start, a + i);\n  }\n\n}\n\n",
+            "calle": [
+                "func",
+                "permute",
+                "swap"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "char *",
+                        "definition": [
+                            "char *a"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "start",
+                        "type": "int",
+                        "definition": [
+                            "int start"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "end",
+                        "type": "int",
+                        "definition": [
+                            "int end"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "func",
+                        "type": "void func(char *)",
+                        "definition": [
+                            "void func(char *)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "permutation_insert",
+            "header": "static void permutation_insert(char *a)",
+            "params": [
+                "char *a"
+            ],
+            "definition": "void permutation_insert(char *a)\n{\n  avltree *avlt;\n  unsigned int avlt_idx = 0;\n  avlnode *node;\n  unsigned int node_idx = 0;\n  int i;\n  if ((avlt_idx = tree_create()) == 0)\n  {\n    fprintf(stdout, \"create AVL tree failed\\n\");\n    permutation_error += 1;\n    return;\n  }\n  for (i = 0; i < strlen(a); i += 1)\n  {\n    if ((((node_idx = tree_insert(avlt, a[i])) == 0) || (tree_find(avlt, a[i]) != (&node[node_idx]))) || (tree_check(avlt) != 1))\n    {\n      fprintf(stdout, \"insert %c failed\\n\", a[i]);\n      permutation_error += 1;\n      return;\n    }\n  }\n\n  avl_destroy(avlt);\n}\n\n",
+            "calle": [
+                "avl_destroy",
+                "fprintf",
+                "strlen",
+                "tree_check",
+                "tree_create",
+                "tree_find",
+                "tree_insert"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "char *",
+                        "definition": [
+                            "char *a"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int avlt_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *node"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "node_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int node_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "permutation_error",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "permutation_delete",
+            "header": "static void permutation_delete(char *a)",
+            "params": [
+                "char *a"
+            ],
+            "definition": "void permutation_delete(char *a)\n{\n  avltree *avlt;\n  unsigned int avlt_idx = 0;\n  avlnode *node;\n  unsigned int node_idx = 0;\n  int i;\n  if ((avlt_idx = tree_create()) == 0)\n  {\n    fprintf(stdout, \"create AVL tree failed\\n\");\n    permutation_error += 1;\n    return;\n  }\n  char b[] = \"ABCDEFGHIJ\";\n  for (i = 0; i < strlen(b); i += 1)\n  {\n    if ((((node_idx = tree_insert(avlt, b[i])) == 0) || (tree_find(avlt, b[i]) != (&node[node_idx]))) || (tree_check(avlt) != 1))\n    {\n      fprintf(stdout, \"insert %c failed\\n\", b[i]);\n      permutation_error += 1;\n      return;\n    }\n  }\n\n  for (i = 0; i < strlen(a); i += 1)\n  {\n    if ((tree_delete(avlt, a[i]) != 1) || (tree_check(avlt) != 1))\n    {\n      fprintf(stdout, \"delete %c failed\\n\", a[i]);\n      permutation_error += 1;\n      return;\n    }\n  }\n\n  avl_destroy(avlt);\n}\n\n",
+            "calle": [
+                "avl_destroy",
+                "fprintf",
+                "strlen",
+                "tree_check",
+                "tree_create",
+                "tree_delete",
+                "tree_find",
+                "tree_insert"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "char *",
+                        "definition": [
+                            "char *a"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int avlt_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *node"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "node_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int node_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "b",
+                        "type": "char []",
+                        "definition": [
+                            "char b[] = \"ABCDEFGHIJ\""
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "permutation_error",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "unit_test_create",
+            "header": "static int unit_test_create()",
+            "params": [],
+            "definition": "int unit_test_create()\n{\n  avltree *avlt;\n  unsigned int avlt_idx = 0;\n  if ((avlt_idx = tree_create()) == 0)\n  {\n    fprintf(stdout, \"create AVL tree failed\\n\");\n    return 0;\n  }\n  if ((((((((((((avlt->compare != compare_func) || (avlt->destroy != destroy_func)) || (avlt->nil.left != (&avlt->nil))) || (avlt->nil.right != (&avlt->nil))) || (avlt->nil.parent != (&avlt->nil))) || (avlt->nil.bf != 0)) || (avlt->nil.data != 0)) || (avlt->root.left != (&avlt->nil))) || (avlt->root.right != (&avlt->nil))) || (avlt->root.parent != (&avlt->nil))) || (avlt->root.bf != 0)) || (avlt->root.data != 0))\n  {\n    fprintf(stdout, \"init 1\\n\");\n    avl_destroy(avlt);\n    return 0;\n  }\n  avl_destroy(avlt);\n  return 1;\n}\n\n",
+            "calle": [
+                "avl_destroy",
+                "compare_func",
+                "destroy_func",
+                "fprintf",
+                "tree_create"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int avlt_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "unit_test_find",
+            "header": "static int unit_test_find()",
+            "params": [],
+            "definition": "int unit_test_find()\n{\n  avltree *avlt;\n  unsigned int avlt_idx = 0;\n  avlnode *r;\n  unsigned int r_idx = 0;\n  avlnode *e;\n  unsigned int e_idx = 0;\n  avlnode *d;\n  unsigned int d_idx = 0;\n  avlnode *s;\n  unsigned int s_idx = 0;\n  avlnode *o;\n  unsigned int o_idx = 0;\n  avlnode *x;\n  unsigned int x_idx = 0;\n  avlnode *c;\n  unsigned int c_idx = 0;\n  avlnode *u;\n  unsigned int u_idx = 0;\n  avlnode *b;\n  unsigned int b_idx = 0;\n  avlnode *t;\n  unsigned int t_idx = 0;\n  if ((avlt_idx = tree_create()) == 0)\n  {\n    fprintf(stdout, \"create AVL tree failed\\n\");\n    goto err0;\n  }\n  if ((((((((((((r_idx = tree_insert(avlt, 'R')) == 0) || ((e_idx = tree_insert(avlt, 'E')) == 0)) || ((d_idx = tree_insert(avlt, 'D')) == 0)) || ((s_idx = tree_insert(avlt, 'S')) == 0)) || ((o_idx = tree_insert(avlt, 'O')) == 0)) || ((x_idx = tree_insert(avlt, 'X')) == 0)) || ((c_idx = tree_insert(avlt, 'C')) == 0)) || ((u_idx = tree_insert(avlt, 'U')) == 0)) || ((b_idx = tree_insert(avlt, 'B')) == 0)) || ((t_idx = tree_insert(avlt, 'T')) == 0)) || (tree_check(avlt) != 1))\n  {\n    fprintf(stdout, \"init failed\\n\");\n    goto err;\n  }\n  if ((((((((((avl_find(avlt, r->data) != (&r[r_idx])) || (avl_find(avlt, e->data) != (&e[e_idx]))) || (avl_find(avlt, d->data) != (&d[d_idx]))) || (avl_find(avlt, s->data) != (&s[s_idx]))) || (avl_find(avlt, o->data) != (&o[o_idx]))) || (avl_find(avlt, x->data) != (&x[x_idx]))) || (avl_find(avlt, c->data) != (&c[c_idx]))) || (avl_find(avlt, u->data) != (&u[u_idx]))) || (avl_find(avlt, b->data) != (&b[b_idx]))) || (avl_find(avlt, t->data) != (&t[t_idx])))\n  {\n    fprintf(stdout, \"find failed\\n\");\n    goto err;\n  }\n  avl_destroy(avlt);\n  return 1;\n  err:\n  avl_destroy(avlt);\n\n  err0:\n  return 0;\n\n}\n\n",
+            "calle": [
+                "avl_destroy",
+                "avl_find",
+                "fprintf",
+                "tree_check",
+                "tree_create",
+                "tree_insert"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int avlt_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "r",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *r"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "r_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int r_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "e",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *e"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "e_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int e_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "d",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *d"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "d_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int d_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "s",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *s"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "s_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int s_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "o",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *o"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "o_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int o_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "x",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *x"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "x_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int x_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "c",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *c"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "c_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int c_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "u",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *u"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "u_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int u_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "b",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *b"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "b_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int b_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "t",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *t"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "t_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int t_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "unit_test_successor",
+            "header": "static int unit_test_successor()",
+            "params": [],
+            "definition": "int unit_test_successor()\n{\n  avltree *avlt;\n  unsigned int avlt_idx = 0;\n  avlnode *r;\n  unsigned int r_idx = 0;\n  avlnode *e;\n  unsigned int e_idx = 0;\n  avlnode *d;\n  unsigned int d_idx = 0;\n  avlnode *s;\n  unsigned int s_idx = 0;\n  avlnode *o;\n  unsigned int o_idx = 0;\n  avlnode *x;\n  unsigned int x_idx = 0;\n  avlnode *c;\n  unsigned int c_idx = 0;\n  avlnode *u;\n  unsigned int u_idx = 0;\n  avlnode *b;\n  unsigned int b_idx = 0;\n  avlnode *t;\n  unsigned int t_idx = 0;\n  if ((avlt_idx = tree_create()) == 0)\n  {\n    fprintf(stdout, \"create AVL tree failed\\n\");\n    goto err0;\n  }\n  if (((((((((((((r_idx = tree_insert(avlt, 'R')) == 0) || ((e_idx = tree_insert(avlt, 'E')) == 0)) || ((d_idx = tree_insert(avlt, 'D')) == 0)) || ((s_idx = tree_insert(avlt, 'S')) == 0)) || ((o_idx = tree_insert(avlt, 'O')) == 0)) || ((x_idx = tree_insert(avlt, 'X')) == 0)) || ((c_idx = tree_insert(avlt, 'C')) == 0)) || ((u_idx = tree_insert(avlt, 'U')) == 0)) || ((b_idx = tree_insert(avlt, 'B')) == 0)) || ((t_idx = tree_insert(avlt, 'T')) == 0)) || (tree_delete(avlt, 'O') != 1)) || (tree_check(avlt) != 1))\n  {\n    fprintf(stdout, \"init failed\\n\");\n    goto err;\n  }\n  if (((((((((avl_successor(avlt, b) != (&c[c_idx])) || (avl_successor(avlt, c) != (&d[d_idx]))) || (avl_successor(avlt, d) != (&e[e_idx]))) || (avl_successor(avlt, e) != (&r[r_idx]))) || (avl_successor(avlt, r) != (&s[s_idx]))) || (avl_successor(avlt, s) != (&t[t_idx]))) || (avl_successor(avlt, t) != (&u[u_idx]))) || (avl_successor(avlt, u) != (&x[x_idx]))) || (avl_successor(avlt, x) != 0))\n  {\n    fprintf(stdout, \"successor failed\\n\");\n    goto err;\n  }\n  avl_destroy(avlt);\n  return 1;\n  err:\n  avl_destroy(avlt);\n\n  err0:\n  return 0;\n\n}\n\n",
+            "calle": [
+                "avl_destroy",
+                "avl_successor",
+                "fprintf",
+                "tree_check",
+                "tree_create",
+                "tree_delete",
+                "tree_insert"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int avlt_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "r",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *r"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "r_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int r_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "e",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *e"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "e_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int e_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "d",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *d"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "d_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int d_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "s",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *s"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "s_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int s_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "o",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *o"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "o_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int o_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "x",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *x"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "x_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int x_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "c",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *c"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "c_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int c_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "u",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *u"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "u_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int u_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "b",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *b"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "b_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int b_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "t",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *t"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "t_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int t_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "unit_test_atomic_insertion",
+            "header": "static int unit_test_atomic_insertion()",
+            "params": [],
+            "definition": "int unit_test_atomic_insertion()\n{\n  avltree *avlt;\n  unsigned int avlt_idx = 0;\n  int i;\n  int j;\n  char *cases[] = {\"P\", \"PH\", \"PX\", \"PHDPHXDLB\", \"PHXDLF\", \"PHL\", \"PHXDLJ\", \"PHXDLN\", \"PXb\", \"PHXTbZ\", \"PHXTbd\", \"PHXT\", \"PHXTbRV\", \"PHXTbR\", \"PHXTbV\", 0};\n  for (i = 0; (i < ((sizeof(cases)) / (sizeof(cases[0])))) && cases[i]; i += 1)\n  {\n    if ((avlt_idx = tree_create()) == 0)\n    {\n      fprintf(stdout, \"%s - create AVL tree failed\\n\", cases[i]);\n      goto err0;\n    }\n    for (j = 0; j < strlen(cases[i]); j += 1)\n    {\n      if ((tree_insert(avlt, cases[i][j]) == 0) || (tree_check(avlt) != 1))\n      {\n        fprintf(stdout, \"%s - insert %c failed\\n\", cases[i], cases[i][j]);\n        goto err;\n      }\n    }\n\n    avl_destroy(avlt);\n  }\n\n  return 1;\n  err:\n  avl_destroy(avlt);\n\n  err0:\n  return 0;\n\n}\n\n",
+            "calle": [
+                "avl_destroy",
+                "fprintf",
+                "strlen",
+                "tree_check",
+                "tree_create",
+                "tree_insert"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int avlt_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "cases",
+                        "type": "char *[]",
+                        "definition": [
+                            "char *cases[] = {\"P\", \"PH\", \"PX\", \"PHDPHXDLB\", \"PHXDLF\", \"PHL\", \"PHXDLJ\", \"PHXDLN\", \"PXb\", \"PHXTbZ\", \"PHXTbd\", \"PHXT\", \"PHXTbRV\", \"PHXTbR\", \"PHXTbV\", 0}"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "unit_test_atomic_deletion",
+            "header": "static int unit_test_atomic_deletion()",
+            "params": [],
+            "definition": "int unit_test_atomic_deletion()\n{\n  avltree *avlt;\n  unsigned int avlt_idx = 0;\n  int i;\n  int j;\n  char *cases[] = {\"P\", \"P\", \"PH\", \"H\", \"PH\", \"P\", \"PX\", \"P\", \"PX\", \"X\", \"PHX\", \"H\", \"PHX\", \"P\", \"PHX\", \"X\", \"PHXD\", \"X\", \"PHXDLTBF\", \"X\", \"PHXDLTB\", \"X\", \"PHXDLTF\", \"X\", \"PHXDL\", \"X\", \"PHXDLTBFJN\", \"X\", \"PHXDLTBFJ\", \"X\", \"PHXDLTBFN\", \"X\", \"PHXDLTBJN\", \"X\", \"PHXDLTBJ\", \"X\", \"PHXDLTBN\", \"X\", \"PHXDLTFJN\", \"X\", \"PHXDLTFJ\", \"X\", \"PHXDLTFN\", \"X\", \"PHXL\", \"X\", \"PHXDLTJN\", \"X\", \"PHXDLTJ\", \"X\", \"PHXDLTN\", \"X\", \"PHXb\", \"H\", \"PHXDTbZd\", \"H\", \"PHXDTbZ\", \"H\", \"PHXDTbd\", \"H\", \"PHXTb\", \"H\", \"PHXDTbRVZd\", \"H\", \"PHXDTbRVZ\", \"H\", \"PHXDTbRVd\", \"H\", \"PHXDTbRZd\", \"H\", \"PHXDTbRZ\", \"H\", \"PHXDTbRd\", \"H\", \"PHXDTbVZd\", \"H\", \"PHXDTbVZ\", \"H\", \"PHXDTbVd\", \"H\", \"PHXT\", \"H\", \"PHXDTbRV\", \"H\", \"PHXDTbR\", \"H\", \"PHXDTbV\", \"H\", 0, 0};\n  for (i = 0; (i < ((sizeof(cases)) / (sizeof(cases[0])))) && (cases[i] != 0); i += 2)\n  {\n    if ((avlt_idx = tree_create()) == 0)\n    {\n      fprintf(stdout, \"%s-%s - create AVL tree failed\\n\", cases[i], cases[i + 1]);\n      goto err0;\n    }\n    for (j = 0; j < strlen(cases[i]); j += 1)\n    {\n      if ((tree_insert(avlt, cases[i][j]) == 0) || (tree_check(avlt) != 1))\n      {\n        fprintf(stdout, \"%s-%s - insert %c failed\\n\", cases[i], cases[i + 1], cases[i][j]);\n        goto err;\n      }\n    }\n\n    for (j = 0; j < strlen(cases[i + 1]); j += 1)\n    {\n      if ((tree_delete(avlt, cases[i + 1][j]) == 0) || (tree_check(avlt) != 1))\n      {\n        fprintf(stdout, \"%s-%s - delete %c failed\\n\", cases[i], cases[i + 1], cases[i + 1][j]);\n        goto err;\n      }\n    }\n\n    avl_destroy(avlt);\n  }\n\n  return 1;\n  err:\n  avl_destroy(avlt);\n\n  err0:\n  return 0;\n\n}\n\n",
+            "calle": [
+                "avl_destroy",
+                "fprintf",
+                "strlen",
+                "tree_check",
+                "tree_create",
+                "tree_delete",
+                "tree_insert"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int avlt_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "cases",
+                        "type": "char *[]",
+                        "definition": [
+                            "char *cases[] = {\"P\", \"P\", \"PH\", \"H\", \"PH\", \"P\", \"PX\", \"P\", \"PX\", \"X\", \"PHX\", \"H\", \"PHX\", \"P\", \"PHX\", \"X\", \"PHXD\", \"X\", \"PHXDLTBF\", \"X\", \"PHXDLTB\", \"X\", \"PHXDLTF\", \"X\", \"PHXDL\", \"X\", \"PHXDLTBFJN\", \"X\", \"PHXDLTBFJ\", \"X\", \"PHXDLTBFN\", \"X\", \"PHXDLTBJN\", \"X\", \"PHXDLTBJ\", \"X\", \"PHXDLTBN\", \"X\", \"PHXDLTFJN\", \"X\", \"PHXDLTFJ\", \"X\", \"PHXDLTFN\", \"X\", \"PHXL\", \"X\", \"PHXDLTJN\", \"X\", \"PHXDLTJ\", \"X\", \"PHXDLTN\", \"X\", \"PHXb\", \"H\", \"PHXDTbZd\", \"H\", \"PHXDTbZ\", \"H\", \"PHXDTbd\", \"H\", \"PHXTb\", \"H\", \"PHXDTbRVZd\", \"H\", \"PHXDTbRVZ\", \"H\", \"PHXDTbRVd\", \"H\", \"PHXDTbRZd\", \"H\", \"PHXDTbRZ\", \"H\", \"PHXDTbRd\", \"H\", \"PHXDTbVZd\", \"H\", \"PHXDTbVZ\", \"H\", \"PHXDTbVd\", \"H\", \"PHXT\", \"H\", \"PHXDTbRV\", \"H\", \"PHXDTbR\", \"H\", \"PHXDTbV\", \"H\", 0, 0}"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "unit_test_chain_insertion",
+            "header": "static int unit_test_chain_insertion()",
+            "params": [],
+            "definition": "int unit_test_chain_insertion()\n{\n  avltree *avlt;\n  unsigned int avlt_idx = 0;\n  int i;\n  int j;\n  char *cases[] = {\"PHXDB\", \"PHXDF\", \"PHXLJ\", \"PHXLN\", \"PHXTR\", \"PHXTV\", \"PHXbZ\", \"PHXbd\", \"PHXDLB\", \"PHXDLF\", \"PHXDLJ\", \"PHXDLN\", \"PHXTbR\", \"PHXTbV\", \"PHXTbV\", \"PHXTbZ\", \"PHXTbd\", 0};\n  for (i = 0; (i < ((sizeof(cases)) / (sizeof(cases[0])))) && (cases[i] != 0); i += 1)\n  {\n    if ((avlt_idx = tree_create()) == 0)\n    {\n      fprintf(stdout, \"%s - create AVL tree failed\\n\", cases[i]);\n      goto err0;\n    }\n    for (j = 0; j < strlen(cases[i]); j += 1)\n    {\n      if ((tree_insert(avlt, cases[i][j]) == 0) || (tree_check(avlt) != 1))\n      {\n        fprintf(stdout, \"%s - insert %c failed\\n\", cases[i], cases[i][j]);\n        goto err;\n      }\n    }\n\n    avl_destroy(avlt);\n  }\n\n  return 1;\n  err:\n  avl_destroy(avlt);\n\n  err0:\n  return 0;\n\n}\n\n",
+            "calle": [
+                "avl_destroy",
+                "fprintf",
+                "strlen",
+                "tree_check",
+                "tree_create",
+                "tree_insert"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int avlt_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "cases",
+                        "type": "char *[]",
+                        "definition": [
+                            "char *cases[] = {\"PHXDB\", \"PHXDF\", \"PHXLJ\", \"PHXLN\", \"PHXTR\", \"PHXTV\", \"PHXbZ\", \"PHXbd\", \"PHXDLB\", \"PHXDLF\", \"PHXDLJ\", \"PHXDLN\", \"PHXTbR\", \"PHXTbV\", \"PHXTbV\", \"PHXTbZ\", \"PHXTbd\", 0}"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "unit_test_chain_deletion",
+            "header": "static int unit_test_chain_deletion()",
+            "params": [],
+            "definition": "int unit_test_chain_deletion()\n{\n  avltree *avlt;\n  unsigned int avlt_idx = 0;\n  int i;\n  int j;\n  char *cases[] = {\"PHXDLTbFJNZK\", \"T\", \"PHXDLTbFJNZdK\", \"T\", \"PHXDLTbFJNdK\", \"T\", \"PHXDLTbFRVZU\", \"L\", \"PHXDLTbBFRVZU\", \"L\", \"PHXDLTbBRVZU\", \"L\", 0, 0};\n  for (i = 0; (i < ((sizeof(cases)) / (sizeof(cases[0])))) && (cases[i] != 0); i += 2)\n  {\n    if ((avlt_idx = tree_create()) == 0)\n    {\n      fprintf(stdout, \"%s-%s - create AVL tree failed\\n\", cases[i], cases[i + 1]);\n      goto err0;\n    }\n    for (j = 0; j < strlen(cases[i]); j += 1)\n    {\n      if ((tree_insert(avlt, cases[i][j]) == 0) || (tree_check(avlt) != 1))\n      {\n        fprintf(stdout, \"%s-%s - insert %c failed\\n\", cases[i], cases[i + 1], cases[i][j]);\n        goto err;\n      }\n    }\n\n    for (j = 0; j < strlen(cases[i + 1]); j += 1)\n    {\n      if ((tree_delete(avlt, cases[i + 1][j]) == 0) || (tree_check(avlt) != 1))\n      {\n        fprintf(stdout, \"%s-%s - delete %c failed\\n\", cases[i], cases[i + 1], cases[i + 1][j]);\n        goto err;\n      }\n    }\n\n    avl_destroy(avlt);\n  }\n\n  return 1;\n  err:\n  avl_destroy(avlt);\n\n  err0:\n  return 0;\n\n}\n\n",
+            "calle": [
+                "avl_destroy",
+                "fprintf",
+                "strlen",
+                "tree_check",
+                "tree_create",
+                "tree_delete",
+                "tree_insert"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int avlt_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "cases",
+                        "type": "char *[]",
+                        "definition": [
+                            "char *cases[] = {\"PHXDLTbFJNZK\", \"T\", \"PHXDLTbFJNZdK\", \"T\", \"PHXDLTbFJNdK\", \"T\", \"PHXDLTbFRVZU\", \"L\", \"PHXDLTbBFRVZU\", \"L\", \"PHXDLTbBRVZU\", \"L\", 0, 0}"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "unit_test_permutation_insertion",
+            "header": "static int unit_test_permutation_insertion()",
+            "params": [],
+            "definition": "int unit_test_permutation_insertion()\n{\n  char a[] = \"ABCDEFGHIJ\";\n  permutation_error = 0;\n  permute(a, 0, strlen(a) - 1, permutation_insert);\n  return permutation_error == 0;\n}\n\n",
+            "calle": [
+                "permutation_insert",
+                "permute",
+                "strlen"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "char []",
+                        "definition": [
+                            "char a[] = \"ABCDEFGHIJ\""
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "permutation_error",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "unit_test_permutation_deletion",
+            "header": "static int unit_test_permutation_deletion()",
+            "params": [],
+            "definition": "int unit_test_permutation_deletion()\n{\n  char a[] = \"ABCDEFGHIJ\";\n  permutation_error = 0;\n  permute(a, 0, strlen(a) - 1, permutation_delete);\n  return permutation_error == 0;\n}\n\n",
+            "calle": [
+                "permutation_delete",
+                "permute",
+                "strlen"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "char []",
+                        "definition": [
+                            "char a[] = \"ABCDEFGHIJ\""
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "permutation_error",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "unit_test_random_insertion_deletion",
+            "header": "static int unit_test_random_insertion_deletion()",
+            "params": [],
+            "definition": "int unit_test_random_insertion_deletion()\n{\n  avltree *avlt;\n  unsigned int avlt_idx = 0;\n  int ninsert;\n  int ndelete;\n  int i;\n  int key;\n  int max;\n  if ((avlt_idx = tree_create()) == 0)\n  {\n    fprintf(stdout, \"create AVL tree failed\\n\");\n    goto err0;\n  }\n  ninsert = 0;\n  ndelete = 0;\n  max = 9999;\n  srand((unsigned int) time(0));\n  for (i = 1; i <= 1999; i += 1)\n  {\n    helper_unit_test_random_insertion_deletion_1(&ninsert, &key, avlt, max);\n  }\n\n  for (i = 1; i < max; i += 1)\n  {\n    helper_unit_test_random_insertion_deletion_2(&ndelete, &key, avlt, max);\n  }\n\n  printf(\"\\tstat: ninsert=%d, ndelete=%d\\n\", ninsert, ndelete);\n  avl_destroy(avlt);\n  return 1;\n  err:\n  avl_destroy(avlt);\n\n  err0:\n  return 0;\n\n}\n\n",
+            "calle": [
+                "avl_destroy",
+                "fprintf",
+                "helper_unit_test_random_insertion_deletion_1",
+                "helper_unit_test_random_insertion_deletion_2",
+                "printf",
+                "srand",
+                "time",
+                "tree_create"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int avlt_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ninsert",
+                        "type": "int",
+                        "definition": [
+                            "int ninsert"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ndelete",
+                        "type": "int",
+                        "definition": [
+                            "int ndelete"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "int",
+                        "definition": [
+                            "int key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "max",
+                        "type": "int",
+                        "definition": [
+                            "int max"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "unit_test_dup",
+            "header": "static int unit_test_dup()",
+            "params": [],
+            "definition": "int unit_test_dup()\n{\n  avltree *avlt;\n  unsigned int avlt_idx = 0;\n  avlnode *n1;\n  unsigned int n1_idx = 0;\n  avlnode *n2;\n  unsigned int n2_idx = 0;\n  if ((avlt_idx = tree_create()) == 0)\n  {\n    fprintf(stdout, \"create AVL tree failed\\n\");\n    goto err0;\n  }\n  if (((n1_idx = tree_insert(avlt, 'N')) == 0) || ((n2_idx = tree_insert(avlt, 'N')) == 0))\n  {\n    fprintf(stdout, \"insert failed\\n\");\n    goto err;\n  }\n  if (((&n1[n1_idx]) == (&n2[n2_idx])) || (n1->right != (&n2[n2_idx])))\n  {\n    fprintf(stdout, \"invalid dup\\n\");\n    goto err;\n  }\n  avl_destroy(avlt);\n  return 1;\n  err:\n  avl_destroy(avlt);\n\n  err0:\n  return 0;\n\n}\n\n",
+            "calle": [
+                "avl_destroy",
+                "fprintf",
+                "tree_create",
+                "tree_insert"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int avlt_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "n1",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *n1"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "n1_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int n1_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "n2",
+                        "type": "avlnode *",
+                        "definition": [
+                            "avlnode *n2"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "n2_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int n2_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "unit_test_min",
+            "header": "static int unit_test_min()",
+            "params": [],
+            "definition": "int unit_test_min()\n{\n  avltree *avlt;\n  unsigned int avlt_idx = 0;\n  if ((avlt_idx = tree_create()) == 0)\n  {\n    fprintf(stdout, \"create AVL tree failed\\n\");\n    goto err0;\n  }\n  if (((((((((((((avlt->min != 0) || (tree_insert(avlt, 'B') == 0)) || (avlt->min != tree_find(avlt, 'B'))) || (tree_insert(avlt, 'A') == 0)) || (avlt->min != tree_find(avlt, 'A'))) || (tree_insert(avlt, 'C') == 0)) || (avlt->min != tree_find(avlt, 'A'))) || (tree_delete(avlt, 'B') != 1)) || (avlt->min != tree_find(avlt, 'A'))) || (tree_delete(avlt, 'A') != 1)) || (avlt->min != tree_find(avlt, 'C'))) || (tree_delete(avlt, 'C') != 1)) || (avlt->min != 0))\n  {\n    fprintf(stdout, \"invalid min\\n\");\n    goto err;\n  }\n  avl_destroy(avlt);\n  return 1;\n  err:\n  avl_destroy(avlt);\n\n  err0:\n  return 0;\n\n}\n\n",
+            "calle": [
+                "avl_destroy",
+                "fprintf",
+                "tree_create",
+                "tree_delete",
+                "tree_find",
+                "tree_insert"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree *",
+                        "definition": [
+                            "avltree *avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int avlt_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "all_tests",
+            "header": "",
+            "params": [],
+            "definition": "void all_tests()\n{\n  do\n  {\n    helper_all_tests_1();\n  }\n  while (0);\n  do\n  {\n    helper_all_tests_2();\n  }\n  while (0);\n  do\n  {\n    helper_all_tests_3();\n  }\n  while (0);\n  do\n  {\n    helper_all_tests_4();\n  }\n  while (0);\n  do\n  {\n    helper_all_tests_5();\n  }\n  while (0);\n  do\n  {\n    helper_all_tests_6();\n  }\n  while (0);\n  do\n  {\n    helper_all_tests_7();\n  }\n  while (0);\n  do\n  {\n    helper_all_tests_8();\n  }\n  while (0);\n  do\n  {\n    helper_all_tests_9();\n  }\n  while (0);\n  do\n  {\n    helper_all_tests_10();\n  }\n  while (0);\n  do\n  {\n    helper_all_tests_11();\n  }\n  while (0);\n  do\n  {\n    helper_all_tests_12();\n  }\n  while (0);\n}\n\n",
+            "calle": [
+                "helper_all_tests_1",
+                "helper_all_tests_10",
+                "helper_all_tests_11",
+                "helper_all_tests_12",
+                "helper_all_tests_2",
+                "helper_all_tests_3",
+                "helper_all_tests_4",
+                "helper_all_tests_5",
+                "helper_all_tests_6",
+                "helper_all_tests_7",
+                "helper_all_tests_8",
+                "helper_all_tests_9"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#avl_test",
+            "header": "",
+            "params": [
+                "int argc",
+                "char **argv"
+            ],
+            "definition": "int main(int argc, char **argv)\n{\n  all_tests();\n  if (mu_fails)\n  {\n    printf(\"*** %d/%d TESTS FAILED ***\\n\", mu_fails, mu_tests);\n    return 1;\n  }\n  else\n  {\n    printf(\"ALL TESTS PASSED\\n\");\n    return 0;\n  }\n}\n\n",
+            "calle": [
+                "all_tests",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "argc",
+                        "type": "int",
+                        "definition": [
+                            "int argc"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv",
+                        "type": "char **",
+                        "definition": [
+                            "char **argv"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "mu_fails",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "mu_tests",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_all_tests_1",
+            "header": "",
+            "params": [],
+            "definition": "void helper_all_tests_1()\n{\n  mu_tests += 1;\n  printf(\"#%03d %s \\n\", mu_tests, \"unit_test_create\");\n  if (unit_test_create())\n  {\n    printf(\"PASSED\\n\");\n  }\n  else\n  {\n    printf(\"FAILED\\n\");\n    mu_fails++;\n  }\n}\n\n",
+            "calle": [
+                "printf",
+                "unit_test_create"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "mu_tests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "mu_fails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_all_tests_2",
+            "header": "",
+            "params": [],
+            "definition": "void helper_all_tests_2()\n{\n  mu_tests += 1;\n  printf(\"#%03d %s \\n\", mu_tests, \"unit_test_find\");\n  if (unit_test_find())\n  {\n    printf(\"PASSED\\n\");\n  }\n  else\n  {\n    printf(\"FAILED\\n\");\n    mu_fails++;\n  }\n}\n\n",
+            "calle": [
+                "printf",
+                "unit_test_find"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "mu_tests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "mu_fails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_all_tests_3",
+            "header": "",
+            "params": [],
+            "definition": "void helper_all_tests_3()\n{\n  mu_tests += 1;\n  printf(\"#%03d %s \\n\", mu_tests, \"unit_test_successor\");\n  if (unit_test_successor())\n  {\n    printf(\"PASSED\\n\");\n  }\n  else\n  {\n    printf(\"FAILED\\n\");\n    mu_fails++;\n  }\n}\n\n",
+            "calle": [
+                "printf",
+                "unit_test_successor"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "mu_tests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "mu_fails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_all_tests_4",
+            "header": "",
+            "params": [],
+            "definition": "void helper_all_tests_4()\n{\n  mu_tests += 1;\n  printf(\"#%03d %s \\n\", mu_tests, \"unit_test_atomic_insertion\");\n  if (unit_test_atomic_insertion())\n  {\n    printf(\"PASSED\\n\");\n  }\n  else\n  {\n    printf(\"FAILED\\n\");\n    mu_fails++;\n  }\n}\n\n",
+            "calle": [
+                "printf",
+                "unit_test_atomic_insertion"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "mu_tests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "mu_fails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_all_tests_5",
+            "header": "",
+            "params": [],
+            "definition": "void helper_all_tests_5()\n{\n  mu_tests += 1;\n  printf(\"#%03d %s \\n\", mu_tests, \"unit_test_atomic_deletion\");\n  if (unit_test_atomic_deletion())\n  {\n    printf(\"PASSED\\n\");\n  }\n  else\n  {\n    printf(\"FAILED\\n\");\n    mu_fails++;\n  }\n}\n\n",
+            "calle": [
+                "printf",
+                "unit_test_atomic_deletion"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "mu_tests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "mu_fails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_all_tests_6",
+            "header": "",
+            "params": [],
+            "definition": "void helper_all_tests_6()\n{\n  mu_tests += 1;\n  printf(\"#%03d %s \\n\", mu_tests, \"unit_test_chain_insertion\");\n  if (unit_test_chain_insertion())\n  {\n    printf(\"PASSED\\n\");\n  }\n  else\n  {\n    printf(\"FAILED\\n\");\n    mu_fails++;\n  }\n}\n\n",
+            "calle": [
+                "printf",
+                "unit_test_chain_insertion"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "mu_tests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "mu_fails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_all_tests_7",
+            "header": "",
+            "params": [],
+            "definition": "void helper_all_tests_7()\n{\n  mu_tests += 1;\n  printf(\"#%03d %s \\n\", mu_tests, \"unit_test_chain_deletion\");\n  if (unit_test_chain_deletion())\n  {\n    printf(\"PASSED\\n\");\n  }\n  else\n  {\n    printf(\"FAILED\\n\");\n    mu_fails++;\n  }\n}\n\n",
+            "calle": [
+                "printf",
+                "unit_test_chain_deletion"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "mu_tests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "mu_fails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_all_tests_8",
+            "header": "",
+            "params": [],
+            "definition": "void helper_all_tests_8()\n{\n  mu_tests += 1;\n  printf(\"#%03d %s \\n\", mu_tests, \"unit_test_permutation_insertion\");\n  if (unit_test_permutation_insertion())\n  {\n    printf(\"PASSED\\n\");\n  }\n  else\n  {\n    printf(\"FAILED\\n\");\n    mu_fails++;\n  }\n}\n\n",
+            "calle": [
+                "printf",
+                "unit_test_permutation_insertion"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "mu_tests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "mu_fails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_all_tests_9",
+            "header": "",
+            "params": [],
+            "definition": "void helper_all_tests_9()\n{\n  mu_tests += 1;\n  printf(\"#%03d %s \\n\", mu_tests, \"unit_test_permutation_deletion\");\n  if (unit_test_permutation_deletion())\n  {\n    printf(\"PASSED\\n\");\n  }\n  else\n  {\n    printf(\"FAILED\\n\");\n    mu_fails++;\n  }\n}\n\n",
+            "calle": [
+                "printf",
+                "unit_test_permutation_deletion"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "mu_tests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "mu_fails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_all_tests_10",
+            "header": "",
+            "params": [],
+            "definition": "void helper_all_tests_10()\n{\n  mu_tests += 1;\n  printf(\"#%03d %s \\n\", mu_tests, \"unit_test_random_insertion_deletion\");\n  if (unit_test_random_insertion_deletion())\n  {\n    printf(\"PASSED\\n\");\n  }\n  else\n  {\n    printf(\"FAILED\\n\");\n    mu_fails++;\n  }\n}\n\n",
+            "calle": [
+                "printf",
+                "unit_test_random_insertion_deletion"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "mu_tests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "mu_fails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_all_tests_11",
+            "header": "",
+            "params": [],
+            "definition": "void helper_all_tests_11()\n{\n  mu_tests += 1;\n  printf(\"#%03d %s \\n\", mu_tests, \"unit_test_dup\");\n  if (unit_test_dup())\n  {\n    printf(\"PASSED\\n\");\n  }\n  else\n  {\n    printf(\"FAILED\\n\");\n    mu_fails++;\n  }\n}\n\n",
+            "calle": [
+                "printf",
+                "unit_test_dup"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "mu_tests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "mu_fails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_all_tests_12",
+            "header": "",
+            "params": [],
+            "definition": "void helper_all_tests_12()\n{\n  mu_tests += 1;\n  printf(\"#%03d %s \\n\", mu_tests, \"unit_test_min\");\n  if (unit_test_min())\n  {\n    printf(\"PASSED\\n\");\n  }\n  else\n  {\n    printf(\"FAILED\\n\");\n    mu_fails++;\n  }\n}\n\n",
+            "calle": [
+                "printf",
+                "unit_test_min"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "mu_tests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "mu_fails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_unit_test_random_insertion_deletion_1",
+            "header": "",
+            "params": [
+                "int * const ninsert_ref",
+                "int * const key_ref",
+                "avltree * const avlt",
+                "int max"
+            ],
+            "definition": "void helper_unit_test_random_insertion_deletion_1(int * const ninsert_ref, int * const key_ref, avltree * const avlt, int max)\n{\n  int ninsert = *ninsert_ref;\n  int key = *key_ref;\n  key = rand() % max;\n  if (tree_find(avlt, key) != 0)\n  {\n    continue;\n  }\n  ninsert += 1;\n  if ((tree_insert(avlt, key) == 0) || (tree_check(avlt) != 1))\n  {\n    fprintf(stdout, \"insert %d failed\\n\", key);\n    goto err;\n  }\n  *ninsert_ref = ninsert;\n  *key_ref = key;\n}\n\n",
+            "calle": [
+                "fprintf",
+                "rand",
+                "tree_check",
+                "tree_find",
+                "tree_insert"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ninsert_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const ninsert_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const key_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree * const",
+                        "definition": [
+                            "avltree * const avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "max",
+                        "type": "int",
+                        "definition": [
+                            "int max"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ninsert",
+                        "type": "int",
+                        "definition": [
+                            "int ninsert = *ninsert_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "int",
+                        "definition": [
+                            "int key = *key_ref"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_unit_test_random_insertion_deletion_2",
+            "header": "",
+            "params": [
+                "int * const ndelete_ref",
+                "int * const key_ref",
+                "avltree * const avlt",
+                "int max"
+            ],
+            "definition": "void helper_unit_test_random_insertion_deletion_2(int * const ndelete_ref, int * const key_ref, avltree * const avlt, int max)\n{\n  int ndelete = *ndelete_ref;\n  int key = *key_ref;\n  key = rand() % max;\n  if (tree_find(avlt, key) == 0)\n  {\n    continue;\n  }\n  ndelete += 1;\n  if ((tree_delete(avlt, key) != 1) || (tree_check(avlt) != 1))\n  {\n    fprintf(stdout, \"delete %d failed\\n\", key);\n    goto err;\n  }\n  *ndelete_ref = ndelete;\n  *key_ref = key;\n}\n\n",
+            "calle": [
+                "fprintf",
+                "rand",
+                "tree_check",
+                "tree_delete",
+                "tree_find"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ndelete_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const ndelete_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const key_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "avlt",
+                        "type": "avltree * const",
+                        "definition": [
+                            "avltree * const avlt"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "max",
+                        "type": "int",
+                        "definition": [
+                            "int max"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ndelete",
+                        "type": "int",
+                        "definition": [
+                            "int ndelete = *ndelete_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "int",
+                        "definition": [
+                            "int key = *key_ref"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        }
+    ],
+    "typedefs": []
+}

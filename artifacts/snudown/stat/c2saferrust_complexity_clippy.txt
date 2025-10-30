@@ -1,0 +1,13 @@
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: casting to the same type is unnecessary (`u64` -> `u64`)
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: a dangling pointer will be produced because the temporary `std::boxed::Box<[u8]>` will be dropped
+warning: a dangling pointer will be produced because the temporary `std::vec::Vec<*mut std::ffi::c_void>` will be dropped

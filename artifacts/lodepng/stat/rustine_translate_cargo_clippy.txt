@@ -1,0 +1,7 @@
+warning: a dangling pointer will be produced because the temporary `std::boxed::Box<[u8]>` will be dropped
+warning: package `translate` is missing `either package.license or package.license_file` metadata
+warning: package `translate` is missing `package.categories` metadata
+warning: package `translate` is missing `package.description` metadata
+warning: package `translate` is missing `package.keywords` metadata
+warning: package `translate` is missing `package.readme` metadata
+warning: package `translate` is missing `package.repository` metadata

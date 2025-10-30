@@ -1,0 +1,57 @@
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: redundant else block
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: this argument is passed by value, but not consumed in the function body
+warning: casting from `*mut _XDisplay` to a more-strictly-aligned pointer (`*mut C2RustUnnamed`) (1 < 8 bytes)
+warning: casting from `*mut _XDisplay` to a more-strictly-aligned pointer (`*mut C2RustUnnamed`) (1 < 8 bytes)
+warning: implicit borrow as raw pointer
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: docs for function which may panic missing `# Panics` section
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers

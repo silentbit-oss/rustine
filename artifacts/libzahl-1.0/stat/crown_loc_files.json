@@ -1,0 +1,940 @@
+{
+  "Rust": {
+    "blanks": 195,
+    "children": {},
+    "code": 4074,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 65,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zsetu.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 37,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zbits.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 34,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zsplit.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 33,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zseti.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 18,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zpowu.rs",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 53,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/allocator.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 93,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zmod.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 19,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zlsh.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 108,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zmodpow.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 119,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zcmpi.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 37,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zbtest.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/ztrunc.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 72,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zsets.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 362,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zcmpmag.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 56,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zrand.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 151,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zpow.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 92,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zlsb.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 33,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zmodpowu.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 72,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zxor.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 131,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zmul.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 128,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zswap.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 20,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zabs.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 20,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zbset.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 77,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zfree.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 55,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zsetup.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 314,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zstr_length.rs",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 52,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zload.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 50,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zrsh.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 87,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zor.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 119,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zneg.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 20,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zmodmul.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 27,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zset.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 36,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zcmp.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 27,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zmodsqr.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 26,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zgcd.rs",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 157,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zsqr.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 104,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zcmpu.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 29,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zptest.rs",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 122,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zstr.rs",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 127,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/znot.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 58,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zsub.rs",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 128,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zdivmod.rs",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 183,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zand.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 100,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zperror.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 16,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zerror.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 24,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zadd.rs",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 167,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zdiv.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 19,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zsave.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 49,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/crown/src/zunsetup.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 114,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 195,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 65,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zsetu.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 37,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zbits.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 34,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zsplit.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 33,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zseti.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 18,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zpowu.rs",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 53,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/allocator.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 93,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zmod.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 19,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zlsh.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 108,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zmodpow.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 119,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zcmpi.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 37,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zbtest.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/ztrunc.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 72,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zsets.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 362,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zcmpmag.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 56,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zrand.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 151,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zpow.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 92,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zlsb.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 33,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zmodpowu.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 72,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zxor.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 131,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zmul.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 128,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zswap.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 20,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zabs.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 20,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zbset.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 77,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zfree.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 55,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zsetup.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 314,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zstr_length.rs",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 52,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zload.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 50,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zrsh.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 87,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zor.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 119,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zneg.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 20,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zmodmul.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 27,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zset.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 36,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zcmp.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 27,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zmodsqr.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 26,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zgcd.rs",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 157,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zsqr.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 104,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zcmpu.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 29,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zptest.rs",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 122,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zstr.rs",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 127,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/znot.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 58,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zsub.rs",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 128,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zdivmod.rs",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 183,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zand.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 100,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zperror.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 16,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zerror.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 24,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zadd.rs",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 167,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zdiv.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 19,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zsave.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 49,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/crown/src/zunsetup.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 114,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 4074,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,55 @@
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: this OR pattern can be rewritten using a range
+warning: this boolean expression can be simplified
+warning: using `clone` on type `quoting_options` which implements the `Copy` trait
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this OR pattern can be rewritten using a range
+warning: casting a character literal to `u8` truncates
+warning: casting a character literal to `u8` truncates
+warning: casting a character literal to `u8` truncates
+warning: casting a character literal to `u8` truncates
+warning: useless conversion to the same type: `u64`
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: calling `CStr::from_ptr` with a byte string literal
+warning: calling `CStr::from_ptr` with a byte string literal
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: this boolean expression can be simplified
+warning: useless conversion to the same type: `u64`
+warning: useless conversion to the same type: `u64`
+warning: useless conversion to the same type: `u64`
+warning: useless conversion to the same type: `u64`
+warning: useless conversion to the same type: `u64`
+warning: useless conversion to the same type: `u64`
+warning: useless conversion to the same type: `u64`
+warning: useless conversion to the same type: `u64`
+warning: useless conversion to the same type: `u64`
+warning: useless conversion to the same type: `u64`
+warning: useless conversion to the same type: `u64`
+warning: useless conversion to the same type: `u64`
+warning: this boolean expression can be simplified
+warning: casting to the same type is unnecessary (`i32` -> `i32`)

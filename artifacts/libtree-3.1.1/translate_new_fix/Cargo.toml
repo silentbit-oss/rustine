@@ -1,0 +1,12 @@
+[package]
+name = "translate_new"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lazy_static = "1.4.0"
+libc = "0.2.153"
+
+[[bin]]
+name="test"
+path="src/test_main.rs"

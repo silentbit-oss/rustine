@@ -1,0 +1,22 @@
+{
+    "original_code": {
+        "number_of_struct": 9,
+        "number_of_union": 0,
+        "number_of_function": 326,
+        "number_of_global_variable": 32,
+        "number_of_raw_pointer_decleration": 1073,
+        "number_of_raw_pointer_derefrence": 155,
+        "number_of_raw_pointer_arithmetic": 136,
+        "number_of_all_fragments": 376
+    },
+    "refactored_code": {
+        "number_of_struct": 9,
+        "number_of_union": 0,
+        "number_of_function": 420,
+        "number_of_global_variable": 32,
+        "number_of_raw_pointer_decleration": 1716,
+        "number_of_raw_pointer_derefrence": 588,
+        "number_of_raw_pointer_arithmetic": 2,
+        "number_of_all_fragments": 470
+    }
+}

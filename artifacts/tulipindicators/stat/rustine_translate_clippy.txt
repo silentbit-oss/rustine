@@ -1,0 +1,474 @@
+warning: unused import: `crate::*`
+warning: type `TC_REAL` should have an upper camel case name
+warning: type `tc_set` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::f64::consts::PI`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::assert`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unnecessary parentheses around assigned value
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::f64::consts::PI`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::os::raw::c_double`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::f64::consts::LN_2`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unnecessary parentheses around index expression
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::assert`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::f64::consts::PI`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::f64::consts::SQRT_2`
+warning: unused import: `crate::*`
+warning: unused import: `std::f64::consts::SQRT_2`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::f64::consts::PI`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::f64::consts::SQRT_2`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::assert`
+warning: unused import: `crate::*`
+warning: unnecessary parentheses around index expression
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `libc::FILE`
+warning: unused import: `std::io::Read`
+warning: unused import: `std::path::Path`
+warning: unused import: `std::fs::File`
+warning: unused import: `std::time::Duration`
+warning: unused import: `std::time::Instant`
+warning: unused import: `std::ffi::CStr`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::os::raw::c_char`
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `std::os::raw::c_char`
+warning: unused import: `std::io::BufRead`
+warning: unused import: `std::io`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: value assigned to `bar` is never read
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: value assigned to `truerange` is never read
+warning: value assigned to `truerange` is never read
+warning: unused variable: `stream`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `sd` is never read
+warning: variable does not need to be mutable
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: variable does not need to be mutable
+warning: value assigned to `dm` is never read
+warning: value assigned to `dp` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `options`
+warning: value assigned to `bar` is never read
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: variable does not need to be mutable
+warning: value assigned to `phase` is never read
+warning: value assigned to `rp` is never read
+warning: value assigned to `ip` is never read
+warning: variable does not need to be mutable
+warning: unused variable: `options`
+warning: value assigned to `truerange` is never read
+warning: value assigned to `truerange` is never read
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `stream`
+warning: variable does not need to be mutable
+warning: unused variable: `options`
+warning: value assigned to `bar` is never read
+warning: value assigned to `r` is never read
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: value assigned to `bar` is never read
+warning: value assigned to `c` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `options`
+warning: variable does not need to be mutable
+warning: value assigned to `bar` is never read
+warning: variable does not need to be mutable
+warning: unnecessary `unsafe` block
+warning: unused variable: `result`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `avg_total`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `avg_total`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `avg_body`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `avg_total`
+warning: unused variable: `avg_body`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `avg_total`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `avg_total`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `avg_body`
+warning: unused variable: `avg_total`
+warning: value assigned to `j` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `buf`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `rng`
+warning: variable does not need to be mutable
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unused variable: `period`
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unused variable: `context`
+warning: unused variable: `buffer`
+warning: variable does not need to be mutable
+warning: this function has too many arguments (13/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (13/7)
+warning: the loop variable `i` is only used to index `input`
+warning: the variable `apo_idx` is used as a loop counter
+warning: this function has too many arguments (16/7)
+warning: the variable `trail` is used as a loop counter
+warning: this function has too many arguments (12/7)
+warning: the variable `trail` is used as a loop counter
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (10/7)
+warning: this `map_or` can be simplified
+warning: this function has too many arguments (14/7)
+warning: the loop variable `i` is only used to index `input`
+warning: this function has too many arguments (10/7)
+warning: the variable `output_idx` is used as a loop counter
+warning: the variable `output_idx` is used as a loop counter
+warning: accessing first element with `inputs?.get(0)`
+warning: accessing first element with `options?.get(0)`
+warning: this function has too many arguments (12/7)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (8/7)
+warning: the loop variable `i` is only used to index `input`
+warning: this function has too many arguments (16/7)
+warning: the variable `trail` is used as a loop counter
+warning: the loop variable `i` is used to index `input`
+warning: this function has too many arguments (17/7)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: the loop variable `i` is used to index `input`
+warning: this function has too many arguments (14/7)
+warning: the loop variable `i` is used to index `input`
+warning: this function has too many arguments (15/7)
+warning: accessing first element with `inputs.get(0)`
+warning: this function has too many arguments (11/7)
+warning: the variable `trail` is used as a loop counter
+warning: the variable `output_idx` is used as a loop counter
+warning: accessing first element with `inputs.get(0)`
+warning: this function has too many arguments (11/7)
+warning: the variable `trail` is used as a loop counter
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: this function has too many arguments (14/7)
+warning: this function has too many arguments (9/7)
+warning: use of `wrapping_offset` with a `usize` casted to an `isize`
+warning: the loop variable `i` is only used to index `input`
+warning: use of `wrapping_offset` with a `usize` casted to an `isize`
+warning: this function has too many arguments (11/7)
+warning: this `if` has identical blocks
+warning: accessing first element with `inputs?.get(0)`
+warning: accessing first element with `options?.get(0)`
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: this function has too many arguments (12/7)
+warning: this function has too many arguments (22/7)
+warning: this function has too many arguments (14/7)
+warning: the loop variable `i` is used to index `input`
+warning: this function has too many arguments (11/7)
+warning: the loop variable `i` is used to index `input`
+warning: the loop variable `i` is used to index `input`
+warning: the loop variable `i` is only used to index `input`
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (15/7)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: this function has too many arguments (15/7)
+warning: the loop variable `i` is only used to index `in_data`
+warning: this function has too many arguments (14/7)
+warning: manual `!RangeInclusive::contains` implementation
+warning: accessing first element with `inputs.get(0)`
+warning: this function has too many arguments (13/7)
+warning: the variable `trail` is used as a loop counter
+warning: accessing first element with `inputs?.get(0)`
+warning: accessing first element with `options?.get(0)`
+warning: this `map_or` can be simplified
+warning: transmute used without annotations
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (10/7)
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (12/7)
+warning: variables can be used directly in the `format!` string
+warning: the loop variable `i` is used to index `arr`
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: the loop variable `k` is only used to index `options`
+warning: the loop variable `j` is used to index `outputs`
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: this function has too many arguments (12/7)
+warning: the loop variable `i` is used to index `outputs`
+warning: the loop variable `i` is only used to index `outputs`
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: literal with an empty format string
+warning: this manual char comparison can be written more succinctly
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: this function has too many arguments (8/7)
+warning: literal with an empty format string
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (8/7)
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: the loop variable `i` is only used to index `inputs`
+warning: this function has too many arguments (8/7)
+warning: literal with an empty format string
+warning: this function has too many arguments (8/7)
+warning: literal with an empty format string
+warning: variables can be used directly in the `format!` string
+warning: literal with an empty format string
+warning: called `.as_ref().map(|v| v.as_slice())` on an `Option` value
+warning: called `.as_ref().map(|v| v.as_slice())` on an `Option` value
+warning: literal with an empty format string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: literal with an empty format string
+warning: variables can be used directly in the `format!` string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: this operation has no effect
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: equal expressions as operands to `!=`
+warning: literal with an empty format string
+warning: equal expressions as operands to `!=`
+warning: literal with an empty format string
+warning: equal expressions as operands to `<=`
+warning: this function has too many arguments (8/7)
+warning: this `map_or` can be simplified
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: initializer for `thread_local` value can be made `const`
+warning: initializer for `thread_local` value can be made `const`
+warning: unnecessary `if let` since only the `Some` variant of the iterator element is used
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: this `else { if .. }` block can be collapsed
+warning: derefed type is same as origin
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: this function has too many arguments (13/7)
+warning: variables can be used directly in the `format!` string
+warning: this function has too many arguments (10/7)
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: this function has too many arguments (10/7)
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: static variable `buf` should have an upper case name
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static

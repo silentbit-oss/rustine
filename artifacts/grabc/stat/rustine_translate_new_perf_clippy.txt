@@ -1,0 +1,1 @@
+warning: `extern` fn uses type `std::ffi::CStr`, which is not FFI-safe

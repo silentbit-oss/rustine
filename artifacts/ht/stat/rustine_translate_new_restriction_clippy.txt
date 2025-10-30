@@ -1,0 +1,178 @@
+warning: `key` is shadowed
+warning: `key` is shadowed
+warning: `key` is shadowed
+warning: `key` is shadowed
+warning: `key` is shadowed
+warning: `key` is shadowed
+warning: `old_entries` is shadowed
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: incorrect ordering of items (module item groupings specify another order)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: integer division
+warning: integer division
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing documentation for the crate
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: unsafe block missing a safety comment
+warning: usage of `process::exit`
+warning: use of / has been disallowed in this context
+warning: use of / has been disallowed in this context
+warning: use of `eprintln!`
+warning: used import from `std` instead of `alloc`
+warning: used import from `std` instead of `alloc`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: wildcard match will also match any future added variants

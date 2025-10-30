@@ -1,0 +1,71 @@
+use crate::*;
+use std::assert;
+use std::f64::consts::LN_2;
+
+
+pub fn ZopfliLengthsToSymbols(lengths: &[u32], n: usize, maxbits: u32, symbols: &mut [u32]) {
+    // Initialize symbols to 0
+    for i in 0..n {
+        symbols[i] = 0;
+    }
+
+    // Allocate and initialize bl_count and next_code as Vec<usize>
+    let mut bl_count = vec![0; (maxbits + 1) as usize];
+    let mut next_code = vec![0; (maxbits + 1) as usize];
+
+    // Count the number of codes for each bit length
+    for &len in lengths.iter().take(n) {
+        assert!(len <= maxbits, "Length exceeds maxbits");
+        bl_count[len as usize] += 1;
+    }
+
+    // Compute the starting code for each bit length
+    let mut code = 0;
+    bl_count[0] = 0;
+    for bits in 1..=maxbits {
+        code = (code + bl_count[(bits - 1) as usize]) << 1;
+        next_code[bits as usize] = code;
+    }
+
+    // Assign symbols based on the computed codes
+    for i in 0..n {
+        let len = lengths[i];
+        if len != 0 {
+            symbols[i] = next_code[len as usize];
+            next_code[len as usize] += 1;
+        }
+    }
+
+    // Vecs are automatically dropped here (no need for explicit free)
+}
+
+pub fn ZopfliCalculateEntropy(count: &[usize], bitlengths: &mut [f64]) {
+    const K_INV_LOG2: f64 = 1.4426950408889;
+    let n = count.len();
+    assert_eq!(n, bitlengths.len(), "count and bitlengths must have the same length");
+
+    let sum: usize = count.iter().sum();
+    
+    let log2sum = if sum == 0 {
+        (n as f64).ln() * K_INV_LOG2
+    } else {
+        (sum as f64).ln() * K_INV_LOG2
+    };
+
+    for i in 0..n {
+        bitlengths[i] = if count[i] == 0 {
+            log2sum
+        } else {
+            log2sum - (count[i] as f64).ln() * K_INV_LOG2
+        };
+
+        if bitlengths[i] < 0.0 && bitlengths[i] > -1e-5 {
+            bitlengths[i] = 0.0;
+        }
+        assert!(bitlengths[i] >= 0.0, "bitlengths[{}] must be non-negative", i);
+    }
+}
+pub fn ZopfliCalculateBitLengths(count: &[usize], n: usize, maxbits: i32, bitlengths: &mut [u32]) {
+    let error = ZopfliLengthLimitedCodeLengths(count, n, maxbits, bitlengths);
+    assert!(error == 0);
+}

@@ -1,0 +1,274 @@
+{
+  "Rust": {
+    "blanks": 91,
+    "children": {},
+    "code": 8761,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/zopfli/others/crown/lib.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 24,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/crown/src/zopfli_lib.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 62,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/crown/src/blocksplitter.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 633,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/crown/src/gzip_container.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 641,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/crown/src/squeeze.rs",
+        "stats": {
+          "blanks": 23,
+          "blobs": {},
+          "code": 1625,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/crown/src/katajainen.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 349,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/crown/src/tree.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 176,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/crown/src/lz77.rs",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 1632,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/crown/src/cache.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 248,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/crown/src/deflate.rs",
+        "stats": {
+          "blanks": 20,
+          "blobs": {},
+          "code": 2952,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/crown/src/hash.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 199,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/crown/src/util.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 12,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/crown/src/zlib_container.rs",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 202,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/zopfli/others/crown/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 91,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/zopfli/others/crown/lib.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 24,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/crown/src/zopfli_lib.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 62,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/crown/src/blocksplitter.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 633,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/crown/src/gzip_container.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 641,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/crown/src/squeeze.rs",
+          "stats": {
+            "blanks": 23,
+            "blobs": {},
+            "code": 1625,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/crown/src/katajainen.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 349,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/crown/src/tree.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 176,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/crown/src/lz77.rs",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 1632,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/crown/src/cache.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 248,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/crown/src/deflate.rs",
+          "stats": {
+            "blanks": 20,
+            "blobs": {},
+            "code": 2952,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/crown/src/hash.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 199,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/crown/src/util.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 12,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/crown/src/zlib_container.rs",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 202,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/zopfli/others/crown/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        }
+      ]
+    },
+    "code": 8761,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,1565 @@
+{
+    "ltests": {
+        "source_code": "static int ltests = 0",
+        "translated_code": "use lazy_static::lazy_static;\nuse std::sync::atomic::{AtomicI32, Ordering};\n\nlazy_static! {\n    pub static ref LTESTS: AtomicI32 = AtomicI32::new(0);\n}",
+        "hint": "global_variables",
+        "section": "src",
+        "file": "globals.rs",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "type": "int",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "lfails": {
+        "source_code": "static int lfails = 0",
+        "translated_code": "use lazy_static::lazy_static;\nuse std::sync::atomic::{AtomicI32, Ordering};\n\nlazy_static! {\n    pub static ref LFAILS: AtomicI32 = AtomicI32::new(0);\n}",
+        "hint": "global_variables",
+        "section": "src",
+        "file": "globals.rs",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "type": "int",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "sigmoid_dom_min": {
+        "source_code": "const double sigmoid_dom_min = -15.0",
+        "translated_code": "pub const SIGMOID_DOM_MIN: f64 = -15.0;",
+        "hint": "global_variables",
+        "section": "src",
+        "file": "globals.rs",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "type": "const double",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "sigmoid_dom_max": {
+        "source_code": "const double sigmoid_dom_max = 15.0",
+        "translated_code": "pub const SIGMOID_DOM_MAX: f64 = 15.0;",
+        "hint": "global_variables",
+        "section": "src",
+        "file": "globals.rs",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "type": "const double",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "interval": {
+        "source_code": "double interval",
+        "translated_code": "pub static mut interval: f64 = 0.0;",
+        "hint": "global_variables",
+        "section": "src",
+        "file": "globals.rs",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "type": "double",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "lookup": {
+        "source_code": "double lookup[4096]",
+        "translated_code": "use lazy_static::lazy_static;\n\nlazy_static! {\n    pub static ref LOOKUP: std::sync::Mutex<[f64; 4096]> = \n        std::sync::Mutex::new([0.0; 4096]);\n}",
+        "hint": "global_variables",
+        "section": "src",
+        "file": "globals.rs",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "type": "double [4096]",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "save_name": {
+        "source_code": "const char *save_name = \"example/xor.ann\"",
+        "translated_code": "pub const SAVE_NAME: &str = \"example/xor.ann\";",
+        "hint": "global_variables",
+        "section": "src",
+        "file": "globals.rs",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "type": "const char *",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "iris_data": {
+        "source_code": "const char *iris_data = \"example/iris.data\"",
+        "translated_code": "pub const IRIS_DATA: &str = \"example/iris.data\";",
+        "hint": "global_variables",
+        "section": "src",
+        "file": "globals.rs",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "type": "const char *",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "input": {
+        "source_code": "double *input",
+        "translated_code": "pub static INPUT: std::sync::Mutex<Option<Box<[f64]>>> = std::sync::Mutex::new(None);",
+        "hint": "global_variables",
+        "section": "src",
+        "file": "globals.rs",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "type": "double *",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "class": {
+        "source_code": "double *class",
+        "translated_code": "use lazy_static::lazy_static;\n\nlazy_static! {\n    pub static ref CLASS: std::sync::Mutex<Option<Box<[f64]>>> = std::sync::Mutex::new(None);\n}",
+        "hint": "global_variables",
+        "section": "src",
+        "file": "globals.rs",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "type": "double *",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "samples": {
+        "source_code": "int samples",
+        "translated_code": "pub static SAMPLES: std::sync::atomic::AtomicI32 = std::sync::atomic::AtomicI32::new(0);",
+        "hint": "global_variables",
+        "section": "src",
+        "file": "globals.rs",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "type": "int",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "class_names": {
+        "source_code": "const char *class_names[] = {\"Iris-setosa\", \"Iris-versicolor\", \"Iris-virginica\"}",
+        "translated_code": "use lazy_static::lazy_static;\n\nlazy_static! {\n    pub static ref CLASS_NAMES: [&'static str; 3] = [\n        \"Iris-setosa\",\n        \"Iris-versicolor\",\n        \"Iris-virginica\"\n    ];\n}",
+        "hint": "global_variables",
+        "section": "src",
+        "file": "globals.rs",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "type": "const char *[]",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "time": {
+        "source_code": "pub time: Time",
+        "translated_code": "",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": true,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "genann": {
+        "source_code": "typedef struct genann\n{\n  int inputs;\n  int hidden_layers;\n  int hidden;\n  int outputs;\n  genann_actfun activation_hidden;\n  genann_actfun activation_output;\n  int total_weights;\n  int total_neurons;\n  double *weight;\n  double *output;\n  double *delta;\n} genann",
+        "translated_code": "#[derive(Clone)]\npub enum GenannActFun {\n    Sigmoid,\n    Linear,\n    Threshold,\n    SymmetricSigmoid,\n    Gaussian,\n}\n\n#[derive(Clone)]\npub struct Genann {\n    pub inputs: i32,\n    pub hidden_layers: i32,\n    pub hidden: i32,\n    pub outputs: i32,\n    pub activation_hidden: GenannActFun,\n    pub activation_output: GenannActFun,\n    pub total_weights: i32,\n    pub total_neurons: i32,\n    pub weight: Option<Vec<f64>>,\n    pub output: Option<Vec<f64>>,\n    pub delta: Option<Vec<f64>>,\n}",
+        "hint": "special_types",
+        "section": "src",
+        "file": "genann.rs",
+        "error": "",
+        "dependent": [
+            "genann_actfun"
+        ],
+        "lifetime_hint": [],
+        "type": "<class 'pycparser.c_ast.Struct'>",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "genann_actfun": {
+        "source_code": "typedef double (*genann_actfun)(const struct genann *ann, double a)",
+        "translated_code": "pub type GenannActFun = fn(ann: &Genann, a: f64) -> f64;",
+        "hint": "special_types",
+        "section": "src",
+        "file": "genann_actfun.rs",
+        "error": "",
+        "dependent": [
+            "genann"
+        ],
+        "lifetime_hint": [],
+        "type": "<class 'pycparser.c_ast.FuncDecl'>",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "genann_randomize": {
+        "source_code": "void genann_randomize(genann *ann)\n{\n  int i;\n  for (i = 0; i < ann->total_weights; i += 1)\n  {\n    double r = ((double) rand()) / 32767;\n    ann->weight[i] = r - 0.5;\n  }\n\n}\n\n",
+        "translated_code": "use rand::Rng;\n\npub fn genann_randomize(ann: &mut Genann) {\n    if let Some(weights) = ann.weight.as_mut() {\n        let mut rng = rand::thread_rng();\n        for i in 0..ann.total_weights as usize {\n            let r: f64 = rng.gen(); // generates random f64 between 0.0 and 1.0\n            weights[i] = r - 0.5;\n        }\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "genann.rs",
+        "error": "",
+        "dependent": [
+            "genann"
+        ],
+        "header": "void genann_randomize(genann *ann)",
+        "params": [
+            "genann *ann"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "ann",
+            "i",
+            "r"
+        ],
+        "calle": [
+            "rand"
+        ],
+        "calle_c": [
+            "rand"
+        ],
+        "key": "genann_randomize",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "genann_copy": {
+        "source_code": "genann *genann_copy(const genann *ann)\n{\n  const int size = (sizeof(genann)) + ((sizeof(double)) * ((ann->total_weights + ann->total_neurons) + (ann->total_neurons - ann->inputs)));\n  genann *ret = malloc(size);\n  if (!ret)\n  {\n    return 0;\n  }\n  memcpy(ret, ann, size);\n  ret->weight = (double *) (((char *) ret) + (sizeof(genann)));\n  ret->output = ret->weight + ret->total_weights;\n  ret->delta = ret->output + ret->total_neurons;\n  return ret;\n}\n\n",
+        "translated_code": "use std::mem;\n\npub fn genann_copy(ann: &Genann) -> Option<Genann> {\n    // Calculate the total size needed for weights, outputs, and deltas\n    let total_elements = (ann.total_weights + ann.total_neurons + (ann.total_neurons - ann.inputs)) as usize;\n    \n    // Create a new Genann with copied fields\n    let mut ret = Genann {\n        inputs: ann.inputs,\n        hidden_layers: ann.hidden_layers,\n        hidden: ann.hidden,\n        outputs: ann.outputs,\n        activation_hidden: ann.activation_hidden.clone(),\n        activation_output: ann.activation_output.clone(),\n        total_weights: ann.total_weights,\n        total_neurons: ann.total_neurons,\n        weight: None,\n        output: None,\n        delta: None,\n    };\n\n    // Clone the weight, output, and delta vectors if they exist\n    if let Some(weights) = &ann.weight {\n        let mut new_weights = weights.clone();\n        let mut new_outputs = Vec::with_capacity(ann.total_neurons as usize);\n        let mut new_deltas = Vec::with_capacity((ann.total_neurons - ann.inputs) as usize);\n\n        // Copy weights\n        ret.weight = Some(new_weights);\n\n        // Initialize output and delta vectors\n        if let Some(outputs) = &ann.output {\n            new_outputs = outputs.clone();\n        }\n        ret.output = Some(new_outputs);\n\n        if let Some(deltas) = &ann.delta {\n            new_deltas = deltas.clone();\n        }\n        ret.delta = Some(new_deltas);\n    }\n\n    Some(ret)\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "genann.rs",
+        "error": "",
+        "dependent": [
+            "genann"
+        ],
+        "header": "genann *genann_copy(const genann *ann)",
+        "params": [
+            "const genann *ann"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "ann",
+            "size",
+            "ret"
+        ],
+        "calle": [
+            "malloc",
+            "memcpy"
+        ],
+        "calle_c": [
+            "malloc",
+            "memcpy"
+        ],
+        "key": "genann_copy",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "genann_free": {
+        "source_code": "void genann_free(genann *ann)\n{\n  free(ann);\n}\n\n",
+        "translated_code": "pub fn genann_free(ann: Option<Box<Genann>>) {\n    // In Rust, the Box will be automatically dropped when it goes out of scope,\n    // so no explicit free is needed. The Option wrapper allows for NULL-equivalent behavior.\n    // Just let the Box drop naturally by doing nothing here.\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "genann.rs",
+        "error": "",
+        "dependent": [
+            "genann"
+        ],
+        "header": "void genann_free(genann *ann)",
+        "params": [
+            "genann *ann"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "ann"
+        ],
+        "calle": [
+            "free"
+        ],
+        "calle_c": [
+            "free"
+        ],
+        "key": "genann_free",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "genann_write": {
+        "source_code": "void genann_write(const genann *ann, FILE *out)\n{\n  fprintf(out, \"%d %d %d %d\", ann->inputs, ann->hidden_layers, ann->hidden, ann->outputs);\n  int i;\n  for (i = 0; i < ann->total_weights; i += 1)\n  {\n    fprintf(out, \" %.20e\", ann->weight[i]);\n  }\n\n}\n\n",
+        "translated_code": "use std::io::Write;\n\npub fn genann_write(ann: &Genann, out: &mut dyn Write) -> std::io::Result<()> {\n    write!(\n        out,\n        \"{} {} {} {}\",\n        ann.inputs, ann.hidden_layers, ann.hidden, ann.outputs\n    )?;\n\n    if let Some(weights) = &ann.weight {\n        for weight in weights {\n            write!(out, \" {:.20e}\", weight)?;\n        }\n    }\n\n    Ok(())\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "genann.rs",
+        "error": "",
+        "dependent": [
+            "genann"
+        ],
+        "header": "void genann_write(const genann *ann, FILE *out)",
+        "params": [
+            "const genann *ann",
+            "FILE *out"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "ann",
+            "out",
+            "i"
+        ],
+        "calle": [
+            "fprintf"
+        ],
+        "calle_c": [
+            "fprintf"
+        ],
+        "key": "genann_write",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "genann_act_sigmoid": {
+        "source_code": "double genann_act_sigmoid(const genann *ann, double a)\n{\n  if (a < (-45.0))\n  {\n    return 0;\n  }\n  if (a > 45.0)\n  {\n    return 1;\n  }\n  return 1.0 / (1 + exp(-a));\n}\n\n",
+        "translated_code": "use std::f64::consts::E;\n\npub fn genann_act_sigmoid(ann: &Genann, a: f64) -> f64 {\n    if a < -45.0 {\n        0.0\n    } else if a > 45.0 {\n        1.0\n    } else {\n        1.0 / (1.0 + E.powf(-a))\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "genann.rs",
+        "error": "",
+        "dependent": [
+            "genann"
+        ],
+        "header": "double genann_act_sigmoid(const genann *ann, double a)",
+        "params": [
+            "const genann *ann",
+            "double a"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "ann",
+            "a"
+        ],
+        "calle": [
+            "exp"
+        ],
+        "calle_c": [
+            "exp"
+        ],
+        "key": "genann_act_sigmoid",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "genann_act_threshold": {
+        "source_code": "double genann_act_threshold(const struct genann *ann, double a)\n{\n  return a > 0;\n}\n\n",
+        "translated_code": "pub fn genann_act_threshold(ann: &Genann, a: f64) -> f64 {\n    if a > 0.0 {\n        1.0\n    } else {\n        0.0\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "genann.rs",
+        "error": "",
+        "dependent": [
+            "genann"
+        ],
+        "header": "double genann_act_threshold(const genann *ann, double a)",
+        "params": [
+            "const struct genann *ann",
+            "double a"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "struct genann",
+            "a"
+        ],
+        "calle": [],
+        "calle_c": [],
+        "key": "genann_act_threshold",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "genann_act_linear": {
+        "source_code": "double genann_act_linear(const struct genann *ann, double a)\n{\n  return a;\n}\n\n",
+        "translated_code": "pub fn genann_act_linear(ann: &Genann, a: f64) -> f64 {\n    a\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "genann.rs",
+        "error": "",
+        "dependent": [
+            "genann"
+        ],
+        "header": "double genann_act_linear(const genann *ann, double a)",
+        "params": [
+            "const struct genann *ann",
+            "double a"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "struct genann",
+            "a"
+        ],
+        "calle": [],
+        "calle_c": [],
+        "key": "genann_act_linear",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "genann_act_hidden_indirect": {
+        "source_code": "double genann_act_hidden_indirect(const struct genann *ann, double a)\n{\n  return ann->activation_hidden(ann, a);\n}\n\n",
+        "translated_code": "pub fn genann_act_hidden_indirect(ann: &Genann, a: f64) -> f64 {\n    match ann.activation_hidden {\n        GenannActFun::Sigmoid => sigmoid(ann, a),\n        GenannActFun::Linear => linear(ann, a),\n        GenannActFun::Threshold => threshold(ann, a),\n        GenannActFun::SymmetricSigmoid => symmetric_sigmoid(ann, a),\n        GenannActFun::Gaussian => gaussian(ann, a),\n    }\n}\n\n// Helper functions for each activation type\nfn sigmoid(_ann: &Genann, a: f64) -> f64 {\n    1.0 / (1.0 + (-a).exp())\n}\n\nfn linear(_ann: &Genann, a: f64) -> f64 {\n    a\n}\n\nfn threshold(_ann: &Genann, a: f64) -> f64 {\n    if a > 0.0 { 1.0 } else { 0.0 }\n}\n\nfn symmetric_sigmoid(_ann: &Genann, a: f64) -> f64 {\n    -1.0 + 2.0 / (1.0 + (-a).exp())\n}\n\nfn gaussian(_ann: &Genann, a: f64) -> f64 {\n    (-a * a).exp()\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "genann.rs",
+        "error": "",
+        "dependent": [
+            "genann"
+        ],
+        "params": [
+            "const struct genann *ann",
+            "double a"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "struct genann",
+            "a"
+        ],
+        "calle": [
+            "ann->activation_hidden"
+        ],
+        "calle_c": [
+            "ann->activation_hidden"
+        ],
+        "key": "genann_act_hidden_indirect",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "genann_act_output_indirect": {
+        "source_code": "double genann_act_output_indirect(const struct genann *ann, double a)\n{\n  return ann->activation_output(ann, a);\n}\n\n",
+        "translated_code": "pub fn genann_act_output_indirect(ann: &Genann, a: f64) -> f64 {\n    match ann.activation_output {\n        GenannActFun::Sigmoid => genann_act_sigmoid(ann, a),\n        GenannActFun::Linear => genann_act_linear(ann, a),\n        GenannActFun::Threshold => genann_act_threshold(ann, a),\n        GenannActFun::SymmetricSigmoid => 2.0 * genann_act_sigmoid(ann, a) - 1.0,\n        GenannActFun::Gaussian => (-a * a).exp(),\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "genann.rs",
+        "error": "",
+        "dependent": [
+            "genann"
+        ],
+        "params": [
+            "const struct genann *ann",
+            "double a"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "struct genann",
+            "a"
+        ],
+        "calle": [
+            "ann->activation_output"
+        ],
+        "calle_c": [
+            "ann->activation_output"
+        ],
+        "key": "genann_act_output_indirect",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "genann_init_sigmoid_lookup": {
+        "source_code": "void genann_init_sigmoid_lookup(const genann *ann)\n{\n  const double f = (sigmoid_dom_max - sigmoid_dom_min) / 4096;\n  int i;\n  interval = 4096 / (sigmoid_dom_max - sigmoid_dom_min);\n  for (i = 0; i < 4096; i += 1)\n  {\n    lookup[i] = genann_act_sigmoid(ann, sigmoid_dom_min + (f * i));\n  }\n\n}\n\n",
+        "translated_code": "use lazy_static::lazy_static;\nuse std::sync::Mutex;\n\npub fn genann_init_sigmoid_lookup(ann: &Genann) {\n    let f = (SIGMOID_DOM_MAX - SIGMOID_DOM_MIN) / 4096.0;\n    unsafe {\n        interval = 4096.0 / (SIGMOID_DOM_MAX - SIGMOID_DOM_MIN);\n    }\n    \n    let mut lookup = LOOKUP.lock().unwrap();\n    for i in 0..4096 {\n        lookup[i] = genann_act_sigmoid(ann, SIGMOID_DOM_MIN + (f * i as f64));\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "genann.rs",
+        "error": "",
+        "dependent": [
+            "genann",
+            "genann_act_sigmoid",
+            "interval",
+            "lookup",
+            "sigmoid_dom_max",
+            "sigmoid_dom_min"
+        ],
+        "header": "void genann_init_sigmoid_lookup(const genann *ann)",
+        "params": [
+            "const genann *ann"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "ann",
+            "f",
+            "i",
+            "sigmoid_dom_max",
+            "sigmoid_dom_min",
+            "interval",
+            "lookup"
+        ],
+        "calle": [
+            "genann_act_sigmoid"
+        ],
+        "calle_c": [],
+        "key": "genann_init_sigmoid_lookup",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "genann_act_sigmoid_cached": {
+        "source_code": "double genann_act_sigmoid_cached(const genann *ann, double a)\n{\n  assert(!isnan(a));\n  if (a < sigmoid_dom_min)\n  {\n    return lookup[0];\n  }\n  if (a >= sigmoid_dom_max)\n  {\n    return lookup[4096 - 1];\n  }\n  size_t j = (size_t) (((a - sigmoid_dom_min) * interval) + 0.5);\n  if (__builtin_expect(!(!(j >= 4096)), 0))\n  {\n    return lookup[4096 - 1];\n  }\n  return lookup[j];\n}\n\n",
+        "translated_code": "use std::f64;\nuse lazy_static::lazy_static;\n\npub fn genann_act_sigmoid_cached(ann: &Genann, a: f64) -> f64 {\n    assert!(!a.is_nan(), \"Input must not be NaN\");\n    \n    if a < SIGMOID_DOM_MIN {\n        return LOOKUP.lock().unwrap()[0];\n    }\n    if a >= SIGMOID_DOM_MAX {\n        return LOOKUP.lock().unwrap()[4096 - 1];\n    }\n    \n    let j = ((a - SIGMOID_DOM_MIN) * unsafe { interval } + 0.5) as usize;\n    if j >= 4096 {\n        return LOOKUP.lock().unwrap()[4096 - 1];\n    }\n    \n    LOOKUP.lock().unwrap()[j]\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "genann.rs",
+        "error": "",
+        "dependent": [
+            "genann",
+            "interval",
+            "lookup",
+            "sigmoid_dom_max",
+            "sigmoid_dom_min"
+        ],
+        "header": "double genann_act_sigmoid_cached(const genann *ann, double a)",
+        "params": [
+            "const genann *ann",
+            "double a"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "ann",
+            "a",
+            "j",
+            "sigmoid_dom_min",
+            "lookup",
+            "sigmoid_dom_max",
+            "interval"
+        ],
+        "calle": [
+            "__builtin_expect",
+            "assert",
+            "isnan"
+        ],
+        "calle_c": [
+            "__builtin_expect",
+            "assert",
+            "isnan"
+        ],
+        "key": "genann_act_sigmoid_cached",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "genann_init": {
+        "source_code": "genann *genann_init(int inputs, int hidden_layers, int hidden, int outputs)\n{\n  if (hidden_layers < 0)\n  {\n    return 0;\n  }\n  if (inputs < 1)\n  {\n    return 0;\n  }\n  if (outputs < 1)\n  {\n    return 0;\n  }\n  if ((hidden_layers > 0) && (hidden < 1))\n  {\n    return 0;\n  }\n  const int hidden_weights = (hidden_layers) ? (((inputs + 1) * hidden) + (((hidden_layers - 1) * (hidden + 1)) * hidden)) : (0);\n  const int output_weights = ((hidden_layers) ? (hidden + 1) : (inputs + 1)) * outputs;\n  const int total_weights = hidden_weights + output_weights;\n  const int total_neurons = (inputs + (hidden * hidden_layers)) + outputs;\n  const int size = (sizeof(genann)) + ((sizeof(double)) * ((total_weights + total_neurons) + (total_neurons - inputs)));\n  genann *ret = malloc(size);\n  if (!ret)\n  {\n    return 0;\n  }\n  ret->inputs = inputs;\n  ret->hidden_layers = hidden_layers;\n  ret->hidden = hidden;\n  ret->outputs = outputs;\n  ret->total_weights = total_weights;\n  ret->total_neurons = total_neurons;\n  ret->weight = (double *) (((char *) ret) + (sizeof(genann)));\n  ret->output = ret->weight + ret->total_weights;\n  ret->delta = ret->output + ret->total_neurons;\n  genann_randomize(ret);\n  ret->activation_hidden = genann_act_sigmoid_cached;\n  ret->activation_output = genann_act_sigmoid_cached;\n  genann_init_sigmoid_lookup(ret);\n  return ret;\n}\n\n",
+        "translated_code": "use rand::Rng;\n\npub fn genann_init(\n    inputs: i32,\n    hidden_layers: i32,\n    hidden: i32,\n    outputs: i32,\n) -> Option<Genann> {\n    // Validate input parameters\n    if hidden_layers < 0 {\n        return None;\n    }\n    if inputs < 1 {\n        return None;\n    }\n    if outputs < 1 {\n        return None;\n    }\n    if hidden_layers > 0 && hidden < 1 {\n        return None;\n    }\n\n    // Calculate weights and neurons\n    let hidden_weights = if hidden_layers > 0 {\n        ((inputs + 1) * hidden) + ((hidden_layers - 1) * (hidden + 1) * hidden)\n    } else {\n        0\n    };\n    let output_weights = (if hidden_layers > 0 { hidden + 1 } else { inputs + 1 }) * outputs;\n    let total_weights = hidden_weights + output_weights;\n    let total_neurons = inputs + (hidden * hidden_layers) + outputs;\n\n    // Create vectors for weight, output, and delta\n    let weight = vec![0.0; total_weights as usize];\n    let output = vec![0.0; total_neurons as usize];\n    let delta = vec![0.0; (total_neurons - inputs) as usize];\n\n    // Create and initialize the Genann struct\n    let mut ret = Genann {\n        inputs,\n        hidden_layers,\n        hidden,\n        outputs,\n        activation_hidden: GenannActFun::Sigmoid,\n        activation_output: GenannActFun::Sigmoid,\n        total_weights,\n        total_neurons,\n        weight: Some(weight),\n        output: Some(output),\n        delta: Some(delta),\n    };\n\n    // Initialize the network\n    genann_randomize(&mut ret);\n    genann_init_sigmoid_lookup(&ret);\n\n    Some(ret)\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "genann.rs",
+        "error": "",
+        "dependent": [
+            "genann",
+            "genann_act_sigmoid_cached",
+            "genann_init_sigmoid_lookup",
+            "genann_randomize"
+        ],
+        "header": "genann *genann_init(int inputs, int hidden_layers, int hidden, int outputs)",
+        "params": [
+            "int inputs",
+            "int hidden_layers",
+            "int hidden",
+            "int outputs"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "inputs",
+            "hidden_layers",
+            "hidden",
+            "outputs",
+            "hidden_weights",
+            "output_weights",
+            "total_weights",
+            "total_neurons",
+            "size",
+            "ret"
+        ],
+        "calle": [
+            "genann_init_sigmoid_lookup",
+            "genann_act_sigmoid_cached",
+            "malloc",
+            "genann_randomize"
+        ],
+        "calle_c": [
+            "malloc"
+        ],
+        "key": "genann_init",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "genann_read": {
+        "source_code": "genann *genann_read(FILE *in)\n{\n  int inputs;\n  int hidden_layers;\n  int hidden;\n  int outputs;\n  int rc;\n  errno = 0;\n  rc = fscanf(in, \"%d %d %d %d\", &inputs, &hidden_layers, &hidden, &outputs);\n  if ((rc < 4) || (errno != 0))\n  {\n    perror(\"fscanf\");\n    return 0;\n  }\n  genann *ann = genann_init(inputs, hidden_layers, hidden, outputs);\n  int i;\n  for (i = 0; i < ann->total_weights; i += 1)\n  {\n    errno = 0;\n    rc = fscanf(in, \" %le\", ann->weight + i);\n    if ((rc < 1) || (errno != 0))\n    {\n      perror(\"fscanf\");\n      genann_free(ann);\n      return 0;\n    }\n  }\n\n  return ann;\n}\n\n",
+        "translated_code": "use std::io::{self, Read};\nuse std::str::FromStr;\n\npub fn genann_read(in_stream: &mut dyn Read) -> Option<Genann> {\n    let mut buffer = String::new();\n    if in_stream.read_to_string(&mut buffer).is_err() {\n        eprintln!(\"Failed to read input stream\");\n        return None;\n    }\n\n    let mut parts = buffer.split_whitespace();\n    \n    // Parse the first four integers (inputs, hidden_layers, hidden, outputs)\n    let inputs = i32::from_str(parts.next()?).ok()?;\n    let hidden_layers = i32::from_str(parts.next()?).ok()?;\n    let hidden = i32::from_str(parts.next()?).ok()?;\n    let outputs = i32::from_str(parts.next()?).ok()?;\n\n    // Initialize the neural network\n    let mut ann = genann_init(inputs, hidden_layers, hidden, outputs)?;\n\n    // Parse weights\n    if let Some(weight_vec) = &mut ann.weight {\n        for i in 0..ann.total_weights {\n            if let Some(weight_str) = parts.next() {\n                if let Ok(weight) = f64::from_str(weight_str) {\n                    weight_vec[i as usize] = weight;\n                } else {\n                    eprintln!(\"Failed to parse weight\");\n                    return None;\n                }\n            } else {\n                eprintln!(\"Insufficient weights in input\");\n                return None;\n            }\n        }\n    } else {\n        eprintln!(\"Weight vector not initialized\");\n        return None;\n    }\n\n    Some(ann)\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "genann.rs",
+        "error": "",
+        "dependent": [
+            "genann",
+            "genann_free",
+            "genann_init"
+        ],
+        "header": "genann *genann_read(FILE *in)",
+        "params": [
+            "FILE *in"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "in",
+            "inputs",
+            "hidden_layers",
+            "hidden",
+            "outputs",
+            "rc",
+            "ann",
+            "i"
+        ],
+        "calle": [
+            "perror",
+            "genann_init",
+            "fscanf",
+            "genann_free"
+        ],
+        "calle_c": [
+            "perror",
+            "fscanf"
+        ],
+        "key": "genann_read",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "genann_run": {
+        "source_code": "const double *genann_run(const genann *ann, const double *inputs)\n{\n  const double *w = ann->weight;\n  unsigned int w_idx = 0;\n  double *o = ann->output + ann->inputs;\n  unsigned int o_idx = 0;\n  const double *i = ann->output;\n  unsigned int i_idx = 0;\n  memcpy(ann->output, inputs, (sizeof(double)) * ann->inputs);\n  int h;\n  int j;\n  int k;\n  if (!ann->hidden_layers)\n  {\n    double *ret = o;\n    for (j = 0; j < ann->outputs; j += 1)\n    {\n      double sum = w[w_idx] * (-1.0);\n      w_idx += 1;\n      for (k = 0; k < ann->inputs; k += 1)\n      {\n        sum += w[w_idx] * i[k + i_idx];\n        w_idx += 1;\n      }\n\n      o[o_idx] = genann_act_output_indirect(ann, sum);\n      o_idx += 1;\n    }\n\n    return ret;\n  }\n  for (j = 0; j < ann->hidden; j += 1)\n  {\n    double sum = w[w_idx] * (-1.0);\n    w_idx += 1;\n    for (k = 0; k < ann->inputs; k += 1)\n    {\n      sum += w[w_idx] * i[k + i_idx];\n      w_idx += 1;\n    }\n\n    o[o_idx] = genann_act_hidden_indirect(ann, sum);\n    o_idx += 1;\n  }\n\n  i_idx += ann->inputs;\n  for (h = 1; h < ann->hidden_layers; h += 1)\n  {\n    for (j = 0; j < ann->hidden; j += 1)\n    {\n      double sum = w[w_idx] * (-1.0);\n      w_idx += 1;\n      for (k = 0; k < ann->hidden; k += 1)\n      {\n        sum += w[w_idx] * i[k + i_idx];\n        w_idx += 1;\n      }\n\n      o[o_idx] = genann_act_hidden_indirect(ann, sum);\n      o_idx += 1;\n    }\n\n    i_idx += ann->hidden;\n  }\n\n  const double *ret = o;\n  for (j = 0; j < ann->outputs; j += 1)\n  {\n    double sum = w[w_idx] * (-1.0);\n    w_idx += 1;\n    for (k = 0; k < ann->hidden; k += 1)\n    {\n      sum += w[w_idx] * i[k + i_idx];\n      w_idx += 1;\n    }\n\n    o[o_idx] = genann_act_output_indirect(ann, sum);\n    o_idx += 1;\n  }\n\n  assert(((&w[w_idx]) - ann->weight) == ann->total_weights);\n  assert(((&o[o_idx]) - ann->output) == ann->total_neurons);\n  return ret;\n}\n\n",
+        "translated_code": "pub fn genann_run<'a>(ann: &'a mut Genann, inputs: &[f64]) -> Option<&'a [f64]> {\n    // Get activation functions before any borrows\n    let act_hidden = genann_act_hidden_indirect;\n    let act_output = genann_act_output_indirect;\n    \n    // Get activation function types by reference to avoid moving\n    let activation_hidden = &ann.activation_hidden;\n    let activation_output = &ann.activation_output;\n\n    // Check if required fields are present\n    let w = ann.weight.as_ref()?;\n    let output = ann.output.as_mut()?;\n    \n    // Initialize indices and pointers\n    let mut w_idx = 0;\n    let mut o_idx = ann.inputs as usize;\n    let mut i_idx = 0;\n    \n    // Copy inputs to the beginning of output buffer\n    {\n        let output_slice = &mut output[..ann.inputs as usize];\n        output_slice.copy_from_slice(inputs);\n    }\n    \n    // Create a temporary Genann struct for activation functions\n    let temp_ann = Genann {\n        activation_hidden: activation_hidden.clone(),\n        activation_output: activation_output.clone(),\n        inputs: ann.inputs,\n        hidden_layers: ann.hidden_layers,\n        hidden: ann.hidden,\n        outputs: ann.outputs,\n        total_weights: ann.total_weights,\n        total_neurons: ann.total_neurons,\n        weight: None,\n        output: None,\n        delta: None,\n    };\n\n    // Process the case with no hidden layers\n    if ann.hidden_layers == 0 {\n        let (left, right) = output.split_at_mut(o_idx);\n        let ret = &mut right[..ann.outputs as usize];\n        \n        for j in 0..ann.outputs as usize {\n            let mut sum = w[w_idx] * -1.0;\n            w_idx += 1;\n            \n            for k in 0..ann.inputs as usize {\n                sum += w[w_idx] * left[k + i_idx];\n                w_idx += 1;\n            }\n            \n            ret[j] = act_output(&temp_ann, sum);\n        }\n        \n        return Some(ret);\n    }\n    \n    // Process first hidden layer\n    for _ in 0..ann.hidden {\n        let mut sum = w[w_idx] * -1.0;\n        w_idx += 1;\n        \n        for k in 0..ann.inputs as usize {\n            sum += w[w_idx] * output[k + i_idx];\n            w_idx += 1;\n        }\n        \n        output[o_idx] = act_hidden(&temp_ann, sum);\n        o_idx += 1;\n    }\n    \n    i_idx += ann.inputs as usize;\n    \n    // Process remaining hidden layers\n    for _ in 1..ann.hidden_layers {\n        for _ in 0..ann.hidden {\n            let mut sum = w[w_idx] * -1.0;\n            w_idx += 1;\n            \n            for k in 0..ann.hidden as usize {\n                sum += w[w_idx] * output[k + i_idx];\n                w_idx += 1;\n            }\n            \n            output[o_idx] = act_hidden(&temp_ann, sum);\n            o_idx += 1;\n        }\n        \n        i_idx += ann.hidden as usize;\n    }\n    \n    // Process output layer\n    let (left, right) = output.split_at_mut(o_idx);\n    let ret = &mut right[..ann.outputs as usize];\n    for j in 0..ann.outputs as usize {\n        let mut sum = w[w_idx] * -1.0;\n        w_idx += 1;\n        \n        for k in 0..ann.hidden as usize {\n            sum += w[w_idx] * left[k + i_idx];\n            w_idx += 1;\n        }\n        \n        ret[j] = act_output(&temp_ann, sum);\n    }\n    \n    // Verify assertions\n    assert!((w_idx as i32) == ann.total_weights);\n    assert!((o_idx as i32 + ann.outputs) == ann.total_neurons);\n    \n    Some(ret)\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "genann.rs",
+        "error": "",
+        "dependent": [
+            "genann",
+            "genann_act_hidden_indirect",
+            "genann_act_output_indirect"
+        ],
+        "header": "const double *genann_run(const genann *ann, const double *inputs)",
+        "params": [
+            "const genann *ann",
+            "const double *inputs"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "ann",
+            "inputs",
+            "w",
+            "w_idx",
+            "o",
+            "o_idx",
+            "i",
+            "i_idx",
+            "h",
+            "j",
+            "k",
+            "ret",
+            "sum"
+        ],
+        "calle": [
+            "genann_act_output_indirect",
+            "memcpy",
+            "assert",
+            "genann_act_hidden_indirect"
+        ],
+        "calle_c": [
+            "memcpy",
+            "assert"
+        ],
+        "key": "genann_run",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "sigmoid": {
+        "source_code": "void sigmoid()\n{\n  double i = -20;\n  const double max = 20;\n  const double d = .0001;\n  while (i < max)\n  {\n    do\n    {\n      ltests += 1;\n      if (fabs(((double) genann_act_sigmoid(0, i)) - ((double) genann_act_sigmoid_cached(0, i))) > 0.001)\n      {\n        lfails += 1;\n        printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 251, (double) genann_act_sigmoid(0, i), (double) genann_act_sigmoid_cached(0, i));\n      }\n    }\n    while (0);\n    i += d;\n  }\n\n}\n\n",
+        "translated_code": "pub fn sigmoid() {\n    let mut i = -20.0;\n    const MAX: f64 = 20.0;\n    const D: f64 = 0.0001;\n    \n    // Use a null pointer equivalent since the original C code passes 0\n    let dummy_ann: Option<&Genann> = Option::None;\n    \n    while i < MAX {\n        {\n            LTESTS.fetch_add(1, Ordering::SeqCst);\n            let sigmoid_val = genann_act_sigmoid(dummy_ann.unwrap(), i);\n            let sigmoid_cached_val = genann_act_sigmoid_cached(dummy_ann.unwrap(), i);\n            if f64::abs(sigmoid_val - sigmoid_cached_val) > 0.001 {\n                LFAILS.fetch_add(1, Ordering::SeqCst);\n                println!(\n                    \"{}:{} ({} != {})\",\n                    \"/workdir/C2RustTranslation-main/subjects/genann/test.c\",\n                    251,\n                    sigmoid_val,\n                    sigmoid_cached_val\n                );\n            }\n        }\n        i += D;\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "genann_act_sigmoid",
+            "genann_act_sigmoid_cached",
+            "lfails",
+            "ltests"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "i",
+            "max",
+            "d",
+            "ltests",
+            "lfails"
+        ],
+        "calle": [
+            "printf",
+            "genann_act_sigmoid_cached",
+            "fabs",
+            "genann_act_sigmoid"
+        ],
+        "calle_c": [
+            "fabs",
+            "printf"
+        ],
+        "key": "sigmoid",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "genann_train": {
+        "source_code": "void genann_train(const genann *ann, const double *inputs, const double *desired_outputs, double learning_rate)\n{\n  genann_run(ann, inputs);\n  int h;\n  int j;\n  int k;\n  {\n    const double *o = (ann->output + ann->inputs) + (ann->hidden * ann->hidden_layers);\n    unsigned int o_idx = 0;\n    double *d = ann->delta + (ann->hidden * ann->hidden_layers);\n    unsigned int d_idx = 0;\n    const double *t = desired_outputs;\n    unsigned int t_idx = 0;\n    if ((genann_act_output_indirect == genann_act_linear) || (ann->activation_output == genann_act_linear))\n    {\n      for (j = 0; j < ann->outputs; j += 1)\n      {\n        d[d_idx] = t[t_idx] - o[o_idx];\n        o_idx += 1;\n        t_idx += 1;\n        d_idx += 1;\n      }\n\n    }\n    else\n    {\n      for (j = 0; j < ann->outputs; j += 1)\n      {\n        d[d_idx] = ((t[t_idx] - o[o_idx]) * o[o_idx]) * (1.0 - o[o_idx]);\n        d_idx += 1;\n        o_idx += 1;\n        t_idx += 1;\n      }\n\n    }\n  }\n  for (h = ann->hidden_layers - 1; h >= 0; h -= 1)\n  {\n    const double *o = (ann->output + ann->inputs) + (h * ann->hidden);\n    unsigned int o_idx = 0;\n    double *d = ann->delta + (h * ann->hidden);\n    unsigned int d_idx = 0;\n    const double * const dd = ann->delta + ((h + 1) * ann->hidden);\n    const double * const ww = (ann->weight + ((ann->inputs + 1) * ann->hidden)) + (((ann->hidden + 1) * ann->hidden) * h);\n    for (j = 0; j < ann->hidden; j += 1)\n    {\n      double delta = 0;\n      for (k = 0; k < ((h == (ann->hidden_layers - 1)) ? (ann->outputs) : (ann->hidden)); k += 1)\n      {\n        const double forward_delta = dd[k];\n        const int windex = (k * (ann->hidden + 1)) + (j + 1);\n        const double forward_weight = ww[windex];\n        delta += forward_delta * forward_weight;\n      }\n\n      d[d_idx] = (o[o_idx] * (1.0 - o[o_idx])) * delta;\n      d_idx += 1;\n      o_idx += 1;\n    }\n\n  }\n\n  {\n    const double *d = ann->delta + (ann->hidden * ann->hidden_layers);\n    unsigned int d_idx = 0;\n    double *w = ann->weight + ((ann->hidden_layers) ? (((ann->inputs + 1) * ann->hidden) + (((ann->hidden + 1) * ann->hidden) * (ann->hidden_layers - 1))) : (0));\n    unsigned int w_idx = 0;\n    const double * const i = ann->output + ((ann->hidden_layers) ? (ann->inputs + (ann->hidden * (ann->hidden_layers - 1))) : (0));\n    for (j = 0; j < ann->outputs; j += 1)\n    {\n      w[w_idx] += (d[d_idx] * learning_rate) * (-1.0);\n      w_idx += 1;\n      for (k = 1; k < (((ann->hidden_layers) ? (ann->hidden) : (ann->inputs)) + 1); k += 1)\n      {\n        w[w_idx] += (d[d_idx] * learning_rate) * i[k - 1];\n        w_idx += 1;\n      }\n\n      d_idx += 1;\n    }\n\n    assert(((&w[w_idx]) - ann->weight) == ann->total_weights);\n  }\n  for (h = ann->hidden_layers - 1; h >= 0; h -= 1)\n  {\n    const double *d = ann->delta + (h * ann->hidden);\n    unsigned int d_idx = 0;\n    const double *i = ann->output + ((h) ? (ann->inputs + (ann->hidden * (h - 1))) : (0));\n    double *w = ann->weight + ((h) ? (((ann->inputs + 1) * ann->hidden) + (((ann->hidden + 1) * ann->hidden) * (h - 1))) : (0));\n    unsigned int w_idx = 0;\n    for (j = 0; j < ann->hidden; j += 1)\n    {\n      w[w_idx] += (d[d_idx] * learning_rate) * (-1.0);\n      w_idx += 1;\n      for (k = 1; k < (((h == 0) ? (ann->inputs) : (ann->hidden)) + 1); k += 1)\n      {\n        w[w_idx] += (d[d_idx] * learning_rate) * i[k - 1];\n        w_idx += 1;\n      }\n\n      d_idx += 1;\n    }\n\n  }\n\n}\n\n",
+        "translated_code": "pub fn genann_train(ann: &mut Genann, inputs: &[f64], desired_outputs: &[f64], learning_rate: f64) {\n    // Run the network first\n    genann_run(ann, inputs);\n\n    // Calculate output layer deltas\n    {\n        let o = ann.output.as_ref().expect(\"output not initialized\");\n        let d = ann.delta.as_mut().expect(\"delta not initialized\");\n        let t = desired_outputs;\n\n        let o_start = (ann.inputs + (ann.hidden * ann.hidden_layers)) as usize;\n        let o_slice = &o[o_start..o_start + ann.outputs as usize];\n        \n        let d_start = (ann.hidden * ann.hidden_layers) as usize;\n        let d_slice = &mut d[d_start..d_start + ann.outputs as usize];\n\n        if let GenannActFun::Linear = ann.activation_output {\n            for j in 0..ann.outputs as usize {\n                d_slice[j] = t[j] - o_slice[j];\n            }\n        } else {\n            for j in 0..ann.outputs as usize {\n                let o_val = o_slice[j];\n                d_slice[j] = (t[j] - o_val) * o_val * (1.0 - o_val);\n            }\n        }\n    }\n\n    // Calculate hidden layer deltas\n    for h in (0..ann.hidden_layers).rev() {\n        let o = ann.output.as_ref().expect(\"output not initialized\");\n        let (d_front, d_back) = ann.delta.as_mut().expect(\"delta not initialized\").split_at_mut(((h + 1) * ann.hidden) as usize);\n        let d_slice = &mut d_front[(h * ann.hidden) as usize..];\n        let dd_slice = &d_back[..if h == ann.hidden_layers - 1 { \n            ann.outputs as usize \n        } else { \n            ann.hidden as usize \n        }];\n\n        let weights = ann.weight.as_ref().expect(\"weights not initialized\");\n        let o_slice = &o[(ann.inputs + (h * ann.hidden)) as usize..(ann.inputs + (h * ann.hidden) + ann.hidden) as usize];\n        \n        let ww_start = ((ann.inputs + 1) * ann.hidden + ((ann.hidden + 1) * ann.hidden) * h) as usize;\n        \n        for j in 0..ann.hidden as usize {\n            let mut delta = 0.0;\n            let k_count = if h == ann.hidden_layers - 1 { \n                ann.outputs \n            } else { \n                ann.hidden \n            };\n\n            for k in 0..k_count as usize {\n                let forward_delta = dd_slice[k];\n                let windex = (k * (ann.hidden as usize + 1)) + (j + 1);\n                let forward_weight = weights[ww_start + windex];\n                delta += forward_delta * forward_weight;\n            }\n\n            let o_val = o_slice[j];\n            d_slice[j] = o_val * (1.0 - o_val) * delta;\n        }\n    }\n\n    // Update weights for output layer\n    {\n        let d = ann.delta.as_ref().expect(\"delta not initialized\");\n        let w = ann.weight.as_mut().expect(\"weights not initialized\");\n        let o = ann.output.as_ref().expect(\"output not initialized\");\n\n        let d_start = (ann.hidden * ann.hidden_layers) as usize;\n        let d_slice = &d[d_start..d_start + ann.outputs as usize];\n\n        let w_start = if ann.hidden_layers > 0 {\n            ((ann.inputs + 1) * ann.hidden + ((ann.hidden + 1) * ann.hidden) * (ann.hidden_layers - 1)) as usize\n        } else {\n            0\n        };\n        let w_slice = &mut w[w_start..];\n\n        let i_start = if ann.hidden_layers > 0 {\n            (ann.inputs + (ann.hidden * (ann.hidden_layers - 1))) as usize\n        } else {\n            0\n        };\n        let i_slice = &o[i_start..];\n\n        let mut w_idx = 0;\n        for j in 0..ann.outputs as usize {\n            w_slice[w_idx] += d_slice[j] * learning_rate * -1.0;\n            w_idx += 1;\n\n            let input_count = if ann.hidden_layers > 0 { \n                ann.hidden \n            } else { \n                ann.inputs \n            };\n\n            for k in 1..(input_count + 1) as usize {\n                w_slice[w_idx] += d_slice[j] * learning_rate * i_slice[k - 1];\n                w_idx += 1;\n            }\n        }\n\n        assert!((w_idx + w_start) == ann.total_weights as usize);\n    }\n\n    // Update weights for hidden layers\n    for h in (0..ann.hidden_layers).rev() {\n        let d = ann.delta.as_ref().expect(\"delta not initialized\");\n        let w = ann.weight.as_mut().expect(\"weights not initialized\");\n        let o = ann.output.as_ref().expect(\"output not initialized\");\n\n        let d_start = (h * ann.hidden) as usize;\n        let d_slice = &d[d_start..d_start + ann.hidden as usize];\n\n        let i_start = if h > 0 {\n            (ann.inputs + (ann.hidden * (h - 1))) as usize\n        } else {\n            0\n        };\n        let i_slice = &o[i_start..];\n\n        let w_start = if h > 0 {\n            ((ann.inputs + 1) * ann.hidden + ((ann.hidden + 1) * ann.hidden) * (h - 1)) as usize\n        } else {\n            0\n        };\n        let w_slice = &mut w[w_start..];\n\n        let mut w_idx = 0;\n        for j in 0..ann.hidden as usize {\n            w_slice[w_idx] += d_slice[j] * learning_rate * -1.0;\n            w_idx += 1;\n\n            let input_count = if h == 0 { \n                ann.inputs \n            } else { \n                ann.hidden \n            };\n\n            for k in 1..(input_count + 1) as usize {\n                w_slice[w_idx] += d_slice[j] * learning_rate * i_slice[k - 1];\n                w_idx += 1;\n            }\n        }\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "genann.rs",
+        "error": "",
+        "dependent": [
+            "genann",
+            "genann_act_linear",
+            "genann_act_output_indirect",
+            "genann_run"
+        ],
+        "header": "void genann_train(const genann *ann, const double *inputs, const double *desired_outputs, double learning_rate)",
+        "params": [
+            "const genann *ann",
+            "const double *inputs",
+            "const double *desired_outputs",
+            "double learning_rate"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "ann",
+            "inputs",
+            "desired_outputs",
+            "learning_rate",
+            "h",
+            "j",
+            "k",
+            "o",
+            "o_idx",
+            "d",
+            "d_idx",
+            "t",
+            "t_idx",
+            "dd",
+            "ww",
+            "delta",
+            "forward_delta",
+            "windex",
+            "forward_weight",
+            "w",
+            "w_idx",
+            "i"
+        ],
+        "calle": [
+            "genann_act_linear",
+            "genann_act_output_indirect",
+            "assert",
+            "genann_run"
+        ],
+        "calle_c": [
+            "assert"
+        ],
+        "key": "genann_train",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "main#example3": {
+        "source_code": "int main(int argc, char *argv[])\n{\n  printf(\"GENANN example 3.\\n\");\n  printf(\"Load a saved ANN to solve the XOR function.\\n\");\n  FILE *saved = fopen(save_name, \"r\");\n  if (!saved)\n  {\n    printf(\"Couldn't open file: %s\\n\", save_name);\n    exit(1);\n  }\n  genann *ann = genann_read(saved);\n  fclose(saved);\n  if (!ann)\n  {\n    printf(\"Error loading ANN from file: %s.\", save_name);\n    exit(1);\n  }\n  const double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[0][0], input[0][1], *genann_run(ann, input[0]));\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[1][0], input[1][1], *genann_run(ann, input[1]));\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[2][0], input[2][1], *genann_run(ann, input[2]));\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[3][0], input[3][1], *genann_run(ann, input[3]));\n  genann_free(ann);\n  return 0;\n}\n\n",
+        "translated_code": "pub fn main() {\n    println!(\"GENANN example 3.\");\n    println!(\"Load a saved ANN to solve the XOR function.\");\n\n    let saved = File::open(SAVE_NAME);\n    let mut saved = match saved {\n        Ok(file) => file,\n        Err(_) => {\n            println!(\"Couldn't open file: {}\", SAVE_NAME);\n            process::exit(1);\n        }\n    };\n\n    let ann = genann_read(&mut saved);\n    drop(saved); // Equivalent to fclose in C\n\n    let mut ann = match ann {\n        Some(ann) => ann,\n        None => {\n            println!(\"Error loading ANN from file: {}.\", SAVE_NAME);\n            process::exit(1);\n        }\n    };\n\n    let input = [[0.0, 0.0], [0.0, 1.0], [1.0, 0.0], [1.0, 1.0]];\n\n    for i in 0..4 {\n        let mut ann_clone = ann.clone();\n        let output = genann_run(&mut ann_clone, &input[i]);\n        match output {\n            Some(out) => {\n                println!(\n                    \"Output for [{:.1}, {:.1}] is {:.1}.\",\n                    input[i][0], input[i][1], out[0]\n                );\n            }\n            None => {\n                println!(\"Error running ANN for input: [{:.1}, {:.1}]\", input[i][0], input[i][1]);\n            }\n        }\n    }\n\n    genann_free(Some(Box::new(ann)));\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "example3.rs",
+        "error": "",
+        "dependent": [
+            "genann",
+            "genann_free",
+            "genann_read",
+            "genann_run",
+            "save_name"
+        ],
+        "params": [
+            "int argc",
+            "char *argv[]"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "argc",
+            "argv",
+            "saved",
+            "ann",
+            "input",
+            "save_name"
+        ],
+        "calle": [
+            "exit",
+            "genann_run",
+            "fopen",
+            "genann_read",
+            "genann_free",
+            "printf",
+            "fclose"
+        ],
+        "calle_c": [
+            "exit",
+            "printf",
+            "fopen",
+            "fclose"
+        ],
+        "key": "main#example3",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "load_data": {
+        "source_code": "void load_data()\n{\n  FILE *in = fopen(\"example/iris.data\", \"r\");\n  if (!in)\n  {\n    printf(\"Could not open file: %s\\n\", iris_data);\n    exit(1);\n  }\n  char line[1024];\n  while ((!feof(in)) && fgets(line, 1024, in))\n  {\n    samples += 1;\n  }\n\n  fseek(in, 0, 0);\n  printf(\"Loading %d data points from %s\\n\", samples, iris_data);\n  input = malloc(((sizeof(double)) * samples) * 4);\n  class = malloc(((sizeof(double)) * samples) * 3);\n  int i;\n  int j;\n  for (i = 0; i < samples; i += 1)\n  {\n    double *p = input + (i * 4);\n    double *c = class + (i * 3);\n    c[0] = (c[1] = (c[2] = 0.0));\n    if (fgets(line, 1024, in) == 0)\n    {\n      perror(\"fgets\");\n      exit(1);\n    }\n    char *split = strtok(line, \",\");\n    unsigned int split_idx = 0;\n    for (j = 0; j < 4; j += 1)\n    {\n      p[j] = atof(split);\n      split_idx = strtok(0, \",\");\n    }\n\n    split[(strlen(split) - 1) + split_idx] = 0;\n    if (strcmp(split, class_names[0]) == 0)\n    {\n      c[0] = 1.0;\n    }\n    else\n      if (strcmp(split, class_names[1]) == 0)\n    {\n      c[1] = 1.0;\n    }\n    else\n      if (strcmp(split, class_names[2]) == 0)\n    {\n      c[2] = 1.0;\n    }\n    else\n    {\n      printf(\"Unknown class %s.\\n\", split);\n      exit(1);\n    }\n  }\n\n  fclose(in);\n}\n\n",
+        "translated_code": "pub fn load_data() -> Result<(), Error> {\n    // Open the file\n    let in_file = File::open(IRIS_DATA)?;\n    let mut reader = BufReader::new(in_file);\n\n    // First pass: count samples\n    let mut samples = 0;\n    let mut line = String::new();\n    while reader.read_line(&mut line)? > 0 {\n        samples += 1;\n        line.clear();\n    }\n\n    // Reset file position\n    let in_file = File::open(IRIS_DATA)?;\n    let mut reader = BufReader::new(in_file);\n\n    println!(\"Loading {} data points from {}\", samples, IRIS_DATA);\n\n    // Allocate memory for input and class\n    let input_vec = vec![0.0; samples * 4];\n    let class_vec = vec![0.0; samples * 3];\n\n    // Store in global variables\n    *INPUT.lock().unwrap() = Some(input_vec.into_boxed_slice());\n    *CLASS.lock().unwrap() = Some(class_vec.into_boxed_slice());\n    SAMPLES.store(samples.try_into().unwrap(), Ordering::SeqCst);\n\n    // Second pass: read data\n    let mut line = String::new();\n    for i in 0..samples {\n        line.clear();\n        if reader.read_line(&mut line)? == 0 {\n            return Err(Error::new(ErrorKind::Other, \"fgets failed\"));\n        }\n\n        let parts: Vec<&str> = line.trim_end().split(',').collect();\n        if parts.len() != 5 {\n            return Err(Error::new(ErrorKind::Other, \"Invalid data format\"));\n        }\n\n        // Get mutable references to input and class\n        let mut input_guard = INPUT.lock().unwrap();\n        let mut class_guard = CLASS.lock().unwrap();\n\n        let input = input_guard.as_mut().unwrap();\n        let class = class_guard.as_mut().unwrap();\n\n        // Parse input features\n        for j in 0..4 {\n            input[i * 4 + j] = f64::from_str(parts[j]).map_err(|_| {\n                Error::new(ErrorKind::InvalidData, \"Failed to parse feature value\")\n            })?;\n        }\n\n        // Set class\n        match parts[4] {\n            name if name == CLASS_NAMES[0] => class[i * 3] = 1.0,\n            name if name == CLASS_NAMES[1] => class[i * 3 + 1] = 1.0,\n            name if name == CLASS_NAMES[2] => class[i * 3 + 2] = 1.0,\n            _ => {\n                return Err(Error::new(\n                    ErrorKind::InvalidData,\n                    format!(\"Unknown class {}\", parts[4]),\n                ))\n            }\n        }\n    }\n\n    Ok(())\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "example4.rs",
+        "error": "",
+        "dependent": [
+            "class",
+            "class_names",
+            "input",
+            "iris_data",
+            "samples"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "in",
+            "line",
+            "i",
+            "j",
+            "p",
+            "c",
+            "split",
+            "split_idx",
+            "iris_data",
+            "samples",
+            "input",
+            "class",
+            "class_names"
+        ],
+        "calle": [
+            "feof",
+            "perror",
+            "strlen",
+            "exit",
+            "fgets",
+            "atof",
+            "fseek",
+            "fopen",
+            "strcmp",
+            "strtok",
+            "malloc",
+            "printf",
+            "fclose"
+        ],
+        "calle_c": [
+            "feof",
+            "perror",
+            "strlen",
+            "exit",
+            "fgets",
+            "atof",
+            "fseek",
+            "fopen",
+            "strcmp",
+            "strtok",
+            "malloc",
+            "printf",
+            "fclose"
+        ],
+        "key": "load_data",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "main#example1": {
+        "source_code": "int main(int argc, char *argv[])\n{\n  printf(\"GENANN example 1.\\n\");\n  printf(\"Train a small ANN to the XOR function using backpropagation.\\n\");\n  srand(time(0));\n  const double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};\n  const double output[4] = {0, 1, 1, 0};\n  int i;\n  genann *ann = genann_init(2, 1, 2, 1);\n  for (i = 0; i < 500; i += 1)\n  {\n    genann_train(ann, input[0], output + 0, 3);\n    genann_train(ann, input[1], output + 1, 3);\n    genann_train(ann, input[2], output + 2, 3);\n    genann_train(ann, input[3], output + 3, 3);\n  }\n\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[0][0], input[0][1], *genann_run(ann, input[0]));\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[1][0], input[1][1], *genann_run(ann, input[1]));\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[2][0], input[2][1], *genann_run(ann, input[2]));\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[3][0], input[3][1], *genann_run(ann, input[3]));\n  genann_free(ann);\n  return 0;\n}\n\n",
+        "translated_code": "use rand::Rng;\n\npub fn main() {\n    println!(\"GENANN example 1.\");\n    println!(\"Train a small ANN to the XOR function using backpropagation.\");\n    \n    // Initialize random number generator (Rust handles seeding internally)\n    let mut rng = rand::thread_rng();\n    \n    let input = [[0.0, 0.0], [0.0, 1.0], [1.0, 0.0], [1.0, 1.0]];\n    let output = [0.0, 1.0, 1.0, 0.0];\n    \n    let mut ann = match genann_init(2, 1, 2, 1) {\n        Some(ann) => ann,\n        None => {\n            eprintln!(\"Failed to initialize ANN\");\n            return;\n        }\n    };\n    \n    for _ in 0..500 {\n        genann_train(&mut ann, &input[0], &output[0..1], 3.0);\n        genann_train(&mut ann, &input[1], &output[1..2], 3.0);\n        genann_train(&mut ann, &input[2], &output[2..3], 3.0);\n        genann_train(&mut ann, &input[3], &output[3..4], 3.0);\n    }\n    \n    if let Some(result) = genann_run(&mut ann, &input[0]) {\n        println!(\"Output for [{}, {}] is {}.\", input[0][0], input[0][1], result[0]);\n    }\n    if let Some(result) = genann_run(&mut ann, &input[1]) {\n        println!(\"Output for [{}, {}] is {}.\", input[1][0], input[1][1], result[0]);\n    }\n    if let Some(result) = genann_run(&mut ann, &input[2]) {\n        println!(\"Output for [{}, {}] is {}.\", input[2][0], input[2][1], result[0]);\n    }\n    if let Some(result) = genann_run(&mut ann, &input[3]) {\n        println!(\"Output for [{}, {}] is {}.\", input[3][0], input[3][1], result[0]);\n    }\n    \n    genann_free(Some(Box::new(ann)));\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "example1.rs",
+        "error": "",
+        "dependent": [
+            "genann",
+            "genann_free",
+            "genann_init",
+            "genann_run",
+            "genann_train",
+            "time"
+        ],
+        "params": [
+            "int argc",
+            "char *argv[]"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "argc",
+            "argv",
+            "input",
+            "output",
+            "i",
+            "ann"
+        ],
+        "calle": [
+            "genann_run",
+            "srand",
+            "time",
+            "genann_init",
+            "genann_train",
+            "genann_free",
+            "printf"
+        ],
+        "calle_c": [
+            "srand",
+            "time",
+            "printf"
+        ],
+        "key": "main#example1",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "basic": {
+        "source_code": "void basic()\n{\n  genann *ann = genann_init(1, 0, 0, 1);\n  do\n  {\n    ltests += 1;\n    if (ann->total_weights != 2)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 37, ann->total_weights, 2);\n    }\n  }\n  while (0);\n  double a;\n  a = 0;\n  ann->weight[0] = 0;\n  ann->weight[1] = 0;\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) 0.5) - ((double) (*genann_run(ann, &a)))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 44, (double) 0.5, (double) (*genann_run(ann, &a)));\n    }\n  }\n  while (0);\n  a = 1;\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) 0.5) - ((double) (*genann_run(ann, &a)))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 47, (double) 0.5, (double) (*genann_run(ann, &a)));\n    }\n  }\n  while (0);\n  a = 11;\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) 0.5) - ((double) (*genann_run(ann, &a)))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 50, (double) 0.5, (double) (*genann_run(ann, &a)));\n    }\n  }\n  while (0);\n  a = 1;\n  ann->weight[0] = 1;\n  ann->weight[1] = 1;\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) 0.5) - ((double) (*genann_run(ann, &a)))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 55, (double) 0.5, (double) (*genann_run(ann, &a)));\n    }\n  }\n  while (0);\n  a = 10;\n  ann->weight[0] = 1;\n  ann->weight[1] = 1;\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) 1.0) - ((double) (*genann_run(ann, &a)))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 60, (double) 1.0, (double) (*genann_run(ann, &a)));\n    }\n  }\n  while (0);\n  a = -10;\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) 0.0) - ((double) (*genann_run(ann, &a)))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 63, (double) 0.0, (double) (*genann_run(ann, &a)));\n    }\n  }\n  while (0);\n  genann_free(ann);\n}\n\n",
+        "translated_code": "use std::f64;\nuse lazy_static::lazy_static;\nuse std::sync::atomic::{AtomicI32, Ordering};\n\nlazy_static! {\n    pub static ref LTESTS: AtomicI32 = AtomicI32::new(0);\n    pub static ref LFAILS: AtomicI32 = AtomicI32::new(0);\n}\n\npub fn basic() {\n    let mut ann = genann_init(1, 0, 0, 1).expect(\"Failed to initialize genann\");\n    let mut a: f64;\n\n    // First test: check total_weights\n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        if ann.total_weights != 2 {\n            LFAILS.fetch_add(1, Ordering::SeqCst);\n            println!(\"{}:{} ({} != {})\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 37, ann.total_weights, 2);\n        }\n    }\n\n    // Initialize weights and test with a=0\n    a = 0.0;\n    ann.weight.as_mut().unwrap()[0] = 0.0;\n    ann.weight.as_mut().unwrap()[1] = 0.0;\n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        let output = genann_run(&mut ann, &[a]).unwrap();\n        if (0.5 - output[0]).abs() > 0.001 {\n            LFAILS.fetch_add(1, Ordering::SeqCst);\n            println!(\"{}:{} ({} != {})\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 44, 0.5, output[0]);\n        }\n    }\n\n    // Test with a=1\n    a = 1.0;\n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        let output = genann_run(&mut ann, &[a]).unwrap();\n        if (0.5 - output[0]).abs() > 0.001 {\n            LFAILS.fetch_add(1, Ordering::SeqCst);\n            println!(\"{}:{} ({} != {})\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 47, 0.5, output[0]);\n        }\n    }\n\n    // Test with a=11\n    a = 11.0;\n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        let output = genann_run(&mut ann, &[a]).unwrap();\n        if (0.5 - output[0]).abs() > 0.001 {\n            LFAILS.fetch_add(1, Ordering::SeqCst);\n            println!(\"{}:{} ({} != {})\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 50, 0.5, output[0]);\n        }\n    }\n\n    // Change weights and test with a=1\n    a = 1.0;\n    ann.weight.as_mut().unwrap()[0] = 1.0;\n    ann.weight.as_mut().unwrap()[1] = 1.0;\n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        let output = genann_run(&mut ann, &[a]).unwrap();\n        if (0.5 - output[0]).abs() > 0.001 {\n            LFAILS.fetch_add(1, Ordering::SeqCst);\n            println!(\"{}:{} ({} != {})\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 55, 0.5, output[0]);\n        }\n    }\n\n    // Test with a=10\n    a = 10.0;\n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        let output = genann_run(&mut ann, &[a]).unwrap();\n        if (1.0 - output[0]).abs() > 0.001 {\n            LFAILS.fetch_add(1, Ordering::SeqCst);\n            println!(\"{}:{} ({} != {})\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 60, 1.0, output[0]);\n        }\n    }\n\n    // Test with a=-10\n    a = -10.0;\n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        let output = genann_run(&mut ann, &[a]).unwrap();\n        if (0.0 - output[0]).abs() > 0.001 {\n            LFAILS.fetch_add(1, Ordering::SeqCst);\n            println!(\"{}:{} ({} != {})\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 63, 0.0, output[0]);\n        }\n    }\n\n    // Free the ann\n    genann_free(Some(Box::new(ann)));\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "genann",
+            "genann_free",
+            "genann_init",
+            "genann_run",
+            "lfails",
+            "ltests"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "ann",
+            "a",
+            "ltests",
+            "lfails"
+        ],
+        "calle": [
+            "genann_run",
+            "fabs",
+            "genann_init",
+            "genann_free",
+            "printf"
+        ],
+        "calle_c": [
+            "fabs",
+            "printf"
+        ],
+        "key": "basic",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "copy": {
+        "source_code": "void copy()\n{\n  genann *first = genann_init(1000, 5, 50, 10);\n  genann *second = genann_copy(first);\n  do\n  {\n    ltests += 1;\n    if (first->inputs != second->inputs)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 229, first->inputs, second->inputs);\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (first->hidden_layers != second->hidden_layers)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 230, first->hidden_layers, second->hidden_layers);\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (first->hidden != second->hidden)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 231, first->hidden, second->hidden);\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (first->outputs != second->outputs)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 232, first->outputs, second->outputs);\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (first->total_weights != second->total_weights)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 233, first->total_weights, second->total_weights);\n    }\n  }\n  while (0);\n  int i;\n  for (i = 0; i < first->total_weights; i += 1)\n  {\n    do\n    {\n      ltests += 1;\n      if (fabs(((double) first->weight[i]) - ((double) second->weight[i])) > 0.001)\n      {\n        lfails += 1;\n        printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 237, (double) first->weight[i], (double) second->weight[i]);\n      }\n    }\n    while (0);\n  }\n\n  genann_free(first);\n  genann_free(second);\n}\n\n",
+        "translated_code": "use std::f64;\nuse lazy_static::lazy_static;\nuse std::sync::atomic::{AtomicI32, Ordering};\n\npub fn copy() {\n    let first = genann_init(1000, 5, 50, 10).expect(\"Failed to initialize genann\");\n    let second = genann_copy(&first).expect(\"Failed to copy genann\");\n\n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        if first.inputs != second.inputs {\n            LFAILS.fetch_add(1, Ordering::SeqCst);\n            println!(\"{}:{} ({} != {})\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 229, first.inputs, second.inputs);\n        }\n    }\n\n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        if first.hidden_layers != second.hidden_layers {\n            LFAILS.fetch_add(1, Ordering::SeqCst);\n            println!(\"{}:{} ({} != {})\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 230, first.hidden_layers, second.hidden_layers);\n        }\n    }\n\n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        if first.hidden != second.hidden {\n            LFAILS.fetch_add(1, Ordering::SeqCst);\n            println!(\"{}:{} ({} != {})\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 231, first.hidden, second.hidden);\n        }\n    }\n\n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        if first.outputs != second.outputs {\n            LFAILS.fetch_add(1, Ordering::SeqCst);\n            println!(\"{}:{} ({} != {})\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 232, first.outputs, second.outputs);\n        }\n    }\n\n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        if first.total_weights != second.total_weights {\n            LFAILS.fetch_add(1, Ordering::SeqCst);\n            println!(\"{}:{} ({} != {})\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 233, first.total_weights, second.total_weights);\n        }\n    }\n\n    if let (Some(first_weights), Some(second_weights)) = (&first.weight, &second.weight) {\n        for i in 0..first.total_weights as usize {\n            {\n                LTESTS.fetch_add(1, Ordering::SeqCst);\n                if f64::abs(first_weights[i] - second_weights[i]) > 0.001 {\n                    LFAILS.fetch_add(1, Ordering::SeqCst);\n                    println!(\"{}:{} ({} != {})\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 237, first_weights[i], second_weights[i]);\n                }\n            }\n        }\n    }\n\n    genann_free(Some(Box::new(first)));\n    genann_free(Some(Box::new(second)));\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "genann",
+            "genann_copy",
+            "genann_free",
+            "genann_init",
+            "lfails",
+            "ltests"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "first",
+            "second",
+            "i",
+            "ltests",
+            "lfails"
+        ],
+        "calle": [
+            "genann_copy",
+            "fabs",
+            "genann_init",
+            "genann_free",
+            "printf"
+        ],
+        "calle_c": [
+            "fabs",
+            "printf"
+        ],
+        "key": "copy",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "main#example2": {
+        "source_code": "int main(int argc, char *argv[])\n{\n  printf(\"GENANN example 2.\\n\");\n  printf(\"Train a small ANN to the XOR function using random search.\\n\");\n  srand(time(0));\n  const double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};\n  const double output[4] = {0, 1, 1, 0};\n  int i;\n  genann *ann = genann_init(2, 1, 2, 1);\n  unsigned int ann_idx = 0;\n  double err;\n  double last_err = 1000;\n  int count = 0;\n  do\n  {\n    count += 1;\n    if ((count % 1000) == 0)\n    {\n      genann_randomize(ann);\n      last_err = 1000;\n    }\n    genann *save = genann_copy(ann);\n    for (i = 0; i < ann->total_weights; i += 1)\n    {\n      ann->weight[i] += (((double) rand()) / 32767) - 0.5;\n    }\n\n    err = 0;\n    err += pow((*genann_run(ann, input[0])) - output[0], 2.0);\n    err += pow((*genann_run(ann, input[1])) - output[1], 2.0);\n    err += pow((*genann_run(ann, input[2])) - output[2], 2.0);\n    err += pow((*genann_run(ann, input[3])) - output[3], 2.0);\n    if (err < last_err)\n    {\n      genann_free(save);\n      last_err = err;\n    }\n    else\n    {\n      genann_free(ann);\n      ann_idx = save;\n    }\n  }\n  while (err > 0.01);\n  printf(\"Finished in %d loops.\\n\", count);\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[0][0], input[0][1], *genann_run(ann, input[0]));\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[1][0], input[1][1], *genann_run(ann, input[1]));\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[2][0], input[2][1], *genann_run(ann, input[2]));\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[3][0], input[3][1], *genann_run(ann, input[3]));\n  genann_free(ann);\n  return 0;\n}\n\n",
+        "translated_code": "use rand::Rng;\nuse std::f64;\n\npub fn main() {\n    println!(\"GENANN example 2.\");\n    println!(\"Train a small ANN to the XOR function using random search.\");\n\n    let mut rng = rand::thread_rng();\n    let input = [[0.0, 0.0], [0.0, 1.0], [1.0, 0.0], [1.0, 1.0]];\n    let output = [0.0, 1.0, 1.0, 0.0];\n\n    let mut ann = match genann_init(2, 1, 2, 1) {\n        Some(ann) => ann,\n        None => return,\n    };\n\n    let mut last_err = 1000.0;\n    let mut count = 0;\n    let mut err;\n\n    loop {\n        count += 1;\n        if count % 1000 == 0 {\n            genann_randomize(&mut ann);\n            last_err = 1000.0;\n        }\n\n        let mut save = match genann_copy(&ann) {\n            Some(save) => save,\n            None => break,\n        };\n\n        if let Some(weights) = &mut save.weight {\n            for w in weights.iter_mut() {\n                *w += rng.gen::<f64>() - 0.5;\n            }\n        }\n\n        err = 0.0;\n        if let Some(out) = genann_run(&mut save, &input[0]) {\n            err += (out[0] - output[0]).powi(2);\n        }\n        if let Some(out) = genann_run(&mut save, &input[1]) {\n            err += (out[0] - output[1]).powi(2);\n        }\n        if let Some(out) = genann_run(&mut save, &input[2]) {\n            err += (out[0] - output[2]).powi(2);\n        }\n        if let Some(out) = genann_run(&mut save, &input[3]) {\n            err += (out[0] - output[3]).powi(2);\n        }\n\n        if err < last_err {\n            last_err = err;\n        } else {\n            ann = save;\n        }\n\n        if err <= 0.01 {\n            break;\n        }\n    }\n\n    println!(\"Finished in {} loops.\", count);\n    \n    if let Some(out) = genann_run(&mut ann, &input[0]) {\n        println!(\"Output for [{}, {}] is {}.\", input[0][0], input[0][1], out[0]);\n    }\n    if let Some(out) = genann_run(&mut ann, &input[1]) {\n        println!(\"Output for [{}, {}] is {}.\", input[1][0], input[1][1], out[0]);\n    }\n    if let Some(out) = genann_run(&mut ann, &input[2]) {\n        println!(\"Output for [{}, {}] is {}.\", input[2][0], input[2][1], out[0]);\n    }\n    if let Some(out) = genann_run(&mut ann, &input[3]) {\n        println!(\"Output for [{}, {}] is {}.\", input[3][0], input[3][1], out[0]);\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "example2.rs",
+        "error": "",
+        "dependent": [
+            "genann",
+            "genann_copy",
+            "genann_free",
+            "genann_init",
+            "genann_randomize",
+            "genann_run",
+            "time"
+        ],
+        "params": [
+            "int argc",
+            "char *argv[]"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "argc",
+            "argv",
+            "input",
+            "output",
+            "i",
+            "ann",
+            "ann_idx",
+            "err",
+            "last_err",
+            "count",
+            "save"
+        ],
+        "calle": [
+            "genann_run",
+            "genann_copy",
+            "pow",
+            "genann_randomize",
+            "srand",
+            "time",
+            "genann_init",
+            "rand",
+            "genann_free",
+            "printf"
+        ],
+        "calle_c": [
+            "pow",
+            "srand",
+            "time",
+            "rand",
+            "printf"
+        ],
+        "key": "main#example2",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "xor": {
+        "source_code": "void xor()\n{\n  genann *ann = genann_init(2, 1, 2, 1);\n  ann->activation_hidden = genann_act_threshold;\n  ann->activation_output = genann_act_threshold;\n  do\n  {\n    ltests += 1;\n    if (ann->total_weights != 9)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 74, ann->total_weights, 9);\n    }\n  }\n  while (0);\n  ann->weight[0] = .5;\n  ann->weight[1] = 1;\n  ann->weight[2] = 1;\n  ann->weight[3] = 1;\n  ann->weight[4] = 1;\n  ann->weight[5] = 1;\n  ann->weight[6] = .5;\n  ann->weight[7] = 1;\n  ann->weight[8] = -1;\n  double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};\n  double output[4] = {0, 1, 1, 0};\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[0]) - ((double) (*genann_run(ann, input[0])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 95, (double) output[0], (double) (*genann_run(ann, input[0])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[1]) - ((double) (*genann_run(ann, input[1])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 96, (double) output[1], (double) (*genann_run(ann, input[1])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[2]) - ((double) (*genann_run(ann, input[2])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 97, (double) output[2], (double) (*genann_run(ann, input[2])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[3]) - ((double) (*genann_run(ann, input[3])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 98, (double) output[3], (double) (*genann_run(ann, input[3])));\n    }\n  }\n  while (0);\n  genann_free(ann);\n}\n\n",
+        "translated_code": "pub fn xor() {\n    let mut ann = match genann_init(2, 1, 2, 1) {\n        Some(ann) => ann,\n        None => return,\n    };\n\n    ann.activation_hidden = genann::GenannActFun::Threshold;\n    ann.activation_output = genann::GenannActFun::Threshold;\n\n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        if ann.total_weights != 9 {\n            LFAILS.fetch_add(1, Ordering::SeqCst);\n            println!(\n                \"{}:{} ({} != {})\",\n                \"/workdir/C2RustTranslation-main/subjects/genann/test.c\",\n                74,\n                ann.total_weights,\n                9\n            );\n        }\n    }\n\n    if let Some(ref mut weights) = ann.weight {\n        weights[0] = 0.5;\n        weights[1] = 1.0;\n        weights[2] = 1.0;\n        weights[3] = 1.0;\n        weights[4] = 1.0;\n        weights[5] = 1.0;\n        weights[6] = 0.5;\n        weights[7] = 1.0;\n        weights[8] = -1.0;\n    }\n\n    let input = [[0.0, 0.0], [0.0, 1.0], [1.0, 0.0], [1.0, 1.0]];\n    let output = [0.0, 1.0, 1.0, 0.0];\n\n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        if let Some(result) = genann_run(&mut ann, &input[0]) {\n            if f64::abs(output[0] - result[0]) > 0.001 {\n                LFAILS.fetch_add(1, Ordering::SeqCst);\n                println!(\n                    \"{}:{} ({} != {})\",\n                    \"/workdir/C2RustTranslation-main/subjects/genann/test.c\",\n                    95,\n                    output[0],\n                    result[0]\n                );\n            }\n        }\n    }\n\n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        if let Some(result) = genann_run(&mut ann, &input[1]) {\n            if f64::abs(output[1] - result[0]) > 0.001 {\n                LFAILS.fetch_add(1, Ordering::SeqCst);\n                println!(\n                    \"{}:{} ({} != {})\",\n                    \"/workdir/C2RustTranslation-main/subjects/genann/test.c\",\n                    96,\n                    output[1],\n                    result[0]\n                );\n            }\n        }\n    }\n\n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        if let Some(result) = genann_run(&mut ann, &input[2]) {\n            if f64::abs(output[2] - result[0]) > 0.001 {\n                LFAILS.fetch_add(1, Ordering::SeqCst);\n                println!(\n                    \"{}:{} ({} != {})\",\n                    \"/workdir/C2RustTranslation-main/subjects/genann/test.c\",\n                    97,\n                    output[2],\n                    result[0]\n                );\n            }\n        }\n    }\n\n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        if let Some(result) = genann_run(&mut ann, &input[3]) {\n            if f64::abs(output[3] - result[0]) > 0.001 {\n                LFAILS.fetch_add(1, Ordering::SeqCst);\n                println!(\n                    \"{}:{} ({} != {})\",\n                    \"/workdir/C2RustTranslation-main/subjects/genann/test.c\",\n                    98,\n                    output[3],\n                    result[0]\n                );\n            }\n        }\n    }\n\n    genann_free(Some(Box::new(ann)));\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "genann",
+            "genann_act_threshold",
+            "genann_free",
+            "genann_init",
+            "genann_run",
+            "lfails",
+            "ltests"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "ann",
+            "input",
+            "output",
+            "ltests",
+            "lfails"
+        ],
+        "calle": [
+            "genann_run",
+            "fabs",
+            "genann_init",
+            "genann_free",
+            "printf",
+            "genann_act_threshold"
+        ],
+        "calle_c": [
+            "fabs",
+            "printf"
+        ],
+        "key": "xor",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "backprop": {
+        "source_code": "void backprop()\n{\n  genann *ann = genann_init(1, 0, 0, 1);\n  double input;\n  double output;\n  input = .5;\n  output = 1;\n  double first_try = *genann_run(ann, &input);\n  genann_train(ann, &input, &output, .5);\n  double second_try = *genann_run(ann, &input);\n  do\n  {\n    ltests += 1;\n    if (!(fabs(first_try - output) > fabs(second_try - output)))\n    {\n      lfails += 1;\n      printf(\"%s:%d error \\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 114);\n    }\n  }\n  while (0);\n  genann_free(ann);\n}\n\n",
+        "translated_code": "pub fn backprop() {\n    let mut ann = match genann_init(1, 0, 0, 1) {\n        Some(a) => a,\n        None => return,\n    };\n\n    let input = [0.5];\n    let output = [1.0];\n    \n    let first_try = match genann_run(&mut ann, &input) {\n        Some(result) => result[0],\n        None => return,\n    };\n\n    genann_train(&mut ann, &input, &output, 0.5);\n\n    let second_try = match genann_run(&mut ann, &input) {\n        Some(result) => result[0],\n        None => return,\n    };\n\n    LTESTS.fetch_add(1, Ordering::SeqCst);\n    if !(f64::abs(first_try - output[0]) > f64::abs(second_try - output[0])) {\n        LFAILS.fetch_add(1, Ordering::SeqCst);\n        println!(\"{}:{} error\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 114);\n    }\n\n    genann_free(Some(Box::new(ann)));\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "genann",
+            "genann_free",
+            "genann_init",
+            "genann_run",
+            "genann_train",
+            "lfails",
+            "ltests"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "ann",
+            "input",
+            "output",
+            "first_try",
+            "second_try",
+            "ltests",
+            "lfails"
+        ],
+        "calle": [
+            "genann_run",
+            "fabs",
+            "genann_train",
+            "genann_init",
+            "genann_free",
+            "printf"
+        ],
+        "calle_c": [
+            "fabs",
+            "printf"
+        ],
+        "key": "backprop",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "persist": {
+        "source_code": "void persist()\n{\n  genann *first = genann_init(1000, 5, 50, 10);\n  FILE *out = fopen(\"persist.txt\", \"w\");\n  genann_write(first, out);\n  fclose(out);\n  FILE *in = fopen(\"persist.txt\", \"r\");\n  genann *second = genann_read(in);\n  fclose(in);\n  do\n  {\n    ltests += 1;\n    if (first->inputs != second->inputs)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 208, first->inputs, second->inputs);\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (first->hidden_layers != second->hidden_layers)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 209, first->hidden_layers, second->hidden_layers);\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (first->hidden != second->hidden)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 210, first->hidden, second->hidden);\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (first->outputs != second->outputs)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 211, first->outputs, second->outputs);\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (first->total_weights != second->total_weights)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 212, first->total_weights, second->total_weights);\n    }\n  }\n  while (0);\n  int i;\n  for (i = 0; i < first->total_weights; i += 1)\n  {\n    do\n    {\n      ltests += 1;\n      if (!(first->weight[i] == second->weight[i]))\n      {\n        lfails += 1;\n        printf(\"%s:%d error \\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 216);\n      }\n    }\n    while (0);\n  }\n\n  genann_free(first);\n  genann_free(second);\n}\n\n",
+        "translated_code": "use std::fs::File;\nuse std::io::{Read, Write};\nuse std::sync::atomic::Ordering;\n\npub fn persist() {\n    let first = genann_init(1000, 5, 50, 10).expect(\"Failed to initialize genann\");\n    \n    // Write to file\n    let mut out = File::create(\"persist.txt\").expect(\"Failed to create file\");\n    genann_write(&first, &mut out).expect(\"Failed to write genann\");\n    drop(out); // Explicitly close the file\n    \n    // Read from file\n    let mut in_file = File::open(\"persist.txt\").expect(\"Failed to open file\");\n    let second = genann_read(&mut in_file).expect(\"Failed to read genann\");\n    drop(in_file); // Explicitly close the file\n\n    // Compare fields\n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        if first.inputs != second.inputs {\n            LFAILS.fetch_add(1, Ordering::SeqCst);\n            println!(\"{}:{} ({} != {})\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 208, first.inputs, second.inputs);\n        }\n    }\n    \n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        if first.hidden_layers != second.hidden_layers {\n            LFAILS.fetch_add(1, Ordering::SeqCst);\n            println!(\"{}:{} ({} != {})\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 209, first.hidden_layers, second.hidden_layers);\n        }\n    }\n    \n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        if first.hidden != second.hidden {\n            LFAILS.fetch_add(1, Ordering::SeqCst);\n            println!(\"{}:{} ({} != {})\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 210, first.hidden, second.hidden);\n        }\n    }\n    \n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        if first.outputs != second.outputs {\n            LFAILS.fetch_add(1, Ordering::SeqCst);\n            println!(\"{}:{} ({} != {})\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 211, first.outputs, second.outputs);\n        }\n    }\n    \n    {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        if first.total_weights != second.total_weights {\n            LFAILS.fetch_add(1, Ordering::SeqCst);\n            println!(\"{}:{} ({} != {})\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 212, first.total_weights, second.total_weights);\n        }\n    }\n    \n    if let (Some(first_weights), Some(second_weights)) = (&first.weight, &second.weight) {\n        for i in 0..first.total_weights as usize {\n            LTESTS.fetch_add(1, Ordering::SeqCst);\n            if first_weights[i] != second_weights[i] {\n                LFAILS.fetch_add(1, Ordering::SeqCst);\n                println!(\"{}:{} error\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 216);\n            }\n        }\n    }\n\n    genann_free(Some(Box::new(first)));\n    genann_free(Some(Box::new(second)));\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "genann",
+            "genann_free",
+            "genann_init",
+            "genann_read",
+            "genann_write",
+            "lfails",
+            "ltests"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "first",
+            "out",
+            "in",
+            "second",
+            "i",
+            "ltests",
+            "lfails"
+        ],
+        "calle": [
+            "genann_write",
+            "fopen",
+            "genann_init",
+            "fclose",
+            "genann_free",
+            "printf",
+            "genann_read"
+        ],
+        "calle_c": [
+            "printf",
+            "fopen",
+            "fclose"
+        ],
+        "key": "persist",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "train_and": {
+        "source_code": "void train_and()\n{\n  double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};\n  double output[4] = {0, 0, 0, 1};\n  genann *ann = genann_init(2, 0, 0, 1);\n  int i;\n  int j;\n  for (i = 0; i < 50; i += 1)\n  {\n    for (j = 0; j < 4; j += 1)\n    {\n      genann_train(ann, input[j], output + j, .8);\n    }\n\n  }\n\n  ann->activation_output = genann_act_threshold;\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[0]) - ((double) (*genann_run(ann, input[0])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 135, (double) output[0], (double) (*genann_run(ann, input[0])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[1]) - ((double) (*genann_run(ann, input[1])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 136, (double) output[1], (double) (*genann_run(ann, input[1])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[2]) - ((double) (*genann_run(ann, input[2])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 137, (double) output[2], (double) (*genann_run(ann, input[2])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[3]) - ((double) (*genann_run(ann, input[3])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 138, (double) output[3], (double) (*genann_run(ann, input[3])));\n    }\n  }\n  while (0);\n  genann_free(ann);\n}\n\n",
+        "translated_code": "pub fn train_and() {\n    let input = [[0.0, 0.0], [0.0, 1.0], [1.0, 0.0], [1.0, 1.0]];\n    let output = [0.0, 0.0, 0.0, 1.0];\n    let mut ann = genann_init(2, 0, 0, 1).expect(\"Failed to initialize genann\");\n\n    for _ in 0..50 {\n        for j in 0..4 {\n            genann_train(&mut ann, &input[j], &output[j..j+1], 0.8);\n        }\n    }\n\n    ann.activation_output = genann::GenannActFun::Threshold;\n\n    // Test each input-output pair\n    for i in 0..4 {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        let result = genann_run(&mut ann, &input[i])\n            .and_then(|out| out.first().copied())\n            .unwrap_or(0.0);\n        if f64::abs(output[i] - result) > 0.001 {\n            LFAILS.fetch_add(1, Ordering::SeqCst);\n            println!(\n                \"/workdir/C2RustTranslation-main/subjects/genann/test.c:{} ({} != {})\",\n                135 + i,\n                output[i],\n                result\n            );\n        }\n    }\n\n    genann_free(Some(Box::new(ann)));\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "genann",
+            "genann_act_threshold",
+            "genann_free",
+            "genann_init",
+            "genann_run",
+            "genann_train",
+            "lfails",
+            "ltests"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "input",
+            "output",
+            "ann",
+            "i",
+            "j",
+            "ltests",
+            "lfails"
+        ],
+        "calle": [
+            "genann_run",
+            "fabs",
+            "genann_train",
+            "genann_init",
+            "genann_free",
+            "printf",
+            "genann_act_threshold"
+        ],
+        "calle_c": [
+            "fabs",
+            "printf"
+        ],
+        "key": "train_and",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "train_xor": {
+        "source_code": "void train_xor()\n{\n  double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};\n  double output[4] = {0, 1, 1, 0};\n  genann *ann = genann_init(2, 1, 2, 1);\n  int i;\n  int j;\n  for (i = 0; i < 500; i += 1)\n  {\n    for (j = 0; j < 4; j += 1)\n    {\n      genann_train(ann, input[j], output + j, 3);\n    }\n\n  }\n\n  ann->activation_output = genann_act_threshold;\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[0]) - ((double) (*genann_run(ann, input[0])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 186, (double) output[0], (double) (*genann_run(ann, input[0])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[1]) - ((double) (*genann_run(ann, input[1])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 187, (double) output[1], (double) (*genann_run(ann, input[1])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[2]) - ((double) (*genann_run(ann, input[2])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 188, (double) output[2], (double) (*genann_run(ann, input[2])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[3]) - ((double) (*genann_run(ann, input[3])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 189, (double) output[3], (double) (*genann_run(ann, input[3])));\n    }\n  }\n  while (0);\n  genann_free(ann);\n}\n\n",
+        "translated_code": "pub fn train_xor() {\n    let input = [[0.0, 0.0], [0.0, 1.0], [1.0, 0.0], [1.0, 1.0]];\n    let output = [0.0, 1.0, 1.0, 0.0];\n    \n    let mut ann = match genann_init(2, 1, 2, 1) {\n        Some(ann) => ann,\n        None => return,\n    };\n\n    for _ in 0..500 {\n        for j in 0..4 {\n            genann_train(&mut ann, &input[j], &output[j..j+1], 3.0);\n        }\n    }\n\n    ann.activation_output = genann::GenannActFun::Threshold;\n\n    // Test each input-output pair\n    for i in 0..4 {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        let result = genann_run(&mut ann, &input[i]);\n        if let Some(res) = result {\n            if (output[i] - res[0]).abs() > 0.001 {\n                LFAILS.fetch_add(1, Ordering::SeqCst);\n                println!(\n                    \"/workdir/C2RustTranslation-main/subjects/genann/test.c:{} ({} != {})\",\n                    186 + i,\n                    output[i],\n                    res[0]\n                );\n            }\n        }\n    }\n\n    genann_free(Some(Box::new(ann)));\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "genann",
+            "genann_act_threshold",
+            "genann_free",
+            "genann_init",
+            "genann_run",
+            "genann_train",
+            "lfails",
+            "ltests"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "input",
+            "output",
+            "ann",
+            "i",
+            "j",
+            "ltests",
+            "lfails"
+        ],
+        "calle": [
+            "genann_run",
+            "fabs",
+            "genann_train",
+            "genann_init",
+            "genann_free",
+            "printf",
+            "genann_act_threshold"
+        ],
+        "calle_c": [
+            "fabs",
+            "printf"
+        ],
+        "key": "train_xor",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "train_or": {
+        "source_code": "void train_or()\n{\n  double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};\n  double output[4] = {0, 1, 1, 1};\n  genann *ann = genann_init(2, 0, 0, 1);\n  genann_randomize(ann);\n  int i;\n  int j;\n  for (i = 0; i < 50; i += 1)\n  {\n    for (j = 0; j < 4; j += 1)\n    {\n      genann_train(ann, input[j], output + j, .8);\n    }\n\n  }\n\n  ann->activation_output = genann_act_threshold;\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[0]) - ((double) (*genann_run(ann, input[0])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 160, (double) output[0], (double) (*genann_run(ann, input[0])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[1]) - ((double) (*genann_run(ann, input[1])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 161, (double) output[1], (double) (*genann_run(ann, input[1])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[2]) - ((double) (*genann_run(ann, input[2])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 162, (double) output[2], (double) (*genann_run(ann, input[2])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[3]) - ((double) (*genann_run(ann, input[3])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/workdir/C2RustTranslation-main/subjects/genann/test.c\", 163, (double) output[3], (double) (*genann_run(ann, input[3])));\n    }\n  }\n  while (0);\n  genann_free(ann);\n}\n\n",
+        "translated_code": "pub fn train_or() {\n    let input = [[0.0, 0.0], [0.0, 1.0], [1.0, 0.0], [1.0, 1.0]];\n    let output = [0.0, 1.0, 1.0, 1.0];\n    \n    let mut ann = match genann_init(2, 0, 0, 1) {\n        Some(ann) => ann,\n        None => return,\n    };\n    \n    genann_randomize(&mut ann);\n    \n    for _ in 0..50 {\n        for j in 0..4 {\n            genann_train(&mut ann, &input[j], &output[j..j+1], 0.8);\n        }\n    }\n    \n    ann.activation_output = genann::GenannActFun::Threshold;\n    \n    // Test each input/output pair\n    for i in 0..4 {\n        LTESTS.fetch_add(1, Ordering::SeqCst);\n        let result = genann_run(&mut ann, &input[i]);\n        if let Some(res) = result {\n            if (output[i] - res[0]).abs() > 0.001 {\n                LFAILS.fetch_add(1, Ordering::SeqCst);\n                println!(\n                    \"/workdir/C2RustTranslation-main/subjects/genann/test.c:{} ({} != {})\",\n                    160 + i,\n                    output[i],\n                    res[0]\n                );\n            }\n        }\n    }\n    \n    genann_free(Some(Box::new(ann)));\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "genann",
+            "genann_act_threshold",
+            "genann_free",
+            "genann_init",
+            "genann_randomize",
+            "genann_run",
+            "genann_train",
+            "lfails",
+            "ltests"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "input",
+            "output",
+            "ann",
+            "i",
+            "j",
+            "ltests",
+            "lfails"
+        ],
+        "calle": [
+            "genann_run",
+            "fabs",
+            "genann_randomize",
+            "genann_train",
+            "genann_init",
+            "genann_free",
+            "printf",
+            "genann_act_threshold"
+        ],
+        "calle_c": [
+            "fabs",
+            "printf"
+        ],
+        "key": "train_or",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "main#example4": {
+        "source_code": "int main(int argc, char *argv[])\n{\n  printf(\"GENANN example 4.\\n\");\n  printf(\"Train an ANN on the IRIS dataset using backpropagation.\\n\");\n  srand(time(0));\n  load_data();\n  genann *ann = genann_init(4, 1, 4, 3);\n  int i;\n  int j;\n  int loops = 5000;\n  printf(\"Training for %d loops over data.\\n\", loops);\n  for (i = 0; i < loops; i += 1)\n  {\n    for (j = 0; j < samples; j += 1)\n    {\n      genann_train(ann, input + (j * 4), class + (j * 3), .01);\n    }\n\n  }\n\n  int correct = 0;\n  for (j = 0; j < samples; j += 1)\n  {\n    const double *guess = genann_run(ann, input + (j * 4));\n    if (class[(j * 3) + 0] == 1.0)\n    {\n      if ((guess[0] > guess[1]) && (guess[0] > guess[2]))\n      {\n        correct += 1;\n      }\n    }\n    else\n      if (class[(j * 3) + 1] == 1.0)\n    {\n      if ((guess[1] > guess[0]) && (guess[1] > guess[2]))\n      {\n        correct += 1;\n      }\n    }\n    else\n      if (class[(j * 3) + 2] == 1.0)\n    {\n      if ((guess[2] > guess[0]) && (guess[2] > guess[1]))\n      {\n        correct += 1;\n      }\n    }\n    else\n    {\n      printf(\"Logic error.\\n\");\n      exit(1);\n    }\n  }\n\n  printf(\"%d/%d correct (%0.1f%%).\\n\", correct, samples, (((double) correct) / samples) * 100.0);\n  genann_free(ann);\n  free(input);\n  free(class);\n  return 0;\n}\n\n",
+        "translated_code": "use rand::Rng;\nuse std::process::exit;\n\npub fn main() {\n    println!(\"GENANN example 4.\");\n    println!(\"Train an ANN on the IRIS dataset using backpropagation.\");\n    \n    // Initialize random number generator (no direct srand equivalent in Rust)\n    let mut rng = rand::thread_rng();\n    \n    load_data().expect(\"Failed to load data\");\n    \n    let mut ann = genann_init(4, 1, 4, 3).expect(\"Failed to initialize ANN\");\n    \n    let loops = 5000;\n    println!(\"Training for {} loops over data.\", loops);\n    \n    for _ in 0..loops {\n        let input_guard = INPUT.lock().unwrap();\n        let class_guard = CLASS.lock().unwrap();\n        let samples = SAMPLES.load(std::sync::atomic::Ordering::SeqCst);\n        \n        if let (Some(input), Some(class)) = (&*input_guard, &*class_guard) {\n            for j in 0..samples {\n                let input_slice = &input[j as usize * 4..(j as usize * 4 + 4)];\n                let class_slice = &class[j as usize * 3..(j as usize * 3 + 3)];\n                genann_train(&mut ann, input_slice, class_slice, 0.01);\n            }\n        }\n    }\n    \n    let mut correct = 0;\n    let input_guard = INPUT.lock().unwrap();\n    let class_guard = CLASS.lock().unwrap();\n    let samples = SAMPLES.load(std::sync::atomic::Ordering::SeqCst);\n    \n    if let (Some(input), Some(class)) = (&*input_guard, &*class_guard) {\n        for j in 0..samples {\n            let input_slice = &input[j as usize * 4..(j as usize * 4 + 4)];\n            let guess = genann_run(&mut ann, input_slice).expect(\"Failed to run ANN\");\n            \n            if class[j as usize * 3] == 1.0 {\n                if guess[0] > guess[1] && guess[0] > guess[2] {\n                    correct += 1;\n                }\n            } else if class[j as usize * 3 + 1] == 1.0 {\n                if guess[1] > guess[0] && guess[1] > guess[2] {\n                    correct += 1;\n                }\n            } else if class[j as usize * 3 + 2] == 1.0 {\n                if guess[2] > guess[0] && guess[2] > guess[1] {\n                    correct += 1;\n                }\n            } else {\n                println!(\"Logic error.\");\n                exit(1);\n            }\n        }\n    }\n    \n    println!(\n        \"{}/{} correct ({:.1}%).\",\n        correct,\n        samples,\n        (correct as f64 / samples as f64) * 100.0\n    );\n    \n    genann_free(Some(Box::new(ann)));\n    \n    // In Rust, the Mutex guards will be dropped automatically when they go out of scope\n    // The lazy_static values will remain for the program lifetime\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "example4.rs",
+        "error": "",
+        "dependent": [
+            "class",
+            "genann",
+            "genann_free",
+            "genann_init",
+            "genann_run",
+            "genann_train",
+            "input",
+            "load_data",
+            "samples",
+            "time"
+        ],
+        "params": [
+            "int argc",
+            "char *argv[]"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "argc",
+            "argv",
+            "ann",
+            "i",
+            "j",
+            "loops",
+            "correct",
+            "guess",
+            "samples",
+            "input",
+            "class"
+        ],
+        "calle": [
+            "exit",
+            "genann_run",
+            "srand",
+            "time",
+            "genann_init",
+            "load_data",
+            "genann_train",
+            "free",
+            "genann_free",
+            "printf"
+        ],
+        "calle_c": [
+            "exit",
+            "srand",
+            "time",
+            "free",
+            "printf"
+        ],
+        "key": "main#example4",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "main#test": {
+        "source_code": "int main(int argc, char *argv[])\n{\n  printf(\"GENANN TEST SUITE\\n\");\n  srand(100);\n  do\n  {\n    const int ts = ltests;\n    const int fs = lfails;\n    const clock_t start = clock();\n    printf(\"\\t%-14s\", \"basic\");\n    basic();\n    printf(\"pass:%2d   fail:%2d   %4dms\\n\", (ltests - ts) - (lfails - fs), lfails - fs, (int) (((clock() - start) * 1000) / CLOCKS_PER_SEC));\n  }\n  while (0);\n  do\n  {\n    const int ts = ltests;\n    const int fs = lfails;\n    const clock_t start = clock();\n    printf(\"\\t%-14s\", \"xor\");\n    xor();\n    printf(\"pass:%2d   fail:%2d   %4dms\\n\", (ltests - ts) - (lfails - fs), lfails - fs, (int) (((clock() - start) * 1000) / CLOCKS_PER_SEC));\n  }\n  while (0);\n  do\n  {\n    const int ts = ltests;\n    const int fs = lfails;\n    const clock_t start = clock();\n    printf(\"\\t%-14s\", \"backprop\");\n    backprop();\n    printf(\"pass:%2d   fail:%2d   %4dms\\n\", (ltests - ts) - (lfails - fs), lfails - fs, (int) (((clock() - start) * 1000) / CLOCKS_PER_SEC));\n  }\n  while (0);\n  do\n  {\n    const int ts = ltests;\n    const int fs = lfails;\n    const clock_t start = clock();\n    printf(\"\\t%-14s\", \"train and\");\n    train_and();\n    printf(\"pass:%2d   fail:%2d   %4dms\\n\", (ltests - ts) - (lfails - fs), lfails - fs, (int) (((clock() - start) * 1000) / CLOCKS_PER_SEC));\n  }\n  while (0);\n  do\n  {\n    const int ts = ltests;\n    const int fs = lfails;\n    const clock_t start = clock();\n    printf(\"\\t%-14s\", \"train or\");\n    train_or();\n    printf(\"pass:%2d   fail:%2d   %4dms\\n\", (ltests - ts) - (lfails - fs), lfails - fs, (int) (((clock() - start) * 1000) / CLOCKS_PER_SEC));\n  }\n  while (0);\n  do\n  {\n    const int ts = ltests;\n    const int fs = lfails;\n    const clock_t start = clock();\n    printf(\"\\t%-14s\", \"train xor\");\n    train_xor();\n    printf(\"pass:%2d   fail:%2d   %4dms\\n\", (ltests - ts) - (lfails - fs), lfails - fs, (int) (((clock() - start) * 1000) / CLOCKS_PER_SEC));\n  }\n  while (0);\n  do\n  {\n    const int ts = ltests;\n    const int fs = lfails;\n    const clock_t start = clock();\n    printf(\"\\t%-14s\", \"persist\");\n    persist();\n    printf(\"pass:%2d   fail:%2d   %4dms\\n\", (ltests - ts) - (lfails - fs), lfails - fs, (int) (((clock() - start) * 1000) / CLOCKS_PER_SEC));\n  }\n  while (0);\n  do\n  {\n    const int ts = ltests;\n    const int fs = lfails;\n    const clock_t start = clock();\n    printf(\"\\t%-14s\", \"copy\");\n    copy();\n    printf(\"pass:%2d   fail:%2d   %4dms\\n\", (ltests - ts) - (lfails - fs), lfails - fs, (int) (((clock() - start) * 1000) / CLOCKS_PER_SEC));\n  }\n  while (0);\n  do\n  {\n    const int ts = ltests;\n    const int fs = lfails;\n    const clock_t start = clock();\n    printf(\"\\t%-14s\", \"sigmoid\");\n    sigmoid();\n    printf(\"pass:%2d   fail:%2d   %4dms\\n\", (ltests - ts) - (lfails - fs), lfails - fs, (int) (((clock() - start) * 1000) / CLOCKS_PER_SEC));\n  }\n  while (0);\n  do\n  {\n    if (lfails == 0)\n    {\n      printf(\"ALL TESTS PASSED (%d/%d)\\n\", ltests, ltests);\n    }\n    else\n    {\n      printf(\"SOME TESTS FAILED (%d/%d)\\n\", ltests - lfails, ltests);\n    }\n  }\n  while (0);\n  return lfails != 0;\n}\n\n",
+        "translated_code": "use std::time::{SystemTime, UNIX_EPOCH};\nuse rand::Rng;\nuse std::time::Instant;\n\npub fn main() {\n    println!(\"GENANN TEST SUITE\");\n    rand::thread_rng(); // Equivalent to srand(100) - using thread-local RNG\n    \n    {\n        let ts = LTESTS.load(Ordering::Relaxed);\n        let fs = LFAILS.load(Ordering::Relaxed);\n        let start = Instant::now();\n        print!(\"\\t{:<14}\", \"basic\");\n        basic();\n        let duration = start.elapsed();\n        println!(\"pass:{:2}   fail:{:2}   {:4}ms\", \n            (LTESTS.load(Ordering::Relaxed) - ts) - (LFAILS.load(Ordering::Relaxed) - fs), \n            LFAILS.load(Ordering::Relaxed) - fs, \n            duration.as_millis());\n    }\n    \n    {\n        let ts = LTESTS.load(Ordering::Relaxed);\n        let fs = LFAILS.load(Ordering::Relaxed);\n        let start = Instant::now();\n        print!(\"\\t{:<14}\", \"xor\");\n        xor();\n        let duration = start.elapsed();\n        println!(\"pass:{:2}   fail:{:2}   {:4}ms\", \n            (LTESTS.load(Ordering::Relaxed) - ts) - (LFAILS.load(Ordering::Relaxed) - fs), \n            LFAILS.load(Ordering::Relaxed) - fs, \n            duration.as_millis());\n    }\n    \n    {\n        let ts = LTESTS.load(Ordering::Relaxed);\n        let fs = LFAILS.load(Ordering::Relaxed);\n        let start = Instant::now();\n        print!(\"\\t{:<14}\", \"backprop\");\n        backprop();\n        let duration = start.elapsed();\n        println!(\"pass:{:2}   fail:{:2}   {:4}ms\", \n            (LTESTS.load(Ordering::Relaxed) - ts) - (LFAILS.load(Ordering::Relaxed) - fs), \n            LFAILS.load(Ordering::Relaxed) - fs, \n            duration.as_millis());\n    }\n    \n    {\n        let ts = LTESTS.load(Ordering::Relaxed);\n        let fs = LFAILS.load(Ordering::Relaxed);\n        let start = Instant::now();\n        print!(\"\\t{:<14}\", \"train and\");\n        train_and();\n        let duration = start.elapsed();\n        println!(\"pass:{:2}   fail:{:2}   {:4}ms\", \n            (LTESTS.load(Ordering::Relaxed) - ts) - (LFAILS.load(Ordering::Relaxed) - fs), \n            LFAILS.load(Ordering::Relaxed) - fs, \n            duration.as_millis());\n    }\n    \n    {\n        let ts = LTESTS.load(Ordering::Relaxed);\n        let fs = LFAILS.load(Ordering::Relaxed);\n        let start = Instant::now();\n        print!(\"\\t{:<14}\", \"train or\");\n        train_or();\n        let duration = start.elapsed();\n        println!(\"pass:{:2}   fail:{:2}   {:4}ms\", \n            (LTESTS.load(Ordering::Relaxed) - ts) - (LFAILS.load(Ordering::Relaxed) - fs), \n            LFAILS.load(Ordering::Relaxed) - fs, \n            duration.as_millis());\n    }\n    \n    {\n        let ts = LTESTS.load(Ordering::Relaxed);\n        let fs = LFAILS.load(Ordering::Relaxed);\n        let start = Instant::now();\n        print!(\"\\t{:<14}\", \"train xor\");\n        train_xor();\n        let duration = start.elapsed();\n        println!(\"pass:{:2}   fail:{:2}   {:4}ms\", \n            (LTESTS.load(Ordering::Relaxed) - ts) - (LFAILS.load(Ordering::Relaxed) - fs), \n            LFAILS.load(Ordering::Relaxed) - fs, \n            duration.as_millis());\n    }\n    \n    {\n        let ts = LTESTS.load(Ordering::Relaxed);\n        let fs = LFAILS.load(Ordering::Relaxed);\n        let start = Instant::now();\n        print!(\"\\t{:<14}\", \"persist\");\n        persist();\n        let duration = start.elapsed();\n        println!(\"pass:{:2}   fail:{:2}   {:4}ms\", \n            (LTESTS.load(Ordering::Relaxed) - ts) - (LFAILS.load(Ordering::Relaxed) - fs), \n            LFAILS.load(Ordering::Relaxed) - fs, \n            duration.as_millis());\n    }\n    \n    {\n        let ts = LTESTS.load(Ordering::Relaxed);\n        let fs = LFAILS.load(Ordering::Relaxed);\n        let start = Instant::now();\n        print!(\"\\t{:<14}\", \"copy\");\n        copy();\n        let duration = start.elapsed();\n        println!(\"pass:{:2}   fail:{:2}   {:4}ms\", \n            (LTESTS.load(Ordering::Relaxed) - ts) - (LFAILS.load(Ordering::Relaxed) - fs), \n            LFAILS.load(Ordering::Relaxed) - fs, \n            duration.as_millis());\n    }\n    \n    {\n        let ts = LTESTS.load(Ordering::Relaxed);\n        let fs = LFAILS.load(Ordering::Relaxed);\n        let start = Instant::now();\n        print!(\"\\t{:<14}\", \"sigmoid\");\n        sigmoid();\n        let duration = start.elapsed();\n        println!(\"pass:{:2}   fail:{:2}   {:4}ms\", \n            (LTESTS.load(Ordering::Relaxed) - ts) - (LFAILS.load(Ordering::Relaxed) - fs), \n            LFAILS.load(Ordering::Relaxed) - fs, \n            duration.as_millis());\n    }\n    \n    {\n        if LFAILS.load(Ordering::Relaxed) == 0 {\n            println!(\"ALL TESTS PASSED ({}/{})\", \n                LTESTS.load(Ordering::Relaxed), \n                LTESTS.load(Ordering::Relaxed));\n        } else {\n            println!(\"SOME TESTS FAILED ({}/{})\", \n                LTESTS.load(Ordering::Relaxed) - LFAILS.load(Ordering::Relaxed), \n                LTESTS.load(Ordering::Relaxed));\n        }\n    }\n    \n    std::process::exit(if LFAILS.load(Ordering::Relaxed) != 0 { 1 } else { 0 });\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "backprop",
+            "basic",
+            "copy",
+            "lfails",
+            "ltests",
+            "persist",
+            "sigmoid",
+            "train_and",
+            "train_or",
+            "train_xor",
+            "xor"
+        ],
+        "params": [
+            "int argc",
+            "char *argv[]"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "argc",
+            "argv",
+            "ts",
+            "fs",
+            "start",
+            "ltests",
+            "lfails"
+        ],
+        "calle": [
+            "clock",
+            "persist",
+            "train_and",
+            "train_xor",
+            "srand",
+            "backprop",
+            "copy",
+            "basic",
+            "train_or",
+            "sigmoid",
+            "printf",
+            "xor"
+        ],
+        "calle_c": [
+            "srand",
+            "printf",
+            "clock"
+        ],
+        "key": "main#test",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    }
+}

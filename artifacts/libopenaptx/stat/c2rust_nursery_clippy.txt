@@ -1,0 +1,10 @@
+warning: this sequence of operators looks suspiciously like a bug
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: the function has a cognitive complexity of (27/25)
+warning: all if blocks contain the same code at the end

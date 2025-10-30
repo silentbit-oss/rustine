@@ -1,0 +1,87 @@
+{
+  "Rust": {
+    "blanks": 874,
+    "children": {
+      "Markdown": [
+        {
+          "name": "artifacts/zopfli/others/syzygy/src/main.rs",
+          "stats": {
+            "blanks": 389,
+            "blobs": {
+              "Rust": {
+                "blanks": 2,
+                "blobs": {},
+                "code": 100,
+                "comments": 0
+              }
+            },
+            "code": 0,
+            "comments": 1197
+          }
+        }
+      ]
+    },
+    "code": 3631,
+    "comments": 1026,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/zopfli/others/syzygy/src/main.rs",
+        "stats": {
+          "blanks": 874,
+          "blobs": {
+            "Markdown": {
+              "blanks": 389,
+              "blobs": {
+                "Rust": {
+                  "blanks": 2,
+                  "blobs": {},
+                  "code": 100,
+                  "comments": 0
+                }
+              },
+              "code": 0,
+              "comments": 1197
+            }
+          },
+          "code": 3631,
+          "comments": 1026
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 874,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/zopfli/others/syzygy/src/main.rs",
+          "stats": {
+            "blanks": 874,
+            "blobs": {
+              "Markdown": {
+                "blanks": 389,
+                "blobs": {
+                  "Rust": {
+                    "blanks": 2,
+                    "blobs": {},
+                    "code": 100,
+                    "comments": 0
+                  }
+                },
+                "code": 0,
+                "comments": 1197
+              }
+            },
+            "code": 3631,
+            "comments": 1026
+          }
+        }
+      ]
+    },
+    "code": 3631,
+    "comments": 1026,
+    "inaccurate": false,
+    "reports": []
+  }
+}

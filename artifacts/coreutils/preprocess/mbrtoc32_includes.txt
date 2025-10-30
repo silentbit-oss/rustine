@@ -1,0 +1,14 @@
+#include <assert.h>
+#include <attribute.h>
+#include <config.h>
+#include <errno.h>
+#include <hard-locale.h>
+#include <localcharset.h>
+#include <locale.h>
+#include <mbrtoc32.c>
+#include <stdbool.h>
+#include <stdlib.h>
+#include <streq.h>
+#include <string.h>
+#include <uchar.h>
+#include <wchar.h>

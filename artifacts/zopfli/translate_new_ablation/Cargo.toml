@@ -1,0 +1,12 @@
+[package]
+name = "translate_without_break_down"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lazy_static = "1.4.0"
+rand = "0.8.5"
+
+[[bin]]
+name="test_zopfli"
+path="src/test_zopfli_main.rs"

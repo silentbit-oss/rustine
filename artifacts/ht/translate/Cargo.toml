@@ -1,0 +1,39 @@
+[package]
+name = "translate"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lazy_static = "1.4.0"
+
+[[bin]]
+name="lsearch"
+path="src/lsearch.rs"
+
+[[bin]]
+name="bsearch"
+path="src/bsearch_main.rs"
+
+[[bin]]
+name="dump"
+path="src/dump.rs"
+
+[[bin]]
+name="perfset"
+path="src/perfset.rs"
+
+[[bin]]
+name="perflbh"
+path="src/perflbh_main.rs"
+
+[[bin]]
+name="perfget"
+path="src/perfget.rs"
+
+[[bin]]
+name="demo"
+path="src/demo.rs"
+
+[[bin]]
+name="stats"
+path="src/stats_main.rs"

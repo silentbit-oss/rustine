@@ -1,0 +1,562 @@
+{
+  "Rust": {
+    "blanks": 236,
+    "children": {},
+    "code": 5492,
+    "comments": 5,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 40,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/version_etc_fsf.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 8,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/mbszero.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 31,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/localcharset.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 399,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/close_stream.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 63,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/c_ctype.rs",
+        "stats": {
+          "blanks": 30,
+          "blobs": {},
+          "code": 111,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/closeout.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 170,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/propername_lite.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 24,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/setlocale_null.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 33,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/c32isprint.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/fclose.rs",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 69,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/xgetcwd.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 18,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/ialloc.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 94,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/progname.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 96,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/version.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 4,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/setlocale_null_unlocked.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 49,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/mbrtoc32.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 76,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/root_dev_ino.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 79,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/c_strcasecmp.rs",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 20,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/fseeko.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 73,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/xalloc_die.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 51,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/xmalloc.rs",
+        "stats": {
+          "blanks": 33,
+          "blobs": {},
+          "code": 963,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/exitfail.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 3,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/hard_locale.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 29,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/same_inode.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 45,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/version_etc.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 244,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/fflush.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 61,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/pwd.rs",
+        "stats": {
+          "blanks": 49,
+          "blobs": {},
+          "code": 1075,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/coreutils/others/c2saferrust/src/quotearg.rs",
+        "stats": {
+          "blanks": 56,
+          "blobs": {},
+          "code": 1558,
+          "comments": 1
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 236,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 40,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/version_etc_fsf.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 8,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/mbszero.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 31,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/localcharset.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 399,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/close_stream.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 63,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/c_ctype.rs",
+          "stats": {
+            "blanks": 30,
+            "blobs": {},
+            "code": 111,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/closeout.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 170,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/propername_lite.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 24,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/setlocale_null.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 33,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/c32isprint.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 0,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/fclose.rs",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 69,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/xgetcwd.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 18,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/ialloc.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 94,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/progname.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 96,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/version.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 4,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/setlocale_null_unlocked.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 49,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/mbrtoc32.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 76,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/root_dev_ino.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 79,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/c_strcasecmp.rs",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 20,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/fseeko.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 73,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/xalloc_die.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 51,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/xmalloc.rs",
+          "stats": {
+            "blanks": 33,
+            "blobs": {},
+            "code": 963,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/exitfail.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 3,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/hard_locale.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 29,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/same_inode.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 45,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/version_etc.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 244,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/fflush.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 61,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/pwd.rs",
+          "stats": {
+            "blanks": 49,
+            "blobs": {},
+            "code": 1075,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/coreutils/others/c2saferrust/src/quotearg.rs",
+          "stats": {
+            "blanks": 56,
+            "blobs": {},
+            "code": 1558,
+            "comments": 1
+          }
+        }
+      ]
+    },
+    "code": 5492,
+    "comments": 5,
+    "inaccurate": false,
+    "reports": []
+  }
+}

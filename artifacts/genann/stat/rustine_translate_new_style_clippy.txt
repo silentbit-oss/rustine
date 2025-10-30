@@ -1,0 +1,42 @@
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: the loop variable `i` is only used to index `weights`
+warning: the loop variable `j` is only used to index `d_slice`
+warning: the loop variable `j` is only used to index `d_slice`
+warning: the loop variable `j` is only used to index `ret`
+warning: the loop variable `j` is only used to index `ret`
+warning: the loop variable `k` is used to index `dd_slice`
+warning: this can be `std::io::Error::other(_)`
+warning: this can be `std::io::Error::other(_)`
+warning: this multiplication by -1 can be written more succinctly
+warning: this multiplication by -1 can be written more succinctly
+warning: this multiplication by -1 can be written more succinctly
+warning: this multiplication by -1 can be written more succinctly
+warning: this multiplication by -1 can be written more succinctly
+warning: this multiplication by -1 can be written more succinctly
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string

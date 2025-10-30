@@ -1,0 +1,7 @@
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <url.h>
+#include <url_char_category.h>
+#include <url_char_category_table.h>

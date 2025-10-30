@@ -1,0 +1,16 @@
+#include <assert.h>
+#include <close-stream.h>
+#include <closeout.c>
+#include <closeout.h>
+#include <config.h>
+#include <errno.h>
+#include <error.h>
+#include <exitfail.h>
+#include <gettext.h>
+#include <libintl.h>
+#include <quotearg.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>

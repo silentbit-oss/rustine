@@ -1,0 +1,10 @@
+#include <assert.h>
+#include <config.h>
+#include <errno.h>
+#include <ialloc.c>
+#include <ialloc.h>
+#include <idx.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdlib.h>

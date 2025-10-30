@@ -1,0 +1,1490 @@
+{
+    "buffer_t": {
+        "source_code": "typedef struct \n{\n  size_t len;\n  char *alloc;\n  char *data;\n} buffer_t",
+        "translated_code": "use std::vec::Vec;\n\n#[derive(Clone)]\npub struct BufferT {\n    pub len: usize,\n    pub alloc: Option<Vec<char>>,\n    pub data: Option<Vec<char>>,\n}",
+        "hint": "special_types",
+        "section": "src",
+        "file": "buffer_t.rs",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "type": "<class 'pycparser.c_ast.Struct'>",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "equal": {
+        "source_code": "void equal(char *a, char *b)\n{\n  if (strcmp(a, b))\n  {\n    printf(\"\\n\");\n    printf(\"  expected: '%s'\\n\", a);\n    printf(\"    actual: '%s'\\n\", b);\n    printf(\"\\n\");\n    exit(1);\n  }\n}\n\n",
+        "translated_code": "use std::process;\nuse std::ffi::CStr;\n\npub fn equal(a: &str, b: &str) {\n    if a != b {\n        println!();\n        println!(\"  expected: '{}'\", a);\n        println!(\"    actual: '{}'\", b);\n        println!();\n        process::exit(1);\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [],
+        "params": [
+            "char *a",
+            "char *b"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "a",
+            "b"
+        ],
+        "calle": [
+            "strcmp",
+            "exit",
+            "printf"
+        ],
+        "calle_c": [
+            "strcmp",
+            "exit",
+            "printf"
+        ],
+        "key": "equal",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_new_with_size": {
+        "source_code": "buffer_t *buffer_new_with_size(size_t n)\n{\n  buffer_t *self = malloc(sizeof(buffer_t));\n  if (!self)\n  {\n    return 0;\n  }\n  self->len = n;\n  self->data = (self->alloc = calloc(n + 1, 1));\n  return self;\n}\n\n",
+        "translated_code": "use std::vec::Vec;\n\npub fn buffer_new_with_size(n: usize) -> Option<BufferT> {\n    let mut alloc = vec![0 as char; n + 1];\n    let data = alloc.clone();\n\n    Some(BufferT {\n        len: n,\n        alloc: Some(alloc),\n        data: Some(data),\n    })\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_t"
+        ],
+        "header": "buffer_t *buffer_new_with_size(size_t n)",
+        "params": [
+            "size_t n"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "n",
+            "self"
+        ],
+        "calle": [
+            "calloc",
+            "malloc"
+        ],
+        "calle_c": [
+            "calloc",
+            "malloc"
+        ],
+        "key": "buffer_new_with_size",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_new_with_string_length": {
+        "source_code": "buffer_t *buffer_new_with_string_length(char *str, size_t len)\n{\n  buffer_t *self = malloc(sizeof(buffer_t));\n  if (!self)\n  {\n    return 0;\n  }\n  self->len = len;\n  self->data = (self->alloc = str);\n  return self;\n}\n\n",
+        "translated_code": "use std::vec::Vec;\n\npub fn buffer_new_with_string_length(str: Option<Vec<char>>, len: usize) -> Option<BufferT> {\n    let alloc = str;\n    let data = alloc.clone();\n\n    Some(BufferT {\n        len,\n        alloc,\n        data,\n    })\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_t"
+        ],
+        "header": "buffer_t *buffer_new_with_string_length(char *str, size_t len)",
+        "params": [
+            "char *str",
+            "size_t len"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "str",
+            "len",
+            "self"
+        ],
+        "calle": [
+            "malloc"
+        ],
+        "calle_c": [
+            "malloc"
+        ],
+        "key": "buffer_new_with_string_length",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_size": {
+        "source_code": "size_t buffer_size(buffer_t *self)\n{\n  return self->len;\n}\n\n",
+        "translated_code": "impl BufferT {\n    pub fn buffer_size(&self) -> usize {\n        self.len\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_t"
+        ],
+        "header": "size_t buffer_size(buffer_t *self)",
+        "params": [
+            "buffer_t *self"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "self"
+        ],
+        "calle": [],
+        "calle_c": [],
+        "key": "buffer_size",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_length": {
+        "source_code": "size_t buffer_length(buffer_t *self)\n{\n  return strlen(self->data);\n}\n\n",
+        "translated_code": "pub fn buffer_length(self_: &BufferT) -> usize {\n    match &self_.data {\n        Some(data) => data.len(),\n        None => 0,\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_t"
+        ],
+        "header": "size_t buffer_length(buffer_t *self)",
+        "params": [
+            "buffer_t *self"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "self"
+        ],
+        "calle": [
+            "strlen"
+        ],
+        "calle_c": [
+            "strlen"
+        ],
+        "key": "buffer_length",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_free": {
+        "source_code": "void buffer_free(buffer_t *self)\n{\n  free(self->alloc);\n  free(self);\n}\n\n",
+        "translated_code": "impl BufferT {\n    pub fn buffer_free(&mut self) {\n        // In Rust, memory is automatically managed by the ownership system\n        // The `alloc` and `data` fields are Option<Vec<char>>, which will be dropped automatically\n        // No explicit free is needed in safe Rust\n        self.alloc = Option::None;\n        self.data = Option::None;\n        // The BufferT itself will be dropped when it goes out of scope\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_t"
+        ],
+        "header": "void buffer_free(buffer_t *self)",
+        "params": [
+            "buffer_t *self"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "self"
+        ],
+        "calle": [
+            "free"
+        ],
+        "calle_c": [
+            "free"
+        ],
+        "key": "buffer_free",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_equals": {
+        "source_code": "int buffer_equals(buffer_t *self, buffer_t *other)\n{\n  return 0 == strcmp(self->data, other->data);\n}\n\n",
+        "translated_code": "use std::cmp::Ordering;\n\npub fn buffer_equals(self_: &BufferT, other: &BufferT) -> bool {\n    match (&self_.data, &other.data) {\n        (Some(self_data), Some(other_data)) => self_data == other_data,\n        _ => false,\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_t"
+        ],
+        "header": "int buffer_equals(buffer_t *self, buffer_t *other)",
+        "params": [
+            "buffer_t *self",
+            "buffer_t *other"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "self",
+            "other"
+        ],
+        "calle": [
+            "strcmp"
+        ],
+        "calle_c": [
+            "strcmp"
+        ],
+        "key": "buffer_equals",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_indexof": {
+        "source_code": "ssize_t buffer_indexof(buffer_t *self, char *str)\n{\n  char *sub = strstr(self->data, str);\n  if (!sub)\n  {\n    return -1;\n  }\n  return sub - self->data;\n}\n\n",
+        "translated_code": "pub fn buffer_indexof(self_: &BufferT, str_: &str) -> isize {\n    // Convert the data Vec<char> to a String for searching\n    let haystack = match &self_.data {\n        Some(data) => data.iter().collect::<String>(),\n        None => return -1,\n    };\n\n    // Use str::find to locate the substring (equivalent to strstr)\n    match haystack.find(str_) {\n        Some(pos) => pos as isize,\n        None => -1,\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_t"
+        ],
+        "header": "ssize_t buffer_indexof(buffer_t *self, char *str)",
+        "params": [
+            "buffer_t *self",
+            "char *str"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "self",
+            "str",
+            "sub"
+        ],
+        "calle": [
+            "strstr"
+        ],
+        "calle_c": [
+            "strstr"
+        ],
+        "key": "buffer_indexof",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_fill": {
+        "source_code": "void buffer_fill(buffer_t *self, int c)\n{\n  memset(self->data, c, self->len);\n}\n\n",
+        "translated_code": "use std::vec::Vec;\n\npub fn buffer_fill(buffer_t: &mut BufferT, c: i32) {\n    if let Some(data) = &mut buffer_t.data {\n        for byte in data.iter_mut() {\n            *byte = c as u8 as char;\n        }\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_t"
+        ],
+        "header": "void buffer_fill(buffer_t *self, int c)",
+        "params": [
+            "buffer_t *self",
+            "int c"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "self",
+            "c"
+        ],
+        "calle": [
+            "memset"
+        ],
+        "calle_c": [
+            "memset"
+        ],
+        "key": "buffer_fill",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_trim_left": {
+        "source_code": "void buffer_trim_left(buffer_t *self)\n{\n  int c;\n  while ((c = *self->data) && isspace(c))\n  {\n    self->data += 1;\n  }\n\n}\n\n",
+        "translated_code": "use std::vec::Vec;\n\npub fn buffer_trim_left(buffer_t: &mut BufferT) {\n    if let Some(data) = &mut buffer_t.data {\n        while let Some(&c) = data.first() {\n            if !c.is_whitespace() {\n                break;\n            }\n            data.remove(0);\n        }\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_t"
+        ],
+        "header": "void buffer_trim_left(buffer_t *self)",
+        "params": [
+            "buffer_t *self"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "self",
+            "c"
+        ],
+        "calle": [
+            "isspace"
+        ],
+        "calle_c": [
+            "isspace"
+        ],
+        "key": "buffer_trim_left",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_print": {
+        "source_code": "void buffer_print(buffer_t *self)\n{\n  size_t len = self->len;\n  printf(\"\\n \");\n  for (int i = 0; i < len; i += 1)\n  {\n    printf(\" %02x\", self->alloc[i]);\n    if (((i + 1) % 8) == 0)\n    {\n      printf(\"\\n \");\n    }\n  }\n\n  printf(\"\\n\");\n}\n\n",
+        "translated_code": "use std::fmt::Write;\n\npub fn buffer_print(buffer_t: &BufferT) {\n    let len = buffer_t.len;\n    print!(\"\\n \");\n    \n    if let Some(alloc) = &buffer_t.alloc {\n        for i in 0..len {\n            print!(\" {:02x}\", alloc[i] as u8);\n            if ((i + 1) % 8) == 0 {\n                print!(\"\\n \");\n            }\n        }\n    }\n    \n    println!();\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_t"
+        ],
+        "header": "void buffer_print(buffer_t *self)",
+        "params": [
+            "buffer_t *self"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "self",
+            "len",
+            "i"
+        ],
+        "calle": [
+            "printf"
+        ],
+        "calle_c": [
+            "printf"
+        ],
+        "key": "buffer_print",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_resize": {
+        "source_code": "int buffer_resize(buffer_t *self, size_t n)\n{\n  n = (n + (1024 - 1)) & (~(1024 - 1));\n  self->len = n;\n  self->alloc = (self->data = realloc(self->alloc, n + 1));\n  if (!self->alloc)\n  {\n    return -1;\n  }\n  self->alloc[n] = '\\0';\n  return 0;\n}\n\n",
+        "translated_code": "use std::vec::Vec;\n\npub fn buffer_resize(buffer_t: &mut BufferT, n: usize) -> i32 {\n    // Calculate the new size aligned to 1024 bytes\n    let n = (n + (1024 - 1)) & (!(1024 - 1));\n    buffer_t.len = n;\n\n    // Resize the allocation\n    if let Some(alloc) = &mut buffer_t.alloc {\n        alloc.resize(n + 1, '\\0');\n        buffer_t.data = Some(alloc.clone());\n    } else {\n        // Equivalent to realloc(NULL, size) - create new allocation\n        let mut new_alloc = Vec::with_capacity(n + 1);\n        new_alloc.resize(n + 1, '\\0');\n        buffer_t.alloc = Some(new_alloc.clone());\n        buffer_t.data = Some(new_alloc);\n    }\n\n    // Ensure null termination\n    if let Some(alloc) = &mut buffer_t.alloc {\n        if alloc.len() > n {\n            alloc[n] = '\\0';\n        }\n    }\n\n    0 // Success\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_t"
+        ],
+        "params": [
+            "buffer_t *self",
+            "size_t n"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "self",
+            "n"
+        ],
+        "calle": [
+            "realloc"
+        ],
+        "calle_c": [
+            "realloc"
+        ],
+        "key": "buffer_resize",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_new": {
+        "source_code": "buffer_t *buffer_new()\n{\n  return buffer_new_with_size(64);\n}\n\n",
+        "translated_code": "pub fn buffer_new() -> Option<BufferT> {\n    buffer_new_with_size(64)\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_new_with_size",
+            "buffer_t"
+        ],
+        "header": "buffer_t *buffer_new()",
+        "lifetime_hint": [],
+        "global_variables": [],
+        "calle": [
+            "buffer_new_with_size"
+        ],
+        "calle_c": [],
+        "key": "buffer_new",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_new_with_string": {
+        "source_code": "buffer_t *buffer_new_with_string(char *str)\n{\n  return buffer_new_with_string_length(str, strlen(str));\n}\n\n",
+        "translated_code": "use std::vec::Vec;\n\npub fn buffer_new_with_string(str: Option<Vec<char>>) -> Option<BufferT> {\n    // Convert Option<Vec<char>> to Option<&[char]> for length calculation\n    let len = str.as_ref().map_or(0, |s| s.len());\n    buffer_new_with_string_length(str, len)\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_new_with_string_length",
+            "buffer_t"
+        ],
+        "header": "buffer_t *buffer_new_with_string(char *str)",
+        "params": [
+            "char *str"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "str"
+        ],
+        "calle": [
+            "buffer_new_with_string_length",
+            "strlen"
+        ],
+        "calle_c": [
+            "strlen"
+        ],
+        "key": "buffer_new_with_string",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_new_with_copy": {
+        "source_code": "buffer_t *buffer_new_with_copy(char *str)\n{\n  size_t len = strlen(str);\n  buffer_t *self = buffer_new_with_size(len);\n  if (!self)\n  {\n    return 0;\n  }\n  memcpy(self->alloc, str, len);\n  self->data = self->alloc;\n  return self;\n}\n\n",
+        "translated_code": "use std::ptr;\n\npub fn buffer_new_with_copy(str: Option<&str>) -> Option<BufferT> {\n    // Check if input string is None (equivalent to NULL in C)\n    let str = str?;\n\n    // Calculate length using Rust's len() method (equivalent to strlen)\n    let len = str.len();\n\n    // Create a new buffer with the calculated size\n    let mut self_ = buffer_new_with_size(len)?;\n\n    // Convert the input string to a Vec<char> for copying\n    let src: Vec<char> = str.chars().collect();\n\n    // Copy the string data into the buffer's alloc field\n    if let Some(alloc) = &mut self_.alloc {\n        alloc.extend(src);\n    }\n\n    // Set data to point to alloc (clone the reference)\n    self_.data = self_.alloc.clone();\n\n    Some(self_)\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_new_with_size",
+            "buffer_t"
+        ],
+        "header": "buffer_t *buffer_new_with_copy(char *str)",
+        "params": [
+            "char *str"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "str",
+            "len",
+            "self"
+        ],
+        "calle": [
+            "buffer_new_with_size",
+            "strlen",
+            "memcpy"
+        ],
+        "calle_c": [
+            "strlen",
+            "memcpy"
+        ],
+        "key": "buffer_new_with_copy",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_prepend": {
+        "source_code": "int buffer_prepend(buffer_t *self, char *str)\n{\n  size_t len = strlen(str);\n  size_t prev = strlen(self->data);\n  size_t needed = len + prev;\n  if (self->len > needed)\n  {\n    goto move;\n  }\n  int ret = buffer_resize(self, needed);\n  if ((-1) == ret)\n  {\n    return -1;\n  }\n  move:\n  memmove(self->data + len, self->data, len + 1);\n\n  memcpy(self->data, str, len);\n  return 0;\n}\n\n",
+        "translated_code": "use std::ptr;\n\npub fn buffer_prepend(buffer_t: &mut BufferT, str: &str) -> i32 {\n    let len = str.len();\n    let prev = match &buffer_t.data {\n        Some(data) => data.len(),\n        None => 0,\n    };\n    let needed = len + prev;\n\n    if buffer_t.len > needed {\n        // Skip resizing if there's enough capacity\n    } else {\n        let ret = buffer_resize(buffer_t, needed);\n        if ret == -1 {\n            return -1;\n        }\n    }\n\n    // Move existing data to make space for new string\n    if let Some(data) = &mut buffer_t.data {\n        // Ensure we have enough capacity\n        if data.len() < needed {\n            return -1;\n        }\n\n        // Move existing data to the right by `len` bytes\n        unsafe {\n            ptr::copy(\n                data.as_ptr(),\n                data.as_mut_ptr().add(len),\n                prev,\n            );\n        }\n\n        // Copy new string to the beginning\n        for (i, c) in str.chars().enumerate() {\n            if i >= data.len() {\n                break;\n            }\n            data[i] = c;\n        }\n    } else {\n        // If there was no data, just copy the new string\n        buffer_t.data = Some(str.chars().collect());\n    }\n\n    0\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_resize",
+            "buffer_t"
+        ],
+        "header": "int buffer_prepend(buffer_t *self, char *str)",
+        "params": [
+            "buffer_t *self",
+            "char *str"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "self",
+            "str",
+            "len",
+            "prev",
+            "needed",
+            "ret"
+        ],
+        "calle": [
+            "memmove",
+            "strlen",
+            "memcpy",
+            "buffer_resize"
+        ],
+        "calle_c": [
+            "memmove",
+            "strlen",
+            "memcpy"
+        ],
+        "key": "buffer_prepend",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_append_n": {
+        "source_code": "int buffer_append_n(buffer_t *self, const char *str, size_t len)\n{\n  size_t prev = strlen(self->data);\n  size_t needed = len + prev;\n  if (self->len > needed)\n  {\n    strncat(self->data, str, len);\n    return 0;\n  }\n  int ret = buffer_resize(self, needed);\n  if ((-1) == ret)\n  {\n    return -1;\n  }\n  strncat(self->data, str, len);\n  return 0;\n}\n\n",
+        "translated_code": "use std::vec::Vec;\n\npub fn buffer_append_n(buffer_t: &mut BufferT, str: &[char], len: usize) -> i32 {\n    // Calculate previous length of data\n    let prev = match &buffer_t.data {\n        Some(data) => data.len(),\n        None => 0,\n    };\n\n    let needed = len + prev;\n\n    // Check if current allocation is sufficient\n    if buffer_t.len > needed {\n        if let Some(data) = &mut buffer_t.data {\n            // Append the new characters\n            data.extend(str.iter().take(len));\n        }\n        return 0;\n    }\n\n    // Resize the buffer if needed\n    let ret = buffer_resize(buffer_t, needed);\n    if ret == -1 {\n        return -1;\n    }\n\n    // Append the new characters after successful resize\n    if let Some(data) = &mut buffer_t.data {\n        data.extend(str.iter().take(len));\n    }\n    \n    0\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_resize",
+            "buffer_t"
+        ],
+        "header": "int buffer_append_n(buffer_t *self, const char *str, size_t len)",
+        "params": [
+            "buffer_t *self",
+            "const char *str",
+            "size_t len"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "self",
+            "str",
+            "len",
+            "prev",
+            "needed",
+            "ret"
+        ],
+        "calle": [
+            "strncat",
+            "strlen",
+            "buffer_resize"
+        ],
+        "calle_c": [
+            "strncat",
+            "strlen"
+        ],
+        "key": "buffer_append_n",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_append": {
+        "source_code": "int buffer_append(buffer_t *self, const char *str)\n{\n  return buffer_append_n(self, str, strlen(str));\n}\n\n",
+        "translated_code": "pub fn buffer_append(buffer_t: &mut BufferT, str: &[char]) -> i32 {\n    buffer_append_n(buffer_t, str, str.len())\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_append_n",
+            "buffer_t"
+        ],
+        "header": "int buffer_append(buffer_t *self, const char *str)",
+        "params": [
+            "buffer_t *self",
+            "const char *str"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "self",
+            "str"
+        ],
+        "calle": [
+            "buffer_append_n",
+            "strlen"
+        ],
+        "calle_c": [
+            "strlen"
+        ],
+        "key": "buffer_append",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_slice": {
+        "source_code": "buffer_t *buffer_slice(buffer_t *buf, size_t from, ssize_t to)\n{\n  size_t len = strlen(buf->data);\n  if (to < from)\n  {\n    return 0;\n  }\n  if (to < 0)\n  {\n    to = len - (~to);\n  }\n  if (to > len)\n  {\n    to = len;\n  }\n  size_t n = to - from;\n  buffer_t *self = buffer_new_with_size(n);\n  memcpy(self->data, buf->data + from, n);\n  return self;\n}\n\n",
+        "translated_code": "use std::vec::Vec;\n\npub fn buffer_slice(buf: &BufferT, from: usize, to: isize) -> Option<BufferT> {\n    // Get the length of the data (equivalent to strlen in C)\n    let len = buf.data.as_ref()?.len();\n\n    // Handle negative 'to' index (C's inclusive end index)\n    let to = if to < 0 {\n        len - (!to as usize)  // Equivalent to C's ~to (bitwise NOT)\n    } else {\n        to as usize\n    };\n\n    // Check for invalid range\n    if to < from {\n        return None;\n    }\n\n    // Clamp 'to' to maximum length (Rust slices are exclusive, so no +1 needed)\n    let to = std::cmp::min(to, len);\n\n    // Calculate slice length\n    let n = to - from;\n\n    // Create new buffer with the calculated size\n    let mut self_ = buffer_new_with_size(n)?;\n\n    // Copy the slice (equivalent to memcpy in C)\n    if let (Some(src_data), Some(dest_data)) = (buf.data.as_ref(), self_.data.as_mut()) {\n        dest_data[..n].copy_from_slice(&src_data[from..to]);\n    }\n\n    Some(self_)\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_new_with_size",
+            "buffer_t"
+        ],
+        "header": "buffer_t *buffer_slice(buffer_t *self, size_t from, ssize_t to)",
+        "params": [
+            "buffer_t *buf",
+            "size_t from",
+            "ssize_t to"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "buf",
+            "from",
+            "to",
+            "len",
+            "n",
+            "self"
+        ],
+        "calle": [
+            "buffer_new_with_size",
+            "strlen",
+            "memcpy"
+        ],
+        "calle_c": [
+            "strlen",
+            "memcpy"
+        ],
+        "key": "buffer_slice",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_compact": {
+        "source_code": "ssize_t buffer_compact(buffer_t *self)\n{\n  size_t len = buffer_length(self);\n  size_t rem = self->len - len;\n  char *buf = calloc(len + 1, 1);\n  if (!buf)\n  {\n    return -1;\n  }\n  memcpy(buf, self->data, len);\n  free(self->alloc);\n  self->len = len;\n  self->data = (self->alloc = buf);\n  return rem;\n}\n\n",
+        "translated_code": "use std::ptr;\n\npub fn buffer_compact(self_: &mut BufferT) -> isize {\n    let len = buffer_length(self_);\n    let rem = self_.len - len;\n    \n    // Create a new Vec<char> with capacity len + 1, initialized to zeros\n    let mut buf = vec!['\\0'; len + 1];\n    \n    // Copy data from self_.data to buf if it exists\n    if let Some(data) = &self_.data {\n        if data.len() >= len {\n            buf[..len].copy_from_slice(&data[..len]);\n        } else {\n            // If data is shorter than len, copy what we can\n            buf[..data.len()].copy_from_slice(&data[..]);\n        }\n    }\n    \n    // Replace alloc and data with the new buffer\n    self_.alloc = Some(buf.clone());\n    self_.data = Some(buf);\n    self_.len = len;\n    \n    rem as isize\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_length",
+            "buffer_t"
+        ],
+        "header": "ssize_t buffer_compact(buffer_t *self)",
+        "params": [
+            "buffer_t *self"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "self",
+            "len",
+            "rem",
+            "buf"
+        ],
+        "calle": [
+            "free",
+            "calloc",
+            "memcpy",
+            "buffer_length"
+        ],
+        "calle_c": [
+            "free",
+            "calloc",
+            "memcpy"
+        ],
+        "key": "buffer_compact",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_clear": {
+        "source_code": "void buffer_clear(buffer_t *self)\n{\n  buffer_fill(self, 0);\n}\n\n",
+        "translated_code": "pub fn buffer_clear(buffer_t: &mut BufferT) {\n    buffer_fill(buffer_t, 0);\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_fill",
+            "buffer_t"
+        ],
+        "header": "void buffer_clear(buffer_t *self)",
+        "params": [
+            "buffer_t *self"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "self"
+        ],
+        "calle": [
+            "buffer_fill"
+        ],
+        "calle_c": [],
+        "key": "buffer_clear",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_trim_right": {
+        "source_code": "void buffer_trim_right(buffer_t *self)\n{\n  int c;\n  size_t i = buffer_length(self) - 1;\n  while ((c = self->data[i]) && isspace(c))\n  {\n    self->data[i] = 0;\n    i -= 1;\n  }\n\n}\n\n",
+        "translated_code": "use std::char;\n\npub fn buffer_trim_right(buffer_t: &mut BufferT) {\n    let len = buffer_length(buffer_t);\n    if len == 0 {\n        return;\n    }\n\n    let mut i = len - 1;\n    while let Some(&c) = buffer_t.data.as_ref().and_then(|data| data.get(i)) {\n        if c.is_whitespace() {\n            if let Some(data) = &mut buffer_t.data {\n                data[i] = '\\0';\n            }\n            if i == 0 {\n                break;\n            }\n            i -= 1;\n        } else {\n            break;\n        }\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_length",
+            "buffer_t"
+        ],
+        "header": "void buffer_trim_right(buffer_t *self)",
+        "params": [
+            "buffer_t *self"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "self",
+            "c",
+            "i"
+        ],
+        "calle": [
+            "isspace",
+            "buffer_length"
+        ],
+        "calle_c": [
+            "isspace"
+        ],
+        "key": "buffer_trim_right",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "buffer_appendf": {
+        "source_code": "int buffer_appendf(buffer_t *self, const char *format, ...)\n{\n  va_list ap;\n  va_list tmpa;\n  char *dst = 0;\n  unsigned int dst_idx = 0;\n  int length = 0;\n  int required = 0;\n  int bytes = 0;\n  __builtin_va_start(ap);\n  length = buffer_length(self);\n  va_copy(tmpa, ap);\n  required = vsnprintf(0, 0, format, tmpa);\n  ;\n  if ((-1) == buffer_resize(self, length + required))\n  {\n    ;\n    return -1;\n  }\n  dst_idx = self->data + length;\n  bytes = vsnprintf(dst, 1 + required, format, ap);\n  ;\n  return (bytes < 0) ? (-1) : (0);\n}\n\n",
+        "translated_code": "use std::fmt;\nuse std::os::raw::c_char;\nuse std::ffi::CStr;\nuse std::ptr;\n\npub fn buffer_appendf(self_: &mut BufferT, format: &str, args: fmt::Arguments) -> i32 {\n    // Get current length\n    let length = buffer_length(self_);\n    \n    // Calculate required space\n    let required = fmt::format(args).len();\n    \n    // Resize buffer\n    if buffer_resize(self_, length + required) == -1 {\n        return -1;\n    }\n    \n    // Format into buffer\n    if let Some(data) = &mut self_.data {\n        let dst_idx = length;\n        let formatted = fmt::format(args);\n        let bytes = formatted.len();\n        \n        // Ensure we have enough space\n        if dst_idx + bytes > data.len() {\n            return -1;\n        }\n        \n        // Copy formatted string into buffer\n        data[dst_idx..dst_idx + bytes].copy_from_slice(formatted.chars().collect::<Vec<_>>().as_slice());\n        \n        // Return success (0) or failure (-1)\n        if bytes < 0 { -1 } else { 0 }\n    } else {\n        -1\n    }\n}\n\n// Helper macro to create fmt::Arguments\n#[macro_export]\nmacro_rules! buffer_appendf {\n    ($self:expr, $($arg:tt)*) => {\n        buffer_appendf($self, format_args!($($arg)*))\n    };\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_length",
+            "buffer_resize",
+            "buffer_t"
+        ],
+        "header": "int buffer_appendf(buffer_t *self, const char *format, ...)",
+        "params": [
+            "buffer_t *self",
+            "const char *format",
+            "..."
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "self",
+            "format",
+            "ap",
+            "tmpa",
+            "dst",
+            "dst_idx",
+            "length",
+            "required",
+            "bytes"
+        ],
+        "calle": [
+            "va_copy",
+            "__builtin_va_start",
+            "vsnprintf",
+            "buffer_length",
+            "buffer_resize"
+        ],
+        "calle_c": [
+            "va_copy",
+            "__builtin_va_start",
+            "vsnprintf"
+        ],
+        "key": "buffer_appendf",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "buffer_trim": {
+        "source_code": "void buffer_trim(buffer_t *self)\n{\n  buffer_trim_left(self);\n  buffer_trim_right(self);\n}\n\n",
+        "translated_code": "pub fn buffer_trim(buffer_t: &mut BufferT) {\n    buffer_trim_left(buffer_t);\n    buffer_trim_right(buffer_t);\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "buffer.rs",
+        "error": "",
+        "dependent": [
+            "buffer_t",
+            "buffer_trim_left",
+            "buffer_trim_right"
+        ],
+        "header": "void buffer_trim(buffer_t *self)",
+        "params": [
+            "buffer_t *self"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "self"
+        ],
+        "calle": [
+            "buffer_trim_right",
+            "buffer_trim_left"
+        ],
+        "calle_c": [],
+        "key": "buffer_trim",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_buffer_slice__range_error": {
+        "source_code": "void test_buffer_slice__range_error()\n{\n  buffer_t *buf = buffer_new_with_copy(\"Tobi Ferret\");\n  buffer_t *a = buffer_slice(buf, 10, 2);\n  assert(0 == a);\n  buffer_free(buf);\n}\n\n",
+        "translated_code": "pub fn test_buffer_slice__range_error() {\n    let buf = buffer_new_with_copy(Some(\"Tobi Ferret\"));\n    let a = buffer_slice(buf.as_ref().unwrap(), 10, 2);\n    assert!(a.is_none());\n    buf.unwrap().buffer_free();\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "buffer_free",
+            "buffer_new_with_copy",
+            "buffer_slice",
+            "buffer_t"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "buf",
+            "a"
+        ],
+        "calle": [
+            "assert",
+            "buffer_slice",
+            "buffer_free",
+            "buffer_new_with_copy"
+        ],
+        "calle_c": [
+            "assert"
+        ],
+        "key": "test_buffer_slice__range_error",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_buffer_indexof": {
+        "source_code": "void test_buffer_indexof()\n{\n  buffer_t *buf = buffer_new_with_copy(\"Tobi is a ferret\");\n  ssize_t i = buffer_indexof(buf, \"is\");\n  assert(5 == i);\n  i = buffer_indexof(buf, \"a\");\n  assert(8 == i);\n  i = buffer_indexof(buf, \"something\");\n  assert((-1) == i);\n  buffer_free(buf);\n}\n\n",
+        "translated_code": "pub fn test_buffer_indexof() {\n    let buf = buffer_new_with_copy(Some(\"Tobi is a ferret\"));\n    let buf_ref = buf.as_ref().unwrap();\n    let i = buffer_indexof(buf_ref, \"is\");\n    assert!(5 == i);\n    let i = buffer_indexof(buf_ref, \"a\");\n    assert!(8 == i);\n    let i = buffer_indexof(buf_ref, \"something\");\n    assert!((-1) == i);\n    buf.unwrap().buffer_free();\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "buffer_free",
+            "buffer_indexof",
+            "buffer_new_with_copy",
+            "buffer_t"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "buf",
+            "i"
+        ],
+        "calle": [
+            "assert",
+            "buffer_free",
+            "buffer_indexof",
+            "buffer_new_with_copy"
+        ],
+        "calle_c": [
+            "assert"
+        ],
+        "key": "test_buffer_indexof",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_buffer_new": {
+        "source_code": "void test_buffer_new()\n{\n  buffer_t *buf = buffer_new();\n  assert(64 == buffer_size(buf));\n  assert(0 == buffer_length(buf));\n  buffer_free(buf);\n}\n\n",
+        "translated_code": "pub fn test_buffer_new() {\n    let mut buf = buffer_new().expect(\"buffer_new failed\");\n    assert_eq!(64, buf.buffer_size());\n    assert_eq!(0, buffer_length(&buf));\n    buf.buffer_free();\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "buffer_free",
+            "buffer_length",
+            "buffer_new",
+            "buffer_size",
+            "buffer_t"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "buf"
+        ],
+        "calle": [
+            "buffer_free",
+            "assert",
+            "buffer_length",
+            "buffer_size",
+            "buffer_new"
+        ],
+        "calle_c": [
+            "assert"
+        ],
+        "key": "test_buffer_new",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_buffer_new_with_size": {
+        "source_code": "void test_buffer_new_with_size()\n{\n  buffer_t *buf = buffer_new_with_size(1024);\n  assert(1024 == buffer_size(buf));\n  assert(0 == buffer_length(buf));\n  buffer_free(buf);\n}\n\n",
+        "translated_code": "pub fn test_buffer_new_with_size() {\n    let mut buf = buffer_new_with_size(1024).expect(\"Failed to create buffer\");\n    assert!(1024 == buf.buffer_size());\n    assert!(0 == buffer_length(&buf));\n    buf.buffer_free();\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "buffer_free",
+            "buffer_length",
+            "buffer_new_with_size",
+            "buffer_size",
+            "buffer_t"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "buf"
+        ],
+        "calle": [
+            "buffer_free",
+            "assert",
+            "buffer_new_with_size",
+            "buffer_length",
+            "buffer_size"
+        ],
+        "calle_c": [
+            "assert"
+        ],
+        "key": "test_buffer_new_with_size",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_buffer_slice__end": {
+        "source_code": "void test_buffer_slice__end()\n{\n  buffer_t *buf = buffer_new_with_copy(\"Tobi Ferret\");\n  buffer_t *a = buffer_slice(buf, 5, -1);\n  equal(\"Tobi Ferret\", buf->data);\n  equal(\"Ferret\", a->data);\n  buffer_t *b = buffer_slice(buf, 5, -3);\n  equal(\"Ferr\", b->data);\n  buffer_t *c = buffer_slice(buf, 8, -1);\n  equal(\"ret\", c->data);\n  buffer_free(buf);\n  buffer_free(a);\n  buffer_free(b);\n  buffer_free(c);\n}\n\n",
+        "translated_code": "pub fn test_buffer_slice__end() {\n    let mut buf = buffer_new_with_copy(Some(\"Tobi Ferret\")).unwrap();\n    let mut a = buffer_slice(&buf, 5, -1).unwrap();\n    equal(\"Tobi Ferret\", &buf.data.as_ref().unwrap().iter().collect::<String>());\n    equal(\"Ferret\", &a.data.as_ref().unwrap().iter().collect::<String>());\n    \n    let mut b = buffer_slice(&buf, 5, -3).unwrap();\n    equal(\"Ferr\", &b.data.as_ref().unwrap().iter().collect::<String>());\n    \n    let mut c = buffer_slice(&buf, 8, -1).unwrap();\n    equal(\"ret\", &c.data.as_ref().unwrap().iter().collect::<String>());\n    \n    buf.buffer_free();\n    a.buffer_free();\n    b.buffer_free();\n    c.buffer_free();\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "buffer_free",
+            "buffer_new_with_copy",
+            "buffer_slice",
+            "buffer_t",
+            "equal"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "buf",
+            "a",
+            "b",
+            "c"
+        ],
+        "calle": [
+            "buffer_slice",
+            "equal",
+            "buffer_free",
+            "buffer_new_with_copy"
+        ],
+        "calle_c": [],
+        "key": "test_buffer_slice__end",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_buffer_slice__end_overflow": {
+        "source_code": "void test_buffer_slice__end_overflow()\n{\n  buffer_t *buf = buffer_new_with_copy(\"Tobi Ferret\");\n  buffer_t *a = buffer_slice(buf, 5, 1000);\n  equal(\"Tobi Ferret\", buf->data);\n  equal(\"Ferret\", a->data);\n  buffer_free(a);\n  buffer_free(buf);\n}\n\n",
+        "translated_code": "pub fn test_buffer_slice__end_overflow() {\n    let mut buf = buffer_new_with_copy(Some(\"Tobi Ferret\")).expect(\"Failed to create buffer\");\n    let mut a = buffer_slice(&buf, 5, 1000).expect(\"Failed to create slice\");\n    \n    // Convert Vec<char> to String for comparison\n    let buf_data: String = buf.data.as_ref().unwrap().iter().collect();\n    equal(\"Tobi Ferret\", &buf_data);\n    \n    let a_data: String = a.data.as_ref().unwrap().iter().collect();\n    equal(\"Ferret\", &a_data);\n    \n    a.buffer_free();\n    buf.buffer_free();\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "buffer_free",
+            "buffer_new_with_copy",
+            "buffer_slice",
+            "buffer_t",
+            "equal"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "buf",
+            "a"
+        ],
+        "calle": [
+            "buffer_slice",
+            "equal",
+            "buffer_free",
+            "buffer_new_with_copy"
+        ],
+        "calle_c": [],
+        "key": "test_buffer_slice__end_overflow",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_buffer_equals": {
+        "source_code": "void test_buffer_equals()\n{\n  buffer_t *a = buffer_new_with_copy(\"Hello\");\n  buffer_t *b = buffer_new_with_copy(\"Hello\");\n  assert(1 == buffer_equals(a, b));\n  buffer_append(b, \" World\");\n  assert(0 == buffer_equals(a, b));\n  buffer_free(a);\n  buffer_free(b);\n}\n\n",
+        "translated_code": "pub fn test_buffer_equals() {\n    let a = buffer_new_with_copy(Some(\"Hello\"));\n    let mut b = buffer_new_with_copy(Some(\"Hello\"));\n    assert!(buffer_equals(a.as_ref().unwrap(), b.as_ref().unwrap()));\n    \n    {\n        let b_ref = b.as_ref().unwrap();\n        buffer_append(&mut b.as_mut().unwrap(), &[' ', 'W', 'o', 'r', 'l', 'd']);\n    }\n    \n    assert!(!buffer_equals(a.as_ref().unwrap(), b.as_ref().unwrap()));\n    \n    // No explicit free needed in Rust - Drop trait handles cleanup\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "buffer_append",
+            "buffer_equals",
+            "buffer_free",
+            "buffer_new_with_copy",
+            "buffer_t"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "a",
+            "b"
+        ],
+        "calle": [
+            "buffer_free",
+            "assert",
+            "buffer_equals",
+            "buffer_new_with_copy",
+            "buffer_append"
+        ],
+        "calle_c": [
+            "assert"
+        ],
+        "key": "test_buffer_equals",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_buffer_formatting": {
+        "source_code": "void test_buffer_formatting()\n{\n  buffer_t *buf = buffer_new();\n  int result = buffer_appendf(buf, \"%d %s\", 3, \"cow\");\n  assert(0 == result);\n  equal(\"3 cow\", buf->data);\n  result = buffer_appendf(buf, \" - 0x%08X\", 0xdeadbeef);\n  assert(0 == result);\n  equal(\"3 cow - 0xDEADBEEF\", buf->data);\n  buffer_free(buf);\n}\n\n",
+        "translated_code": "pub fn test_buffer_formatting() {\n    let mut buf = buffer_new().expect(\"Failed to create buffer\");\n    \n    let result = buffer_appendf(&mut buf, \"{} {}\", format_args!(\"{} {}\", 3, \"cow\"));\n    assert_eq!(0, result);\n    equal(\"3 cow\", &buf.data.as_ref().unwrap().iter().collect::<String>());\n    \n    let result = buffer_appendf(&mut buf, \" - 0x{:08X}\", format_args!(\" - 0x{:08X}\", 0xdeadbeefu32));\n    assert_eq!(0, result);\n    equal(\"3 cow - 0xDEADBEEF\", &buf.data.as_ref().unwrap().iter().collect::<String>());\n    \n    buf.buffer_free();\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "buffer_appendf",
+            "buffer_free",
+            "buffer_new",
+            "buffer_t",
+            "equal"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "buf",
+            "result"
+        ],
+        "calle": [
+            "buffer_free",
+            "buffer_appendf",
+            "assert",
+            "equal",
+            "buffer_new"
+        ],
+        "calle_c": [
+            "assert"
+        ],
+        "key": "test_buffer_formatting",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_buffer_fill": {
+        "source_code": "void test_buffer_fill()\n{\n  buffer_t *buf = buffer_new_with_copy(\"Hello\");\n  assert(5 == buffer_length(buf));\n  buffer_fill(buf, 0);\n  assert(0 == buffer_length(buf));\n  buffer_free(buf);\n}\n\n",
+        "translated_code": "pub fn test_buffer_fill() {\n    let mut buf = buffer_new_with_copy(Some(\"Hello\")).expect(\"Failed to create buffer\");\n    assert_eq!(5, buffer_length(&buf));\n    buffer_fill(&mut buf, 0);\n    assert_eq!(0, buffer_length(&buf));\n    buf.buffer_free();\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "buffer_fill",
+            "buffer_free",
+            "buffer_length",
+            "buffer_new_with_copy",
+            "buffer_t"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "buf"
+        ],
+        "calle": [
+            "buffer_free",
+            "buffer_fill",
+            "assert",
+            "buffer_length",
+            "buffer_new_with_copy"
+        ],
+        "calle_c": [
+            "assert"
+        ],
+        "key": "test_buffer_fill",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_buffer_clear": {
+        "source_code": "void test_buffer_clear()\n{\n  buffer_t *buf = buffer_new_with_copy(\"Hello\");\n  assert(5 == buffer_length(buf));\n  buffer_clear(buf);\n  assert(0 == buffer_length(buf));\n  buffer_free(buf);\n}\n\n",
+        "translated_code": "pub fn test_buffer_clear() {\n    let mut buf = buffer_new_with_copy(Some(\"Hello\")).expect(\"Failed to create buffer\");\n    assert_eq!(5, buffer_length(&buf));\n    buffer_clear(&mut buf);\n    assert_eq!(0, buffer_length(&buf));\n    buf.buffer_free();\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "buffer_clear",
+            "buffer_free",
+            "buffer_length",
+            "buffer_new_with_copy",
+            "buffer_t"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "buf"
+        ],
+        "calle": [
+            "buffer_free",
+            "assert",
+            "buffer_length",
+            "buffer_new_with_copy",
+            "buffer_clear"
+        ],
+        "calle_c": [
+            "assert"
+        ],
+        "key": "test_buffer_clear",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_buffer_append": {
+        "source_code": "void test_buffer_append()\n{\n  buffer_t *buf = buffer_new();\n  assert(0 == buffer_append(buf, \"Hello\"));\n  assert(0 == buffer_append(buf, \" World\"));\n  assert(strlen(\"Hello World\") == buffer_length(buf));\n  equal(\"Hello World\", buf->data);\n  buffer_free(buf);\n}\n\n",
+        "translated_code": "pub fn test_buffer_append() {\n    let mut buf = buffer_new().expect(\"Failed to create buffer\");\n    \n    assert_eq!(0, buffer_append(&mut buf, &['H', 'e', 'l', 'l', 'o']));\n    assert_eq!(0, buffer_append(&mut buf, &[' ', 'W', 'o', 'r', 'l', 'd']));\n    \n    let expected_len = \"Hello World\".chars().count();\n    assert_eq!(expected_len, buffer_length(&buf));\n    \n    let expected_data: Vec<char> = \"Hello World\".chars().collect();\n    assert_eq!(expected_data, *buf.data.as_ref().unwrap());\n    \n    buf.buffer_free();\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "buffer_append",
+            "buffer_free",
+            "buffer_length",
+            "buffer_new",
+            "buffer_t",
+            "equal"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "buf"
+        ],
+        "calle": [
+            "buffer_free",
+            "assert",
+            "equal",
+            "buffer_length",
+            "buffer_new",
+            "buffer_append",
+            "strlen"
+        ],
+        "calle_c": [
+            "strlen",
+            "assert"
+        ],
+        "key": "test_buffer_append",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_buffer_append_n": {
+        "source_code": "void test_buffer_append_n()\n{\n  buffer_t *buf = buffer_new();\n  assert(0 == buffer_append_n(buf, \"subway\", 3));\n  assert(0 == buffer_append_n(buf, \"marines\", 6));\n  assert(strlen(\"submarine\") == buffer_length(buf));\n  equal(\"submarine\", buf->data);\n  buffer_free(buf);\n}\n\n",
+        "translated_code": "pub fn test_buffer_append_n() {\n    let mut buf = buffer_new().expect(\"Failed to create buffer\");\n    \n    // First append\n    assert_eq!(0, buffer_append_n(&mut buf, &['s', 'u', 'b', 'w', 'a', 'y'], 3));\n    \n    // Second append\n    assert_eq!(0, buffer_append_n(&mut buf, &['m', 'a', 'r', 'i', 'n', 'e', 's'], 6));\n    \n    // Check length\n    assert_eq!(\"submarine\".len(), buffer_length(&buf));\n    \n    // Check content\n    let expected = \"submarine\".chars().collect::<Vec<char>>();\n    let actual = buf.data.as_ref().expect(\"Buffer data is None\");\n    equal(&expected.iter().collect::<String>(), &actual.iter().collect::<String>());\n    \n    // Free the buffer\n    drop(buf);\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "buffer_append_n",
+            "buffer_free",
+            "buffer_length",
+            "buffer_new",
+            "buffer_t",
+            "equal"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "buf"
+        ],
+        "calle": [
+            "buffer_free",
+            "assert",
+            "buffer_append_n",
+            "equal",
+            "buffer_length",
+            "buffer_new",
+            "strlen"
+        ],
+        "calle_c": [
+            "strlen",
+            "assert"
+        ],
+        "key": "test_buffer_append_n",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_buffer_slice": {
+        "source_code": "void test_buffer_slice()\n{\n  buffer_t *buf = buffer_new();\n  buffer_append(buf, \"Tobi Ferret\");\n  buffer_t *a = buffer_slice(buf, 2, 8);\n  equal(\"Tobi Ferret\", buf->data);\n  equal(\"bi Fer\", a->data);\n  buffer_free(buf);\n  buffer_free(a);\n}\n\n",
+        "translated_code": "pub fn test_buffer_slice() {\n    let mut buf = buffer_new().expect(\"Failed to create buffer\");\n    buffer_append(&mut buf, &['T', 'o', 'b', 'i', ' ', 'F', 'e', 'r', 'r', 'e', 't']);\n    \n    let mut a = buffer_slice(&buf, 2, 8).expect(\"Failed to create slice\");\n    \n    // Convert Vec<char> to String for comparison\n    let buf_data: String = buf.data.as_ref().unwrap().iter().collect();\n    equal(\"Tobi Ferret\", &buf_data);\n    \n    let a_data: String = a.data.as_ref().unwrap().iter().collect();\n    equal(\"bi Fer\", &a_data);\n    \n    buf.buffer_free();\n    a.buffer_free();\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "buffer_append",
+            "buffer_free",
+            "buffer_new",
+            "buffer_slice",
+            "buffer_t",
+            "equal"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "buf",
+            "a"
+        ],
+        "calle": [
+            "buffer_free",
+            "equal",
+            "buffer_slice",
+            "buffer_new",
+            "buffer_append"
+        ],
+        "calle_c": [],
+        "key": "test_buffer_slice",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_buffer_append__grow": {
+        "source_code": "void test_buffer_append__grow()\n{\n  buffer_t *buf = buffer_new_with_size(10);\n  assert(0 == buffer_append(buf, \"Hello\"));\n  assert(0 == buffer_append(buf, \" tobi\"));\n  assert(0 == buffer_append(buf, \" was\"));\n  assert(0 == buffer_append(buf, \" here\"));\n  char *str = \"Hello tobi was here\";\n  equal(str, buf->data);\n  assert(1024 == buffer_size(buf));\n  assert(strlen(str) == buffer_length(buf));\n  buffer_free(buf);\n}\n\n",
+        "translated_code": "pub fn test_buffer_append__grow() {\n    let mut buf = buffer_new_with_size(10).expect(\"Failed to create buffer\");\n    \n    assert_eq!(0, buffer_append(&mut buf, &['H', 'e', 'l', 'l', 'o']));\n    assert_eq!(0, buffer_append(&mut buf, &[' ', 't', 'o', 'b', 'i']));\n    assert_eq!(0, buffer_append(&mut buf, &[' ', 'w', 'a', 's']));\n    assert_eq!(0, buffer_append(&mut buf, &[' ', 'h', 'e', 'r', 'e']));\n    \n    let str = \"Hello tobi was here\";\n    let buf_data: String = buf.data.as_ref().unwrap().iter().collect();\n    equal(str, &buf_data);\n    \n    assert_eq!(1024, buf.buffer_size());\n    assert_eq!(str.len(), buffer_length(&buf));\n    \n    buf.buffer_free();\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "buffer_append",
+            "buffer_free",
+            "buffer_length",
+            "buffer_new_with_size",
+            "buffer_size",
+            "buffer_t",
+            "equal"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "buf",
+            "str"
+        ],
+        "calle": [
+            "buffer_free",
+            "assert",
+            "equal",
+            "buffer_new_with_size",
+            "buffer_size",
+            "buffer_length",
+            "buffer_append",
+            "strlen"
+        ],
+        "calle_c": [
+            "strlen",
+            "assert"
+        ],
+        "key": "test_buffer_append__grow",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_buffer_prepend": {
+        "source_code": "void test_buffer_prepend()\n{\n  buffer_t *buf = buffer_new();\n  assert(0 == buffer_append(buf, \" World\"));\n  assert(0 == buffer_prepend(buf, \"Hello\"));\n  assert(strlen(\"Hello World\") == buffer_length(buf));\n  equal(\"Hello World\", buf->data);\n  buffer_free(buf);\n}\n\n",
+        "translated_code": "pub fn test_buffer_prepend() {\n    let mut buf = buffer_new().expect(\"Failed to create buffer\");\n    \n    assert!(buffer_append(&mut buf, &[' ', 'W', 'o', 'r', 'l', 'd']) == 0);\n    assert!(buffer_prepend(&mut buf, \"Hello\") == 0);\n    assert!(\"Hello World\".len() == buffer_length(&buf));\n    \n    let expected: Vec<char> = \"Hello World\".chars().collect();\n    equal(&buf.data.as_ref().unwrap().iter().collect::<String>(), &expected.iter().collect::<String>());\n    \n    buf.buffer_free();\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "buffer_append",
+            "buffer_free",
+            "buffer_length",
+            "buffer_new",
+            "buffer_prepend",
+            "buffer_t",
+            "equal"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "buf"
+        ],
+        "calle": [
+            "buffer_free",
+            "buffer_prepend",
+            "assert",
+            "equal",
+            "buffer_length",
+            "buffer_new",
+            "buffer_append",
+            "strlen"
+        ],
+        "calle_c": [
+            "strlen",
+            "assert"
+        ],
+        "key": "test_buffer_prepend",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_buffer_trim": {
+        "source_code": "void test_buffer_trim()\n{\n  buffer_t *buf = buffer_new_with_copy(\"  Hello\\n\\n \");\n  unsigned int buf_idx = 0;\n  buffer_trim(buf);\n  equal(\"Hello\", buf->data);\n  buffer_free(buf);\n  buf_idx = buffer_new_with_copy(\"  Hello\\n\\n \");\n  buffer_trim_left(buf);\n  equal(\"Hello\\n\\n \", buf->data);\n  buffer_free(buf);\n  buf_idx = buffer_new_with_copy(\"  Hello\\n\\n \");\n  buffer_trim_right(buf);\n  equal(\"  Hello\", buf->data);\n  buffer_free(buf);\n}\n\n",
+        "translated_code": "pub fn test_buffer_trim() {\n    // Test buffer_trim\n    let mut buf = buffer_new_with_copy(Some(\"  Hello\\n\\n \")).unwrap();\n    buffer_trim(&mut buf);\n    equal(\"Hello\", &buf.data.as_ref().unwrap().iter().collect::<String>());\n    buf.buffer_free();\n\n    // Test buffer_trim_left\n    let mut buf = buffer_new_with_copy(Some(\"  Hello\\n\\n \")).unwrap();\n    buffer_trim_left(&mut buf);\n    equal(\"Hello\\n\\n \", &buf.data.as_ref().unwrap().iter().collect::<String>());\n    buf.buffer_free();\n\n    // Test buffer_trim_right\n    let mut buf = buffer_new_with_copy(Some(\"  Hello\\n\\n \")).unwrap();\n    buffer_trim_right(&mut buf);\n    equal(\"  Hello\", &buf.data.as_ref().unwrap().iter().collect::<String>());\n    buf.buffer_free();\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "buffer_free",
+            "buffer_new_with_copy",
+            "buffer_t",
+            "buffer_trim",
+            "buffer_trim_left",
+            "buffer_trim_right",
+            "equal"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "buf",
+            "buf_idx"
+        ],
+        "calle": [
+            "buffer_free",
+            "buffer_trim_left",
+            "equal",
+            "buffer_new_with_copy",
+            "buffer_trim",
+            "buffer_trim_right"
+        ],
+        "calle_c": [],
+        "key": "test_buffer_trim",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "test_buffer_compact": {
+        "source_code": "void test_buffer_compact()\n{\n  buffer_t *buf = buffer_new_with_copy(\"  Hello\\n\\n \");\n  buffer_trim(buf);\n  assert(5 == buffer_length(buf));\n  assert(10 == buffer_size(buf));\n  ssize_t removed = buffer_compact(buf);\n  assert(5 == removed);\n  assert(5 == buffer_length(buf));\n  assert(5 == buffer_size(buf));\n  equal(\"Hello\", buf->data);\n  buffer_free(buf);\n}\n\n",
+        "translated_code": "pub fn test_buffer_compact() {\n    let mut buf = buffer_new_with_copy(Some(\"  Hello\\n\\n \")).expect(\"Failed to create buffer\");\n    buffer_trim(&mut buf);\n    assert!(5 == buffer_length(&buf));\n    assert!(10 == buf.buffer_size());\n    let removed = buffer_compact(&mut buf);\n    assert!(5 == removed);\n    assert!(5 == buffer_length(&buf));\n    assert!(5 == buf.buffer_size());\n    equal(\"Hello\", &buf.data.as_ref().expect(\"Buffer data is empty\").iter().collect::<String>());\n    buf.buffer_free();\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "buffer_compact",
+            "buffer_free",
+            "buffer_length",
+            "buffer_new_with_copy",
+            "buffer_size",
+            "buffer_t",
+            "buffer_trim",
+            "equal"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "buf",
+            "removed"
+        ],
+        "calle": [
+            "buffer_free",
+            "assert",
+            "equal",
+            "buffer_length",
+            "buffer_size",
+            "buffer_new_with_copy",
+            "buffer_trim",
+            "buffer_compact"
+        ],
+        "calle_c": [
+            "assert"
+        ],
+        "key": "test_buffer_compact",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "main#test": {
+        "source_code": "int main()\n{\n  test_buffer_new();\n  test_buffer_new_with_size();\n  test_buffer_append();\n  test_buffer_append__grow();\n  test_buffer_append_n();\n  test_buffer_prepend();\n  test_buffer_slice();\n  test_buffer_slice__range_error();\n  test_buffer_slice__end();\n  test_buffer_slice__end_overflow();\n  test_buffer_equals();\n  test_buffer_formatting();\n  test_buffer_indexof();\n  test_buffer_fill();\n  test_buffer_clear();\n  test_buffer_trim();\n  test_buffer_compact();\n  printf(\"\\n  \\e[32m\\u2713 \\e[90mok\\e[0m\\n\\n\");\n  return 0;\n}\n\n",
+        "translated_code": "pub fn main() {\n    test_buffer_new();\n    test_buffer_new_with_size();\n    test_buffer_append();\n    test_buffer_append__grow();\n    test_buffer_append_n();\n    test_buffer_prepend();\n    test_buffer_slice();\n    test_buffer_slice__range_error();\n    test_buffer_slice__end();\n    test_buffer_slice__end_overflow();\n    test_buffer_equals();\n    test_buffer_formatting();\n    test_buffer_indexof();\n    test_buffer_fill();\n    test_buffer_clear();\n    test_buffer_trim();\n    test_buffer_compact();\n    println!(\"\\n  \\x1b[32m\\u{2713} \\x1b[90mok\\x1b[0m\\n\\n\");\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "test_buffer_append",
+            "test_buffer_append__grow",
+            "test_buffer_append_n",
+            "test_buffer_clear",
+            "test_buffer_compact",
+            "test_buffer_equals",
+            "test_buffer_fill",
+            "test_buffer_formatting",
+            "test_buffer_indexof",
+            "test_buffer_new",
+            "test_buffer_new_with_size",
+            "test_buffer_prepend",
+            "test_buffer_slice",
+            "test_buffer_slice__end",
+            "test_buffer_slice__end_overflow",
+            "test_buffer_slice__range_error",
+            "test_buffer_trim"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [],
+        "calle": [
+            "test_buffer_prepend",
+            "test_buffer_slice__range_error",
+            "test_buffer_append_n",
+            "test_buffer_fill",
+            "test_buffer_trim",
+            "printf",
+            "test_buffer_new",
+            "test_buffer_compact",
+            "test_buffer_formatting",
+            "test_buffer_append__grow",
+            "test_buffer_slice__end",
+            "test_buffer_slice",
+            "test_buffer_new_with_size",
+            "test_buffer_slice__end_overflow",
+            "test_buffer_indexof",
+            "test_buffer_clear",
+            "test_buffer_append",
+            "test_buffer_equals"
+        ],
+        "calle_c": [
+            "printf"
+        ],
+        "key": "main#test",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    }
+}

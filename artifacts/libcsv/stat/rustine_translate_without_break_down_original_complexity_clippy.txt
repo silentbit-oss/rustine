@@ -1,0 +1,14 @@
+warning: called `unwrap` on `cb1` after checking its variant with `is_some`
+warning: called `unwrap` on `cb1` after checking its variant with `is_some`
+warning: called `unwrap` on `cb1` after checking its variant with `is_some`
+warning: called `unwrap` on `cb1` after checking its variant with `is_some`
+warning: called `unwrap` on `cb1` after checking its variant with `is_some`
+warning: called `unwrap` on `cb1` after checking its variant with `is_some`
+warning: called `unwrap` on `cb1` after checking its variant with `is_some`
+warning: called `unwrap` on `cb2` after checking its variant with `is_some`
+warning: called `unwrap` on `cb2` after checking its variant with `is_some`
+warning: called `unwrap` on `cb2` after checking its variant with `is_some`
+warning: called `unwrap` on `cb2` after checking its variant with `is_some`
+warning: this function has too many arguments (9/7)
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions

@@ -1,0 +1,321 @@
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: variant `ZOPFLI_FORMAT_GZIP` should have an upper camel case name
+warning: variant `ZOPFLI_FORMAT_ZLIB` should have an upper camel case name
+warning: variant `ZOPFLI_FORMAT_DEFLATE` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: unused import: `std::default::Default`
+warning: unused import: `std::ffi::CStr`
+warning: unused import: `std::io`
+warning: unused import: `std::os::raw::c_char`
+warning: unused import: `std::time::Duration`
+warning: unused import: `std::time::Instant`
+warning: unused import: `std::alloc::Layout`
+warning: unused import: `std::alloc`
+warning: unused import: `std::ptr`
+warning: unused import: `rand::Rng`
+warning: unused import: `std::cmp`
+warning: unused import: `std::mem`
+warning: unused import: `std::ptr`
+warning: unnecessary parentheses around index expression
+warning: unnecessary parentheses around index expression
+warning: unused import: `rand::Rng`
+warning: unused import: `std::ptr`
+warning: unused import: `std::process`
+warning: unused import: `std::f64::consts::LN_2`
+warning: unused import: `std::vec::Vec`
+warning: unused import: `std::usize`
+warning: unused import: `std::process`
+warning: unused import: `std::io::Write`
+warning: unused import: `rand::Rng`
+warning: unused import: `rand::Rng`
+warning: unused variable: `in_data`
+warning: value assigned to `llpos` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `detect_block_size` is never read
+warning: unused variable: `fixedcost`
+warning: variable does not need to be mutable
+warning: unused variable: `node_idx`
+warning: variable does not need to be mutable
+warning: unused variable: `i`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `dist` is never read
+warning: value assigned to `i` is never read
+warning: value assigned to `lengthscore` is never read
+warning: variable `total_length_test` is assigned to, but never used
+warning: unused variable: `unused`
+warning: unreachable pattern
+warning: importing legacy numeric constants
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: the loop variable `i` is used to index `repetitive_data`
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: variables can be used directly in the `format!` string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: the loop variable `i` is used to index `binary_data`
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: variables can be used directly in the `format!` string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: variables can be used directly in the `format!` string
+warning: literal with an empty format string
+warning: variables can be used directly in the `format!` string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: length comparison to zero
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: using `write!()` with a format string that ends in a single newline
+warning: variables can be used directly in the `format!` string
+warning: the loop variable `i` is used to index `vp`
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut u8` -> `*mut u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut u8` -> `*mut u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut u8` -> `*mut u8`)
+warning: the loop variable `i` is only used to index `ll_lengths`
+warning: the loop variable `i` is only used to index `ll_lengths`
+warning: the loop variable `i` is only used to index `ll_lengths`
+warning: the loop variable `i` is only used to index `ll_lengths`
+warning: the loop variable `i` is only used to index `d_lengths`
+warning: manual absolute difference pattern without using `abs_diff`
+warning: this function has too many arguments (8/7)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: unneeded `return` statement
+warning: this function has too many arguments (11/7)
+warning: manual `RangeInclusive::contains` implementation
+warning: this function has too many arguments (10/7)
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (9/7)
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: variables can be used directly in the `format!` string
+warning: importing legacy numeric constants
+warning: the loop variable `i` is only used to index `lists`
+warning: the loop variable `i` is only used to index `bitlengths`
+warning: the loop variable `i` is used to index `frequencies`
+warning: the loop variable `i` is only used to index `leaves`
+warning: casting integer literal to `usize` is unnecessary
+warning: the loop variable `i` is only used to index `leaves`
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: variables can be used directly in the `format!` string
+warning: manually reimplementing `div_ceil`
+warning: it looks like you're manually copying between slices
+warning: the loop variable `i` is only used to index `lz77_ll_symbol`
+warning: it looks like you're manually copying between slices
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this function has too many arguments (9/7)
+warning: this `else { if .. }` block can be collapsed
+warning: manual arithmetic check found
+warning: deref which would be done by auto-deref
+warning: this looks like you are swapping elements of `vec` manually
+warning: this function has too many arguments (9/7)
+warning: manual arithmetic check found
+warning: the loop variable `i` is only used to index `costs`
+warning: this function has too many arguments (8/7)
+warning: manual arithmetic check found
+warning: the loop variable `i` is only used to index `path`
+warning: this function has too many arguments (12/7)
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `impl` can be derived
+warning: the loop variable `i` is only used to index `symbols`
+warning: approximate value of `f{32, 64}::consts::LOG2_E` found
+warning: variables can be used directly in the `format!` string
+warning: importing legacy numeric constants
+warning: this operation has no effect
+warning: this operation has no effect
+warning: variables can be used directly in the `format!` string
+warning: the loop variable `i` is only used to index `head`
+warning: the loop variable `i` is only used to index `same`
+warning: the loop variable `i` is only used to index `head2`
+warning: function `ZopfliBlockSplitSimple` should have a snake case name
+warning: function `AddSorted` should have a snake case name
+warning: function `FindLargestSplittableBlock` should have a snake case name
+warning: function `PrintBlockSplitPoints` should have a snake case name
+warning: function `FindMinimum` should have a snake case name
+warning: function `EstimateCost` should have a snake case name
+warning: function `SplitCost` should have a snake case name
+warning: function `ZopfliBlockSplitLZ77` should have a snake case name
+warning: function `ZopfliBlockSplit` should have a snake case name
+warning: function `ZopfliGetDistExtraBits` should have a snake case name
+warning: function `ZopfliGetDistExtraBitsValue` should have a snake case name
+warning: function `ZopfliGetDistSymbol` should have a snake case name
+warning: function `ZopfliGetLengthExtraBits` should have a snake case name
+warning: function `ZopfliGetLengthExtraBitsValue` should have a snake case name
+warning: function `ZopfliGetLengthSymbol` should have a snake case name
+warning: function `ZopfliGetLengthSymbolExtraBits` should have a snake case name
+warning: function `ZopfliGetDistSymbolExtraBits` should have a snake case name
+warning: function `AddBit` should have a snake case name
+warning: function `AddBits` should have a snake case name
+warning: function `AddHuffmanBits` should have a snake case name
+warning: function `PatchDistanceCodesForBuggyDecoders` should have a snake case name
+warning: function `GetFixedTree` should have a snake case name
+warning: function `AbsDiff` should have a snake case name
+warning: function `EncodeTree` should have a snake case name
+warning: function `AddDynamicTree` should have a snake case name
+warning: function `CalculateTreeSize` should have a snake case name
+warning: function `OptimizeHuffmanForRle` should have a snake case name
+warning: function `CalculateBlockSymbolSizeSmall` should have a snake case name
+warning: function `CalculateBlockSymbolSizeGivenCounts` should have a snake case name
+warning: function `TryOptimizeHuffmanForRle` should have a snake case name
+warning: function `GetDynamicLengths` should have a snake case name
+warning: function `CalculateBlockSymbolSize` should have a snake case name
+warning: function `ZopfliCalculateBlockSize` should have a snake case name
+warning: function `ZopfliCalculateBlockSizeAutoType` should have a snake case name
+warning: function `AddNonCompressedBlock` should have a snake case name
+warning: function `AddLZ77Data` should have a snake case name
+warning: function `AddLZ77Block` should have a snake case name
+warning: function `AddLZ77BlockAutoType` should have a snake case name
+warning: function `ZopfliDeflatePart` should have a snake case name
+warning: function `ZopfliDeflate` should have a snake case name
+warning: function `LeafComparator` should have a snake case name
+warning: function `InitNode` should have a snake case name
+warning: function `InitLists` should have a snake case name
+warning: function `ExtractBitLengths` should have a snake case name
+warning: function `BoundaryPMFinal` should have a snake case name
+warning: function `BoundaryPM` should have a snake case name
+warning: function `ZopfliLengthLimitedCodeLengths` should have a snake case name
+warning: variable `numBoundaryPMRuns` should have a snake case name
+warning: function `ZopfliVerifyLenDist` should have a snake case name
+warning: function `CeilDiv` should have a snake case name
+warning: function `GetLengthScore` should have a snake case name
+warning: function `GetMatch` should have a snake case name
+warning: function `ZopfliInitLZ77Store` should have a snake case name
+warning: function `ZopfliCleanLZ77Store` should have a snake case name
+warning: function `ZopfliLZ77GetByteRange` should have a snake case name
+warning: function `ZopfliLZ77GetHistogramAt` should have a snake case name
+warning: function `ZopfliLZ77GetHistogram` should have a snake case name
+warning: function `ZopfliCopyLZ77Store` should have a snake case name
+warning: function `ZopfliStoreLitLenDist` should have a snake case name
+warning: function `TryGetFromLongestMatchCache` should have a snake case name
+warning: function `StoreInLongestMatchCache` should have a snake case name
+warning: function `ZopfliFindLongestMatch` should have a snake case name
+warning: function `ZopfliLZ77Greedy` should have a snake case name
+warning: function `ZopfliInitBlockState` should have a snake case name
+warning: function `ZopfliCleanBlockState` should have a snake case name
+warning: function `ZopfliAppendLZ77Store` should have a snake case name
+warning: function `TraceBackwards` should have a snake case name
+warning: function `InitStats` should have a snake case name
+warning: function `CopyStats` should have a snake case name
+warning: function `AddWeighedStatFreqs` should have a snake case name
+warning: function `InitRanState` should have a snake case name
+warning: function `Ran` should have a snake case name
+warning: function `ClearStatFreqs` should have a snake case name
+warning: function `GetCostModelMinCost` should have a snake case name
+warning: function `RandomizeFreqs` should have a snake case name
+warning: function `RandomizeStatFreqs` should have a snake case name
+warning: function `CalculateStatistics` should have a snake case name
+warning: function `GetStatistics` should have a snake case name
+warning: function `GetCostStat` should have a snake case name
+warning: function `GetBestLengths` should have a snake case name
+warning: variable `newCost` should have a snake case name
+warning: variable `newCost` should have a snake case name
+warning: function `FollowPath` should have a snake case name
+warning: function `LZ77OptimalRun` should have a snake case name
+warning: function `ZopfliLZ77Optimal` should have a snake case name
+warning: function `GetCostFixed` should have a snake case name
+warning: function `ZopfliLZ77OptimalFixed` should have a snake case name
+warning: function `ZopfliLengthsToSymbols` should have a snake case name
+warning: function `ZopfliCalculateEntropy` should have a snake case name
+warning: function `ZopfliCalculateBitLengths` should have a snake case name
+warning: function `ZopfliZlibCompress` should have a snake case name
+warning: function `ZopfliInitCache` should have a snake case name
+warning: function `ZopfliCleanCache` should have a snake case name
+warning: function `ZopfliMaxCachedSublen` should have a snake case name
+warning: function `ZopfliSublenToCache` should have a snake case name
+warning: function `ZopfliCacheToSublen` should have a snake case name
+warning: function `CRC` should have a snake case name
+warning: function `ZopfliGzipCompress` should have a snake case name
+warning: function `ZopfliAllocHash` should have a snake case name
+warning: function `ZopfliResetHash` should have a snake case name
+warning: function `ZopfliCleanHash` should have a snake case name
+warning: function `UpdateHashValue` should have a snake case name
+warning: function `ZopfliWarmupHash` should have a snake case name
+warning: function `ZopfliUpdateHash` should have a snake case name
+warning: function `ZopfliInitOptions` should have a snake case name
+warning: function `ZopfliCompress` should have a snake case name

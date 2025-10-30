@@ -1,0 +1,10 @@
+#include <Python.h>
+#include <autolink.h>
+#include <buffer.h>
+#include <html.h>
+#include <markdown.h>
+#include <snudown.c>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdlib.h>

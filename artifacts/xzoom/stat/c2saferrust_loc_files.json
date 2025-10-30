@@ -1,0 +1,40 @@
+{
+  "Rust": {
+    "blanks": 52,
+    "children": {},
+    "code": 2398,
+    "comments": 111,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/xzoom/others/c2saferrust/xzoom.rs",
+        "stats": {
+          "blanks": 52,
+          "blobs": {},
+          "code": 2398,
+          "comments": 111
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 52,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/xzoom/others/c2saferrust/xzoom.rs",
+          "stats": {
+            "blanks": 52,
+            "blobs": {},
+            "code": 2398,
+            "comments": 111
+          }
+        }
+      ]
+    },
+    "code": 2398,
+    "comments": 111,
+    "inaccurate": false,
+    "reports": []
+  }
+}

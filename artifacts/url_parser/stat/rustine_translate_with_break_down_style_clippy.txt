@@ -1,0 +1,39 @@
+warning: constants have by default a `'static` lifetime
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: redundant pattern matching, consider using `is_err()`
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this returns a `Result<_, ()>`
+warning: unused `std::result::Result` that must be used
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: you are using an explicit closure for cloning elements
+warning: you are using an explicit closure for cloning elements
+warning: you are using an explicit closure for cloning elements
+warning: you are using an explicit closure for cloning elements
+warning: you are using an explicit closure for cloning elements
+warning: you are using an explicit closure for cloning elements

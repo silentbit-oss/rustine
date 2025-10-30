@@ -1,0 +1,21 @@
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::str::FromStr`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::sync::Mutex`
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: value assigned to `value` is never read
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: casting to the same type is unnecessary (`u8` -> `u8`)
+warning: `c` is never greater than `255` and has therefore no effect
+warning: this `match` expression can be replaced with `?`
+warning: stripping a prefix manually
+warning: variables can be used directly in the `format!` string

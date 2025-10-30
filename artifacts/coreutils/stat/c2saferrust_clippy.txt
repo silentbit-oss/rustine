@@ -1,0 +1,329 @@
+warning: unused import: `std::ops::RangeInclusive`
+warning: unused import: `std::os::raw::c_char`
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: unused imports: `c_int` and `c_long`
+warning: unused import: `std::os::raw::c_void`
+warning: unused import: `std::os::raw::c_int`
+warning: unused import: `std::mem`
+warning: unused import: `std::mem`
+warning: unused import: `std::os::raw::c_char`
+warning: unused import: `std::mem`
+warning: unused import: `std::ffi::CString`
+warning: unused import: `libc::stat as libc_stat`
+warning: unused import: `std::slice`
+warning: unused import: `std::process`
+warning: unused import: `std::slice`
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: `#[inline]` is ignored on externally exported functions
+warning: unused variable: `left_quote`
+warning: unused variable: `right_quote`
+warning: unused variable: `encountered_single_quote`
+warning: unused variable: `c_and_shell_quote_compat`
+warning: unused variable: `result`
+warning: unnecessary `unsafe` block
+warning: manual `RangeInclusive::contains` implementation
+warning: manual `RangeInclusive::contains` implementation
+warning: manual `RangeInclusive::contains` implementation
+warning: match expression looks like `matches!` macro
+warning: manual `RangeInclusive::contains` implementation
+warning: match expression looks like `matches!` macro
+warning: this OR pattern can be rewritten using a range
+warning: manual check for common ascii range
+warning: match expression looks like `matches!` macro
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this `else { if .. }` block can be collapsed
+warning: equal expressions as operands to `!=`
+warning: equal expressions as operands to `!=`
+warning: equal expressions as operands to `!=`
+warning: equal expressions as operands to `!=`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this boolean expression can be simplified
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: importing legacy numeric constants
+warning: this comparison involving the minimum or maximum element for this type contains a case that is always true or always false
+warning: this comparison involving the minimum or maximum element for this type contains a case that is always true or always false
+warning: use of `unwrap_or_else` to construct default value
+warning: this comparison involving the minimum or maximum element for this type contains a case that is always true or always false
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: `0 as *const _` detected
+warning: `0 as *const _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: using `clone` on type `quoting_options` which implements the `Copy` trait
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: manually constructing a nul-terminated string
+warning: you should use the `starts_with` method
+warning: manually constructing a nul-terminated string
+warning: you should use the `starts_with` method
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: this OR pattern can be rewritten using a range
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: this `map_or` can be simplified
+warning: casting a character literal to `u8` truncates
+warning: casting a character literal to `u8` truncates
+warning: casting a character literal to `u8` truncates
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: `0 as *const _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: returning the result of a `let` binding from a block
+warning: unsafe function's docs are missing a `# Safety` section
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: unneeded `return` statement
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: `0 as *mut _` detected
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: `0 as *const _` detected
+warning: the function `quotearg_n_options` doesn't need a mutable reference
+warning: casting a character literal to `u8` truncates
+warning: the function `quotearg_n_options` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `quotearg_n_options` doesn't need a mutable reference
+warning: returning the result of a `let` binding from a block
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: useless conversion to the same type: `u64`
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: writing `&mut Vec` instead of `&mut [_]` involves a new object where a slice will do
+warning: unsafe function's docs are missing a `# Safety` section
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: `0 as *const _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: calling `CStr::from_ptr` with a byte string literal
+warning: calling `CStr::from_ptr` with a byte string literal
+warning: equal expressions as operands to `!=`
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: this comparison involving the minimum or maximum element for this type contains a case that is always true or always false
+warning: this comparison involving the minimum or maximum element for this type contains a case that is always true or always false
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: this comparison involving the minimum or maximum element for this type contains a case that is always true or always false
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: slow zero-filling initialization
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: this `else { if .. }` block can be collapsed
+warning: this `else { if .. }` block can be collapsed
+warning: this `else { if .. }` block can be collapsed
+warning: this `else { if .. }` block can be collapsed
+warning: this `else { if .. }` block can be collapsed
+warning: this `else { if .. }` block can be collapsed
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: path statement with no effect
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: path statement with no effect
+warning: path statement with no effect
+warning: `__freading` redeclared with a different signature
+warning: `fileno` redeclared with a different signature
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: this loop could be written as a `for` loop
+warning: manually constructing a nul-terminated string
+warning: literal with an empty format string
+warning: manually constructing a nul-terminated string
+warning: variables can be used directly in the `format!` string
+warning: literal with an empty format string
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: this boolean expression can be simplified
+warning: `0 as *mut _` detected
+warning: equal expressions as operands to `!=`
+warning: useless conversion to the same type: `u64`
+warning: useless conversion to the same type: `u64`
+warning: useless conversion to the same type: `u64`
+warning: equal expressions as operands to `!=`
+warning: useless conversion to the same type: `u64`
+warning: useless conversion to the same type: `u64`
+warning: useless conversion to the same type: `u64`
+warning: equal expressions as operands to `!=`
+warning: useless conversion to the same type: `u64`
+warning: useless conversion to the same type: `u64`
+warning: useless conversion to the same type: `u64`
+warning: `0 as *const _` detected
+warning: `0 as *mut _` detected
+warning: equal expressions as operands to `!=`
+warning: useless conversion to the same type: `u64`
+warning: useless conversion to the same type: `u64`
+warning: useless conversion to the same type: `u64`
+warning: this boolean expression can be simplified
+warning: equal expressions as operands to `!=`
+warning: equal expressions as operands to `!=`
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: the function `psame_inode` doesn't need a mutable reference
+warning: the function `psame_inode` doesn't need a mutable reference
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: equal expressions as operands to `!=`
+warning: equal expressions as operands to `!=`
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: path statement with no effect
+warning: creating a shared reference to mutable static

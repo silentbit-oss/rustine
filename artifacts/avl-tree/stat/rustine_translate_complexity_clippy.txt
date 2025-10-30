@@ -1,0 +1,30 @@
+warning: called `.as_ref().map(|n| &**n)` on an `Option` value
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: parameter is only used in recursion
+warning: this looks like you are swapping `*x` and `*y` manually
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: you seem to be trying to use `&Box<T>`. Consider using just `&T`
+warning: you seem to be trying to use `&Box<T>`. Consider using just `&T`
+warning: you seem to be trying to use `&Box<T>`. Consider using just `&T`
+warning: you seem to be trying to use `&Box<T>`. Consider using just `&T`

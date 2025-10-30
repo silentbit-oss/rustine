@@ -1,0 +1,1745 @@
+{
+    "special_type": [
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "typedef struct quadtree_point\n{\n  double x;\n  double y;\n} quadtree_point_t",
+            "name": "quadtree_point_t",
+            "names": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "x",
+                        "type": "double",
+                        "definition": [
+                            "double x"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "y",
+                        "type": "double",
+                        "definition": [
+                            "double y"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "typedef struct quadtree_bounds\n{\n  quadtree_point_t *nw;\n  quadtree_point_t *se;\n  double width;\n  double height;\n} quadtree_bounds_t",
+            "name": "quadtree_bounds_t",
+            "names": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "nw",
+                        "type": "quadtree_point_t *",
+                        "definition": [
+                            "quadtree_point_t *nw"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "se",
+                        "type": "quadtree_point_t *",
+                        "definition": [
+                            "quadtree_point_t *se"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "width",
+                        "type": "double",
+                        "definition": [
+                            "double width"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "height",
+                        "type": "double",
+                        "definition": [
+                            "double height"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "typedef struct quadtree_node\n{\n  struct quadtree_node *ne;\n  struct quadtree_node *nw;\n  struct quadtree_node *se;\n  struct quadtree_node *sw;\n  quadtree_bounds_t *bounds;\n  quadtree_point_t *point;\n  void *key;\n} quadtree_node_t",
+            "name": "quadtree_node_t",
+            "names": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "struct quadtree_node",
+                        "type": "struct quadtree_node *",
+                        "definition": [
+                            "struct quadtree_node *ne"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "struct quadtree_node",
+                        "type": "struct quadtree_node *",
+                        "definition": [
+                            "struct quadtree_node *nw"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "struct quadtree_node",
+                        "type": "struct quadtree_node *",
+                        "definition": [
+                            "struct quadtree_node *se"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "struct quadtree_node",
+                        "type": "struct quadtree_node *",
+                        "definition": [
+                            "struct quadtree_node *sw"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "bounds",
+                        "type": "quadtree_bounds_t *",
+                        "definition": [
+                            "quadtree_bounds_t *bounds"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "point",
+                        "type": "quadtree_point_t *",
+                        "definition": [
+                            "quadtree_point_t *point"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "void *",
+                        "definition": [
+                            "void *key"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "typedef struct quadtree\n{\n  quadtree_node_t *root;\n  void (*key_free)(void *key);\n  unsigned int length;\n} quadtree_t",
+            "name": "quadtree_t",
+            "names": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "root",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *root"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key_free",
+                        "type": "void (*)(void *key)",
+                        "definition": [
+                            "void (*key_free)(void *key)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "length",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int length"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        }
+    ],
+    "global_variable": [
+        {
+            "path": null,
+            "name": "nodes",
+            "type": "int",
+            "definition": [
+                "static int nodes = 10000"
+            ]
+        },
+        {
+            "path": null,
+            "name": "startTime",
+            "type": "clock_t",
+            "definition": [
+                "static clock_t startTime"
+            ]
+        }
+    ],
+    "function": [
+        {
+            "path": null,
+            "name": "bench",
+            "header": "",
+            "params": [
+                "void (*bm)()",
+                "char *label"
+            ],
+            "definition": "static void bench(void (*bm)(), char *label)\n{\n  printf(\" %18s\", label);\n  fflush(stdout);\n  bm();\n}\n\n",
+            "calle": [
+                "bm",
+                "fflush",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "bm",
+                        "type": "void (*)()",
+                        "definition": [
+                            "void (*bm)()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "label",
+                        "type": "char *",
+                        "definition": [
+                            "char *label"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "start",
+            "header": "",
+            "params": [],
+            "definition": "static void start()\n{\n  startTime = clock();\n}\n\n",
+            "calle": [
+                "clock"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "startTime",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "stop",
+            "header": "",
+            "params": [],
+            "definition": "static void stop()\n{\n  float duration = ((float) (clock() - startTime)) / CLOCKS_PER_SEC;\n  printf(\": \\e[32m%.4f\\e[0ms\\n\", duration);\n}\n\n",
+            "calle": [
+                "clock",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "duration",
+                        "type": "float",
+                        "definition": [
+                            "float duration = ((float) (clock() - startTime)) / CLOCKS_PER_SEC"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "startTime",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "mark_insert",
+            "header": "",
+            "params": [],
+            "definition": "static void mark_insert()\n{\n  int n = nodes;\n  int val = 10;\n  quadtree_t *tree = quadtree_new(0, 0, 1000, 1000);\n  double x;\n  double y;\n  start();\n  while (n--)\n  {\n    x = (double) (rand() % 1000);\n    y = (double) (rand() % 1000);\n    quadtree_insert(tree, x, y, &val);\n  }\n\n  stop();\n  printf(\"  %18s %i\\n\", \"length:\", tree->length);\n  quadtree_free(tree);\n}\n\n",
+            "calle": [
+                "printf",
+                "quadtree_free",
+                "quadtree_insert",
+                "quadtree_new",
+                "rand",
+                "start",
+                "stop"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "n",
+                        "type": "int",
+                        "definition": [
+                            "int n = nodes"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "val",
+                        "type": "int",
+                        "definition": [
+                            "int val = 10"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "tree",
+                        "type": "quadtree_t *",
+                        "definition": [
+                            "quadtree_t *tree = quadtree_new(0, 0, 1000, 1000)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "x",
+                        "type": "double",
+                        "definition": [
+                            "double x"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "y",
+                        "type": "double",
+                        "definition": [
+                            "double y"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "nodes",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#benchmark",
+            "header": "",
+            "params": [
+                "int argc",
+                "const char *argv[]"
+            ],
+            "definition": "int main(int argc, const char *argv[])\n{\n  srand(time(0));\n  bench(mark_insert, \"insertion\");\n  return 0;\n}\n\n",
+            "calle": [
+                "bench",
+                "mark_insert",
+                "srand",
+                "time"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "argc",
+                        "type": "int",
+                        "definition": [
+                            "int argc"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv",
+                        "type": "const char *[]",
+                        "definition": [
+                            "const char *argv[]"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "descent",
+            "header": "",
+            "params": [
+                "quadtree_node_t *node"
+            ],
+            "definition": "void descent(quadtree_node_t *node)\n{\n  if (node->bounds != 0)\n  {\n    printf(\"{ nw.x:%f, nw.y:%f, se.x:%f, se.y:%f }: \", node->bounds->nw->x, node->bounds->nw->y, node->bounds->se->x, node->bounds->se->y);\n  }\n}\n\n",
+            "calle": [
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *node"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "ascent",
+            "header": "",
+            "params": [
+                "quadtree_node_t *node"
+            ],
+            "definition": "void ascent(quadtree_node_t *node)\n{\n  printf(\"\\n\");\n}\n\n",
+            "calle": [
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *node"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_node",
+            "header": "",
+            "params": [],
+            "definition": "static void test_node()\n{\n  quadtree_node_t *node = quadtree_node_new();\n  assert(!quadtree_node_isleaf(node));\n  assert(quadtree_node_isempty(node));\n  assert(!quadtree_node_ispointer(node));\n}\n\n",
+            "calle": [
+                "assert",
+                "quadtree_node_isempty",
+                "quadtree_node_isleaf",
+                "quadtree_node_ispointer",
+                "quadtree_node_new"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *node = quadtree_node_new()"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_bounds",
+            "header": "",
+            "params": [],
+            "definition": "static void test_bounds()\n{\n  quadtree_bounds_t *bounds = quadtree_bounds_new();\n  assert(bounds);\n  assert(bounds->nw->x == INFINITY);\n  assert(bounds->se->x == (-INFINITY));\n  quadtree_bounds_extend(bounds, 5.0, 5.0);\n  assert(bounds->nw->x == 5.0);\n  assert(bounds->se->x == 5.0);\n  quadtree_bounds_extend(bounds, 10.0, 10.0);\n  assert(bounds->nw->y == 10.0);\n  assert(bounds->nw->y == 10.0);\n  assert(bounds->se->y == 5.0);\n  assert(bounds->se->y == 5.0);\n  assert(bounds->width == 5.0);\n  assert(bounds->height == 5.0);\n  quadtree_bounds_free(bounds);\n}\n\n",
+            "calle": [
+                "assert",
+                "quadtree_bounds_extend",
+                "quadtree_bounds_free",
+                "quadtree_bounds_new"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "bounds",
+                        "type": "quadtree_bounds_t *",
+                        "definition": [
+                            "quadtree_bounds_t *bounds = quadtree_bounds_new()"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_tree",
+            "header": "",
+            "params": [],
+            "definition": "static void test_tree()\n{\n  int val = 10;\n  quadtree_t *tree = quadtree_new(1, 1, 10, 10);\n  assert(tree->root->bounds->nw->x == 1);\n  assert(tree->root->bounds->nw->y == 10.0);\n  assert(tree->root->bounds->se->x == 10.0);\n  assert(tree->root->bounds->se->y == 1);\n  assert(quadtree_insert(tree, 0, 0, &val) == 0);\n  assert(quadtree_insert(tree, 10, 10, &val) == 0);\n  assert(quadtree_insert(tree, 110.0, 110.0, &val) == 0);\n  assert(quadtree_insert(tree, 8.0, 2.0, &val) != 0);\n  assert(tree->length == 1);\n  assert(tree->root->point->x == 8.0);\n  assert(tree->root->point->y == 2.0);\n  assert(quadtree_insert(tree, 2.0, 3.0, &val) != 0);\n  assert(quadtree_insert(tree, 2.0, 3.0, &val) == 0);\n  assert(tree->length == 2);\n  assert(tree->root->point == 0);\n  assert(quadtree_insert(tree, 3.0, 1.1, &val) == 1);\n  assert(tree->length == 3);\n  assert(quadtree_search(tree, 3.0, 1.1)->x == 3.0);\n  quadtree_walk(tree->root, ascent, descent);\n  quadtree_free(tree);\n}\n\n",
+            "calle": [
+                "ascent",
+                "assert",
+                "descent",
+                "quadtree_free",
+                "quadtree_insert",
+                "quadtree_new",
+                "quadtree_search",
+                "quadtree_walk"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "val",
+                        "type": "int",
+                        "definition": [
+                            "int val = 10"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "tree",
+                        "type": "quadtree_t *",
+                        "definition": [
+                            "quadtree_t *tree = quadtree_new(1, 1, 10, 10)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_points",
+            "header": "",
+            "params": [],
+            "definition": "static void test_points()\n{\n  quadtree_point_t *point = quadtree_point_new(5, 6);\n  assert(point->x == 5);\n  assert(point->y == 6);\n  quadtree_point_free(point);\n}\n\n",
+            "calle": [
+                "assert",
+                "quadtree_point_free",
+                "quadtree_point_new"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "point",
+                        "type": "quadtree_point_t *",
+                        "definition": [
+                            "quadtree_point_t *point = quadtree_point_new(5, 6)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#test",
+            "header": "",
+            "params": [
+                "int argc",
+                "const char *argv[]"
+            ],
+            "definition": "int main(int argc, const char *argv[])\n{\n  printf(\"\\nquadtree_t: %ld\\n\", sizeof(quadtree_t));\n  printf(\"quadtree_node_t: %ld\\n\", sizeof(quadtree_node_t));\n  printf(\"quadtree_bounds_t: %ld\\n\", sizeof(quadtree_bounds_t));\n  printf(\"quadtree_point_t: %ld\\n\", sizeof(quadtree_point_t));\n  printf(\"\\x1b[33mtree\\x1b[0m \");\n  test_tree();\n  puts(\"\\x1b[1;32m \u2713 \\x1b[0m\");\n  ;\n  printf(\"\\x1b[33mnode\\x1b[0m \");\n  test_node();\n  puts(\"\\x1b[1;32m \u2713 \\x1b[0m\");\n  ;\n  printf(\"\\x1b[33mbounds\\x1b[0m \");\n  test_bounds();\n  puts(\"\\x1b[1;32m \u2713 \\x1b[0m\");\n  ;\n  printf(\"\\x1b[33mpoints\\x1b[0m \");\n  test_points();\n  puts(\"\\x1b[1;32m \u2713 \\x1b[0m\");\n  ;\n}\n\n",
+            "calle": [
+                "printf",
+                "puts",
+                "test_bounds",
+                "test_node",
+                "test_points",
+                "test_tree"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "argc",
+                        "type": "int",
+                        "definition": [
+                            "int argc"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv",
+                        "type": "const char *[]",
+                        "definition": [
+                            "const char *argv[]"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "quadtree_point_new",
+            "header": "quadtree_point_t *quadtree_point_new(double x, double y)",
+            "params": [
+                "double x",
+                "double y"
+            ],
+            "definition": "quadtree_point_t *quadtree_point_new(double x, double y)\n{\n  quadtree_point_t *point;\n  unsigned int point_idx = 0;\n  if (!(point_idx = malloc(sizeof(*point_idx))))\n  {\n    return 0;\n  }\n  point->x = x;\n  point->y = y;\n  return point;\n}\n\n",
+            "calle": [
+                "malloc"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "x",
+                        "type": "double",
+                        "definition": [
+                            "double x"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "y",
+                        "type": "double",
+                        "definition": [
+                            "double y"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "point",
+                        "type": "quadtree_point_t *",
+                        "definition": [
+                            "quadtree_point_t *point"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "point_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int point_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "quadtree_point_free",
+            "header": "void quadtree_point_free(quadtree_point_t *point)",
+            "params": [
+                "quadtree_point_t *point"
+            ],
+            "definition": "void quadtree_point_free(quadtree_point_t *point)\n{\n  free(point);\n}\n\n",
+            "calle": [
+                "free"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "point",
+                        "type": "quadtree_point_t *",
+                        "definition": [
+                            "quadtree_point_t *point"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "quadtree_bounds_new",
+            "header": "quadtree_bounds_t *quadtree_bounds_new()",
+            "params": [],
+            "definition": "quadtree_bounds_t *quadtree_bounds_new()\n{\n  quadtree_bounds_t *bounds;\n  unsigned int bounds_idx = 0;\n  if ((bounds_idx = malloc(sizeof(*bounds_idx))) == 0)\n  {\n    return 0;\n  }\n  bounds->nw = quadtree_point_new(INFINITY, -INFINITY);\n  bounds->se = quadtree_point_new(-INFINITY, INFINITY);\n  bounds->width = 0;\n  bounds->height = 0;\n  return bounds;\n}\n\n",
+            "calle": [
+                "malloc",
+                "quadtree_point_new"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "bounds",
+                        "type": "quadtree_bounds_t *",
+                        "definition": [
+                            "quadtree_bounds_t *bounds"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "bounds_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int bounds_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "quadtree_bounds_extend",
+            "header": "void quadtree_bounds_extend(quadtree_bounds_t *bounds, double x, double y)",
+            "params": [
+                "quadtree_bounds_t *bounds",
+                "double x",
+                "double y"
+            ],
+            "definition": "void quadtree_bounds_extend(quadtree_bounds_t *bounds, double x, double y)\n{\n  bounds->nw->x = fmin(x, bounds->nw->x);\n  bounds->nw->y = fmax(y, bounds->nw->y);\n  bounds->se->x = fmax(x, bounds->se->x);\n  bounds->se->y = fmin(y, bounds->se->y);\n  bounds->width = fabs(bounds->nw->x - bounds->se->x);\n  bounds->height = fabs(bounds->nw->y - bounds->se->y);\n}\n\n",
+            "calle": [
+                "fabs",
+                "fmax",
+                "fmin"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "bounds",
+                        "type": "quadtree_bounds_t *",
+                        "definition": [
+                            "quadtree_bounds_t *bounds"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "x",
+                        "type": "double",
+                        "definition": [
+                            "double x"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "y",
+                        "type": "double",
+                        "definition": [
+                            "double y"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "quadtree_bounds_free",
+            "header": "void quadtree_bounds_free(quadtree_bounds_t *bounds)",
+            "params": [
+                "quadtree_bounds_t *bounds"
+            ],
+            "definition": "void quadtree_bounds_free(quadtree_bounds_t *bounds)\n{\n  quadtree_point_free(bounds->nw);\n  quadtree_point_free(bounds->se);\n  free(bounds);\n}\n\n",
+            "calle": [
+                "free",
+                "quadtree_point_free"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "bounds",
+                        "type": "quadtree_bounds_t *",
+                        "definition": [
+                            "quadtree_bounds_t *bounds"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "quadtree_node_new",
+            "header": "quadtree_node_t *quadtree_node_new()",
+            "params": [],
+            "definition": "quadtree_node_t *quadtree_node_new()\n{\n  quadtree_node_t *node;\n  unsigned int node_idx = 0;\n  if (!(node_idx = malloc(sizeof(*node_idx))))\n  {\n    return 0;\n  }\n  node->ne = 0;\n  node->nw = 0;\n  node->se = 0;\n  node->sw = 0;\n  node->point = 0;\n  node->bounds = 0;\n  node->key = 0;\n  return node;\n}\n\n",
+            "calle": [
+                "malloc"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *node"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "node_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int node_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "quadtree_node_free",
+            "header": "void quadtree_node_free(quadtree_node_t *node, void (*value_free)(void *))",
+            "params": [
+                "quadtree_node_t *node",
+                "void (*key_free)(void *)"
+            ],
+            "definition": "void quadtree_node_free(quadtree_node_t *node, void (*key_free)(void *))\n{\n  if (node->nw != 0)\n  {\n    quadtree_node_free(node->nw, key_free);\n  }\n  if (node->ne != 0)\n  {\n    quadtree_node_free(node->ne, key_free);\n  }\n  if (node->sw != 0)\n  {\n    quadtree_node_free(node->sw, key_free);\n  }\n  if (node->se != 0)\n  {\n    quadtree_node_free(node->se, key_free);\n  }\n  quadtree_bounds_free(node->bounds);\n  quadtree_node_reset(node, key_free);\n  free(node);\n}\n\n",
+            "calle": [
+                "free",
+                "quadtree_bounds_free",
+                "quadtree_node_free",
+                "quadtree_node_reset"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *node"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key_free",
+                        "type": "void (*)(void *)",
+                        "definition": [
+                            "void (*key_free)(void *)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "quadtree_node_ispointer",
+            "header": "int quadtree_node_ispointer(quadtree_node_t *node)",
+            "params": [
+                "quadtree_node_t *node"
+            ],
+            "definition": "int quadtree_node_ispointer(quadtree_node_t *node)\n{\n  return ((((node->nw != 0) && (node->ne != 0)) && (node->sw != 0)) && (node->se != 0)) && (!quadtree_node_isleaf(node));\n}\n\n",
+            "calle": [
+                "quadtree_node_isleaf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *node"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "quadtree_node_isempty",
+            "header": "int quadtree_node_isempty(quadtree_node_t *node)",
+            "params": [
+                "quadtree_node_t *node"
+            ],
+            "definition": "int quadtree_node_isempty(quadtree_node_t *node)\n{\n  return ((((node->nw == 0) && (node->ne == 0)) && (node->sw == 0)) && (node->se == 0)) && (!quadtree_node_isleaf(node));\n}\n\n",
+            "calle": [
+                "quadtree_node_isleaf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *node"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "quadtree_node_isleaf",
+            "header": "int quadtree_node_isleaf(quadtree_node_t *node)",
+            "params": [
+                "quadtree_node_t *node"
+            ],
+            "definition": "int quadtree_node_isleaf(quadtree_node_t *node)\n{\n  return node->point != 0;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *node"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "quadtree_node_reset",
+            "header": "void quadtree_node_reset(quadtree_node_t *node, void (*key_free)(void *))",
+            "params": [
+                "quadtree_node_t *node",
+                "void (*key_free)(void *)"
+            ],
+            "definition": "void quadtree_node_reset(quadtree_node_t *node, void (*key_free)(void *))\n{\n  quadtree_point_free(node->point);\n  (*key_free)(node->key);\n}\n\n",
+            "calle": [
+                "*key_free",
+                "quadtree_point_free"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *node"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key_free",
+                        "type": "void (*)(void *)",
+                        "definition": [
+                            "void (*key_free)(void *)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "quadtree_node_with_bounds",
+            "header": "quadtree_node_t *quadtree_node_with_bounds(double minx, double miny, double maxx, double maxy)",
+            "params": [
+                "double minx",
+                "double miny",
+                "double maxx",
+                "double maxy"
+            ],
+            "definition": "quadtree_node_t *quadtree_node_with_bounds(double minx, double miny, double maxx, double maxy)\n{\n  quadtree_node_t *node;\n  unsigned int node_idx = 0;\n  if (!(node_idx = quadtree_node_new()))\n  {\n    return 0;\n  }\n  if (!(node->bounds = quadtree_bounds_new()))\n  {\n    return 0;\n  }\n  quadtree_bounds_extend(node->bounds, maxx, maxy);\n  quadtree_bounds_extend(node->bounds, minx, miny);\n  return node;\n}\n\n",
+            "calle": [
+                "quadtree_bounds_extend",
+                "quadtree_bounds_new",
+                "quadtree_node_new"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "minx",
+                        "type": "double",
+                        "definition": [
+                            "double minx"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "miny",
+                        "type": "double",
+                        "definition": [
+                            "double miny"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "maxx",
+                        "type": "double",
+                        "definition": [
+                            "double maxx"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "maxy",
+                        "type": "double",
+                        "definition": [
+                            "double maxy"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *node"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "node_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int node_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "quadtree_new",
+            "header": "quadtree_t *quadtree_new(double minx, double miny, double maxx, double maxy)",
+            "params": [
+                "double minx",
+                "double miny",
+                "double maxx",
+                "double maxy"
+            ],
+            "definition": "quadtree_t *quadtree_new(double minx, double miny, double maxx, double maxy)\n{\n  quadtree_t *tree;\n  unsigned int tree_idx = 0;\n  if (!(tree_idx = malloc(sizeof(*tree_idx))))\n  {\n    return 0;\n  }\n  tree->root = quadtree_node_with_bounds(minx, miny, maxx, maxy);\n  if (!tree->root)\n  {\n    return 0;\n  }\n  tree->key_free = 0;\n  tree->length = 0;\n  return tree;\n}\n\n",
+            "calle": [
+                "malloc",
+                "quadtree_node_with_bounds"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "minx",
+                        "type": "double",
+                        "definition": [
+                            "double minx"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "miny",
+                        "type": "double",
+                        "definition": [
+                            "double miny"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "maxx",
+                        "type": "double",
+                        "definition": [
+                            "double maxx"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "maxy",
+                        "type": "double",
+                        "definition": [
+                            "double maxy"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "tree",
+                        "type": "quadtree_t *",
+                        "definition": [
+                            "quadtree_t *tree"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "tree_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int tree_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "quadtree_free",
+            "header": "void quadtree_free(quadtree_t *tree)",
+            "params": [
+                "quadtree_t *tree"
+            ],
+            "definition": "void quadtree_free(quadtree_t *tree)\n{\n  if (tree->key_free != 0)\n  {\n    quadtree_node_free(tree->root, tree->key_free);\n  }\n  else\n  {\n    quadtree_node_free(tree->root, elision_);\n  }\n  free(tree);\n}\n\n",
+            "calle": [
+                "elision_",
+                "free",
+                "quadtree_node_free"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "tree",
+                        "type": "quadtree_t *",
+                        "definition": [
+                            "quadtree_t *tree"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "quadtree_search",
+            "header": "quadtree_point_t *quadtree_search(quadtree_t *tree, double x, double y)",
+            "params": [
+                "quadtree_t *tree",
+                "double x",
+                "double y"
+            ],
+            "definition": "quadtree_point_t *quadtree_search(quadtree_t *tree, double x, double y)\n{\n  return find_(tree->root, x, y);\n}\n\n",
+            "calle": [
+                "find_"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "tree",
+                        "type": "quadtree_t *",
+                        "definition": [
+                            "quadtree_t *tree"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "x",
+                        "type": "double",
+                        "definition": [
+                            "double x"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "y",
+                        "type": "double",
+                        "definition": [
+                            "double y"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "quadtree_insert",
+            "header": "int quadtree_insert(quadtree_t *tree, double x, double y, void *key)",
+            "params": [
+                "quadtree_t *tree",
+                "double x",
+                "double y",
+                "void *key"
+            ],
+            "definition": "int quadtree_insert(quadtree_t *tree, double x, double y, void *key)\n{\n  quadtree_point_t *point;\n  unsigned int point_idx = 0;\n  if (!(point_idx = quadtree_point_new(x, y)))\n  {\n    return 0;\n  }\n  if (!node_contains_(tree->root, point))\n  {\n    return 0;\n  }\n  if (!insert_(tree, tree->root, point, key))\n  {\n    return 0;\n  }\n  tree->length += 1;\n  return 1;\n}\n\n",
+            "calle": [
+                "insert_",
+                "node_contains_",
+                "quadtree_point_new"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "tree",
+                        "type": "quadtree_t *",
+                        "definition": [
+                            "quadtree_t *tree"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "x",
+                        "type": "double",
+                        "definition": [
+                            "double x"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "y",
+                        "type": "double",
+                        "definition": [
+                            "double y"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "void *",
+                        "definition": [
+                            "void *key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "point",
+                        "type": "quadtree_point_t *",
+                        "definition": [
+                            "quadtree_point_t *point"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "point_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int point_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "quadtree_walk",
+            "header": "void quadtree_walk(quadtree_node_t *root, void (*descent)(quadtree_node_t *node), void (*ascent)(quadtree_node_t *node))",
+            "params": [
+                "quadtree_node_t *root",
+                "void (*descent)(quadtree_node_t *node)",
+                "void (*ascent)(quadtree_node_t *node)"
+            ],
+            "definition": "void quadtree_walk(quadtree_node_t *root, void (*descent)(quadtree_node_t *node), void (*ascent)(quadtree_node_t *node))\n{\n  (*descent)(root);\n  if (root->nw != 0)\n  {\n    quadtree_walk(root->nw, descent, ascent);\n  }\n  if (root->ne != 0)\n  {\n    quadtree_walk(root->ne, descent, ascent);\n  }\n  if (root->sw != 0)\n  {\n    quadtree_walk(root->sw, descent, ascent);\n  }\n  if (root->se != 0)\n  {\n    quadtree_walk(root->se, descent, ascent);\n  }\n  (*ascent)(root);\n}\n\n",
+            "calle": [
+                "*ascent",
+                "*descent",
+                "quadtree_walk"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "root",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *root"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "descent",
+                        "type": "void (*)(quadtree_node_t *node)",
+                        "definition": [
+                            "void (*descent)(quadtree_node_t *node)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ascent",
+                        "type": "void (*)(quadtree_node_t *node)",
+                        "definition": [
+                            "void (*ascent)(quadtree_node_t *node)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "split_node_",
+            "header": "static int split_node_(quadtree_t *tree, quadtree_node_t *node)",
+            "params": [
+                "quadtree_t *tree",
+                "quadtree_node_t *node"
+            ],
+            "definition": "static int split_node_(quadtree_t *tree, quadtree_node_t *node)\n{\n  quadtree_node_t *nw;\n  unsigned int nw_idx = 0;\n  quadtree_node_t *ne;\n  unsigned int ne_idx = 0;\n  quadtree_node_t *sw;\n  unsigned int sw_idx = 0;\n  quadtree_node_t *se;\n  unsigned int se_idx = 0;\n  double x = node->bounds->nw->x;\n  double y = node->bounds->nw->y;\n  double hw = node->bounds->width / 2;\n  double hh = node->bounds->height / 2;\n  if (!(nw_idx = quadtree_node_with_bounds(x, y - hh, x + hw, y)))\n  {\n    return 0;\n  }\n  if (!(ne_idx = quadtree_node_with_bounds(x + hw, y - hh, x + (hw * 2), y)))\n  {\n    return 0;\n  }\n  if (!(sw_idx = quadtree_node_with_bounds(x, y - (hh * 2), x + hw, y - hh)))\n  {\n    return 0;\n  }\n  if (!(se_idx = quadtree_node_with_bounds(x + hw, y - (hh * 2), x + (hw * 2), y - hh)))\n  {\n    return 0;\n  }\n  node->nw = &nw[nw_idx];\n  node->ne = &ne[ne_idx];\n  node->sw = &sw[sw_idx];\n  node->se = &se[se_idx];\n  quadtree_point_t *old = node->point;\n  void *key = node->key;\n  node->point = 0;\n  node->key = 0;\n  return insert_(tree, node, old, key);\n}\n\n",
+            "calle": [
+                "insert_",
+                "quadtree_node_with_bounds"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "tree",
+                        "type": "quadtree_t *",
+                        "definition": [
+                            "quadtree_t *tree"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *node"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "nw",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *nw"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "nw_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int nw_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ne",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *ne"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ne_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int ne_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "sw",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *sw"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "sw_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int sw_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "se",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *se"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "se_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int se_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "x",
+                        "type": "double",
+                        "definition": [
+                            "double x = node->bounds->nw->x"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "y",
+                        "type": "double",
+                        "definition": [
+                            "double y = node->bounds->nw->y"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hw",
+                        "type": "double",
+                        "definition": [
+                            "double hw = node->bounds->width / 2"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hh",
+                        "type": "double",
+                        "definition": [
+                            "double hh = node->bounds->height / 2"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "old",
+                        "type": "quadtree_point_t *",
+                        "definition": [
+                            "quadtree_point_t *old = node->point"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "void *",
+                        "definition": [
+                            "void *key = node->key"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "insert_",
+            "header": "static int insert_(quadtree_t *tree, quadtree_node_t *root, quadtree_point_t *point, void *key)",
+            "params": [
+                "quadtree_t *tree",
+                "quadtree_node_t *root",
+                "quadtree_point_t *point",
+                "void *key"
+            ],
+            "definition": "static int insert_(quadtree_t *tree, quadtree_node_t *root, quadtree_point_t *point, void *key)\n{\n  if (quadtree_node_isempty(root))\n  {\n    root->point = point;\n    root->key = key;\n    return 1;\n  }\n  else\n    if (quadtree_node_isleaf(root))\n  {\n    if ((root->point->x == point->x) && (root->point->y == point->y))\n    {\n      reset_node_(tree, root);\n      root->point = point;\n      root->key = key;\n      return 0;\n    }\n    else\n    {\n      if (!split_node_(tree, root))\n      {\n        return 0;\n      }\n      return insert_(tree, root, point, key);\n    }\n    return 1;\n  }\n  else\n    if (quadtree_node_ispointer(root))\n  {\n    quadtree_node_t *quadrant = get_quadrant_(root, point);\n    return (quadrant == 0) ? (0) : (insert_(tree, quadrant, point, key));\n  }\n  return 0;\n}\n\n",
+            "calle": [
+                "get_quadrant_",
+                "insert_",
+                "quadtree_node_isempty",
+                "quadtree_node_isleaf",
+                "quadtree_node_ispointer",
+                "reset_node_",
+                "split_node_"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "tree",
+                        "type": "quadtree_t *",
+                        "definition": [
+                            "quadtree_t *tree"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "root",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *root"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "point",
+                        "type": "quadtree_point_t *",
+                        "definition": [
+                            "quadtree_point_t *point"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "void *",
+                        "definition": [
+                            "void *key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "quadrant",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *quadrant = get_quadrant_(root, point)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "node_contains_",
+            "header": "static int node_contains_(quadtree_node_t *outer, quadtree_point_t *it)",
+            "params": [
+                "quadtree_node_t *outer",
+                "quadtree_point_t *it"
+            ],
+            "definition": "static int node_contains_(quadtree_node_t *outer, quadtree_point_t *it)\n{\n  return ((((outer->bounds != 0) && (outer->bounds->nw->x < it->x)) && (outer->bounds->nw->y > it->y)) && (outer->bounds->se->x > it->x)) && (outer->bounds->se->y < it->y);\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "outer",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *outer"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "it",
+                        "type": "quadtree_point_t *",
+                        "definition": [
+                            "quadtree_point_t *it"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "get_quadrant_",
+            "header": "static quadtree_node_t *get_quadrant_(quadtree_node_t *root, quadtree_point_t *point)",
+            "params": [
+                "quadtree_node_t *root",
+                "quadtree_point_t *point"
+            ],
+            "definition": "static quadtree_node_t *get_quadrant_(quadtree_node_t *root, quadtree_point_t *point)\n{\n  if (node_contains_(root->nw, point))\n  {\n    return root->nw;\n  }\n  if (node_contains_(root->ne, point))\n  {\n    return root->ne;\n  }\n  if (node_contains_(root->sw, point))\n  {\n    return root->sw;\n  }\n  if (node_contains_(root->se, point))\n  {\n    return root->se;\n  }\n  return 0;\n}\n\n",
+            "calle": [
+                "node_contains_"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "root",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *root"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "point",
+                        "type": "quadtree_point_t *",
+                        "definition": [
+                            "quadtree_point_t *point"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "elision_",
+            "header": "",
+            "params": [
+                "void *key"
+            ],
+            "definition": "static void elision_(void *key)\n{\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "void *",
+                        "definition": [
+                            "void *key"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "reset_node_",
+            "header": "",
+            "params": [
+                "quadtree_t *tree",
+                "quadtree_node_t *node"
+            ],
+            "definition": "static void reset_node_(quadtree_t *tree, quadtree_node_t *node)\n{\n  if (tree->key_free != 0)\n  {\n    quadtree_node_reset(node, tree->key_free);\n  }\n  else\n  {\n    quadtree_node_reset(node, elision_);\n  }\n}\n\n",
+            "calle": [
+                "elision_",
+                "quadtree_node_reset"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "tree",
+                        "type": "quadtree_t *",
+                        "definition": [
+                            "quadtree_t *tree"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *node"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "find_",
+            "header": "",
+            "params": [
+                "quadtree_node_t *node",
+                "double x",
+                "double y"
+            ],
+            "definition": "static quadtree_point_t *find_(quadtree_node_t *node, double x, double y)\n{\n  if (quadtree_node_isleaf(node))\n  {\n    if ((node->point->x == x) && (node->point->y == y))\n    {\n      return node->point;\n    }\n  }\n  else\n  {\n    quadtree_point_t test;\n    test.x = x;\n    test.y = y;\n    return find_(get_quadrant_(node, &test), x, y);\n  }\n  return 0;\n}\n\n",
+            "calle": [
+                "find_",
+                "get_quadrant_",
+                "quadtree_node_isleaf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "node",
+                        "type": "quadtree_node_t *",
+                        "definition": [
+                            "quadtree_node_t *node"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "x",
+                        "type": "double",
+                        "definition": [
+                            "double x"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "y",
+                        "type": "double",
+                        "definition": [
+                            "double y"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "test",
+                        "type": "quadtree_point_t",
+                        "definition": [
+                            "quadtree_point_t test"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        }
+    ],
+    "typedefs": []
+}

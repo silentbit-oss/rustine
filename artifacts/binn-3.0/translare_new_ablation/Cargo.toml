@@ -1,0 +1,12 @@
+[package]
+name = "translate_without_break_down"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lazy_static = "1.4.0"
+libc = "0.2.153"
+
+[[bin]]
+name="test_binn"
+path="src/test_binn_main.rs"

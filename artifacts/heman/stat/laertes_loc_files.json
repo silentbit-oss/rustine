@@ -1,0 +1,490 @@
+{
+  "Rust": {
+    "blanks": 294,
+    "children": {},
+    "code": 13653,
+    "comments": 44,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/heman/others/laertes/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/kazmath/ray3.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 74,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/kazmath/aabb2.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 230,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/kazmath/plane.rs",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 271,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/kazmath/utility.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 57,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/kazmath/mat3.rs",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 635,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/kazmath/vec4.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 230,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/kazmath/mat4.rs",
+        "stats": {
+          "blanks": 20,
+          "blobs": {},
+          "code": 1093,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/kazmath/aabb3.rs",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 271,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/kazmath/vec3.rs",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 522,
+          "comments": 6
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/kazmath/quaternion.rs",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 676,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/kazmath/ray2.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 346,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/kazmath/vec2.rs",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 308,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/lib.rs",
+        "stats": {
+          "blanks": 75,
+          "blobs": {},
+          "code": 467,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/src/export.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 336,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/src/distance.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 549,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/src/generate.rs",
+        "stats": {
+          "blanks": 20,
+          "blobs": {},
+          "code": 778,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/src/gaussian.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 85,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/src/draw.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 262,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/src/image.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 218,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/src/import.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 39,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/src/ops.rs",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 1279,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/src/color.rs",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 439,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/src/noise.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3379,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/src/points.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 611,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/heman/others/laertes/src/src/lighting.rs",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 492,
+          "comments": 2
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 294,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/heman/others/laertes/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/kazmath/ray3.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 74,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/kazmath/aabb2.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 230,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/kazmath/plane.rs",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 271,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/kazmath/utility.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 57,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/kazmath/mat3.rs",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 635,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/kazmath/vec4.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 230,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/kazmath/mat4.rs",
+          "stats": {
+            "blanks": 20,
+            "blobs": {},
+            "code": 1093,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/kazmath/aabb3.rs",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 271,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/kazmath/vec3.rs",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 522,
+            "comments": 6
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/kazmath/quaternion.rs",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 676,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/kazmath/ray2.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 346,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/kazmath/vec2.rs",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 308,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/lib.rs",
+          "stats": {
+            "blanks": 75,
+            "blobs": {},
+            "code": 467,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/src/export.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 336,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/src/distance.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 549,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/src/generate.rs",
+          "stats": {
+            "blanks": 20,
+            "blobs": {},
+            "code": 778,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/src/gaussian.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 85,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/src/draw.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 262,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/src/image.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 218,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/src/import.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 39,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/src/ops.rs",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 1279,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/src/color.rs",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 439,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/src/noise.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3379,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/src/points.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 611,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/heman/others/laertes/src/src/lighting.rs",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 492,
+            "comments": 2
+          }
+        }
+      ]
+    },
+    "code": 13653,
+    "comments": 44,
+    "inaccurate": false,
+    "reports": []
+  }
+}

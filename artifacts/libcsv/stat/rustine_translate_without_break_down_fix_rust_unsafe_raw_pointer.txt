@@ -1,0 +1,14 @@
+Unsafe lines: 113
+Unsafe calls: 41
+Unsafe casts: 2
+Total spans: 32134
+Unsafe ratio: 0.0035165245534325013
+Raw pointer dereferences: 8
+Raw pointer declarations: 6
+Unsafe lines: 0
+Unsafe calls: 0
+Unsafe casts: 0
+Total spans: 3261
+Unsafe ratio: 0
+Raw pointer dereferences: 0
+Raw pointer declarations: 0

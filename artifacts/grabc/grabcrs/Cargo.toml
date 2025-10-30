@@ -1,0 +1,14 @@
+[[bin]]
+name = "grabc"
+path = "src/grabc_main.rs"
+
+[package]
+name = "grabcrs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libc = "0.2"
+
+[build-dependencies]
+bindgen = "0.69.0"

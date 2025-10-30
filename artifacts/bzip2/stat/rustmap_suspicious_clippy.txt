@@ -1,0 +1,4 @@
+warning: redundant redefinition of a binding `argv`
+warning: file opened with `create`, but `truncate` behavior not defined
+warning: unused `std::result::Result` that must be used
+warning: unused return value of `std::boxed::Box::<T>::from_raw` that must be used

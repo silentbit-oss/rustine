@@ -1,0 +1,49 @@
+warning: unused import: `crate::*`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: unused import: `ncurses::clrtoeol`
+warning: unused import: `libc::SIGINT`
+warning: unused import: `libc::c_int`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::sync::atomic::AtomicI32`
+warning: unused import: `std::sync::Mutex`
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: unused variable: `sig`
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unused variable: `robot`
+warning: unused variable: `screen`
+warning: variable does not need to be mutable
+warning: variable `dummy` is assigned to, but never used
+warning: value assigned to `dummy` is never read
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unreachable pattern
+warning: unreachable pattern
+warning: unreachable pattern
+warning: unreachable pattern
+warning: unreachable pattern
+warning: unreachable pattern
+warning: unreachable pattern
+warning: unreachable pattern
+warning: usage of `Box<Box<i32>>`
+warning: literal with an empty format string
+warning: unneeded late initialization
+warning: variables can be used directly in the `format!` string
+warning: useless use of `format!`
+warning: constant `ver` should have an upper case name
+warning: function `COLS` should have a snake case name
+warning: function `LINES` should have a snake case name

@@ -1,0 +1,220 @@
+{
+  "Rust": {
+    "blanks": 650,
+    "children": {},
+    "code": 10986,
+    "comments": 824,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/bzip2/others/c2saferrust/randtable.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 174,
+          "comments": 21
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/c2saferrust/huffman.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 258,
+          "comments": 26
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/c2saferrust/c2rust-lib.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 24,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/c2saferrust/bzip2recover.rs",
+        "stats": {
+          "blanks": 26,
+          "blobs": {},
+          "code": 496,
+          "comments": 58
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/c2saferrust/build.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/c2saferrust/crctable.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 251,
+          "comments": 26
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/c2saferrust/decompress.rs",
+        "stats": {
+          "blanks": 169,
+          "blobs": {},
+          "code": 2572,
+          "comments": 70
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/c2saferrust/blocksort.rs",
+        "stats": {
+          "blanks": 57,
+          "blobs": {},
+          "code": 1270,
+          "comments": 172
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/c2saferrust/bzlib.rs",
+        "stats": {
+          "blanks": 109,
+          "blobs": {},
+          "code": 2145,
+          "comments": 143
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/c2saferrust/compress.rs",
+        "stats": {
+          "blanks": 112,
+          "blobs": {},
+          "code": 1125,
+          "comments": 126
+        }
+      },
+      {
+        "name": "artifacts/bzip2/others/c2saferrust/bzip2.rs",
+        "stats": {
+          "blanks": 161,
+          "blobs": {},
+          "code": 2665,
+          "comments": 177
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 650,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/bzip2/others/c2saferrust/randtable.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 174,
+            "comments": 21
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/c2saferrust/huffman.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 258,
+            "comments": 26
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/c2saferrust/c2rust-lib.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 24,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/c2saferrust/bzip2recover.rs",
+          "stats": {
+            "blanks": 26,
+            "blobs": {},
+            "code": 496,
+            "comments": 58
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/c2saferrust/build.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/c2saferrust/crctable.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 251,
+            "comments": 26
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/c2saferrust/decompress.rs",
+          "stats": {
+            "blanks": 169,
+            "blobs": {},
+            "code": 2572,
+            "comments": 70
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/c2saferrust/blocksort.rs",
+          "stats": {
+            "blanks": 57,
+            "blobs": {},
+            "code": 1270,
+            "comments": 172
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/c2saferrust/bzlib.rs",
+          "stats": {
+            "blanks": 109,
+            "blobs": {},
+            "code": 2145,
+            "comments": 143
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/c2saferrust/compress.rs",
+          "stats": {
+            "blanks": 112,
+            "blobs": {},
+            "code": 1125,
+            "comments": 126
+          }
+        },
+        {
+          "name": "artifacts/bzip2/others/c2saferrust/bzip2.rs",
+          "stats": {
+            "blanks": 161,
+            "blobs": {},
+            "code": 2665,
+            "comments": 177
+          }
+        }
+      ]
+    },
+    "code": 10986,
+    "comments": 824,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,12 @@
+[package]
+name = "translate"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tempfile = "3.8.1"
+libc = "0.2.153"
+
+[[bin]]
+name="test"
+path="src/test_main.rs"

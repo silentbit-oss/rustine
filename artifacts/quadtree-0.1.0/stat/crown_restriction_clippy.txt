@@ -1,0 +1,935 @@
+warning: missing documentation for the crate
+warning: `allow` attribute without specifying a reason
+warning: `allow` attribute without specifying a reason
+warning: `allow` attribute without specifying a reason
+warning: `allow` attribute without specifying a reason
+warning: `allow` attribute without specifying a reason
+warning: `allow` attribute without specifying a reason
+warning: `allow` attribute without specifying a reason
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: float type suffix should be separated by an underscore
+warning: missing documentation for the crate
+warning: exported structs should not be exhaustive
+warning: missing `#[inline]` for a method
+warning: missing `return` statement
+warning: missing documentation for a struct
+warning: exported structs should not be exhaustive
+warning: item name ends with its containing module's name
+warning: missing `#[inline]` for a method
+warning: missing `return` statement
+warning: missing `#[inline]` for a method
+warning: missing `return` statement
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `#[inline]` for a function
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: floating-point arithmetic detected
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: floating-point arithmetic detected
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: missing `#[inline]` for a function
+warning: consider bringing this path into scope with the `use` keyword
+warning: used `unwrap()` on an `Option` value
+warning: consider bringing this path into scope with the `use` keyword
+warning: used `unwrap()` on an `Option` value
+warning: missing `#[inline]` for a function
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: floating-point arithmetic detected
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: used `unwrap()` on an `Option` value
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: floating-point arithmetic detected
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: missing documentation for a struct
+warning: missing documentation for a struct field
+warning: missing `return` statement
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing documentation for a struct
+warning: missing documentation for a struct field
+warning: missing `return` statement
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing documentation for a struct
+warning: exported structs should not be exhaustive
+warning: item name ends with its containing module's name
+warning: missing `#[inline]` for a method
+warning: missing `return` statement
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `#[inline]` for a method
+warning: missing `return` statement
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `#[inline]` for a function
+warning: using a potentially dangerous silent `as` conversion
+warning: missing `#[inline]` for a function
+warning: using a potentially dangerous silent `as` conversion
+warning: missing `#[inline]` for a function
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: missing `#[inline]` for a function
+warning: consider bringing this path into scope with the `use` keyword
+warning: used `expect()` on an `Option` value
+warning: used `expect()` on an `Option` value
+warning: missing `#[inline]` for a function
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: missing `#[inline]` for a function
+warning: using a potentially dangerous silent `as` conversion
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `#[inline]` for a function
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: consider bringing this path into scope with the `use` keyword
+warning: used `unwrap()` on an `Option` value
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: using inferred pointer cast
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing documentation for a struct
+warning: missing documentation for a struct field
+warning: missing `return` statement
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `#[inline]` for a function
+warning: consider bringing this path into scope with the `use` keyword
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: missing `#[inline]` for a function
+warning: missing documentation for a struct
+warning: missing documentation for a struct field
+warning: missing `return` statement
+warning: item name starts with its containing module's name
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing documentation for a struct
+warning: missing documentation for a struct field
+warning: missing `return` statement
+warning: item name starts with its containing module's name
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing documentation for a struct
+warning: missing documentation for a struct field
+warning: missing `return` statement
+warning: item name starts with its containing module's name
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing documentation for a struct
+warning: exported structs should not be exhaustive
+warning: missing `#[inline]` for a method
+warning: missing `return` statement
+warning: missing `#[inline]` for a method
+warning: missing `return` statement
+warning: consider bringing this path into scope with the `use` keyword
+warning: item name starts with its containing module's name
+warning: missing documentation for a function
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: missing documentation for a function
+warning: missing documentation for a function
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: using inferred pointer cast
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: using inferred pointer cast
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: missing documentation for a function
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: using a potentially dangerous silent `as` conversion
+warning: missing documentation for a function
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: floating-point arithmetic detected
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: floating-point arithmetic detected
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: floating-point arithmetic detected
+warning: floating-point arithmetic detected
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: floating-point arithmetic detected
+warning: floating-point arithmetic detected
+warning: floating-point arithmetic detected
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: floating-point arithmetic detected
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: floating-point arithmetic detected
+warning: floating-point arithmetic detected
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: floating-point arithmetic detected
+warning: floating-point arithmetic detected
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: floating-point arithmetic detected
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: floating-point arithmetic detected
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: missing documentation for a function
+warning: default numeric fallback might occur
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: using inferred pointer cast
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: using inferred pointer cast
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: missing documentation for a function
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: missing `#[inline]` for a function
+warning: item name starts with its containing module's name
+warning: default numeric fallback might occur
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: missing `#[inline]` for a function
+warning: item name starts with its containing module's name
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: using inferred pointer cast
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: using inferred pointer cast
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: missing `#[inline]` for a function
+warning: item name starts with its containing module's name
+warning: used `unwrap()` on an `Option` value
+warning: missing `#[inline]` for a function
+warning: item name starts with its containing module's name
+warning: used `unwrap()` on an `Option` value
+warning: consider bringing this path into scope with the `use` keyword
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: consider bringing this path into scope with the `use` keyword
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: missing `#[inline]` for a function
+warning: item name starts with its containing module's name
+warning: used `expect()` on an `Option` value
+warning: used `expect()` on an `Option` value
+warning: used `expect()` on an `Option` value
+warning: used `expect()` on an `Option` value
+warning: missing documentation for a struct
+warning: missing documentation for a struct field
+warning: missing `return` statement
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing documentation for a struct
+warning: missing documentation for a struct field
+warning: missing `return` statement
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing documentation for a struct
+warning: missing documentation for a struct field
+warning: missing `return` statement
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing documentation for a struct
+warning: missing documentation for a struct field
+warning: missing `return` statement
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `#[inline]` for a function
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: missing `#[inline]` for a function
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: missing documentation for a function
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: missing documentation for a function
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: floating-point arithmetic detected
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: using inferred pointer cast
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: using inferred pointer cast
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing documentation for a function
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: using inferred pointer cast
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: using inferred pointer cast
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: using inferred pointer cast
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: using inferred pointer cast
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: using inferred pointer cast
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: using inferred pointer cast
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: using inferred pointer cast
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: used `unwrap()` on an `Option` value
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: using inferred pointer cast
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing documentation for a function
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing documentation for a function
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: this function is only used once
+warning: this function is only used once
+warning: this function is only used once
+warning: this function is only used once
+warning: this function is only used once
+warning: this function is only used once

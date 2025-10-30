@@ -1,0 +1,33 @@
+warning: manual `RangeInclusive::contains` implementation
+warning: manual arithmetic check found
+warning: manual arithmetic check found
+warning: manual arithmetic check found
+warning: the loop variable `i` is only used to index `costs`
+warning: the loop variable `i` is only used to index `d_lengths`
+warning: the loop variable `i` is only used to index `d_lengths`
+warning: the loop variable `i` is only used to index `head2`
+warning: the loop variable `i` is only used to index `head`
+warning: the loop variable `i` is only used to index `lists`
+warning: the loop variable `i` is only used to index `ll_lengths`
+warning: the loop variable `i` is only used to index `ll_lengths`
+warning: the loop variable `i` is only used to index `ll_lengths`
+warning: the loop variable `i` is only used to index `ll_lengths`
+warning: the loop variable `i` is only used to index `ll_symbol`
+warning: the loop variable `i` is only used to index `path`
+warning: the loop variable `i` is only used to index `same`
+warning: the loop variable `i` is only used to index `symbols`
+warning: the loop variable `i` is used to index `vp`
+warning: this `else { if .. }` block can be collapsed
+warning: this `else { if .. }` block can be collapsed
+warning: this `if` has identical blocks
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string

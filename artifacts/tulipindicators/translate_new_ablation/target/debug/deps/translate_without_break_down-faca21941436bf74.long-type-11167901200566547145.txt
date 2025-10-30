@@ -1,0 +1,1 @@
+for<'a, 'b, 'c, 'd, 'e> fn(i32, Option<&'a [&'b [f64]]>, Option<&'c [f64]>, Option<&'d mut [&'e mut [f64]]>) -> i32

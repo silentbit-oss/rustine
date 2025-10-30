@@ -1,0 +1,1161 @@
+warning: unused import: `crate::*`
+warning: type `zahl_char_t` should have an upper camel case name
+warning: type `z_t` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: variant `PROBABLY_PRIME` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: variant `FAST_RANDOM` should have an upper camel case name
+warning: variant `SECURE_RANDOM` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::os::raw::c_int`
+warning: variant `ZERROR_ERRNO_SET` should have an upper camel case name
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: `LIBZAHL_ERROR` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `LIBZAHL_ERROR` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `LIBZAHL_ERROR` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `LIBZAHL_ERROR` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `LIBZAHL_ERROR` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `LIBZAHL_ERROR` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `LIBZAHL_ERROR` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `LIBZAHL_ERROR` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `LIBZAHL_ERROR` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `LIBZAHL_ERROR` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `LIBZAHL_ERROR` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `LIBZAHL_ERROR` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `LIBZAHL_ERROR` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: unused import: `std::sync::atomic::Ordering`
+warning: unnecessary parentheses around const expression
+warning: unnecessary parentheses around const expression
+warning: unnecessary parentheses around const expression
+warning: unnecessary parentheses around const expression
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: `libzahl_jmp_buf` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: unused import: `crate::ZPrimality::PRIME`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::ffi::CStr`
+warning: unused import: `std::os::raw::c_char`
+warning: unused import: `std::process::abort`
+warning: unnecessary parentheses around `if` condition
+warning: unnecessary parentheses around `if` condition
+warning: unnecessary parentheses around `if` condition
+warning: unnecessary parentheses around `if` condition
+warning: unnecessary parentheses around `if` condition
+warning: unnecessary parentheses around `if` condition
+warning: unnecessary parentheses around `if` condition
+warning: unnecessary parentheses around `if` condition
+warning: unnecessary parentheses around `if` condition
+warning: unnecessary parentheses around `if` condition
+warning: unnecessary parentheses around `if` condition
+warning: unnecessary parentheses around `if` condition
+warning: unnecessary parentheses around `if` condition
+warning: unnecessary parentheses around `if` condition
+warning: unnecessary parentheses around `if` condition
+warning: unnecessary parentheses around `if` condition
+warning: unnecessary parentheses around `if` condition
+warning: unnecessary parentheses around `if` condition
+warning: unnecessary parentheses around `if` condition
+warning: unused import: `std::io::Write`
+warning: unused import: `rand::Rng`
+warning: unused import: `std::ptr`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `std::sync::atomic::AtomicUsize`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `rand::Rng`
+warning: unused import: `std::mem`
+warning: unused import: `std::slice`
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `std::sync::atomic::AtomicI32`
+warning: unused import: `std::sync::atomic::AtomicUsize`
+warning: unused import: `rand::Rng`
+warning: unnecessary parentheses around assigned value
+warning: unused import: `rand::Rng`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::ptr`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `std::sync::atomic::AtomicI32`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::ptr`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::boxed::Box`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `rand::Rng`
+warning: unnecessary parentheses around assigned value
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::io::Write`
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `std::sync::atomic::AtomicI32`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::sync::atomic::AtomicUsize`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `std::sync::atomic::AtomicUsize`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::process`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused variable: `size`
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unused variable: `chars`
+warning: unused variable: `chars`
+warning: variable `s` is assigned to, but never used
+warning: variable `s_idx` is assigned to, but never used
+warning: variable `n` is assigned to, but never used
+warning: value assigned to `n` is never read
+warning: value assigned to `s_idx` is never read
+warning: value assigned to `s` is never read
+warning: value assigned to `s_idx` is never read
+warning: value assigned to `s` is never read
+warning: value assigned to `n` is never read
+warning: value assigned to `s_idx` is never read
+warning: value assigned to `s` is never read
+warning: value assigned to `s_idx` is never read
+warning: value assigned to `s` is never read
+warning: variable does not need to be mutable
+warning: unused variable: `bb`
+warning: unused variable: `cc`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `addend_idx` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `i`
+warning: variable does not need to be mutable
+warning: unused variable: `tmp`
+warning: variable does not need to be mutable
+warning: variable `read_total` is assigned to, but never used
+warning: unreachable pattern
+warning: unreachable pattern
+warning: value assigned to `temp` is never read
+warning: value assigned to `len` is never read
+warning: value assigned to `b_idx` is never read
+warning: value assigned to `b_idx` is never read
+warning: variable does not need to be mutable
+warning: static `buf` is never used
+warning: static `buf` is never used
+warning: static `env2` is never used
+warning: static `n` is never used
+warning: this call for this type may be undefined behavior
+warning: this call for this type may be undefined behavior
+warning: manually filling a slice
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: manually reimplementing `div_ceil`
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: unneeded late initialization
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: deref which would be done by auto-deref
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: deref which would be done by auto-deref
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: this `map_or` can be simplified
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: the loop variable `i` is only used to index `tmp_ds_copies`
+warning: importing legacy numeric constants
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: manual implementation of an assign operation
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: this `else { if .. }` block can be collapsed
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: this `else { if .. }` block can be collapsed
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: unneeded late initialization
+warning: redundant closure
+warning: this operation has no effect
+warning: redundant closure
+warning: deref which would be done by auto-deref
+warning: this operation has no effect
+warning: manual arithmetic check found
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: variables can be used directly in the `format!` string
+warning: manual arithmetic check found
+warning: variables can be used directly in the `format!` string
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: this loop never actually loops
+warning: this loop never actually loops
+warning: this `else { if .. }` block can be collapsed
+warning: the type `[std::sync::atomic::AtomicUsize; 64]` does not permit being left uninitialized
+warning: the type `[std::option::Option<std::boxed::Box<[u32]>>; 64]` does not permit being left uninitialized
+warning: static variable `a` should have an upper case name
+warning: static variable `b` should have an upper case name
+warning: static variable `c` should have an upper case name
+warning: static variable `d` should have an upper case name
+warning: static variable `buf` should have an upper case name
+warning: static variable `ret` should have an upper case name
+warning: static variable `env` should have an upper case name
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: static variable `a` should have an upper case name
+warning: static variable `b` should have an upper case name
+warning: static variable `c` should have an upper case name
+warning: static variable `d` should have an upper case name
+warning: static variable `ret` should have an upper case name
+warning: static variable `env` should have an upper case name
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: static variable `a` should have an upper case name
+warning: static variable `b` should have an upper case name
+warning: static variable `c` should have an upper case name
+warning: static variable `d` should have an upper case name
+warning: static variable `ret` should have an upper case name
+warning: static variable `env` should have an upper case name
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: static variable `a` should have an upper case name
+warning: static variable `b` should have an upper case name
+warning: static variable `c` should have an upper case name
+warning: static variable `d` should have an upper case name
+warning: static variable `ret` should have an upper case name
+warning: static variable `env` should have an upper case name
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: static variable `a` should have an upper case name
+warning: static variable `b` should have an upper case name
+warning: static variable `c` should have an upper case name
+warning: static variable `d` should have an upper case name
+warning: static variable `ret` should have an upper case name
+warning: static variable `env` should have an upper case name
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: static variable `a` should have an upper case name
+warning: static variable `b` should have an upper case name
+warning: static variable `c` should have an upper case name
+warning: static variable `d` should have an upper case name
+warning: static variable `ret` should have an upper case name
+warning: static variable `env` should have an upper case name
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: static variable `a` should have an upper case name
+warning: static variable `b` should have an upper case name
+warning: static variable `c` should have an upper case name
+warning: static variable `d` should have an upper case name
+warning: static variable `ret` should have an upper case name
+warning: static variable `env` should have an upper case name
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: static variable `a` should have an upper case name
+warning: static variable `b` should have an upper case name
+warning: static variable `c` should have an upper case name
+warning: static variable `d` should have an upper case name
+warning: static variable `ret` should have an upper case name
+warning: static variable `env` should have an upper case name
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: static variable `a` should have an upper case name
+warning: static variable `b` should have an upper case name
+warning: static variable `c` should have an upper case name
+warning: static variable `d` should have an upper case name
+warning: static variable `ret` should have an upper case name
+warning: static variable `env` should have an upper case name
+warning: static variable `env2` should have an upper case name
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: static variable `a` should have an upper case name
+warning: static variable `b` should have an upper case name
+warning: static variable `c` should have an upper case name
+warning: static variable `d` should have an upper case name
+warning: static variable `buf` should have an upper case name
+warning: static variable `ret` should have an upper case name
+warning: static variable `env` should have an upper case name
+warning: static variable `env2` should have an upper case name
+warning: static variable `n` should have an upper case name
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: creating a mutable reference to mutable static
+warning: call to `.clone()` on a reference in this situation does nothing
+warning: call to `.clone()` on a reference in this situation does nothing
+warning: calls to `std::mem::drop` with a reference instead of an owned value does nothing

@@ -1,0 +1,12 @@
+enum mkd_tableflags
+{
+  MKD_TABLE_ALIGN_L = 1,
+  MKD_TABLE_ALIGN_R = 2,
+  MKD_TABLE_ALIGN_CENTER = 3,
+  MKD_TABLE_ALIGNMASK = 3,
+  MKD_TABLE_HEADER = 4
+}
+/*** DEPENDENCIES:
+***/
+
+

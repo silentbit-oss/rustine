@@ -1,0 +1,76 @@
+{
+  "Rust": {
+    "blanks": 80,
+    "children": {},
+    "code": 540,
+    "comments": 7,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/bst/others/laertes/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/bst/others/laertes/src/bst.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 98,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bst/others/laertes/lib.rs",
+        "stats": {
+          "blanks": 76,
+          "blobs": {},
+          "code": 436,
+          "comments": 3
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 80,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/bst/others/laertes/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/bst/others/laertes/src/bst.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 98,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bst/others/laertes/lib.rs",
+          "stats": {
+            "blanks": 76,
+            "blobs": {},
+            "code": 436,
+            "comments": 3
+          }
+        }
+      ]
+    },
+    "code": 540,
+    "comments": 7,
+    "inaccurate": false,
+    "reports": []
+  }
+}

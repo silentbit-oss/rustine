@@ -1,0 +1,141 @@
+{
+  "C": {
+    "blanks": 885,
+    "children": {},
+    "code": 5098,
+    "comments": 1037,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/lodepng/examples/example_decode.c",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 43,
+          "comments": 44
+        }
+      },
+      {
+        "name": "subjects/lodepng/examples/example_sdl.c",
+        "stats": {
+          "blanks": 20,
+          "blobs": {},
+          "code": 75,
+          "comments": 47
+        }
+      },
+      {
+        "name": "subjects/lodepng/examples/example_encode.c",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 43,
+          "comments": 50
+        }
+      },
+      {
+        "name": "subjects/lodepng/lodepng.c",
+        "stats": {
+          "blanks": 825,
+          "blobs": {},
+          "code": 4937,
+          "comments": 896
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 156,
+    "children": {},
+    "code": 508,
+    "comments": 1712,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/lodepng/lodepng_util.h",
+        "stats": {
+          "blanks": 25,
+          "blobs": {},
+          "code": 66,
+          "comments": 200
+        }
+      },
+      {
+        "name": "subjects/lodepng/lodepng.h",
+        "stats": {
+          "blanks": 131,
+          "blobs": {},
+          "code": 442,
+          "comments": 1512
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 1041,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/lodepng/examples/example_decode.c",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 43,
+            "comments": 44
+          }
+        },
+        {
+          "name": "subjects/lodepng/examples/example_sdl.c",
+          "stats": {
+            "blanks": 20,
+            "blobs": {},
+            "code": 75,
+            "comments": 47
+          }
+        },
+        {
+          "name": "subjects/lodepng/examples/example_encode.c",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 43,
+            "comments": 50
+          }
+        },
+        {
+          "name": "subjects/lodepng/lodepng.c",
+          "stats": {
+            "blanks": 825,
+            "blobs": {},
+            "code": 4937,
+            "comments": 896
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/lodepng/lodepng_util.h",
+          "stats": {
+            "blanks": 25,
+            "blobs": {},
+            "code": 66,
+            "comments": 200
+          }
+        },
+        {
+          "name": "subjects/lodepng/lodepng.h",
+          "stats": {
+            "blanks": 131,
+            "blobs": {},
+            "code": 442,
+            "comments": 1512
+          }
+        }
+      ]
+    },
+    "code": 5606,
+    "comments": 2749,
+    "inaccurate": false,
+    "reports": []
+  }
+}

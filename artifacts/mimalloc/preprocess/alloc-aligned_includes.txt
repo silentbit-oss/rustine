@@ -1,0 +1,17 @@
+#include <alloc-aligned.c>
+#include <atomic.h>
+#include <errno.h>
+#include <internal.h>
+#include <limits.h>
+#include <mimalloc-stats.h>
+#include <mimalloc.h>
+#include <prim.h>
+#include <pthread.h>
+#include <stdarg.h>
+#include <stdatomic.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <string.h>
+#include <track.h>
+#include <types.h>

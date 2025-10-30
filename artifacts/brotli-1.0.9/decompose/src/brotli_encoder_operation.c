@@ -1,0 +1,11 @@
+typedef enum BrotliEncoderOperation
+{
+  BROTLI_OPERATION_PROCESS = 0,
+  BROTLI_OPERATION_FLUSH = 1,
+  BROTLI_OPERATION_FINISH = 2,
+  BROTLI_OPERATION_EMIT_METADATA = 3
+} BrotliEncoderOperation
+/*** DEPENDENCIES:
+***/
+
+

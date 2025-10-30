@@ -1,0 +1,7 @@
+warning: casting the result of `as_ptr` to *mut i8
+warning: casting the result of `as_ptr` to *mut std::ffi::c_void
+warning: casting the result of `as_ptr` to *mut i8
+warning: the function has a cognitive complexity of (39/25)
+warning: casting the result of `as_ptr` to *mut i8
+warning: this argument is a mutable reference, but not used mutably
+warning: a dangling pointer will be produced because the temporary `std::vec::Vec<i8>` will be dropped

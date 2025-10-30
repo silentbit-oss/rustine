@@ -1,0 +1,15 @@
+warning: unused import: `crate::*`
+warning: unused import: `libc::FILE`
+warning: unused import: `std::io::SeekFrom`
+warning: unused import: `std::io`
+warning: unused import: `std::mem`
+warning: unused import: `std::fs::File`
+warning: unused import: `tempfile::tempfile`
+warning: you seem to be trying to use `&Box<T>`. Consider using just `&T`
+warning: you seem to be trying to use `&Box<T>`. Consider using just `&T`
+warning: variables can be used directly in the `format!` string
+warning: this `match` expression can be replaced with `?`
+warning: this `map_or` can be simplified
+warning: function `newNode` should have a snake case name
+warning: function `minValueNode` should have a snake case name
+warning: function `deleteNode` should have a snake case name

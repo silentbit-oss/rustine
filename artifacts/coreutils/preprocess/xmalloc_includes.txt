@@ -1,0 +1,17 @@
+#include <assert.h>
+#include <config.h>
+#include <errno.h>
+#include <ialloc.h>
+#include <idx.h>
+#include <intprops-internal.h>
+#include <limits.h>
+#include <minmax.h>
+#include <param.h>
+#include <stdbool.h>
+#include <stdckdint.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <xalloc.h>
+#include <xmalloc.c>

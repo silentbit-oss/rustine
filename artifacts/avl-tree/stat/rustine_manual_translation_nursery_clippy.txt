@@ -1,0 +1,7 @@
+warning: function call inside of `unwrap_or`
+warning: this could be a `const fn`
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else

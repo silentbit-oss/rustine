@@ -1,0 +1,29 @@
+warning: unused import: `crate::laertes_rt::*`
+warning: unused import: `crate::laertes_rt::*`
+warning: unused import: `crate::laertes_rt::*`
+warning: the feature `const_fn_fn_ptr_basics` has been stable since 1.61.0 and no longer requires an attribute to enable
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: `0 as *mut _` detected
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: this `else { if .. }` block can be collapsed
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: use of `default` to create a unit struct
+warning: this `map_or` can be simplified
+warning: the following explicit lifetimes could be elided: 'a
+warning: the following explicit lifetimes could be elided: 'a
+warning: casting raw pointers to the same type and constness is unnecessary (`*const ()` -> `*const ()`)
+warning: empty `loop {}` wastes CPU cycles

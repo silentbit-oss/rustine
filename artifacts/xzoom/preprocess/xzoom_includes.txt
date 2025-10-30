@@ -1,0 +1,12 @@
+#include <Xatom.h>
+#include <Xlib.h>
+#include <Xutil.h>
+#include <_X11_fake_defines.h>
+#include <_X11_fake_typedefs.h>
+#include <cursorfont.h>
+#include <keysym.h>
+#include <signal.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <types.h>

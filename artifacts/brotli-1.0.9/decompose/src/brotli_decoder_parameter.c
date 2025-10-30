@@ -1,0 +1,9 @@
+typedef enum BrotliDecoderParameter
+{
+  BROTLI_DECODER_PARAM_DISABLE_RING_BUFFER_REALLOCATION = 0,
+  BROTLI_DECODER_PARAM_LARGE_WINDOW = 1
+} BrotliDecoderParameter
+/*** DEPENDENCIES:
+***/
+
+

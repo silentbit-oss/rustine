@@ -1,0 +1,130 @@
+{
+  "Rust": {
+    "blanks": 3,
+    "children": {},
+    "code": 2333,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/avl-tree/others/c2rust/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 16,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/avl-tree/others/c2rust/src/avl_example.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 207,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/avl-tree/others/c2rust/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/avl-tree/others/c2rust/src/avl_data.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 191,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/avl-tree/others/c2rust/src/avl_bf.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 577,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/avl-tree/others/c2rust/src/avl_test.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1336,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/avl-tree/others/c2rust/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 16,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/avl-tree/others/c2rust/src/avl_example.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 207,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/avl-tree/others/c2rust/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/avl-tree/others/c2rust/src/avl_data.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 191,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/avl-tree/others/c2rust/src/avl_bf.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 577,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/avl-tree/others/c2rust/src/avl_test.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1336,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 2333,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

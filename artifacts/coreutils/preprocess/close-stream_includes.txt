@@ -1,0 +1,11 @@
+#include <assert.h>
+#include <close-stream.c>
+#include <close-stream.h>
+#include <config.h>
+#include <errno.h>
+#include <fpending.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdio.h>
+#include <stdio_ext.h>
+#include <unlocked-io.h>

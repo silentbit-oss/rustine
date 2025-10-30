@@ -1,0 +1,37 @@
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: the function has a cognitive complexity of (30/25)
+warning: the type `[std::option::Option<std::boxed::Box<[u32]>>; 64]` does not permit being left uninitialized
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else

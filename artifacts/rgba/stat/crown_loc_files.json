@@ -1,0 +1,94 @@
+{
+  "Rust": {
+    "blanks": 10,
+    "children": {},
+    "code": 1749,
+    "comments": 23,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/rgba/others/crown/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 19,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/rgba/others/crown/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/rgba/others/crown/src/test.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 256,
+          "comments": 19
+        }
+      },
+      {
+        "name": "artifacts/rgba/others/crown/src/src/rgba.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 1468,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 10,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/rgba/others/crown/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 19,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/rgba/others/crown/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/rgba/others/crown/src/test.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 256,
+            "comments": 19
+          }
+        },
+        {
+          "name": "artifacts/rgba/others/crown/src/src/rgba.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 1468,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 1749,
+    "comments": 23,
+    "inaccurate": false,
+    "reports": []
+  }
+}

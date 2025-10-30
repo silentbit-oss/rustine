@@ -1,0 +1,13 @@
+[package]
+name = "translate"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lazy_static = "1.4.0"
+bitflags = "2.4.2"
+rand = "0.8.5"
+pyo3 = "0.20.0"
+unicode-ident = "1.0.12"
+unicode-segmentation = "1.11.0"
+libc = "0.2.153"

@@ -1,0 +1,60 @@
+{
+  "retranslated": [
+    {
+      "unit": "zsave",
+      "mode": "function_block_replace",
+      "file": "artifacts/libzahl-1.0/translate_new/src/zsave.rs",
+      "function": "zsave"
+    },
+    {
+      "unit": "zfree",
+      "mode": "direct_snippet_replace"
+    },
+    {
+      "unit": "libzahl_realloc",
+      "mode": "function_block_replace",
+      "file": "artifacts/libzahl-1.0/translate_new/src/allocator.rs",
+      "function": "libzahl_realloc"
+    },
+    {
+      "unit": "zsub_unsigned",
+      "mode": "direct_snippet_replace"
+    },
+    {
+      "unit": "zadd_unsigned",
+      "mode": "function_block_replace",
+      "file": "artifacts/libzahl-1.0/translate_new/src/zadd.rs",
+      "function": "zadd_unsigned"
+    },
+    {
+      "unit": "zload",
+      "mode": "function_block_replace",
+      "file": "artifacts/libzahl-1.0/translate_new/src/zload.rs",
+      "function": "zload"
+    },
+    {
+      "unit": "zrand_get_random_bits",
+      "mode": "function_block_replace",
+      "file": "artifacts/libzahl-1.0/translate_new/src/zrand.rs",
+      "function": "zrand_get_random_bits"
+    },
+    {
+      "unit": "zsets",
+      "mode": "direct_snippet_replace"
+    },
+    {
+      "unit": "zstr_length",
+      "mode": "direct_snippet_replace"
+    },
+    {
+      "unit": "zstr",
+      "mode": "direct_snippet_replace"
+    },
+    {
+      "unit": "zrand",
+      "mode": "direct_snippet_replace"
+    }
+  ],
+  "skipped": [],
+  "fix_failed": []
+}

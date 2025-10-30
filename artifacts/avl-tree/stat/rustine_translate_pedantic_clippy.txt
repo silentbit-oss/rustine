@@ -1,0 +1,168 @@
+warning: 10 bindings with single-character names in scope
+warning: 10 bindings with single-character names in scope
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `if` chain can be rewritten with `match`
+warning: boolean to int conversion using if
+warning: boolean to int conversion using if
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: called `map(<f>).unwrap_or(<a>)` on an `Option` value
+warning: called `map(<f>).unwrap_or(<a>)` on an `Option` value
+warning: called `map(<f>).unwrap_or(<a>)` on an `Option` value
+warning: called `map(<f>).unwrap_or(<a>)` on an `Option` value
+warning: called `map(<f>).unwrap_or(<a>)` on an `Option` value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `u64` to `u32` may truncate the value
+warning: casting from `*const dyn std::any::Any` to a more-strictly-aligned pointer (`*const std::boxed::Box<dyn std::any::Any>`) (1 < 8 bytes)
+warning: casting from `*const dyn std::any::Any` to a more-strictly-aligned pointer (`*const std::boxed::Box<dyn std::any::Any>`) (1 < 8 bytes)
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: consider adding a `;` to the last statement for consistent formatting
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: it is more concise to loop over references to containers instead of using explicit iteration methods
+warning: it is more concise to loop over references to containers instead of using explicit iteration methods
+warning: it is more concise to loop over references to containers instead of using explicit iteration methods
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: redundant closure
+warning: redundant closure
+warning: redundant else block
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function has too many lines (109/100)
+warning: this function has too many lines (120/100)
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`

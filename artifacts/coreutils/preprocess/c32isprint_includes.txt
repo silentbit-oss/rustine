@@ -1,0 +1,12 @@
+#include <assert.h>
+#include <c32is-impl.h>
+#include <c32isprint.c>
+#include <config.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <uchar.h>
+#include <unictype.h>
+#include <unitypes.h>
+#include <wchar.h>
+#include <wctype.h>

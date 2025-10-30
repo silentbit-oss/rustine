@@ -1,0 +1,2038 @@
+use ::libc;
+extern "C" {
+    
+    fn __assert_fail(
+        __assertion: *const libc::c_char,
+        __file: *const libc::c_char,
+        __line: libc::c_uint,
+        __function: *const libc::c_char,
+    ) -> !;
+    fn printf(_: *const libc::c_char, _: ...) -> libc::c_int;
+    fn __errno_location() -> *mut libc::c_int;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+pub type __int32_t = libc::c_int;
+pub type __int64_t = libc::c_long;
+pub type __uint64_t = libc::c_ulong;
+pub type int32_t = __int32_t;
+pub type int64_t = __int64_t;
+pub type uint64_t = __uint64_t;
+unsafe fn main_0(
+    mut argc: libc::c_int,
+    mut argv: *mut *mut libc::c_char,
+) -> libc::c_int {
+    let mut jtmp: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_int(5 as libc::c_int);
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int(jtmp) == 5 as libc::c_int {} else {
+        __assert_fail(
+            b"json_object_get_int(jtmp) == 5\0" as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            35 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_10996: {
+        if crate::src::json_object::json_object_get_int(jtmp) == 5 as libc::c_int {} else {
+            __assert_fail(
+                b"json_object_get_int(jtmp) == 5\0" as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                35 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp);
+    let mut jtmp_0: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_int(5 as libc::c_int);
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int64(jtmp_0) == 5 as libc::c_int as int64_t {} else {
+        __assert_fail(
+            b"json_object_get_int64(jtmp) == 5\0" as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            35 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_10929: {
+        if crate::src::json_object::json_object_get_int64(jtmp_0) == 5 as libc::c_int as int64_t {} else {
+            __assert_fail(
+                b"json_object_get_int64(jtmp) == 5\0" as *const u8
+                    as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                35 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_0);
+    let mut jtmp_1: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_int(5 as libc::c_int);
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_uint64(jtmp_1) == 5 as libc::c_int as uint64_t {} else {
+        __assert_fail(
+            b"json_object_get_uint64(jtmp) == 5\0" as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            35 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_10862: {
+        if crate::src::json_object::json_object_get_uint64(jtmp_1) == 5 as libc::c_int as uint64_t {} else {
+            __assert_fail(
+                b"json_object_get_uint64(jtmp) == 5\0" as *const u8
+                    as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                35 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_1);
+    let mut jtmp_2: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_int(0 as libc::c_int);
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int(jtmp_2) == 0 as libc::c_int {} else {
+        __assert_fail(
+            b"json_object_get_int(jtmp) == 0\0" as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            36 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_10797: {
+        if crate::src::json_object::json_object_get_int(jtmp_2) == 0 as libc::c_int {} else {
+            __assert_fail(
+                b"json_object_get_int(jtmp) == 0\0" as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                36 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_2);
+    let mut jtmp_3: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_int(0 as libc::c_int);
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int64(jtmp_3) == 0 as libc::c_int as int64_t {} else {
+        __assert_fail(
+            b"json_object_get_int64(jtmp) == 0\0" as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            36 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_10730: {
+        if crate::src::json_object::json_object_get_int64(jtmp_3) == 0 as libc::c_int as int64_t {} else {
+            __assert_fail(
+                b"json_object_get_int64(jtmp) == 0\0" as *const u8
+                    as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                36 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_3);
+    let mut jtmp_4: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_int(0 as libc::c_int);
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_uint64(jtmp_4) == 0 as libc::c_int as uint64_t {} else {
+        __assert_fail(
+            b"json_object_get_uint64(jtmp) == 0\0" as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            36 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_10663: {
+        if crate::src::json_object::json_object_get_uint64(jtmp_4) == 0 as libc::c_int as uint64_t {} else {
+            __assert_fail(
+                b"json_object_get_uint64(jtmp) == 0\0" as *const u8
+                    as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                36 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_4);
+    let mut jtmp_5: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"0\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int(jtmp_5) == 0 as libc::c_int {} else {
+        __assert_fail(
+            b"json_object_get_int(jtmp) == 0\0" as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            37 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_10597: {
+        if crate::src::json_object::json_object_get_int(jtmp_5) == 0 as libc::c_int {} else {
+            __assert_fail(
+                b"json_object_get_int(jtmp) == 0\0" as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                37 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_5);
+    let mut jtmp_6: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"0\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int64(jtmp_6) == 0 as libc::c_int as int64_t {} else {
+        __assert_fail(
+            b"json_object_get_int64(jtmp) == 0\0" as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            37 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_10529: {
+        if crate::src::json_object::json_object_get_int64(jtmp_6) == 0 as libc::c_int as int64_t {} else {
+            __assert_fail(
+                b"json_object_get_int64(jtmp) == 0\0" as *const u8
+                    as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                37 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_6);
+    let mut jtmp_7: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"0\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_uint64(jtmp_7) == 0 as libc::c_int as uint64_t {} else {
+        __assert_fail(
+            b"json_object_get_uint64(jtmp) == 0\0" as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            37 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_10461: {
+        if crate::src::json_object::json_object_get_uint64(jtmp_7) == 0 as libc::c_int as uint64_t {} else {
+            __assert_fail(
+                b"json_object_get_uint64(jtmp) == 0\0" as *const u8
+                    as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                37 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_7);
+    let mut jtmp_8: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"00000\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int(jtmp_8) == 0 as libc::c_int {} else {
+        __assert_fail(
+            b"json_object_get_int(jtmp) == 0\0" as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            38 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_10393: {
+        if crate::src::json_object::json_object_get_int(jtmp_8) == 0 as libc::c_int {} else {
+            __assert_fail(
+                b"json_object_get_int(jtmp) == 0\0" as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                38 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_8);
+    let mut jtmp_9: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"00000\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int64(jtmp_9) == 0 as libc::c_int as int64_t {} else {
+        __assert_fail(
+            b"json_object_get_int64(jtmp) == 0\0" as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            38 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_10325: {
+        if crate::src::json_object::json_object_get_int64(jtmp_9) == 0 as libc::c_int as int64_t {} else {
+            __assert_fail(
+                b"json_object_get_int64(jtmp) == 0\0" as *const u8
+                    as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                38 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_9);
+    let mut jtmp_10: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"00000\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_uint64(jtmp_10) == 0 as libc::c_int as uint64_t {} else {
+        __assert_fail(
+            b"json_object_get_uint64(jtmp) == 0\0" as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            38 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_10256: {
+        if crate::src::json_object::json_object_get_uint64(jtmp_10) == 0 as libc::c_int as uint64_t {} else {
+            __assert_fail(
+                b"json_object_get_uint64(jtmp) == 0\0" as *const u8
+                    as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                38 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_10);
+    let mut jtmp_11: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"000004568789\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int(jtmp_11) == 4568789 as libc::c_int {} else {
+        __assert_fail(
+            b"json_object_get_int(jtmp) == 4568789\0" as *const u8
+                as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            39 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_10188: {
+        if crate::src::json_object::json_object_get_int(jtmp_11) == 4568789 as libc::c_int {} else {
+            __assert_fail(
+                b"json_object_get_int(jtmp) == 4568789\0" as *const u8
+                    as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                39 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_11);
+    let mut jtmp_12: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"000004568789\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int64(jtmp_12) == 4568789 as libc::c_int as int64_t {} else {
+        __assert_fail(
+            b"json_object_get_int64(jtmp) == 4568789\0" as *const u8
+                as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            39 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_10119: {
+        if crate::src::json_object::json_object_get_int64(jtmp_12) == 4568789 as libc::c_int as int64_t {} else {
+            __assert_fail(
+                b"json_object_get_int64(jtmp) == 4568789\0" as *const u8
+                    as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                39 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_12);
+    let mut jtmp_13: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"000004568789\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_uint64(jtmp_13) == 4568789 as libc::c_int as uint64_t {} else {
+        __assert_fail(
+            b"json_object_get_uint64(jtmp) == 4568789\0" as *const u8
+                as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            39 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_10050: {
+        if crate::src::json_object::json_object_get_uint64(jtmp_13) == 4568789 as libc::c_int as uint64_t
+        {} else {
+            __assert_fail(
+                b"json_object_get_uint64(jtmp) == 4568789\0" as *const u8
+                    as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                39 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_13);
+    let mut jtmp_14: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"0xFF\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int(jtmp_14) == 0 as libc::c_int
+        && *__errno_location() == 0 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int(jtmp) == 0 && (*__errno_location ()) == 0\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            40 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_9964: {
+        if crate::src::json_object::json_object_get_int(jtmp_14) == 0 as libc::c_int
+            && *__errno_location() == 0 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int(jtmp) == 0 && (*__errno_location ()) == 0\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                40 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_14);
+    let mut jtmp_15: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"0xFF\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int64(jtmp_15) == 0 as libc::c_int as int64_t
+        && *__errno_location() == 0 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int64(jtmp) == 0 && (*__errno_location ()) == 0\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            40 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_9877: {
+        if crate::src::json_object::json_object_get_int64(jtmp_15) == 0 as libc::c_int as int64_t
+            && *__errno_location() == 0 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int64(jtmp) == 0 && (*__errno_location ()) == 0\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                40 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_15);
+    let mut jtmp_16: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"0xFF\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_uint64(jtmp_16) == 0 as libc::c_int as uint64_t
+        && *__errno_location() == 0 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_uint64(jtmp) == 0 && (*__errno_location ()) == 0\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            40 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_9791: {
+        if crate::src::json_object::json_object_get_uint64(jtmp_16) == 0 as libc::c_int as uint64_t
+            && *__errno_location() == 0 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_uint64(jtmp) == 0 && (*__errno_location ()) == 0\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                40 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_16);
+    let mut jtmp_17: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"333this_seems_a_valid_string\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int(jtmp_17) == 333 as libc::c_int {} else {
+        __assert_fail(
+            b"json_object_get_int(jtmp) == 333\0" as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            41 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_9723: {
+        if crate::src::json_object::json_object_get_int(jtmp_17) == 333 as libc::c_int {} else {
+            __assert_fail(
+                b"json_object_get_int(jtmp) == 333\0" as *const u8
+                    as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                41 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_17);
+    let mut jtmp_18: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"333this_seems_a_valid_string\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int64(jtmp_18) == 333 as libc::c_int as int64_t {} else {
+        __assert_fail(
+            b"json_object_get_int64(jtmp) == 333\0" as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            41 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_9654: {
+        if crate::src::json_object::json_object_get_int64(jtmp_18) == 333 as libc::c_int as int64_t {} else {
+            __assert_fail(
+                b"json_object_get_int64(jtmp) == 333\0" as *const u8
+                    as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                41 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_18);
+    let mut jtmp_19: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"333this_seems_a_valid_string\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_uint64(jtmp_19) == 333 as libc::c_int as uint64_t {} else {
+        __assert_fail(
+            b"json_object_get_uint64(jtmp) == 333\0" as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            41 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_9585: {
+        if crate::src::json_object::json_object_get_uint64(jtmp_19) == 333 as libc::c_int as uint64_t {} else {
+            __assert_fail(
+                b"json_object_get_uint64(jtmp) == 333\0" as *const u8
+                    as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                41 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_19);
+    let mut jtmp_20: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"this_is_not_a_number\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int(jtmp_20) == 0 as libc::c_int
+        && *__errno_location() == 22 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int(jtmp) == 0 && (*__errno_location ()) == 22\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            42 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_9500: {
+        if crate::src::json_object::json_object_get_int(jtmp_20) == 0 as libc::c_int
+            && *__errno_location() == 22 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int(jtmp) == 0 && (*__errno_location ()) == 22\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                42 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_20);
+    let mut jtmp_21: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"this_is_not_a_number\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int64(jtmp_21) == 0 as libc::c_int as int64_t
+        && *__errno_location() == 22 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int64(jtmp) == 0 && (*__errno_location ()) == 22\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            42 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_9414: {
+        if crate::src::json_object::json_object_get_int64(jtmp_21) == 0 as libc::c_int as int64_t
+            && *__errno_location() == 22 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int64(jtmp) == 0 && (*__errno_location ()) == 22\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                42 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_21);
+    let mut jtmp_22: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"this_is_not_a_number\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_uint64(jtmp_22) == 0 as libc::c_int as uint64_t
+        && *__errno_location() == 22 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_uint64(jtmp) == 0 && (*__errno_location ()) == 22\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            42 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_9328: {
+        if crate::src::json_object::json_object_get_uint64(jtmp_22) == 0 as libc::c_int as uint64_t
+            && *__errno_location() == 22 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_uint64(jtmp) == 0 && (*__errno_location ()) == 22\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                42 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_22);
+    let mut jtmp_23: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"B0\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int(jtmp_23) == 0 as libc::c_int
+        && *__errno_location() == 22 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int(jtmp) == 0 && (*__errno_location ()) == 22\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            43 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_9243: {
+        if crate::src::json_object::json_object_get_int(jtmp_23) == 0 as libc::c_int
+            && *__errno_location() == 22 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int(jtmp) == 0 && (*__errno_location ()) == 22\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                43 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_23);
+    let mut jtmp_24: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"B0\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int64(jtmp_24) == 0 as libc::c_int as int64_t
+        && *__errno_location() == 22 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int64(jtmp) == 0 && (*__errno_location ()) == 22\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            43 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_9156: {
+        if crate::src::json_object::json_object_get_int64(jtmp_24) == 0 as libc::c_int as int64_t
+            && *__errno_location() == 22 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int64(jtmp) == 0 && (*__errno_location ()) == 22\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                43 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_24);
+    let mut jtmp_25: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"B0\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_uint64(jtmp_25) == 0 as libc::c_int as uint64_t
+        && *__errno_location() == 22 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_uint64(jtmp) == 0 && (*__errno_location ()) == 22\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            43 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_9070: {
+        if crate::src::json_object::json_object_get_uint64(jtmp_25) == 0 as libc::c_int as uint64_t
+            && *__errno_location() == 22 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_uint64(jtmp) == 0 && (*__errno_location ()) == 22\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                43 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_25);
+    printf(b"BASE CHECK PASSED\n\0" as *const u8 as *const libc::c_char);
+    let mut jtmp_26: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_int64(
+        2147483647 as libc::c_int as int64_t,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int(jtmp_26) == 2147483647 as libc::c_int
+        && *__errno_location() == 0 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int(jtmp) == (2147483647) && (*__errno_location ()) == 0\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            46 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_8978: {
+        if crate::src::json_object::json_object_get_int(jtmp_26) == 2147483647 as libc::c_int
+            && *__errno_location() == 0 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int(jtmp) == (2147483647) && (*__errno_location ()) == 0\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                46 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_26);
+    let mut jtmp_27: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_int64(
+        (-(2147483647 as libc::c_int) - 1 as libc::c_int) as int64_t,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int(jtmp_27) == -(2147483647 as libc::c_int) - 1 as libc::c_int
+        && *__errno_location() == 0 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int(jtmp) == (-2147483647-1) && (*__errno_location ()) == 0\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            47 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_8885: {
+        if crate::src::json_object::json_object_get_int(jtmp_27)
+            == -(2147483647 as libc::c_int) - 1 as libc::c_int
+            && *__errno_location() == 0 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int(jtmp) == (-2147483647-1) && (*__errno_location ()) == 0\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                47 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_27);
+    let mut jtmp_28: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_int64(
+        9223372036854775807 as libc::c_long,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int(jtmp_28) == 2147483647 as libc::c_int
+        && *__errno_location() == 34 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int(jtmp) == (2147483647) && (*__errno_location ()) == 34\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            48 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_8795: {
+        if crate::src::json_object::json_object_get_int(jtmp_28) == 2147483647 as libc::c_int
+            && *__errno_location() == 34 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int(jtmp) == (2147483647) && (*__errno_location ()) == 34\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                48 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_28);
+    let mut jtmp_29: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_int64(
+        -(9223372036854775807 as libc::c_long) - 1 as libc::c_int as libc::c_long,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int(jtmp_29) == -(2147483647 as libc::c_int) - 1 as libc::c_int
+        && *__errno_location() == 34 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int(jtmp) == (-2147483647-1) && (*__errno_location ()) == 34\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            49 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_8703: {
+        if crate::src::json_object::json_object_get_int(jtmp_29)
+            == -(2147483647 as libc::c_int) - 1 as libc::c_int
+            && *__errno_location() == 34 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int(jtmp) == (-2147483647-1) && (*__errno_location ()) == 34\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                49 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_29);
+    let mut jtmp_30: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"2147483647\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int(jtmp_30) == 2147483647 as libc::c_int
+        && *__errno_location() == 0 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int(jtmp) == (2147483647) && (*__errno_location ()) == 0\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            50 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_8612: {
+        if crate::src::json_object::json_object_get_int(jtmp_30) == 2147483647 as libc::c_int
+            && *__errno_location() == 0 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int(jtmp) == (2147483647) && (*__errno_location ()) == 0\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                50 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_30);
+    let mut jtmp_31: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"-2147483648\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int(jtmp_31) == -(2147483647 as libc::c_int) - 1 as libc::c_int
+        && *__errno_location() == 0 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int(jtmp) == (-2147483647-1) && (*__errno_location ()) == 0\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            51 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_8519: {
+        if crate::src::json_object::json_object_get_int(jtmp_31)
+            == -(2147483647 as libc::c_int) - 1 as libc::c_int
+            && *__errno_location() == 0 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int(jtmp) == (-2147483647-1) && (*__errno_location ()) == 0\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                51 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_31);
+    let mut jtmp_32: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"9223372036854775807\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int(jtmp_32) == 2147483647 as libc::c_int
+        && *__errno_location() == 34 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int(jtmp) == (2147483647) && (*__errno_location ()) == 34\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            52 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_8432: {
+        if crate::src::json_object::json_object_get_int(jtmp_32) == 2147483647 as libc::c_int
+            && *__errno_location() == 34 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int(jtmp) == (2147483647) && (*__errno_location ()) == 34\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                52 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_32);
+    let mut jtmp_33: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"-9223372036854775808\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int(jtmp_33) == -(2147483647 as libc::c_int) - 1 as libc::c_int
+        && *__errno_location() == 34 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int(jtmp) == (-2147483647-1) && (*__errno_location ()) == 34\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            53 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_8340: {
+        if crate::src::json_object::json_object_get_int(jtmp_33)
+            == -(2147483647 as libc::c_int) - 1 as libc::c_int
+            && *__errno_location() == 34 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int(jtmp) == (-2147483647-1) && (*__errno_location ()) == 34\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                53 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_33);
+    let mut jtmp_34: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_double(
+        ::core::f32::INFINITY as libc::c_double,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int(jtmp_34) == 2147483647 as libc::c_int
+        && *__errno_location() == 34 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int(jtmp) == (2147483647) && (*__errno_location ()) == 34\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            54 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_8253: {
+        if crate::src::json_object::json_object_get_int(jtmp_34) == 2147483647 as libc::c_int
+            && *__errno_location() == 34 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int(jtmp) == (2147483647) && (*__errno_location ()) == 34\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                54 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_34);
+    let mut jtmp_35: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_double(
+        -::core::f32::INFINITY as libc::c_double,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int(jtmp_35) == -(2147483647 as libc::c_int) - 1 as libc::c_int
+        && *__errno_location() == 34 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int(jtmp) == (-2147483647-1) && (*__errno_location ()) == 34\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            55 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_8158: {
+        if crate::src::json_object::json_object_get_int(jtmp_35)
+            == -(2147483647 as libc::c_int) - 1 as libc::c_int
+            && *__errno_location() == 34 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int(jtmp) == (-2147483647-1) && (*__errno_location ()) == 34\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                55 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_35);
+    let mut jtmp_36: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_double(
+        ::core::f32::NAN as libc::c_double,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int(jtmp_36) == -(2147483647 as libc::c_int) - 1 as libc::c_int
+        && *__errno_location() == 22 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int(jtmp) == (-2147483647-1) && (*__errno_location ()) == 22\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            56 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_8060: {
+        if crate::src::json_object::json_object_get_int(jtmp_36)
+            == -(2147483647 as libc::c_int) - 1 as libc::c_int
+            && *__errno_location() == 22 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int(jtmp) == (-2147483647-1) && (*__errno_location ()) == 22\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                56 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_36);
+    printf(b"INT GET PASSED\n\0" as *const u8 as *const libc::c_char);
+    let mut jtmp_37: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_int64(
+        9223372036854775807 as libc::c_long,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int64(jtmp_37) == 9223372036854775807 as libc::c_long
+        && *__errno_location() == 0 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int64(jtmp) == (9223372036854775807L) && (*__errno_location ()) == 0\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            59 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_7963: {
+        if crate::src::json_object::json_object_get_int64(jtmp_37) == 9223372036854775807 as libc::c_long
+            && *__errno_location() == 0 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int64(jtmp) == (9223372036854775807L) && (*__errno_location ()) == 0\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                59 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_37);
+    let mut jtmp_38: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_int64(
+        -(9223372036854775807 as libc::c_long) - 1 as libc::c_int as libc::c_long,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int64(jtmp_38)
+        == -(9223372036854775807 as libc::c_long) - 1 as libc::c_int as libc::c_long
+        && *__errno_location() == 0 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int64(jtmp) == (-9223372036854775807L-1) && (*__errno_location ()) == 0\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            60 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_7869: {
+        if crate::src::json_object::json_object_get_int64(jtmp_38)
+            == -(9223372036854775807 as libc::c_long) - 1 as libc::c_int as libc::c_long
+            && *__errno_location() == 0 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int64(jtmp) == (-9223372036854775807L-1) && (*__errno_location ()) == 0\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                60 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_38);
+    let mut jtmp_39: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"9223372036854775807\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int64(jtmp_39) == 9223372036854775807 as libc::c_long
+        && *__errno_location() == 0 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int64(jtmp) == (9223372036854775807L) && (*__errno_location ()) == 0\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            61 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_7777: {
+        if crate::src::json_object::json_object_get_int64(jtmp_39) == 9223372036854775807 as libc::c_long
+            && *__errno_location() == 0 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int64(jtmp) == (9223372036854775807L) && (*__errno_location ()) == 0\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                61 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_39);
+    let mut jtmp_40: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"-9223372036854775808\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int64(jtmp_40)
+        == -(9223372036854775807 as libc::c_long) - 1 as libc::c_int as libc::c_long
+        && *__errno_location() == 0 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int64(jtmp) == (-9223372036854775807L-1) && (*__errno_location ()) == 0\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            62 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_7683: {
+        if crate::src::json_object::json_object_get_int64(jtmp_40)
+            == -(9223372036854775807 as libc::c_long) - 1 as libc::c_int as libc::c_long
+            && *__errno_location() == 0 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int64(jtmp) == (-9223372036854775807L-1) && (*__errno_location ()) == 0\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                62 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_40);
+    let mut jtmp_41: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"9223372036854775808\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int64(jtmp_41) == 9223372036854775807 as libc::c_long
+        && *__errno_location() == 34 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int64(jtmp) == (9223372036854775807L) && (*__errno_location ()) == 34\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            63 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_7597: {
+        if crate::src::json_object::json_object_get_int64(jtmp_41) == 9223372036854775807 as libc::c_long
+            && *__errno_location() == 34 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int64(jtmp) == (9223372036854775807L) && (*__errno_location ()) == 34\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                63 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_41);
+    let mut jtmp_42: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"-9223372036854775809\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int64(jtmp_42)
+        == -(9223372036854775807 as libc::c_long) - 1 as libc::c_int as libc::c_long
+        && *__errno_location() == 34 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int64(jtmp) == (-9223372036854775807L-1) && (*__errno_location ()) == 34\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            64 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_7502: {
+        if crate::src::json_object::json_object_get_int64(jtmp_42)
+            == -(9223372036854775807 as libc::c_long) - 1 as libc::c_int as libc::c_long
+            && *__errno_location() == 34 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int64(jtmp) == (-9223372036854775807L-1) && (*__errno_location ()) == 34\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                64 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_42);
+    let mut jtmp_43: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_double(
+        ::core::f32::INFINITY as libc::c_double,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int64(jtmp_43) == 9223372036854775807 as libc::c_long
+        && *__errno_location() == 34 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int64(jtmp) == (9223372036854775807L) && (*__errno_location ()) == 34\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            65 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_7415: {
+        if crate::src::json_object::json_object_get_int64(jtmp_43) == 9223372036854775807 as libc::c_long
+            && *__errno_location() == 34 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int64(jtmp) == (9223372036854775807L) && (*__errno_location ()) == 34\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                65 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_43);
+    let mut jtmp_44: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_double(
+        -::core::f32::INFINITY as libc::c_double,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int64(jtmp_44)
+        == -(9223372036854775807 as libc::c_long) - 1 as libc::c_int as libc::c_long
+        && *__errno_location() == 34 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int64(jtmp) == (-9223372036854775807L-1) && (*__errno_location ()) == 34\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            66 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_7318: {
+        if crate::src::json_object::json_object_get_int64(jtmp_44)
+            == -(9223372036854775807 as libc::c_long) - 1 as libc::c_int as libc::c_long
+            && *__errno_location() == 34 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int64(jtmp) == (-9223372036854775807L-1) && (*__errno_location ()) == 34\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                66 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_44);
+    let mut jtmp_45: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_double(
+        ::core::f32::NAN as libc::c_double,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_int64(jtmp_45)
+        == -(9223372036854775807 as libc::c_long) - 1 as libc::c_int as libc::c_long
+        && *__errno_location() == 22 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_int64(jtmp) == (-9223372036854775807L-1) && (*__errno_location ()) == 22\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            67 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_7219: {
+        if crate::src::json_object::json_object_get_int64(jtmp_45)
+            == -(9223372036854775807 as libc::c_long) - 1 as libc::c_int as libc::c_long
+            && *__errno_location() == 22 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_int64(jtmp) == (-9223372036854775807L-1) && (*__errno_location ()) == 22\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                67 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_45);
+    printf(b"INT64 GET PASSED\n\0" as *const u8 as *const libc::c_char);
+    let mut jtmp_46: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_uint64(
+        18446744073709551615 as libc::c_ulong,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_uint64(jtmp_46) == 18446744073709551615 as libc::c_ulong
+        && *__errno_location() == 0 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_uint64(jtmp) == (18446744073709551615UL) && (*__errno_location ()) == 0\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            70 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_7122: {
+        if crate::src::json_object::json_object_get_uint64(jtmp_46) == 18446744073709551615 as libc::c_ulong
+            && *__errno_location() == 0 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_uint64(jtmp) == (18446744073709551615UL) && (*__errno_location ()) == 0\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                70 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_46);
+    let mut jtmp_47: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_uint64(
+        -(1 as libc::c_int) as uint64_t,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_uint64(jtmp_47) == 18446744073709551615 as libc::c_ulong
+        && *__errno_location() == 0 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_uint64(jtmp) == (18446744073709551615UL) && (*__errno_location ()) == 0\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            71 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_7035: {
+        if crate::src::json_object::json_object_get_uint64(jtmp_47) == 18446744073709551615 as libc::c_ulong
+            && *__errno_location() == 0 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_uint64(jtmp) == (18446744073709551615UL) && (*__errno_location ()) == 0\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                71 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_47);
+    let mut jtmp_48: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_string(
+        b"18446744073709551616\0" as *const u8 as *const libc::c_char,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_uint64(jtmp_48) == 18446744073709551615 as libc::c_ulong
+        && *__errno_location() == 34 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_uint64(jtmp) == (18446744073709551615UL) && (*__errno_location ()) == 34\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            72 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_6947: {
+        if crate::src::json_object::json_object_get_uint64(jtmp_48) == 18446744073709551615 as libc::c_ulong
+            && *__errno_location() == 34 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_uint64(jtmp) == (18446744073709551615UL) && (*__errno_location ()) == 34\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                72 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_48);
+    let mut jtmp_49: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_double(
+        ::core::f32::INFINITY as libc::c_double,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_uint64(jtmp_49) == 18446744073709551615 as libc::c_ulong
+        && *__errno_location() == 34 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_uint64(jtmp) == (18446744073709551615UL) && (*__errno_location ()) == 34\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            73 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_6858: {
+        if crate::src::json_object::json_object_get_uint64(jtmp_49) == 18446744073709551615 as libc::c_ulong
+            && *__errno_location() == 34 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_uint64(jtmp) == (18446744073709551615UL) && (*__errno_location ()) == 34\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                73 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_49);
+    let mut jtmp_50: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_double(
+        -::core::f32::INFINITY as libc::c_double,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_uint64(jtmp_50) == 0 as libc::c_int as uint64_t
+        && *__errno_location() == 34 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_uint64(jtmp) == 0 && (*__errno_location ()) == 34\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            74 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_6769: {
+        if crate::src::json_object::json_object_get_uint64(jtmp_50) == 0 as libc::c_int as uint64_t
+            && *__errno_location() == 34 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_uint64(jtmp) == 0 && (*__errno_location ()) == 34\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                74 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_50);
+    let mut jtmp_51: *mut crate::src::json_object::json_object = crate::src::json_object::json_object_new_double(
+        ::core::f32::NAN as libc::c_double,
+    );
+    *__errno_location() = 0 as libc::c_int;
+    if crate::src::json_object::json_object_get_uint64(jtmp_51) == 0 as libc::c_int as uint64_t
+        && *__errno_location() == 22 as libc::c_int
+    {} else {
+        __assert_fail(
+            b"json_object_get_uint64(jtmp) == 0 && (*__errno_location ()) == 22\0"
+                as *const u8 as *const libc::c_char,
+            b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                as *const u8 as *const libc::c_char,
+            75 as libc::c_int as libc::c_uint,
+            (*::core::mem::transmute::<
+                &[u8; 23],
+                &[libc::c_char; 23],
+            >(b"int main(int, char **)\0"))
+                .as_ptr(),
+        );
+    }
+    'c_6668: {
+        if crate::src::json_object::json_object_get_uint64(jtmp_51) == 0 as libc::c_int as uint64_t
+            && *__errno_location() == 22 as libc::c_int
+        {} else {
+            __assert_fail(
+                b"json_object_get_uint64(jtmp) == 0 && (*__errno_location ()) == 22\0"
+                    as *const u8 as *const libc::c_char,
+                b"/home/enumclass/Documents/C2RustTranslation/bkp/json-c/tests/test_int_get.c\0"
+                    as *const u8 as *const libc::c_char,
+                75 as libc::c_int as libc::c_uint,
+                (*::core::mem::transmute::<
+                    &[u8; 23],
+                    &[libc::c_char; 23],
+                >(b"int main(int, char **)\0"))
+                    .as_ptr(),
+            );
+        }
+    };
+    crate::src::json_object::json_object_put(jtmp_51);
+    printf(b"UINT64 GET PASSED\n\0" as *const u8 as *const libc::c_char);
+    printf(b"PASSED\n\0" as *const u8 as *const libc::c_char);
+    return 0 as libc::c_int;
+}
+pub fn main() {
+    let mut args: Vec::<*mut libc::c_char> = Vec::new();
+    for arg in &raw mut ::std::env::args() {
+        args.push(
+            (::std::ffi::CString::new(arg))
+                .expect("Failed to convert argument into CString.")
+                .into_raw(),
+        );
+    }
+    args.push(::core::ptr::null_mut());
+    unsafe {
+        ::std::process::exit(
+            main_0(
+                (args.len() - 1) as libc::c_int,
+                args.as_mut_ptr() as *mut *mut libc::c_char,
+            ) as i32,
+        )
+    }
+}

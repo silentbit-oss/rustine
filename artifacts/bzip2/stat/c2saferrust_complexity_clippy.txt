@@ -1,0 +1,75 @@
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: clamp-like pattern without using clamp function
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut u8` -> `*mut u8`)
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut std::ffi::c_void` -> `*mut std::ffi::c_void`)
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: sub-expression diverges
+warning: this boolean expression can be simplified
+warning: casting integer literal to `usize` is unnecessary
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut u8` -> `*mut u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut i32` -> `*mut i32`)
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: casting to the same type is unnecessary (`u8` -> `u8`)
+warning: casting to the same type is unnecessary (`u8` -> `u8`)
+warning: casting to the same type is unnecessary (`u8` -> `u8`)
+warning: casting to the same type is unnecessary (`u8` -> `u8`)
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified

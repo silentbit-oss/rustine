@@ -1,0 +1,31 @@
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: the loop variable `i` is only used to index `input`
+warning: unneeded `return` statement
+warning: the loop variable `i` is only used to index `input`
+warning: variables can be used directly in the `format!` string
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this multiplication by -1 can be written more succinctly
+warning: this multiplication by -1 can be written more succinctly
+warning: literal with an empty format string
+warning: the function `genann_train` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement

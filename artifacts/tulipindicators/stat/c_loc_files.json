@@ -1,0 +1,2751 @@
+{
+  "C": {
+    "blanks": 3267,
+    "children": {},
+    "code": 12368,
+    "comments": 4203,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/tulipindicators/utils/buffer.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 14,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/templates/indicators.c",
+        "stats": {
+          "blanks": 24,
+          "blobs": {},
+          "code": 36,
+          "comments": 25
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/example2.c",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 35,
+          "comments": 29
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/templates/candles.c",
+        "stats": {
+          "blanks": 85,
+          "blobs": {},
+          "code": 228,
+          "comments": 31
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/tan.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/tr.c",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 21,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/acos.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/mfi.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 42,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/wad.c",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 30,
+          "comments": 23
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/sma.c",
+        "stats": {
+          "blanks": 37,
+          "blobs": {},
+          "code": 91,
+          "comments": 23
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/volatility.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 34,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/cos.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/crossany.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 17,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/wcprice.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 17,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/vwma.c",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 29,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/stochrsi.c",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 77,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/todeg.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/asin.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/kama.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 37,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/dm.c",
+        "stats": {
+          "blanks": 21,
+          "blobs": {},
+          "code": 37,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/linreg.c",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 15,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/vhf.c",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 66,
+          "comments": 25
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/tsf.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 15,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/aroon.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 58,
+          "comments": 25
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/abs.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/marketfi.c",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 19,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/qstick.c",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 26,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/psar.c",
+        "stats": {
+          "blanks": 37,
+          "blobs": {},
+          "code": 60,
+          "comments": 27
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/dema.c",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 32,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/mul.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/min.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 52,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/emv.c",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 23,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/ppo.c",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 28,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/crossover.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 16,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/dpo.c",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 26,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/log10.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/di.c",
+        "stats": {
+          "blanks": 25,
+          "blobs": {},
+          "code": 45,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/wma.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 28,
+          "comments": 25
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/trunc.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/ln.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/cci.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 37,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/sample.c",
+        "stats": {
+          "blanks": 47,
+          "blobs": {},
+          "code": 173,
+          "comments": 30
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/obv.c",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 26,
+          "comments": 23
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/adxr.c",
+        "stats": {
+          "blanks": 30,
+          "blobs": {},
+          "code": 62,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/sinh.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/cvi.c",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 31,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/medprice.c",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 16,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/msw.c",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 40,
+          "comments": 23
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/bop.c",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 23,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/roc.c",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 17,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/typprice.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 17,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/dx.c",
+        "stats": {
+          "blanks": 27,
+          "blobs": {},
+          "code": 45,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/torad.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/nvi.c",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 23,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/bbands.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 42,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/linregslope.c",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 19,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/var.c",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 29,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/sub.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/zlema.c",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 24,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/sin.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/div.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/exp.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/rsi.c",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 32,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/adosc.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 39,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/ad.c",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 23,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/cmo.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 29,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/hma.c",
+        "stats": {
+          "blanks": 27,
+          "blobs": {},
+          "code": 61,
+          "comments": 25
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/edecay.c",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 18,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/stderr.c",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 36,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/aroonosc.c",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 54,
+          "comments": 32
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/ema.c",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 22,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/benchmark.c",
+        "stats": {
+          "blanks": 297,
+          "blobs": {},
+          "code": 810,
+          "comments": 105
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/trima.c",
+        "stats": {
+          "blanks": 23,
+          "blobs": {},
+          "code": 43,
+          "comments": 39
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/ceil.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/pvi.c",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 23,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/cosh.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/md.c",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 29,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/mom.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 17,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/vidya.c",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 63,
+          "comments": 23
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/lag.c",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 17,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/vosc.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 40,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/avgprice.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 18,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/sqrt.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/tanh.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/atr.c",
+        "stats": {
+          "blanks": 51,
+          "blobs": {},
+          "code": 127,
+          "comments": 29
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/natr.c",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 32,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/fisher.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 66,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/mass.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 39,
+          "comments": 27
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/trix.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 40,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/stoch.c",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 82,
+          "comments": 25
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/sum.c",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 24,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/ultosc.c",
+        "stats": {
+          "blanks": 24,
+          "blobs": {},
+          "code": 59,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/atan.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/kvo.c",
+        "stats": {
+          "blanks": 21,
+          "blobs": {},
+          "code": 48,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/kst.c",
+        "stats": {
+          "blanks": 29,
+          "blobs": {},
+          "code": 118,
+          "comments": 26
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/ikhts.c",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 28,
+          "comments": 23
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/rmi.c",
+        "stats": {
+          "blanks": 43,
+          "blobs": {},
+          "code": 132,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/ce.c",
+        "stats": {
+          "blanks": 74,
+          "blobs": {},
+          "code": 259,
+          "comments": 33
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/apo.c",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 28,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/posc.c",
+        "stats": {
+          "blanks": 62,
+          "blobs": {},
+          "code": 224,
+          "comments": 26
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/vwap.c",
+        "stats": {
+          "blanks": 48,
+          "blobs": {},
+          "code": 139,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/tema.c",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 39,
+          "comments": 25
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/alma.c",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 41,
+          "comments": 31
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/wilders.c",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 25,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/pbands.c",
+        "stats": {
+          "blanks": 57,
+          "blobs": {},
+          "code": 213,
+          "comments": 26
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/rmta.c",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 28,
+          "comments": 26
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/rocr.c",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 17,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/max.c",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 51,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/smi.c",
+        "stats": {
+          "blanks": 64,
+          "blobs": {},
+          "code": 278,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/fosc.c",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 21,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/rvi.c",
+        "stats": {
+          "blanks": 53,
+          "blobs": {},
+          "code": 173,
+          "comments": 26
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/floor.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/example1.c",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 34,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/macd.c",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 48,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/ao.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 33,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/add.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/decay.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 18,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/stddev.c",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 35,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/round.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/linregintercept.c",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 15,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/adx.c",
+        "stats": {
+          "blanks": 27,
+          "blobs": {},
+          "code": 55,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/willr.c",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 57,
+          "comments": 25
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/pc.c",
+        "stats": {
+          "blanks": 29,
+          "blobs": {},
+          "code": 127,
+          "comments": 23
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/kc.c",
+        "stats": {
+          "blanks": 41,
+          "blobs": {},
+          "code": 123,
+          "comments": 28
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/abands.c",
+        "stats": {
+          "blanks": 27,
+          "blobs": {},
+          "code": 75,
+          "comments": 26
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/copp.c",
+        "stats": {
+          "blanks": 55,
+          "blobs": {},
+          "code": 188,
+          "comments": 25
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators.c",
+        "stats": {
+          "blanks": 28,
+          "blobs": {},
+          "code": 37,
+          "comments": 34
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/pfe.c",
+        "stats": {
+          "blanks": 43,
+          "blobs": {},
+          "code": 152,
+          "comments": 33
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/mama.c",
+        "stats": {
+          "blanks": 84,
+          "blobs": {},
+          "code": 470,
+          "comments": 23
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/fi.c",
+        "stats": {
+          "blanks": 29,
+          "blobs": {},
+          "code": 82,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/tsi.c",
+        "stats": {
+          "blanks": 53,
+          "blobs": {},
+          "code": 131,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/dc.c",
+        "stats": {
+          "blanks": 30,
+          "blobs": {},
+          "code": 120,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/beta/cmf.c",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 32,
+          "comments": 27
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/cli.c",
+        "stats": {
+          "blanks": 48,
+          "blobs": {},
+          "code": 104,
+          "comments": 32
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/smoke.c",
+        "stats": {
+          "blanks": 116,
+          "blobs": {},
+          "code": 283,
+          "comments": 41
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/candles.c",
+        "stats": {
+          "blanks": 142,
+          "blobs": {},
+          "code": 594,
+          "comments": 64
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/fuzzer.c",
+        "stats": {
+          "blanks": 64,
+          "blobs": {},
+          "code": 182,
+          "comments": 28
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/tiamalgamation.c",
+        "stats": {
+          "blanks": 153,
+          "blobs": {},
+          "code": 3718,
+          "comments": 836
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 319,
+    "children": {},
+    "code": 832,
+    "comments": 1100,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/tulipindicators/utils/localbuffer.h",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 23,
+          "comments": 58
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/utils/minctest.h",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 44,
+          "comments": 58
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/templates/indicators.h",
+        "stats": {
+          "blanks": 50,
+          "blobs": {},
+          "code": 55,
+          "comments": 40
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/templates/candles.h",
+        "stats": {
+          "blanks": 53,
+          "blobs": {},
+          "code": 58,
+          "comments": 47
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/utils/buffer.h",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 29,
+          "comments": 25
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/utils/minmax.h",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 5,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/candles.h",
+        "stats": {
+          "blanks": 65,
+          "blobs": {},
+          "code": 115,
+          "comments": 54
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/truerange.h",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 11,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/simple2.h",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 25,
+          "comments": 27
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/trend.h",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 44,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/dx.h",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 18,
+          "comments": 25
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators/simple1.h",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 27,
+          "comments": 28
+        }
+      },
+      {
+        "name": "subjects/tulipindicators/indicators.h",
+        "stats": {
+          "blanks": 59,
+          "blobs": {},
+          "code": 378,
+          "comments": 672
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3586,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/tulipindicators/utils/buffer.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 14,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/templates/indicators.c",
+          "stats": {
+            "blanks": 24,
+            "blobs": {},
+            "code": 36,
+            "comments": 25
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/example2.c",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 35,
+            "comments": 29
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/templates/candles.c",
+          "stats": {
+            "blanks": 85,
+            "blobs": {},
+            "code": 228,
+            "comments": 31
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/tan.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/tr.c",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 21,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/acos.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/mfi.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 42,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/wad.c",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 30,
+            "comments": 23
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/sma.c",
+          "stats": {
+            "blanks": 37,
+            "blobs": {},
+            "code": 91,
+            "comments": 23
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/volatility.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 34,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/cos.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/crossany.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 17,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/wcprice.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 17,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/vwma.c",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 29,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/stochrsi.c",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 77,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/todeg.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/asin.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/kama.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 37,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/dm.c",
+          "stats": {
+            "blanks": 21,
+            "blobs": {},
+            "code": 37,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/linreg.c",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 15,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/vhf.c",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 66,
+            "comments": 25
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/tsf.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 15,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/aroon.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 58,
+            "comments": 25
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/abs.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/marketfi.c",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 19,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/qstick.c",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 26,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/psar.c",
+          "stats": {
+            "blanks": 37,
+            "blobs": {},
+            "code": 60,
+            "comments": 27
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/dema.c",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 32,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/mul.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/min.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 52,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/emv.c",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 23,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/ppo.c",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 28,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/crossover.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 16,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/dpo.c",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 26,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/log10.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/di.c",
+          "stats": {
+            "blanks": 25,
+            "blobs": {},
+            "code": 45,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/wma.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 28,
+            "comments": 25
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/trunc.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/ln.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/cci.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 37,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/sample.c",
+          "stats": {
+            "blanks": 47,
+            "blobs": {},
+            "code": 173,
+            "comments": 30
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/obv.c",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 26,
+            "comments": 23
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/adxr.c",
+          "stats": {
+            "blanks": 30,
+            "blobs": {},
+            "code": 62,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/sinh.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/cvi.c",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 31,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/medprice.c",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 16,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/msw.c",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 40,
+            "comments": 23
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/bop.c",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 23,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/roc.c",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 17,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/typprice.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 17,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/dx.c",
+          "stats": {
+            "blanks": 27,
+            "blobs": {},
+            "code": 45,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/torad.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/nvi.c",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 23,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/bbands.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 42,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/linregslope.c",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 19,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/var.c",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 29,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/sub.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/zlema.c",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 24,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/sin.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/div.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/exp.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/rsi.c",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 32,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/adosc.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 39,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/ad.c",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 23,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/cmo.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 29,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/hma.c",
+          "stats": {
+            "blanks": 27,
+            "blobs": {},
+            "code": 61,
+            "comments": 25
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/edecay.c",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 18,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/stderr.c",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 36,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/aroonosc.c",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 54,
+            "comments": 32
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/ema.c",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 22,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/benchmark.c",
+          "stats": {
+            "blanks": 297,
+            "blobs": {},
+            "code": 810,
+            "comments": 105
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/trima.c",
+          "stats": {
+            "blanks": 23,
+            "blobs": {},
+            "code": 43,
+            "comments": 39
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/ceil.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/pvi.c",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 23,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/cosh.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/md.c",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 29,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/mom.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 17,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/vidya.c",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 63,
+            "comments": 23
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/lag.c",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 17,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/vosc.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 40,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/avgprice.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 18,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/sqrt.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/tanh.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/atr.c",
+          "stats": {
+            "blanks": 51,
+            "blobs": {},
+            "code": 127,
+            "comments": 29
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/natr.c",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 32,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/fisher.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 66,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/mass.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 39,
+            "comments": 27
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/trix.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 40,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/stoch.c",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 82,
+            "comments": 25
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/sum.c",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 24,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/ultosc.c",
+          "stats": {
+            "blanks": 24,
+            "blobs": {},
+            "code": 59,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/atan.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/kvo.c",
+          "stats": {
+            "blanks": 21,
+            "blobs": {},
+            "code": 48,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/kst.c",
+          "stats": {
+            "blanks": 29,
+            "blobs": {},
+            "code": 118,
+            "comments": 26
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/ikhts.c",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 28,
+            "comments": 23
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/rmi.c",
+          "stats": {
+            "blanks": 43,
+            "blobs": {},
+            "code": 132,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/ce.c",
+          "stats": {
+            "blanks": 74,
+            "blobs": {},
+            "code": 259,
+            "comments": 33
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/apo.c",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 28,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/posc.c",
+          "stats": {
+            "blanks": 62,
+            "blobs": {},
+            "code": 224,
+            "comments": 26
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/vwap.c",
+          "stats": {
+            "blanks": 48,
+            "blobs": {},
+            "code": 139,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/tema.c",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 39,
+            "comments": 25
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/alma.c",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 41,
+            "comments": 31
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/wilders.c",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 25,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/pbands.c",
+          "stats": {
+            "blanks": 57,
+            "blobs": {},
+            "code": 213,
+            "comments": 26
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/rmta.c",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 28,
+            "comments": 26
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/rocr.c",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 17,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/max.c",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 51,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/smi.c",
+          "stats": {
+            "blanks": 64,
+            "blobs": {},
+            "code": 278,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/fosc.c",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 21,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/rvi.c",
+          "stats": {
+            "blanks": 53,
+            "blobs": {},
+            "code": 173,
+            "comments": 26
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/floor.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/example1.c",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 34,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/macd.c",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 48,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/ao.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 33,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/add.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/decay.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 18,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/stddev.c",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 35,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/round.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/linregintercept.c",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 15,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/adx.c",
+          "stats": {
+            "blanks": 27,
+            "blobs": {},
+            "code": 55,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/willr.c",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 57,
+            "comments": 25
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/pc.c",
+          "stats": {
+            "blanks": 29,
+            "blobs": {},
+            "code": 127,
+            "comments": 23
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/kc.c",
+          "stats": {
+            "blanks": 41,
+            "blobs": {},
+            "code": 123,
+            "comments": 28
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/abands.c",
+          "stats": {
+            "blanks": 27,
+            "blobs": {},
+            "code": 75,
+            "comments": 26
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/copp.c",
+          "stats": {
+            "blanks": 55,
+            "blobs": {},
+            "code": 188,
+            "comments": 25
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators.c",
+          "stats": {
+            "blanks": 28,
+            "blobs": {},
+            "code": 37,
+            "comments": 34
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/pfe.c",
+          "stats": {
+            "blanks": 43,
+            "blobs": {},
+            "code": 152,
+            "comments": 33
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/mama.c",
+          "stats": {
+            "blanks": 84,
+            "blobs": {},
+            "code": 470,
+            "comments": 23
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/fi.c",
+          "stats": {
+            "blanks": 29,
+            "blobs": {},
+            "code": 82,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/tsi.c",
+          "stats": {
+            "blanks": 53,
+            "blobs": {},
+            "code": 131,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/dc.c",
+          "stats": {
+            "blanks": 30,
+            "blobs": {},
+            "code": 120,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/beta/cmf.c",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 32,
+            "comments": 27
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/cli.c",
+          "stats": {
+            "blanks": 48,
+            "blobs": {},
+            "code": 104,
+            "comments": 32
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/smoke.c",
+          "stats": {
+            "blanks": 116,
+            "blobs": {},
+            "code": 283,
+            "comments": 41
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/candles.c",
+          "stats": {
+            "blanks": 142,
+            "blobs": {},
+            "code": 594,
+            "comments": 64
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/fuzzer.c",
+          "stats": {
+            "blanks": 64,
+            "blobs": {},
+            "code": 182,
+            "comments": 28
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/tiamalgamation.c",
+          "stats": {
+            "blanks": 153,
+            "blobs": {},
+            "code": 3718,
+            "comments": 836
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/tulipindicators/utils/localbuffer.h",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 23,
+            "comments": 58
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/utils/minctest.h",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 44,
+            "comments": 58
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/templates/indicators.h",
+          "stats": {
+            "blanks": 50,
+            "blobs": {},
+            "code": 55,
+            "comments": 40
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/templates/candles.h",
+          "stats": {
+            "blanks": 53,
+            "blobs": {},
+            "code": 58,
+            "comments": 47
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/utils/buffer.h",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 29,
+            "comments": 25
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/utils/minmax.h",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 5,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/candles.h",
+          "stats": {
+            "blanks": 65,
+            "blobs": {},
+            "code": 115,
+            "comments": 54
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/truerange.h",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 11,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/simple2.h",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 25,
+            "comments": 27
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/trend.h",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 44,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/dx.h",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 18,
+            "comments": 25
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators/simple1.h",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 27,
+            "comments": 28
+          }
+        },
+        {
+          "name": "subjects/tulipindicators/indicators.h",
+          "stats": {
+            "blanks": 59,
+            "blobs": {},
+            "code": 378,
+            "comments": 672
+          }
+        }
+      ]
+    },
+    "code": 13200,
+    "comments": 5303,
+    "inaccurate": false,
+    "reports": []
+  }
+}

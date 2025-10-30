@@ -1,0 +1,803 @@
+warning: consider choosing a more descriptive name
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmAABB2Translate` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmAABB2ContainsPoint` doesn't need a mutable reference
+warning: the function `kmAABB2ContainsPoint` doesn't need a mutable reference
+warning: the function `kmAABB2ContainsPoint` doesn't need a mutable reference
+warning: the function `kmAABB2ContainsPoint` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmAABB2Assign` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmAABB3ContainsPoint` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmAABB3Assign` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: the function `kmMat3ScalarMultiply` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmQuaternionToAxisAngle` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmVec3Normalize` doesn't need a mutable reference
+warning: the function `kmVec3Normalize` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Normalize` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Normalize` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmMat4RotationQuaternion` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmMat4Multiply` doesn't need a mutable reference
+warning: the function `kmMat4Multiply` doesn't need a mutable reference
+warning: the function `kmMat4Multiply` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmVec3Normalize` doesn't need a mutable reference
+warning: the function `kmVec3Normalize` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Normalize` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Normalize` doesn't need a mutable reference
+warning: the function `kmMat4Multiply` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmQuaternionRotationMatrix` doesn't need a mutable reference
+warning: the function `kmQuaternionToAxisAngle` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Normalize` doesn't need a mutable reference
+warning: the function `kmVec3Scale` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmVec3Normalize` doesn't need a mutable reference
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmVec3Length` doesn't need a mutable reference
+warning: the function `kmVec3Normalize` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Dot` doesn't need a mutable reference
+warning: the function `kmVec3Dot` doesn't need a mutable reference
+warning: `0 as *mut _` detected
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Scale` doesn't need a mutable reference
+warning: the function `kmVec3Scale` doesn't need a mutable reference
+warning: the function `kmVec3Scale` doesn't need a mutable reference
+warning: the function `kmVec3Subtract` doesn't need a mutable reference
+warning: the function `kmVec3Subtract` doesn't need a mutable reference
+warning: the function `kmVec3Subtract` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: float has excessive precision
+warning: float has excessive precision
+warning: float has excessive precision
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmQuaternionScale` doesn't need a mutable reference
+warning: the function `kmQuaternionAdd` doesn't need a mutable reference
+warning: the function `kmQuaternionSubtract` doesn't need a mutable reference
+warning: the function `kmQuaternionNormalize` doesn't need a mutable reference
+warning: the function `kmQuaternionScale` doesn't need a mutable reference
+warning: the function `kmQuaternionAdd` doesn't need a mutable reference
+warning: the function `kmQuaternionAdd` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: float has excessive precision
+warning: float has excessive precision
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmVec3Normalize` doesn't need a mutable reference
+warning: the function `kmVec3Normalize` doesn't need a mutable reference
+warning: the function `kmVec3Dot` doesn't need a mutable reference
+warning: the function `kmVec3Dot` doesn't need a mutable reference
+warning: float has excessive precision
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3LengthSq` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Normalize` doesn't need a mutable reference
+warning: the function `kmQuaternionRotationAxisAngle` doesn't need a mutable reference
+warning: float has excessive precision
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Scale` doesn't need a mutable reference
+warning: the function `kmVec3Scale` doesn't need a mutable reference
+warning: the function `kmVec3Add` doesn't need a mutable reference
+warning: the function `kmVec3Add` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmQuaternionRotationMatrix` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmLine2WithLineIntersection` doesn't need a mutable reference
+warning: the function `kmLine2WithLineIntersection` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: the function `kmVec2Subtract` doesn't need a mutable reference
+warning: the function `kmVec2Subtract` doesn't need a mutable reference
+warning: the function `kmVec2Subtract` doesn't need a mutable reference
+warning: the function `kmVec2Subtract` doesn't need a mutable reference
+warning: the function `kmVec2Normalize` doesn't need a mutable reference
+warning: the function `kmVec2Normalize` doesn't need a mutable reference
+warning: the function `kmVec2Dot` doesn't need a mutable reference
+warning: the function `kmVec2Dot` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmVec2Subtract` doesn't need a mutable reference
+warning: the function `kmVec2Dot` doesn't need a mutable reference
+warning: the function `kmVec2Assign` doesn't need a mutable reference
+warning: the function `kmVec2Subtract` doesn't need a mutable reference
+warning: the function `kmVec2Dot` doesn't need a mutable reference
+warning: the function `kmVec2Assign` doesn't need a mutable reference
+warning: the function `kmVec2Subtract` doesn't need a mutable reference
+warning: the function `kmVec2Dot` doesn't need a mutable reference
+warning: the function `kmVec2Assign` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: the function `kmVec2Subtract` doesn't need a mutable reference
+warning: the function `kmVec2Dot` doesn't need a mutable reference
+warning: the function `kmVec2Assign` doesn't need a mutable reference
+warning: the function `kmVec2Assign` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmVec3Add` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: float has excessive precision
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: float has excessive precision
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmVec2Cross` doesn't need a mutable reference
+warning: the function `kmVec2Cross` doesn't need a mutable reference
+warning: the function `kmVec2Dot` doesn't need a mutable reference
+warning: the function `kmVec2Dot` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmVec2Length` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmVec2Subtract` doesn't need a mutable reference
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmVec4Transform` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmRay3IntersectPlane` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmVec3Subtract` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: module has the same name as its containing module
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: manual implementation of an assign operation
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: manual implementation of an assign operation
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: manual implementation of an assign operation
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: manual implementation of an assign operation
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmVec3Subtract` doesn't need a mutable reference
+warning: the function `kmVec3Subtract` doesn't need a mutable reference
+warning: the function `kmVec3Subtract` doesn't need a mutable reference
+warning: the function `kmVec3Subtract` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: the function `kmVec3Cross` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmVec3Normalize` doesn't need a mutable reference
+warning: the function `kmVec3Dot` doesn't need a mutable reference
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: unneeded `return` statement
+warning: the function `kmVec3Subtract` doesn't need a mutable reference
+warning: the function `kmVec3Subtract` doesn't need a mutable reference
+warning: the function `kmVec3Length` doesn't need a mutable reference
+warning: unneeded `return` statement
+warning: the function `kmVec3Subtract` doesn't need a mutable reference
+warning: the function `kmVec3Subtract` doesn't need a mutable reference
+warning: the function `kmVec3Normalize` doesn't need a mutable reference
+warning: the function `kmVec3Dot` doesn't need a mutable reference
+warning: manual implementation of an assign operation
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: `0 as *mut _` detected
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: `0 as *mut _` detected
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: manual implementation of an assign operation
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmVec3Lerp` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: manual implementation of an assign operation
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: manual implementation of an assign operation
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: the function `kmVec2LengthSq` doesn't need a mutable reference
+warning: the function `kmVec2Scale` doesn't need a mutable reference
+warning: the function `kmVec2Add` doesn't need a mutable reference
+warning: the function `kmVec2Add` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: manual implementation of an assign operation
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: manual implementation of an assign operation
+warning: the function `kmVec2Add` doesn't need a mutable reference
+warning: the function `kmVec2Add` doesn't need a mutable reference
+warning: the function `kmVec2Subtract` doesn't need a mutable reference
+warning: the function `kmVec2Subtract` doesn't need a mutable reference
+warning: the function `kmVec2Scale` doesn't need a mutable reference
+warning: the function `kmVec2Scale` doesn't need a mutable reference
+warning: the function `kmVec2Subtract` doesn't need a mutable reference
+warning: the function `kmVec2Subtract` doesn't need a mutable reference
+warning: the function `kmVec2LengthSq` doesn't need a mutable reference
+warning: manual implementation of an assign operation
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: manual implementation of an assign operation
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: manual implementation of an assign operation
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: manual implementation of an assign operation
+warning: the function `kmVec2Add` doesn't need a mutable reference
+warning: the function `kmVec2Add` doesn't need a mutable reference
+warning: the function `kmVec2Subtract` doesn't need a mutable reference
+warning: the function `kmVec2Subtract` doesn't need a mutable reference
+warning: the function `kmVec2Scale` doesn't need a mutable reference
+warning: the function `kmVec2Scale` doesn't need a mutable reference
+warning: the function `kmVec2Subtract` doesn't need a mutable reference
+warning: the function `kmVec2Subtract` doesn't need a mutable reference
+warning: the function `kmVec2LengthSq` doesn't need a mutable reference
+warning: manual implementation of an assign operation
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: manual implementation of an assign operation

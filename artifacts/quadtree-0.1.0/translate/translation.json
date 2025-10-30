@@ -1,0 +1,1394 @@
+{
+    "quadtree_point_t": {
+        "source_code": "typedef struct quadtree_point\n{\n  double x;\n  double y;\n} quadtree_point_t",
+        "translated_code": "#[derive(Clone)]\npub struct QuadtreePoint {\n    pub x: f64,\n    pub y: f64,\n}",
+        "hint": "special_types",
+        "section": "src",
+        "file": "quadtree_point_t.rs",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "type": "<class 'pycparser.c_ast.Struct'>",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "nodes": {
+        "source_code": "static int nodes = 10000",
+        "translated_code": "use lazy_static::lazy_static;\nuse std::sync::atomic::{AtomicI32, Ordering};\n\nlazy_static! {\n    pub static ref NODES: AtomicI32 = AtomicI32::new(10000);\n}",
+        "hint": "global_variables",
+        "section": "src",
+        "file": "globals.rs",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "type": "int",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "startTime": {
+        "source_code": "static clock_t startTime",
+        "translated_code": "use lazy_static::lazy_static;\nuse std::time::Duration;\n\nlazy_static! {\n    pub static ref START_TIME: std::sync::Mutex<Option<Duration>> = std::sync::Mutex::new(None);\n}",
+        "hint": "global_variables",
+        "section": "src",
+        "file": "globals.rs",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "type": "clock_t",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "bench": {
+        "source_code": "static void bench(void (*bm)(), char *label)\n{\n  printf(\" %18s\", label);\n  fflush(stdout);\n  bm();\n}\n\n",
+        "translated_code": "use std::io::{self, Write};\n\npub fn bench(bm: fn(), label: Option<&str>) {\n    // Print the label with right-aligned formatting (similar to C's %18s)\n    if let Some(label) = label {\n        print!(\" {:>18}\", label);\n    } else {\n        print!(\" {:>18}\", \"\"); // Handle None case (equivalent to NULL in C)\n    }\n    \n    // Flush stdout immediately (equivalent to fflush(stdout) in C)\n    io::stdout().flush().expect(\"Failed to flush stdout\");\n    \n    // Call the benchmark function\n    bm();\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "benchmark.rs",
+        "error": "",
+        "dependent": [],
+        "params": [
+            "void (*bm)()",
+            "char *label"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "bm",
+            "label"
+        ],
+        "calle": [
+            "fflush",
+            "bm",
+            "printf"
+        ],
+        "calle_c": [
+            "fflush",
+            "bm",
+            "printf"
+        ],
+        "key": "bench",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "elision_": {
+        "source_code": "static void elision_(void *key)\n{\n}\n\n",
+        "translated_code": "pub fn elision_(key: Option<&mut std::ffi::c_void>) {\n    // Empty function body as per original C code\n    // The parameter is wrapped in Option to handle potential NULL pointer case\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "quadtree.rs",
+        "error": "",
+        "dependent": [],
+        "params": [
+            "void *key"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "key"
+        ],
+        "calle": [],
+        "calle_c": [],
+        "key": "elision_",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "time": {
+        "source_code": "pub time: Time",
+        "translated_code": "",
+        "error": "",
+        "dependent": [],
+        "lifetime_hint": [],
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": true,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "quadtree_bounds_t": {
+        "source_code": "typedef struct quadtree_bounds\n{\n  quadtree_point_t *nw;\n  quadtree_point_t *se;\n  double width;\n  double height;\n} quadtree_bounds_t",
+        "translated_code": "#[derive(Clone)]\npub struct QuadtreeBounds {\n    pub nw: Option<Box<QuadtreePoint>>,\n    pub se: Option<Box<QuadtreePoint>>,\n    pub width: f64,\n    pub height: f64,\n}",
+        "hint": "special_types",
+        "section": "src",
+        "file": "quadtree_bounds_t.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_point_t"
+        ],
+        "lifetime_hint": [],
+        "type": "<class 'pycparser.c_ast.Struct'>",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "quadtree_node_t": {
+        "source_code": "typedef struct quadtree_node\n{\n  struct quadtree_node *ne;\n  struct quadtree_node *nw;\n  struct quadtree_node *se;\n  struct quadtree_node *sw;\n  quadtree_bounds_t *bounds;\n  quadtree_point_t *point;\n  void *key;\n} quadtree_node_t",
+        "translated_code": "\npub struct QuadtreeNode {\n    pub ne: Option<Box<QuadtreeNode>>,\n    pub nw: Option<Box<QuadtreeNode>>,\n    pub se: Option<Box<QuadtreeNode>>,\n    pub sw: Option<Box<QuadtreeNode>>,\n    pub bounds: Option<Box<QuadtreeBounds>>,\n    pub point: Option<Box<QuadtreePoint>>,\n    pub key: Option<Box<dyn std::any::Any>>,\n}",
+        "hint": "special_types",
+        "section": "src",
+        "file": "quadtree_node_t.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_bounds_t",
+            "quadtree_point_t"
+        ],
+        "lifetime_hint": [],
+        "type": "<class 'pycparser.c_ast.Struct'>",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "quadtree_t": {
+        "source_code": "typedef struct quadtree\n{\n  quadtree_node_t *root;\n  void (*key_free)(void *key);\n  unsigned int length;\n} quadtree_t",
+        "translated_code": "use std::any::Any;\n\n\npub struct Quadtree {\n    pub root: Option<Box<QuadtreeNode>>,\n    pub key_free: Option<Box<dyn FnMut(Box<dyn Any>)>>,\n    pub length: u32,\n}",
+        "hint": "special_types",
+        "section": "src",
+        "file": "quadtree_t.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_node_t"
+        ],
+        "lifetime_hint": [],
+        "type": "<class 'pycparser.c_ast.Struct'>",
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "start": {
+        "source_code": "static void start()\n{\n  startTime = clock();\n}\n\n",
+        "translated_code": "use std::time::{Duration, Instant};\n\npub fn start() {\n    let mut start_time = START_TIME.lock().unwrap();\n    *start_time = Some(Instant::now().elapsed());\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "benchmark.rs",
+        "error": "",
+        "dependent": [
+            "startTime"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "startTime"
+        ],
+        "calle": [
+            "clock"
+        ],
+        "calle_c": [
+            "clock"
+        ],
+        "key": "start",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "stop": {
+        "source_code": "static void stop()\n{\n  float duration = ((float) (clock() - startTime)) / CLOCKS_PER_SEC;\n  printf(\": \\e[32m%.4f\\e[0ms\\n\", duration);\n}\n\n",
+        "translated_code": "use std::time::{Duration, Instant};\nuse std::sync::Mutex;\nuse lazy_static::lazy_static;\n\nlazy_static! {\n    pub static ref startTime: Mutex<Option<Instant>> = Mutex::new(None);\n}\n\npub fn stop() {\n    let duration = if let Some(start_time) = *startTime.lock().unwrap() {\n        start_time.elapsed().as_secs_f32()\n    } else {\n        0.0\n    };\n    println!(\": \\x1b[32m{:.4}\\x1b[0ms\", duration);\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "benchmark.rs",
+        "error": "",
+        "dependent": [
+            "startTime"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "duration",
+            "startTime"
+        ],
+        "calle": [
+            "clock",
+            "printf"
+        ],
+        "calle_c": [
+            "clock",
+            "printf"
+        ],
+        "key": "stop",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "descent": {
+        "source_code": "void descent(quadtree_node_t *node)\n{\n  if (node->bounds != 0)\n  {\n    printf(\"{ nw.x:%f, nw.y:%f, se.x:%f, se.y:%f }: \", node->bounds->nw->x, node->bounds->nw->y, node->bounds->se->x, node->bounds->se->y);\n  }\n}\n\n",
+        "translated_code": "use std::fmt;\n\npub fn descent(node: &QuadtreeNode) {\n    if let Some(bounds) = &node.bounds {\n        if let (Some(nw), Some(se)) = (&bounds.nw, &bounds.se) {\n            println!(\n                \"{{ nw.x:{}, nw.y:{}, se.x:{}, se.y:{} }}: \",\n                nw.x, nw.y, se.x, se.y\n            );\n        }\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_node_t"
+        ],
+        "params": [
+            "quadtree_node_t *node"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "node"
+        ],
+        "calle": [
+            "printf"
+        ],
+        "calle_c": [
+            "printf"
+        ],
+        "key": "descent",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "ascent": {
+        "source_code": "void ascent(quadtree_node_t *node)\n{\n  printf(\"\\n\");\n}\n\n",
+        "translated_code": "pub fn ascent(node: Option<&mut QuadtreeNode>) {\n    println!();\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_node_t"
+        ],
+        "params": [
+            "quadtree_node_t *node"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "node"
+        ],
+        "calle": [
+            "printf"
+        ],
+        "calle_c": [
+            "printf"
+        ],
+        "key": "ascent",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "quadtree_point_new": {
+        "source_code": "quadtree_point_t *quadtree_point_new(double x, double y)\n{\n  quadtree_point_t *point;\n  unsigned int point_idx = 0;\n  if (!(point_idx = malloc(sizeof(*point_idx))))\n  {\n    return 0;\n  }\n  point->x = x;\n  point->y = y;\n  return point;\n}\n\n",
+        "translated_code": "pub fn quadtree_point_new(x: f64, y: f64) -> Option<Box<QuadtreePoint>> {\n    Some(Box::new(QuadtreePoint { x, y }))\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "point.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_point_t"
+        ],
+        "header": "quadtree_point_t *quadtree_point_new(double x, double y)",
+        "params": [
+            "double x",
+            "double y"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "x",
+            "y",
+            "point",
+            "point_idx"
+        ],
+        "calle": [
+            "malloc"
+        ],
+        "calle_c": [
+            "malloc"
+        ],
+        "key": "quadtree_point_new",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "quadtree_point_free": {
+        "source_code": "void quadtree_point_free(quadtree_point_t *point)\n{\n  free(point);\n}\n\n",
+        "translated_code": "pub fn quadtree_point_free(point: Option<Box<QuadtreePoint>>) {\n    // Rust's Box will automatically free the memory when it goes out of scope\n    // No explicit free needed, just let the Box drop\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "point.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_point_t"
+        ],
+        "header": "void quadtree_point_free(quadtree_point_t *point)",
+        "params": [
+            "quadtree_point_t *point"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "point"
+        ],
+        "calle": [
+            "free"
+        ],
+        "calle_c": [
+            "free"
+        ],
+        "key": "quadtree_point_free",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "quadtree_bounds_extend": {
+        "source_code": "void quadtree_bounds_extend(quadtree_bounds_t *bounds, double x, double y)\n{\n  bounds->nw->x = fmin(x, bounds->nw->x);\n  bounds->nw->y = fmax(y, bounds->nw->y);\n  bounds->se->x = fmax(x, bounds->se->x);\n  bounds->se->y = fmin(y, bounds->se->y);\n  bounds->width = fabs(bounds->nw->x - bounds->se->x);\n  bounds->height = fabs(bounds->nw->y - bounds->se->y);\n}\n\n",
+        "translated_code": "use std::f64;\n\npub fn quadtree_bounds_extend(bounds: &mut QuadtreeBounds, x: f64, y: f64) {\n    // Handle nw updates\n    if let Some(ref mut nw) = bounds.nw {\n        nw.x = f64::min(x, nw.x);\n        nw.y = f64::max(y, nw.y);\n    }\n\n    // Handle se updates\n    if let Some(ref mut se) = bounds.se {\n        se.x = f64::max(x, se.x);\n        se.y = f64::min(y, se.y);\n    }\n\n    // Calculate new dimensions\n    if let (Some(nw), Some(se)) = (&bounds.nw, &bounds.se) {\n        bounds.width = f64::abs(nw.x - se.x);\n        bounds.height = f64::abs(nw.y - se.y);\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "bounds.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_bounds_t"
+        ],
+        "header": "void quadtree_bounds_extend(quadtree_bounds_t *bounds, double x, double y)",
+        "params": [
+            "quadtree_bounds_t *bounds",
+            "double x",
+            "double y"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "bounds",
+            "x",
+            "y"
+        ],
+        "calle": [
+            "fabs",
+            "fmax",
+            "fmin"
+        ],
+        "calle_c": [
+            "fabs",
+            "fmax",
+            "fmin"
+        ],
+        "key": "quadtree_bounds_extend",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "quadtree_node_new": {
+        "source_code": "quadtree_node_t *quadtree_node_new()\n{\n  quadtree_node_t *node;\n  unsigned int node_idx = 0;\n  if (!(node_idx = malloc(sizeof(*node_idx))))\n  {\n    return 0;\n  }\n  node->ne = 0;\n  node->nw = 0;\n  node->se = 0;\n  node->sw = 0;\n  node->point = 0;\n  node->bounds = 0;\n  node->key = 0;\n  return node;\n}\n\n",
+        "translated_code": "pub fn quadtree_node_new() -> Option<Box<QuadtreeNode>> {\n    Some(Box::new(QuadtreeNode {\n        ne: None,\n        nw: None,\n        se: None,\n        sw: None,\n        point: None,\n        bounds: None,\n        key: None,\n    }))\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "node.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_node_t"
+        ],
+        "header": "quadtree_node_t *quadtree_node_new()",
+        "lifetime_hint": [],
+        "global_variables": [
+            "node",
+            "node_idx"
+        ],
+        "calle": [
+            "malloc"
+        ],
+        "calle_c": [
+            "malloc"
+        ],
+        "key": "quadtree_node_new",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "quadtree_node_isleaf": {
+        "source_code": "int quadtree_node_isleaf(quadtree_node_t *node)\n{\n  return node->point != 0;\n}\n\n",
+        "translated_code": "pub fn quadtree_node_isleaf(node: &QuadtreeNode) -> bool {\n    node.point.is_some()\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "node.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_node_t"
+        ],
+        "header": "int quadtree_node_isleaf(quadtree_node_t *node)",
+        "params": [
+            "quadtree_node_t *node"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "node"
+        ],
+        "calle": [],
+        "calle_c": [],
+        "key": "quadtree_node_isleaf",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "quadtree_walk": {
+        "source_code": "void quadtree_walk(quadtree_node_t *root, void (*descent)(quadtree_node_t *node), void (*ascent)(quadtree_node_t *node))\n{\n  (*descent)(root);\n  if (root->nw != 0)\n  {\n    quadtree_walk(root->nw, descent, ascent);\n  }\n  if (root->ne != 0)\n  {\n    quadtree_walk(root->ne, descent, ascent);\n  }\n  if (root->sw != 0)\n  {\n    quadtree_walk(root->sw, descent, ascent);\n  }\n  if (root->se != 0)\n  {\n    quadtree_walk(root->se, descent, ascent);\n  }\n  (*ascent)(root);\n}\n\n",
+        "translated_code": "pub fn quadtree_walk(\n    root: &mut QuadtreeNode,\n    descent: &mut dyn FnMut(&mut QuadtreeNode),\n    ascent: &mut dyn FnMut(&mut QuadtreeNode),\n) {\n    // Call descent callback\n    descent(root);\n\n    // Recursively walk through each child node if it exists\n    if let Some(nw) = &mut root.nw {\n        quadtree_walk(nw, descent, ascent);\n    }\n    if let Some(ne) = &mut root.ne {\n        quadtree_walk(ne, descent, ascent);\n    }\n    if let Some(sw) = &mut root.sw {\n        quadtree_walk(sw, descent, ascent);\n    }\n    if let Some(se) = &mut root.se {\n        quadtree_walk(se, descent, ascent);\n    }\n\n    // Call ascent callback\n    ascent(root);\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "quadtree.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_node_t"
+        ],
+        "header": "void quadtree_walk(quadtree_node_t *root, void (*descent)(quadtree_node_t *node), void (*ascent)(quadtree_node_t *node))",
+        "params": [
+            "quadtree_node_t *root",
+            "void (*descent)(quadtree_node_t *node)",
+            "void (*ascent)(quadtree_node_t *node)"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "root",
+            "descent",
+            "ascent"
+        ],
+        "calle": [
+            "*ascent",
+            "quadtree_walk",
+            "*descent"
+        ],
+        "calle_c": [
+            "*ascent",
+            "*descent"
+        ],
+        "key": "quadtree_walk",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "quadtree_bounds_new": {
+        "source_code": "quadtree_bounds_t *quadtree_bounds_new()\n{\n  quadtree_bounds_t *bounds;\n  unsigned int bounds_idx = 0;\n  if ((bounds_idx = malloc(sizeof(*bounds_idx))) == 0)\n  {\n    return 0;\n  }\n  bounds->nw = quadtree_point_new(INFINITY, -INFINITY);\n  bounds->se = quadtree_point_new(-INFINITY, INFINITY);\n  bounds->width = 0;\n  bounds->height = 0;\n  return bounds;\n}\n\n",
+        "translated_code": "use std::f64::{INFINITY, NEG_INFINITY};\n\npub fn quadtree_bounds_new() -> Option<Box<QuadtreeBounds>> {\n    let nw = quadtree_point_new(INFINITY, NEG_INFINITY);\n    let se = quadtree_point_new(NEG_INFINITY, INFINITY);\n\n    Some(Box::new(QuadtreeBounds {\n        nw,\n        se,\n        width: 0.0,\n        height: 0.0,\n    }))\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "bounds.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_bounds_t",
+            "quadtree_point_new"
+        ],
+        "header": "quadtree_bounds_t *quadtree_bounds_new()",
+        "lifetime_hint": [],
+        "global_variables": [
+            "bounds",
+            "bounds_idx"
+        ],
+        "calle": [
+            "malloc",
+            "quadtree_point_new"
+        ],
+        "calle_c": [
+            "malloc"
+        ],
+        "key": "quadtree_bounds_new",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "quadtree_bounds_free": {
+        "source_code": "void quadtree_bounds_free(quadtree_bounds_t *bounds)\n{\n  quadtree_point_free(bounds->nw);\n  quadtree_point_free(bounds->se);\n  free(bounds);\n}\n\n",
+        "translated_code": "pub fn quadtree_bounds_free(bounds: Option<Box<QuadtreeBounds>>) {\n    if let Some(bounds) = bounds {\n        quadtree_point_free(bounds.nw);\n        quadtree_point_free(bounds.se);\n        // The Box will be automatically dropped here, freeing the memory\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "bounds.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_bounds_t",
+            "quadtree_point_free"
+        ],
+        "header": "void quadtree_bounds_free(quadtree_bounds_t *bounds)",
+        "params": [
+            "quadtree_bounds_t *bounds"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "bounds"
+        ],
+        "calle": [
+            "free",
+            "quadtree_point_free"
+        ],
+        "calle_c": [
+            "free"
+        ],
+        "key": "quadtree_bounds_free",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "quadtree_node_ispointer": {
+        "source_code": "int quadtree_node_ispointer(quadtree_node_t *node)\n{\n  return ((((node->nw != 0) && (node->ne != 0)) && (node->sw != 0)) && (node->se != 0)) && (!quadtree_node_isleaf(node));\n}\n\n",
+        "translated_code": "pub fn quadtree_node_ispointer(node: &QuadtreeNode) -> bool {\n    node.nw.is_some() && \n    node.ne.is_some() && \n    node.sw.is_some() && \n    node.se.is_some() && \n    !quadtree_node_isleaf(node)\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "node.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_node_isleaf",
+            "quadtree_node_t"
+        ],
+        "header": "int quadtree_node_ispointer(quadtree_node_t *node)",
+        "params": [
+            "quadtree_node_t *node"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "node"
+        ],
+        "calle": [
+            "quadtree_node_isleaf"
+        ],
+        "calle_c": [],
+        "key": "quadtree_node_ispointer",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "quadtree_node_isempty": {
+        "source_code": "int quadtree_node_isempty(quadtree_node_t *node)\n{\n  return ((((node->nw == 0) && (node->ne == 0)) && (node->sw == 0)) && (node->se == 0)) && (!quadtree_node_isleaf(node));\n}\n\n",
+        "translated_code": "pub fn quadtree_node_isempty(node: &QuadtreeNode) -> bool {\n    node.nw.is_none() && \n    node.ne.is_none() && \n    node.sw.is_none() && \n    node.se.is_none() && \n    !quadtree_node_isleaf(node)\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "node.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_node_isleaf",
+            "quadtree_node_t"
+        ],
+        "header": "int quadtree_node_isempty(quadtree_node_t *node)",
+        "params": [
+            "quadtree_node_t *node"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "node"
+        ],
+        "calle": [
+            "quadtree_node_isleaf"
+        ],
+        "calle_c": [],
+        "key": "quadtree_node_isempty",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "quadtree_node_reset": {
+        "source_code": "void quadtree_node_reset(quadtree_node_t *node, void (*key_free)(void *))\n{\n  quadtree_point_free(node->point);\n  (*key_free)(node->key);\n}\n\n",
+        "translated_code": "pub fn quadtree_node_reset(node: &mut QuadtreeNode, key_free: fn(Option<Box<dyn std::any::Any>>)) {\n    // Free the point if it exists\n    quadtree_point_free(node.point.take());\n    \n    // Free the key using the provided key_free function\n    key_free(node.key.take());\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "node.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_node_t",
+            "quadtree_point_free"
+        ],
+        "header": "void quadtree_node_reset(quadtree_node_t *node, void (*key_free)(void *))",
+        "params": [
+            "quadtree_node_t *node",
+            "void (*key_free)(void *)"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "node",
+            "key_free"
+        ],
+        "calle": [
+            "*key_free",
+            "quadtree_point_free"
+        ],
+        "calle_c": [
+            "*key_free"
+        ],
+        "key": "quadtree_node_reset",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "quadtree_node_with_bounds": {
+        "source_code": "quadtree_node_t *quadtree_node_with_bounds(double minx, double miny, double maxx, double maxy)\n{\n  quadtree_node_t *node;\n  unsigned int node_idx = 0;\n  if (!(node_idx = quadtree_node_new()))\n  {\n    return 0;\n  }\n  if (!(node->bounds = quadtree_bounds_new()))\n  {\n    return 0;\n  }\n  quadtree_bounds_extend(node->bounds, maxx, maxy);\n  quadtree_bounds_extend(node->bounds, minx, miny);\n  return node;\n}\n\n",
+        "translated_code": "pub fn quadtree_node_with_bounds(minx: f64, miny: f64, maxx: f64, maxy: f64) -> Option<Box<QuadtreeNode>> {\n    // Create new node, return None if allocation fails\n    let mut node = match quadtree_node_new() {\n        Some(n) => n,\n        None => return None,\n    };\n\n    // Create new bounds, return None if allocation fails\n    node.bounds = match quadtree_bounds_new() {\n        Some(b) => Some(b),\n        None => return None,\n    };\n\n    // Extend bounds with coordinates\n    if let Some(ref mut bounds) = node.bounds {\n        quadtree_bounds_extend(bounds, maxx, maxy);\n        quadtree_bounds_extend(bounds, minx, miny);\n    }\n\n    Some(node)\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "node.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_bounds_extend",
+            "quadtree_bounds_new",
+            "quadtree_node_new",
+            "quadtree_node_t"
+        ],
+        "header": "quadtree_node_t *quadtree_node_with_bounds(double minx, double miny, double maxx, double maxy)",
+        "params": [
+            "double minx",
+            "double miny",
+            "double maxx",
+            "double maxy"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "minx",
+            "miny",
+            "maxx",
+            "maxy",
+            "node",
+            "node_idx"
+        ],
+        "calle": [
+            "quadtree_node_new",
+            "quadtree_bounds_extend",
+            "quadtree_bounds_new"
+        ],
+        "calle_c": [],
+        "key": "quadtree_node_with_bounds",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "quadtree_new": {
+        "source_code": "quadtree_t *quadtree_new(double minx, double miny, double maxx, double maxy)\n{\n  quadtree_t *tree;\n  unsigned int tree_idx = 0;\n  if (!(tree_idx = malloc(sizeof(*tree_idx))))\n  {\n    return 0;\n  }\n  tree->root = quadtree_node_with_bounds(minx, miny, maxx, maxy);\n  if (!tree->root)\n  {\n    return 0;\n  }\n  tree->key_free = 0;\n  tree->length = 0;\n  return tree;\n}\n\n",
+        "translated_code": "use std::alloc::{alloc, Layout};\n\npub fn quadtree_new(minx: f64, miny: f64, maxx: f64, maxy: f64) -> Option<Box<Quadtree>> {\n    // Create the root node first\n    let root = quadtree_node_with_bounds(minx, miny, maxx, maxy)?;\n\n    // Allocate and initialize the Quadtree\n    Some(Box::new(Quadtree {\n        root: Some(root),\n        key_free: None,\n        length: 0,\n    }))\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "quadtree.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_node_with_bounds",
+            "quadtree_t"
+        ],
+        "header": "quadtree_t *quadtree_new(double minx, double miny, double maxx, double maxy)",
+        "params": [
+            "double minx",
+            "double miny",
+            "double maxx",
+            "double maxy"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "minx",
+            "miny",
+            "maxx",
+            "maxy",
+            "tree",
+            "tree_idx"
+        ],
+        "calle": [
+            "quadtree_node_with_bounds",
+            "malloc"
+        ],
+        "calle_c": [
+            "malloc"
+        ],
+        "key": "quadtree_new",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "node_contains_": {
+        "source_code": "static int node_contains_(quadtree_node_t *outer, quadtree_point_t *it)\n{\n  return ((((outer->bounds != 0) && (outer->bounds->nw->x < it->x)) && (outer->bounds->nw->y > it->y)) && (outer->bounds->se->x > it->x)) && (outer->bounds->se->y < it->y);\n}\n\n",
+        "translated_code": "pub fn node_contains_(outer: &QuadtreeNode, it: &QuadtreePoint) -> bool {\n    // Check if bounds exists and all nested options are Some\n    if let Some(bounds) = &outer.bounds {\n        if let Some(nw) = &bounds.nw {\n            if let Some(se) = &bounds.se {\n                return (nw.x < it.x) && (nw.y > it.y) && (se.x > it.x) && (se.y < it.y);\n            }\n        }\n    }\n    false\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "quadtree.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_node_t",
+            "quadtree_point_t"
+        ],
+        "header": "static int node_contains_(quadtree_node_t *outer, quadtree_point_t *it)",
+        "params": [
+            "quadtree_node_t *outer",
+            "quadtree_point_t *it"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "outer",
+            "it"
+        ],
+        "calle": [],
+        "calle_c": [],
+        "key": "node_contains_",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "reset_node_": {
+        "source_code": "static void reset_node_(quadtree_t *tree, quadtree_node_t *node)\n{\n  if (tree->key_free != 0)\n  {\n    quadtree_node_reset(node, tree->key_free);\n  }\n  else\n  {\n    quadtree_node_reset(node, elision_);\n  }\n}\n\n",
+        "translated_code": "static mut TEMP_KEY_FREE: Option<*mut Box<dyn FnMut(Box<dyn std::any::Any>)>> = None;\n\nfn key_free_wrapper(key: Option<Box<dyn std::any::Any>>) {\n    unsafe {\n        if let Some(ptr) = TEMP_KEY_FREE {\n            if let Some(k) = key {\n                let key_free = &mut *ptr;\n                key_free(k);\n            }\n        }\n    }\n}\n\nfn elision_wrapper(key: Option<Box<dyn std::any::Any>>) {\n    unsafe {\n        if let Some(k) = key {\n            let ptr = Box::into_raw(k) as *mut std::ffi::c_void;\n            elision_(Some(&mut *ptr));\n        } else {\n            elision_(Option::None);\n        }\n    }\n}\n\npub fn reset_node_(tree: &mut Quadtree, node: &mut QuadtreeNode) {\n    if let Some(key_free) = &mut tree.key_free {\n        unsafe {\n            TEMP_KEY_FREE = Some(key_free as *mut _);\n            quadtree_node_reset(node, key_free_wrapper);\n            TEMP_KEY_FREE = None;\n        }\n    } else {\n        quadtree_node_reset(node, elision_wrapper);\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "quadtree.rs",
+        "error": "",
+        "dependent": [
+            "elision_",
+            "quadtree_node_reset",
+            "quadtree_node_t",
+            "quadtree_t"
+        ],
+        "params": [
+            "quadtree_t *tree",
+            "quadtree_node_t *node"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "tree",
+            "node"
+        ],
+        "calle": [
+            "quadtree_node_reset",
+            "elision_"
+        ],
+        "calle_c": [],
+        "key": "reset_node_",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "get_quadrant_": {
+        "source_code": "static quadtree_node_t *get_quadrant_(quadtree_node_t *root, quadtree_point_t *point)\n{\n  if (node_contains_(root->nw, point))\n  {\n    return root->nw;\n  }\n  if (node_contains_(root->ne, point))\n  {\n    return root->ne;\n  }\n  if (node_contains_(root->sw, point))\n  {\n    return root->sw;\n  }\n  if (node_contains_(root->se, point))\n  {\n    return root->se;\n  }\n  return 0;\n}\n\n",
+        "translated_code": "pub fn get_quadrant_<'a>(root: &'a QuadtreeNode, point: &QuadtreePoint) -> Option<&'a QuadtreeNode> {\n    if let Some(nw) = &root.nw {\n        if node_contains_(nw, point) {\n            return Some(nw);\n        }\n    }\n    if let Some(ne) = &root.ne {\n        if node_contains_(ne, point) {\n            return Some(ne);\n        }\n    }\n    if let Some(sw) = &root.sw {\n        if node_contains_(sw, point) {\n            return Some(sw);\n        }\n    }\n    if let Some(se) = &root.se {\n        if node_contains_(se, point) {\n            return Some(se);\n        }\n    }\n    None\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "quadtree.rs",
+        "error": "",
+        "dependent": [
+            "node_contains_",
+            "quadtree_node_t",
+            "quadtree_point_t"
+        ],
+        "header": "static quadtree_node_t *get_quadrant_(quadtree_node_t *root, quadtree_point_t *point)",
+        "params": [
+            "quadtree_node_t *root",
+            "quadtree_point_t *point"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "root",
+            "point"
+        ],
+        "calle": [
+            "node_contains_"
+        ],
+        "calle_c": [],
+        "key": "get_quadrant_",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "insert_,split_node_": {
+        "source_code": "static int insert_(quadtree_t *tree, quadtree_node_t *root, quadtree_point_t *point, void *key)\n{\n  if (quadtree_node_isempty(root))\n  {\n    root->point = point;\n    root->key = key;\n    return 1;\n  }\n  else\n    if (quadtree_node_isleaf(root))\n  {\n    if ((root->point->x == point->x) && (root->point->y == point->y))\n    {\n      reset_node_(tree, root);\n      root->point = point;\n      root->key = key;\n      return 0;\n    }\n    else\n    {\n      if (!split_node_(tree, root))\n      {\n        return 0;\n      }\n      return insert_(tree, root, point, key);\n    }\n    return 1;\n  }\n  else\n    if (quadtree_node_ispointer(root))\n  {\n    quadtree_node_t *quadrant = get_quadrant_(root, point);\n    return (quadrant == 0) ? (0) : (insert_(tree, quadrant, point, key));\n  }\n  return 0;\n}\n\n\n\nstatic int split_node_(quadtree_t *tree, quadtree_node_t *node)\n{\n  quadtree_node_t *nw;\n  unsigned int nw_idx = 0;\n  quadtree_node_t *ne;\n  unsigned int ne_idx = 0;\n  quadtree_node_t *sw;\n  unsigned int sw_idx = 0;\n  quadtree_node_t *se;\n  unsigned int se_idx = 0;\n  double x = node->bounds->nw->x;\n  double y = node->bounds->nw->y;\n  double hw = node->bounds->width / 2;\n  double hh = node->bounds->height / 2;\n  if (!(nw_idx = quadtree_node_with_bounds(x, y - hh, x + hw, y)))\n  {\n    return 0;\n  }\n  if (!(ne_idx = quadtree_node_with_bounds(x + hw, y - hh, x + (hw * 2), y)))\n  {\n    return 0;\n  }\n  if (!(sw_idx = quadtree_node_with_bounds(x, y - (hh * 2), x + hw, y - hh)))\n  {\n    return 0;\n  }\n  if (!(se_idx = quadtree_node_with_bounds(x + hw, y - (hh * 2), x + (hw * 2), y - hh)))\n  {\n    return 0;\n  }\n  node->nw = &nw[nw_idx];\n  node->ne = &ne[ne_idx];\n  node->sw = &sw[sw_idx];\n  node->se = &se[se_idx];\n  quadtree_point_t *old = node->point;\n  void *key = node->key;\n  node->point = 0;\n  node->key = 0;\n  return insert_(tree, node, old, key);\n}\n\n",
+        "translated_code": "pub fn insert_(\n    tree: &mut Quadtree,\n    root: &mut QuadtreeNode,\n    point: &QuadtreePoint,\n    key: Box<dyn Any>,\n) -> bool {\n    if quadtree_node_isempty(root) {\n        root.point = Some(Box::new(point.clone()));\n        root.key = Some(key);\n        true\n    } else if quadtree_node_isleaf(root) {\n        if let Some(existing_point) = &root.point {\n            if existing_point.x == point.x && existing_point.y == point.y {\n                reset_node_(tree, root);\n                root.point = Some(Box::new(point.clone()));\n                root.key = Some(key);\n                false\n            } else {\n                if !split_node_(tree, root) {\n                    false\n                } else {\n                    insert_(tree, root, point, key)\n                }\n            }\n        } else {\n            // This case shouldn't happen since we checked is_leaf\n            false\n        }\n    } else if quadtree_node_ispointer(root) {\n        if let Some(quadrant) = get_quadrant_(root, point) {\n            // Need to convert &QuadtreeNode to &mut QuadtreeNode\n            // This requires unsafe code or restructuring the data model\n            // For now, we'll return false as we can't safely get mutable access\n            false\n        } else {\n            false\n        }\n    } else {\n        false\n    }\n}\n\n// Note: The above implementation has a limitation with the mutable quadrant access.\n// In Rust, we can't safely get a mutable reference to a node that's part of a tree\n// without potentially violating borrowing rules. A more idiomatic Rust solution\n// would require restructuring the data model to use interior mutability (like RefCell)\n// or restructuring the algorithm to avoid needing mutable references to child nodes.\n\n// Helper functions would need to be implemented similarly:\n\npub fn reset_node_(_tree: &mut Quadtree, _root: &mut QuadtreeNode) {\n    // Implementation omitted\n}\n\npub fn split_node_(tree: &mut Quadtree, node: &mut QuadtreeNode) -> bool {\n    let x = node.bounds.as_ref().unwrap().nw.as_ref().unwrap().x;\n    let y = node.bounds.as_ref().unwrap().nw.as_ref().unwrap().y;\n    let hw = node.bounds.as_ref().unwrap().width / 2.0;\n    let hh = node.bounds.as_ref().unwrap().height / 2.0;\n\n    let nw_idx = match quadtree_node_with_bounds(x, y - hh, x + hw, y) {\n        Some(n) => n,\n        None => return false,\n    };\n    let ne_idx = match quadtree_node_with_bounds(x + hw, y - hh, x + (hw * 2.0), y) {\n        Some(n) => n,\n        None => return false,\n    };\n    let sw_idx = match quadtree_node_with_bounds(x, y - (hh * 2.0), x + hw, y - hh) {\n        Some(n) => n,\n        None => return false,\n    };\n    let se_idx = match quadtree_node_with_bounds(x + hw, y - (hh * 2.0), x + (hw * 2.0), y - hh) {\n        Some(n) => n,\n        None => return false,\n    };\n\n    node.nw = Some(nw_idx);\n    node.ne = Some(ne_idx);\n    node.sw = Some(sw_idx);\n    node.se = Some(se_idx);\n\n    let old = node.point.take();\n    let key = node.key.take();\n\n    insert_(tree, node, old.as_ref().unwrap(), key.unwrap())\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "super_function_unit1.rs",
+        "error": "",
+        "dependent": [
+            "get_quadrant_",
+            "quadtree_t",
+            "quadtree_node_isleaf",
+            "quadtree_node_ispointer",
+            "quadtree_node_t",
+            "quadtree_node_isempty",
+            "insert_,split_node_",
+            "quadtree_node_with_bounds",
+            "reset_node_",
+            "quadtree_point_t"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [],
+        "calle": [],
+        "calle_c": [],
+        "key": "insert_,split_node_",
+        "is_ffi": false,
+        "is_cyclic_merged": true,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": [
+            {
+                "source_code": "static int insert_(quadtree_t *tree, quadtree_node_t *root, quadtree_point_t *point, void *key)\n{\n  if (quadtree_node_isempty(root))\n  {\n    root->point = point;\n    root->key = key;\n    return 1;\n  }\n  else\n    if (quadtree_node_isleaf(root))\n  {\n    if ((root->point->x == point->x) && (root->point->y == point->y))\n    {\n      reset_node_(tree, root);\n      root->point = point;\n      root->key = key;\n      return 0;\n    }\n    else\n    {\n      if (!split_node_(tree, root))\n      {\n        return 0;\n      }\n      return insert_(tree, root, point, key);\n    }\n    return 1;\n  }\n  else\n    if (quadtree_node_ispointer(root))\n  {\n    quadtree_node_t *quadrant = get_quadrant_(root, point);\n    return (quadrant == 0) ? (0) : (insert_(tree, quadrant, point, key));\n  }\n  return 0;\n}\n\n",
+                "translated_code": "",
+                "hint": "functions",
+                "section": "src",
+                "file": "super_function_unit1.rs",
+                "error": "",
+                "dependent": [
+                    "get_quadrant_",
+                    "quadtree_t",
+                    "quadtree_node_isleaf",
+                    "quadtree_node_ispointer",
+                    "quadtree_node_t",
+                    "quadtree_node_isempty",
+                    "reset_node_",
+                    "quadtree_point_t",
+                    "insert_,split_node_"
+                ],
+                "header": "static int insert_(quadtree_t *tree, quadtree_node_t *root, quadtree_point_t *point, void *key)",
+                "params": [
+                    "quadtree_t *tree",
+                    "quadtree_node_t *root",
+                    "quadtree_point_t *point",
+                    "void *key"
+                ],
+                "lifetime_hint": [],
+                "global_variables": [
+                    "tree",
+                    "root",
+                    "point",
+                    "key",
+                    "quadrant"
+                ],
+                "calle": [
+                    "insert_",
+                    "split_node_",
+                    "get_quadrant_",
+                    "quadtree_node_isleaf",
+                    "quadtree_node_ispointer",
+                    "quadtree_node_isempty",
+                    "reset_node_"
+                ],
+                "calle_c": [],
+                "key": "insert_",
+                "is_ffi": false,
+                "is_cyclic_merged": false,
+                "is_pointer_refactored": false,
+                "cyclic_merged_items": []
+            },
+            {
+                "source_code": "static int split_node_(quadtree_t *tree, quadtree_node_t *node)\n{\n  quadtree_node_t *nw;\n  unsigned int nw_idx = 0;\n  quadtree_node_t *ne;\n  unsigned int ne_idx = 0;\n  quadtree_node_t *sw;\n  unsigned int sw_idx = 0;\n  quadtree_node_t *se;\n  unsigned int se_idx = 0;\n  double x = node->bounds->nw->x;\n  double y = node->bounds->nw->y;\n  double hw = node->bounds->width / 2;\n  double hh = node->bounds->height / 2;\n  if (!(nw_idx = quadtree_node_with_bounds(x, y - hh, x + hw, y)))\n  {\n    return 0;\n  }\n  if (!(ne_idx = quadtree_node_with_bounds(x + hw, y - hh, x + (hw * 2), y)))\n  {\n    return 0;\n  }\n  if (!(sw_idx = quadtree_node_with_bounds(x, y - (hh * 2), x + hw, y - hh)))\n  {\n    return 0;\n  }\n  if (!(se_idx = quadtree_node_with_bounds(x + hw, y - (hh * 2), x + (hw * 2), y - hh)))\n  {\n    return 0;\n  }\n  node->nw = &nw[nw_idx];\n  node->ne = &ne[ne_idx];\n  node->sw = &sw[sw_idx];\n  node->se = &se[se_idx];\n  quadtree_point_t *old = node->point;\n  void *key = node->key;\n  node->point = 0;\n  node->key = 0;\n  return insert_(tree, node, old, key);\n}\n\n",
+                "translated_code": "",
+                "hint": "functions",
+                "section": "src",
+                "file": "super_function_unit1.rs",
+                "error": "",
+                "dependent": [
+                    "quadtree_point_t",
+                    "quadtree_node_with_bounds",
+                    "quadtree_t",
+                    "quadtree_node_t",
+                    "insert_,split_node_"
+                ],
+                "header": "static int split_node_(quadtree_t *tree, quadtree_node_t *node)",
+                "params": [
+                    "quadtree_t *tree",
+                    "quadtree_node_t *node"
+                ],
+                "lifetime_hint": [],
+                "global_variables": [
+                    "tree",
+                    "node",
+                    "nw",
+                    "nw_idx",
+                    "ne",
+                    "ne_idx",
+                    "sw",
+                    "sw_idx",
+                    "se",
+                    "se_idx",
+                    "x",
+                    "y",
+                    "hw",
+                    "hh",
+                    "old",
+                    "key"
+                ],
+                "calle": [
+                    "quadtree_node_with_bounds",
+                    "insert_"
+                ],
+                "calle_c": [],
+                "key": "split_node_",
+                "is_ffi": false,
+                "is_cyclic_merged": false,
+                "is_pointer_refactored": true,
+                "cyclic_merged_items": []
+            }
+        ]
+    },
+    "quadtree_insert": {
+        "source_code": "int quadtree_insert(quadtree_t *tree, double x, double y, void *key)\n{\n  quadtree_point_t *point;\n  unsigned int point_idx = 0;\n  if (!(point_idx = quadtree_point_new(x, y)))\n  {\n    return 0;\n  }\n  if (!node_contains_(tree->root, point))\n  {\n    return 0;\n  }\n  if (!insert_(tree, tree->root, point, key))\n  {\n    return 0;\n  }\n  tree->length += 1;\n  return 1;\n}\n\n",
+        "translated_code": "pub fn quadtree_insert(\n    tree: &mut Quadtree,\n    x: f64,\n    y: f64,\n    key: Box<dyn std::any::Any>,\n) -> bool {\n    // Create new point (equivalent to quadtree_point_new in C)\n    let point = match quadtree_point_new(x, y) {\n        Some(p) => p,\n        None => return false,\n    };\n\n    // Check if root node exists and contains the point\n    if let Some(root) = &tree.root {\n        if !node_contains_(root, &point) {\n            return false;\n        }\n    } else {\n        return false;\n    }\n\n    // Temporarily take the root node to avoid overlapping mutable borrows\n    let mut root_node = tree.root.take().unwrap();\n    let success = insert_(tree, &mut root_node, &point, key);\n    tree.root = Some(root_node);\n\n    if !success {\n        return false;\n    }\n\n    tree.length += 1;\n    true\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "quadtree.rs",
+        "error": "",
+        "dependent": [
+            "node_contains_",
+            "quadtree_t",
+            "quadtree_point_t",
+            "quadtree_point_new",
+            "insert_,split_node_"
+        ],
+        "header": "int quadtree_insert(quadtree_t *tree, double x, double y, void *key)",
+        "params": [
+            "quadtree_t *tree",
+            "double x",
+            "double y",
+            "void *key"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "tree",
+            "x",
+            "y",
+            "key",
+            "point",
+            "point_idx"
+        ],
+        "calle": [
+            "node_contains_",
+            "insert_",
+            "quadtree_point_new"
+        ],
+        "calle_c": [],
+        "key": "quadtree_insert",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": true,
+        "cyclic_merged_items": []
+    },
+    "quadtree_node_free": {
+        "source_code": "void quadtree_node_free(quadtree_node_t *node, void (*key_free)(void *))\n{\n  if (node->nw != 0)\n  {\n    quadtree_node_free(node->nw, key_free);\n  }\n  if (node->ne != 0)\n  {\n    quadtree_node_free(node->ne, key_free);\n  }\n  if (node->sw != 0)\n  {\n    quadtree_node_free(node->sw, key_free);\n  }\n  if (node->se != 0)\n  {\n    quadtree_node_free(node->se, key_free);\n  }\n  quadtree_bounds_free(node->bounds);\n  quadtree_node_reset(node, key_free);\n  free(node);\n}\n\n",
+        "translated_code": "pub fn quadtree_node_free(node: Option<Box<QuadtreeNode>>, key_free: fn(Option<Box<dyn std::any::Any>>)) {\n    if let Some(mut node) = node {\n        // Recursively free child nodes\n        if let Some(nw) = node.nw.take() {\n            quadtree_node_free(Some(nw), key_free);\n        }\n        if let Some(ne) = node.ne.take() {\n            quadtree_node_free(Some(ne), key_free);\n        }\n        if let Some(sw) = node.sw.take() {\n            quadtree_node_free(Some(sw), key_free);\n        }\n        if let Some(se) = node.se.take() {\n            quadtree_node_free(Some(se), key_free);\n        }\n        \n        // Free bounds and reset node\n        quadtree_bounds_free(node.bounds.take());\n        quadtree_node_reset(&mut node, key_free);\n        \n        // Box will be automatically dropped here, freeing the memory\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "node.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_bounds_free",
+            "quadtree_node_reset",
+            "quadtree_node_t"
+        ],
+        "header": "void quadtree_node_free(quadtree_node_t *node, void (*value_free)(void *))",
+        "params": [
+            "quadtree_node_t *node",
+            "void (*key_free)(void *)"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "node",
+            "key_free"
+        ],
+        "calle": [
+            "quadtree_node_reset",
+            "quadtree_bounds_free",
+            "free",
+            "quadtree_node_free"
+        ],
+        "calle_c": [
+            "free"
+        ],
+        "key": "quadtree_node_free",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "quadtree_free": {
+        "source_code": "void quadtree_free(quadtree_t *tree)\n{\n  if (tree->key_free != 0)\n  {\n    quadtree_node_free(tree->root, tree->key_free);\n  }\n  else\n  {\n    quadtree_node_free(tree->root, elision_);\n  }\n  free(tree);\n}\n\n",
+        "translated_code": "pub fn quadtree_free(tree: Box<Quadtree>) {\n    if let Some(mut key_free) = tree.key_free {\n        fn free_node<F>(node: Option<Box<QuadtreeNode>>, key_free: &mut F)\n        where\n            F: FnMut(Box<dyn std::any::Any>) + 'static,\n        {\n            if let Some(mut node) = node {\n                free_node(node.ne.take(), key_free);\n                free_node(node.nw.take(), key_free);\n                free_node(node.se.take(), key_free);\n                free_node(node.sw.take(), key_free);\n                if let Some(key) = node.key.take() {\n                    key_free(key);\n                }\n            }\n        }\n        free_node(tree.root, &mut key_free);\n    } else {\n        fn free_node_no_key_free(node: Option<Box<QuadtreeNode>>) {\n            if let Some(mut node) = node {\n                free_node_no_key_free(node.ne.take());\n                free_node_no_key_free(node.nw.take());\n                free_node_no_key_free(node.se.take());\n                free_node_no_key_free(node.sw.take());\n            }\n        }\n        free_node_no_key_free(tree.root);\n    }\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "quadtree.rs",
+        "error": "",
+        "dependent": [
+            "elision_",
+            "quadtree_node_free",
+            "quadtree_t"
+        ],
+        "header": "void quadtree_free(quadtree_t *tree)",
+        "params": [
+            "quadtree_t *tree"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "tree"
+        ],
+        "calle": [
+            "free",
+            "quadtree_node_free",
+            "elision_"
+        ],
+        "calle_c": [
+            "free"
+        ],
+        "key": "quadtree_free",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "mark_insert": {
+        "source_code": "static void mark_insert()\n{\n  int n = nodes;\n  int val = 10;\n  quadtree_t *tree = quadtree_new(0, 0, 1000, 1000);\n  double x;\n  double y;\n  start();\n  while (n--)\n  {\n    x = (double) (rand() % 1000);\n    y = (double) (rand() % 1000);\n    quadtree_insert(tree, x, y, &val);\n  }\n\n  stop();\n  printf(\"  %18s %i\\n\", \"length:\", tree->length);\n  quadtree_free(tree);\n}\n\n",
+        "translated_code": "pub fn mark_insert() {\n    let n = NODES.load(Ordering::SeqCst);\n    let mut tree = quadtree_new(0.0, 0.0, 1000.0, 1000.0).unwrap();\n    let mut rng = rand::thread_rng();\n\n    start();\n    \n    for _ in 0..n {\n        let x = rng.gen_range(0.0..1000.0);\n        let y = rng.gen_range(0.0..1000.0);\n        let val: Box<dyn std::any::Any> = Box::new(10);\n        quadtree_insert(&mut *tree, x, y, val);\n    }\n\n    stop();\n    println!(\"  {:18} {}\", \"length:\", tree.length);\n    quadtree_free(tree);\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "benchmark.rs",
+        "error": "",
+        "dependent": [
+            "nodes",
+            "quadtree_free",
+            "quadtree_insert",
+            "quadtree_new",
+            "quadtree_t",
+            "start",
+            "stop"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "n",
+            "val",
+            "tree",
+            "x",
+            "y",
+            "nodes"
+        ],
+        "calle": [
+            "quadtree_free",
+            "start",
+            "rand",
+            "printf",
+            "quadtree_insert",
+            "stop",
+            "quadtree_new"
+        ],
+        "calle_c": [
+            "rand",
+            "printf"
+        ],
+        "key": "mark_insert",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "main#benchmark": {
+        "source_code": "int main(int argc, const char *argv[])\n{\n  srand(time(0));\n  bench(mark_insert, \"insertion\");\n  return 0;\n}\n\n",
+        "translated_code": "pub fn main() {\n    let _ = thread_rng(); // Equivalent to srand(time(0)) - thread_rng seeds itself\n    bench(mark_insert, Some(\"insertion\"));\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "benchmark.rs",
+        "error": "",
+        "dependent": [
+            "bench",
+            "mark_insert",
+            "time"
+        ],
+        "params": [
+            "int argc",
+            "const char *argv[]"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "argc",
+            "argv"
+        ],
+        "calle": [
+            "bench",
+            "mark_insert",
+            "srand",
+            "time"
+        ],
+        "calle_c": [
+            "srand",
+            "time"
+        ],
+        "key": "main#benchmark",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_points": {
+        "source_code": "static void test_points()\n{\n  quadtree_point_t *point = quadtree_point_new(5, 6);\n  assert(point->x == 5);\n  assert(point->y == 6);\n  quadtree_point_free(point);\n}\n\n",
+        "translated_code": "pub fn test_points() {\n    let point = quadtree_point_new(5.0, 6.0).expect(\"Failed to create point\");\n    assert_eq!(point.x, 5.0);\n    assert_eq!(point.y, 6.0);\n    quadtree_point_free(Some(point));\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_point_free",
+            "quadtree_point_new",
+            "quadtree_point_t"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "point"
+        ],
+        "calle": [
+            "assert",
+            "quadtree_point_free",
+            "quadtree_point_new"
+        ],
+        "calle_c": [
+            "assert"
+        ],
+        "key": "test_points",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "find_": {
+        "source_code": "static quadtree_point_t *find_(quadtree_node_t *node, double x, double y)\n{\n  if (quadtree_node_isleaf(node))\n  {\n    if ((node->point->x == x) && (node->point->y == y))\n    {\n      return node->point;\n    }\n  }\n  else\n  {\n    quadtree_point_t test;\n    test.x = x;\n    test.y = y;\n    return find_(get_quadrant_(node, &test), x, y);\n  }\n  return 0;\n}\n\n",
+        "translated_code": "pub fn find_(node: &QuadtreeNode, x: f64, y: f64) -> Option<&QuadtreePoint> {\n    if quadtree_node_isleaf(node) {\n        if let Some(point) = &node.point {\n            if (point.x == x) && (point.y == y) {\n                return Some(point);\n            }\n        }\n    } else {\n        let test = QuadtreePoint { x, y };\n        if let Some(quadrant) = get_quadrant_(node, &test) {\n            return find_(quadrant, x, y);\n        }\n    }\n    None\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "quadtree.rs",
+        "error": "",
+        "dependent": [
+            "get_quadrant_",
+            "quadtree_node_isleaf",
+            "quadtree_node_t",
+            "quadtree_point_t"
+        ],
+        "params": [
+            "quadtree_node_t *node",
+            "double x",
+            "double y"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "node",
+            "x",
+            "y",
+            "test"
+        ],
+        "calle": [
+            "get_quadrant_",
+            "find_",
+            "quadtree_node_isleaf"
+        ],
+        "calle_c": [
+            "find_"
+        ],
+        "key": "find_",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "quadtree_search": {
+        "source_code": "quadtree_point_t *quadtree_search(quadtree_t *tree, double x, double y)\n{\n  return find_(tree->root, x, y);\n}\n\n",
+        "translated_code": "pub fn quadtree_search(tree: &Quadtree, x: f64, y: f64) -> Option<&QuadtreePoint> {\n    // If the tree's root is None, return None immediately\n    tree.root.as_ref().and_then(|root| find_(root, x, y))\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "quadtree.rs",
+        "error": "",
+        "dependent": [
+            "find_",
+            "quadtree_point_t",
+            "quadtree_t"
+        ],
+        "header": "quadtree_point_t *quadtree_search(quadtree_t *tree, double x, double y)",
+        "params": [
+            "quadtree_t *tree",
+            "double x",
+            "double y"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "tree",
+            "x",
+            "y"
+        ],
+        "calle": [
+            "find_"
+        ],
+        "calle_c": [],
+        "key": "quadtree_search",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_bounds": {
+        "source_code": "static void test_bounds()\n{\n  quadtree_bounds_t *bounds = quadtree_bounds_new();\n  assert(bounds);\n  assert(bounds->nw->x == INFINITY);\n  assert(bounds->se->x == (-INFINITY));\n  quadtree_bounds_extend(bounds, 5.0, 5.0);\n  assert(bounds->nw->x == 5.0);\n  assert(bounds->se->x == 5.0);\n  quadtree_bounds_extend(bounds, 10.0, 10.0);\n  assert(bounds->nw->y == 10.0);\n  assert(bounds->nw->y == 10.0);\n  assert(bounds->se->y == 5.0);\n  assert(bounds->se->y == 5.0);\n  assert(bounds->width == 5.0);\n  assert(bounds->height == 5.0);\n  quadtree_bounds_free(bounds);\n}\n\n",
+        "translated_code": "pub fn test_bounds() {\n    let mut bounds = quadtree_bounds_new();\n    assert!(bounds.is_some());\n    let bounds = bounds.as_mut().unwrap();\n    assert_eq!(bounds.nw.as_ref().unwrap().x, INFINITY);\n    assert_eq!(bounds.se.as_ref().unwrap().x, NEG_INFINITY);\n    \n    quadtree_bounds_extend(bounds, 5.0, 5.0);\n    assert_eq!(bounds.nw.as_ref().unwrap().x, 5.0);\n    assert_eq!(bounds.se.as_ref().unwrap().x, 5.0);\n    \n    quadtree_bounds_extend(bounds, 10.0, 10.0);\n    assert_eq!(bounds.nw.as_ref().unwrap().y, 10.0);\n    assert_eq!(bounds.nw.as_ref().unwrap().y, 10.0);\n    assert_eq!(bounds.se.as_ref().unwrap().y, 5.0);\n    assert_eq!(bounds.se.as_ref().unwrap().y, 5.0);\n    assert_eq!(bounds.width, 5.0);\n    assert_eq!(bounds.height, 5.0);\n    \n    quadtree_bounds_free(Some(Box::new(*bounds.clone())));\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_bounds_extend",
+            "quadtree_bounds_free",
+            "quadtree_bounds_new",
+            "quadtree_bounds_t"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "bounds"
+        ],
+        "calle": [
+            "assert",
+            "quadtree_bounds_free",
+            "quadtree_bounds_new",
+            "quadtree_bounds_extend"
+        ],
+        "calle_c": [
+            "assert"
+        ],
+        "key": "test_bounds",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_tree": {
+        "source_code": "static void test_tree()\n{\n  int val = 10;\n  quadtree_t *tree = quadtree_new(1, 1, 10, 10);\n  assert(tree->root->bounds->nw->x == 1);\n  assert(tree->root->bounds->nw->y == 10.0);\n  assert(tree->root->bounds->se->x == 10.0);\n  assert(tree->root->bounds->se->y == 1);\n  assert(quadtree_insert(tree, 0, 0, &val) == 0);\n  assert(quadtree_insert(tree, 10, 10, &val) == 0);\n  assert(quadtree_insert(tree, 110.0, 110.0, &val) == 0);\n  assert(quadtree_insert(tree, 8.0, 2.0, &val) != 0);\n  assert(tree->length == 1);\n  assert(tree->root->point->x == 8.0);\n  assert(tree->root->point->y == 2.0);\n  assert(quadtree_insert(tree, 2.0, 3.0, &val) != 0);\n  assert(quadtree_insert(tree, 2.0, 3.0, &val) == 0);\n  assert(tree->length == 2);\n  assert(tree->root->point == 0);\n  assert(quadtree_insert(tree, 3.0, 1.1, &val) == 1);\n  assert(tree->length == 3);\n  assert(quadtree_search(tree, 3.0, 1.1)->x == 3.0);\n  quadtree_walk(tree->root, ascent, descent);\n  quadtree_free(tree);\n}\n\n",
+        "translated_code": "pub fn test_tree() {\n    let val = Box::new(10);\n    let mut tree = quadtree_new(1.0, 1.0, 10.0, 10.0);\n    let mut tree_unwrapped = tree.as_mut().unwrap();\n\n    // Verify initial bounds\n    assert!(tree_unwrapped.root.as_ref().unwrap().bounds.as_ref().unwrap().nw.as_ref().unwrap().x == 1.0);\n    assert!(tree_unwrapped.root.as_ref().unwrap().bounds.as_ref().unwrap().nw.as_ref().unwrap().y == 10.0);\n    assert!(tree_unwrapped.root.as_ref().unwrap().bounds.as_ref().unwrap().se.as_ref().unwrap().x == 10.0);\n    assert!(tree_unwrapped.root.as_ref().unwrap().bounds.as_ref().unwrap().se.as_ref().unwrap().y == 1.0);\n\n    // Test insertions\n    assert!(!quadtree_insert(tree_unwrapped, 0.0, 0.0, val.clone()));\n    assert!(!quadtree_insert(tree_unwrapped, 10.0, 10.0, val.clone()));\n    assert!(!quadtree_insert(tree_unwrapped, 110.0, 110.0, val.clone()));\n    assert!(quadtree_insert(tree_unwrapped, 8.0, 2.0, val.clone()));\n    assert!(tree_unwrapped.length == 1);\n    assert!(tree_unwrapped.root.as_ref().unwrap().point.as_ref().unwrap().x == 8.0);\n    assert!(tree_unwrapped.root.as_ref().unwrap().point.as_ref().unwrap().y == 2.0);\n    assert!(quadtree_insert(tree_unwrapped, 2.0, 3.0, val.clone()));\n    assert!(!quadtree_insert(tree_unwrapped, 2.0, 3.0, val.clone()));\n    assert!(tree_unwrapped.length == 2);\n    assert!(tree_unwrapped.root.as_ref().unwrap().point.is_none());\n    assert!(quadtree_insert(tree_unwrapped, 3.0, 1.1, val.clone()));\n    assert!(tree_unwrapped.length == 3);\n    assert!(quadtree_search(tree_unwrapped, 3.0, 1.1).unwrap().x == 3.0);\n\n    // Perform tree walk\n    let mut root = tree_unwrapped.root.take().unwrap();\n    quadtree_walk(\n        &mut root,\n        &mut |node| ascent(Some(node)),\n        &mut |node| descent(node),\n    );\n    tree_unwrapped.root = Some(root);\n\n    // Clean up\n    quadtree_free(tree.unwrap());\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "ascent",
+            "descent",
+            "quadtree_free",
+            "quadtree_insert",
+            "quadtree_new",
+            "quadtree_search",
+            "quadtree_t",
+            "quadtree_walk"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "val",
+            "tree"
+        ],
+        "calle": [
+            "quadtree_free",
+            "quadtree_walk",
+            "ascent",
+            "descent",
+            "assert",
+            "quadtree_insert",
+            "quadtree_new",
+            "quadtree_search"
+        ],
+        "calle_c": [
+            "assert"
+        ],
+        "key": "test_tree",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "test_node": {
+        "source_code": "static void test_node()\n{\n  quadtree_node_t *node = quadtree_node_new();\n  assert(!quadtree_node_isleaf(node));\n  assert(quadtree_node_isempty(node));\n  assert(!quadtree_node_ispointer(node));\n}\n\n",
+        "translated_code": "pub fn test_node() {\n    let node = quadtree_node_new().expect(\"Failed to create quadtree node\");\n    assert!(!quadtree_node_isleaf(&node));\n    assert!(quadtree_node_isempty(&node));\n    assert!(!quadtree_node_ispointer(&node));\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "quadtree_node_isempty",
+            "quadtree_node_isleaf",
+            "quadtree_node_ispointer",
+            "quadtree_node_new",
+            "quadtree_node_t"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "node"
+        ],
+        "calle": [
+            "quadtree_node_isleaf",
+            "assert",
+            "quadtree_node_ispointer",
+            "quadtree_node_isempty",
+            "quadtree_node_new"
+        ],
+        "calle_c": [
+            "assert"
+        ],
+        "key": "test_node",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    },
+    "main#test": {
+        "source_code": "int main(int argc, const char *argv[])\n{\n  printf(\"\\nquadtree_t: %ld\\n\", sizeof(quadtree_t));\n  printf(\"quadtree_node_t: %ld\\n\", sizeof(quadtree_node_t));\n  printf(\"quadtree_bounds_t: %ld\\n\", sizeof(quadtree_bounds_t));\n  printf(\"quadtree_point_t: %ld\\n\", sizeof(quadtree_point_t));\n  printf(\"\\x1b[33mtree\\x1b[0m \");\n  test_tree();\n  puts(\"\\x1b[1;32m \u2713 \\x1b[0m\");\n  ;\n  printf(\"\\x1b[33mnode\\x1b[0m \");\n  test_node();\n  puts(\"\\x1b[1;32m \u2713 \\x1b[0m\");\n  ;\n  printf(\"\\x1b[33mbounds\\x1b[0m \");\n  test_bounds();\n  puts(\"\\x1b[1;32m \u2713 \\x1b[0m\");\n  ;\n  printf(\"\\x1b[33mpoints\\x1b[0m \");\n  test_points();\n  puts(\"\\x1b[1;32m \u2713 \\x1b[0m\");\n  ;\n}\n\n",
+        "translated_code": "pub fn main() {\n    // Print sizes of types (equivalent to C's sizeof)\n    println!(\"\\nquadtree_t: {}\", std::mem::size_of::<Quadtree>());\n    println!(\"quadtree_node_t: {}\", std::mem::size_of::<QuadtreeNode>());\n    println!(\"quadtree_bounds_t: {}\", std::mem::size_of::<QuadtreeBounds>());\n    println!(\"quadtree_point_t: {}\", std::mem::size_of::<QuadtreePoint>());\n\n    // Test tree with colored output\n    print!(\"\\x1b[33mtree\\x1b[0m \");\n    io::stdout().flush().unwrap();\n    test_tree();\n    println!(\"\\x1b[1;32m \u2713 \\x1b[0m\");\n\n    // Test node with colored output\n    print!(\"\\x1b[33mnode\\x1b[0m \");\n    io::stdout().flush().unwrap();\n    test_node();\n    println!(\"\\x1b[1;32m \u2713 \\x1b[0m\");\n\n    // Test bounds with colored output\n    print!(\"\\x1b[33mbounds\\x1b[0m \");\n    io::stdout().flush().unwrap();\n    test_bounds();\n    println!(\"\\x1b[1;32m \u2713 \\x1b[0m\");\n\n    // Test points with colored output\n    print!(\"\\x1b[33mpoints\\x1b[0m \");\n    io::stdout().flush().unwrap();\n    test_points();\n    println!(\"\\x1b[1;32m \u2713 \\x1b[0m\");\n}",
+        "hint": "functions",
+        "section": "src",
+        "file": "test.rs",
+        "error": "",
+        "dependent": [
+            "test_bounds",
+            "test_node",
+            "test_points",
+            "test_tree"
+        ],
+        "params": [
+            "int argc",
+            "const char *argv[]"
+        ],
+        "lifetime_hint": [],
+        "global_variables": [
+            "argc",
+            "argv"
+        ],
+        "calle": [
+            "test_node",
+            "test_bounds",
+            "printf",
+            "test_tree",
+            "puts",
+            "test_points"
+        ],
+        "calle_c": [
+            "puts",
+            "printf"
+        ],
+        "key": "main#test",
+        "is_ffi": false,
+        "is_cyclic_merged": false,
+        "is_pointer_refactored": false,
+        "cyclic_merged_items": []
+    }
+}

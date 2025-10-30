@@ -1,0 +1,17 @@
+warning: casting integer literal to `i32` is unnecessary
+warning: casting integer literal to `i32` is unnecessary
+warning: consider removing unnecessary double parentheses
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (12/7)
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect

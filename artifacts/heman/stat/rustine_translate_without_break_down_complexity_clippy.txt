@@ -1,0 +1,44 @@
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f32` -> `f32`)
+warning: casting to the same type is unnecessary (`f64` -> `f64`)
+warning: casting to the same type is unnecessary (`f64` -> `f64`)
+warning: casting to the same type is unnecessary (`f64` -> `f64`)
+warning: casting to the same type is unnecessary (`f64` -> `f64`)
+warning: casting to the same type is unnecessary (`f64` -> `f64`)
+warning: casting to the same type is unnecessary (`f64` -> `f64`)
+warning: casting to the same type is unnecessary (`f64` -> `f64`)
+warning: casting to the same type is unnecessary (`f64` -> `f64`)
+warning: casting to the same type is unnecessary (`i16` -> `i16`)
+warning: casting to the same type is unnecessary (`i64` -> `i64`)
+warning: clamp-like pattern without using clamp function
+warning: deref on an immutable reference
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: manual slice size calculation
+warning: the variable `dst_idx` is used as a loop counter
+warning: the variable `dst_idx` is used as a loop counter
+warning: the variable `pheight_idx` is used as a loop counter
+warning: the variable `src_idx` is used as a loop counter
+warning: the variable `texel_idx` is used as a loop counter
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (9/7)
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: useless conversion to the same type: `std::ops::Range<i32>`

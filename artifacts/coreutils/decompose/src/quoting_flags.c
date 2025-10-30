@@ -1,0 +1,10 @@
+enum quoting_flags
+{
+  QA_ELIDE_NULL_BYTES = 0x01,
+  QA_ELIDE_OUTER_QUOTES = 0x02,
+  QA_SPLIT_TRIGRAPHS = 0x04
+}
+/*** DEPENDENCIES:
+***/
+
+

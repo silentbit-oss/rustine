@@ -1,0 +1,76 @@
+{
+  "Rust": {
+    "blanks": 111,
+    "children": {},
+    "code": 3319,
+    "comments": 7,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/libtree-3.1.1/others/laertes/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/libtree-3.1.1/others/laertes/lib.rs",
+        "stats": {
+          "blanks": 73,
+          "blobs": {},
+          "code": 436,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/libtree-3.1.1/others/laertes/src/libtree.rs",
+        "stats": {
+          "blanks": 37,
+          "blobs": {},
+          "code": 2877,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 111,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/libtree-3.1.1/others/laertes/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/libtree-3.1.1/others/laertes/lib.rs",
+          "stats": {
+            "blanks": 73,
+            "blobs": {},
+            "code": 436,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/libtree-3.1.1/others/laertes/src/libtree.rs",
+          "stats": {
+            "blanks": 37,
+            "blobs": {},
+            "code": 2877,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 3319,
+    "comments": 7,
+    "inaccurate": false,
+    "reports": []
+  }
+}

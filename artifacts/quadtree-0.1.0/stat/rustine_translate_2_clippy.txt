@@ -1,0 +1,35 @@
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: unused import: `std::time::Duration`
+warning: unused import: `std::f64::INFINITY`
+warning: unused import: `std::f64::NEG_INFINITY`
+warning: unused variable: `key`
+warning: variable does not need to be mutable
+warning: unused variable: `key`
+warning: unused variable: `node`
+warning: unused variable: `val`
+warning: function `key_free_wrapper` is never used
+warning: function `key_free_fn` is never used
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: this block may be rewritten with the `?` operator
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: local variable doesn't need to be boxed here
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: importing a legacy numeric constant
+warning: importing a legacy numeric constant
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: importing a legacy numeric constant
+warning: importing a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: this `match` expression can be replaced with `?`
+warning: deref which would be done by auto-deref
+warning: this `else { if .. }` block can be collapsed
+warning: creating a mutable reference to mutable static

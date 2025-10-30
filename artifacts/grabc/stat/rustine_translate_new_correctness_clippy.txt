@@ -1,0 +1,15 @@
+warning: `extern` fn uses type `std::ffi::CStr`, which is not FFI-safe
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`

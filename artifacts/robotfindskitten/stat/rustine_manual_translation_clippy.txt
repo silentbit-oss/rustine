@@ -1,0 +1,87 @@
+warning: unused import: `crate::*`
+warning: type `chtype` should have an upper camel case name
+warning: type `mmask_t` should have an upper camel case name
+warning: type `NCURSES_BOOL` should have an upper camel case name
+warning: type `attr_t` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: ambiguous glob re-exports
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: ambiguous glob re-exports
+warning: `SCREEN` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `SCREEN` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `SCREEN` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `SCREEN` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `SCREEN` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `SCREEN` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `SCREEN` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: unused import: `ncurses::COLOR_BLACK`
+warning: unused import: `ncurses::COLOR_BLUE`
+warning: unused import: `ncurses::COLOR_CYAN`
+warning: unused import: `ncurses::COLOR_GREEN`
+warning: unused import: `ncurses::COLOR_MAGENTA`
+warning: unused import: `ncurses::COLOR_RED`
+warning: unused import: `ncurses::COLOR_WHITE`
+warning: unused import: `ncurses::COLOR_YELLOW`
+warning: unused import: `ncurses::WINDOW`
+warning: unused import: `ncurses::endwin`
+warning: unused import: `libc::SIGINT`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `std::sync::atomic::AtomicI32`
+warning: unused import: `rand::Rng`
+warning: unused import: `std::sync::Mutex`
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: use of deprecated function `ncurses::printw`: printw can segfault when printing string that contains % sign. Use addstr instead
+warning: unused variable: `sig`
+warning: unused variable: `rng`
+warning: unused variable: `cols`
+warning: unused variable: `lines`
+warning: variable does not need to be mutable
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: variable `dummy` is assigned to, but never used
+warning: value assigned to `dummy` is never read
+warning: unused variable: `counter`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `screen`
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: literal with an empty format string
+warning: unneeded late initialization
+warning: variables can be used directly in the `format!` string
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: this `map_or` can be simplified
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: casting integer literal to `usize` is unnecessary
+warning: casting integer literal to `usize` is unnecessary
+warning: casting integer literal to `usize` is unnecessary
+warning: casting integer literal to `usize` is unnecessary
+warning: module `n_c_u_r_s_e_s__o_u_t_c` should have a snake case name
+warning: module `n_c_u_r_s_e_s__w_i_n_d_o_w__c_b` should have a snake case name
+warning: module `n_c_u_r_s_e_s__s_c_r_e_e_n__c_b` should have a snake case name
+warning: module `n_c_u_r_s_e_s__o_u_t_c_sp` should have a snake case name

@@ -1,0 +1,46 @@
+warning: all if blocks contain the same code at the end
+    = warning: some moved values might need to be renamed to avoid wrong references
+warning: all if blocks contain the same code at the end
+    = warning: some moved values might need to be renamed to avoid wrong references
+warning: all if blocks contain the same code at the end
+warning: the function has a cognitive complexity of (33/25)
+warning: the function has a cognitive complexity of (28/25)
+warning: this could be a `const fn`
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: the function has a cognitive complexity of (39/25)
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: the function has a cognitive complexity of (27/25)
+warning: the function has a cognitive complexity of (56/25)
+warning: the function has a cognitive complexity of (28/25)
+warning: this could be a `const fn`
+warning: the function has a cognitive complexity of (26/25)
+warning: the function has a cognitive complexity of (34/25)
+warning: casting the result of `as_ptr` to *mut i8
+warning: the function has a cognitive complexity of (63/25)
+warning: casting the result of `as_ptr` to *mut *mut i8
+warning: the function has a cognitive complexity of (29/25)
+warning: casting the result of `as_ptr` to *mut *mut i8
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: the function has a cognitive complexity of (48/25)
+warning: all if blocks contain the same code at the end
+warning: the function has a cognitive complexity of (45/25)
+warning: the function has a cognitive complexity of (31/25)
+warning: the function has a cognitive complexity of (27/25)
+warning: casting the result of `as_ptr` to *mut i8
+warning: casting the result of `as_ptr` to *mut i8
+warning: this could be a `const fn`
+warning: casting the result of `as_ptr` to *mut std::ffi::c_void
+warning: this could be a `const fn`
+warning: the function has a cognitive complexity of (74/25)
+warning: the function has a cognitive complexity of (319/25)
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: this argument is a mutable reference, but not used mutably
+warning: this argument is a mutable reference, but not used mutably

@@ -1,0 +1,64 @@
+warning: an inclusive range would be more readable
+warning: an inclusive range would be more readable
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: redundant closure
+warning: redundant closure
+warning: redundant closure
+warning: redundant closure
+warning: redundant closure
+warning: redundant closure
+warning: redundant closure
+warning: redundant closure
+warning: redundant closure
+warning: redundant closure
+warning: redundant closure
+warning: this argument is passed by value, but not consumed in the function body
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function has too many lines (114/100)
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: unused `std::result::Result` that must be used
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`

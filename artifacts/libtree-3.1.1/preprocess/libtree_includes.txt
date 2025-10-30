@@ -1,0 +1,11 @@
+#include <ctype.h>
+#include <glob.h>
+#include <libtree.c>
+#include <stat.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <types.h>
+#include <unistd.h>
+#include <utsname.h>

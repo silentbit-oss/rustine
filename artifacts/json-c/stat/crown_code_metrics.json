@@ -1,0 +1,12 @@
+{
+    "num_conditions": 1306,
+    "num_loops": 94,
+    "num_assignments": 1381,
+    "num_max_nested_loop": 3,
+    "num_max_nested_if": 9,
+    "num_max_conditions_in_if": 8,
+    "num_of_variables": 3226,
+    "num_of_arrays": 24,
+    "num_of_operators": 5656,
+    "num_of_nested_casting": 3836
+}

@@ -1,0 +1,2 @@
+warning: creating a `Box` from a void raw pointer
+warning: transmute used without annotations

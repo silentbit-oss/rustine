@@ -1,0 +1,7 @@
+#include <assert.h>
+#include <example2.c>
+#include <indicators.h>
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>

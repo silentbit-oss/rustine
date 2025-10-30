@@ -1,0 +1,1 @@
+warning: use Option::map_or_else instead of an if let/else

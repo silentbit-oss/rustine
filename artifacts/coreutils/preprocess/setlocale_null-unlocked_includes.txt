@@ -1,0 +1,10 @@
+#include <arg-nonnull.h>
+#include <assert.h>
+#include <config.h>
+#include <errno.h>
+#include <locale.h>
+#include <setlocale_null-unlocked.c>
+#include <setlocale_null.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <string.h>

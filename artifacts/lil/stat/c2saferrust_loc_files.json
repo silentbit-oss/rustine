@@ -1,0 +1,94 @@
+{
+  "Rust": {
+    "blanks": 139,
+    "children": {},
+    "code": 5029,
+    "comments": 32,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/lil/others/c2saferrust/c2rust-lib.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 17,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/lil/others/c2saferrust/build.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/lil/others/c2saferrust/main.rs",
+        "stats": {
+          "blanks": 52,
+          "blobs": {},
+          "code": 308,
+          "comments": 26
+        }
+      },
+      {
+        "name": "artifacts/lil/others/c2saferrust/lil.rs",
+        "stats": {
+          "blanks": 75,
+          "blobs": {},
+          "code": 4698,
+          "comments": 2
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 139,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/lil/others/c2saferrust/c2rust-lib.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 17,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/lil/others/c2saferrust/build.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/lil/others/c2saferrust/main.rs",
+          "stats": {
+            "blanks": 52,
+            "blobs": {},
+            "code": 308,
+            "comments": 26
+          }
+        },
+        {
+          "name": "artifacts/lil/others/c2saferrust/lil.rs",
+          "stats": {
+            "blanks": 75,
+            "blobs": {},
+            "code": 4698,
+            "comments": 2
+          }
+        }
+      ]
+    },
+    "code": 5029,
+    "comments": 32,
+    "inaccurate": false,
+    "reports": []
+  }
+}

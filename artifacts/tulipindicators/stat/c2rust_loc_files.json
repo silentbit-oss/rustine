@@ -1,0 +1,2128 @@
+{
+  "Rust": {
+    "blanks": 3,
+    "children": {},
+    "code": 47845,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 129,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/utils/buffer.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 32,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/tan.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/wma.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 75,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/vosc.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 89,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/torad.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/msw.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 121,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/todeg.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/atr.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 309,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/wilders.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 72,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/sinh.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/fosc.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 87,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/marketfi.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 58,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/adx.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 127,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/dema.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 74,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/avgprice.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 32,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/linreg.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 82,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/fuzzer.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 855,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/roc.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 60,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/kvo.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 107,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/sample.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 624,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/rsi.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 104,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/dm.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 126,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/emv.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 64,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/pvi.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 66,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/kama.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 105,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/div.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 26,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/stoch.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 198,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/ema.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 66,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/cvi.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 98,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/qstick.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 75,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/decay.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 37,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/sin.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/bbands.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 130,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/vhf.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 130,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/lag.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 59,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/cos.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/stochrsi.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 181,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/log10.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/typprice.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 31,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/max.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 123,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/atan.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/linregintercept.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 82,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/rocr.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 59,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/mul.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 26,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/bop.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 36,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/volatility.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 84,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/dpo.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 73,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/mom.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 59,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/stderr.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 88,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/tema.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 82,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/willr.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 117,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/hma.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 133,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/wad.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 78,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/ad.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 34,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/mass.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 104,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/tr.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 47,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/floor.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/min.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 140,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/adxr.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 157,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/crossany.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 34,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/aroon.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 131,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/exp.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/mfi.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 153,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/sum.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 71,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/stddev.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 87,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/abs.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/crossover.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 31,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/edecay.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 37,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/tsf.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 82,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/ao.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 85,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/linregslope.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 80,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/natr.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 106,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/obv.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 39,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/di.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 159,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/acos.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/nvi.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 66,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/sqrt.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/add.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 26,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/medprice.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 29,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/apo.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 77,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/ultosc.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 162,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/tanh.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/cci.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 103,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/round.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/zlema.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 70,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/trunc.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/fisher.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 151,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/ln.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 26,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/vwma.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 78,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/var.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 78,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/md.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 76,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/ppo.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 77,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/cosh.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/psar.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 133,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/adosc.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 92,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/trima.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 123,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/macd.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 139,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/dx.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 114,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/vidya.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 136,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/example1.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 106,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/wcprice.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 31,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/sma.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 177,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/ceil.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/aroonosc.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 110,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/sub.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 26,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/trix.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 100,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/cmo.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 125,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators/asin.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 28,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/example2.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 126,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/benchmark.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1947,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/smoke.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1655,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/cli.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 376,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/candles.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 3936,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/indicators.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 9585,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/tulipindicators/others/c2rust/src/tiamalgamation.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 20205,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 129,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/utils/buffer.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 32,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/tan.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/wma.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 75,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/vosc.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 89,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/torad.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/msw.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 121,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/todeg.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/atr.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 309,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/wilders.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 72,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/sinh.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/fosc.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 87,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/marketfi.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 58,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/adx.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 127,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/dema.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 74,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/avgprice.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 32,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/linreg.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 82,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/fuzzer.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 855,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/roc.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 60,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/kvo.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 107,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/sample.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 624,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/rsi.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 104,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/dm.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 126,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/emv.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 64,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/pvi.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 66,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/kama.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 105,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/div.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 26,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/stoch.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 198,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/ema.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 66,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/cvi.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 98,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/qstick.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 75,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/decay.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 37,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/sin.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/bbands.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 130,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/vhf.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 130,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/lag.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 59,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/cos.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/stochrsi.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 181,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/log10.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/typprice.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 31,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/max.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 123,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/atan.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/linregintercept.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 82,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/rocr.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 59,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/mul.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 26,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/bop.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 36,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/volatility.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 84,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/dpo.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 73,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/mom.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 59,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/stderr.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 88,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/tema.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 82,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/willr.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 117,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/hma.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 133,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/wad.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 78,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/ad.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 34,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/mass.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 104,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/tr.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 47,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/floor.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/min.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 140,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/adxr.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 157,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/crossany.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 34,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/aroon.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 131,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/exp.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/mfi.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 153,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/sum.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 71,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/stddev.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 87,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/abs.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/crossover.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 31,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/edecay.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 37,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/tsf.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 82,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/ao.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 85,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/linregslope.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 80,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/natr.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 106,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/obv.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 39,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/di.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 159,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/acos.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/nvi.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 66,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/sqrt.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/add.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 26,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/medprice.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 29,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/apo.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 77,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/ultosc.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 162,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/tanh.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/cci.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 103,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/round.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/zlema.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 70,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/trunc.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/fisher.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 151,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/ln.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 26,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/vwma.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 78,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/var.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 78,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/md.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 76,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/ppo.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 77,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/cosh.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/psar.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 133,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/adosc.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 92,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/trima.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 123,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/macd.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 139,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/dx.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 114,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/vidya.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 136,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/example1.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 106,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/wcprice.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 31,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/sma.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 177,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/ceil.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/aroonosc.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 110,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/sub.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 26,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/trix.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 100,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/cmo.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 125,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators/asin.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 28,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/example2.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 126,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/benchmark.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1947,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/smoke.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1655,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/cli.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 376,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/candles.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 3936,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/indicators.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 9585,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/tulipindicators/others/c2rust/src/tiamalgamation.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 20205,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 47845,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

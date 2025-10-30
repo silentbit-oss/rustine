@@ -1,0 +1,4124 @@
+#include <bitstring.h>
+#include <compat.h>
+#include <errno.h>
+#include <event.h>
+#include <imsg.h>
+#include <inttypes.h>
+#include <ioctl.h>
+#include <limits.h>
+#include <queue.h>
+#include <stdarg.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <termios.h>
+#include <time.h>
+#include <tmux.h>
+#include <tree.h>
+#include <types.h>
+#include <uio.h>
+#include <unistd.h>
+#include <variadic.h>
+#include <vis.h>
+#include <wchar.h>
+#include <xmalloc.h>
+
+void err(int, const char *, ...);
+void errx(int, const char *, ...);
+void warn(const char *, ...);
+void warnx(const char *, ...);
+typedef unsigned char bitstr_t;
+char *vis(char *, int, int, int);
+int strvis(char *, const char *, int);
+int stravis(char **, const char *, int);
+int strnvis(char *, const char *, size_t, int);
+int strvisx(char *, const char *, size_t, int);
+int strunvis(char *, const char *);
+int unvis(char *, char, int *, int);
+ssize_t strnunvis(char *, const char *, size_t);
+struct ibuf
+{
+  struct 
+  {
+    struct ibuf *tqe_next;
+    struct ibuf **tqe_prev;
+  } entry;
+  u_char *buf;
+  size_t size;
+  size_t max;
+  size_t wpos;
+  size_t rpos;
+  int fd;
+};
+struct msgbuf
+{
+  struct 
+  {
+    struct ibuf *tqh_first;
+    struct ibuf **tqh_last;
+  } bufs;
+  uint32_t queued;
+  int fd;
+};
+struct ibuf_read
+{
+  u_char buf[65535];
+  u_char *rptr;
+  size_t wpos;
+};
+struct imsg_fd
+{
+  struct 
+  {
+    struct imsg_fd *tqe_next;
+    struct imsg_fd **tqe_prev;
+  } entry;
+  int fd;
+};
+struct imsgbuf
+{
+  struct 
+  {
+    struct imsg_fd *tqh_first;
+    struct imsg_fd **tqh_last;
+  } fds;
+  struct ibuf_read r;
+  struct msgbuf w;
+  int fd;
+  pid_t pid;
+};
+struct imsg_hdr
+{
+  uint32_t type;
+  uint16_t len;
+  uint16_t flags;
+  uint32_t peerid;
+  uint32_t pid;
+};
+struct imsg
+{
+  struct imsg_hdr hdr;
+  int fd;
+  void *data;
+};
+struct ibuf *ibuf_open(size_t);
+struct ibuf *ibuf_dynamic(size_t, size_t);
+int ibuf_add(struct ibuf *, const void *, size_t);
+void *ibuf_reserve(struct ibuf *, size_t);
+void *ibuf_seek(struct ibuf *, size_t, size_t);
+size_t ibuf_size(struct ibuf *);
+size_t ibuf_left(struct ibuf *);
+void ibuf_close(struct msgbuf *, struct ibuf *);
+int ibuf_write(struct msgbuf *);
+void ibuf_free(struct ibuf *);
+void msgbuf_init(struct msgbuf *);
+void msgbuf_clear(struct msgbuf *);
+int msgbuf_write(struct msgbuf *);
+void msgbuf_drain(struct msgbuf *, size_t);
+void imsg_init(struct imsgbuf *, int);
+ssize_t imsg_read(struct imsgbuf *);
+ssize_t imsg_get(struct imsgbuf *, struct imsg *);
+int imsg_compose(struct imsgbuf *, uint32_t, uint32_t, pid_t, int, const void *, uint16_t);
+int imsg_composev(struct imsgbuf *, uint32_t, uint32_t, pid_t, int, const struct iovec *, int);
+struct ibuf *imsg_create(struct imsgbuf *, uint32_t, uint32_t, pid_t, uint16_t);
+int imsg_add(struct ibuf *, const void *, uint16_t);
+void imsg_close(struct imsgbuf *, struct ibuf *);
+void imsg_free(struct imsg *);
+int imsg_flush(struct imsgbuf *);
+void imsg_clear(struct imsgbuf *);
+void explicit_bzero(void *, size_t);
+int getdtablecount(void);
+void closefrom(int);
+char *strcasestr(const char *, const char *);
+char *strsep(char **, const char *);
+long long strtonum(const char *, long long, long long, const char **);
+size_t strlcpy(char *, const char *, size_t);
+size_t strlcat(char *, const char *, size_t);
+size_t strnlen(const char *, size_t);
+char *strndup(const char *, size_t);
+void *memmem(const void *, size_t, const void *, size_t);
+int daemon(int, int);
+const char *getprogname(void);
+void setproctitle(const char *, ...);
+int b64_ntop(const char *, size_t, char *, size_t);
+int b64_pton(const char *, u_char *, size_t);
+int getptmfd(void);
+pid_t fdforkpty(int, int *, char *, struct termios *, struct winsize *);
+pid_t forkpty(int *, char *, struct termios *, struct winsize *);
+int asprintf(char **, const char *, ...);
+int vasprintf(char **, const char *, va_list);
+char *fgetln(FILE *, size_t *);
+char *fparseln(FILE *, size_t *, size_t *, const char *, int);
+int setenv(const char *, const char *, int);
+int unsetenv(const char *);
+void cfmakeraw(struct termios *);
+void freezero(void *, size_t);
+void *reallocarray(void *, size_t, size_t);
+void *recallocarray(void *, size_t, size_t, size_t);
+extern int BSDopterr;
+extern int BSDoptind;
+extern int BSDoptopt;
+extern int BSDoptreset;
+extern char *BSDoptarg;
+int BSDgetopt(int, char * const *, const char *);
+void *xmalloc(size_t);
+void *xcalloc(size_t, size_t);
+void *xrealloc(void *, size_t);
+void *xreallocarray(void *, size_t, size_t);
+char *xstrdup(const char *);
+char *xstrndup(const char *, size_t);
+int xasprintf(char **, const char *, ...);
+int xvasprintf(char **, const char *, va_list);
+int xsnprintf(char *, size_t, const char *, ...);
+int xvsnprintf(char *, size_t, const char *, va_list);
+extern char **environ;
+struct args;
+struct client;
+struct cmd_find_state;
+struct cmdq_item;
+struct cmdq_list;
+struct environ;
+struct format_job_tree;
+struct input_ctx;
+struct mode_tree_data;
+struct mouse_event;
+struct options;
+struct options_entry;
+struct session;
+struct tmuxpeer;
+struct tmuxproc;
+typedef unsigned long long key_code;
+enum 
+{
+  KEYC_FOCUS_IN = 0x000010000000ULL,
+  KEYC_FOCUS_OUT,
+  KEYC_PASTE_START,
+  KEYC_PASTE_END,
+  KEYC_MOUSE,
+  KEYC_DRAGGING,
+  KEYC_MOUSEMOVE_PANE,
+  KEYC_MOUSEMOVE_STATUS,
+  KEYC_MOUSEMOVE_BORDER,
+  KEYC_MOUSEDOWN1_PANE,
+  KEYC_MOUSEDOWN1_STATUS,
+  KEYC_MOUSEDOWN1_BORDER,
+  KEYC_MOUSEDOWN2_PANE,
+  KEYC_MOUSEDOWN2_STATUS,
+  KEYC_MOUSEDOWN2_BORDER,
+  KEYC_MOUSEDOWN3_PANE,
+  KEYC_MOUSEDOWN3_STATUS,
+  KEYC_MOUSEDOWN3_BORDER,
+  KEYC_MOUSEUP1_PANE,
+  KEYC_MOUSEUP1_STATUS,
+  KEYC_MOUSEUP1_BORDER,
+  KEYC_MOUSEUP2_PANE,
+  KEYC_MOUSEUP2_STATUS,
+  KEYC_MOUSEUP2_BORDER,
+  KEYC_MOUSEUP3_PANE,
+  KEYC_MOUSEUP3_STATUS,
+  KEYC_MOUSEUP3_BORDER,
+  KEYC_MOUSEDRAG1_PANE,
+  KEYC_MOUSEDRAG1_STATUS,
+  KEYC_MOUSEDRAG1_BORDER,
+  KEYC_MOUSEDRAG2_PANE,
+  KEYC_MOUSEDRAG2_STATUS,
+  KEYC_MOUSEDRAG2_BORDER,
+  KEYC_MOUSEDRAG3_PANE,
+  KEYC_MOUSEDRAG3_STATUS,
+  KEYC_MOUSEDRAG3_BORDER,
+  KEYC_MOUSEDRAGEND1_PANE,
+  KEYC_MOUSEDRAGEND1_STATUS,
+  KEYC_MOUSEDRAGEND1_BORDER,
+  KEYC_MOUSEDRAGEND2_PANE,
+  KEYC_MOUSEDRAGEND2_STATUS,
+  KEYC_MOUSEDRAGEND2_BORDER,
+  KEYC_MOUSEDRAGEND3_PANE,
+  KEYC_MOUSEDRAGEND3_STATUS,
+  KEYC_MOUSEDRAGEND3_BORDER,
+  KEYC_WHEELUP_PANE,
+  KEYC_WHEELUP_STATUS,
+  KEYC_WHEELUP_BORDER,
+  KEYC_WHEELDOWN_PANE,
+  KEYC_WHEELDOWN_STATUS,
+  KEYC_WHEELDOWN_BORDER,
+  KEYC_DOUBLECLICK1_PANE,
+  KEYC_DOUBLECLICK1_STATUS,
+  KEYC_DOUBLECLICK1_BORDER,
+  KEYC_DOUBLECLICK2_PANE,
+  KEYC_DOUBLECLICK2_STATUS,
+  KEYC_DOUBLECLICK2_BORDER,
+  KEYC_DOUBLECLICK3_PANE,
+  KEYC_DOUBLECLICK3_STATUS,
+  KEYC_DOUBLECLICK3_BORDER,
+  KEYC_TRIPLECLICK1_PANE,
+  KEYC_TRIPLECLICK1_STATUS,
+  KEYC_TRIPLECLICK1_BORDER,
+  KEYC_TRIPLECLICK2_PANE,
+  KEYC_TRIPLECLICK2_STATUS,
+  KEYC_TRIPLECLICK2_BORDER,
+  KEYC_TRIPLECLICK3_PANE,
+  KEYC_TRIPLECLICK3_STATUS,
+  KEYC_TRIPLECLICK3_BORDER,
+  KEYC_BSPACE,
+  KEYC_F1,
+  KEYC_F2,
+  KEYC_F3,
+  KEYC_F4,
+  KEYC_F5,
+  KEYC_F6,
+  KEYC_F7,
+  KEYC_F8,
+  KEYC_F9,
+  KEYC_F10,
+  KEYC_F11,
+  KEYC_F12,
+  KEYC_IC,
+  KEYC_DC,
+  KEYC_HOME,
+  KEYC_END,
+  KEYC_NPAGE,
+  KEYC_PPAGE,
+  KEYC_BTAB,
+  KEYC_UP,
+  KEYC_DOWN,
+  KEYC_LEFT,
+  KEYC_RIGHT,
+  KEYC_KP_SLASH,
+  KEYC_KP_STAR,
+  KEYC_KP_MINUS,
+  KEYC_KP_SEVEN,
+  KEYC_KP_EIGHT,
+  KEYC_KP_NINE,
+  KEYC_KP_PLUS,
+  KEYC_KP_FOUR,
+  KEYC_KP_FIVE,
+  KEYC_KP_SIX,
+  KEYC_KP_ONE,
+  KEYC_KP_TWO,
+  KEYC_KP_THREE,
+  KEYC_KP_ENTER,
+  KEYC_KP_ZERO,
+  KEYC_KP_PERIOD
+};
+enum tty_code_code
+{
+  TTYC_AX = 0,
+  TTYC_ACSC,
+  TTYC_BCE,
+  TTYC_BEL,
+  TTYC_BLINK,
+  TTYC_BOLD,
+  TTYC_CIVIS,
+  TTYC_CLEAR,
+  TTYC_CNORM,
+  TTYC_COLORS,
+  TTYC_CR,
+  TTYC_CS,
+  TTYC_CSR,
+  TTYC_CUB,
+  TTYC_CUB1,
+  TTYC_CUD,
+  TTYC_CUD1,
+  TTYC_CUF,
+  TTYC_CUF1,
+  TTYC_CUP,
+  TTYC_CUU,
+  TTYC_CUU1,
+  TTYC_CVVIS,
+  TTYC_DCH,
+  TTYC_DCH1,
+  TTYC_DIM,
+  TTYC_DL,
+  TTYC_DL1,
+  TTYC_E3,
+  TTYC_ECH,
+  TTYC_ED,
+  TTYC_EL,
+  TTYC_EL1,
+  TTYC_ENACS,
+  TTYC_FSL,
+  TTYC_HOME,
+  TTYC_HPA,
+  TTYC_ICH,
+  TTYC_ICH1,
+  TTYC_IL,
+  TTYC_IL1,
+  TTYC_INDN,
+  TTYC_INVIS,
+  TTYC_KCBT,
+  TTYC_KCUB1,
+  TTYC_KCUD1,
+  TTYC_KCUF1,
+  TTYC_KCUU1,
+  TTYC_KDC2,
+  TTYC_KDC3,
+  TTYC_KDC4,
+  TTYC_KDC5,
+  TTYC_KDC6,
+  TTYC_KDC7,
+  TTYC_KDCH1,
+  TTYC_KDN2,
+  TTYC_KDN3,
+  TTYC_KDN4,
+  TTYC_KDN5,
+  TTYC_KDN6,
+  TTYC_KDN7,
+  TTYC_KEND,
+  TTYC_KEND2,
+  TTYC_KEND3,
+  TTYC_KEND4,
+  TTYC_KEND5,
+  TTYC_KEND6,
+  TTYC_KEND7,
+  TTYC_KF1,
+  TTYC_KF10,
+  TTYC_KF11,
+  TTYC_KF12,
+  TTYC_KF13,
+  TTYC_KF14,
+  TTYC_KF15,
+  TTYC_KF16,
+  TTYC_KF17,
+  TTYC_KF18,
+  TTYC_KF19,
+  TTYC_KF2,
+  TTYC_KF20,
+  TTYC_KF21,
+  TTYC_KF22,
+  TTYC_KF23,
+  TTYC_KF24,
+  TTYC_KF25,
+  TTYC_KF26,
+  TTYC_KF27,
+  TTYC_KF28,
+  TTYC_KF29,
+  TTYC_KF3,
+  TTYC_KF30,
+  TTYC_KF31,
+  TTYC_KF32,
+  TTYC_KF33,
+  TTYC_KF34,
+  TTYC_KF35,
+  TTYC_KF36,
+  TTYC_KF37,
+  TTYC_KF38,
+  TTYC_KF39,
+  TTYC_KF4,
+  TTYC_KF40,
+  TTYC_KF41,
+  TTYC_KF42,
+  TTYC_KF43,
+  TTYC_KF44,
+  TTYC_KF45,
+  TTYC_KF46,
+  TTYC_KF47,
+  TTYC_KF48,
+  TTYC_KF49,
+  TTYC_KF5,
+  TTYC_KF50,
+  TTYC_KF51,
+  TTYC_KF52,
+  TTYC_KF53,
+  TTYC_KF54,
+  TTYC_KF55,
+  TTYC_KF56,
+  TTYC_KF57,
+  TTYC_KF58,
+  TTYC_KF59,
+  TTYC_KF6,
+  TTYC_KF60,
+  TTYC_KF61,
+  TTYC_KF62,
+  TTYC_KF63,
+  TTYC_KF7,
+  TTYC_KF8,
+  TTYC_KF9,
+  TTYC_KHOM2,
+  TTYC_KHOM3,
+  TTYC_KHOM4,
+  TTYC_KHOM5,
+  TTYC_KHOM6,
+  TTYC_KHOM7,
+  TTYC_KHOME,
+  TTYC_KIC2,
+  TTYC_KIC3,
+  TTYC_KIC4,
+  TTYC_KIC5,
+  TTYC_KIC6,
+  TTYC_KIC7,
+  TTYC_KICH1,
+  TTYC_KIND,
+  TTYC_KLFT2,
+  TTYC_KLFT3,
+  TTYC_KLFT4,
+  TTYC_KLFT5,
+  TTYC_KLFT6,
+  TTYC_KLFT7,
+  TTYC_KMOUS,
+  TTYC_KNP,
+  TTYC_KNXT2,
+  TTYC_KNXT3,
+  TTYC_KNXT4,
+  TTYC_KNXT5,
+  TTYC_KNXT6,
+  TTYC_KNXT7,
+  TTYC_KPP,
+  TTYC_KPRV2,
+  TTYC_KPRV3,
+  TTYC_KPRV4,
+  TTYC_KPRV5,
+  TTYC_KPRV6,
+  TTYC_KPRV7,
+  TTYC_KRI,
+  TTYC_KRIT2,
+  TTYC_KRIT3,
+  TTYC_KRIT4,
+  TTYC_KRIT5,
+  TTYC_KRIT6,
+  TTYC_KRIT7,
+  TTYC_KUP2,
+  TTYC_KUP3,
+  TTYC_KUP4,
+  TTYC_KUP5,
+  TTYC_KUP6,
+  TTYC_KUP7,
+  TTYC_MS,
+  TTYC_OP,
+  TTYC_REV,
+  TTYC_RGB,
+  TTYC_RI,
+  TTYC_RMACS,
+  TTYC_RMCUP,
+  TTYC_RMKX,
+  TTYC_SE,
+  TTYC_SETAB,
+  TTYC_SETAF,
+  TTYC_SETRGBB,
+  TTYC_SETRGBF,
+  TTYC_SGR0,
+  TTYC_SITM,
+  TTYC_SMACS,
+  TTYC_SMCUP,
+  TTYC_SMKX,
+  TTYC_SMSO,
+  TTYC_SMUL,
+  TTYC_SMXX,
+  TTYC_SS,
+  TTYC_TC,
+  TTYC_TSL,
+  TTYC_U8,
+  TTYC_VPA,
+  TTYC_XENL,
+  TTYC_XT
+};
+enum msgtype
+{
+  MSG_VERSION = 12,
+  MSG_IDENTIFY_FLAGS = 100,
+  MSG_IDENTIFY_TERM,
+  MSG_IDENTIFY_TTYNAME,
+  MSG_IDENTIFY_OLDCWD,
+  MSG_IDENTIFY_STDIN,
+  MSG_IDENTIFY_ENVIRON,
+  MSG_IDENTIFY_DONE,
+  MSG_IDENTIFY_CLIENTPID,
+  MSG_IDENTIFY_CWD,
+  MSG_COMMAND = 200,
+  MSG_DETACH,
+  MSG_DETACHKILL,
+  MSG_EXIT,
+  MSG_EXITED,
+  MSG_EXITING,
+  MSG_LOCK,
+  MSG_READY,
+  MSG_RESIZE,
+  MSG_SHELL,
+  MSG_SHUTDOWN,
+  MSG_STDERR,
+  MSG_STDIN,
+  MSG_STDOUT,
+  MSG_SUSPEND,
+  MSG_UNLOCK,
+  MSG_WAKEUP,
+  MSG_EXEC
+};
+struct msg_command_data
+{
+  int argc;
+};
+struct msg_stdin_data
+{
+  ssize_t size;
+  char data[1024];
+};
+struct msg_stdout_data
+{
+  ssize_t size;
+  char data[1024];
+};
+struct msg_stderr_data
+{
+  ssize_t size;
+  char data[1024];
+};
+struct utf8_data
+{
+  u_char data[9];
+  u_char have;
+  u_char size;
+  u_char width;
+};
+enum utf8_state
+{
+  UTF8_MORE,
+  UTF8_DONE,
+  UTF8_ERROR
+};
+struct grid_cell
+{
+  u_char flags;
+  u_short attr;
+  int fg;
+  int bg;
+  struct utf8_data data;
+};
+struct grid_cell_entry
+{
+  u_char flags;
+  union 
+  {
+    u_int offset;
+    struct 
+    {
+      u_char attr;
+      u_char fg;
+      u_char bg;
+      u_char data;
+    } data;
+  };
+};
+struct grid_line
+{
+  u_int cellused;
+  u_int cellsize;
+  struct grid_cell_entry *celldata;
+  u_int extdsize;
+  struct grid_cell *extddata;
+  int flags;
+};
+struct grid
+{
+  int flags;
+  u_int sx;
+  u_int sy;
+  u_int hscrolled;
+  u_int hsize;
+  u_int hlimit;
+  struct grid_line *linedata;
+};
+struct hook
+{
+  const char *name;
+  struct cmd_list *cmdlist;
+  struct 
+  {
+    struct hook *rbe_left;
+    struct hook *rbe_right;
+    struct hook *rbe_parent;
+    int rbe_color;
+  } entry;
+};
+struct job;
+typedef void (*job_update_cb)(struct job *);
+typedef void (*job_complete_cb)(struct job *);
+typedef void (*job_free_cb)(void *);
+struct job
+{
+  enum 
+  {
+    JOB_RUNNING,
+    JOB_DEAD,
+    JOB_CLOSED
+  } state;
+  int flags;
+  char *cmd;
+  pid_t pid;
+  int status;
+  int fd;
+  struct bufferevent *event;
+  job_update_cb updatecb;
+  job_complete_cb completecb;
+  job_free_cb freecb;
+  void *data;
+  struct 
+  {
+    struct job *le_next;
+    struct job **le_prev;
+  } entry;
+};
+struct joblist
+{
+  struct job *lh_first;
+};
+struct screen_sel
+{
+  int flag;
+  int hidden;
+  int rectflag;
+  enum 
+  {
+    LINE_SEL_NONE,
+    LINE_SEL_LEFT_RIGHT,
+    LINE_SEL_RIGHT_LEFT
+  } lineflag;
+  int modekeys;
+  u_int sx;
+  u_int sy;
+  u_int ex;
+  u_int ey;
+  struct grid_cell cell;
+};
+struct screen_titles;
+struct screen
+{
+  char *title;
+  struct screen_titles *titles;
+  struct grid *grid;
+  u_int cx;
+  u_int cy;
+  u_int cstyle;
+  char *ccolour;
+  u_int rupper;
+  u_int rlower;
+  int mode;
+  bitstr_t *tabs;
+  struct screen_sel sel;
+};
+struct screen_write_collect_item;
+struct screen_write_collect_line;
+struct screen_write_ctx
+{
+  struct window_pane *wp;
+  struct screen *s;
+  struct screen_write_collect_item *item;
+  struct screen_write_collect_line *list;
+  u_int scrolled;
+  u_int bg;
+  u_int cells;
+  u_int written;
+  u_int skipped;
+};
+struct window_mode
+{
+  const char *name;
+  struct screen *(*init)(struct window_pane *, struct cmd_find_state *, struct args *);
+  void (*free)(struct window_pane *);
+  void (*resize)(struct window_pane *, u_int, u_int);
+  void (*key)(struct window_pane *, struct client *, struct session *, key_code, struct mouse_event *);
+  const char *(*key_table)(struct window_pane *);
+  void (*command)(struct window_pane *, struct client *, struct session *, struct args *, struct mouse_event *);
+};
+struct window_choose_data
+{
+  struct client *start_client;
+  struct session *start_session;
+  u_int idx;
+  int type;
+  struct session *tree_session;
+  struct winlink *wl;
+  int pane_id;
+  char *ft_template;
+  struct format_tree *ft;
+  char *command;
+};
+struct window_pane
+{
+  u_int id;
+  u_int active_point;
+  struct window *window;
+  struct layout_cell *layout_cell;
+  struct layout_cell *saved_layout_cell;
+  u_int sx;
+  u_int sy;
+  u_int osx;
+  u_int osy;
+  u_int xoff;
+  u_int yoff;
+  int flags;
+  int argc;
+  char **argv;
+  char *shell;
+  const char *cwd;
+  pid_t pid;
+  char tty[32];
+  int status;
+  int fd;
+  struct bufferevent *event;
+  struct event resize_timer;
+  struct input_ctx *ictx;
+  struct grid_cell colgc;
+  int *palette;
+  int pipe_fd;
+  struct bufferevent *pipe_event;
+  size_t pipe_off;
+  struct screen *screen;
+  struct screen base;
+  struct screen status_screen;
+  size_t status_size;
+  u_int saved_cx;
+  u_int saved_cy;
+  struct grid *saved_grid;
+  struct grid_cell saved_cell;
+  const struct window_mode *mode;
+  void *modedata;
+  struct event modetimer;
+  time_t modelast;
+  u_int modeprefix;
+  char *searchstr;
+  struct 
+  {
+    struct window_pane *tqe_next;
+    struct window_pane **tqe_prev;
+  } entry;
+  struct 
+  {
+    struct window_pane *rbe_left;
+    struct window_pane *rbe_right;
+    struct window_pane *rbe_parent;
+    int rbe_color;
+  } tree_entry;
+};
+struct window_panes
+{
+  struct window_pane *tqh_first;
+  struct window_pane **tqh_last;
+};
+struct window_pane_tree
+{
+  struct window_pane *rbh_root;
+};
+struct window
+{
+  u_int id;
+  char *name;
+  struct event name_event;
+  struct timeval name_time;
+  struct event alerts_timer;
+  struct timeval activity_time;
+  struct window_pane *active;
+  struct window_pane *last;
+  struct window_panes panes;
+  int lastlayout;
+  struct layout_cell *layout_root;
+  struct layout_cell *saved_layout_root;
+  char *old_layout;
+  u_int sx;
+  u_int sy;
+  int flags;
+  int alerts_queued;
+  struct 
+  {
+    struct window *tqe_next;
+    struct window **tqe_prev;
+  } alerts_entry;
+  struct options *options;
+  struct grid_cell style;
+  struct grid_cell active_style;
+  u_int references;
+  struct 
+  {
+    struct winlink *tqh_first;
+    struct winlink **tqh_last;
+  } winlinks;
+  struct 
+  {
+    struct window *rbe_left;
+    struct window *rbe_right;
+    struct window *rbe_parent;
+    int rbe_color;
+  } entry;
+};
+struct windows
+{
+  struct window *rbh_root;
+};
+struct winlink
+{
+  int idx;
+  struct session *session;
+  struct window *window;
+  size_t status_width;
+  struct grid_cell status_cell;
+  char *status_text;
+  int flags;
+  struct 
+  {
+    struct winlink *rbe_left;
+    struct winlink *rbe_right;
+    struct winlink *rbe_parent;
+    int rbe_color;
+  } entry;
+  struct 
+  {
+    struct winlink *tqe_next;
+    struct winlink **tqe_prev;
+  } wentry;
+  struct 
+  {
+    struct winlink *tqe_next;
+    struct winlink **tqe_prev;
+  } sentry;
+};
+struct winlinks
+{
+  struct winlink *rbh_root;
+};
+struct winlink_stack
+{
+  struct winlink *tqh_first;
+  struct winlink **tqh_last;
+};
+enum layout_type
+{
+  LAYOUT_LEFTRIGHT,
+  LAYOUT_TOPBOTTOM,
+  LAYOUT_WINDOWPANE
+};
+struct layout_cells
+{
+  struct layout_cell *tqh_first;
+  struct layout_cell **tqh_last;
+};
+struct layout_cell
+{
+  enum layout_type type;
+  struct layout_cell *parent;
+  u_int sx;
+  u_int sy;
+  u_int xoff;
+  u_int yoff;
+  struct window_pane *wp;
+  struct layout_cells cells;
+  struct 
+  {
+    struct layout_cell *tqe_next;
+    struct layout_cell **tqe_prev;
+  } entry;
+};
+struct environ_entry
+{
+  char *name;
+  char *value;
+  struct 
+  {
+    struct environ_entry *rbe_left;
+    struct environ_entry *rbe_right;
+    struct environ_entry *rbe_parent;
+    int rbe_color;
+  } entry;
+};
+struct session_group
+{
+  const char *name;
+  struct 
+  {
+    struct session *tqh_first;
+    struct session **tqh_last;
+  } sessions;
+  struct 
+  {
+    struct session_group *rbe_left;
+    struct session_group *rbe_right;
+    struct session_group *rbe_parent;
+    int rbe_color;
+  } entry;
+};
+struct session_groups
+{
+  struct session_group *rbh_root;
+};
+struct session
+{
+  u_int id;
+  char *name;
+  const char *cwd;
+  struct timeval creation_time;
+  struct timeval last_attached_time;
+  struct timeval activity_time;
+  struct timeval last_activity_time;
+  struct event lock_timer;
+  u_int sx;
+  u_int sy;
+  struct winlink *curw;
+  struct winlink_stack lastw;
+  struct winlinks windows;
+  int statusat;
+  struct hooks *hooks;
+  struct options *options;
+  int flags;
+  u_int attached;
+  struct termios *tio;
+  struct environ *environ;
+  int references;
+  struct 
+  {
+    struct session *tqe_next;
+    struct session **tqe_prev;
+  } gentry;
+  struct 
+  {
+    struct session *rbe_left;
+    struct session *rbe_right;
+    struct session *rbe_parent;
+    int rbe_color;
+  } entry;
+};
+struct sessions
+{
+  struct session *rbh_root;
+};
+struct mouse_event
+{
+  int valid;
+  key_code key;
+  int statusat;
+  u_int x;
+  u_int y;
+  u_int b;
+  u_int lx;
+  u_int ly;
+  u_int lb;
+  int s;
+  int w;
+  int wp;
+  u_int sgr_type;
+  u_int sgr_b;
+};
+struct tty_key
+{
+  char ch;
+  key_code key;
+  struct tty_key *left;
+  struct tty_key *right;
+  struct tty_key *next;
+};
+struct tty_code;
+struct tty_term
+{
+  char *name;
+  u_int references;
+  char acs[255 + 1][2];
+  struct tty_code *codes;
+  int flags;
+  struct 
+  {
+    struct tty_term *le_next;
+    struct tty_term **le_prev;
+  } entry;
+};
+struct tty_terms
+{
+  struct tty_term *lh_first;
+};
+struct tty
+{
+  struct client *client;
+  u_int sx;
+  u_int sy;
+  u_int cx;
+  u_int cy;
+  u_int cstyle;
+  char *ccolour;
+  int mode;
+  u_int rlower;
+  u_int rupper;
+  u_int rleft;
+  u_int rright;
+  int fd;
+  struct event event_in;
+  struct evbuffer *in;
+  struct event event_out;
+  struct evbuffer *out;
+  struct event timer;
+  size_t discarded;
+  struct termios tio;
+  struct grid_cell cell;
+  int last_wp;
+  struct grid_cell last_cell;
+  int flags;
+  struct tty_term *term;
+  char *term_name;
+  int term_flags;
+  enum 
+  {
+    TTY_VT100,
+    TTY_VT101,
+    TTY_VT102,
+    TTY_VT220,
+    TTY_VT320,
+    TTY_VT420,
+    TTY_UNKNOWN
+  } term_type;
+  struct mouse_event mouse;
+  int mouse_drag_flag;
+  void (*mouse_drag_update)(struct client *, struct mouse_event *);
+  void (*mouse_drag_release)(struct client *, struct mouse_event *);
+  struct event key_timer;
+  struct tty_key *key_tree;
+};
+struct tty_ctx
+{
+  struct window_pane *wp;
+  const struct grid_cell *cell;
+  int wrapped;
+  u_int num;
+  void *ptr;
+  u_int ocx;
+  u_int ocy;
+  u_int orupper;
+  u_int orlower;
+  u_int xoff;
+  u_int yoff;
+  u_int bg;
+};
+struct message_entry
+{
+  char *msg;
+  u_int msg_num;
+  time_t msg_time;
+  struct 
+  {
+    struct message_entry *tqe_next;
+    struct message_entry **tqe_prev;
+  } entry;
+};
+struct args_entry;
+struct args_tree
+{
+  struct args_entry *rbh_root;
+};
+struct args
+{
+  struct args_tree tree;
+  int argc;
+  char **argv;
+};
+enum cmd_find_type
+{
+  CMD_FIND_PANE,
+  CMD_FIND_WINDOW,
+  CMD_FIND_SESSION
+};
+struct cmd_find_state
+{
+  int flags;
+  struct cmd_find_state *current;
+  struct session *s;
+  struct winlink *wl;
+  struct window *w;
+  struct window_pane *wp;
+  int idx;
+};
+struct cmd
+{
+  const struct cmd_entry *entry;
+  struct args *args;
+  char *file;
+  u_int line;
+  int flags;
+  struct 
+  {
+    struct cmd *tqe_next;
+    struct cmd **tqe_prev;
+  } qentry;
+};
+struct cmd_list
+{
+  int references;
+  struct 
+  {
+    struct cmd *tqh_first;
+    struct cmd **tqh_last;
+  } list;
+};
+enum cmd_retval
+{
+  CMD_RETURN_ERROR = -1,
+  CMD_RETURN_NORMAL = 0,
+  CMD_RETURN_WAIT,
+  CMD_RETURN_STOP
+};
+enum cmdq_type
+{
+  CMDQ_COMMAND,
+  CMDQ_CALLBACK
+};
+struct cmdq_shared
+{
+  int references;
+  int flags;
+  struct format_tree *formats;
+  struct mouse_event mouse;
+  struct cmd_find_state current;
+};
+typedef enum cmd_retval (*cmdq_cb)(struct cmdq_item *, void *);
+struct cmdq_item
+{
+  const char *name;
+  struct cmdq_list *queue;
+  struct cmdq_item *next;
+  struct client *client;
+  enum cmdq_type type;
+  u_int group;
+  u_int number;
+  time_t time;
+  int flags;
+  struct cmdq_shared *shared;
+  struct cmd_find_state source;
+  struct cmd_find_state target;
+  struct cmd_list *cmdlist;
+  struct cmd *cmd;
+  cmdq_cb cb;
+  void *data;
+  struct 
+  {
+    struct cmdq_item *tqe_next;
+    struct cmdq_item **tqe_prev;
+  } entry;
+};
+struct cmdq_list
+{
+  struct cmdq_item *tqh_first;
+  struct cmdq_item **tqh_last;
+};
+struct cmd_entry_flag
+{
+  char flag;
+  enum cmd_find_type type;
+  int flags;
+};
+struct cmd_entry
+{
+  const char *name;
+  const char *alias;
+  struct 
+  {
+    const char *template;
+    int lower;
+    int upper;
+  } args;
+  const char *usage;
+  struct cmd_entry_flag source;
+  struct cmd_entry_flag target;
+  int flags;
+  enum cmd_retval (*exec)(struct cmd *, struct cmdq_item *);
+};
+struct status_line
+{
+  struct event timer;
+  struct screen status;
+  struct screen *old_status;
+};
+typedef int (*prompt_input_cb)(struct client *, void *, const char *, int);
+typedef void (*prompt_free_cb)(void *);
+struct client
+{
+  const char *name;
+  struct tmuxpeer *peer;
+  struct cmdq_list queue;
+  pid_t pid;
+  int fd;
+  struct event event;
+  int retval;
+  struct timeval creation_time;
+  struct timeval activity_time;
+  struct environ *environ;
+  struct format_job_tree *jobs;
+  char *title;
+  const char *cwd;
+  char *term;
+  char *ttyname;
+  struct tty tty;
+  size_t written;
+  size_t discarded;
+  size_t redraw;
+  void (*stdin_callback)(struct client *, int, void *);
+  void *stdin_callback_data;
+  struct evbuffer *stdin_data;
+  int stdin_closed;
+  struct evbuffer *stdout_data;
+  struct evbuffer *stderr_data;
+  struct event repeat_timer;
+  struct event click_timer;
+  u_int click_button;
+  struct status_line status;
+  int flags;
+  struct key_table *keytable;
+  struct event identify_timer;
+  void (*identify_callback)(struct client *, struct window_pane *);
+  void *identify_callback_data;
+  char *message_string;
+  struct event message_timer;
+  u_int message_next;
+  struct 
+  {
+    struct message_entry *tqh_first;
+    struct message_entry **tqh_last;
+  } message_log;
+  char *prompt_string;
+  struct utf8_data *prompt_buffer;
+  size_t prompt_index;
+  prompt_input_cb prompt_inputcb;
+  prompt_free_cb prompt_freecb;
+  void *prompt_data;
+  u_int prompt_hindex;
+  enum 
+  {
+    PROMPT_ENTRY,
+    PROMPT_COMMAND
+  } prompt_mode;
+  int prompt_flags;
+  struct session *session;
+  struct session *last_session;
+  int wlmouse;
+  int references;
+  struct 
+  {
+    struct client *tqe_next;
+    struct client **tqe_prev;
+  } entry;
+};
+struct clients
+{
+  struct client *tqh_first;
+  struct client **tqh_last;
+};
+struct key_binding
+{
+  key_code key;
+  struct cmd_list *cmdlist;
+  int flags;
+  struct 
+  {
+    struct key_binding *rbe_left;
+    struct key_binding *rbe_right;
+    struct key_binding *rbe_parent;
+    int rbe_color;
+  } entry;
+};
+struct key_bindings
+{
+  struct key_binding *rbh_root;
+};
+struct key_table
+{
+  const char *name;
+  struct key_bindings key_bindings;
+  u_int references;
+  struct 
+  {
+    struct key_table *rbe_left;
+    struct key_table *rbe_right;
+    struct key_table *rbe_parent;
+    int rbe_color;
+  } entry;
+};
+struct key_tables
+{
+  struct key_table *rbh_root;
+};
+enum options_table_type
+{
+  OPTIONS_TABLE_STRING,
+  OPTIONS_TABLE_NUMBER,
+  OPTIONS_TABLE_KEY,
+  OPTIONS_TABLE_COLOUR,
+  OPTIONS_TABLE_ATTRIBUTES,
+  OPTIONS_TABLE_FLAG,
+  OPTIONS_TABLE_CHOICE,
+  OPTIONS_TABLE_STYLE,
+  OPTIONS_TABLE_ARRAY
+};
+enum options_table_scope
+{
+  OPTIONS_TABLE_NONE,
+  OPTIONS_TABLE_SERVER,
+  OPTIONS_TABLE_SESSION,
+  OPTIONS_TABLE_WINDOW
+};
+struct options_table_entry
+{
+  const char *name;
+  enum options_table_type type;
+  enum options_table_scope scope;
+  u_int minimum;
+  u_int maximum;
+  const char **choices;
+  const char *default_str;
+  long long default_num;
+  const char *separator;
+  const char *style;
+};
+extern struct hooks *global_hooks;
+extern struct options *global_options;
+extern struct options *global_s_options;
+extern struct options *global_w_options;
+extern struct environ *global_environ;
+extern struct timeval start_time;
+extern const char *socket_path;
+extern const char *shell_command;
+extern int ptm_fd;
+extern const char *shell_command;
+int areshell(const char *);
+void setblocking(int, int);
+const char *find_home(void);
+struct imsg;
+int proc_send(struct tmuxpeer *, enum msgtype, int, const void *, size_t);
+struct tmuxproc *proc_start(const char *);
+void proc_loop(struct tmuxproc *, int (*)(void));
+void proc_exit(struct tmuxproc *);
+void proc_set_signals(struct tmuxproc *, void (*)(int));
+void proc_clear_signals(struct tmuxproc *, int);
+struct tmuxpeer *proc_add_peer(struct tmuxproc *, int, void (*)(struct imsg *, void *), void *);
+void proc_remove_peer(struct tmuxpeer *);
+void proc_kill_peer(struct tmuxpeer *);
+void proc_toggle_log(struct tmuxproc *);
+extern int cfg_finished;
+void start_cfg(void);
+int load_cfg(const char *, struct client *, struct cmdq_item *, int);
+void set_cfg_file(const char *);
+void cfg_add_cause(const char *, ...);
+void cfg_print_causes(struct cmdq_item *);
+void cfg_show_causes(struct session *);
+struct paste_buffer;
+const char *paste_buffer_name(struct paste_buffer *);
+u_int paste_buffer_order(struct paste_buffer *);
+time_t paste_buffer_created(struct paste_buffer *);
+const char *paste_buffer_data(struct paste_buffer *, size_t *);
+struct paste_buffer *paste_walk(struct paste_buffer *);
+struct paste_buffer *paste_get_top(const char **);
+struct paste_buffer *paste_get_name(const char *);
+void paste_free(struct paste_buffer *);
+void paste_add(char *, size_t);
+int paste_rename(const char *, const char *, char **);
+int paste_set(char *, size_t, const char *, char **);
+char *paste_make_sample(struct paste_buffer *);
+struct format_tree;
+int format_true(const char *);
+struct format_tree *format_create(struct client *, struct cmdq_item *, int, int);
+void format_free(struct format_tree *);
+void format_add(struct format_tree *, const char *, const char *, ...);
+char *format_expand_time(struct format_tree *, const char *, time_t);
+char *format_expand(struct format_tree *, const char *);
+char *format_single(struct cmdq_item *, const char *, struct client *, struct session *, struct winlink *, struct window_pane *);
+void format_defaults(struct format_tree *, struct client *, struct session *, struct winlink *, struct window_pane *);
+void format_defaults_window(struct format_tree *, struct window *);
+void format_defaults_pane(struct format_tree *, struct window_pane *);
+void format_defaults_paste_buffer(struct format_tree *, struct paste_buffer *);
+void format_lost_client(struct client *);
+struct hook;
+struct hooks *hooks_get(struct session *);
+struct hooks *hooks_create(struct hooks *);
+void hooks_free(struct hooks *);
+struct hook *hooks_first(struct hooks *);
+struct hook *hooks_next(struct hook *);
+void hooks_add(struct hooks *, const char *, struct cmd_list *);
+void hooks_copy(struct hooks *, struct hooks *);
+void hooks_remove(struct hooks *, const char *);
+struct hook *hooks_find(struct hooks *, const char *);
+void hooks_insert(struct hooks *, struct cmdq_item *, struct cmd_find_state *, const char *, ...);
+void notify_input(struct window_pane *, struct evbuffer *);
+void notify_client(const char *, struct client *);
+void notify_session(const char *, struct session *);
+void notify_winlink(const char *, struct winlink *);
+void notify_session_window(const char *, struct session *, struct window *);
+void notify_window(const char *, struct window *);
+void notify_pane(const char *, struct window_pane *);
+struct options *options_create(struct options *);
+void options_free(struct options *);
+struct options_entry *options_first(struct options *);
+struct options_entry *options_next(struct options_entry *);
+struct options_entry *options_empty(struct options *, const struct options_table_entry *);
+struct options_entry *options_default(struct options *, const struct options_table_entry *);
+const char *options_name(struct options_entry *);
+const struct options_table_entry *options_table_entry(struct options_entry *);
+struct options_entry *options_get_only(struct options *, const char *);
+struct options_entry *options_get(struct options *, const char *);
+void options_remove(struct options_entry *);
+void options_array_clear(struct options_entry *);
+const char *options_array_get(struct options_entry *, u_int);
+int options_array_set(struct options_entry *, u_int, const char *, int);
+int options_array_size(struct options_entry *, u_int *);
+void options_array_assign(struct options_entry *, const char *);
+int options_isstring(struct options_entry *);
+const char *options_tostring(struct options_entry *, int, int);
+char *options_parse(const char *, int *);
+struct options_entry *options_parse_get(struct options *, const char *, int *, int);
+char *options_match(const char *, int *, int *);
+struct options_entry *options_match_get(struct options *, const char *, int *, int, int *);
+const char *options_get_string(struct options *, const char *);
+long long options_get_number(struct options *, const char *);
+const struct grid_cell *options_get_style(struct options *, const char *);
+struct options_entry *options_set_string(struct options *, const char *, int, const char *, ...);
+struct options_entry *options_set_number(struct options *, const char *, long long);
+struct options_entry *options_set_style(struct options *, const char *, int, const char *);
+enum options_table_scope options_scope_from_flags(struct args *, int, struct cmd_find_state *, struct options **, char **);
+void options_style_update_new(struct options *, struct options_entry *);
+void options_style_update_old(struct options *, struct options_entry *);
+extern const struct options_table_entry options_table[];
+extern struct joblist all_jobs;
+struct job *job_run(const char *, struct session *, const char *, job_update_cb, job_complete_cb, job_free_cb, void *, int);
+void job_free(struct job *);
+void job_died(struct job *, int);
+struct environ *environ_create(void);
+void environ_free(struct environ *);
+struct environ_entry *environ_first(struct environ *);
+struct environ_entry *environ_next(struct environ_entry *);
+void environ_copy(struct environ *, struct environ *);
+struct environ_entry *environ_find(struct environ *, const char *);
+void environ_set(struct environ *, const char *, const char *, ...);
+void environ_clear(struct environ *, const char *);
+void environ_put(struct environ *, const char *);
+void environ_unset(struct environ *, const char *);
+void environ_update(struct options *, struct environ *, struct environ *);
+void environ_push(struct environ *);
+void environ_log(struct environ *, const char *, ...);
+struct environ *environ_for_session(struct session *, int);
+void tty_create_log(void);
+void tty_raw(struct tty *, const char *);
+void tty_attributes(struct tty *, const struct grid_cell *, const struct window_pane *);
+void tty_reset(struct tty *);
+void tty_region_off(struct tty *);
+void tty_margin_off(struct tty *);
+void tty_cursor(struct tty *, u_int, u_int);
+void tty_putcode(struct tty *, enum tty_code_code);
+void tty_putcode1(struct tty *, enum tty_code_code, int);
+void tty_putcode2(struct tty *, enum tty_code_code, int, int);
+void tty_putcode3(struct tty *, enum tty_code_code, int, int, int);
+void tty_putcode_ptr1(struct tty *, enum tty_code_code, const void *);
+void tty_putcode_ptr2(struct tty *, enum tty_code_code, const void *, const void *);
+void tty_puts(struct tty *, const char *);
+void tty_putc(struct tty *, u_char);
+void tty_putn(struct tty *, const void *, size_t, u_int);
+int tty_init(struct tty *, struct client *, int, char *);
+void tty_resize(struct tty *);
+void tty_set_size(struct tty *, u_int, u_int);
+void tty_start_tty(struct tty *);
+void tty_stop_tty(struct tty *);
+void tty_set_title(struct tty *, const char *);
+void tty_update_mode(struct tty *, int, struct screen *);
+void tty_draw_pane(struct tty *, const struct window_pane *, u_int, u_int, u_int);
+void tty_draw_line(struct tty *, const struct window_pane *, struct screen *, u_int, u_int, u_int);
+int tty_open(struct tty *, char **);
+void tty_close(struct tty *);
+void tty_free(struct tty *);
+void tty_set_type(struct tty *, int);
+void tty_write(void (*)(struct tty *, const struct tty_ctx *), struct tty_ctx *);
+void tty_cmd_alignmenttest(struct tty *, const struct tty_ctx *);
+void tty_cmd_cell(struct tty *, const struct tty_ctx *);
+void tty_cmd_cells(struct tty *, const struct tty_ctx *);
+void tty_cmd_clearendofline(struct tty *, const struct tty_ctx *);
+void tty_cmd_clearendofscreen(struct tty *, const struct tty_ctx *);
+void tty_cmd_clearline(struct tty *, const struct tty_ctx *);
+void tty_cmd_clearscreen(struct tty *, const struct tty_ctx *);
+void tty_cmd_clearstartofline(struct tty *, const struct tty_ctx *);
+void tty_cmd_clearstartofscreen(struct tty *, const struct tty_ctx *);
+void tty_cmd_deletecharacter(struct tty *, const struct tty_ctx *);
+void tty_cmd_clearcharacter(struct tty *, const struct tty_ctx *);
+void tty_cmd_deleteline(struct tty *, const struct tty_ctx *);
+void tty_cmd_erasecharacter(struct tty *, const struct tty_ctx *);
+void tty_cmd_insertcharacter(struct tty *, const struct tty_ctx *);
+void tty_cmd_insertline(struct tty *, const struct tty_ctx *);
+void tty_cmd_linefeed(struct tty *, const struct tty_ctx *);
+void tty_cmd_scrollup(struct tty *, const struct tty_ctx *);
+void tty_cmd_reverseindex(struct tty *, const struct tty_ctx *);
+void tty_cmd_setselection(struct tty *, const struct tty_ctx *);
+void tty_cmd_rawstring(struct tty *, const struct tty_ctx *);
+extern struct tty_terms tty_terms;
+u_int tty_term_ncodes(void);
+struct tty_term *tty_term_find(char *, int, char **);
+void tty_term_free(struct tty_term *);
+int tty_term_has(struct tty_term *, enum tty_code_code);
+const char *tty_term_string(struct tty_term *, enum tty_code_code);
+const char *tty_term_string1(struct tty_term *, enum tty_code_code, int);
+const char *tty_term_string2(struct tty_term *, enum tty_code_code, int, int);
+const char *tty_term_string3(struct tty_term *, enum tty_code_code, int, int, int);
+const char *tty_term_ptr1(struct tty_term *, enum tty_code_code, const void *);
+const char *tty_term_ptr2(struct tty_term *, enum tty_code_code, const void *, const void *);
+int tty_term_number(struct tty_term *, enum tty_code_code);
+int tty_term_flag(struct tty_term *, enum tty_code_code);
+const char *tty_term_describe(struct tty_term *, enum tty_code_code);
+int tty_acs_needed(struct tty *);
+const char *tty_acs_get(struct tty *, u_char);
+void tty_keys_build(struct tty *);
+void tty_keys_free(struct tty *);
+key_code tty_keys_next(struct tty *);
+void args_set(struct args *, u_char, const char *);
+struct args *args_parse(const char *, int, char **);
+void args_free(struct args *);
+char *args_print(struct args *);
+int args_has(struct args *, u_char);
+const char *args_get(struct args *, u_char);
+long long args_strtonum(struct args *, u_char, long long, long long, char **);
+int cmd_find_target(struct cmd_find_state *, struct cmdq_item *, const char *, enum cmd_find_type, int);
+struct client *cmd_find_best_client(struct session *);
+struct client *cmd_find_client(struct cmdq_item *, const char *, int);
+void cmd_find_clear_state(struct cmd_find_state *, int);
+int cmd_find_empty_state(struct cmd_find_state *);
+int cmd_find_valid_state(struct cmd_find_state *);
+void cmd_find_copy_state(struct cmd_find_state *, struct cmd_find_state *);
+void cmd_find_log_state(const char *, struct cmd_find_state *);
+void cmd_find_from_session(struct cmd_find_state *, struct session *, int);
+void cmd_find_from_winlink(struct cmd_find_state *, struct winlink *, int);
+int cmd_find_from_session_window(struct cmd_find_state *, struct session *, struct window *, int);
+int cmd_find_from_window(struct cmd_find_state *, struct window *, int);
+void cmd_find_from_winlink_pane(struct cmd_find_state *, struct winlink *, struct window_pane *, int);
+int cmd_find_from_pane(struct cmd_find_state *, struct window_pane *, int);
+int cmd_find_from_client(struct cmd_find_state *, struct client *, int);
+int cmd_find_from_mouse(struct cmd_find_state *, struct mouse_event *, int);
+int cmd_find_from_nothing(struct cmd_find_state *, int);
+int cmd_pack_argv(int, char **, char *, size_t);
+int cmd_unpack_argv(char *, size_t, int, char ***);
+char **cmd_copy_argv(int, char **);
+void cmd_free_argv(int, char **);
+char *cmd_stringify_argv(int, char **);
+struct cmd *cmd_parse(int, char **, const char *, u_int, char **);
+char *cmd_print(struct cmd *);
+int cmd_mouse_at(struct window_pane *, struct mouse_event *, u_int *, u_int *, int);
+struct winlink *cmd_mouse_window(struct mouse_event *, struct session **);
+struct window_pane *cmd_mouse_pane(struct mouse_event *, struct session **, struct winlink **);
+char *cmd_template_replace(const char *, const char *, int);
+extern const struct cmd_entry *cmd_table[];
+enum cmd_retval cmd_attach_session(struct cmdq_item *, const char *, int, int, const char *, int);
+struct cmd_list *cmd_list_parse(int, char **, const char *, u_int, char **);
+void cmd_list_free(struct cmd_list *);
+char *cmd_list_print(struct cmd_list *);
+struct cmdq_item *cmdq_get_command(struct cmd_list *, struct cmd_find_state *, struct mouse_event *, int);
+struct cmdq_item *cmdq_get_callback1(const char *, cmdq_cb, void *);
+void cmdq_insert_after(struct cmdq_item *, struct cmdq_item *);
+void cmdq_append(struct client *, struct cmdq_item *);
+void cmdq_format(struct cmdq_item *, const char *, const char *, ...);
+u_int cmdq_next(struct client *);
+void cmdq_guard(struct cmdq_item *, const char *, int);
+void cmdq_print(struct cmdq_item *, const char *, ...);
+void cmdq_error(struct cmdq_item *, const char *, ...);
+int cmd_string_split(const char *, int *, char ***);
+struct cmd_list *cmd_string_parse(const char *, const char *, u_int, char **);
+void cmd_wait_for_flush(void);
+int client_main(struct event_base *, int, char **, int);
+void key_bindings_RB_INSERT_COLOR(struct key_bindings *, struct key_binding *);
+void key_bindings_RB_REMOVE_COLOR(struct key_bindings *, struct key_binding *, struct key_binding *);
+struct key_binding *key_bindings_RB_REMOVE(struct key_bindings *, struct key_binding *);
+struct key_binding *key_bindings_RB_INSERT(struct key_bindings *, struct key_binding *);
+struct key_binding *key_bindings_RB_FIND(struct key_bindings *, struct key_binding *);
+struct key_binding *key_bindings_RB_NFIND(struct key_bindings *, struct key_binding *);
+struct key_binding *key_bindings_RB_NEXT(struct key_binding *);
+struct key_binding *key_bindings_RB_PREV(struct key_binding *);
+struct key_binding *key_bindings_RB_MINMAX(struct key_bindings *, int);
+void key_tables_RB_INSERT_COLOR(struct key_tables *, struct key_table *);
+void key_tables_RB_REMOVE_COLOR(struct key_tables *, struct key_table *, struct key_table *);
+struct key_table *key_tables_RB_REMOVE(struct key_tables *, struct key_table *);
+struct key_table *key_tables_RB_INSERT(struct key_tables *, struct key_table *);
+struct key_table *key_tables_RB_FIND(struct key_tables *, struct key_table *);
+struct key_table *key_tables_RB_NFIND(struct key_tables *, struct key_table *);
+struct key_table *key_tables_RB_NEXT(struct key_table *);
+struct key_table *key_tables_RB_PREV(struct key_table *);
+struct key_table *key_tables_RB_MINMAX(struct key_tables *, int);
+extern struct key_tables key_tables;
+int key_table_cmp(struct key_table *, struct key_table *);
+int key_bindings_cmp(struct key_binding *, struct key_binding *);
+struct key_table *key_bindings_get_table(const char *, int);
+void key_bindings_unref_table(struct key_table *);
+void key_bindings_add(const char *, key_code, int, struct cmd_list *);
+void key_bindings_remove(const char *, key_code);
+void key_bindings_remove_table(const char *);
+void key_bindings_init(void);
+void key_bindings_dispatch(struct key_binding *, struct cmdq_item *, struct client *, struct mouse_event *, struct cmd_find_state *);
+key_code key_string_lookup_string(const char *);
+const char *key_string_lookup_key(key_code);
+void alerts_reset_all(void);
+void alerts_queue(struct window *, int);
+void alerts_check_session(struct session *);
+extern struct tmuxproc *server_proc;
+extern struct clients clients;
+extern struct cmd_find_state marked_pane;
+void server_set_marked(struct session *, struct winlink *, struct window_pane *);
+void server_clear_marked(void);
+int server_is_marked(struct session *, struct winlink *, struct window_pane *);
+int server_check_marked(void);
+int server_start(struct tmuxproc *, struct event_base *, int, char *);
+void server_update_socket(void);
+void server_add_accept(int);
+u_int server_client_how_many(void);
+void server_client_set_identify(struct client *, u_int);
+void server_client_clear_identify(struct client *, struct window_pane *);
+void server_client_set_key_table(struct client *, const char *);
+const char *server_client_get_key_table(struct client *);
+int server_client_check_nested(struct client *);
+void server_client_handle_key(struct client *, key_code);
+struct client *server_client_create(int);
+int server_client_open(struct client *, char **);
+void server_client_unref(struct client *);
+void server_client_lost(struct client *);
+void server_client_suspend(struct client *);
+void server_client_detach(struct client *, enum msgtype);
+void server_client_exec(struct client *, const char *);
+void server_client_loop(void);
+void server_client_push_stdout(struct client *);
+void server_client_push_stderr(struct client *);
+void server_client_add_message(struct client *, const char *, ...);
+char *server_client_get_path(struct client *, const char *);
+const char *server_client_get_cwd(struct client *);
+void server_redraw_client(struct client *);
+void server_status_client(struct client *);
+void server_redraw_session(struct session *);
+void server_redraw_session_group(struct session *);
+void server_status_session(struct session *);
+void server_status_session_group(struct session *);
+void server_redraw_window(struct window *);
+void server_redraw_window_borders(struct window *);
+void server_status_window(struct window *);
+void server_lock(void);
+void server_lock_session(struct session *);
+void server_lock_client(struct client *);
+void server_kill_pane(struct window_pane *);
+void server_kill_window(struct window *);
+int server_link_window(struct session *, struct winlink *, struct session *, int, int, int, char **);
+void server_unlink_window(struct session *, struct winlink *);
+void server_destroy_pane(struct window_pane *, int);
+void server_destroy_session(struct session *);
+void server_check_unattached(void);
+int server_set_stdin_callback(struct client *, void (*)(struct client *, int, void *), void *, char **);
+void server_unzoom_window(struct window *);
+void status_timer_start(struct client *);
+void status_timer_start_all(void);
+void status_update_saved(struct session *s);
+int status_at_line(struct client *);
+u_int status_line_size(struct session *);
+struct window *status_get_window_at(struct client *, u_int);
+int status_redraw(struct client *);
+void status_message_set(struct client *, const char *, ...);
+void status_message_clear(struct client *);
+int status_message_redraw(struct client *);
+void status_prompt_set(struct client *, const char *, const char *, prompt_input_cb, prompt_free_cb, void *, int);
+void status_prompt_clear(struct client *);
+int status_prompt_redraw(struct client *);
+int status_prompt_key(struct client *, key_code);
+void status_prompt_update(struct client *, const char *, const char *);
+void status_prompt_load_history(void);
+void status_prompt_save_history(void);
+void recalculate_sizes(void);
+void input_init(struct window_pane *);
+void input_free(struct window_pane *);
+void input_reset(struct window_pane *, int);
+struct evbuffer *input_pending(struct window_pane *);
+void input_parse(struct window_pane *);
+void input_key(struct window_pane *, key_code, struct mouse_event *);
+char *xterm_keys_lookup(key_code);
+int xterm_keys_find(const char *, size_t, size_t *, key_code *);
+int colour_find_rgb(u_char, u_char, u_char);
+int colour_join_rgb(u_char, u_char, u_char);
+void colour_split_rgb(int, u_char *, u_char *, u_char *);
+const char *colour_tostring(int);
+int colour_fromstring(const char *s);
+u_char colour_256to16(u_char);
+const char *attributes_tostring(int);
+int attributes_fromstring(const char *);
+extern const struct grid_cell grid_default_cell;
+int grid_cells_equal(const struct grid_cell *, const struct grid_cell *);
+struct grid *grid_create(u_int, u_int, u_int);
+void grid_destroy(struct grid *);
+int grid_compare(struct grid *, struct grid *);
+void grid_collect_history(struct grid *);
+void grid_scroll_history(struct grid *, u_int);
+void grid_scroll_history_region(struct grid *, u_int, u_int, u_int);
+void grid_clear_history(struct grid *);
+const struct grid_line *grid_peek_line(struct grid *, u_int);
+void grid_get_cell(struct grid *, u_int, u_int, struct grid_cell *);
+void grid_set_cell(struct grid *, u_int, u_int, const struct grid_cell *);
+void grid_set_cells(struct grid *, u_int, u_int, const struct grid_cell *, const char *, size_t);
+void grid_clear(struct grid *, u_int, u_int, u_int, u_int, u_int);
+void grid_clear_lines(struct grid *, u_int, u_int, u_int);
+void grid_move_lines(struct grid *, u_int, u_int, u_int, u_int);
+void grid_move_cells(struct grid *, u_int, u_int, u_int, u_int, u_int);
+char *grid_string_cells(struct grid *, u_int, u_int, u_int, struct grid_cell **, int, int, int);
+void grid_duplicate_lines(struct grid *, u_int, struct grid *, u_int, u_int);
+void grid_reflow(struct grid *, u_int, u_int *);
+void grid_view_get_cell(struct grid *, u_int, u_int, struct grid_cell *);
+void grid_view_set_cell(struct grid *, u_int, u_int, const struct grid_cell *);
+void grid_view_set_cells(struct grid *, u_int, u_int, const struct grid_cell *, const char *, size_t);
+void grid_view_clear_history(struct grid *, u_int);
+void grid_view_clear(struct grid *, u_int, u_int, u_int, u_int, u_int);
+void grid_view_scroll_region_up(struct grid *, u_int, u_int, u_int);
+void grid_view_scroll_region_down(struct grid *, u_int, u_int, u_int);
+void grid_view_insert_lines(struct grid *, u_int, u_int, u_int);
+void grid_view_insert_lines_region(struct grid *, u_int, u_int, u_int, u_int);
+void grid_view_delete_lines(struct grid *, u_int, u_int, u_int);
+void grid_view_delete_lines_region(struct grid *, u_int, u_int, u_int, u_int);
+void grid_view_insert_cells(struct grid *, u_int, u_int, u_int, u_int);
+void grid_view_delete_cells(struct grid *, u_int, u_int, u_int, u_int);
+char *grid_view_string_cells(struct grid *, u_int, u_int, u_int);
+void screen_write_start(struct screen_write_ctx *, struct window_pane *, struct screen *);
+void screen_write_stop(struct screen_write_ctx *);
+void screen_write_reset(struct screen_write_ctx *);
+size_t screen_write_cstrlen(const char *, ...);
+void screen_write_cnputs(struct screen_write_ctx *, ssize_t, const struct grid_cell *, const char *, ...);
+size_t screen_write_strlen(const char *, ...);
+void screen_write_puts(struct screen_write_ctx *, const struct grid_cell *, const char *, ...);
+void screen_write_nputs(struct screen_write_ctx *, ssize_t, const struct grid_cell *, const char *, ...);
+void screen_write_vnputs(struct screen_write_ctx *, ssize_t, const struct grid_cell *, const char *, va_list);
+void screen_write_putc(struct screen_write_ctx *, const struct grid_cell *, u_char);
+void screen_write_copy(struct screen_write_ctx *, struct screen *, u_int, u_int, u_int, u_int, bitstr_t *, const struct grid_cell *);
+void screen_write_fast_copy(struct screen_write_ctx *, struct screen *, u_int, u_int, u_int, u_int);
+void screen_write_hline(struct screen_write_ctx *, u_int, int, int);
+void screen_write_vline(struct screen_write_ctx *, u_int, int, int);
+void screen_write_box(struct screen_write_ctx *, u_int, u_int);
+void screen_write_preview(struct screen_write_ctx *, struct screen *, u_int, u_int);
+void screen_write_backspace(struct screen_write_ctx *);
+void screen_write_mode_set(struct screen_write_ctx *, int);
+void screen_write_mode_clear(struct screen_write_ctx *, int);
+void screen_write_cursorup(struct screen_write_ctx *, u_int);
+void screen_write_cursordown(struct screen_write_ctx *, u_int);
+void screen_write_cursorright(struct screen_write_ctx *, u_int);
+void screen_write_cursorleft(struct screen_write_ctx *, u_int);
+void screen_write_alignmenttest(struct screen_write_ctx *);
+void screen_write_insertcharacter(struct screen_write_ctx *, u_int, u_int);
+void screen_write_deletecharacter(struct screen_write_ctx *, u_int, u_int);
+void screen_write_clearcharacter(struct screen_write_ctx *, u_int, u_int);
+void screen_write_insertline(struct screen_write_ctx *, u_int, u_int);
+void screen_write_deleteline(struct screen_write_ctx *, u_int, u_int);
+void screen_write_clearline(struct screen_write_ctx *, u_int);
+void screen_write_clearendofline(struct screen_write_ctx *, u_int);
+void screen_write_clearstartofline(struct screen_write_ctx *, u_int);
+void screen_write_cursormove(struct screen_write_ctx *, u_int, u_int);
+void screen_write_reverseindex(struct screen_write_ctx *, u_int);
+void screen_write_scrollregion(struct screen_write_ctx *, u_int, u_int);
+void screen_write_linefeed(struct screen_write_ctx *, int, u_int);
+void screen_write_scrollup(struct screen_write_ctx *, u_int, u_int);
+void screen_write_carriagereturn(struct screen_write_ctx *);
+void screen_write_clearendofscreen(struct screen_write_ctx *, u_int);
+void screen_write_clearstartofscreen(struct screen_write_ctx *, u_int);
+void screen_write_clearscreen(struct screen_write_ctx *, u_int);
+void screen_write_clearhistory(struct screen_write_ctx *);
+void screen_write_collect_end(struct screen_write_ctx *);
+void screen_write_collect_add(struct screen_write_ctx *, const struct grid_cell *);
+void screen_write_cell(struct screen_write_ctx *, const struct grid_cell *);
+void screen_write_setselection(struct screen_write_ctx *, u_char *, u_int);
+void screen_write_rawstring(struct screen_write_ctx *, u_char *, u_int);
+void screen_redraw_update(struct client *);
+void screen_redraw_screen(struct client *, int, int, int);
+void screen_redraw_pane(struct client *, struct window_pane *);
+void screen_init(struct screen *, u_int, u_int, u_int);
+void screen_reinit(struct screen *);
+void screen_free(struct screen *);
+void screen_reset_tabs(struct screen *);
+void screen_set_cursor_style(struct screen *, u_int);
+void screen_set_cursor_colour(struct screen *, const char *);
+void screen_set_title(struct screen *, const char *);
+void screen_push_title(struct screen *);
+void screen_pop_title(struct screen *);
+void screen_resize(struct screen *, u_int, u_int, int);
+void screen_set_selection(struct screen *, u_int, u_int, u_int, u_int, u_int, struct grid_cell *);
+void screen_clear_selection(struct screen *);
+void screen_hide_selection(struct screen *);
+int screen_check_selection(struct screen *, u_int, u_int);
+void screen_select_cell(struct screen *, struct grid_cell *, const struct grid_cell *);
+extern struct windows windows;
+extern struct window_pane_tree all_window_panes;
+int window_cmp(struct window *, struct window *);
+void windows_RB_INSERT_COLOR(struct windows *, struct window *);
+void windows_RB_REMOVE_COLOR(struct windows *, struct window *, struct window *);
+struct window *windows_RB_REMOVE(struct windows *, struct window *);
+struct window *windows_RB_INSERT(struct windows *, struct window *);
+struct window *windows_RB_FIND(struct windows *, struct window *);
+struct window *windows_RB_NFIND(struct windows *, struct window *);
+struct window *windows_RB_NEXT(struct window *);
+struct window *windows_RB_PREV(struct window *);
+struct window *windows_RB_MINMAX(struct windows *, int);
+int winlink_cmp(struct winlink *, struct winlink *);
+void winlinks_RB_INSERT_COLOR(struct winlinks *, struct winlink *);
+void winlinks_RB_REMOVE_COLOR(struct winlinks *, struct winlink *, struct winlink *);
+struct winlink *winlinks_RB_REMOVE(struct winlinks *, struct winlink *);
+struct winlink *winlinks_RB_INSERT(struct winlinks *, struct winlink *);
+struct winlink *winlinks_RB_FIND(struct winlinks *, struct winlink *);
+struct winlink *winlinks_RB_NFIND(struct winlinks *, struct winlink *);
+struct winlink *winlinks_RB_NEXT(struct winlink *);
+struct winlink *winlinks_RB_PREV(struct winlink *);
+struct winlink *winlinks_RB_MINMAX(struct winlinks *, int);
+int window_pane_cmp(struct window_pane *, struct window_pane *);
+void window_pane_tree_RB_INSERT_COLOR(struct window_pane_tree *, struct window_pane *);
+void window_pane_tree_RB_REMOVE_COLOR(struct window_pane_tree *, struct window_pane *, struct window_pane *);
+struct window_pane *window_pane_tree_RB_REMOVE(struct window_pane_tree *, struct window_pane *);
+struct window_pane *window_pane_tree_RB_INSERT(struct window_pane_tree *, struct window_pane *);
+struct window_pane *window_pane_tree_RB_FIND(struct window_pane_tree *, struct window_pane *);
+struct window_pane *window_pane_tree_RB_NFIND(struct window_pane_tree *, struct window_pane *);
+struct window_pane *window_pane_tree_RB_NEXT(struct window_pane *);
+struct window_pane *window_pane_tree_RB_PREV(struct window_pane *);
+struct window_pane *window_pane_tree_RB_MINMAX(struct window_pane_tree *, int);
+struct winlink *winlink_find_by_index(struct winlinks *, int);
+struct winlink *winlink_find_by_window(struct winlinks *, struct window *);
+struct winlink *winlink_find_by_window_id(struct winlinks *, u_int);
+u_int winlink_count(struct winlinks *);
+struct winlink *winlink_add(struct winlinks *, int);
+void winlink_set_window(struct winlink *, struct window *);
+void winlink_remove(struct winlinks *, struct winlink *);
+struct winlink *winlink_next(struct winlink *);
+struct winlink *winlink_previous(struct winlink *);
+struct winlink *winlink_next_by_number(struct winlink *, struct session *, int);
+struct winlink *winlink_previous_by_number(struct winlink *, struct session *, int);
+void winlink_stack_push(struct winlink_stack *, struct winlink *);
+void winlink_stack_remove(struct winlink_stack *, struct winlink *);
+struct window *window_find_by_id_str(const char *);
+struct window *window_find_by_id(u_int);
+void window_update_activity(struct window *);
+struct window *window_create(u_int, u_int);
+struct window *window_create_spawn(const char *, int, char **, const char *, const char *, const char *, struct environ *, struct termios *, u_int, u_int, u_int, char **);
+struct window_pane *window_get_active_at(struct window *, u_int, u_int);
+struct window_pane *window_find_string(struct window *, const char *);
+int window_has_pane(struct window *, struct window_pane *);
+int window_set_active_pane(struct window *, struct window_pane *);
+void window_redraw_active_switch(struct window *, struct window_pane *);
+struct window_pane *window_add_pane(struct window *, struct window_pane *, int, int, u_int);
+void window_resize(struct window *, u_int, u_int);
+int window_zoom(struct window_pane *);
+int window_unzoom(struct window *);
+void window_lost_pane(struct window *, struct window_pane *);
+void window_remove_pane(struct window *, struct window_pane *);
+struct window_pane *window_pane_at_index(struct window *, u_int);
+struct window_pane *window_pane_next_by_number(struct window *, struct window_pane *, u_int);
+struct window_pane *window_pane_previous_by_number(struct window *, struct window_pane *, u_int);
+int window_pane_index(struct window_pane *, u_int *);
+u_int window_count_panes(struct window *);
+void window_destroy_panes(struct window *);
+struct window_pane *window_pane_find_by_id_str(const char *);
+struct window_pane *window_pane_find_by_id(u_int);
+int window_pane_destroy_ready(struct window_pane *);
+int window_pane_spawn(struct window_pane *, int, char **, const char *, const char *, const char *, struct environ *, struct termios *, char **);
+void window_pane_resize(struct window_pane *, u_int, u_int);
+void window_pane_alternate_on(struct window_pane *, struct grid_cell *, int);
+void window_pane_alternate_off(struct window_pane *, struct grid_cell *, int);
+void window_pane_set_palette(struct window_pane *, u_int, int);
+void window_pane_unset_palette(struct window_pane *, u_int);
+void window_pane_reset_palette(struct window_pane *);
+int window_pane_get_palette(const struct window_pane *, int);
+int window_pane_set_mode(struct window_pane *, const struct window_mode *, struct cmd_find_state *, struct args *);
+void window_pane_reset_mode(struct window_pane *);
+void window_pane_key(struct window_pane *, struct client *, struct session *, key_code, struct mouse_event *);
+int window_pane_visible(struct window_pane *);
+u_int window_pane_search(struct window_pane *, const char *);
+const char *window_printable_flags(struct winlink *);
+struct window_pane *window_pane_find_up(struct window_pane *);
+struct window_pane *window_pane_find_down(struct window_pane *);
+struct window_pane *window_pane_find_left(struct window_pane *);
+struct window_pane *window_pane_find_right(struct window_pane *);
+void window_set_name(struct window *, const char *);
+void window_add_ref(struct window *, const char *);
+void window_remove_ref(struct window *, const char *);
+void winlink_clear_flags(struct winlink *);
+int winlink_shuffle_up(struct session *, struct winlink *);
+u_int layout_count_cells(struct layout_cell *);
+struct layout_cell *layout_create_cell(struct layout_cell *);
+void layout_free_cell(struct layout_cell *);
+void layout_print_cell(struct layout_cell *, const char *, u_int);
+void layout_destroy_cell(struct window *, struct layout_cell *, struct layout_cell **);
+void layout_set_size(struct layout_cell *, u_int, u_int, u_int, u_int);
+void layout_make_leaf(struct layout_cell *, struct window_pane *);
+void layout_make_node(struct layout_cell *, enum layout_type);
+void layout_fix_offsets(struct layout_cell *);
+void layout_fix_panes(struct window *, u_int, u_int);
+void layout_resize_adjust(struct window *, struct layout_cell *, enum layout_type, int);
+void layout_init(struct window *, struct window_pane *);
+void layout_free(struct window *);
+void layout_resize(struct window *, u_int, u_int);
+void layout_resize_pane(struct window_pane *, enum layout_type, int, int);
+void layout_resize_pane_to(struct window_pane *, enum layout_type, u_int);
+void layout_assign_pane(struct layout_cell *, struct window_pane *);
+struct layout_cell *layout_split_pane(struct window_pane *, enum layout_type, int, int, int);
+void layout_close_pane(struct window_pane *);
+int layout_spread_cell(struct window *, struct layout_cell *);
+void layout_spread_out(struct window_pane *);
+char *layout_dump(struct layout_cell *);
+int layout_parse(struct window *, const char *);
+int layout_set_lookup(const char *);
+u_int layout_set_select(struct window *, u_int);
+u_int layout_set_next(struct window *);
+u_int layout_set_previous(struct window *);
+typedef void (*mode_tree_build_cb)(void *, u_int, uint64_t *, const char *);
+typedef void (*mode_tree_draw_cb)(void *, void *, struct screen_write_ctx *, u_int, u_int);
+typedef int (*mode_tree_search_cb)(void *, void *, const char *);
+typedef void (*mode_tree_each_cb)(void *, void *, struct client *, key_code);
+u_int mode_tree_count_tagged(struct mode_tree_data *);
+void *mode_tree_get_current(struct mode_tree_data *);
+void mode_tree_expand_current(struct mode_tree_data *);
+void mode_tree_set_current(struct mode_tree_data *, uint64_t);
+void mode_tree_each_tagged(struct mode_tree_data *, mode_tree_each_cb, struct client *, key_code, int);
+void mode_tree_up(struct mode_tree_data *, int);
+void mode_tree_down(struct mode_tree_data *, int);
+struct mode_tree_data *mode_tree_start(struct window_pane *, struct args *, mode_tree_build_cb, mode_tree_draw_cb, mode_tree_search_cb, void *, const char **, u_int, struct screen **);
+void mode_tree_zoom(struct mode_tree_data *, struct args *);
+void mode_tree_build(struct mode_tree_data *);
+void mode_tree_free(struct mode_tree_data *);
+void mode_tree_resize(struct mode_tree_data *, u_int, u_int);
+struct mode_tree_item *mode_tree_add(struct mode_tree_data *, struct mode_tree_item *, void *, uint64_t, const char *, const char *, int);
+void mode_tree_remove(struct mode_tree_data *, struct mode_tree_item *);
+void mode_tree_draw(struct mode_tree_data *);
+int mode_tree_key(struct mode_tree_data *, struct client *, key_code *, struct mouse_event *, u_int *, u_int *);
+void mode_tree_run_command(struct client *, struct cmd_find_state *, const char *, const char *);
+extern const struct window_mode window_buffer_mode;
+extern const struct window_mode window_tree_mode;
+extern const struct window_mode window_clock_mode;
+extern const char window_clock_table[14][5][5];
+extern const struct window_mode window_client_mode;
+extern const struct window_mode window_copy_mode;
+void window_copy_init_from_pane(struct window_pane *, int);
+void window_copy_init_for_output(struct window_pane *);
+void window_copy_add(struct window_pane *, const char *, ...);
+void window_copy_vadd(struct window_pane *, const char *, va_list);
+void window_copy_pageup(struct window_pane *, int);
+void window_copy_start_drag(struct client *, struct mouse_event *);
+void window_copy_add_formats(struct window_pane *, struct format_tree *);
+void check_window_name(struct window *);
+char *default_window_name(struct window *);
+char *parse_window_name(const char *);
+void control_callback(struct client *, int, void *);
+void control_write(struct client *, const char *, ...);
+void control_write_buffer(struct client *, struct evbuffer *);
+void control_notify_input(struct client *, struct window_pane *, struct evbuffer *);
+void control_notify_pane_mode_changed(int);
+void control_notify_window_layout_changed(struct window *);
+void control_notify_window_pane_changed(struct window *);
+void control_notify_window_unlinked(struct session *, struct window *);
+void control_notify_window_linked(struct session *, struct window *);
+void control_notify_window_renamed(struct window *);
+void control_notify_client_session_changed(struct client *);
+void control_notify_session_renamed(struct session *);
+void control_notify_session_created(struct session *);
+void control_notify_session_closed(struct session *);
+void control_notify_session_window_changed(struct session *);
+extern struct sessions sessions;
+extern struct session_groups session_groups;
+int session_cmp(struct session *, struct session *);
+void sessions_RB_INSERT_COLOR(struct sessions *, struct session *);
+void sessions_RB_REMOVE_COLOR(struct sessions *, struct session *, struct session *);
+struct session *sessions_RB_REMOVE(struct sessions *, struct session *);
+struct session *sessions_RB_INSERT(struct sessions *, struct session *);
+struct session *sessions_RB_FIND(struct sessions *, struct session *);
+struct session *sessions_RB_NFIND(struct sessions *, struct session *);
+struct session *sessions_RB_NEXT(struct session *);
+struct session *sessions_RB_PREV(struct session *);
+struct session *sessions_RB_MINMAX(struct sessions *, int);
+int session_group_cmp(struct session_group *, struct session_group *);
+void session_groups_RB_INSERT_COLOR(struct session_groups *, struct session_group *);
+void session_groups_RB_REMOVE_COLOR(struct session_groups *, struct session_group *, struct session_group *);
+struct session_group *session_groups_RB_REMOVE(struct session_groups *, struct session_group *);
+struct session_group *session_groups_RB_INSERT(struct session_groups *, struct session_group *);
+struct session_group *session_groups_RB_FIND(struct session_groups *, struct session_group *);
+struct session_group *session_groups_RB_NFIND(struct session_groups *, struct session_group *);
+struct session_group *session_groups_RB_NEXT(struct session_group *);
+struct session_group *session_groups_RB_PREV(struct session_group *);
+struct session_group *session_groups_RB_MINMAX(struct session_groups *, int);
+int session_alive(struct session *);
+struct session *session_find(const char *);
+struct session *session_find_by_id_str(const char *);
+struct session *session_find_by_id(u_int);
+struct session *session_create(const char *, const char *, int, char **, const char *, const char *, struct environ *, struct termios *, int, u_int, u_int, char **);
+void session_destroy(struct session *, const char *);
+void session_add_ref(struct session *, const char *);
+void session_remove_ref(struct session *, const char *);
+int session_check_name(const char *);
+void session_update_activity(struct session *, struct timeval *);
+struct session *session_next_session(struct session *);
+struct session *session_previous_session(struct session *);
+struct winlink *session_new(struct session *, const char *, int, char **, const char *, const char *, int, char **);
+struct winlink *session_attach(struct session *, struct window *, int, char **);
+int session_detach(struct session *, struct winlink *);
+int session_has(struct session *, struct window *);
+int session_is_linked(struct session *, struct window *);
+int session_next(struct session *, int);
+int session_previous(struct session *, int);
+int session_select(struct session *, int);
+int session_last(struct session *);
+int session_set_current(struct session *, struct winlink *);
+struct session_group *session_group_contains(struct session *);
+struct session_group *session_group_find(const char *);
+struct session_group *session_group_new(const char *);
+void session_group_add(struct session_group *, struct session *);
+void session_group_synchronize_to(struct session *);
+void session_group_synchronize_from(struct session *);
+u_int session_group_count(struct session_group *);
+void session_renumber_windows(struct session *);
+void utf8_set(struct utf8_data *, u_char);
+void utf8_copy(struct utf8_data *, const struct utf8_data *);
+enum utf8_state utf8_open(struct utf8_data *, u_char);
+enum utf8_state utf8_append(struct utf8_data *, u_char);
+enum utf8_state utf8_combine(const struct utf8_data *, wchar_t *);
+enum utf8_state utf8_split(wchar_t, struct utf8_data *);
+int utf8_isvalid(const char *);
+int utf8_strvis(char *, const char *, size_t, int);
+int utf8_stravis(char **, const char *, int);
+char *utf8_sanitize(const char *);
+size_t utf8_strlen(const struct utf8_data *);
+u_int utf8_strwidth(const struct utf8_data *, ssize_t);
+struct utf8_data *utf8_fromcstr(const char *);
+char *utf8_tocstr(struct utf8_data *);
+u_int utf8_cstrwidth(const char *);
+char *utf8_rtrimcstr(const char *, u_int);
+char *utf8_trimcstr(const char *, u_int);
+char *utf8_padcstr(const char *, u_int);
+char *osdep_get_name(int, char *);
+char *osdep_get_cwd(int);
+struct event_base *osdep_event_init(void);
+void log_add_level(void);
+int log_get_level(void);
+void log_open(const char *);
+void log_toggle(const char *);
+void log_close(void);
+void log_debug(const char *, ...);
+void fatal(const char *, ...);
+void fatalx(const char *, ...);
+int style_parse(const struct grid_cell *, struct grid_cell *, const char *);
+const char *style_tostring(struct grid_cell *);
+void style_apply(struct grid_cell *, struct options *, const char *);
+void style_apply_update(struct grid_cell *, struct options *, const char *);
+int style_equal(const struct grid_cell *, const struct grid_cell *);
+struct cmdq_item;
+struct client;
+struct environ;
+struct format_tree;
+struct hooks;
+struct cmd_find_state;
+struct options;
+struct screen_write_ctx;
+struct grid_cell;
+struct window_pane;
+void args_print_add(char **buf, size_t *len, const char *fmt, ...);
+void cfg_add_cause(const char *fmt, ...);
+void cmdq_format(struct cmdq_item *item, const char *key, const char *fmt, ...);
+void cmdq_print(struct cmdq_item *item, const char *fmt, ...);
+void cmdq_error(struct cmdq_item *item, const char *fmt, ...);
+void control_write(struct client *c, const char *fmt, ...);
+void environ_set(struct environ *env, const char *name, const char *fmt, ...);
+void environ_log(struct environ *env, const char *fmt, ...);
+void format_add(struct format_tree *ft, const char *key, const char *fmt, ...);
+void hooks_insert(struct hooks *hooks, struct cmdq_item *item, struct cmd_find_state *fs, const char *fmt, ...);
+void input_reply(struct input_ctx *, const char *, ...);
+void log_debug(const char *msg, ...);
+void fatal(const char *msg, ...);
+void fatalx(const char *msg, ...);
+struct options_entry *options_set_string(struct options *oo, const char *name, int append, const char *fmt, ...);
+size_t screen_write_cstrlen(const char *fmt, ...);
+size_t screen_write_strlen(const char *fmt, ...);
+void screen_write_puts(struct screen_write_ctx *ctx, const struct grid_cell *gcp, const char *fmt, ...);
+void screen_write_nputs(struct screen_write_ctx *ctx, ssize_t maxlen, const struct grid_cell *gcp, const char *fmt, ...);
+void screen_write_cnputs(struct screen_write_ctx *ctx, ssize_t maxlen, const struct grid_cell *gcp, const char *fmt, ...);
+void server_client_add_message(struct client *c, const char *fmt, ...);
+void status_message_set(struct client *c, const char *fmt, ...);
+void window_copy_add(struct window_pane *wp, const char *fmt, ...);
+int xasprintf(char **ret, const char *fmt, ...);
+int xsnprintf(char *str, size_t len, const char *fmt, ...);
+void setproctitle(const char *fmt, ...);
+static char *status_redraw_get_left(struct client *, time_t, struct grid_cell *, size_t *);
+static char *status_redraw_get_right(struct client *, time_t, struct grid_cell *, size_t *);
+static char *status_print(struct client *, struct winlink *, time_t, struct grid_cell *);
+static char *status_replace(struct client *, struct winlink *, const char *, time_t);
+void status_message_callback(int, short, void *);
+static void status_timer_callback(int, short, void *);
+static char *status_prompt_find_history_file(void);
+static const char *status_prompt_up_history(u_int *);
+static const char *status_prompt_down_history(u_int *);
+static void status_prompt_add_history(const char *);
+static const char **status_prompt_complete_list(u_int *, const char *);
+static char *status_prompt_complete_prefix(const char **, u_int);
+static char *status_prompt_complete(struct session *, const char *);
+static char **status_prompt_hlist;
+static u_int status_prompt_hsize;
+static char *status_prompt_find_history_file(void)
+{
+  const char *home;
+  unsigned int home_idx = 0;
+  const char *history_file;
+  unsigned int history_file_idx = 0;
+  char *path;
+  history_file_idx = options_get_string(global_options, "history-file");
+  if (history_file[history_file_idx] == '\0')
+  {
+    return 0;
+  }
+  if (history_file[history_file_idx] == '/')
+  {
+    return xstrdup(history_file);
+  }
+  if ((history_file[0 + history_file_idx] != '~') || (history_file[1 + history_file_idx] != '/'))
+  {
+    return 0;
+  }
+  if ((home_idx = find_home()) == 0)
+  {
+    return 0;
+  }
+  xasprintf(&path, "%s%s", home, (&history_file[history_file_idx]) + 1);
+  return path;
+}
+
+void status_prompt_load_history(void)
+{
+  FILE *f;
+  unsigned int f_idx = 0;
+  char *history_file;
+  unsigned int history_file_idx = 0;
+  char *line;
+  unsigned int line_idx = 0;
+  char *tmp;
+  unsigned int tmp_idx = 0;
+  size_t length;
+  if ((history_file_idx = status_prompt_find_history_file()) == 0)
+  {
+    return;
+  }
+  log_debug("loading history from %s", history_file);
+  f_idx = fopen(history_file, "r");
+  if ((&f[f_idx]) == 0)
+  {
+    log_debug("%s: %s", history_file, strerror(errno));
+    free(history_file);
+    return;
+  }
+  free(history_file);
+  for (;;)
+  {
+    helper_status_prompt_load_history_1(&line_idx, &tmp_idx, &length, f, line, tmp);
+  }
+
+  fclose(f);
+}
+
+void status_prompt_save_history(void)
+{
+  FILE *f;
+  unsigned int f_idx = 0;
+  u_int i;
+  char *history_file;
+  unsigned int history_file_idx = 0;
+  if ((history_file_idx = status_prompt_find_history_file()) == 0)
+  {
+    return;
+  }
+  log_debug("saving history to %s", history_file);
+  f_idx = fopen(history_file, "w");
+  if ((&f[f_idx]) == 0)
+  {
+    log_debug("%s: %s", history_file, strerror(errno));
+    free(history_file);
+    return;
+  }
+  free(history_file);
+  for (i = 0; i < status_prompt_hsize; i += 1)
+  {
+    fputs(status_prompt_hlist[i], f);
+    fputc('\n', f);
+  }
+
+  fclose(f);
+}
+
+static void status_timer_callback(int fd, short events, void *arg)
+{
+  struct client *c = arg;
+  struct session *s = c->session;
+  struct timeval tv;
+  evtimer_del(&c->status.timer);
+  if (s == 0)
+  {
+    return;
+  }
+  if ((c->message_string == 0) && (c->prompt_string == 0))
+  {
+    c->flags |= 0x10;
+  }
+  timerclear(&tv);
+  tv.tv_sec = options_get_number(s->options, "status-interval");
+  if (tv.tv_sec != 0)
+  {
+    evtimer_add(&c->status.timer, &tv);
+  }
+  log_debug("client %p, status interval %d", c, (int) tv.tv_sec);
+}
+
+void status_timer_start(struct client *c)
+{
+  struct session *s = c->session;
+  if (event_initialized(&c->status.timer))
+  {
+    evtimer_del(&c->status.timer);
+  }
+  else
+    evtimer_set(&c->status.timer, status_timer_callback, c);
+  if ((s != 0) && options_get_number(s->options, "status"))
+  {
+    status_timer_callback(-1, 0, c);
+  }
+}
+
+void status_timer_start_all(void)
+{
+  struct client *c;
+  unsigned int c_idx = 0;
+  for (c_idx = (&clients)->tqh_first; (&c[c_idx]) != 0; c_idx = c_idx->entry.tqe_next)
+  {
+    status_timer_start(c);
+  }
+
+}
+
+void status_update_saved(struct session *s)
+{
+  if (!options_get_number(s->options, "status"))
+  {
+    s->statusat = -1;
+  }
+  else
+    if (options_get_number(s->options, "status-position") == 0)
+  {
+    s->statusat = 0;
+  }
+  else
+    s->statusat = 1;
+}
+
+int status_at_line(struct client *c)
+{
+  struct session *s = c->session;
+  if (c->flags & 0x800000)
+  {
+    return -1;
+  }
+  if (s->statusat != 1)
+  {
+    return s->statusat;
+  }
+  return c->tty.sy - status_line_size(s);
+}
+
+u_int status_line_size(struct session *s)
+{
+  if (s->statusat == (-1))
+  {
+    return 0;
+  }
+  return 1;
+}
+
+static char *status_redraw_get_left(struct client *c, time_t t, struct grid_cell *gc, size_t *size)
+{
+  struct session *s = c->session;
+  const char *template;
+  unsigned int template_idx = 0;
+  char *left;
+  unsigned int left_idx = 0;
+  size_t leftlen;
+  style_apply_update(gc, s->options, "status-left-style");
+  template_idx = options_get_string(s->options, "status-left");
+  left_idx = status_replace(c, 0, template, t);
+  *size = options_get_number(s->options, "status-left-length");
+  leftlen = screen_write_cstrlen("%s", left);
+  if (leftlen < (*size))
+  {
+    *size = leftlen;
+  }
+  return left;
+}
+
+static char *status_redraw_get_right(struct client *c, time_t t, struct grid_cell *gc, size_t *size)
+{
+  struct session *s = c->session;
+  const char *template;
+  unsigned int template_idx = 0;
+  char *right;
+  unsigned int right_idx = 0;
+  size_t rightlen;
+  style_apply_update(gc, s->options, "status-right-style");
+  template_idx = options_get_string(s->options, "status-right");
+  right_idx = status_replace(c, 0, template, t);
+  *size = options_get_number(s->options, "status-right-length");
+  rightlen = screen_write_cstrlen("%s", right);
+  if (rightlen < (*size))
+  {
+    *size = rightlen;
+  }
+  return right;
+}
+
+struct window *status_get_window_at(struct client *c, u_int x)
+{
+  struct session *s = c->session;
+  struct winlink *wl;
+  unsigned int wl_idx = 0;
+  struct options *oo;
+  unsigned int oo_idx = 0;
+  const char *sep;
+  unsigned int sep_idx = 0;
+  size_t seplen;
+  x += c->wlmouse;
+  for (wl_idx = winlinks_RB_MINMAX(&s->windows, -1); (&wl[wl_idx]) != 0; wl_idx = winlinks_RB_NEXT(wl_idx))
+  {
+    oo_idx = wl->window->options;
+    sep_idx = options_get_string(oo, "window-status-separator");
+    seplen = screen_write_cstrlen("%s", sep);
+    if (x < wl->status_width)
+    {
+      return wl->window;
+    }
+    x -= wl->status_width + seplen;
+  }
+
+  return 0;
+}
+
+int status_redraw(struct client *c)
+{
+  struct screen_write_ctx ctx;
+  struct session *s = c->session;
+  struct winlink *wl;
+  unsigned int wl_idx = 0;
+  struct screen old_status;
+  struct screen window_list;
+  struct grid_cell stdgc;
+  struct grid_cell lgc;
+  struct grid_cell rgc;
+  struct grid_cell gc;
+  struct options *oo;
+  unsigned int oo_idx = 0;
+  time_t t;
+  char *left;
+  unsigned int left_idx = 0;
+  char *right;
+  unsigned int right_idx = 0;
+  const char *sep;
+  unsigned int sep_idx = 0;
+  u_int offset;
+  u_int needed;
+  u_int lines;
+  u_int wlstart;
+  u_int wlwidth;
+  u_int wlavailable;
+  u_int wloffset;
+  u_int wlsize;
+  size_t llen;
+  size_t rlen;
+  size_t seplen;
+  int larrow;
+  int rarrow;
+  if (c->status.old_status != 0)
+  {
+    screen_free(c->status.old_status);
+    free(c->status.old_status);
+    c->status.old_status = 0;
+  }
+  lines = status_line_size(s);
+  if ((c->tty.sy == 0) || (lines == 0))
+  {
+    return 1;
+  }
+  left_idx = (right = &right[right_idx + right_idx]);
+  larrow = (rarrow = 0);
+  t = time(0);
+  style_apply(&stdgc, s->options, "status-style");
+  memcpy(&old_status, &c->status.status, sizeof(old_status));
+  screen_init(&c->status.status, c->tty.sx, lines, 0);
+  screen_write_start(&ctx, 0, &c->status.status);
+  for (offset = 0; offset < (lines * c->tty.sx); offset += 1)
+  {
+    screen_write_putc(&ctx, &stdgc, ' ');
+  }
+
+  screen_write_stop(&ctx);
+  if (c->tty.sy < lines)
+  {
+    goto out;
+  }
+  memcpy(&lgc, &stdgc, sizeof(lgc));
+  left_idx = status_redraw_get_left(c, t, &lgc, &llen);
+  memcpy(&rgc, &stdgc, sizeof(rgc));
+  right_idx = status_redraw_get_right(c, t, &rgc, &rlen);
+  needed = 0;
+  if (llen != 0)
+  {
+    needed += llen;
+  }
+  if (rlen != 0)
+  {
+    needed += rlen;
+  }
+  if ((c->tty.sx == 0) || (c->tty.sx <= needed))
+  {
+    goto out;
+  }
+  wlavailable = c->tty.sx - needed;
+  wlstart = (wloffset = (wlwidth = 0));
+  for (wl_idx = winlinks_RB_MINMAX(&s->windows, -1); (&wl[wl_idx]) != 0; wl_idx = winlinks_RB_NEXT(wl_idx))
+  {
+    free(wl->status_text);
+    memcpy(&wl->status_cell, &stdgc, sizeof(wl->status_cell));
+    wl->status_text = status_print(c, wl, t, &wl->status_cell);
+    wl->status_width = screen_write_cstrlen("%s", wl->status_text);
+    if ((&wl[wl_idx]) == s->curw)
+    {
+      wloffset = wlwidth;
+    }
+    oo_idx = wl->window->options;
+    sep_idx = options_get_string(oo, "window-status-separator");
+    seplen = screen_write_cstrlen("%s", sep);
+    wlwidth += wl->status_width + seplen;
+  }
+
+  screen_init(&window_list, wlwidth, 1, 0);
+  screen_write_start(&ctx, 0, &window_list);
+  for (wl_idx = winlinks_RB_MINMAX(&s->windows, -1); (&wl[wl_idx]) != 0; wl_idx = winlinks_RB_NEXT(wl_idx))
+  {
+    screen_write_cnputs(&ctx, -1, &wl->status_cell, "%s", wl->status_text);
+    oo_idx = wl->window->options;
+    sep_idx = options_get_string(oo, "window-status-separator");
+    screen_write_cnputs(&ctx, -1, &stdgc, "%s", sep);
+  }
+
+  screen_write_stop(&ctx);
+  if (wlwidth <= wlavailable)
+  {
+    goto draw;
+  }
+  wlsize = s->curw->status_width;
+  if ((wloffset + wlsize) < wlavailable)
+  {
+    if (wlavailable > 0)
+    {
+      rarrow = 1;
+      wlavailable -= 1;
+    }
+    wlwidth = wlavailable;
+  }
+  else
+  {
+    if (wlavailable > 0)
+    {
+      larrow = 1;
+      wlavailable -= 1;
+    }
+    wlstart = (wloffset + wlsize) - wlavailable;
+    if ((wlavailable > 0) && (wlwidth > ((wlstart + wlavailable) + 1)))
+    {
+      rarrow = 1;
+      wlstart += 1;
+      wlavailable -= 1;
+    }
+    wlwidth = wlavailable;
+  }
+  if ((wlwidth == 0) || (wlavailable == 0))
+  {
+    screen_free(&window_list);
+    goto out;
+  }
+  offset = 0;
+  for (wl_idx = winlinks_RB_MINMAX(&s->windows, -1); (&wl[wl_idx]) != 0; wl_idx = winlinks_RB_NEXT(wl_idx))
+  {
+    if (((wl->flags & ((0x1 | 0x2) | 0x4)) && (larrow == 1)) && (offset < wlstart))
+    {
+      larrow = -1;
+    }
+    offset += wl->status_width;
+    if (((wl->flags & ((0x1 | 0x2) | 0x4)) && (rarrow == 1)) && (offset > (wlstart + wlwidth)))
+    {
+      rarrow = -1;
+    }
+  }
+
+  draw:
+  screen_write_start(&ctx, 0, &c->status.status);
+
+  screen_write_cursormove(&ctx, 0, 0);
+  if (llen != 0)
+  {
+    screen_write_cnputs(&ctx, llen, &lgc, "%s", left);
+  }
+  if (larrow != 0)
+  {
+    memcpy(&gc, &stdgc, sizeof(gc));
+    if (larrow == (-1))
+    {
+      gc.attr ^= 0x10;
+    }
+    screen_write_putc(&ctx, &gc, '<');
+  }
+  if (rarrow != 0)
+  {
+    screen_write_cursormove(&ctx, (c->tty.sx - rlen) - 1, 0);
+    memcpy(&gc, &stdgc, sizeof(gc));
+    if (rarrow == (-1))
+    {
+      gc.attr ^= 0x10;
+    }
+    screen_write_putc(&ctx, &gc, '>');
+  }
+  else
+    screen_write_cursormove(&ctx, c->tty.sx - rlen, 0);
+  if (rlen != 0)
+  {
+    screen_write_cnputs(&ctx, rlen, &rgc, "%s", right);
+  }
+  if (llen != 0)
+  {
+    wloffset = llen;
+  }
+  else
+    wloffset = 0;
+  if (wlwidth < wlavailable)
+  {
+    switch (options_get_number(s->options, "status-justify"))
+    {
+      case 1:
+      {
+        wloffset += (wlavailable - wlwidth) / 2;
+        break;
+      }
+
+      case 2:
+      {
+        wloffset += wlavailable - wlwidth;
+        break;
+      }
+
+    }
+
+  }
+  if (larrow != 0)
+  {
+    wloffset += 1;
+  }
+  c->wlmouse = (-wloffset) + wlstart;
+  screen_write_cursormove(&ctx, wloffset, 0);
+  screen_write_fast_copy(&ctx, &window_list, wlstart, 0, wlwidth, 1);
+  screen_free(&window_list);
+  screen_write_stop(&ctx);
+  out:
+  free(left);
+
+  free(right);
+  if (grid_compare(c->status.status.grid, old_status.grid) == 0)
+  {
+    screen_free(&old_status);
+    return 0;
+  }
+  screen_free(&old_status);
+  return 1;
+}
+
+static char *status_replace(struct client *c, struct winlink *wl, const char *fmt, time_t t)
+{
+  struct format_tree *ft;
+  unsigned int ft_idx = 0;
+  char *expanded;
+  unsigned int expanded_idx = 0;
+  u_int tag;
+  if (fmt == 0)
+  {
+    return xstrdup("");
+  }
+  if (wl != 0)
+  {
+    tag = 0x40000000U | wl->window->id;
+  }
+  else
+    tag = 0;
+  if (c->flags & 0x80000)
+  {
+    ft_idx = format_create(c, 0, tag, 0x1 | 0x2);
+  }
+  else
+    ft_idx = format_create(c, 0, tag, 0x1);
+  format_defaults(ft, c, 0, wl, 0);
+  expanded_idx = format_expand_time(ft, fmt, t);
+  format_free(ft);
+  return expanded;
+}
+
+static char *status_print(struct client *c, struct winlink *wl, time_t t, struct grid_cell *gc)
+{
+  struct options *oo = wl->window->options;
+  struct session *s = c->session;
+  const char *fmt;
+  unsigned int fmt_idx = 0;
+  char *text;
+  unsigned int text_idx = 0;
+  style_apply_update(gc, oo, "window-status-style");
+  fmt_idx = options_get_string(oo, "window-status-format");
+  if (wl == s->curw)
+  {
+    style_apply_update(gc, oo, "window-status-current-style");
+    fmt_idx = options_get_string(oo, "window-status-current-format");
+  }
+  if (wl == (&s->lastw)->tqh_first)
+  {
+    style_apply_update(gc, oo, "window-status-last-style");
+  }
+  if (wl->flags & 0x1)
+  {
+    style_apply_update(gc, oo, "window-status-bell-style");
+  }
+  else
+    if (wl->flags & (0x2 | 0x4))
+  {
+    style_apply_update(gc, oo, "window-status-activity-style");
+  }
+  text_idx = status_replace(c, wl, fmt, t);
+  return text;
+}
+
+void status_message_clear(struct client *c)
+{
+  if (c->message_string == 0)
+  {
+    return;
+  }
+  free(c->message_string);
+  c->message_string = 0;
+  if (c->prompt_string == 0)
+  {
+    c->tty.flags &= ~(0x1 | 0x2);
+  }
+  c->flags |= 0x8;
+  screen_reinit(&c->status.status);
+}
+
+void status_message_callback(int fd, short event, void *data)
+{
+  struct client *c = data;
+  status_message_clear(c);
+}
+
+int status_message_redraw(struct client *c)
+{
+  struct screen_write_ctx ctx;
+  struct session *s = c->session;
+  struct screen old_status;
+  size_t len;
+  struct grid_cell gc;
+  u_int lines;
+  u_int offset;
+  if ((c->tty.sx == 0) || (c->tty.sy == 0))
+  {
+    return 0;
+  }
+  memcpy(&old_status, &c->status.status, sizeof(old_status));
+  lines = status_line_size(c->session);
+  if (lines <= 1)
+  {
+    lines = 1;
+    screen_init(&c->status.status, c->tty.sx, 1, 0);
+  }
+  else
+    screen_init(&c->status.status, c->tty.sx, lines, 0);
+  len = screen_write_strlen("%s", c->message_string);
+  if (len > c->tty.sx)
+  {
+    len = c->tty.sx;
+  }
+  style_apply(&gc, s->options, "message-style");
+  screen_write_start(&ctx, 0, &c->status.status);
+  screen_write_cursormove(&ctx, 0, 0);
+  for (offset = 0; offset < (lines * c->tty.sx); offset += 1)
+  {
+    screen_write_putc(&ctx, &gc, ' ');
+  }
+
+  screen_write_cursormove(&ctx, 0, lines - 1);
+  screen_write_nputs(&ctx, len, &gc, "%s", c->message_string);
+  screen_write_stop(&ctx);
+  if (grid_compare(c->status.status.grid, old_status.grid) == 0)
+  {
+    screen_free(&old_status);
+    return 0;
+  }
+  screen_free(&old_status);
+  return 1;
+}
+
+void status_prompt_set(struct client *c, const char *msg, const char *input, prompt_input_cb inputcb, prompt_free_cb freecb, void *data, int flags)
+{
+  unsigned int input_idx = 0;
+  struct format_tree *ft;
+  unsigned int ft_idx = 0;
+  time_t t;
+  char *tmp;
+  unsigned int tmp_idx = 0;
+  char *cp;
+  ft_idx = format_create(c, 0, 0, 0);
+  format_defaults(ft, c, 0, 0, 0);
+  t = time(0);
+  if ((&input[input_idx]) == 0)
+  {
+    input_idx = "";
+  }
+  if (flags & 0x8)
+  {
+    tmp_idx = xstrdup(input);
+  }
+  else
+    tmp_idx = format_expand_time(ft, input, t);
+  status_message_clear(c);
+  status_prompt_clear(c);
+  if (c->status.old_status == 0)
+  {
+    c->status.old_status = xmalloc(sizeof(*c->status.old_status));
+    memcpy(c->status.old_status, &c->status.status, sizeof(*c->status.old_status));
+    screen_init(&c->status.status, c->tty.sx, 1, 0);
+  }
+  c->prompt_string = format_expand_time(ft, msg, t);
+  c->prompt_buffer = utf8_fromcstr(tmp);
+  c->prompt_index = utf8_strlen(c->prompt_buffer);
+  c->prompt_inputcb = inputcb;
+  c->prompt_freecb = freecb;
+  c->prompt_data = data;
+  c->prompt_hindex = 0;
+  c->prompt_flags = flags;
+  c->prompt_mode = PROMPT_ENTRY;
+  if ((~flags) & 0x4)
+  {
+    c->tty.flags |= 0x1 | 0x2;
+  }
+  c->flags |= 0x10;
+  if ((flags & 0x4) && (tmp[tmp_idx] != '\0'))
+  {
+    xasprintf(&cp, "=%s", tmp);
+    c->prompt_inputcb(c, c->prompt_data, cp, 0);
+    free(cp);
+  }
+  free(tmp);
+  format_free(ft);
+}
+
+void status_prompt_clear(struct client *c)
+{
+  if (c->prompt_string == 0)
+  {
+    return;
+  }
+  if ((c->prompt_freecb != 0) && (c->prompt_data != 0))
+  {
+    c->prompt_freecb(c->prompt_data);
+  }
+  free(c->prompt_string);
+  c->prompt_string = 0;
+  free(c->prompt_buffer);
+  c->prompt_buffer = 0;
+  c->tty.flags &= ~(0x1 | 0x2);
+  c->flags |= 0x8;
+  screen_reinit(&c->status.status);
+}
+
+void status_prompt_update(struct client *c, const char *msg, const char *input)
+{
+  struct format_tree *ft;
+  unsigned int ft_idx = 0;
+  time_t t;
+  char *tmp;
+  unsigned int tmp_idx = 0;
+  ft_idx = format_create(c, 0, 0, 0);
+  format_defaults(ft, c, 0, 0, 0);
+  t = time(0);
+  tmp_idx = format_expand_time(ft, input, t);
+  free(c->prompt_string);
+  c->prompt_string = format_expand_time(ft, msg, t);
+  free(c->prompt_buffer);
+  c->prompt_buffer = utf8_fromcstr(tmp);
+  c->prompt_index = utf8_strlen(c->prompt_buffer);
+  c->prompt_hindex = 0;
+  c->flags |= 0x10;
+  free(tmp);
+  format_free(ft);
+}
+
+int status_prompt_redraw(struct client *c)
+{
+  struct screen_write_ctx ctx;
+  struct session *s = c->session;
+  struct screen old_status;
+  u_int i;
+  u_int offset;
+  u_int left;
+  u_int start;
+  u_int pcursor;
+  u_int pwidth;
+  u_int width;
+  u_int lines;
+  struct grid_cell gc;
+  struct grid_cell cursorgc;
+  if ((c->tty.sx == 0) || (c->tty.sy == 0))
+  {
+    return 0;
+  }
+  memcpy(&old_status, &c->status.status, sizeof(old_status));
+  lines = status_line_size(c->session);
+  if (lines <= 1)
+  {
+    lines = 1;
+    screen_init(&c->status.status, c->tty.sx, 1, 0);
+  }
+  else
+    screen_init(&c->status.status, c->tty.sx, lines, 0);
+  if (c->prompt_mode == PROMPT_COMMAND)
+  {
+    style_apply(&gc, s->options, "message-command-style");
+  }
+  else
+    style_apply(&gc, s->options, "message-style");
+  memcpy(&cursorgc, &gc, sizeof(cursorgc));
+  cursorgc.attr ^= 0x10;
+  start = screen_write_strlen("%s", c->prompt_string);
+  if (start > c->tty.sx)
+  {
+    start = c->tty.sx;
+  }
+  screen_write_start(&ctx, 0, &c->status.status);
+  screen_write_cursormove(&ctx, 0, 0);
+  for (offset = 0; offset < (lines * c->tty.sx); offset += 1)
+  {
+    screen_write_putc(&ctx, &gc, ' ');
+  }
+
+  screen_write_cursormove(&ctx, 0, 0);
+  screen_write_nputs(&ctx, start, &gc, "%s", c->prompt_string);
+  screen_write_cursormove(&ctx, start, 0);
+  left = c->tty.sx - start;
+  if (left == 0)
+  {
+    goto finished;
+  }
+  pcursor = utf8_strwidth(c->prompt_buffer, c->prompt_index);
+  pwidth = utf8_strwidth(c->prompt_buffer, -1);
+  if (pcursor >= left)
+  {
+    offset = (pcursor - left) + 1;
+    pwidth = left;
+  }
+  else
+    offset = 0;
+  if (pwidth > left)
+  {
+    pwidth = left;
+  }
+  width = 0;
+  for (i = 0; c->prompt_buffer[i].size != 0; i += 1)
+  {
+    helper_status_prompt_redraw_1(&width, c, ctx, i, offset, pwidth, gc, cursorgc);
+  }
+
+  if ((c->status.status.cx < (&c->status.status)->grid->sx) && (c->prompt_index >= i))
+  {
+    screen_write_putc(&ctx, &cursorgc, ' ');
+  }
+  finished:
+  screen_write_stop(&ctx);
+
+  if (grid_compare(c->status.status.grid, old_status.grid) == 0)
+  {
+    screen_free(&old_status);
+    return 0;
+  }
+  screen_free(&old_status);
+  return 1;
+}
+
+static int status_prompt_in_list(const char *ws, const struct utf8_data *ud)
+{
+  if ((ud->size != 1) || (ud->width != 1))
+  {
+    return 0;
+  }
+  return strchr(ws, *ud->data) != 0;
+}
+
+static int status_prompt_space(const struct utf8_data *ud)
+{
+  if ((ud->size != 1) || (ud->width != 1))
+  {
+    return 0;
+  }
+  return (*ud->data) == ' ';
+}
+
+static int status_prompt_translate_key(struct client *c, key_code key, key_code *new_key)
+{
+  if (c->prompt_mode == PROMPT_ENTRY)
+  {
+    switch (key)
+    {
+      case '\003':
+
+      case '\010':
+
+      case '\011':
+
+      case '\025':
+
+      case '\027':
+
+      case '\n':
+
+      case '\r':
+
+      case KEYC_BSPACE:
+
+      case KEYC_DC:
+
+      case KEYC_DOWN:
+
+      case KEYC_END:
+
+      case KEYC_HOME:
+
+      case KEYC_LEFT:
+
+      case KEYC_RIGHT:
+
+      case KEYC_UP:
+      {
+        *new_key = key;
+        return 1;
+      }
+
+      case '\033':
+      {
+        c->prompt_mode = PROMPT_COMMAND;
+        c->flags |= 0x10;
+        return 0;
+      }
+
+    }
+
+    *new_key = key;
+    return 2;
+  }
+  switch (key)
+  {
+    case 'A':
+
+    case 'I':
+
+    case 'C':
+
+    case 's':
+
+    case 'a':
+    {
+      c->prompt_mode = PROMPT_ENTRY;
+      c->flags |= 0x10;
+      break;
+    }
+
+    case 'S':
+    {
+      c->prompt_mode = PROMPT_ENTRY;
+      c->flags |= 0x10;
+      *new_key = '\025';
+      return 1;
+    }
+
+    case 'i':
+
+    case '\033':
+    {
+      c->prompt_mode = PROMPT_ENTRY;
+      c->flags |= 0x10;
+      return 0;
+    }
+
+  }
+
+  switch (key)
+  {
+    case 'A':
+
+    case '$':
+    {
+      *new_key = KEYC_END;
+      return 1;
+    }
+
+    case 'I':
+
+    case '0':
+
+    case '^':
+    {
+      *new_key = KEYC_HOME;
+      return 1;
+    }
+
+    case 'C':
+
+    case 'D':
+    {
+      *new_key = '\013';
+      return 1;
+    }
+
+    case KEYC_BSPACE:
+
+    case 'X':
+    {
+      *new_key = KEYC_BSPACE;
+      return 1;
+    }
+
+    case 'b':
+
+    case 'B':
+    {
+      *new_key = 'b' | 0x200000000000ULL;
+      return 1;
+    }
+
+    case 'd':
+    {
+      *new_key = '\025';
+      return 1;
+    }
+
+    case 'e':
+
+    case 'E':
+
+    case 'w':
+
+    case 'W':
+    {
+      *new_key = 'f' | 0x200000000000ULL;
+      return 1;
+    }
+
+    case 'p':
+    {
+      *new_key = '\031';
+      return 1;
+    }
+
+    case 's':
+
+    case KEYC_DC:
+
+    case 'x':
+    {
+      *new_key = KEYC_DC;
+      return 1;
+    }
+
+    case KEYC_DOWN:
+
+    case 'j':
+    {
+      *new_key = KEYC_DOWN;
+      return 1;
+    }
+
+    case KEYC_LEFT:
+
+    case 'h':
+    {
+      *new_key = KEYC_LEFT;
+      return 1;
+    }
+
+    case 'a':
+
+    case KEYC_RIGHT:
+
+    case 'l':
+    {
+      *new_key = KEYC_RIGHT;
+      return 1;
+    }
+
+    case KEYC_UP:
+
+    case 'k':
+    {
+      *new_key = KEYC_UP;
+      return 1;
+    }
+
+    case '\010':
+
+    case '\003':
+
+    case '\n':
+
+    case '\r':
+    {
+      return 1;
+    }
+
+  }
+
+  return 0;
+}
+
+int status_prompt_key(struct client *c, key_code key)
+{
+  struct options *oo = c->session->options;
+  struct paste_buffer *pb;
+  unsigned int pb_idx = 0;
+  char *s;
+  unsigned int s_idx = 0;
+  char *cp;
+  char word[64];
+  char prefix = '=';
+  const char *histstr;
+  unsigned int histstr_idx = 0;
+  const char *bufdata;
+  unsigned int bufdata_idx = 0;
+  const char *ws = 0;
+  unsigned int ws_idx = 0;
+  u_char ch;
+  size_t size;
+  size_t n;
+  size_t off;
+  size_t idx;
+  size_t bufsize;
+  size_t used;
+  struct utf8_data tmp;
+  struct utf8_data *first;
+  unsigned int first_idx = 0;
+  struct utf8_data *last;
+  unsigned int last_idx = 0;
+  struct utf8_data *ud;
+  unsigned int ud_idx = 0;
+  int keys;
+  size = utf8_strlen(c->prompt_buffer);
+  if (c->prompt_flags & 0x2)
+  {
+    if ((key >= '0') && (key <= '9'))
+    {
+      goto append_key;
+    }
+    s_idx = utf8_tocstr(c->prompt_buffer);
+    c->prompt_inputcb(c, c->prompt_data, s, 1);
+    status_prompt_clear(c);
+    free(s);
+    return 1;
+  }
+  keys = options_get_number(c->session->options, "status-keys");
+  if (keys == 1)
+  {
+    switch (status_prompt_translate_key(c, key, &key))
+    {
+      case 1:
+      {
+        goto process_key;
+      }
+
+      case 2:
+      {
+        goto append_key;
+      }
+
+      default:
+      {
+        return 0;
+      }
+
+    }
+
+  }
+  process_key:
+  switch (key)
+  {
+    case KEYC_LEFT:
+
+    case '\002':
+    {
+      if (c->prompt_index > 0)
+      {
+        c->prompt_index -= 1;
+        break;
+      }
+      break;
+    }
+
+    case KEYC_RIGHT:
+
+    case '\006':
+    {
+      if (c->prompt_index < size)
+      {
+        c->prompt_index += 1;
+        break;
+      }
+      break;
+    }
+
+    case KEYC_HOME:
+
+    case '\001':
+    {
+      if (c->prompt_index != 0)
+      {
+        c->prompt_index = 0;
+        break;
+      }
+      break;
+    }
+
+    case KEYC_END:
+
+    case '\005':
+    {
+      if (c->prompt_index != size)
+      {
+        c->prompt_index = size;
+        break;
+      }
+      break;
+    }
+
+    case '\011':
+    {
+      helper_status_prompt_key_5(&s_idx, &size, &n, &off, &idx, &used, &first_idx, &last_idx, &ud_idx, c, s, word, first, last, ud);
+    }
+
+    case KEYC_BSPACE:
+
+    case '\010':
+    {
+      if (c->prompt_index != 0)
+      {
+        if (c->prompt_index == size)
+        {
+          c->prompt_buffer[--c->prompt_index].size = 0;
+        }
+        else
+        {
+          memmove((c->prompt_buffer + c->prompt_index) - 1, c->prompt_buffer + c->prompt_index, ((size + 1) - c->prompt_index) * (sizeof(*c->prompt_buffer)));
+          c->prompt_index -= 1;
+        }
+        goto changed;
+      }
+      break;
+    }
+
+    case KEYC_DC:
+
+    case '\004':
+    {
+      if (c->prompt_index != size)
+      {
+        memmove(c->prompt_buffer + c->prompt_index, (c->prompt_buffer + c->prompt_index) + 1, ((size + 1) - c->prompt_index) * (sizeof(*c->prompt_buffer)));
+        goto changed;
+      }
+      break;
+    }
+
+    case '\025':
+    {
+      c->prompt_buffer[0].size = 0;
+      c->prompt_index = 0;
+      goto changed;
+    }
+
+    case '\013':
+    {
+      if (c->prompt_index < size)
+      {
+        c->prompt_buffer[c->prompt_index].size = 0;
+        goto changed;
+      }
+      break;
+    }
+
+    case '\027':
+    {
+      helper_status_prompt_key_3(&ws_idx, &idx, c, oo, ws, size);
+    }
+
+    case 'f' | 0x200000000000ULL:
+    {
+      helper_status_prompt_key_2(&ws_idx, &idx, c, oo, ws, size);
+    }
+
+    case 'b' | 0x200000000000ULL:
+    {
+      helper_status_prompt_key_1(&ws_idx, &idx, c, oo, ws);
+    }
+
+    case KEYC_UP:
+
+    case '\020':
+    {
+      histstr_idx = status_prompt_up_history(&c->prompt_hindex);
+      if ((&histstr[histstr_idx]) == 0)
+      {
+        break;
+      }
+      free(c->prompt_buffer);
+      c->prompt_buffer = utf8_fromcstr(histstr);
+      c->prompt_index = utf8_strlen(c->prompt_buffer);
+      goto changed;
+    }
+
+    case KEYC_DOWN:
+
+    case '\016':
+    {
+      histstr_idx = status_prompt_down_history(&c->prompt_hindex);
+      if ((&histstr[histstr_idx]) == 0)
+      {
+        break;
+      }
+      free(c->prompt_buffer);
+      c->prompt_buffer = utf8_fromcstr(histstr);
+      c->prompt_index = utf8_strlen(c->prompt_buffer);
+      goto changed;
+    }
+
+    case '\031':
+    {
+      helper_status_prompt_key_4(&pb_idx, &bufdata_idx, &ch, &size, &n, &idx, &ud_idx, c, pb, bufdata, bufsize, ud);
+    }
+
+    case '\024':
+    {
+      idx = c->prompt_index;
+      if (idx < size)
+      {
+        idx += 1;
+      }
+      if (idx >= 2)
+      {
+        utf8_copy(&tmp, &c->prompt_buffer[idx - 2]);
+        utf8_copy(&c->prompt_buffer[idx - 2], &c->prompt_buffer[idx - 1]);
+        utf8_copy(&c->prompt_buffer[idx - 1], &tmp);
+        c->prompt_index = idx;
+        goto changed;
+      }
+      break;
+    }
+
+    case '\r':
+
+    case '\n':
+    {
+      s_idx = utf8_tocstr(c->prompt_buffer);
+      if (s[s_idx] != '\0')
+      {
+        status_prompt_add_history(s);
+      }
+      if (c->prompt_inputcb(c, c->prompt_data, s, 1) == 0)
+      {
+        status_prompt_clear(c);
+      }
+      free(s);
+      break;
+    }
+
+    case '\033':
+
+    case '\003':
+
+    case '\007':
+    {
+      if (c->prompt_inputcb(c, c->prompt_data, 0, 1) == 0)
+      {
+        status_prompt_clear(c);
+      }
+      break;
+    }
+
+    case '\022':
+    {
+      if (c->prompt_flags & 0x4)
+      {
+        prefix = '-';
+        goto changed;
+      }
+      break;
+    }
+
+    case '\023':
+    {
+      if (c->prompt_flags & 0x4)
+      {
+        prefix = '+';
+        goto changed;
+      }
+      break;
+    }
+
+    default:
+    {
+      goto append_key;
+    }
+
+  }
+
+
+  c->flags |= 0x10;
+  return 0;
+  append_key:
+  if ((key <= 0x1f) || (key >= 0x000010000000ULL))
+  {
+    return 0;
+  }
+
+  if (utf8_split(key, &tmp) != UTF8_DONE)
+  {
+    return 0;
+  }
+  c->prompt_buffer = xreallocarray(c->prompt_buffer, size + 2, sizeof(*c->prompt_buffer));
+  if (c->prompt_index == size)
+  {
+    utf8_copy(&c->prompt_buffer[c->prompt_index], &tmp);
+    c->prompt_index += 1;
+    c->prompt_buffer[c->prompt_index].size = 0;
+  }
+  else
+  {
+    memmove((c->prompt_buffer + c->prompt_index) + 1, c->prompt_buffer + c->prompt_index, ((size + 1) - c->prompt_index) * (sizeof(*c->prompt_buffer)));
+    utf8_copy(&c->prompt_buffer[c->prompt_index], &tmp);
+    c->prompt_index += 1;
+  }
+  if (c->prompt_flags & 0x1)
+  {
+    s_idx = utf8_tocstr(c->prompt_buffer);
+    if (strlen(s) != 1)
+    {
+      status_prompt_clear(c);
+    }
+    else
+      if (c->prompt_inputcb(c, c->prompt_data, s, 1) == 0)
+    {
+      status_prompt_clear(c);
+    }
+    free(s);
+  }
+  changed:
+  c->flags |= 0x10;
+
+  if (c->prompt_flags & 0x4)
+  {
+    s_idx = utf8_tocstr(c->prompt_buffer);
+    xasprintf(&cp, "%c%s", prefix, s);
+    c->prompt_inputcb(c, c->prompt_data, cp, 0);
+    free(cp);
+    free(s);
+  }
+  return 0;
+}
+
+static const char *status_prompt_up_history(u_int *idx)
+{
+  if ((status_prompt_hsize == 0) || ((*idx) == status_prompt_hsize))
+  {
+    return 0;
+  }
+  *idx += 1;
+  return status_prompt_hlist[status_prompt_hsize - (*idx)];
+}
+
+static const char *status_prompt_down_history(u_int *idx)
+{
+  if ((status_prompt_hsize == 0) || ((*idx) == 0))
+  {
+    return "";
+  }
+  *idx -= 1;
+  if ((*idx) == 0)
+  {
+    return "";
+  }
+  return status_prompt_hlist[status_prompt_hsize - (*idx)];
+}
+
+static void status_prompt_add_history(const char *line)
+{
+  size_t size;
+  if ((status_prompt_hsize > 0) && (strcmp(status_prompt_hlist[status_prompt_hsize - 1], line) == 0))
+  {
+    return;
+  }
+  if (status_prompt_hsize == 100)
+  {
+    free(status_prompt_hlist[0]);
+    size = (100 - 1) * (sizeof(*status_prompt_hlist));
+    memmove(&status_prompt_hlist[0], &status_prompt_hlist[1], size);
+    status_prompt_hlist[status_prompt_hsize - 1] = xstrdup(line);
+    return;
+  }
+  status_prompt_hlist = xreallocarray(status_prompt_hlist, status_prompt_hsize + 1, sizeof(*status_prompt_hlist));
+  status_prompt_hlist[status_prompt_hsize] = xstrdup(line);
+  status_prompt_hsize += 1;
+}
+
+static const char **status_prompt_complete_list(u_int *size, const char *s)
+{
+  const char **list = 0;
+  unsigned int list_idx = 0;
+  const char **layout;
+  unsigned int layout_idx = 0;
+  const struct cmd_entry **cmdent;
+  unsigned int cmdent_idx = 0;
+  const struct options_table_entry *oe;
+  unsigned int oe_idx = 0;
+  const char *layouts[] = {"even-horizontal", "even-vertical", "main-horizontal", "main-vertical", "tiled", 0};
+  *size = 0;
+  for (cmdent_idx = cmd_table; cmdent[cmdent_idx] != 0; cmdent_idx += 1)
+  {
+    if (strncmp(cmdent[cmdent_idx]->name, s, strlen(s)) == 0)
+    {
+      list_idx = xreallocarray(list_idx, (*size) + 1, sizeof(*list_idx));
+      list[((*size)++) + list_idx] = cmdent[cmdent_idx]->name;
+    }
+  }
+
+  for (oe_idx = options_table; oe->name != 0; oe_idx += 1)
+  {
+    if (strncmp(oe->name, s, strlen(s)) == 0)
+    {
+      list_idx = xreallocarray(list_idx, (*size) + 1, sizeof(*list_idx));
+      list[((*size)++) + list_idx] = oe->name;
+    }
+  }
+
+  for (layout_idx = layouts; layout[layout_idx] != 0; layout_idx += 1)
+  {
+    if (strncmp(*(&layout[layout_idx]), s, strlen(s)) == 0)
+    {
+      list_idx = xreallocarray(list_idx, (*size) + 1, sizeof(*list_idx));
+      list[((*size)++) + list_idx] = layout[layout_idx];
+    }
+  }
+
+  return list;
+}
+
+static char *status_prompt_complete_prefix(const char **list, u_int size)
+{
+  char *out;
+  unsigned int out_idx = 0;
+  u_int i;
+  size_t j;
+  out_idx = xstrdup(list[0]);
+  for (i = 1; i < size; i += 1)
+  {
+    j = strlen(list[i]);
+    if (j > strlen(out))
+    {
+      j = strlen(out);
+    }
+    for (; j > 0; j -= 1)
+    {
+      if (out[(j - 1) + out_idx] != list[i][j - 1])
+      {
+        out[(j - 1) + out_idx] = '\0';
+      }
+    }
+
+  }
+
+  return out;
+}
+
+static char *status_prompt_complete(struct session *session, const char *s)
+{
+  unsigned int s_idx = 0;
+  const char **list = 0;
+  unsigned int list_idx = 0;
+  const char *colon;
+  unsigned int colon_idx = 0;
+  u_int size = 0;
+  u_int i;
+  struct session *s_loop;
+  unsigned int s_loop_idx = 0;
+  struct winlink *wl;
+  unsigned int wl_idx = 0;
+  struct window *w;
+  unsigned int w_idx = 0;
+  char *copy;
+  unsigned int copy_idx = 0;
+  char *out;
+  unsigned int out_idx = 0;
+  char *tmp;
+  if (s[s_idx] == '\0')
+  {
+    return 0;
+  }
+  out_idx = 0;
+  if ((strncmp(s, "-t", 2) != 0) && (strncmp(s, "-s", 2) != 0))
+  {
+    list_idx = status_prompt_complete_list(&size, s);
+    if (size == 0)
+    {
+      out_idx = 0;
+    }
+    else
+      if (size == 1)
+    {
+      xasprintf(&(&out[out_idx]), "%s ", list[0 + list_idx]);
+    }
+    else
+      out_idx = status_prompt_complete_prefix(list, size);
+    free(list);
+    return out;
+  }
+  copy_idx = xstrdup(s);
+  colon_idx = ":";
+  if (copy[(strlen(copy) - 1) + copy_idx] == ':')
+  {
+    copy[(strlen(copy) - 1) + copy_idx] = '\0';
+  }
+  else
+    colon_idx = "";
+  s_idx = (&copy[copy_idx]) + 2;
+  for (s_loop_idx = sessions_RB_MINMAX(&sessions, -1); (&s_loop[s_loop_idx]) != 0; s_loop_idx = sessions_RB_NEXT(s_loop_idx))
+  {
+    if (strncmp(s_loop->name, s, strlen(s)) == 0)
+    {
+      list_idx = xreallocarray(list_idx, size + 2, sizeof(*list_idx));
+      list[size + list_idx] = s_loop->name;
+      size += 1;
+    }
+  }
+
+  if (size == 1)
+  {
+    out_idx = xstrdup(list[0 + list_idx]);
+    if (session_find(list[0 + list_idx]) != 0)
+    {
+      colon_idx = ":";
+    }
+  }
+  else
+    if (size != 0)
+  {
+    out_idx = status_prompt_complete_prefix(list, size);
+  }
+  if ((&out[out_idx]) != 0)
+  {
+    xasprintf(&tmp, "-%c%s%s", copy[1 + copy_idx], out, colon);
+    free(out);
+    out_idx = tmp;
+    goto found;
+  }
+  colon_idx = "";
+  if (s[s_idx] == ':')
+  {
+    helper_status_prompt_complete_1(&list_idx, &size, &wl_idx, session, s, list, wl, tmp);
+  }
+  else
+  {
+    helper_status_prompt_complete_2(&list_idx, &size, &s_loop_idx, &wl_idx, &w_idx, s, list, s_loop, wl, w, tmp);
+  }
+  if (size == 1)
+  {
+    out_idx = xstrdup(list[0 + list_idx]);
+    colon_idx = " ";
+  }
+  else
+    if (size != 0)
+  {
+    out_idx = status_prompt_complete_prefix(list, size);
+  }
+  if ((&out[out_idx]) != 0)
+  {
+    xasprintf(&tmp, "-%c%s%s", copy[1 + copy_idx], out, colon);
+    out_idx = tmp;
+  }
+  for (i = 0; i < size; i += 1)
+  {
+    free((void *) list[i + list_idx]);
+  }
+
+  found:
+  free(copy);
+
+  free(list);
+  return out;
+}
+
+void helper_status_prompt_load_history_1(unsigned int * const line_idx_ref, unsigned int * const tmp_idx_ref, size_t * const length_ref, FILE * const f, char * const line, char * const tmp)
+{
+  unsigned int line_idx = *line_idx_ref;
+  unsigned int tmp_idx = *tmp_idx_ref;
+  size_t length = *length_ref;
+  if ((line_idx = fgetln(f, &length)) == 0)
+  {
+    break;
+  }
+  if (length > 0)
+  {
+    if (line[(length - 1) + line_idx] == '\n')
+    {
+      line[(length - 1) + line_idx] = '\0';
+      status_prompt_add_history(line);
+    }
+    else
+    {
+      tmp_idx = xmalloc(length + 1);
+      memcpy(tmp, line, length);
+      tmp[length + tmp_idx] = '\0';
+      status_prompt_add_history(tmp);
+      free(tmp);
+    }
+  }
+  *line_idx_ref = line_idx;
+  *tmp_idx_ref = tmp_idx;
+  *length_ref = length;
+}
+
+void helper_status_prompt_redraw_1(u_int * const width_ref, struct client * const c, struct screen_write_ctx ctx, u_int i, u_int offset, u_int pwidth, struct grid_cell gc, struct grid_cell cursorgc)
+{
+  u_int width = *width_ref;
+  if (width < offset)
+  {
+    width += c->prompt_buffer[i].width;
+    continue;
+  }
+  if (width >= (offset + pwidth))
+  {
+    break;
+  }
+  width += c->prompt_buffer[i].width;
+  if (width > (offset + pwidth))
+  {
+    break;
+  }
+  if (i != c->prompt_index)
+  {
+    utf8_copy(&gc.data, &c->prompt_buffer[i]);
+    screen_write_cell(&ctx, &gc);
+  }
+  else
+  {
+    utf8_copy(&cursorgc.data, &c->prompt_buffer[i]);
+    screen_write_cell(&ctx, &cursorgc);
+  }
+  *width_ref = width;
+}
+
+void helper_status_prompt_key_1(unsigned int * const ws_idx_ref, size_t * const idx_ref, struct client * const c, struct options * const oo, const char * const ws)
+{
+  unsigned int ws_idx = *ws_idx_ref;
+  size_t idx = *idx_ref;
+  ws_idx = options_get_string(oo, "word-separators");
+  while (c->prompt_index != 0)
+  {
+    idx = --c->prompt_index;
+    if (!status_prompt_in_list(ws, &c->prompt_buffer[idx]))
+    {
+      break;
+    }
+  }
+
+  while (c->prompt_index != 0)
+  {
+    idx = --c->prompt_index;
+    if (status_prompt_in_list(ws, &c->prompt_buffer[idx]))
+    {
+      c->prompt_index += 1;
+      break;
+    }
+  }
+
+  goto changed;
+  *ws_idx_ref = ws_idx;
+  *idx_ref = idx;
+}
+
+void helper_status_prompt_key_2(unsigned int * const ws_idx_ref, size_t * const idx_ref, struct client * const c, struct options * const oo, const char * const ws, size_t size)
+{
+  unsigned int ws_idx = *ws_idx_ref;
+  size_t idx = *idx_ref;
+  ws_idx = options_get_string(oo, "word-separators");
+  while (c->prompt_index != size)
+  {
+    idx = ++c->prompt_index;
+    if (!status_prompt_in_list(ws, &c->prompt_buffer[idx]))
+    {
+      break;
+    }
+  }
+
+  while (c->prompt_index != size)
+  {
+    idx = ++c->prompt_index;
+    if (status_prompt_in_list(ws, &c->prompt_buffer[idx]))
+    {
+      break;
+    }
+  }
+
+  if ((options_get_number(oo, "status-keys") == 1) && (c->prompt_index != 0))
+  {
+    c->prompt_index -= 1;
+  }
+  goto changed;
+  *ws_idx_ref = ws_idx;
+  *idx_ref = idx;
+}
+
+void helper_status_prompt_key_3(unsigned int * const ws_idx_ref, size_t * const idx_ref, struct client * const c, struct options * const oo, const char * const ws, size_t size)
+{
+  unsigned int ws_idx = *ws_idx_ref;
+  size_t idx = *idx_ref;
+  ws_idx = options_get_string(oo, "word-separators");
+  idx = c->prompt_index;
+  while (idx != 0)
+  {
+    idx -= 1;
+    if (!status_prompt_in_list(ws, &c->prompt_buffer[idx]))
+    {
+      break;
+    }
+  }
+
+  while (idx != 0)
+  {
+    idx -= 1;
+    if (status_prompt_in_list(ws, &c->prompt_buffer[idx]))
+    {
+      idx += 1;
+      break;
+    }
+  }
+
+  memmove(c->prompt_buffer + idx, c->prompt_buffer + c->prompt_index, ((size + 1) - c->prompt_index) * (sizeof(*c->prompt_buffer)));
+  memset((c->prompt_buffer + size) - (c->prompt_index - idx), '\0', (c->prompt_index - idx) * (sizeof(*c->prompt_buffer)));
+  c->prompt_index = idx;
+  goto changed;
+  *ws_idx_ref = ws_idx;
+  *idx_ref = idx;
+}
+
+void helper_status_prompt_key_4(unsigned int * const pb_idx_ref, unsigned int * const bufdata_idx_ref, u_char * const ch_ref, size_t * const size_ref, size_t * const n_ref, size_t * const idx_ref, unsigned int * const ud_idx_ref, struct client * const c, struct paste_buffer * const pb, const char * const bufdata, size_t bufsize, struct utf8_data * const ud)
+{
+  unsigned int pb_idx = *pb_idx_ref;
+  unsigned int bufdata_idx = *bufdata_idx_ref;
+  u_char ch = *ch_ref;
+  size_t size = *size_ref;
+  size_t n = *n_ref;
+  size_t idx = *idx_ref;
+  unsigned int ud_idx = *ud_idx_ref;
+  if ((pb_idx = paste_get_top(0)) == 0)
+  {
+    break;
+  }
+  bufdata_idx = paste_buffer_data(pb, &bufsize);
+  for (n = 0; n < bufsize; n += 1)
+  {
+    ch = (u_char) bufdata[n + bufdata_idx];
+    if ((ch < 32) || (ch >= 127))
+    {
+      break;
+    }
+  }
+
+  c->prompt_buffer = xreallocarray(c->prompt_buffer, (size + n) + 1, sizeof(*c->prompt_buffer));
+  if (c->prompt_index == size)
+  {
+    for (idx = 0; idx < n; idx += 1)
+    {
+      ud_idx = &c->prompt_buffer[c->prompt_index + idx];
+      utf8_set(ud, bufdata[idx + bufdata_idx]);
+    }
+
+    c->prompt_index += n;
+    c->prompt_buffer[c->prompt_index].size = 0;
+  }
+  else
+  {
+    memmove((c->prompt_buffer + c->prompt_index) + n, c->prompt_buffer + c->prompt_index, ((size + 1) - c->prompt_index) * (sizeof(*c->prompt_buffer)));
+    for (idx = 0; idx < n; idx += 1)
+    {
+      ud_idx = &c->prompt_buffer[c->prompt_index + idx];
+      utf8_set(ud, bufdata[idx + bufdata_idx]);
+    }
+
+    c->prompt_index += n;
+  }
+  goto changed;
+  *pb_idx_ref = pb_idx;
+  *bufdata_idx_ref = bufdata_idx;
+  *ch_ref = ch;
+  *size_ref = size;
+  *n_ref = n;
+  *idx_ref = idx;
+  *ud_idx_ref = ud_idx;
+}
+
+void helper_status_prompt_key_5(unsigned int * const s_idx_ref, size_t * const size_ref, size_t * const n_ref, size_t * const off_ref, size_t * const idx_ref, size_t * const used_ref, unsigned int * const first_idx_ref, unsigned int * const last_idx_ref, unsigned int * const ud_idx_ref, struct client * const c, char * const s, char word[64], struct utf8_data * const first, struct utf8_data * const last, struct utf8_data * const ud)
+{
+  unsigned int s_idx = *s_idx_ref;
+  size_t size = *size_ref;
+  size_t n = *n_ref;
+  size_t off = *off_ref;
+  size_t idx = *idx_ref;
+  size_t used = *used_ref;
+  unsigned int first_idx = *first_idx_ref;
+  unsigned int last_idx = *last_idx_ref;
+  unsigned int ud_idx = *ud_idx_ref;
+  if (c->prompt_buffer[0].size == 0)
+  {
+    break;
+  }
+  idx = c->prompt_index;
+  if (idx != 0)
+  {
+    idx -= 1;
+  }
+  first_idx = &c->prompt_buffer[idx];
+  while (((&first[first_idx]) > c->prompt_buffer) && (!status_prompt_space(first)))
+  {
+    first_idx -= 1;
+  }
+
+  while ((first->size != 0) && status_prompt_space(first))
+  {
+    first_idx += 1;
+  }
+
+  last_idx = &c->prompt_buffer[idx];
+  while ((last->size != 0) && (!status_prompt_space(last)))
+  {
+    last_idx += 1;
+  }
+
+  while (((&last[last_idx]) > c->prompt_buffer) && status_prompt_space(last))
+  {
+    last_idx -= 1;
+  }
+
+  if (last->size != 0)
+  {
+    last_idx += 1;
+  }
+  if ((&last[last_idx]) <= (&first[first_idx]))
+  {
+    break;
+  }
+  used = 0;
+  for (ud_idx = &first[first_idx]; (&ud[ud_idx]) < (&last[last_idx]); ud_idx += 1)
+  {
+    if ((used + ud->size) >= (sizeof(word)))
+    {
+      break;
+    }
+    memcpy(word + used, ud->data, ud->size);
+    used += ud->size;
+  }
+
+  if ((&ud[ud_idx]) != (&last[last_idx]))
+  {
+    break;
+  }
+  word[used] = '\0';
+  if ((s_idx = status_prompt_complete(c->session, word)) == 0)
+  {
+    break;
+  }
+  n = (size - ((&last[last_idx]) - c->prompt_buffer)) + 1;
+  memmove(first, last, n * (sizeof(*c->prompt_buffer)));
+  size -= (&last[last_idx]) - (&first[first_idx]);
+  size += strlen(s);
+  off = (&first[first_idx]) - c->prompt_buffer;
+  c->prompt_buffer = xreallocarray(c->prompt_buffer, size + 1, sizeof(*c->prompt_buffer));
+  first_idx = c->prompt_buffer + off;
+  memmove((&first[first_idx]) + strlen(s), first, n * (sizeof(*c->prompt_buffer)));
+  for (idx = 0; idx < strlen(s); idx += 1)
+  {
+    utf8_set(&first[idx + first_idx], s[idx + s_idx]);
+  }
+
+  c->prompt_index = ((&first[first_idx]) - c->prompt_buffer) + strlen(s);
+  free(s);
+  goto changed;
+  *s_idx_ref = s_idx;
+  *size_ref = size;
+  *n_ref = n;
+  *off_ref = off;
+  *idx_ref = idx;
+  *used_ref = used;
+  *first_idx_ref = first_idx;
+  *last_idx_ref = last_idx;
+  *ud_idx_ref = ud_idx;
+}
+
+void helper_status_prompt_complete_1(unsigned int * const list_idx_ref, u_int * const size_ref, unsigned int * const wl_idx_ref, struct session * const session, const char * const s, const char ** const list, struct winlink * const wl, char * const tmp)
+{
+  unsigned int list_idx = *list_idx_ref;
+  u_int size = *size_ref;
+  unsigned int wl_idx = *wl_idx_ref;
+  for (wl_idx = winlinks_RB_MINMAX(&session->windows, -1); (&wl[wl_idx]) != 0; wl_idx = winlinks_RB_NEXT(wl_idx))
+  {
+    xasprintf(&tmp, ":%s", wl->window->name);
+    if (strncmp(tmp, s, strlen(s)) == 0)
+    {
+      list_idx = xreallocarray(list_idx, size + 1, sizeof(*list_idx));
+      list[size + list_idx] = tmp;
+      size += 1;
+      continue;
+    }
+    free(tmp);
+    xasprintf(&tmp, ":%d", wl->idx);
+    if (strncmp(tmp, s, strlen(s)) == 0)
+    {
+      list_idx = xreallocarray(list_idx, size + 1, sizeof(*list_idx));
+      list[size + list_idx] = tmp;
+      size += 1;
+      continue;
+    }
+    free(tmp);
+  }
+
+  *list_idx_ref = list_idx;
+  *size_ref = size;
+  *wl_idx_ref = wl_idx;
+}
+
+void helper_status_prompt_complete_2(unsigned int * const list_idx_ref, u_int * const size_ref, unsigned int * const s_loop_idx_ref, unsigned int * const wl_idx_ref, unsigned int * const w_idx_ref, const char * const s, const char ** const list, struct session * const s_loop, struct winlink * const wl, struct window * const w, char * const tmp)
+{
+  unsigned int list_idx = *list_idx_ref;
+  u_int size = *size_ref;
+  unsigned int s_loop_idx = *s_loop_idx_ref;
+  unsigned int wl_idx = *wl_idx_ref;
+  unsigned int w_idx = *w_idx_ref;
+  for (s_loop_idx = sessions_RB_MINMAX(&sessions, -1); (&s_loop[s_loop_idx]) != 0; s_loop_idx = sessions_RB_NEXT(s_loop_idx))
+  {
+    for (wl_idx = winlinks_RB_MINMAX(&s_loop->windows, -1); (&wl[wl_idx]) != 0; wl_idx = winlinks_RB_NEXT(wl_idx))
+    {
+      w_idx = wl->window;
+      xasprintf(&tmp, "%s:%s", s_loop->name, w->name);
+      if (strncmp(tmp, s, strlen(s)) == 0)
+      {
+        list_idx = xreallocarray(list_idx, size + 1, sizeof(*list_idx));
+        list[size + list_idx] = tmp;
+        size += 1;
+        continue;
+      }
+      free(tmp);
+      xasprintf(&tmp, "%s:%d", s_loop->name, wl->idx);
+      if (strncmp(tmp, s, strlen(s)) == 0)
+      {
+        list_idx = xreallocarray(list_idx, size + 1, sizeof(*list_idx));
+        list[size + list_idx] = tmp;
+        size += 1;
+        continue;
+      }
+      free(tmp);
+    }
+
+  }
+
+  *list_idx_ref = list_idx;
+  *size_ref = size;
+  *s_loop_idx_ref = s_loop_idx;
+  *wl_idx_ref = wl_idx;
+  *w_idx_ref = w_idx;
+}
+

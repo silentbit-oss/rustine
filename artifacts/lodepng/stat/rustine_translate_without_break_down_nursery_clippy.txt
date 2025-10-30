@@ -1,0 +1,53 @@
+     = warning: some moved values might need to be renamed to avoid wrong references
+     = warning: some moved values might need to be renamed to avoid wrong references
+warning: `fn` that only maps over argument
+warning: `if _ { .. } else { .. }` is an expression
+warning: `if _ { .. } else { .. }` is an expression
+warning: `if _ { .. } else { .. }` is an expression
+warning: `if _ { .. } else { .. }` is an expression
+warning: `if _ { .. } else { .. }` is an expression
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the start
+warning: all if blocks contain the same code at the start
+warning: casting the result of `as_ptr` to *mut std::ffi::c_void
+warning: casting the result of `as_ptr` to *mut std::ffi::c_void
+warning: casting the result of `as_ptr` to *mut std::ffi::c_void
+warning: casting the result of `as_ptr` to *mut std::ffi::c_void
+warning: casting the result of `as_ptr` to *mut std::ffi::c_void
+warning: casting the result of `as_ptr` to *mut std::ffi::c_void
+warning: casting the result of `as_ptr` to *mut std::ffi::c_void
+warning: the function has a cognitive complexity of (27/25)
+warning: the function has a cognitive complexity of (29/25)
+warning: the function has a cognitive complexity of (38/25)
+warning: the function has a cognitive complexity of (39/25)
+warning: the function has a cognitive complexity of (43/25)
+warning: the function has a cognitive complexity of (48/25)
+warning: the function has a cognitive complexity of (59/25)
+warning: the function has a cognitive complexity of (60/25)
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: unnecessary structure name repetition
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else

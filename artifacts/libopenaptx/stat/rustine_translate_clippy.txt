@@ -1,0 +1,58 @@
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: type `Aptx_Filter_Signal` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: type `Aptx_Quantize` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: type `Aptx_Invert_Quantize` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: type `Aptx_Prediction` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: type `Aptx_Tables` should have an upper camel case name
+warning: type `Aptx_QMF_Analysis` should have an upper camel case name
+warning: type `Aptx_Channel` should have an upper camel case name
+warning: type `Aptx_Context` should have an upper camel case name
+warning: variable does not need to be mutable
+warning: value assigned to `input_size_step` is never read
+warning: value assigned to `processed_step` is never read
+warning: value assigned to `processed_step` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `hd`
+warning: returning the result of a `let` binding from a block
+warning: this operation has no effect
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: the loop variable `i` is used to index `MAP`
+warning: this operation has no effect
+warning: this operation has no effect
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: this operation has no effect
+warning: this operation has no effect
+warning: the loop variable `subband` is used to index `subband_samples`
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: the loop variable `channel` is used to index `samples`
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: the loop variable `channel` is only used to index `samples`
+warning: this operation has no effect
+warning: the loop variable `subband` is used to index `subband_samples`
+warning: this operation has no effect
+warning: the loop variable `channel` is used to index `samples`
+warning: the loop variable `channel` is only used to index `samples`
+warning: this function has too many arguments (11/7)
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: this function has too many arguments (12/7)
+warning: using `clone` on type `[u8; 6]` which implements the `Copy` trait
+warning: manually reimplementing `div_ceil`
+warning: module `aptx__q_m_f_analysis` should have a snake case name

@@ -1,0 +1,915 @@
+{
+  "C": {
+    "blanks": 1144,
+    "children": {},
+    "code": 7047,
+    "comments": 1005,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/heman/test/test_earth.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 48,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/heman/test/test_heman.c",
+        "stats": {
+          "blanks": 56,
+          "blobs": {},
+          "code": 336,
+          "comments": 10
+        }
+      },
+      {
+        "name": "subjects/heman/test/test_sdf.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 12,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/heman/test/test_pts.c",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 35,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/ray2.c",
+        "stats": {
+          "blanks": 43,
+          "blobs": {},
+          "code": 197,
+          "comments": 18
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/vec4.c",
+        "stats": {
+          "blanks": 30,
+          "blobs": {},
+          "code": 115,
+          "comments": 37
+        }
+      },
+      {
+        "name": "subjects/heman/test/test_planet.c",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 80,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/vec3.c",
+        "stats": {
+          "blanks": 85,
+          "blobs": {},
+          "code": 261,
+          "comments": 110
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/utility.c",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 27,
+          "comments": 33
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/quaternion.c",
+        "stats": {
+          "blanks": 108,
+          "blobs": {},
+          "code": 406,
+          "comments": 95
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/vec2.c",
+        "stats": {
+          "blanks": 46,
+          "blobs": {},
+          "code": 153,
+          "comments": 52
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/ray3.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 36,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/heman/src/export.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 122,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/mat3.c",
+        "stats": {
+          "blanks": 97,
+          "blobs": {},
+          "code": 282,
+          "comments": 79
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/aabb2.c",
+        "stats": {
+          "blanks": 28,
+          "blobs": {},
+          "code": 104,
+          "comments": 56
+        }
+      },
+      {
+        "name": "subjects/heman/src/lighting.c",
+        "stats": {
+          "blanks": 28,
+          "blobs": {},
+          "code": 215,
+          "comments": 15
+        }
+      },
+      {
+        "name": "subjects/heman/src/image.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 79,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/heman/src/generate.c",
+        "stats": {
+          "blanks": 46,
+          "blobs": {},
+          "code": 432,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/heman/src/import.c",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 15,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/heman/src/ops.c",
+        "stats": {
+          "blanks": 45,
+          "blobs": {},
+          "code": 548,
+          "comments": 3
+        }
+      },
+      {
+        "name": "subjects/heman/src/color.c",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 157,
+          "comments": 2
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/plane.c",
+        "stats": {
+          "blanks": 49,
+          "blobs": {},
+          "code": 147,
+          "comments": 58
+        }
+      },
+      {
+        "name": "subjects/heman/src/gaussian.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 37,
+          "comments": 4
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/aabb3.c",
+        "stats": {
+          "blanks": 26,
+          "blobs": {},
+          "code": 93,
+          "comments": 47
+        }
+      },
+      {
+        "name": "subjects/heman/src/distance.c",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 256,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/mat4.c",
+        "stats": {
+          "blanks": 128,
+          "blobs": {},
+          "code": 521,
+          "comments": 142
+        }
+      },
+      {
+        "name": "subjects/heman/src/points.c",
+        "stats": {
+          "blanks": 40,
+          "blobs": {},
+          "code": 274,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/heman/src/draw.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 145,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/heman/src/noise.c",
+        "stats": {
+          "blanks": 191,
+          "blobs": {},
+          "code": 1914,
+          "comments": 224
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 1231,
+    "children": {},
+    "code": 6564,
+    "comments": 1589,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/heman/test/hut.h",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 49,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/heman/include/heman.h",
+        "stats": {
+          "blanks": 69,
+          "blobs": {},
+          "code": 106,
+          "comments": 111
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/vec3.h",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 52,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/heman/test/stb_image_resize.h",
+        "stats": {
+          "blanks": 396,
+          "blobs": {},
+          "code": 1872,
+          "comments": 312
+        }
+      },
+      {
+        "name": "subjects/heman/test/stb_image_write.h",
+        "stats": {
+          "blanks": 68,
+          "blobs": {},
+          "code": 535,
+          "comments": 127
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/ray2.h",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 29,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/aabb3.h",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 27,
+          "comments": 28
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/plane.h",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 40,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/quaternion.h",
+        "stats": {
+          "blanks": 37,
+          "blobs": {},
+          "code": 50,
+          "comments": 38
+        }
+      },
+      {
+        "name": "subjects/heman/test/stb_image.h",
+        "stats": {
+          "blanks": 508,
+          "blobs": {},
+          "code": 3478,
+          "comments": 701
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/mat3.h",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 44,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/ray3.h",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 19,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/aabb2.h",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 27,
+          "comments": 28
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/utility.h",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 53,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/vec2.h",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 44,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/vec4.h",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 38,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/kazmath.h",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 14,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/heman/kazmath/mat4.h",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 45,
+          "comments": 32
+        }
+      },
+      {
+        "name": "subjects/heman/src/image.h",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 28,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/heman/src/noise.h",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 14,
+          "comments": 18
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 2375,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/heman/test/test_earth.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 48,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/heman/test/test_heman.c",
+          "stats": {
+            "blanks": 56,
+            "blobs": {},
+            "code": 336,
+            "comments": 10
+          }
+        },
+        {
+          "name": "subjects/heman/test/test_sdf.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 12,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/heman/test/test_pts.c",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 35,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/ray2.c",
+          "stats": {
+            "blanks": 43,
+            "blobs": {},
+            "code": 197,
+            "comments": 18
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/vec4.c",
+          "stats": {
+            "blanks": 30,
+            "blobs": {},
+            "code": 115,
+            "comments": 37
+          }
+        },
+        {
+          "name": "subjects/heman/test/test_planet.c",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 80,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/vec3.c",
+          "stats": {
+            "blanks": 85,
+            "blobs": {},
+            "code": 261,
+            "comments": 110
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/utility.c",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 27,
+            "comments": 33
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/quaternion.c",
+          "stats": {
+            "blanks": 108,
+            "blobs": {},
+            "code": 406,
+            "comments": 95
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/vec2.c",
+          "stats": {
+            "blanks": 46,
+            "blobs": {},
+            "code": 153,
+            "comments": 52
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/ray3.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 36,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/heman/src/export.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 122,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/mat3.c",
+          "stats": {
+            "blanks": 97,
+            "blobs": {},
+            "code": 282,
+            "comments": 79
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/aabb2.c",
+          "stats": {
+            "blanks": 28,
+            "blobs": {},
+            "code": 104,
+            "comments": 56
+          }
+        },
+        {
+          "name": "subjects/heman/src/lighting.c",
+          "stats": {
+            "blanks": 28,
+            "blobs": {},
+            "code": 215,
+            "comments": 15
+          }
+        },
+        {
+          "name": "subjects/heman/src/image.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 79,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/heman/src/generate.c",
+          "stats": {
+            "blanks": 46,
+            "blobs": {},
+            "code": 432,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/heman/src/import.c",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 15,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/heman/src/ops.c",
+          "stats": {
+            "blanks": 45,
+            "blobs": {},
+            "code": 548,
+            "comments": 3
+          }
+        },
+        {
+          "name": "subjects/heman/src/color.c",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 157,
+            "comments": 2
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/plane.c",
+          "stats": {
+            "blanks": 49,
+            "blobs": {},
+            "code": 147,
+            "comments": 58
+          }
+        },
+        {
+          "name": "subjects/heman/src/gaussian.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 37,
+            "comments": 4
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/aabb3.c",
+          "stats": {
+            "blanks": 26,
+            "blobs": {},
+            "code": 93,
+            "comments": 47
+          }
+        },
+        {
+          "name": "subjects/heman/src/distance.c",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 256,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/mat4.c",
+          "stats": {
+            "blanks": 128,
+            "blobs": {},
+            "code": 521,
+            "comments": 142
+          }
+        },
+        {
+          "name": "subjects/heman/src/points.c",
+          "stats": {
+            "blanks": 40,
+            "blobs": {},
+            "code": 274,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/heman/src/draw.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 145,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/heman/src/noise.c",
+          "stats": {
+            "blanks": 191,
+            "blobs": {},
+            "code": 1914,
+            "comments": 224
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/heman/test/hut.h",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 49,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/heman/include/heman.h",
+          "stats": {
+            "blanks": 69,
+            "blobs": {},
+            "code": 106,
+            "comments": 111
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/vec3.h",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 52,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/heman/test/stb_image_resize.h",
+          "stats": {
+            "blanks": 396,
+            "blobs": {},
+            "code": 1872,
+            "comments": 312
+          }
+        },
+        {
+          "name": "subjects/heman/test/stb_image_write.h",
+          "stats": {
+            "blanks": 68,
+            "blobs": {},
+            "code": 535,
+            "comments": 127
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/ray2.h",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 29,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/aabb3.h",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 27,
+            "comments": 28
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/plane.h",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 40,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/quaternion.h",
+          "stats": {
+            "blanks": 37,
+            "blobs": {},
+            "code": 50,
+            "comments": 38
+          }
+        },
+        {
+          "name": "subjects/heman/test/stb_image.h",
+          "stats": {
+            "blanks": 508,
+            "blobs": {},
+            "code": 3478,
+            "comments": 701
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/mat3.h",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 44,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/ray3.h",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 19,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/aabb2.h",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 27,
+            "comments": 28
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/utility.h",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 53,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/vec2.h",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 44,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/vec4.h",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 38,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/kazmath.h",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 14,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/heman/kazmath/mat4.h",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 45,
+            "comments": 32
+          }
+        },
+        {
+          "name": "subjects/heman/src/image.h",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 28,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/heman/src/noise.h",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 14,
+            "comments": 18
+          }
+        }
+      ]
+    },
+    "code": 13611,
+    "comments": 2594,
+    "inaccurate": false,
+    "reports": []
+  }
+}

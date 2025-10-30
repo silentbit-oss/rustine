@@ -1,0 +1,20 @@
+[[bin]]
+name = "test_grabc"
+path = "src/test_grabc_main.rs"
+
+[[bin]]
+name = "grabc"
+path = "src/grabc.rs"
+
+[package]
+name = "translate_new"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libc = "0.2"
+lazy_static = "1.4.0"
+x11-dl = "2.20"
+
+[build-dependencies]
+bindgen = "0.69.0"

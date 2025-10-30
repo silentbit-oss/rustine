@@ -1,0 +1,490 @@
+{
+  "Rust": {
+    "blanks": 2,
+    "children": {},
+    "code": 13756,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/heman/others/c2rust/lib.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 45,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/kazmath/ray3.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 84,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/kazmath/utility.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 57,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/kazmath/aabb2.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 216,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/kazmath/mat3.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 625,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/kazmath/vec3.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 562,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/kazmath/vec2.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 315,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/kazmath/quaternion.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 729,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/kazmath/plane.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 295,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/kazmath/mat4.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1132,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/kazmath/vec4.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 244,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/kazmath/aabb3.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 267,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/src/distance.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 568,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/kazmath/ray2.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 347,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/src/draw.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 287,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/src/color.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 477,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/src/import.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 50,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/src/export.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 324,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/src/ops.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1402,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/src/gaussian.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 88,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/src/generate.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 833,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/src/noise.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 3365,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/src/image.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 231,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/src/points.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 648,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/heman/others/c2rust/src/src/lighting.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 559,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 2,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/heman/others/c2rust/lib.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 45,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/kazmath/ray3.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 84,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/kazmath/utility.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 57,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/kazmath/aabb2.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 216,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/kazmath/mat3.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 625,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/kazmath/vec3.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 562,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/kazmath/vec2.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 315,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/kazmath/quaternion.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 729,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/kazmath/plane.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 295,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/kazmath/mat4.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1132,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/kazmath/vec4.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 244,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/kazmath/aabb3.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 267,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/src/distance.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 568,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/kazmath/ray2.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 347,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/src/draw.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 287,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/src/color.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 477,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/src/import.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 50,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/src/export.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 324,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/src/ops.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1402,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/src/gaussian.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 88,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/src/generate.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 833,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/src/noise.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 3365,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/src/image.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 231,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/src/points.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 648,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/heman/others/c2rust/src/src/lighting.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 559,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 13756,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

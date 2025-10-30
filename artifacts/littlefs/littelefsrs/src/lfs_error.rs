@@ -1,0 +1,21 @@
+use crate::*;
+
+// enum lfs_error
+// {
+//   LFS_ERR_OK = 0,
+//   LFS_ERR_IO = -5,
+//   LFS_ERR_CORRUPT = -84,
+//   LFS_ERR_NOENT = -2,
+//   LFS_ERR_EXIST = -17,
+//   LFS_ERR_NOTDIR = -20,
+//   LFS_ERR_ISDIR = -21,
+//   LFS_ERR_NOTEMPTY = -39,
+//   LFS_ERR_BADF = -9,
+//   LFS_ERR_FBIG = -27,
+//   LFS_ERR_INVAL = -22,
+//   LFS_ERR_NOSPC = -28,
+//   LFS_ERR_NOMEM = -12,
+//   LFS_ERR_NOATTR = -61,
+//   LFS_ERR_NAMETOOLONG = -36
+// }
+

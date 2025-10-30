@@ -1,0 +1,182 @@
+warning: this boolean expression can be simplified
+warning: statement with no effect
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: this boolean expression can be simplified
+warning: statement with no effect
+warning: this boolean expression can be simplified
+warning: statement with no effect
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut src::libtree::visited_file_t` -> `*mut src::libtree::visited_file_t`)
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut [i8; 16]` -> `*mut [i8; 16]`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut src::libtree::header_64_t` -> `*mut src::libtree::header_64_t`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut src::libtree::header_32_t` -> `*mut src::libtree::header_32_t`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut src::libtree::prog_64_t` -> `*mut src::libtree::prog_64_t`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut src::libtree::prog_32_t` -> `*mut src::libtree::prog_32_t`)
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut src::libtree::dyn_64_t` -> `*mut src::libtree::dyn_64_t`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut src::libtree::dyn_32_t` -> `*mut src::libtree::dyn_32_t`)
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut src::libtree::glob_t` -> `*mut src::libtree::glob_t`)
+warning: statement with no effect
+warning: statement with no effect
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: statement with no effect
+warning: derefed type is same as origin

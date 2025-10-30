@@ -1,0 +1,7 @@
+#include <assert.h>
+#include <candles.c>
+#include <candles.h>
+#include <math.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>

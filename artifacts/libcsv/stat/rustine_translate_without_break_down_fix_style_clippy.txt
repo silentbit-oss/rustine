@@ -1,0 +1,11 @@
+warning: comparing with null is better expressed by the `.is_null()` method
+warning: comparing with null is better expressed by the `.is_null()` method
+warning: manual `!Range::contains` implementation
+warning: needlessly taken reference of both operands
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: variables can be used directly in the `format!` string

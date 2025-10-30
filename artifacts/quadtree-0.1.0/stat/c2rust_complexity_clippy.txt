@@ -1,0 +1,6 @@
+warning: this boolean expression can be simplified
+warning: transmute from a type (`unsafe extern "C" fn()`) to itself
+warning: used `expect()` on `Some` value
+warning: statement with no effect
+warning: used `expect()` on `Some` value
+warning: used `expect()` on `Some` value

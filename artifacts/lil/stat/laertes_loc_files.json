@@ -1,0 +1,166 @@
+{
+  "Rust": {
+    "blanks": 232,
+    "children": {},
+    "code": 11289,
+    "comments": 82,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/lil/others/laertes/lil/c2rust-lib.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 16,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/lil/others/laertes/build.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/lil/others/laertes/lil/build.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/lil/others/laertes/c2rust-lib.rs",
+        "stats": {
+          "blanks": 80,
+          "blobs": {},
+          "code": 439,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/lil/others/laertes/main.rs",
+        "stats": {
+          "blanks": 37,
+          "blobs": {},
+          "code": 328,
+          "comments": 24
+        }
+      },
+      {
+        "name": "artifacts/lil/others/laertes/lil/main.rs",
+        "stats": {
+          "blanks": 44,
+          "blobs": {},
+          "code": 372,
+          "comments": 24
+        }
+      },
+      {
+        "name": "artifacts/lil/others/laertes/lil/lil.rs",
+        "stats": {
+          "blanks": 24,
+          "blobs": {},
+          "code": 5143,
+          "comments": 12
+        }
+      },
+      {
+        "name": "artifacts/lil/others/laertes/lil.rs",
+        "stats": {
+          "blanks": 33,
+          "blobs": {},
+          "code": 4979,
+          "comments": 12
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 232,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/lil/others/laertes/lil/c2rust-lib.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 16,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/lil/others/laertes/build.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/lil/others/laertes/lil/build.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/lil/others/laertes/c2rust-lib.rs",
+          "stats": {
+            "blanks": 80,
+            "blobs": {},
+            "code": 439,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/lil/others/laertes/main.rs",
+          "stats": {
+            "blanks": 37,
+            "blobs": {},
+            "code": 328,
+            "comments": 24
+          }
+        },
+        {
+          "name": "artifacts/lil/others/laertes/lil/main.rs",
+          "stats": {
+            "blanks": 44,
+            "blobs": {},
+            "code": 372,
+            "comments": 24
+          }
+        },
+        {
+          "name": "artifacts/lil/others/laertes/lil/lil.rs",
+          "stats": {
+            "blanks": 24,
+            "blobs": {},
+            "code": 5143,
+            "comments": 12
+          }
+        },
+        {
+          "name": "artifacts/lil/others/laertes/lil.rs",
+          "stats": {
+            "blanks": 33,
+            "blobs": {},
+            "code": 4979,
+            "comments": 12
+          }
+        }
+      ]
+    },
+    "code": 11289,
+    "comments": 82,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "Rust": {
+    "blanks": 3,
+    "children": {},
+    "code": 2549,
+    "comments": 23,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/libtree-3.1.1/others/crown/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/libtree-3.1.1/others/crown/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 16,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libtree-3.1.1/others/crown/src/libtree.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 2527,
+          "comments": 19
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/libtree-3.1.1/others/crown/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/libtree-3.1.1/others/crown/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 16,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libtree-3.1.1/others/crown/src/libtree.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 2527,
+            "comments": 19
+          }
+        }
+      ]
+    },
+    "code": 2549,
+    "comments": 23,
+    "inaccurate": false,
+    "reports": []
+  }
+}

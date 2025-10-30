@@ -1,0 +1,12 @@
+typedef enum BrotliEncoderFlintState
+{
+  BROTLI_FLINT_NEEDS_2_BYTES = 2,
+  BROTLI_FLINT_NEEDS_1_BYTE = 1,
+  BROTLI_FLINT_WAITING_FOR_PROCESSING = 0,
+  BROTLI_FLINT_WAITING_FOR_FLUSHING = -1,
+  BROTLI_FLINT_DONE = -2
+} BrotliEncoderFlintState
+/*** DEPENDENCIES:
+***/
+
+

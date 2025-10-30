@@ -1,0 +1,3597 @@
+{
+  "C": {
+    "blanks": 15837,
+    "children": {},
+    "code": 79337,
+    "comments": 21091,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/scripts/sym.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 3,
+          "comments": 8
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/scripts/prefix.c",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 6,
+          "comments": 11
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/scripts/intprefix.c",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 8,
+          "comments": 8
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/mips/mips_init.c",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 65,
+          "comments": 47
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/pngwtran.c",
+        "stats": {
+          "blanks": 89,
+          "blobs": {},
+          "code": 428,
+          "comments": 58
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/pngtest.c",
+        "stats": {
+          "blanks": 296,
+          "blobs": {},
+          "code": 1626,
+          "comments": 236
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/pngerror.c",
+        "stats": {
+          "blanks": 122,
+          "blobs": {},
+          "code": 659,
+          "comments": 182
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/powerpc-vsx/linux_aux.c",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 12,
+          "comments": 17
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/pngminus/png2pnm.c",
+        "stats": {
+          "blanks": 54,
+          "blobs": {},
+          "code": 323,
+          "comments": 50
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/tools/checksum-icc.c",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 70,
+          "comments": 12
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/tools/png-fix-itxt.c",
+        "stats": {
+          "blanks": 28,
+          "blobs": {},
+          "code": 91,
+          "comments": 43
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/pngrutil.c",
+        "stats": {
+          "blanks": 774,
+          "blobs": {},
+          "code": 3124,
+          "comments": 783
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/pngpread.c",
+        "stats": {
+          "blanks": 173,
+          "blobs": {},
+          "code": 804,
+          "comments": 119
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/png.c",
+        "stats": {
+          "blanks": 573,
+          "blobs": {},
+          "code": 2781,
+          "comments": 1253
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/scripts/symbols.c",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 20,
+          "comments": 29
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/scripts/vers.c",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 5,
+          "comments": 8
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/visupng/VisualPng.c",
+        "stats": {
+          "blanks": 26,
+          "blobs": {},
+          "code": 932,
+          "comments": 20
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/tools/pngcp.c",
+        "stats": {
+          "blanks": 383,
+          "blobs": {},
+          "code": 1668,
+          "comments": 445
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/mips/filter_msa_intrinsics.c",
+        "stats": {
+          "blanks": 89,
+          "blobs": {},
+          "code": 696,
+          "comments": 23
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/wpng.c",
+        "stats": {
+          "blanks": 102,
+          "blobs": {},
+          "code": 625,
+          "comments": 138
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/pngset.c",
+        "stats": {
+          "blanks": 342,
+          "blobs": {},
+          "code": 1248,
+          "comments": 203
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/rpng-win.c",
+        "stats": {
+          "blanks": 131,
+          "blobs": {},
+          "code": 431,
+          "comments": 173
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/powerpc-vsx/linux.c",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 32,
+          "comments": 18
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/pngminus/pnm2png.c",
+        "stats": {
+          "blanks": 65,
+          "blobs": {},
+          "code": 496,
+          "comments": 59
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/readpng2.c",
+        "stats": {
+          "blanks": 143,
+          "blobs": {},
+          "code": 206,
+          "comments": 172
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/tools/makesRGB.c",
+        "stats": {
+          "blanks": 62,
+          "blobs": {},
+          "code": 331,
+          "comments": 36
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/tools/cvtcolor.c",
+        "stats": {
+          "blanks": 35,
+          "blobs": {},
+          "code": 138,
+          "comments": 13
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/visupng/PngFile.c",
+        "stats": {
+          "blanks": 112,
+          "blobs": {},
+          "code": 288,
+          "comments": 54
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/tools/genpng.c",
+        "stats": {
+          "blanks": 102,
+          "blobs": {},
+          "code": 508,
+          "comments": 272
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/rpng-x.c",
+        "stats": {
+          "blanks": 147,
+          "blobs": {},
+          "code": 589,
+          "comments": 175
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/readpng.c",
+        "stats": {
+          "blanks": 83,
+          "blobs": {},
+          "code": 147,
+          "comments": 93
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/rpng2-win.c",
+        "stats": {
+          "blanks": 194,
+          "blobs": {},
+          "code": 809,
+          "comments": 258
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/examples/iccfrompng.c",
+        "stats": {
+          "blanks": 37,
+          "blobs": {},
+          "code": 124,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/writepng.c",
+        "stats": {
+          "blanks": 110,
+          "blobs": {},
+          "code": 169,
+          "comments": 122
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/examples/simpleover.c",
+        "stats": {
+          "blanks": 101,
+          "blobs": {},
+          "code": 427,
+          "comments": 120
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/rpng2-x.c",
+        "stats": {
+          "blanks": 290,
+          "blobs": {},
+          "code": 1497,
+          "comments": 356
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/tools/pngfix.c",
+        "stats": {
+          "blanks": 609,
+          "blobs": {},
+          "code": 2542,
+          "comments": 905
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/libtests/readpng.c",
+        "stats": {
+          "blanks": 20,
+          "blobs": {},
+          "code": 71,
+          "comments": 23
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/libtests/pngunknown.c",
+        "stats": {
+          "blanks": 182,
+          "blobs": {},
+          "code": 970,
+          "comments": 153
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/readppm.c",
+        "stats": {
+          "blanks": 38,
+          "blobs": {},
+          "code": 80,
+          "comments": 70
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/libtests/makepng.c",
+        "stats": {
+          "blanks": 294,
+          "blobs": {},
+          "code": 1366,
+          "comments": 288
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/arm-neon/linux.c",
+        "stats": {
+          "blanks": 26,
+          "blobs": {},
+          "code": 91,
+          "comments": 44
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/examples/pngtopng.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 53,
+          "comments": 27
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/examples/pngpixel.c",
+        "stats": {
+          "blanks": 49,
+          "blobs": {},
+          "code": 190,
+          "comments": 132
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/libtests/pngimage.c",
+        "stats": {
+          "blanks": 268,
+          "blobs": {},
+          "code": 1170,
+          "comments": 284
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/libtests/pngstest.c",
+        "stats": {
+          "blanks": 577,
+          "blobs": {},
+          "code": 2663,
+          "comments": 592
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/libtests/fakepng.c",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 46,
+          "comments": 8
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/libtests/tarith.c",
+        "stats": {
+          "blanks": 140,
+          "blobs": {},
+          "code": 761,
+          "comments": 110
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/pngwrite.c",
+        "stats": {
+          "blanks": 371,
+          "blobs": {},
+          "code": 1653,
+          "comments": 385
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/libtests/timepng.c",
+        "stats": {
+          "blanks": 93,
+          "blobs": {},
+          "code": 435,
+          "comments": 79
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/arm-neon/linux-auxv.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 66,
+          "comments": 38
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/arm-neon/android-ndk.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 8,
+          "comments": 29
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/mips-msa/linux.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 36,
+          "comments": 21
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/powerpc/powerpc_init.c",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 62,
+          "comments": 47
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/intel/filter_sse2_intrinsics.c",
+        "stats": {
+          "blanks": 73,
+          "blobs": {},
+          "code": 219,
+          "comments": 99
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/arm/filter_neon_intrinsics.c",
+        "stats": {
+          "blanks": 82,
+          "blobs": {},
+          "code": 293,
+          "comments": 27
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/arm/arm_init.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 71,
+          "comments": 52
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/pngrio.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 52,
+          "comments": 52
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/intel/intel_init.c",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 24,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/pngmem.c",
+        "stats": {
+          "blanks": 45,
+          "blobs": {},
+          "code": 167,
+          "comments": 72
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/powerpc/filter_vsx_intrinsics.c",
+        "stats": {
+          "blanks": 128,
+          "blobs": {},
+          "code": 577,
+          "comments": 63
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/cexcept/example2.c",
+        "stats": {
+          "blanks": 29,
+          "blobs": {},
+          "code": 94,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/pngget.c",
+        "stats": {
+          "blanks": 178,
+          "blobs": {},
+          "code": 1016,
+          "comments": 66
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/cexcept/example1.c",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 31,
+          "comments": 17
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/arm/palette_neon_intrinsics.c",
+        "stats": {
+          "blanks": 23,
+          "blobs": {},
+          "code": 101,
+          "comments": 27
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/pngwio.c",
+        "stats": {
+          "blanks": 24,
+          "blobs": {},
+          "code": 80,
+          "comments": 64
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/inflate.c",
+        "stats": {
+          "blanks": 82,
+          "blobs": {},
+          "code": 1149,
+          "comments": 295
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/pngrtran.c",
+        "stats": {
+          "blanks": 626,
+          "blobs": {},
+          "code": 3630,
+          "comments": 788
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/compress.c",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 42,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/pngwutil.c",
+        "stats": {
+          "blanks": 493,
+          "blobs": {},
+          "code": 1880,
+          "comments": 408
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/pngtrans.c",
+        "stats": {
+          "blanks": 127,
+          "blobs": {},
+          "code": 643,
+          "comments": 94
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/zutil.c",
+        "stats": {
+          "blanks": 49,
+          "blobs": {},
+          "code": 214,
+          "comments": 36
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/example.c",
+        "stats": {
+          "blanks": 140,
+          "blobs": {},
+          "code": 397,
+          "comments": 504
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/gzwrite.c",
+        "stats": {
+          "blanks": 85,
+          "blobs": {},
+          "code": 442,
+          "comments": 104
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/pngread.c",
+        "stats": {
+          "blanks": 666,
+          "blobs": {},
+          "code": 2678,
+          "comments": 878
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/crc32.c",
+        "stats": {
+          "blanks": 105,
+          "blobs": {},
+          "code": 703,
+          "comments": 241
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/examples/gznorm.c",
+        "stats": {
+          "blanks": 52,
+          "blobs": {},
+          "code": 225,
+          "comments": 193
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/examples/gzjoin.c",
+        "stats": {
+          "blanks": 55,
+          "blobs": {},
+          "code": 275,
+          "comments": 119
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/examples/zpipe.c",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 142,
+          "comments": 41
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/examples/enough.c",
+        "stats": {
+          "blanks": 58,
+          "blobs": {},
+          "code": 291,
+          "comments": 248
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/examples/fitblk.c",
+        "stats": {
+          "blanks": 24,
+          "blobs": {},
+          "code": 136,
+          "comments": 73
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/deflate.c",
+        "stats": {
+          "blanks": 218,
+          "blobs": {},
+          "code": 1342,
+          "comments": 554
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/infback9/infback9.c",
+        "stats": {
+          "blanks": 43,
+          "blobs": {},
+          "code": 477,
+          "comments": 83
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/blast/blast.c",
+        "stats": {
+          "blanks": 41,
+          "blobs": {},
+          "code": 265,
+          "comments": 160
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/iowin32.c",
+        "stats": {
+          "blanks": 65,
+          "blobs": {},
+          "code": 362,
+          "comments": 13
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/libtests/pngvalid.c",
+        "stats": {
+          "blanks": 1791,
+          "blobs": {},
+          "code": 8209,
+          "comments": 2279
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/minizip.c",
+        "stats": {
+          "blanks": 65,
+          "blobs": {},
+          "code": 405,
+          "comments": 39
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/mztools.c",
+        "stats": {
+          "blanks": 25,
+          "blobs": {},
+          "code": 236,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/examples/zran.c",
+        "stats": {
+          "blanks": 48,
+          "blobs": {},
+          "code": 328,
+          "comments": 157
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/examples/gun.c",
+        "stats": {
+          "blanks": 51,
+          "blobs": {},
+          "code": 484,
+          "comments": 167
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/examples/gzappend.c",
+        "stats": {
+          "blanks": 53,
+          "blobs": {},
+          "code": 321,
+          "comments": 130
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/infback9/inftree9.c",
+        "stats": {
+          "blanks": 27,
+          "blobs": {},
+          "code": 180,
+          "comments": 112
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/ioapi.c",
+        "stats": {
+          "blanks": 29,
+          "blobs": {},
+          "code": 190,
+          "comments": 12
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/untgz/untgz.c",
+        "stats": {
+          "blanks": 92,
+          "blobs": {},
+          "code": 502,
+          "comments": 73
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/examples/gzlog.c",
+        "stats": {
+          "blanks": 103,
+          "blobs": {},
+          "code": 555,
+          "comments": 403
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/miniunz.c",
+        "stats": {
+          "blanks": 74,
+          "blobs": {},
+          "code": 526,
+          "comments": 33
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/zip.c",
+        "stats": {
+          "blanks": 369,
+          "blobs": {},
+          "code": 1447,
+          "comments": 129
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/puff/pufftest.c",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 122,
+          "comments": 30
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/testzlib/testzlib.c",
+        "stats": {
+          "blanks": 41,
+          "blobs": {},
+          "code": 231,
+          "comments": 3
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/unzip.c",
+        "stats": {
+          "blanks": 352,
+          "blobs": {},
+          "code": 1352,
+          "comments": 281
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/test/minigzip.c",
+        "stats": {
+          "blanks": 78,
+          "blobs": {},
+          "code": 441,
+          "comments": 60
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/uncompr.c",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 53,
+          "comments": 21
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/test/example.c",
+        "stats": {
+          "blanks": 105,
+          "blobs": {},
+          "code": 390,
+          "comments": 50
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/pngxtern/pngxmem.c",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 55,
+          "comments": 14
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/pnmio/pnmout.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 206,
+          "comments": 34
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/pngxtern/pngxrgif.c",
+        "stats": {
+          "blanks": 29,
+          "blobs": {},
+          "code": 146,
+          "comments": 17
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/gzlib.c",
+        "stats": {
+          "blanks": 72,
+          "blobs": {},
+          "code": 429,
+          "comments": 81
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/pngxtern/pngxrpnm.c",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 206,
+          "comments": 15
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/pngxtern/pngxrtif.c",
+        "stats": {
+          "blanks": 20,
+          "blobs": {},
+          "code": 150,
+          "comments": 17
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/gzread.c",
+        "stats": {
+          "blanks": 78,
+          "blobs": {},
+          "code": 395,
+          "comments": 129
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/gzclose.c",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 12,
+          "comments": 7
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/test/infcover.c",
+        "stats": {
+          "blanks": 68,
+          "blobs": {},
+          "code": 504,
+          "comments": 100
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/inftrees.c",
+        "stats": {
+          "blanks": 25,
+          "blobs": {},
+          "code": 169,
+          "comments": 105
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/infback.c",
+        "stats": {
+          "blanks": 46,
+          "blobs": {},
+          "code": 480,
+          "comments": 102
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/puff/puff.c",
+        "stats": {
+          "blanks": 55,
+          "blobs": {},
+          "code": 352,
+          "comments": 433
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/inffast.c",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 253,
+          "comments": 58
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/pnmio/pnmutil.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 72,
+          "comments": 28
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/adler32.c",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 122,
+          "comments": 23
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/pngxtern/pngxset.c",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 46,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/pnmio/pnmin.c",
+        "stats": {
+          "blanks": 31,
+          "blobs": {},
+          "code": 285,
+          "comments": 61
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/pngxtern/pngxio.c",
+        "stats": {
+          "blanks": 27,
+          "blobs": {},
+          "code": 162,
+          "comments": 38
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/pngxtern/pngxrjpg.c",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 83,
+          "comments": 26
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/minitiff/tiffutil.c",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 57,
+          "comments": 36
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/pngxtern/pngxrbmp.c",
+        "stats": {
+          "blanks": 57,
+          "blobs": {},
+          "code": 618,
+          "comments": 60
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/pngxtern/pngxread.c",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 100,
+          "comments": 21
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/trees.c",
+        "stats": {
+          "blanks": 149,
+          "blobs": {},
+          "code": 656,
+          "comments": 298
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/minitiff/test/tiff2pnm.c",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 86,
+          "comments": 9
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/minitiff/tiffread.c",
+        "stats": {
+          "blanks": 31,
+          "blobs": {},
+          "code": 378,
+          "comments": 64
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/minitiff/tiffwrite.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 4,
+          "comments": 9
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/optipng/ratio.c",
+        "stats": {
+          "blanks": 26,
+          "blobs": {},
+          "code": 118,
+          "comments": 57
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/optipng/wildargs.c",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 29,
+          "comments": 29
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/optipng/bitset.c",
+        "stats": {
+          "blanks": 25,
+          "blobs": {},
+          "code": 182,
+          "comments": 53
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/opngreduc/opngreduc.c",
+        "stats": {
+          "blanks": 111,
+          "blobs": {},
+          "code": 1097,
+          "comments": 168
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/optipng/ioutil.c",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 796,
+          "comments": 17
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/optipng/test/bitset_test.c",
+        "stats": {
+          "blanks": 41,
+          "blobs": {},
+          "code": 360,
+          "comments": 11
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/gifread/test/gifdump.c",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 85,
+          "comments": 13
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/gifread/gifread.c",
+        "stats": {
+          "blanks": 89,
+          "blobs": {},
+          "code": 555,
+          "comments": 88
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/optipng/test/ratio_test.c",
+        "stats": {
+          "blanks": 30,
+          "blobs": {},
+          "code": 210,
+          "comments": 27
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/optipng/optipng.c",
+        "stats": {
+          "blanks": 76,
+          "blobs": {},
+          "code": 743,
+          "comments": 176
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/optipng/optim.c",
+        "stats": {
+          "blanks": 149,
+          "blobs": {},
+          "code": 1497,
+          "comments": 344
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 1869,
+    "children": {},
+    "code": 16737,
+    "comments": 7070,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/pngdebug.h",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 115,
+          "comments": 33
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/tools/sRGB.h",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 22,
+          "comments": 18
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/visupng/PngFile.h",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 16,
+          "comments": 7
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/readpng2.h",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 48,
+          "comments": 55
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/png.h",
+        "stats": {
+          "blanks": 341,
+          "blobs": {},
+          "code": 1331,
+          "comments": 1575
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/pnginfo.h",
+        "stats": {
+          "blanks": 25,
+          "blobs": {},
+          "code": 97,
+          "comments": 145
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/pngconf.h",
+        "stats": {
+          "blanks": 57,
+          "blobs": {},
+          "code": 312,
+          "comments": 254
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/visupng/resource.h",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 16,
+          "comments": 6
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/readpng.h",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 22,
+          "comments": 55
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/visupng/cexcept.h",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 34,
+          "comments": 200
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/writepng.h",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 63,
+          "comments": 55
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/pngminim/preader/pngusr.h",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 4,
+          "comments": 14
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/pngminim/decoder/pngusr.h",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 4,
+          "comments": 14
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/libtests/pngstest-errors.h",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 148,
+          "comments": 17
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/pngminim/encoder/pngusr.h",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 4,
+          "comments": 14
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/pngstruct.h",
+        "stats": {
+          "blanks": 60,
+          "blobs": {},
+          "code": 311,
+          "comments": 108
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/libpng/pngpriv.h",
+        "stats": {
+          "blanks": 246,
+          "blobs": {},
+          "code": 1141,
+          "comments": 756
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/zconf.h",
+        "stats": {
+          "blanks": 45,
+          "blobs": {},
+          "code": 444,
+          "comments": 62
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/zutil.h",
+        "stats": {
+          "blanks": 45,
+          "blobs": {},
+          "code": 200,
+          "comments": 30
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/cexcept/cexcept.h",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 35,
+          "comments": 202
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/inftrees.h",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 16,
+          "comments": 40
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/deflate.h",
+        "stats": {
+          "blanks": 63,
+          "blobs": {},
+          "code": 160,
+          "comments": 123
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/infback9/infback9.h",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 17,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/infback9/inffix9.h",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 97,
+          "comments": 7
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/iostream2/zstream.h",
+        "stats": {
+          "blanks": 39,
+          "blobs": {},
+          "code": 174,
+          "comments": 94
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/crypt.h",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 68,
+          "comments": 46
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/iowin32.h",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 11,
+          "comments": 12
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/examples/gzlog.h",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 8,
+          "comments": 74
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/zip.h",
+        "stats": {
+          "blanks": 45,
+          "blobs": {},
+          "code": 199,
+          "comments": 120
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/examples/zran.h",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 18,
+          "comments": 27
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/infback9/inftree9.h",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 16,
+          "comments": 39
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/infback9/inflate9.h",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 19,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/crc32.h",
+        "stats": {
+          "blanks": 63,
+          "blobs": {},
+          "code": 9380,
+          "comments": 3
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/blast/blast.h",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 4,
+          "comments": 73
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/mztools.h",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 18,
+          "comments": 10
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/ioapi.h",
+        "stats": {
+          "blanks": 39,
+          "blobs": {},
+          "code": 134,
+          "comments": 37
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/unzip.h",
+        "stats": {
+          "blanks": 68,
+          "blobs": {},
+          "code": 175,
+          "comments": 194
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/gzguts.h",
+        "stats": {
+          "blanks": 25,
+          "blobs": {},
+          "code": 157,
+          "comments": 36
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/iostream3/zfstream.h",
+        "stats": {
+          "blanks": 55,
+          "blobs": {},
+          "code": 141,
+          "comments": 270
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/trees.h",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 120,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/inffast.h",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 1,
+          "comments": 8
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/inffixed.h",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 84,
+          "comments": 7
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/pnmio/pnmio.h",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 66,
+          "comments": 42
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/inflate.h",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 74,
+          "comments": 47
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/pngxtern/pngxtern.h",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 13,
+          "comments": 34
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/iostream/zfstream.h",
+        "stats": {
+          "blanks": 41,
+          "blobs": {},
+          "code": 87,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/puff/puff.h",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 7,
+          "comments": 25
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/pngxtern/pngxpriv.h",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 39,
+          "comments": 13
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/pngxtern/pngxutil.h",
+        "stats": {
+          "blanks": 23,
+          "blobs": {},
+          "code": 65,
+          "comments": 26
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/minitiff/minitiff.h",
+        "stats": {
+          "blanks": 21,
+          "blobs": {},
+          "code": 177,
+          "comments": 58
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/optipng/optipng.h",
+        "stats": {
+          "blanks": 24,
+          "blobs": {},
+          "code": 62,
+          "comments": 30
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/opngreduc/opngreduc.h",
+        "stats": {
+          "blanks": 24,
+          "blobs": {},
+          "code": 50,
+          "comments": 26
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/optipng/ratio.h",
+        "stats": {
+          "blanks": 29,
+          "blobs": {},
+          "code": 79,
+          "comments": 70
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/optipng/bitset.h",
+        "stats": {
+          "blanks": 49,
+          "blobs": {},
+          "code": 128,
+          "comments": 93
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/optipng/proginfo.h",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 13,
+          "comments": 9
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/optipng/ioutil.h",
+        "stats": {
+          "blanks": 35,
+          "blobs": {},
+          "code": 94,
+          "comments": 125
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/src/gifread/gifread.h",
+        "stats": {
+          "blanks": 29,
+          "blobs": {},
+          "code": 77,
+          "comments": 88
+        }
+      },
+      {
+        "name": "subjects/optipng-0.7.8/third_party/zlib/zlib.h",
+        "stats": {
+          "blanks": 135,
+          "blobs": {},
+          "code": 322,
+          "comments": 1503
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 17706,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/scripts/sym.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 3,
+            "comments": 8
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/scripts/prefix.c",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 6,
+            "comments": 11
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/scripts/intprefix.c",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 8,
+            "comments": 8
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/mips/mips_init.c",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 65,
+            "comments": 47
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/pngwtran.c",
+          "stats": {
+            "blanks": 89,
+            "blobs": {},
+            "code": 428,
+            "comments": 58
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/pngtest.c",
+          "stats": {
+            "blanks": 296,
+            "blobs": {},
+            "code": 1626,
+            "comments": 236
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/pngerror.c",
+          "stats": {
+            "blanks": 122,
+            "blobs": {},
+            "code": 659,
+            "comments": 182
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/powerpc-vsx/linux_aux.c",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 12,
+            "comments": 17
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/pngminus/png2pnm.c",
+          "stats": {
+            "blanks": 54,
+            "blobs": {},
+            "code": 323,
+            "comments": 50
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/tools/checksum-icc.c",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 70,
+            "comments": 12
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/tools/png-fix-itxt.c",
+          "stats": {
+            "blanks": 28,
+            "blobs": {},
+            "code": 91,
+            "comments": 43
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/pngrutil.c",
+          "stats": {
+            "blanks": 774,
+            "blobs": {},
+            "code": 3124,
+            "comments": 783
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/pngpread.c",
+          "stats": {
+            "blanks": 173,
+            "blobs": {},
+            "code": 804,
+            "comments": 119
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/png.c",
+          "stats": {
+            "blanks": 573,
+            "blobs": {},
+            "code": 2781,
+            "comments": 1253
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/scripts/symbols.c",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 20,
+            "comments": 29
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/scripts/vers.c",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 5,
+            "comments": 8
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/visupng/VisualPng.c",
+          "stats": {
+            "blanks": 26,
+            "blobs": {},
+            "code": 932,
+            "comments": 20
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/tools/pngcp.c",
+          "stats": {
+            "blanks": 383,
+            "blobs": {},
+            "code": 1668,
+            "comments": 445
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/mips/filter_msa_intrinsics.c",
+          "stats": {
+            "blanks": 89,
+            "blobs": {},
+            "code": 696,
+            "comments": 23
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/wpng.c",
+          "stats": {
+            "blanks": 102,
+            "blobs": {},
+            "code": 625,
+            "comments": 138
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/pngset.c",
+          "stats": {
+            "blanks": 342,
+            "blobs": {},
+            "code": 1248,
+            "comments": 203
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/rpng-win.c",
+          "stats": {
+            "blanks": 131,
+            "blobs": {},
+            "code": 431,
+            "comments": 173
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/powerpc-vsx/linux.c",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 32,
+            "comments": 18
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/pngminus/pnm2png.c",
+          "stats": {
+            "blanks": 65,
+            "blobs": {},
+            "code": 496,
+            "comments": 59
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/readpng2.c",
+          "stats": {
+            "blanks": 143,
+            "blobs": {},
+            "code": 206,
+            "comments": 172
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/tools/makesRGB.c",
+          "stats": {
+            "blanks": 62,
+            "blobs": {},
+            "code": 331,
+            "comments": 36
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/tools/cvtcolor.c",
+          "stats": {
+            "blanks": 35,
+            "blobs": {},
+            "code": 138,
+            "comments": 13
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/visupng/PngFile.c",
+          "stats": {
+            "blanks": 112,
+            "blobs": {},
+            "code": 288,
+            "comments": 54
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/tools/genpng.c",
+          "stats": {
+            "blanks": 102,
+            "blobs": {},
+            "code": 508,
+            "comments": 272
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/rpng-x.c",
+          "stats": {
+            "blanks": 147,
+            "blobs": {},
+            "code": 589,
+            "comments": 175
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/readpng.c",
+          "stats": {
+            "blanks": 83,
+            "blobs": {},
+            "code": 147,
+            "comments": 93
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/rpng2-win.c",
+          "stats": {
+            "blanks": 194,
+            "blobs": {},
+            "code": 809,
+            "comments": 258
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/examples/iccfrompng.c",
+          "stats": {
+            "blanks": 37,
+            "blobs": {},
+            "code": 124,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/writepng.c",
+          "stats": {
+            "blanks": 110,
+            "blobs": {},
+            "code": 169,
+            "comments": 122
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/examples/simpleover.c",
+          "stats": {
+            "blanks": 101,
+            "blobs": {},
+            "code": 427,
+            "comments": 120
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/rpng2-x.c",
+          "stats": {
+            "blanks": 290,
+            "blobs": {},
+            "code": 1497,
+            "comments": 356
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/tools/pngfix.c",
+          "stats": {
+            "blanks": 609,
+            "blobs": {},
+            "code": 2542,
+            "comments": 905
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/libtests/readpng.c",
+          "stats": {
+            "blanks": 20,
+            "blobs": {},
+            "code": 71,
+            "comments": 23
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/libtests/pngunknown.c",
+          "stats": {
+            "blanks": 182,
+            "blobs": {},
+            "code": 970,
+            "comments": 153
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/readppm.c",
+          "stats": {
+            "blanks": 38,
+            "blobs": {},
+            "code": 80,
+            "comments": 70
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/libtests/makepng.c",
+          "stats": {
+            "blanks": 294,
+            "blobs": {},
+            "code": 1366,
+            "comments": 288
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/arm-neon/linux.c",
+          "stats": {
+            "blanks": 26,
+            "blobs": {},
+            "code": 91,
+            "comments": 44
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/examples/pngtopng.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 53,
+            "comments": 27
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/examples/pngpixel.c",
+          "stats": {
+            "blanks": 49,
+            "blobs": {},
+            "code": 190,
+            "comments": 132
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/libtests/pngimage.c",
+          "stats": {
+            "blanks": 268,
+            "blobs": {},
+            "code": 1170,
+            "comments": 284
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/libtests/pngstest.c",
+          "stats": {
+            "blanks": 577,
+            "blobs": {},
+            "code": 2663,
+            "comments": 592
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/libtests/fakepng.c",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 46,
+            "comments": 8
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/libtests/tarith.c",
+          "stats": {
+            "blanks": 140,
+            "blobs": {},
+            "code": 761,
+            "comments": 110
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/pngwrite.c",
+          "stats": {
+            "blanks": 371,
+            "blobs": {},
+            "code": 1653,
+            "comments": 385
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/libtests/timepng.c",
+          "stats": {
+            "blanks": 93,
+            "blobs": {},
+            "code": 435,
+            "comments": 79
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/arm-neon/linux-auxv.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 66,
+            "comments": 38
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/arm-neon/android-ndk.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 8,
+            "comments": 29
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/mips-msa/linux.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 36,
+            "comments": 21
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/powerpc/powerpc_init.c",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 62,
+            "comments": 47
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/intel/filter_sse2_intrinsics.c",
+          "stats": {
+            "blanks": 73,
+            "blobs": {},
+            "code": 219,
+            "comments": 99
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/arm/filter_neon_intrinsics.c",
+          "stats": {
+            "blanks": 82,
+            "blobs": {},
+            "code": 293,
+            "comments": 27
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/arm/arm_init.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 71,
+            "comments": 52
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/pngrio.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 52,
+            "comments": 52
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/intel/intel_init.c",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 24,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/pngmem.c",
+          "stats": {
+            "blanks": 45,
+            "blobs": {},
+            "code": 167,
+            "comments": 72
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/powerpc/filter_vsx_intrinsics.c",
+          "stats": {
+            "blanks": 128,
+            "blobs": {},
+            "code": 577,
+            "comments": 63
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/cexcept/example2.c",
+          "stats": {
+            "blanks": 29,
+            "blobs": {},
+            "code": 94,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/pngget.c",
+          "stats": {
+            "blanks": 178,
+            "blobs": {},
+            "code": 1016,
+            "comments": 66
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/cexcept/example1.c",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 31,
+            "comments": 17
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/arm/palette_neon_intrinsics.c",
+          "stats": {
+            "blanks": 23,
+            "blobs": {},
+            "code": 101,
+            "comments": 27
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/pngwio.c",
+          "stats": {
+            "blanks": 24,
+            "blobs": {},
+            "code": 80,
+            "comments": 64
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/inflate.c",
+          "stats": {
+            "blanks": 82,
+            "blobs": {},
+            "code": 1149,
+            "comments": 295
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/pngrtran.c",
+          "stats": {
+            "blanks": 626,
+            "blobs": {},
+            "code": 3630,
+            "comments": 788
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/compress.c",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 42,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/pngwutil.c",
+          "stats": {
+            "blanks": 493,
+            "blobs": {},
+            "code": 1880,
+            "comments": 408
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/pngtrans.c",
+          "stats": {
+            "blanks": 127,
+            "blobs": {},
+            "code": 643,
+            "comments": 94
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/zutil.c",
+          "stats": {
+            "blanks": 49,
+            "blobs": {},
+            "code": 214,
+            "comments": 36
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/example.c",
+          "stats": {
+            "blanks": 140,
+            "blobs": {},
+            "code": 397,
+            "comments": 504
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/gzwrite.c",
+          "stats": {
+            "blanks": 85,
+            "blobs": {},
+            "code": 442,
+            "comments": 104
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/pngread.c",
+          "stats": {
+            "blanks": 666,
+            "blobs": {},
+            "code": 2678,
+            "comments": 878
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/crc32.c",
+          "stats": {
+            "blanks": 105,
+            "blobs": {},
+            "code": 703,
+            "comments": 241
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/examples/gznorm.c",
+          "stats": {
+            "blanks": 52,
+            "blobs": {},
+            "code": 225,
+            "comments": 193
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/examples/gzjoin.c",
+          "stats": {
+            "blanks": 55,
+            "blobs": {},
+            "code": 275,
+            "comments": 119
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/examples/zpipe.c",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 142,
+            "comments": 41
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/examples/enough.c",
+          "stats": {
+            "blanks": 58,
+            "blobs": {},
+            "code": 291,
+            "comments": 248
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/examples/fitblk.c",
+          "stats": {
+            "blanks": 24,
+            "blobs": {},
+            "code": 136,
+            "comments": 73
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/deflate.c",
+          "stats": {
+            "blanks": 218,
+            "blobs": {},
+            "code": 1342,
+            "comments": 554
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/infback9/infback9.c",
+          "stats": {
+            "blanks": 43,
+            "blobs": {},
+            "code": 477,
+            "comments": 83
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/blast/blast.c",
+          "stats": {
+            "blanks": 41,
+            "blobs": {},
+            "code": 265,
+            "comments": 160
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/iowin32.c",
+          "stats": {
+            "blanks": 65,
+            "blobs": {},
+            "code": 362,
+            "comments": 13
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/libtests/pngvalid.c",
+          "stats": {
+            "blanks": 1791,
+            "blobs": {},
+            "code": 8209,
+            "comments": 2279
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/minizip.c",
+          "stats": {
+            "blanks": 65,
+            "blobs": {},
+            "code": 405,
+            "comments": 39
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/mztools.c",
+          "stats": {
+            "blanks": 25,
+            "blobs": {},
+            "code": 236,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/examples/zran.c",
+          "stats": {
+            "blanks": 48,
+            "blobs": {},
+            "code": 328,
+            "comments": 157
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/examples/gun.c",
+          "stats": {
+            "blanks": 51,
+            "blobs": {},
+            "code": 484,
+            "comments": 167
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/examples/gzappend.c",
+          "stats": {
+            "blanks": 53,
+            "blobs": {},
+            "code": 321,
+            "comments": 130
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/infback9/inftree9.c",
+          "stats": {
+            "blanks": 27,
+            "blobs": {},
+            "code": 180,
+            "comments": 112
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/ioapi.c",
+          "stats": {
+            "blanks": 29,
+            "blobs": {},
+            "code": 190,
+            "comments": 12
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/untgz/untgz.c",
+          "stats": {
+            "blanks": 92,
+            "blobs": {},
+            "code": 502,
+            "comments": 73
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/examples/gzlog.c",
+          "stats": {
+            "blanks": 103,
+            "blobs": {},
+            "code": 555,
+            "comments": 403
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/miniunz.c",
+          "stats": {
+            "blanks": 74,
+            "blobs": {},
+            "code": 526,
+            "comments": 33
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/zip.c",
+          "stats": {
+            "blanks": 369,
+            "blobs": {},
+            "code": 1447,
+            "comments": 129
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/puff/pufftest.c",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 122,
+            "comments": 30
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/testzlib/testzlib.c",
+          "stats": {
+            "blanks": 41,
+            "blobs": {},
+            "code": 231,
+            "comments": 3
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/unzip.c",
+          "stats": {
+            "blanks": 352,
+            "blobs": {},
+            "code": 1352,
+            "comments": 281
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/test/minigzip.c",
+          "stats": {
+            "blanks": 78,
+            "blobs": {},
+            "code": 441,
+            "comments": 60
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/uncompr.c",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 53,
+            "comments": 21
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/test/example.c",
+          "stats": {
+            "blanks": 105,
+            "blobs": {},
+            "code": 390,
+            "comments": 50
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/pngxtern/pngxmem.c",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 55,
+            "comments": 14
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/pnmio/pnmout.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 206,
+            "comments": 34
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/pngxtern/pngxrgif.c",
+          "stats": {
+            "blanks": 29,
+            "blobs": {},
+            "code": 146,
+            "comments": 17
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/gzlib.c",
+          "stats": {
+            "blanks": 72,
+            "blobs": {},
+            "code": 429,
+            "comments": 81
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/pngxtern/pngxrpnm.c",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 206,
+            "comments": 15
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/pngxtern/pngxrtif.c",
+          "stats": {
+            "blanks": 20,
+            "blobs": {},
+            "code": 150,
+            "comments": 17
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/gzread.c",
+          "stats": {
+            "blanks": 78,
+            "blobs": {},
+            "code": 395,
+            "comments": 129
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/gzclose.c",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 12,
+            "comments": 7
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/test/infcover.c",
+          "stats": {
+            "blanks": 68,
+            "blobs": {},
+            "code": 504,
+            "comments": 100
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/inftrees.c",
+          "stats": {
+            "blanks": 25,
+            "blobs": {},
+            "code": 169,
+            "comments": 105
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/infback.c",
+          "stats": {
+            "blanks": 46,
+            "blobs": {},
+            "code": 480,
+            "comments": 102
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/puff/puff.c",
+          "stats": {
+            "blanks": 55,
+            "blobs": {},
+            "code": 352,
+            "comments": 433
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/inffast.c",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 253,
+            "comments": 58
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/pnmio/pnmutil.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 72,
+            "comments": 28
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/adler32.c",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 122,
+            "comments": 23
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/pngxtern/pngxset.c",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 46,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/pnmio/pnmin.c",
+          "stats": {
+            "blanks": 31,
+            "blobs": {},
+            "code": 285,
+            "comments": 61
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/pngxtern/pngxio.c",
+          "stats": {
+            "blanks": 27,
+            "blobs": {},
+            "code": 162,
+            "comments": 38
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/pngxtern/pngxrjpg.c",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 83,
+            "comments": 26
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/minitiff/tiffutil.c",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 57,
+            "comments": 36
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/pngxtern/pngxrbmp.c",
+          "stats": {
+            "blanks": 57,
+            "blobs": {},
+            "code": 618,
+            "comments": 60
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/pngxtern/pngxread.c",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 100,
+            "comments": 21
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/trees.c",
+          "stats": {
+            "blanks": 149,
+            "blobs": {},
+            "code": 656,
+            "comments": 298
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/minitiff/test/tiff2pnm.c",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 86,
+            "comments": 9
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/minitiff/tiffread.c",
+          "stats": {
+            "blanks": 31,
+            "blobs": {},
+            "code": 378,
+            "comments": 64
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/minitiff/tiffwrite.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 4,
+            "comments": 9
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/optipng/ratio.c",
+          "stats": {
+            "blanks": 26,
+            "blobs": {},
+            "code": 118,
+            "comments": 57
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/optipng/wildargs.c",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 29,
+            "comments": 29
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/optipng/bitset.c",
+          "stats": {
+            "blanks": 25,
+            "blobs": {},
+            "code": 182,
+            "comments": 53
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/opngreduc/opngreduc.c",
+          "stats": {
+            "blanks": 111,
+            "blobs": {},
+            "code": 1097,
+            "comments": 168
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/optipng/ioutil.c",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 796,
+            "comments": 17
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/optipng/test/bitset_test.c",
+          "stats": {
+            "blanks": 41,
+            "blobs": {},
+            "code": 360,
+            "comments": 11
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/gifread/test/gifdump.c",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 85,
+            "comments": 13
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/gifread/gifread.c",
+          "stats": {
+            "blanks": 89,
+            "blobs": {},
+            "code": 555,
+            "comments": 88
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/optipng/test/ratio_test.c",
+          "stats": {
+            "blanks": 30,
+            "blobs": {},
+            "code": 210,
+            "comments": 27
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/optipng/optipng.c",
+          "stats": {
+            "blanks": 76,
+            "blobs": {},
+            "code": 743,
+            "comments": 176
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/optipng/optim.c",
+          "stats": {
+            "blanks": 149,
+            "blobs": {},
+            "code": 1497,
+            "comments": 344
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/pngdebug.h",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 115,
+            "comments": 33
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/tools/sRGB.h",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 22,
+            "comments": 18
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/visupng/PngFile.h",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 16,
+            "comments": 7
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/readpng2.h",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 48,
+            "comments": 55
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/png.h",
+          "stats": {
+            "blanks": 341,
+            "blobs": {},
+            "code": 1331,
+            "comments": 1575
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/pnginfo.h",
+          "stats": {
+            "blanks": 25,
+            "blobs": {},
+            "code": 97,
+            "comments": 145
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/pngconf.h",
+          "stats": {
+            "blanks": 57,
+            "blobs": {},
+            "code": 312,
+            "comments": 254
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/visupng/resource.h",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 16,
+            "comments": 6
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/readpng.h",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 22,
+            "comments": 55
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/visupng/cexcept.h",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 34,
+            "comments": 200
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/gregbook/writepng.h",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 63,
+            "comments": 55
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/pngminim/preader/pngusr.h",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 4,
+            "comments": 14
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/pngminim/decoder/pngusr.h",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 4,
+            "comments": 14
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/libtests/pngstest-errors.h",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 148,
+            "comments": 17
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/contrib/pngminim/encoder/pngusr.h",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 4,
+            "comments": 14
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/pngstruct.h",
+          "stats": {
+            "blanks": 60,
+            "blobs": {},
+            "code": 311,
+            "comments": 108
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/libpng/pngpriv.h",
+          "stats": {
+            "blanks": 246,
+            "blobs": {},
+            "code": 1141,
+            "comments": 756
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/zconf.h",
+          "stats": {
+            "blanks": 45,
+            "blobs": {},
+            "code": 444,
+            "comments": 62
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/zutil.h",
+          "stats": {
+            "blanks": 45,
+            "blobs": {},
+            "code": 200,
+            "comments": 30
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/cexcept/cexcept.h",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 35,
+            "comments": 202
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/inftrees.h",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 16,
+            "comments": 40
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/deflate.h",
+          "stats": {
+            "blanks": 63,
+            "blobs": {},
+            "code": 160,
+            "comments": 123
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/infback9/infback9.h",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 17,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/infback9/inffix9.h",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 97,
+            "comments": 7
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/iostream2/zstream.h",
+          "stats": {
+            "blanks": 39,
+            "blobs": {},
+            "code": 174,
+            "comments": 94
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/crypt.h",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 68,
+            "comments": 46
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/iowin32.h",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 11,
+            "comments": 12
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/examples/gzlog.h",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 8,
+            "comments": 74
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/zip.h",
+          "stats": {
+            "blanks": 45,
+            "blobs": {},
+            "code": 199,
+            "comments": 120
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/examples/zran.h",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 18,
+            "comments": 27
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/infback9/inftree9.h",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 16,
+            "comments": 39
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/infback9/inflate9.h",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 19,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/crc32.h",
+          "stats": {
+            "blanks": 63,
+            "blobs": {},
+            "code": 9380,
+            "comments": 3
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/blast/blast.h",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 4,
+            "comments": 73
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/mztools.h",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 18,
+            "comments": 10
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/ioapi.h",
+          "stats": {
+            "blanks": 39,
+            "blobs": {},
+            "code": 134,
+            "comments": 37
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/minizip/unzip.h",
+          "stats": {
+            "blanks": 68,
+            "blobs": {},
+            "code": 175,
+            "comments": 194
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/gzguts.h",
+          "stats": {
+            "blanks": 25,
+            "blobs": {},
+            "code": 157,
+            "comments": 36
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/iostream3/zfstream.h",
+          "stats": {
+            "blanks": 55,
+            "blobs": {},
+            "code": 141,
+            "comments": 270
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/trees.h",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 120,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/inffast.h",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 1,
+            "comments": 8
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/inffixed.h",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 84,
+            "comments": 7
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/pnmio/pnmio.h",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 66,
+            "comments": 42
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/inflate.h",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 74,
+            "comments": 47
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/pngxtern/pngxtern.h",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 13,
+            "comments": 34
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/iostream/zfstream.h",
+          "stats": {
+            "blanks": 41,
+            "blobs": {},
+            "code": 87,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/contrib/puff/puff.h",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 7,
+            "comments": 25
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/pngxtern/pngxpriv.h",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 39,
+            "comments": 13
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/pngxtern/pngxutil.h",
+          "stats": {
+            "blanks": 23,
+            "blobs": {},
+            "code": 65,
+            "comments": 26
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/minitiff/minitiff.h",
+          "stats": {
+            "blanks": 21,
+            "blobs": {},
+            "code": 177,
+            "comments": 58
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/optipng/optipng.h",
+          "stats": {
+            "blanks": 24,
+            "blobs": {},
+            "code": 62,
+            "comments": 30
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/opngreduc/opngreduc.h",
+          "stats": {
+            "blanks": 24,
+            "blobs": {},
+            "code": 50,
+            "comments": 26
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/optipng/ratio.h",
+          "stats": {
+            "blanks": 29,
+            "blobs": {},
+            "code": 79,
+            "comments": 70
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/optipng/bitset.h",
+          "stats": {
+            "blanks": 49,
+            "blobs": {},
+            "code": 128,
+            "comments": 93
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/optipng/proginfo.h",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 13,
+            "comments": 9
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/optipng/ioutil.h",
+          "stats": {
+            "blanks": 35,
+            "blobs": {},
+            "code": 94,
+            "comments": 125
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/src/gifread/gifread.h",
+          "stats": {
+            "blanks": 29,
+            "blobs": {},
+            "code": 77,
+            "comments": 88
+          }
+        },
+        {
+          "name": "subjects/optipng-0.7.8/third_party/zlib/zlib.h",
+          "stats": {
+            "blanks": 135,
+            "blobs": {},
+            "code": 322,
+            "comments": 1503
+          }
+        }
+      ]
+    },
+    "code": 96074,
+    "comments": 28161,
+    "inaccurate": false,
+    "reports": []
+  }
+}

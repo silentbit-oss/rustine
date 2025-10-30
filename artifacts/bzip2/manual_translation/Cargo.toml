@@ -1,0 +1,17 @@
+[package]
+name = "translate_without_break_down"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libc = "0.2.153"
+lazy_static = "1.4.0"
+rand = "0.8.5"
+
+[[bin]]
+name="bzip2recover"
+path="src/bzip2recover_main.rs"
+
+[[bin]]
+name="bzip2"
+path="src/bzip2_main.rs"

@@ -1,0 +1,8 @@
+Unsafe lines: 1008
+Unsafe calls: 334
+Unsafe casts: 575
+Total spans: 41246
+Unsafe ratio: 0.02443873345294089
+Raw pointer dereferences: 82
+Raw pointer declarations: 61
+Target custom-build:build-script-build is not supported

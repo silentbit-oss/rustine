@@ -1,0 +1,9 @@
+#include <limits.h>
+#include <png.h>
+#include <pngconf.h>
+#include <pnglibconf.h>
+#include <pngxio.c>
+#include <pngxpriv.h>
+#include <pngxutil.h>
+#include <stddef.h>
+#include <stdio.h>

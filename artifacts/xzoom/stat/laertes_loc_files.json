@@ -1,0 +1,40 @@
+{
+  "Rust": {
+    "blanks": 171,
+    "children": {},
+    "code": 3771,
+    "comments": 117,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/xzoom/others/laertes/xzoom.rs",
+        "stats": {
+          "blanks": 171,
+          "blobs": {},
+          "code": 3771,
+          "comments": 117
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 171,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/xzoom/others/laertes/xzoom.rs",
+          "stats": {
+            "blanks": 171,
+            "blobs": {},
+            "code": 3771,
+            "comments": 117
+          }
+        }
+      ]
+    },
+    "code": 3771,
+    "comments": 117,
+    "inaccurate": false,
+    "reports": []
+  }
+}

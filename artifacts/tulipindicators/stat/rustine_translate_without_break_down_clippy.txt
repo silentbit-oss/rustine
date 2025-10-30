@@ -1,0 +1,452 @@
+warning: unused import: `crate::*`
+warning: type `TC_REAL` should have an upper camel case name
+warning: type `tc_set` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::convert::TryInto`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::f64::consts::SQRT_2`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `std::convert::TryInto`
+warning: unnecessary parentheses around index expression
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unnecessary parentheses around index expression
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `std::f64::consts::PI`
+warning: unused import: `crate::*`
+warning: unused import: `std::convert::TryInto`
+warning: unused import: `std::alloc::Layout`
+warning: unused import: `std::alloc::alloc`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::os::raw::c_double`
+warning: unused import: `std::f64::consts::SQRT_2`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unnecessary parentheses around assigned value
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::f64::consts::SQRT_2`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `rand::Rng`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `std::mem`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `rand::Rng`
+warning: unused import: `crate::*`
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::io`
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `std::time::Duration`
+warning: unused import: `std::sync::Arc`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `stream`
+warning: variable does not need to be mutable
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: value assigned to `dm` is never read
+warning: value assigned to `dp` is never read
+warning: value assigned to `dm` is never read
+warning: value assigned to `dp` is never read
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `period_usize`
+warning: unused variable: `period2_usize`
+warning: unused variable: `periodsqrt_usize`
+warning: variable does not need to be mutable
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `stream`
+warning: variable does not need to be mutable
+warning: unused variable: `options`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unused variable: `options`
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unused variable: `options`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `avg_total`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `avg_total`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `avg_body`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `avg_body`
+warning: unused variable: `avg_total`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `avg_body`
+warning: unused variable: `avg_total`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `avg_total`
+warning: unused variable: `avg_body`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `avg_total`
+warning: unused variable: `avg_total`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `avg_body`
+warning: unused variable: `avg_total`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `avg_body`
+warning: unused variable: `avg_total`
+warning: unused variable: `i`
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: unused variable: `avg_body`
+warning: unused variable: `avg_total`
+warning: variable does not need to be mutable
+warning: unused variable: `upper`
+warning: unused variable: `lower`
+warning: value assigned to `j` is never read
+warning: variable does not need to be mutable
+warning: unused variable: `i`
+warning: unnecessary `unsafe` block
+warning: unused variable: `outputs`
+warning: variable `options_setter_idx` is assigned to, but never used
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: value assigned to `options_setter_idx` is never read
+warning: variable does not need to be mutable
+warning: unused variable: `buffer`
+warning: returning the result of a `let` binding from a block
+warning: the loop variable `i` is only used to index `input`
+warning: the variable `trail` is used as a loop counter
+warning: accessing first element with `inputs.get(0)`
+warning: the variable `trail` is used as a loop counter
+warning: length comparison to one
+warning: the loop variable `i` is only used to index `input`
+warning: this `match` expression can be replaced with `?`
+warning: the variable `output_idx` is used as a loop counter
+warning: the variable `output_idx` is used as a loop counter
+warning: the loop variable `i` is only used to index `input`
+warning: accessing first element with `inputs?.get(0)`
+warning: accessing first element with `options?.get(0)`
+warning: the loop variable `i` is only used to index `input`
+warning: accessing first element with `inputs.get(0)`
+warning: the loop variable `i` is only used to index `input`
+warning: the loop variable `i` is only used to index `input`
+warning: the variable `output_idx` is used as a loop counter
+warning: the variable `trail` is used as a loop counter
+warning: the variable `output_idx` is used as a loop counter
+warning: the variable `output_idx` is used as a loop counter
+warning: the loop variable `i` is used to index `input`
+warning: the loop variable `i` is used to index `input`
+warning: the variable `trail` is used as a loop counter
+warning: accessing first element with `inputs.get(0)`
+warning: the variable `trail` is used as a loop counter
+warning: the variable `sine_idx` is used as a loop counter
+warning: the loop variable `i` is only used to index `input`
+warning: the variable `ppo_idx` is used as a loop counter
+warning: the variable `output_idx` is used as a loop counter
+warning: accessing first element with `inputs.get(0)`
+warning: the variable `output_idx` is used as a loop counter
+warning: this `if` has identical blocks
+warning: the loop variable `i` is only used to index `input`
+warning: accessing first element with `inputs.get(0)`
+warning: accessing first element with `options.get(0)`
+warning: accessing first element with `inputs?.get(0)`
+warning: accessing first element with `options?.get(0)`
+warning: accessing first element with `inputs.get(0)`
+warning: accessing first element with `inputs.get(0)`
+warning: accessing first element with `options.get(0)`
+warning: the loop variable `i` is used to index `input`
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: the loop variable `i` is only used to index `input`
+warning: the loop variable `i` is only used to index `in_`
+warning: manual `!RangeInclusive::contains` implementation
+warning: accessing first element with `inputs.get(0)`
+warning: the variable `trail` is used as a loop counter
+warning: the loop variable `i` is used to index `input`
+warning: unneeded `return` statement
+warning: the loop variable `i` is used to index `arr`
+warning: the loop variable `k` is only used to index `options`
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: the loop variable `s` is only used to index `SIZES`
+warning: variables can be used directly in the `format!` string
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: literal with an empty format string
+warning: this manual char comparison can be written more succinctly
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: this looks like you are trying to swap `buf_info.index_a` and `idx`
+warning: literal with an empty format string
+warning: variables can be used directly in the `format!` string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: literal with an empty format string
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: the loop variable `i` is only used to index `inputs`
+warning: manual `!RangeInclusive::contains` implementation
+warning: stripping a prefix manually
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: this loop could be written as a `while let` loop
+warning: this `map_or` can be simplified
+warning: manual `!RangeInclusive::contains` implementation
+warning: literal with an empty format string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: equal expressions as operands to `!=`
+warning: literal with an empty format string
+warning: equal expressions as operands to `!=`
+warning: literal with an empty format string
+warning: equal expressions as operands to `<=`
+warning: `assert!(false, ..)` should probably be replaced
+warning: `assert!(false, ..)` should probably be replaced
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: redundant pattern matching, consider using `is_err()`
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: file opened with `create`, but `truncate` behavior not defined
+warning: variables can be used directly in the `format!` string
+warning: the loop variable `j` is used to index `output`
+warning: the type `ti_indicator_info::TiIndicatorInfo` does not permit zero-initialization
+warning: static variable `buf` should have an upper case name
+warning: function pointers are not nullable, so checking them for null will always return false
+warning: function pointers are not nullable, so checking them for null will always return false
+warning: implicit autoref creates a reference to the dereference of a raw pointer
