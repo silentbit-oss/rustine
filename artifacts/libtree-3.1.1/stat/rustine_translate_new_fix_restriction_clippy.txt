@@ -1,0 +1,2052 @@
+warning: `arr` shadows a previous, unrelated binding
+warning: `current_pos` shadows a previous, unrelated binding
+warning: `i` shadows a previous, unrelated binding
+warning: `if` expression with an `else if`, but without a final `else`
+warning: `if` expression with an `else if`, but without a final `else`
+warning: `if` expression with an `else if`, but without a final `else`
+warning: `impl Trait` used as a function parameter
+warning: `impl Trait` used as a function parameter
+warning: `impl Trait` used as a function parameter
+warning: `impl Trait` used as a function parameter
+warning: `indent` is shadowed
+warning: `line_str` is shadowed
+warning: `line_str` is shadowed
+warning: `map_err(|_|...` wildcard pattern discards the original error
+warning: `map_err(|_|...` wildcard pattern discards the original error
+warning: `mut line_str` is shadowed
+warning: `mut state` is shadowed
+warning: `mut state` is shadowed
+warning: `mut stderr` is shadowed
+warning: `mut stderr` is shadowed
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `result` shadows a previous, unrelated binding
+warning: `result` shadows a previous, unrelated binding
+warning: `result` shadows a previous, unrelated binding
+warning: `runpath` is shadowed
+warning: `s` shadows a previous, unrelated binding
+warning: `s` shadows a previous, unrelated binding
+warning: `s` shadows a previous, unrelated binding
+warning: `s` shadows a previous, unrelated binding
+warning: `soname` is shadowed
+warning: `start` is shadowed
+warning: `stat` is shadowed
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `val` is shadowed
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider moving the `;` outside the block for consistent formatting
+warning: consider moving the `;` outside the block for consistent formatting
+warning: consider moving the `;` outside the block for consistent formatting
+warning: consider moving the `;` outside the block for consistent formatting
+warning: consider moving the `;` outside the block for consistent formatting
+warning: consider moving the `;` outside the block for consistent formatting
+warning: consider moving the `;` outside the block for consistent formatting
+warning: consider moving the `;` outside the block for consistent formatting
+warning: consider moving the `;` outside the block for consistent formatting
+warning: consider moving the `;` outside the block for consistent formatting
+warning: consider moving the `;` outside the block for consistent formatting
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: exported enums should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: found empty brackets on struct declaration
+warning: importing trait that is only used anonymously
+warning: importing trait that is only used anonymously
+warning: importing trait that is only used anonymously
+warning: importing trait that is only used anonymously
+warning: importing trait that is only used anonymously
+warning: importing trait that is only used anonymously
+warning: importing trait that is only used anonymously
+warning: incorrect ordering of items (module item groupings specify another order)
+warning: incorrect ordering of items (module item groupings specify another order)
+warning: incorrect ordering of items (module item groupings specify another order)
+warning: incorrect ordering of items (module item groupings specify another order)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: indexing into a slice multiple times without an `assert`
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: integer division
+warning: integer literal has a better hexadecimal representation
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: integer type suffix should be separated by an underscore
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a method
+warning: missing `#[inline]` for a method
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing documentation for a constant
+warning: missing documentation for a constant
+warning: missing documentation for a constant
+warning: missing documentation for a constant
+warning: missing documentation for a function
+warning: missing documentation for a module
+warning: missing documentation for a struct
+warning: missing documentation for a struct
+warning: missing documentation for a struct field
+warning: missing documentation for a struct field
+warning: missing documentation for a struct field
+warning: missing documentation for a variant
+warning: missing documentation for a variant
+warning: missing documentation for a variant
+warning: missing documentation for an associated function
+warning: missing documentation for an enum
+warning: missing documentation for the crate
+warning: non-binding `let` on an expression with `#[must_use]` type
+warning: non-binding `let` without a type annotation
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: slicing may panic
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: this `unsafe` block contains 3 unsafe operations, expected only one
+warning: this function is only used once
+warning: this function is only used once
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this union has the default representation
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unused `std::result::Result` that must be used
+warning: usage of `process::exit`
+warning: usage of the `unreachable!` macro
+warning: usage of the `unreachable!` macro
+warning: usage of the `unreachable!` macro
+warning: use of % has been disallowed in this context
+warning: use of / has been disallowed in this context
+warning: use of `Debug`-based formatting
+warning: use of `Debug`-based formatting
+warning: use of `Debug`-based formatting
+warning: use of `Debug`-based formatting
+warning: use of `Debug`-based formatting
+warning: use of `Debug`-based formatting
+warning: use of `Debug`-based formatting
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on an `Option` value
+warning: used `expect()` on an `Option` value
+warning: used `expect()` on an `Option` value
+warning: used `expect()` on an `Option` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used import from `std` instead of `alloc`
+warning: used import from `std` instead of `alloc`
+warning: used import from `std` instead of `alloc`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using inferred pointer cast
+warning: using inferred pointer cast
+warning: using inferred pointer cast

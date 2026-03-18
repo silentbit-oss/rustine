@@ -1,0 +1,213 @@
+{
+  "C": {
+    "blanks": 123,
+    "children": {},
+    "code": 680,
+    "comments": 167,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/ht/samples/demo.c",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 39,
+          "comments": 22
+        }
+      },
+      {
+        "name": "subjects/ht/samples/perfget.c",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 86,
+          "comments": 9
+        }
+      },
+      {
+        "name": "subjects/ht/samples/stats.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 78,
+          "comments": 18
+        }
+      },
+      {
+        "name": "subjects/ht/samples/perfset.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 90,
+          "comments": 9
+        }
+      },
+      {
+        "name": "subjects/ht/ht.c",
+        "stats": {
+          "blanks": 25,
+          "blobs": {},
+          "code": 142,
+          "comments": 30
+        }
+      },
+      {
+        "name": "subjects/ht/samples/bsearch.c",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 51,
+          "comments": 9
+        }
+      },
+      {
+        "name": "subjects/ht/samples/dump.c",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 44,
+          "comments": 21
+        }
+      },
+      {
+        "name": "subjects/ht/samples/lsearch.c",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 27,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/ht/samples/perflbh.c",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 123,
+          "comments": 48
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 13,
+    "children": {},
+    "code": 19,
+    "comments": 17,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/ht/ht.h",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 19,
+          "comments": 17
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 136,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/ht/samples/demo.c",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 39,
+            "comments": 22
+          }
+        },
+        {
+          "name": "subjects/ht/samples/perfget.c",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 86,
+            "comments": 9
+          }
+        },
+        {
+          "name": "subjects/ht/samples/stats.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 78,
+            "comments": 18
+          }
+        },
+        {
+          "name": "subjects/ht/samples/perfset.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 90,
+            "comments": 9
+          }
+        },
+        {
+          "name": "subjects/ht/ht.c",
+          "stats": {
+            "blanks": 25,
+            "blobs": {},
+            "code": 142,
+            "comments": 30
+          }
+        },
+        {
+          "name": "subjects/ht/samples/bsearch.c",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 51,
+            "comments": 9
+          }
+        },
+        {
+          "name": "subjects/ht/samples/dump.c",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 44,
+            "comments": 21
+          }
+        },
+        {
+          "name": "subjects/ht/samples/lsearch.c",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 27,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/ht/samples/perflbh.c",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 123,
+            "comments": 48
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/ht/ht.h",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 19,
+            "comments": 17
+          }
+        }
+      ]
+    },
+    "code": 699,
+    "comments": 184,
+    "inaccurate": false,
+    "reports": []
+  }
+}

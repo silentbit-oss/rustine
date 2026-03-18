@@ -1,0 +1,159 @@
+{
+  "C": {
+    "blanks": 278,
+    "children": {},
+    "code": 1097,
+    "comments": 236,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/avl-tree/avl_data.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 47,
+          "comments": 4
+        }
+      },
+      {
+        "name": "subjects/avl-tree/avl_example.c",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 42,
+          "comments": 10
+        }
+      },
+      {
+        "name": "subjects/avl-tree/avl_test.c",
+        "stats": {
+          "blanks": 164,
+          "blobs": {},
+          "code": 608,
+          "comments": 59
+        }
+      },
+      {
+        "name": "subjects/avl-tree/avl_bf.c",
+        "stats": {
+          "blanks": 90,
+          "blobs": {},
+          "code": 400,
+          "comments": 163
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 26,
+    "children": {},
+    "code": 73,
+    "comments": 17,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/avl-tree/avl_data.h",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 11,
+          "comments": 4
+        }
+      },
+      {
+        "name": "subjects/avl-tree/minunit.h",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 14,
+          "comments": 4
+        }
+      },
+      {
+        "name": "subjects/avl-tree/avl_bf.h",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 48,
+          "comments": 9
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 304,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/avl-tree/avl_data.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 47,
+            "comments": 4
+          }
+        },
+        {
+          "name": "subjects/avl-tree/avl_example.c",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 42,
+            "comments": 10
+          }
+        },
+        {
+          "name": "subjects/avl-tree/avl_test.c",
+          "stats": {
+            "blanks": 164,
+            "blobs": {},
+            "code": 608,
+            "comments": 59
+          }
+        },
+        {
+          "name": "subjects/avl-tree/avl_bf.c",
+          "stats": {
+            "blanks": 90,
+            "blobs": {},
+            "code": 400,
+            "comments": 163
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/avl-tree/avl_data.h",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 11,
+            "comments": 4
+          }
+        },
+        {
+          "name": "subjects/avl-tree/minunit.h",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 14,
+            "comments": 4
+          }
+        },
+        {
+          "name": "subjects/avl-tree/avl_bf.h",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 48,
+            "comments": 9
+          }
+        }
+      ]
+    },
+    "code": 1170,
+    "comments": 253,
+    "inaccurate": false,
+    "reports": []
+  }
+}

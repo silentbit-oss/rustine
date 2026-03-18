@@ -1,0 +1,99 @@
+warning: called `.as_ref().map(|v| v.as_slice())` on an `Option` value
+warning: called `.as_ref().map(|v| v.as_slice())` on an `Option` value
+warning: called `unwrap` on `stream` after checking its variant with `is_some`
+warning: called `unwrap` on `stream` after checking its variant with `is_some`
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: derefed type is same as origin
+warning: the variable `apo_idx` is used as a loop counter
+warning: the variable `output_idx` is used as a loop counter
+warning: the variable `output_idx` is used as a loop counter
+warning: the variable `output_idx` is used as a loop counter
+warning: the variable `trail` is used as a loop counter
+warning: the variable `trail` is used as a loop counter
+warning: the variable `trail` is used as a loop counter
+warning: the variable `trail` is used as a loop counter
+warning: the variable `trail` is used as a loop counter
+warning: the variable `trail` is used as a loop counter
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (12/7)
+warning: this function has too many arguments (12/7)
+warning: this function has too many arguments (12/7)
+warning: this function has too many arguments (12/7)
+warning: this function has too many arguments (12/7)
+warning: this function has too many arguments (13/7)
+warning: this function has too many arguments (13/7)
+warning: this function has too many arguments (13/7)
+warning: this function has too many arguments (13/7)
+warning: this function has too many arguments (14/7)
+warning: this function has too many arguments (14/7)
+warning: this function has too many arguments (14/7)
+warning: this function has too many arguments (14/7)
+warning: this function has too many arguments (14/7)
+warning: this function has too many arguments (15/7)
+warning: this function has too many arguments (15/7)
+warning: this function has too many arguments (15/7)
+warning: this function has too many arguments (16/7)
+warning: this function has too many arguments (16/7)
+warning: this function has too many arguments (17/7)
+warning: this function has too many arguments (22/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (9/7)
+warning: this operation has no effect
+warning: unnecessary `if let` since only the `Some` variant of the iterator element is used
+warning: use of `wrapping_offset` with a `usize` casted to an `isize`
+warning: use of `wrapping_offset` with a `usize` casted to an `isize`

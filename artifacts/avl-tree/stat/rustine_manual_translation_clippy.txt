@@ -1,0 +1,113 @@
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: unused import: `globals::*`
+warning: unused import: `std::any::Any`
+warning: unused import: `std::fmt`
+warning: unused import: `std::ffi::CStr`
+warning: unused import: `std::os::raw::c_char`
+warning: unused import: `std::alloc::Layout`
+warning: unused import: `std::alloc::alloc`
+warning: unused import: `std::rc::Rc`
+warning: unused import: `std::cell::RefCell`
+warning: unused import: `rand::Rng`
+warning: unreachable statement
+warning: unreachable statement
+warning: unreachable statement
+warning: unreachable statement
+warning: unused variable: `seed`
+warning: unused variable: `r`
+warning: unused variable: `e`
+warning: unused variable: `d`
+warning: unused variable: `s`
+warning: unused variable: `o`
+warning: unused variable: `x`
+warning: unused variable: `c`
+warning: unused variable: `u`
+warning: unused variable: `b`
+warning: unused variable: `t`
+warning: unused variable: `p`
+warning: unused variable: `avlt`
+warning: unnecessary `unsafe` block
+warning: value assigned to `target` is never read
+warning: unused variable: `current_idx`
+warning: value assigned to `current_idx` is never read
+warning: unused variable: `data`
+warning: this looks like you are swapping `*x` and `*y` manually
+warning: manual `!RangeInclusive::contains` implementation
+warning: this comparison involving the minimum or maximum element for this type contains a case that is always true or always false
+warning: this comparison involving the minimum or maximum element for this type contains a case that is always true or always false
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: called `.as_ref().map(|n| &**n)` on an `Option` value
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: this `map_or` can be simplified
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: variables can be used directly in the `format!` string
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: unneeded `return` statement
+warning: you seem to be trying to use `&Box<T>`. Consider using just `&T`
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: you seem to be trying to use `&Box<T>`. Consider using just `&T`
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: manual `!RangeInclusive::contains` implementation
+warning: you seem to be trying to use `&Box<T>`. Consider using just `&T`
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: deref which would be done by auto-deref
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: you seem to be trying to use `&Box<T>`. Consider using just `&T`
+warning: parameter is only used in recursion

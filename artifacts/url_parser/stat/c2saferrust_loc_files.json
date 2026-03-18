@@ -1,0 +1,40 @@
+{
+  "Rust": {
+    "blanks": 72,
+    "children": {},
+    "code": 1016,
+    "comments": 2,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/url_parser/others/c2saferrust/test.rs",
+        "stats": {
+          "blanks": 72,
+          "blobs": {},
+          "code": 1016,
+          "comments": 2
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 72,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/url_parser/others/c2saferrust/test.rs",
+          "stats": {
+            "blanks": 72,
+            "blobs": {},
+            "code": 1016,
+            "comments": 2
+          }
+        }
+      ]
+    },
+    "code": 1016,
+    "comments": 2,
+    "inaccurate": false,
+    "reports": []
+  }
+}

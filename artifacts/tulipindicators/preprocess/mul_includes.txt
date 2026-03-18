@@ -1,0 +1,7 @@
+#include <assert.h>
+#include <indicators.h>
+#include <math.h>
+#include <mul.c>
+#include <simple2.h>
+#include <stdlib.h>
+#include <string.h>

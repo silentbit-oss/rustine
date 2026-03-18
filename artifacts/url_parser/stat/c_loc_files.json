@@ -1,0 +1,123 @@
+{
+  "C": {
+    "blanks": 130,
+    "children": {},
+    "code": 493,
+    "comments": 17,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/url_parser/gen_char_category_table.c",
+        "stats": {
+          "blanks": 21,
+          "blobs": {},
+          "code": 54,
+          "comments": 2
+        }
+      },
+      {
+        "name": "subjects/url_parser/test.c",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 58,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/url_parser/url.c",
+        "stats": {
+          "blanks": 94,
+          "blobs": {},
+          "code": 381,
+          "comments": 14
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 39,
+    "children": {},
+    "code": 70,
+    "comments": 53,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/url_parser/url.h",
+        "stats": {
+          "blanks": 37,
+          "blobs": {},
+          "code": 54,
+          "comments": 53
+        }
+      },
+      {
+        "name": "subjects/url_parser/url_char_category.h",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 16,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 169,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/url_parser/gen_char_category_table.c",
+          "stats": {
+            "blanks": 21,
+            "blobs": {},
+            "code": 54,
+            "comments": 2
+          }
+        },
+        {
+          "name": "subjects/url_parser/test.c",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 58,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/url_parser/url.c",
+          "stats": {
+            "blanks": 94,
+            "blobs": {},
+            "code": 381,
+            "comments": 14
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/url_parser/url.h",
+          "stats": {
+            "blanks": 37,
+            "blobs": {},
+            "code": 54,
+            "comments": 53
+          }
+        },
+        {
+          "name": "subjects/url_parser/url_char_category.h",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 16,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 563,
+    "comments": 70,
+    "inaccurate": false,
+    "reports": []
+  }
+}

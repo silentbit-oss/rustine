@@ -1,0 +1,310 @@
+warning: `alnum` is shadowed
+warning: `begin` is shadowed
+warning: `data` is shadowed
+warning: `end` is shadowed
+warning: `key` is shadowed
+warning: `key` is shadowed
+warning: `mut data` is shadowed
+warning: `s` is shadowed
+warning: `special` is shadowed
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `&str`
+warning: `to_string()` called on a `String`
+warning: `url` is shadowed
+warning: `url` is shadowed
+warning: `url` is shadowed
+warning: `url` is shadowed
+warning: `url` is shadowed
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: incorrect ordering of items (module item groupings specify another order)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing into a string may panic if the index is within a UTF-8 character
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: item name starts with its containing module's name
+warning: literal non-ASCII character detected
+warning: literal non-ASCII character detected
+warning: literal non-ASCII character detected
+warning: literal non-ASCII character detected
+warning: literal non-ASCII character detected
+warning: literal non-ASCII character detected
+warning: literal non-ASCII character detected
+warning: literal non-ASCII character detected
+warning: literal non-ASCII character detected
+warning: literal non-ASCII character detected
+warning: literal non-ASCII character detected
+warning: literal non-ASCII character detected
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing documentation for a function
+warning: missing documentation for the crate
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: this could be simplified with `bool::then_some`
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: usage of ref pattern
+warning: usage of ref pattern
+warning: usage of ref pattern
+warning: usage of ref pattern
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `eprintln!`
+warning: use of `print!`
+warning: use of `print!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used import from `std` instead of `alloc`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion

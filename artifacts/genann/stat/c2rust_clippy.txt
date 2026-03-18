@@ -1,0 +1,251 @@
+warning: unused label
+warning: unused label
+warning: unused label
+warning: unused label
+warning: the feature `label_break_value` has been stable since 1.65.0 and no longer requires an attribute to enable
+warning: unused variable: `argc`
+warning: unused variable: `argv`
+warning: unused variable: `argc`
+warning: unused variable: `argv`
+warning: unused variable: `argc`
+warning: unused variable: `argv`
+warning: unused variable: `argc`
+warning: unused variable: `argv`
+warning: unused variable: `ann`
+warning: unused variable: `ann`
+warning: unused variable: `ann`
+warning: unused variable: `ann`
+warning: unused variable: `argc`
+warning: unused variable: `argv`
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut *mut i8` -> `*mut *mut i8`)
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: the use of negated comparison operators on partially ordered types produces code that is hard to read and refactor, please consider using the `partial_cmp` method instead, to make it clear that the two values could be incomparable
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut *mut i8` -> `*mut *mut i8`)
+warning: unneeded `return` statement
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut *mut i8` -> `*mut *mut i8`)
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut *mut i8` -> `*mut *mut i8`)
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this multiplication by -1 can be written more succinctly
+warning: this multiplication by -1 can be written more succinctly
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: the function `genann_run` doesn't need a mutable reference
+warning: the function `genann_run` doesn't need a mutable reference
+warning: the function `genann_run` doesn't need a mutable reference
+warning: the function `genann_run` doesn't need a mutable reference
+warning: the function `genann_run` doesn't need a mutable reference
+warning: the function `genann_run` doesn't need a mutable reference
+warning: the function `genann_run` doesn't need a mutable reference
+warning: the function `genann_run` doesn't need a mutable reference
+warning: the function `genann_run` doesn't need a mutable reference
+warning: the function `genann_run` doesn't need a mutable reference
+warning: the function `genann_run` doesn't need a mutable reference
+warning: the function `genann_run` doesn't need a mutable reference
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: the function `genann_run` doesn't need a mutable reference
+warning: the function `genann_train` doesn't need a mutable reference
+warning: the function `genann_train` doesn't need a mutable reference
+warning: the function `genann_run` doesn't need a mutable reference
+warning: the use of negated comparison operators on partially ordered types produces code that is hard to read and refactor, please consider using the `partial_cmp` method instead, to make it clear that the two values could be incomparable
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: `0 as *const _` detected
+warning: `0 as *const _` detected
+warning: `0 as *const _` detected
+warning: `0 as *const _` detected
+warning: unneeded `return` statement
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut *mut i8` -> `*mut *mut i8`)
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: function pointer comparisons do not produce meaningful results since their addresses are not guaranteed to be unique
+warning: function pointer comparisons do not produce meaningful results since their addresses are not guaranteed to be unique
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: path statement with no effect
+warning: `genann_init` redeclared with a different signature
+warning: `genann_free` redeclared with a different signature
+warning: `genann_run` redeclared with a different signature
+warning: `genann_free` redeclared with a different signature
+warning: `genann_run` redeclared with a different signature
+warning: `fclose` redeclared with a different signature
+warning: `fopen` redeclared with a different signature
+warning: `genann_init` redeclared with a different signature
+warning: `genann_free` redeclared with a different signature
+warning: `genann_run` redeclared with a different signature
+warning: `genann_train` redeclared with a different signature
+warning: `fclose` redeclared with a different signature
+warning: `fopen` redeclared with a different signature
+warning: `genann_init` redeclared with a different signature
+warning: `genann_read` redeclared with a different signature
+warning: `genann_randomize` redeclared with a different signature
+warning: `genann_copy` redeclared with a different signature
+warning: `genann_free` redeclared with a different signature
+warning: `genann_run` redeclared with a different signature
+warning: `genann_train` redeclared with a different signature

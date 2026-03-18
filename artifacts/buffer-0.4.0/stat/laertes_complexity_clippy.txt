@@ -1,0 +1,8 @@
+warning: this boolean expression can be simplified
+warning: the following explicit lifetimes could be elided: 'a1
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: use of `default` to create a unit struct
+warning: the following explicit lifetimes could be elided: 'a
+warning: the following explicit lifetimes could be elided: 'a
+warning: casting raw pointers to the same type and constness is unnecessary (`*const ()` -> `*const ()`)

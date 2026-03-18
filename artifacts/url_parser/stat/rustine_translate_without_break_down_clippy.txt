@@ -1,0 +1,35 @@
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: constants have by default a `'static` lifetime
+warning: unused import: `std::ffi::CStr`
+warning: unused import: `std::borrow::Cow`
+warning: unused import: `std::fmt::Write`
+warning: unused import: `std::ffi::CStr`
+warning: unused variable: `end`
+warning: unused variable: `data`
+warning: variable does not need to be mutable
+warning: unused variable: `idx`
+warning: unused variable: `idx`
+warning: unused variable: `value`
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: using `contains()` instead of `iter().any()` is more efficient
+warning: this manual char comparison can be written more succinctly
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: you are using an explicit closure for cloning elements
+warning: you are using an explicit closure for cloning elements
+warning: variables can be used directly in the `format!` string

@@ -1,0 +1,112 @@
+warning: constants have by default a `'static` lifetime
+warning: constants have by default a `'static` lifetime
+warning: the loop variable `i` is only used to index `weight`
+warning: writing `&mut Vec` instead of `&mut [_]` involves a new object where a slice will do
+warning: writing `&Vec` instead of `&[_]` involves a new object where a slice will do
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+20 |     writeln!(io::stderr(), "{}: warning: output file(s) may be incomplete.", prog_name_str).unwrap();
+20 -     writeln!(io::stderr(), "{}: warning: output file(s) may be incomplete.", prog_name_str).unwrap();
+20 +     writeln!(io::stderr(), "{prog_name_str}: warning: output file(s) may be incomplete.").unwrap();
+warning: this can be `std::io::Error::other(_)`
+warning: unneeded `return` statement
+warning: redundant pattern matching, consider using `is_ok()`
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: called `.nth(0)` on a `std::iter::Iterator`, when `.next()` is equivalent
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: redundant pattern matching, consider using `is_ok()`
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: this can be `std::io::Error::other(_)`
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: writing `&Vec` instead of `&[_]` involves a new object where a slice will do
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: writing `&mut Vec` instead of `&mut [_]` involves a new object where a slice will do
+warning: writing `&mut Vec` instead of `&mut [_]` involves a new object where a slice will do
+warning: writing `&mut Vec` instead of `&mut [_]` involves a new object where a slice will do
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: writing `&Vec` instead of `&[_]` involves a new object where a slice will do
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: called `.nth(0)` on a `std::iter::Iterator`, when `.next()` is equivalent
+warning: this call to `from_str_radix` can be replaced with a call to `str::parse`
+warning: this call to `from_str_radix` can be replaced with a call to `str::parse`
+warning: this call to `from_str_radix` can be replaced with a call to `str::parse`
+warning: writing `&Vec` instead of `&[_]` involves a new object where a slice will do
+warning: variables can be used directly in the `format!` string
+warning: writing `&mut Vec` instead of `&mut [_]` involves a new object where a slice will do
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: called `.nth(0)` on a `std::iter::Iterator`, when `.next()` is equivalent
+warning: this call to `from_str_radix` can be replaced with a call to `str::parse`
+warning: this call to `from_str_radix` can be replaced with a call to `str::parse`
+warning: called `.nth(0)` on a `std::iter::Iterator`, when `.next()` is equivalent
+warning: writing `&mut Vec` instead of `&mut [_]` involves a new object where a slice will do
+warning: writing `&Vec` instead of `&[_]` involves a new object where a slice will do
+warning: called `.nth(0)` on a `std::iter::Iterator`, when `.next()` is equivalent
+warning: the function `build_mtfv_from_arr1` doesn't need a mutable reference
+warning: the function `build_block_from_arr2` doesn't need a mutable reference
+warning: variables can be used directly in the `format!` string
+warning: called `.nth(0)` on a `std::iter::Iterator`, when `.next()` is equivalent
+warning: this call to `from_str_radix` can be replaced with a call to `str::parse`
+warning: this call to `from_str_radix` can be replaced with a call to `str::parse`
+warning: called `.nth(0)` on a `std::iter::Iterator`, when `.next()` is equivalent
+warning: unneeded `return` statement
+warning: name `BZFILE` contains a capitalized acronym
+warning: this expression borrows a value the compiler would automatically borrow
+warning: this expression borrows a value the compiler would automatically borrow
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: the loop variable `i` is used to index `in_use_16`
+warning: the loop variable `i` is only used to index `in_use_16`
+warning: the loop variable `i` is used to index `in_use_16`
+warning: unneeded late initialization
+warning: the loop variable `i` is used to index `yy`
+warning: unneeded late initialization
+warning: there is no need to manually implement bit rotation
+warning: unused `std::result::Result` that must be used
+warning: unused return value of `std::boxed::Box::<T>::from_raw` that must be used
+warning: variables can be used directly in the `format!` string
+warning: called `.nth(0)` on a `std::iter::Iterator`, when `.next()` is equivalent
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: variables can be used directly in the `format!` string

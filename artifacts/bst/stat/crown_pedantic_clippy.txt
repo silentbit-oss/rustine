@@ -1,0 +1,17 @@
+warning: redundant else block
+warning: missing `#[must_use]` attribute on a method returning `Self`
+warning: docs for function which may panic missing `# Panics` section
+warning: unnecessary boolean `not` operation
+warning: called `map(<f>).unwrap_or(<a>)` on an `Option` value
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: called `map(<f>).unwrap_or(<a>)` on an `Option` value
+warning: reference as raw pointer
+warning: docs for function which may panic missing `# Panics` section
+warning: called `map(<f>).unwrap_or(<a>)` on an `Option` value
+warning: reference as raw pointer
+warning: docs for function which may panic missing `# Panics` section
+warning: `if` chain can be rewritten with `match`
+warning: called `map(<f>).unwrap_or(<a>)` on an `Option` value
+warning: reference as raw pointer

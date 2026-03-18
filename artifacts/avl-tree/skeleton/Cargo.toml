@@ -1,0 +1,14 @@
+[package]
+name = "avlrs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name="avl_test"
+path="src/avl_test_main.rs"
+
+[[bin]]
+name="avl_example"
+path="src/avl_example_main.rs"

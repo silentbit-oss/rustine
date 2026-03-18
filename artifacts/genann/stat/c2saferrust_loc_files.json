@@ -1,0 +1,166 @@
+{
+  "Rust": {
+    "blanks": 237,
+    "children": {},
+    "code": 1424,
+    "comments": 106,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/genann/others/c2saferrust/c2rust-lib.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 20,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/genann/others/c2saferrust/build.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/genann/others/c2saferrust/example2.rs",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 113,
+          "comments": 14
+        }
+      },
+      {
+        "name": "artifacts/genann/others/c2saferrust/example4.rs",
+        "stats": {
+          "blanks": 36,
+          "blobs": {},
+          "code": 142,
+          "comments": 17
+        }
+      },
+      {
+        "name": "artifacts/genann/others/c2saferrust/example3.rs",
+        "stats": {
+          "blanks": 23,
+          "blobs": {},
+          "code": 100,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/genann/others/c2saferrust/example1.rs",
+        "stats": {
+          "blanks": 22,
+          "blobs": {},
+          "code": 57,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/genann/others/c2saferrust/genann.rs",
+        "stats": {
+          "blanks": 18,
+          "blobs": {},
+          "code": 490,
+          "comments": 36
+        }
+      },
+      {
+        "name": "artifacts/genann/others/c2saferrust/test.rs",
+        "stats": {
+          "blanks": 109,
+          "blobs": {},
+          "code": 496,
+          "comments": 30
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 237,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/genann/others/c2saferrust/c2rust-lib.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 20,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/genann/others/c2saferrust/build.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/genann/others/c2saferrust/example2.rs",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 113,
+            "comments": 14
+          }
+        },
+        {
+          "name": "artifacts/genann/others/c2saferrust/example4.rs",
+          "stats": {
+            "blanks": 36,
+            "blobs": {},
+            "code": 142,
+            "comments": 17
+          }
+        },
+        {
+          "name": "artifacts/genann/others/c2saferrust/example3.rs",
+          "stats": {
+            "blanks": 23,
+            "blobs": {},
+            "code": 100,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/genann/others/c2saferrust/example1.rs",
+          "stats": {
+            "blanks": 22,
+            "blobs": {},
+            "code": 57,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/genann/others/c2saferrust/genann.rs",
+          "stats": {
+            "blanks": 18,
+            "blobs": {},
+            "code": 490,
+            "comments": 36
+          }
+        },
+        {
+          "name": "artifacts/genann/others/c2saferrust/test.rs",
+          "stats": {
+            "blanks": 109,
+            "blobs": {},
+            "code": 496,
+            "comments": 30
+          }
+        }
+      ]
+    },
+    "code": 1424,
+    "comments": 106,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,23 @@
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: operator precedence might not be obvious
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut src::openaptx::aptx_quantize` -> `*mut src::openaptx::aptx_quantize`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut src::openaptx::aptx_channel` -> `*mut src::openaptx::aptx_channel`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut src::openaptx::aptx_quantize` -> `*mut src::openaptx::aptx_quantize`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut src::openaptx::aptx_channel` -> `*mut src::openaptx::aptx_channel`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut src::openaptx::aptx_prediction` -> `*mut src::openaptx::aptx_prediction`)
+warning: statement with no effect
+warning: statement with no effect
+warning: statement with no effect
+warning: statement with no effect
+warning: statement with no effect
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut *mut i8` -> `*mut *mut i8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut *mut i8` -> `*mut *mut i8`)

@@ -1,0 +1,12 @@
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this comparison involving the minimum or maximum element for this type contains a case that is always true or always false
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this comparison involving the minimum or maximum element for this type contains a case that is always true or always false
+warning: left-hand side of `&&` operator has no effect
+warning: unused `std::result::Result` that must be used
+warning: unused return value of `std::boxed::Box::<T>::from_raw` that must be used

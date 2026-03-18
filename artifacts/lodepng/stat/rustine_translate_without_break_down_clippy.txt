@@ -1,0 +1,370 @@
+warning: unused import: `crate::*`
+warning: variant `LCT_GREY` should have an upper camel case name
+warning: variant `LCT_RGB` should have an upper camel case name
+warning: variant `LCT_PALETTE` should have an upper camel case name
+warning: variant `LCT_GREY_ALPHA` should have an upper camel case name
+warning: variant `LCT_RGBA` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: variant `LFS_ZERO` should have an upper camel case name
+warning: variant `LFS_ONE` should have an upper camel case name
+warning: variant `LFS_TWO` should have an upper camel case name
+warning: variant `LFS_THREE` should have an upper camel case name
+warning: variant `LFS_FOUR` should have an upper camel case name
+warning: variant `LFS_MINSUM` should have an upper camel case name
+warning: variant `LFS_ENTROPY` should have an upper camel case name
+warning: variant `LFS_BRUTE_FORCE` should have an upper camel case name
+warning: variant `LFS_PREDEFINED` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::mem::size_of`
+warning: unused import: `crate::*`
+warning: ambiguous glob re-exports
+warning: unused import: `lode_p_n_g_bit_reader::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::os::raw::c_void`
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: unused import: `std::alloc::dealloc`
+warning: unused import: `std::cmp`
+warning: unused import: `std::os::raw::c_uint`
+warning: unused import: `std::mem::size_of`
+warning: unnecessary parentheses around index expression
+warning: unnecessary parentheses around index expression
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around block return value
+warning: unnecessary parentheses around `if` condition
+warning: ambiguous glob re-exports
+warning: unused import: `std::mem::size_of`
+warning: unused import: `lode_p_n_g_state::*`
+warning: unused import: `rand::Rng`
+warning: unreachable pattern
+warning: unused variable: `palettesize`
+warning: variable does not need to be mutable
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: variable does not need to be mutable
+warning: value assigned to `error` is never read
+warning: value assigned to `error` is never read
+warning: variable does not need to be mutable
+warning: unused variable: `n`
+warning: value assigned to `bitlen_ll` is never read
+warning: value assigned to `bitlen_d` is never read
+warning: value assigned to `bitlen_cl` is never read
+warning: unused variable: `n`
+warning: unused variable: `n`
+warning: unused variable: `n`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `error` is never read
+warning: value assigned to `key` is never read
+warning: variable does not need to be mutable
+warning: value assigned to `key` is never read
+warning: value assigned to `str` is never read
+warning: unused variable: `size`
+warning: value assigned to `error` is never read
+warning: unused variable: `zlibsettings`
+warning: variable does not need to be mutable
+warning: unreachable pattern
+warning: unreachable pattern
+warning: value assigned to `chunk` is never read
+warning: value assigned to `chunk_idx` is never read
+warning: value assigned to `idat` is never read
+warning: unused variable: `idat_idx`
+warning: value assigned to `unknown` is never read
+warning: unused variable: `data_idx`
+warning: value assigned to `idat` is never read
+warning: value assigned to `scanlines` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `offset` is never read
+warning: value assigned to `length` is never read
+warning: value assigned to `error` is never read
+warning: value assigned to `error` is never read
+warning: value assigned to `bitlen_lld` is never read
+warning: value assigned to `bitlen_lld_e` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `error` is never read
+warning: unnecessary `unsafe` block
+warning: unreachable pattern
+warning: value assigned to `sum` is never read
+warning: value assigned to `sum` is never read
+warning: unused variable: `testsize`
+warning: unused variable: `p`
+warning: value assigned to `r` is never read
+warning: value assigned to `g` is never read
+warning: value assigned to `b` is never read
+warning: unused variable: `error`
+warning: value assigned to `alpha_done` is never read
+warning: value assigned to `alpha_done` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `error` is never read
+warning: unused variable: `textsize`
+warning: value assigned to `error` is never read
+warning: unused variable: `error`
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: it looks like you're manually copying between slices
+warning: redundant pattern matching, consider using `is_err()`
+warning: unsafe function's docs are missing a `# Safety` section
+warning: the loop variable `i` is only used to index `dst`
+warning: manually reimplementing `div_ceil`
+warning: manual implementation of an assign operation
+warning: this operation has no effect
+warning: this function has too many arguments (8/7)
+warning: the loop variable `i` is only used to index `in_data`
+warning: the loop variable `i` is only used to index `in_data`
+warning: the loop variable `i` is only used to index `in_data`
+warning: the loop variable `i` is only used to index `in_data`
+warning: this operation has no effect
+warning: manually reimplementing `div_ceil`
+warning: calling `set_len()` immediately after reserving a buffer creates uninitialized values
+warning: the loop variable `i` is used to index `maxlens`
+warning: the loop variable `i` is only used to index `table_len`
+warning: the loop variable `i` is only used to index `bitlen`
+warning: this `repeat().take()` can be written more concisely
+warning: this `repeat().take()` can be written more concisely
+warning: this `repeat().take()` can be written more concisely
+warning: this `repeat().take()` can be written more concisely
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this loop never actually loops
+warning: this operation has no effect
+warning: manual `RangeInclusive::contains` implementation
+warning: this `if` statement can be collapsed
+warning: unneeded late initialization
+warning: this loop never actually loops
+warning: manual `!RangeInclusive::contains` implementation
+warning: called `.as_ref().map(|s| s.as_slice())` on an `Option` value
+warning: this loop never actually loops
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual arithmetic check found
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: creating a `Box` from a void raw pointer
+warning: this loop never actually loops
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual arithmetic check found
+warning: called `.as_ref().map(|s| s.as_slice())` on an `Option` value
+warning: manual `!RangeInclusive::contains` implementation
+warning: replacing an `Option` with `None`
+warning: this operation has no effect
+warning: manually reimplementing `div_ceil`
+warning: this function has too many arguments (8/7)
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: transmute used without annotations
+warning: manual saturating arithmetic
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: this `if` statement can be collapsed
+warning: this `else { if .. }` block can be collapsed
+warning: calling `set_len()` immediately after reserving a buffer creates uninitialized values
+warning: unneeded `return` statement
+warning: manually reimplementing `div_ceil`
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this function has too many arguments (9/7)
+warning: this `if` has identical blocks
+warning: the loop variable `i` is only used to index `data`
+warning: this call to `as_mut` does nothing
+warning: this call to `as_mut` does nothing
+warning: deref on an immutable reference
+warning: deref on an immutable reference
+warning: the loop variable `i` is used to index `frequencies`
+warning: this loop never actually loops
+warning: it looks like you're manually copying between slices
+warning: it looks like you're manually copying between slices
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: clamp-like pattern without using clamp function
+warning: manually reimplementing `div_ceil`
+warning: slow zero-filling initialization
+warning: it looks like you're manually copying between slices
+warning: manually reimplementing `div_ceil`
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: slow zero-filling initialization
+warning: this function has too many arguments (8/7)
+warning: this `if` statement can be collapsed
+warning: this operation has no effect
+warning: this `else { if .. }` block can be collapsed
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: this `if` statement can be collapsed
+warning: manually reimplementing `div_ceil`
+warning: unneeded `return` statement
+warning: this `if` statement can be collapsed
+warning: function `lodepng_read32bitInt` should have a snake case name
+warning: function `lodepng_set32bitInt` should have a snake case name
+warning: function `reverseBits` should have a snake case name
+warning: function `searchCodeIndex` should have a snake case name
+warning: function `readBitFromReversedStream` should have a snake case name
+warning: function `setBitOfReversedStream` should have a snake case name
+warning: function `addColorBits` should have a snake case name
+warning: function `getValueRequiredBits` should have a snake case name
+warning: function `paethPredictor` should have a snake case name
+warning: function `isGrayICCProfile` should have a snake case name
+warning: function `isRGBICCProfile` should have a snake case name
+warning: function `LodePNGUnknownChunks_init` should have a snake case name
+warning: function `LodePNGText_init` should have a snake case name
+warning: function `LodePNGIText_init` should have a snake case name
+warning: function `LodePNGUnknownChunks_cleanup` should have a snake case name
+warning: function `LodePNGText_cleanup` should have a snake case name
+warning: function `LodePNGIText_cleanup` should have a snake case name
+warning: function `rgba8ToPixel` should have a snake case name
+warning: function `rgba16ToPixel` should have a snake case name
+warning: function `readBitsFromReversedStream` should have a snake case name
+warning: function `getPixelColorsRGBA8` should have a snake case name
+warning: function `getPixelColorsRGB8` should have a snake case name
+warning: function `getPixelColorRGBA8` should have a snake case name
+warning: function `getPixelColorRGBA16` should have a snake case name
+warning: function `getNumColorChannels` should have a snake case name
+warning: variable `LEN` should have a snake case name
+warning: variable `NLEN` should have a snake case name
+warning: function `HuffmanTree_makeTable` should have a snake case name
+warning: function `HuffmanTree_makeFromLengths2` should have a snake case name
+warning: function `HuffmanTree_makeFromLengths` should have a snake case name
+warning: function `generateFixedLitLenTree` should have a snake case name
+warning: function `generateFixedDistanceTree` should have a snake case name
+warning: function `getTreeInflateFixed` should have a snake case name
+warning: function `peekBits` should have a snake case name
+warning: function `advanceBits` should have a snake case name
+warning: function `readBits` should have a snake case name
+warning: function `huffmanDecodeSymbol` should have a snake case name
+warning: function `ensureBits17` should have a snake case name
+warning: function `ensureBits25` should have a snake case name
+warning: function `HuffmanTree_init` should have a snake case name
+warning: function `HuffmanTree_cleanup` should have a snake case name
+warning: function `ensureBits9` should have a snake case name
+warning: function `getTreeInflateDynamic` should have a snake case name
+warning: variable `HLIT` should have a snake case name
+warning: variable `HDIST` should have a snake case name
+warning: variable `HCLEN` should have a snake case name
+warning: function `ensureBits32` should have a snake case name
+warning: function `inflateHuffmanBlock` should have a snake case name
+warning: function `LodePNGBitReader_init` should have a snake case name
+warning: variable `BFINAL` should have a snake case name
+warning: variable `BTYPE` should have a snake case name
+warning: variable `CM` should have a snake case name
+warning: variable `CINFO` should have a snake case name
+warning: variable `FDICT` should have a snake case name
+warning: variable `ADLER32` should have a snake case name
+warning: function `readChunk_zTXt` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_tRNS` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_tIME` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_tEXt` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_sRGB` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_sBIT` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_pHYs` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_iTXt` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_iCCP` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_gAMA` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_cHRM` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_bKGD` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_PLTE` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `Adam7_getpassvalues` should have a snake case name
+warning: function `Adam7_deinterlace` should have a snake case name
+warning: function `postProcessScanlines` should have a snake case name
+warning: function `checkColorValidity` should have a snake case name
+warning: variable `CRC` should have a snake case name
+warning: function `decodeGeneric` should have a snake case name
+warning: variable `IEND` should have a snake case name
+warning: function `writeSignature` should have a snake case name
+warning: function `filterScanline` should have a snake case name
+warning: variable `filterType` should have a snake case name
+warning: function `deflateNoCompression` should have a snake case name
+warning: variable `BFINAL` should have a snake case name
+warning: variable `BTYPE` should have a snake case name
+warning: variable `LEN` should have a snake case name
+warning: variable `NLEN` should have a snake case name
+warning: function `writeBitsReversed` should have a snake case name
+warning: function `writeBits` should have a snake case name
+warning: function `writeLZ77data` should have a snake case name
+warning: function `updateHashChain` should have a snake case name
+warning: function `getHash` should have a snake case name
+warning: function `countZeros` should have a snake case name
+warning: function `addLengthDistance` should have a snake case name
+warning: function `encodeLZ77` should have a snake case name
+warning: function `deflateFixed` should have a snake case name
+warning: variable `BFINAL` should have a snake case name
+warning: function `boundaryPM` should have a snake case name
+warning: function `HuffmanTree_makeFromFrequencies` should have a snake case name
+warning: function `deflateDynamic` should have a snake case name
+warning: function `LodePNGBitWriter_init` should have a snake case name
+warning: variable `ADLER32` should have a snake case name
+warning: variable `CMF` should have a snake case name
+warning: variable `FLEVEL` should have a snake case name
+warning: variable `FDICT` should have a snake case name
+warning: variable `CMFFLG` should have a snake case name
+warning: variable `FCHECK` should have a snake case name
+warning: variable `CMFFLG` should have a snake case name
+warning: function `addPaddingBits` should have a snake case name
+warning: function `Adam7_interlace` should have a snake case name
+warning: function `preProcessScanlines` should have a snake case name
+warning: function `LodePNGUnknownChunks_copy` should have a snake case name
+warning: function `LodePNGText_copy` should have a snake case name
+warning: function `LodePNGIText_copy` should have a snake case name
+warning: function `addUnknownChunks` should have a snake case name
+warning: function `addChunk_zTXt` should have a snake case name
+warning: function `addChunk_tRNS` should have a snake case name
+warning: function `addChunk_tIME` should have a snake case name
+warning: function `addChunk_tEXt` should have a snake case name
+warning: function `addChunk_sRGB` should have a snake case name
+warning: function `addChunk_sBIT` should have a snake case name
+warning: function `addChunk_pHYs` should have a snake case name
+warning: function `addChunk_iTXt` should have a snake case name
+warning: function `addChunk_iCCP` should have a snake case name
+warning: function `addChunk_gAMA` should have a snake case name
+warning: function `addChunk_cHRM` should have a snake case name
+warning: function `addChunk_bKGD` should have a snake case name
+warning: function `addChunk_PLTE` should have a snake case name
+warning: function `addChunk_IHDR` should have a snake case name
+warning: function `addChunk_IEND` should have a snake case name
+warning: function `addChunk_IDAT` should have a snake case name

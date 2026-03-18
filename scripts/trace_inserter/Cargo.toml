@@ -1,0 +1,10 @@
+[package]
+name = "trace_inserter"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+walkdir = "2"
+syn = { version = "2", features = ["full"] }
+quote = "1"
+prettyplease = "0.2"

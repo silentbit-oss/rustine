@@ -1,0 +1,238 @@
+{
+  "Rust": {
+    "blanks": 213,
+    "children": {},
+    "code": 11864,
+    "comments": 869,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/snudown/others/c2saferrust/snudown/lib.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 17,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/c2saferrust/lib.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 17,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/c2saferrust/snudown/src/buffer.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 163,
+          "comments": 14
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/c2saferrust/src/buffer.rs",
+        "stats": {
+          "blanks": 21,
+          "blobs": {},
+          "code": 171,
+          "comments": 16
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/c2saferrust/build.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/c2saferrust/src/stack.rs",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 89,
+          "comments": 5
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/c2saferrust/snudown/src/stack.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 77,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/c2saferrust/snudown/src/autolink.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 578,
+          "comments": 103
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/c2saferrust/snudown/build.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/c2saferrust/src/autolink.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 578,
+          "comments": 103
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/c2saferrust/src/markdown.rs",
+        "stats": {
+          "blanks": 119,
+          "blobs": {},
+          "code": 4970,
+          "comments": 300
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/c2saferrust/snudown/src/markdown.rs",
+        "stats": {
+          "blanks": 29,
+          "blobs": {},
+          "code": 5192,
+          "comments": 319
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 213,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/snudown/others/c2saferrust/snudown/lib.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 17,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/c2saferrust/lib.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 17,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/c2saferrust/snudown/src/buffer.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 163,
+            "comments": 14
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/c2saferrust/src/buffer.rs",
+          "stats": {
+            "blanks": 21,
+            "blobs": {},
+            "code": 171,
+            "comments": 16
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/c2saferrust/build.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/c2saferrust/src/stack.rs",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 89,
+            "comments": 5
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/c2saferrust/snudown/src/stack.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 77,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/c2saferrust/snudown/src/autolink.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 578,
+            "comments": 103
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/c2saferrust/snudown/build.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/c2saferrust/src/autolink.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 578,
+            "comments": 103
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/c2saferrust/src/markdown.rs",
+          "stats": {
+            "blanks": 119,
+            "blobs": {},
+            "code": 4970,
+            "comments": 300
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/c2saferrust/snudown/src/markdown.rs",
+          "stats": {
+            "blanks": 29,
+            "blobs": {},
+            "code": 5192,
+            "comments": 319
+          }
+        }
+      ]
+    },
+    "code": 11864,
+    "comments": 869,
+    "inaccurate": false,
+    "reports": []
+  }
+}

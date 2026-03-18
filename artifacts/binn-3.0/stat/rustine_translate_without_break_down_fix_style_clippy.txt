@@ -1,0 +1,68 @@
+warning: it looks like the same item is being pushed into this `Vec`
+warning: length comparison to one
+warning: length comparison to one
+warning: length comparison to one
+warning: length comparison to one
+warning: length comparison to one
+warning: length comparison to one
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `RangeInclusive::contains` implementation
+warning: manual implementation of `Option::map`
+warning: manual implementation of `Option::map`
+warning: returning the result of a `let` binding from a block
+warning: the loop variable `i` is only used to index `chars`
+warning: the loop variable `i` is used to index `buffers`
+warning: this `if let` can be collapsed into the outer `if let`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this block may be rewritten with the `?` operator
+warning: this block may be rewritten with the `?` operator
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: unneeded `return` statement
+warning: unused return value of `std::boxed::Box::<T, A>::into_raw` that must be used
+warning: unused return value of `std::boxed::Box::<T, A>::into_raw` that must be used
+warning: unused return value of `std::boxed::Box::<T>::from_raw` that must be used
+warning: used `assert_eq!` with a literal bool
+warning: used `assert_eq!` with a literal bool
+warning: used `assert_eq!` with a literal bool
+warning: used `assert_eq!` with a literal bool
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string

@@ -1,0 +1,4 @@
+warning: casting the result of `as_ptr` to *mut std::ffi::c_void
+warning: the function has a cognitive complexity of (57/25)
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else

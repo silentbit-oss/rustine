@@ -1,0 +1,40 @@
+{
+  "Rust": {
+    "blanks": 159,
+    "children": {},
+    "code": 2205,
+    "comments": 54,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/grabc/others/laertes/grabc.rs",
+        "stats": {
+          "blanks": 159,
+          "blobs": {},
+          "code": 2205,
+          "comments": 54
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 159,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/grabc/others/laertes/grabc.rs",
+          "stats": {
+            "blanks": 159,
+            "blobs": {},
+            "code": 2205,
+            "comments": 54
+          }
+        }
+      ]
+    },
+    "code": 2205,
+    "comments": 54,
+    "inaccurate": false,
+    "reports": []
+  }
+}

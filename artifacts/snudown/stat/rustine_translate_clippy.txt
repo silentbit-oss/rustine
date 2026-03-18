@@ -1,0 +1,515 @@
+warning: unused import: `crate::*`
+warning: variant `BUF_OK` should have an upper camel case name
+warning: variant `BUF_ENOMEM` should have an upper camel case name
+warning: variant `BUF_EINVALIDIDX` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `std::mem::size_of`
+warning: unused import: `crate::*`
+warning: variant `SD_AUTOLINK_SHORT_DOMAINS` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: variant `MKDA_NOT_AUTOLINK` should have an upper camel case name
+warning: variant `MKDA_NORMAL` should have an upper camel case name
+warning: variant `MKDA_EMAIL` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: variant `MKD_TABLE_ALIGN_L` should have an upper camel case name
+warning: variant `MKD_TABLE_ALIGN_R` should have an upper camel case name
+warning: variant `MKD_TABLE_ALIGN_CENTER` should have an upper camel case name
+warning: variant `MKD_TABLE_HEADER` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: variant `MKDEXT_NO_INTRA_EMPHASIS` should have an upper camel case name
+warning: variant `MKDEXT_TABLES` should have an upper camel case name
+warning: variant `MKDEXT_FENCED_CODE` should have an upper camel case name
+warning: variant `MKDEXT_AUTOLINK` should have an upper camel case name
+warning: variant `MKDEXT_STRIKETHROUGH` should have an upper camel case name
+warning: variant `MKDEXT_SPACE_HEADERS` should have an upper camel case name
+warning: variant `MKDEXT_SUPERSCRIPT` should have an upper camel case name
+warning: variant `MKDEXT_LAX_SPACING` should have an upper camel case name
+warning: variant `MKDEXT_NO_EMAIL_AUTOLINK` should have an upper camel case name
+warning: ambiguous glob re-exports
+warning: `MkdExtensions` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MkdExtensions` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MkdExtensions` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MkdExtensions` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MkdExtensions` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MkdExtensions` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MkdExtensions` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: unused import: `crate::*`
+warning: variant `HTML_SKIP_HTML` should have an upper camel case name
+warning: variant `HTML_SKIP_STYLE` should have an upper camel case name
+warning: variant `HTML_SKIP_IMAGES` should have an upper camel case name
+warning: variant `HTML_SKIP_LINKS` should have an upper camel case name
+warning: variant `HTML_EXPAND_TABS` should have an upper camel case name
+warning: variant `HTML_SAFELINK` should have an upper camel case name
+warning: variant `HTML_TOC` should have an upper camel case name
+warning: variant `HTML_HARD_WRAP` should have an upper camel case name
+warning: variant `HTML_USE_XHTML` should have an upper camel case name
+warning: variant `HTML_ESCAPE` should have an upper camel case name
+warning: variant `HTML_ALLOW_ELEMENT_WHITELIST` should have an upper camel case name
+warning: ambiguous glob re-exports
+warning: `HtmlRenderMode` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `HtmlRenderMode` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `HtmlRenderMode` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `HtmlRenderMode` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `HtmlRenderMode` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `HtmlRenderMode` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `HtmlRenderMode` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `HtmlRenderMode` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `HtmlRenderMode` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: unused import: `crate::*`
+warning: variant `HTML_TAG_NONE` should have an upper camel case name
+warning: variant `HTML_TAG_OPEN` should have an upper camel case name
+warning: variant `HTML_TAG_CLOSE` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: ambiguous glob re-exports
+warning: `SmartypantsData` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `SmartypantsData` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `SmartypantsData` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `SmartypantsData` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `SmartypantsData` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `SmartypantsData` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `SmartypantsData` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `SmartypantsData` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `SmartypantsData` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `SmartypantsData` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `SmartypantsData` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: variant `MD_CHAR_NONE` should have an upper camel case name
+warning: variant `MD_CHAR_EMPHASIS` should have an upper camel case name
+warning: variant `MD_CHAR_CODESPAN` should have an upper camel case name
+warning: variant `MD_CHAR_LINEBREAK` should have an upper camel case name
+warning: variant `MD_CHAR_LINK` should have an upper camel case name
+warning: variant `MD_CHAR_LANGLE` should have an upper camel case name
+warning: variant `MD_CHAR_ESCAPE` should have an upper camel case name
+warning: variant `MD_CHAR_ENTITITY` should have an upper camel case name
+warning: variant `MD_CHAR_AUTOLINK_URL` should have an upper camel case name
+warning: variant `MD_CHAR_AUTOLINK_EMAIL` should have an upper camel case name
+warning: variant `MD_CHAR_AUTOLINK_WWW` should have an upper camel case name
+warning: variant `MD_CHAR_AUTOLINK_SUBREDDIT_OR_USERNAME` should have an upper camel case name
+warning: variant `MD_CHAR_SUPERSCRIPT` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: type `_object` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: variant `RENDERER_USERTEXT` should have an upper camel case name
+warning: variant `RENDERER_WIKI` should have an upper camel case name
+warning: variant `RENDERER_COUNT` should have an upper camel case name
+warning: unused import: `std::mem::size_of`
+warning: unused import: `crate::*`
+warning: unused import: `std::mem::size_of`
+warning: unused import: `std::mem::size_of`
+warning: unused import: `std::mem::size_of`
+warning: unused import: `std::mem::size_of`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: unused import: `crate::HtmlRenderMode::HTML_ESCAPE`
+warning: unused import: `crate::HtmlRenderMode::HTML_SAFELINK`
+warning: unused import: `crate::HtmlRenderMode::HTML_SKIP_HTML`
+warning: unused import: `crate::HtmlRenderMode::HTML_SKIP_IMAGES`
+warning: unused import: `crate::HtmlRenderMode::HTML_USE_XHTML`
+warning: unused import: `pyo3::ffi::METH_KEYWORDS`
+warning: unused import: `pyo3::ffi::METH_VARARGS`
+warning: unused import: `pyo3::ffi::PyMethodDefPointer`
+warning: unused import: `pyo3::types::PyAny`
+warning: unused import: `pyo3::types::PyDict`
+warning: unused import: `pyo3::PyResult`
+warning: unused import: `std::cell::UnsafeCell`
+warning: variant `HTML_SKIP_HTML` should have an upper camel case name
+warning: variant `HTML_SKIP_IMAGES` should have an upper camel case name
+warning: variant `HTML_SAFELINK` should have an upper camel case name
+warning: variant `HTML_ESCAPE` should have an upper camel case name
+warning: variant `HTML_USE_XHTML` should have an upper camel case name
+warning: unused import: `std::alloc::Layout`
+warning: unused import: `std::alloc::alloc`
+warning: unused import: `crate::*`
+warning: unnecessary parentheses around assigned value
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::cmp::Ordering`
+warning: unused import: `std::mem`
+warning: unused import: `std::ptr`
+warning: unused import: `rand::Rng`
+warning: unnecessary parentheses around index expression
+warning: unused import: `std::ascii`
+warning: unused import: `crate::SdAutolinkFlags::SD_AUTOLINK_SHORT_DOMAINS`
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `pyo3::Python`
+warning: unnecessary parentheses around function argument
+warning: unnecessary parentheses around function argument
+warning: unused import: `unicode_segmentation::UnicodeSegmentation`
+warning: unused import: `std::ascii`
+warning: unnecessary parentheses around `if` condition
+warning: unnecessary parentheses around `if` condition
+warning: unused import: `std::fmt::Write`
+warning: unused import: `std::ffi::c_void`
+warning: use of deprecated trait `std::ascii::AsciiExt`: use inherent methods instead
+warning: use of deprecated trait `std::ascii::AsciiExt`: use inherent methods instead
+warning: unused import: `std::ascii::AsciiExt`
+warning: unused import: `std::ascii::AsciiExt`
+warning: unused variable: `buf`
+warning: variable does not need to be mutable
+warning: unused variable: `data`
+warning: unused variable: `available`
+warning: unused variable: `fmt`
+warning: value assigned to `m` is never read
+warning: value assigned to `m` is never read
+warning: value assigned to `title_offset` is never read
+warning: value assigned to `title_end` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `work` is never read
+warning: unused variable: `max_rewind`
+warning: unused variable: `max_lookbehind`
+warning: unused variable: `max_lookbehind`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `max_rewind`
+warning: unused variable: `max_lookbehind`
+warning: unused variable: `max_rewind`
+warning: unused variable: `max_lookbehind`
+warning: value assigned to `link_b` is never read
+warning: value assigned to `link_e` is never read
+warning: value assigned to `link_idx` is never read
+warning: value assigned to `title_idx` is never read
+warning: value assigned to `title_b` is never read
+warning: value assigned to `in_title` is never read
+warning: value assigned to `qtype` is never read
+warning: value assigned to `link_b` is never read
+warning: value assigned to `link_e` is never read
+warning: value assigned to `txt_e` is never read
+warning: variable `content_idx` is assigned to, but never used
+warning: variable `u_link_idx` is assigned to, but never used
+warning: value assigned to `content_idx` is never read
+warning: unused variable: `link`
+warning: value assigned to `u_link_idx` is never read
+warning: unused variable: `max_lookbehind`
+warning: unused variable: `max_lookbehind`
+warning: value assigned to `j` is never read
+warning: unused variable: `max_rewind`
+warning: unused variable: `max_lookbehind`
+warning: unused variable: `size`
+warning: unused variable: `max_rewind`
+warning: unused variable: `max_lookbehind`
+warning: unused variable: `max_rewind`
+warning: unused variable: `max_lookbehind`
+warning: unused variable: `max_lookbehind`
+warning: unused variable: `max_lookbehind`
+warning: unused variable: `size`
+warning: value assigned to `i` is never read
+warning: value assigned to `i` is never read
+warning: unused variable: `rndr`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `row_work` is never read
+warning: variable does not need to be mutable
+warning: value assigned to `header_work` is never read
+warning: value assigned to `body_work` is never read
+warning: variable does not need to be mutable
+warning: value assigned to `work` is never read
+warning: variable does not need to be mutable
+warning: value assigned to `end` is never read
+warning: unnecessary `unsafe` block
+warning: value assigned to `copen` is never read
+warning: unused variable: `max_rewind`
+warning: unused variable: `size`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `ib`
+warning: unused variable: `args`
+warning: variable does not need to be mutable
+warning: unused variable: `link`
+warning: unused variable: `module`
+warning: unused variable: `module`
+warning: unused variable: `quote`
+warning: unused variable: `smrt`
+warning: unused variable: `smrt`
+warning: unused variable: `previous_char`
+warning: unused variable: `smrt`
+warning: unused variable: `previous_char`
+warning: unused variable: `smrt`
+warning: unused variable: `previous_char`
+warning: unused variable: `smrt`
+warning: unused variable: `previous_char`
+warning: unused variable: `smrt`
+warning: unused variable: `previous_char`
+warning: unused variable: `opaque`
+warning: unused variable: `opaque`
+warning: unused variable: `flags`
+warning: unused variable: `opaque`
+warning: unused variable: `link`
+warning: unused variable: `title`
+warning: unused variable: `opaque`
+warning: unused variable: `ob`
+warning: unused variable: `opaque`
+warning: unused variable: `opaque`
+warning: unused variable: `opaque`
+warning: value assigned to `reset` is never read
+warning: variable does not need to be mutable
+warning: value assigned to `done` is never read
+warning: value assigned to `done_attr` is never read
+warning: value assigned to `reset` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `opaque`
+warning: unused variable: `opaque`
+warning: unused variable: `opaque`
+warning: unused variable: `opaque`
+warning: unused variable: `opaque`
+warning: unused variable: `opaque`
+warning: unused variable: `opaque`
+warning: unused variable: `opaque`
+warning: unused variable: `opaque`
+warning: unused variable: `opaque`
+warning: unused variable: `opaque`
+warning: unused variable: `opaque`
+warning: unused variable: `opaque`
+warning: unused variable: `opaque`
+warning: unused variable: `opaque`
+warning: unused variable: `opaque`
+warning: field `initial_size` is never read
+warning: constant `TOTAL_KEYWORDS` is never used
+warning: constant `MIN_HASH_VALUE` is never used
+warning: constant `TOTAL_KEYWORDS` is never used
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: the function `smartypants_cb__dash` doesn't need a mutable reference
+warning: the function `smartypants_cb__parens` doesn't need a mutable reference
+warning: the function `smartypants_cb__period` doesn't need a mutable reference
+warning: the function `smartypants_cb__number` doesn't need a mutable reference
+warning: the function `smartypants_cb__ltag` doesn't need a mutable reference
+warning: the function `smartypants_cb__escape` doesn't need a mutable reference
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this `map_or` can be simplified
+warning: manual saturating arithmetic
+warning: variables can be used directly in the `format!` string
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this function has too many arguments (8/7)
+warning: this `if` statement can be collapsed
+warning: the loop variable `i` is only used to index `data`
+warning: deref which would be done by auto-deref
+warning: redundant pattern matching, consider using `is_err()`
+warning: deref which would be done by auto-deref
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: redundant pattern matching, consider using `is_err()`
+warning: this block may be rewritten with the `?` operator
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: deref which would be done by auto-deref
+warning: this `if` statement can be collapsed
+warning: this `match` expression can be replaced with `?`
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: this `match` expression can be replaced with `?`
+warning: called `.as_ref().map(|n| &**n)` on an `Option` value
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (14/7)
+warning: this `if` has identical blocks
+warning: this `map_or` can be simplified
+warning: redundant pattern matching, consider using `is_err()`
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: replacing an `Option` with `None`
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: manual `RangeInclusive::contains` implementation
+warning: calling `as_bytes` after slicing a string
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: this boolean expression can be simplified
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: manual case-insensitive ASCII comparison
+warning: this `else { if .. }` block can be collapsed
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: redundant pattern matching, consider using `is_err()`
+warning: this `else { if .. }` block can be collapsed
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: this function has too many arguments (14/7)
+warning: this `if` statement can be collapsed
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: manual case-insensitive ASCII comparison
+warning: manual case-insensitive ASCII comparison
+warning: manual `RangeInclusive::contains` implementation
+warning: manual `RangeInclusive::contains` implementation
+warning: this function has too many arguments (8/7)
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: this `if` has identical blocks
+warning: this `if` has identical blocks
+warning: unneeded late initialization
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: the loop variable `i` is only used to index `items`
+warning: the loop variable `i` is only used to index `items`
+warning: this boolean expression contains a logic bug
+warning: the loop variable `i` is used to index `data`
+warning: this `if` statement can be collapsed
+warning: calling `CStr::new` with a byte string literal
+warning: this `else { if .. }` block can be collapsed
+warning: manually constructing a nul-terminated string
+warning: called `.as_ref().map(|d| d.as_slice())` on an `Option` value
+warning: using `clone` on type `Option<fn(Buf, Buf, Box<dyn Any>)>` which implements the `Copy` trait
+warning: using `clone` on type `Option<fn(Buf, Buf, Box<dyn Any>)>` which implements the `Copy` trait
+warning: using `clone` on type `Option<fn(Buf, Buf, Box<dyn Any>)>` which implements the `Copy` trait
+warning: using `clone` on type `Option<fn(Buf, Buf, Box<dyn Any>)>` which implements the `Copy` trait
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: manually constructing a nul-terminated string
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: manually constructing a nul-terminated string
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: manually constructing a nul-terminated string
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: manual case-insensitive ASCII comparison
+warning: manual case-insensitive ASCII comparison
+warning: this `if` statement can be collapsed
+warning: manual case-insensitive ASCII comparison
+warning: manual case-insensitive ASCII comparison
+warning: manual case-insensitive ASCII comparison
+warning: redundant pattern matching, consider using `is_err()`
+warning: this `map_or` can be simplified
+warning: variables can be used directly in the `format!` string
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: manual case-insensitive ASCII comparison
+warning: this boolean expression can be simplified
+warning: this function has too many arguments (14/7)
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: `extern` block uses type `buf::Buf`, which is not FFI-safe
+warning: `extern` block uses type `sd_markdown::SdMarkdown`, which is not FFI-safe
+warning: `extern` block uses type `[u8]`, which is not FFI-safe
+warning: `extern` block uses type `buf::Buf`, which is not FFI-safe
+warning: `extern` block uses type `sd_markdown::SdMarkdown`, which is not FFI-safe
+warning: `extern` block uses type `[u8]`, which is not FFI-safe
+warning: `extern` block uses type `buf::Buf`, which is not FFI-safe
+warning: `extern` block uses type `sd_markdown::SdMarkdown`, which is not FFI-safe
+warning: `extern` block uses type `[u8]`, which is not FFI-safe
+warning: `extern` block uses type `buf::Buf`, which is not FFI-safe
+warning: `extern` block uses type `sd_markdown::SdMarkdown`, which is not FFI-safe
+warning: function `sd_autolink__email` should have a snake case name
+warning: function `helper_sd_autolink__subreddit_1` should have a snake case name
+warning: function `sd_autolink__subreddit` should have a snake case name
+warning: function `sd_autolink__username` should have a snake case name
+warning: function `sd_autolink__url` should have a snake case name
+warning: function `sd_autolink__www` should have a snake case name
+warning: function `smartypants_cb__squote` should have a snake case name
+warning: function `smartypants_cb__dquote` should have a snake case name
+warning: function `smartypants_cb__number` should have a snake case name
+warning: function `smartypants_cb__escape` should have a snake case name
+warning: function `smartypants_cb__ltag` should have a snake case name
+warning: function `smartypants_cb__amp` should have a snake case name
+warning: function `smartypants_cb__period` should have a snake case name
+warning: function `smartypants_cb__backtick` should have a snake case name
+warning: function `smartypants_cb__parens` should have a snake case name
+warning: function `smartypants_cb__dash` should have a snake case name
+warning: `parse_inline` redeclared with a different signature
+warning: `parse_inline` redeclared with a different signature

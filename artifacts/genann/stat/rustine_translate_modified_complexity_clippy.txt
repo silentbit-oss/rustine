@@ -1,0 +1,6 @@
+warning: the use of negated comparison operators on partially ordered types produces code that is hard to read and refactor, please consider using the `partial_cmp` method instead, to make it clear that the two values could be incomparable
+warning: the variable `d_idx` is used as a loop counter
+warning: the variable `o_idx` is used as a loop counter
+warning: this call to `as_ref.map(...)` does nothing
+warning: this call to `as_ref.map(...)` does nothing
+warning: this call to `as_ref.map(...)` does nothing

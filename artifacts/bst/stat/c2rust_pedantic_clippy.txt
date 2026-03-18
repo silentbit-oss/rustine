@@ -1,0 +1,6 @@
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `if` chain can be rewritten with `match`
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness

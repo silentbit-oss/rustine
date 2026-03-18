@@ -1,0 +1,7 @@
+#include <assert.h>
+#include <buffer.h>
+#include <indicators.h>
+#include <math.h>
+#include <sma.c>
+#include <stdlib.h>
+#include <string.h>

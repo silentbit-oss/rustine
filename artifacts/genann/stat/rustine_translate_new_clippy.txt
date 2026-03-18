@@ -1,0 +1,65 @@
+warning: unused import: `crate::*`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::io`
+warning: unused import: `std::mem`
+warning: unused import: `std::sync::Mutex`
+warning: ambiguous glob re-exports
+warning: unused import: `genann_actfun::*`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `rand::Rng`
+warning: unused import: `std::io::Read`
+warning: unused import: `std::io::Write`
+warning: unused import: `std::sync::atomic::AtomicI32`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused variable: `total_elements`
+warning: variable does not need to be mutable
+warning: unused variable: `ann`
+warning: unused variable: `ann`
+warning: unused variable: `ann`
+warning: unused variable: `ann`
+warning: unused variable: `ann`
+warning: the loop variable `i` is only used to index `weights`
+warning: variables can be used directly in the `format!` string
+warning: the loop variable `j` is only used to index `ret`
+warning: this multiplication by -1 can be written more succinctly
+warning: this multiplication by -1 can be written more succinctly
+warning: this multiplication by -1 can be written more succinctly
+warning: the loop variable `j` is only used to index `ret`
+warning: this multiplication by -1 can be written more succinctly
+warning: the loop variable `k` is used to index `dd_slice`
+warning: the loop variable `j` is only used to index `d_slice`
+warning: this multiplication by -1 can be written more succinctly
+warning: the loop variable `j` is only used to index `d_slice`
+warning: this multiplication by -1 can be written more succinctly
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: the use of negated comparison operators on partially ordered types produces code that is hard to read and refactor, please consider using the `partial_cmp` method instead, to make it clear that the two values could be incomparable
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: variables can be used directly in the `format!` string
+warning: this can be `std::io::Error::other(_)`
+warning: this can be `std::io::Error::other(_)`
+warning: static variable `interval` should have an upper case name

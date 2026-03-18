@@ -1,0 +1,6 @@
+warning: a dangling pointer will be produced because the temporary `std::boxed::Box<[u8]>` will be dropped
+warning: it looks like you're manually copying between slices
+warning: it looks like you're manually copying between slices
+warning: it looks like you're manually copying between slices
+warning: it looks like you're manually copying between slices
+warning: slow zero-filling initialization

@@ -1,0 +1,10 @@
+[package]
+name = "binrs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name="test_binn"
+path="src/test_binn_main.rs"

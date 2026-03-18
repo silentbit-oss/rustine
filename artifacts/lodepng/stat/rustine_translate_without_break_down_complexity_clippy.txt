@@ -1,0 +1,45 @@
+warning: called `.as_ref().map(|s| s.as_slice())` on an `Option` value
+warning: called `.as_ref().map(|s| s.as_slice())` on an `Option` value
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: clamp-like pattern without using clamp function
+warning: deref on an immutable reference
+warning: deref on an immutable reference
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: this call to `as_mut` does nothing
+warning: this call to `as_mut` does nothing
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (9/7)
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions

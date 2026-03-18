@@ -1,0 +1,32 @@
+warning: all if blocks contain the same code at the end
+warning: casting the result of `as_ptr` to *mut pyo3::ffi::PyMethodDef
+warning: redundant clone
+warning: some fields in `SdCallbacks` are not safe to be sent to another thread
+warning: some fields in `SnudownRenderer` are not safe to be sent to another thread
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: unnecessary structure name repetition
+warning: unnecessary structure name repetition

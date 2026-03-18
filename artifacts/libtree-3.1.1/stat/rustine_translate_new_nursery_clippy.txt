@@ -1,0 +1,27 @@
+warning: redundant clone
+warning: redundant clone
+warning: redundant clone
+warning: redundant clone
+warning: redundant clone
+warning: redundant clone
+warning: redundant clone
+warning: redundant clone
+warning: redundant clone
+warning: redundant clone
+warning: redundant clone
+warning: redundant clone
+warning: redundant clone
+warning: the function has a cognitive complexity of (31/25)
+warning: the function has a cognitive complexity of (41/25)
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: unused `std::result::Result` that must be used
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else

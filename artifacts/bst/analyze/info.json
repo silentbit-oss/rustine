@@ -1,0 +1,249 @@
+{
+    "special_type": [
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "struct node\n{\n  int key;\n  struct node *left;\n  struct node *right;\n}",
+            "name": "node",
+            "names": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "int",
+                        "definition": [
+                            "int key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "struct node",
+                        "type": "struct node *",
+                        "definition": [
+                            "struct node *left"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "struct node",
+                        "type": "struct node *",
+                        "definition": [
+                            "struct node *right"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        }
+    ],
+    "global_variable": [],
+    "function": [
+        {
+            "path": null,
+            "name": "newNode",
+            "header": "",
+            "params": [
+                "int item"
+            ],
+            "definition": "struct node *newNode(int item)\n{\n  struct node *temp = (struct node *) malloc(sizeof(struct node));\n  temp->key = item;\n  temp->left = 0;\n  temp->right = 0;\n  return temp;\n}\n\n",
+            "calle": [
+                "malloc"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "item",
+                        "type": "int",
+                        "definition": [
+                            "int item"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "struct node",
+                        "type": "struct node *",
+                        "definition": [
+                            "struct node *temp = (struct node *) malloc(sizeof(struct node))"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "inorder",
+            "header": "",
+            "params": [
+                "struct node *root"
+            ],
+            "definition": "void inorder(struct node *root)\n{\n  if (root != 0)\n  {\n    inorder(root->left);\n    printf(\"%d \", root->key);\n    inorder(root->right);\n  }\n}\n\n",
+            "calle": [
+                "inorder",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "struct node",
+                        "type": "struct node *",
+                        "definition": [
+                            "struct node *root"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "insert",
+            "header": "",
+            "params": [
+                "struct node *node",
+                "int key"
+            ],
+            "definition": "struct node *insert(struct node *node, int key)\n{\n  if (node == 0)\n  {\n    return newNode(key);\n  }\n  if (key < node->key)\n  {\n    node->left = insert(node->left, key);\n  }\n  else\n    node->right = insert(node->right, key);\n  return node;\n}\n\n",
+            "calle": [
+                "insert",
+                "newNode"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "struct node",
+                        "type": "struct node *",
+                        "definition": [
+                            "struct node *node"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "int",
+                        "definition": [
+                            "int key"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "minValueNode",
+            "header": "",
+            "params": [
+                "struct node *node"
+            ],
+            "definition": "struct node *minValueNode(struct node *node)\n{\n  struct node *current = node;\n  unsigned int current_idx = 0;\n  while ((&current[current_idx]) && (current->left != 0))\n    current_idx = current_idx->left;\n\n  return current;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "struct node",
+                        "type": "struct node *",
+                        "definition": [
+                            "struct node *node"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "struct node",
+                        "type": "struct node *",
+                        "definition": [
+                            "struct node *current = node"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "current_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int current_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "deleteNode",
+            "header": "",
+            "params": [
+                "struct node *root",
+                "int key"
+            ],
+            "definition": "struct node *deleteNode(struct node *root, int key)\n{\n  if (root == 0)\n  {\n    return root;\n  }\n  if (key < root->key)\n  {\n    root->left = deleteNode(root->left, key);\n  }\n  else\n    if (key > root->key)\n  {\n    root->right = deleteNode(root->right, key);\n  }\n  else\n  {\n    if (root->left == 0)\n    {\n      struct node *temp = root->right;\n      free(root);\n      return temp;\n    }\n    else\n      if (root->right == 0)\n    {\n      struct node *temp = root->left;\n      free(root);\n      return temp;\n    }\n    struct node *temp = minValueNode(root->right);\n    root->key = temp->key;\n    root->right = deleteNode(root->right, temp->key);\n  }\n  return root;\n}\n\n",
+            "calle": [
+                "deleteNode",
+                "free",
+                "minValueNode"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "struct node",
+                        "type": "struct node *",
+                        "definition": [
+                            "struct node *root"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "int",
+                        "definition": [
+                            "int key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "struct node",
+                        "type": "struct node *",
+                        "definition": [
+                            "struct node *temp = root->right"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "struct node",
+                        "type": "struct node *",
+                        "definition": [
+                            "struct node *temp = root->left"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "struct node",
+                        "type": "struct node *",
+                        "definition": [
+                            "struct node *temp = minValueNode(root->right)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        }
+    ],
+    "typedefs": []
+}

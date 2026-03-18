@@ -1,0 +1,66 @@
+warning: redundant field names in struct initialization
+warning: redundant field names in struct initialization
+warning: the loop variable `i` is only used to index `ll_counts`
+warning: the loop variable `i` is only used to index `d_counts`
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: writing `&mut Vec` instead of `&mut [_]` involves a new object where a slice will do
+warning: writing `&mut Vec` instead of `&mut [_]` involves a new object where a slice will do
+warning: the loop variable `i` is only used to index `ll_lengths`
+warning: the loop variable `i` is only used to index `ll_lengths`
+warning: the loop variable `i` is only used to index `ll_lengths`
+warning: the loop variable `i` is only used to index `ll_lengths`
+warning: the loop variable `i` is only used to index `d_lengths`
+warning: the loop variable `i` is only used to index `d_lengths`
+warning: the loop variable `i` is only used to index `symbols`
+warning: the loop variable `bits` is only used to index `bl_count`
+warning: the loop variable `i` is used to index `lengths`
+warning: variables can be used directly in the `format!` string
+warning: writing `&mut Vec` instead of `&mut [_]` involves a new object where a slice will do
+warning: the loop variable `i` is used to index `frequencies`
+warning: returning the result of a `let` binding from a block
+warning: doc list item overindented
+warning: the loop variable `i` is used to index `vp`
+warning: the loop variable `i` is only used to index `splitpoints`
+warning: the loop variable `i` is only used to index `splitpoints`
+warning: doc list item overindented
+warning: importing a legacy numeric constant
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: variables can be used directly in the `format!` string
+warning: needlessly taken reference of both operands
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: manual arithmetic check found
+warning: manual arithmetic check found
+warning: redundant pattern matching, consider using `is_err()`
+warning: variables can be used directly in the `format!` string
+warning: the loop variable `i` is only used to index `count`
+warning: manual arithmetic check found
+warning: the loop variable `i` is only used to index `costs`
+warning: manual arithmetic check found
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: doc list item overindented
+warning: manual `Range::contains` implementation
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: manual `RangeInclusive::contains` implementation
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: unneeded late initialization
+warning: variables can be used directly in the `format!` string
+warning: doc list item overindented
+warning: doc list item overindented
+warning: doc list item overindented
+warning: doc list item overindented
+warning: doc list item overindented
+warning: doc list item overindented
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string

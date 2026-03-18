@@ -1,0 +1,218 @@
+warning: unused import: `crate::*`
+warning: unused import: `std::mem::MaybeUninit`
+warning: unused import: `crate::*`
+warning: unused import: `std::fs::File`
+warning: unused import: `crate::*`
+warning: ambiguous glob re-exports
+warning: `VisitedFileT` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `VisitedFileT` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `VisitedFileT` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `VisitedFileT` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `VisitedFileT` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `VisitedFileT` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `VisitedFileT` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `VisitedFileT` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `VisitedFileT` is ambiguous
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: unused import: `crate::*`
+warning: variant `LD_LIBRARY_PATH` should have an upper camel case name
+warning: variant `LD_SO_CONF` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::os::raw::c_uint`
+warning: unused import: `std::os::raw::c_ushort`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: type `Dyn_64_t` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `std::os::raw::c_int`
+warning: unused import: `crate::*`
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: unused import: `globals::*`
+warning: unused import: `std::io::Result as IoResult`
+warning: unused import: `std::process::exit`
+warning: unused import: `std::process`
+warning: unused import: `libc::dev_t`
+warning: unused import: `libc::ino_t`
+warning: unused import: `std::ffi::CStr`
+warning: unused import: `std::ptr`
+warning: unused import: `std::os::raw::c_char`
+warning: unused import: `std::os::raw::c_longlong`
+warning: unused import: `std::os::raw::c_ulonglong`
+warning: unused import: `std::ffi::CStr`
+warning: type `Dyn_32_t` should have an upper camel case name
+warning: unused import: `std::fs::File`
+warning: unused import: `std::os::linux::raw::dev_t`
+warning: unused import: `std::os::linux::raw::ino_t`
+warning: unused import: `std::fs::File`
+warning: unused import: `std::os::linux::raw::dev_t`
+warning: unused import: `std::os::linux::raw::ino_t`
+warning: unused import: `std::ffi::CStr`
+warning: unused import: `std::io::BufRead`
+warning: unused import: `std::io::Error`
+warning: unused import: `std::io::ErrorKind`
+warning: unused import: `glob::glob`
+warning: unused import: `std::os::raw::c_char`
+warning: unused import: `crate::HowT::DIRECT`
+warning: unused import: `std::os::unix::fs::MetadataExt`
+warning: use of deprecated type alias `std::os::unix::raw::dev_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated type alias `std::os::unix::raw::ino_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated type alias `std::os::unix::raw::dev_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated type alias `std::os::unix::raw::ino_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated type alias `std::os::unix::raw::dev_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated type alias `std::os::unix::raw::ino_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated struct `std::os::linux::raw::stat`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated type alias `std::os::unix::raw::dev_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated type alias `std::os::unix::raw::ino_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated struct `std::os::linux::raw::stat`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated type alias `std::os::unix::raw::dev_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated type alias `std::os::unix::raw::ino_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated type alias `std::os::unix::raw::dev_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated type alias `std::os::unix::raw::ino_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated struct `std::os::linux::raw::stat`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: unused variable: `pattern`
+warning: unreachable expression
+warning: use of deprecated field `std::os::linux::raw::stat::st_dev`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::st_ino`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::st_dev`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::st_ino`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::st_mode`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::st_nlink`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::st_uid`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::st_gid`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::st_rdev`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::st_size`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::st_blksize`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::st_blocks`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::st_atime`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::st_atime_nsec`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::st_mtime`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::st_mtime_nsec`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::st_ctime`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::st_ctime_nsec`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::__pad1`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::__pad2`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::__unused`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: unused import: `std::io::Read`
+warning: unused import: `std::io::Read`
+warning: unused variable: `result`
+warning: unused variable: `pt_load_offset`
+warning: unused variable: `pt_load_vaddr`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unreachable pattern
+warning: value assigned to `prog` is never read
+warning: value assigned to `prog` is never read
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variants `NoSpace`, `Aborted`, and `NoMatch` are never constructed
+warning: unneeded `return` statement
+warning: redundant pattern matching, consider using `is_err()`
+warning: using `SeekFrom::Current` to start from current position
+warning: using `SeekFrom::Current` to start from current position
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against true are unnecessary
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: this boolean expression can be simplified
+warning: length comparison to zero
+warning: literal with an empty format string
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`
+warning: this boolean expression can be simplified
+warning: variables can be used directly in the `format!` string
+warning: comparison to empty slice
+warning: variables can be used directly in the `format!` string
+warning: this boolean expression can be simplified
+warning: the loop variable `i` is only used to index `error_codes`
+warning: casting to the same type is unnecessary (`u64` -> `u64`)
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: literal with an empty format string
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: using `SeekFrom::Current` to start from current position
+warning: variables can be used directly in the `format!` string
+warning: this looks like you are swapping elements of `str` manually
+warning: match can be simplified with `.unwrap_or_default()`
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this function has too many arguments (11/7)
+warning: needlessly taken reference of left operand
+warning: needlessly taken reference of left operand
+warning: needlessly taken reference of left operand
+warning: needlessly taken reference of left operand
+warning: needlessly taken reference of left operand
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: using `write!()` with a format string that ends in a single newline
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: variables can be used directly in the `format!` string
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: variables can be used directly in the `format!` string
+warning: using `print!()` with a format string that ends in a single newline
+warning: variables can be used directly in the `format!` string
+warning: using `print!()` with a format string that ends in a single newline
+warning: variables can be used directly in the `format!` string
+warning: using `print!()` with a format string that ends in a single newline
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: this `map_or` can be simplified
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: this function has too many arguments (11/7)
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this can be `std::io::Error::other(_)`
+warning: this can be `std::io::Error::other(_)`
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: this function has too many arguments (10/7)
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this pattern reimplements `Result::unwrap_or`
+warning: this `map_or` can be simplified
+warning: variable `ORIGIN` should have a snake case name
+warning: variable `ORIGIN` should have a snake case name
+warning: unused `std::result::Result` that must be used
+warning: structure field `PLATFORM` should have a snake case name
+warning: structure field `LIB` should have a snake case name
+warning: structure field `OSNAME` should have a snake case name
+warning: structure field `OSREL` should have a snake case name

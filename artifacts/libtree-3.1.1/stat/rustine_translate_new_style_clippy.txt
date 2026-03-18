@@ -1,0 +1,54 @@
+warning: comparison to empty slice
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: needlessly taken reference of left operand
+warning: needlessly taken reference of left operand
+warning: needlessly taken reference of left operand
+warning: needlessly taken reference of left operand
+warning: needlessly taken reference of left operand
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: the loop variable `i` is only used to index `error_codes`
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this can be `std::io::Error::other(_)`
+warning: this can be `std::io::Error::other(_)`
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unused `std::result::Result` that must be used
+warning: using `print!()` with a format string that ends in a single newline
+warning: using `print!()` with a format string that ends in a single newline
+warning: using `print!()` with a format string that ends in a single newline
+warning: using `write!()` with a format string that ends in a single newline
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string

@@ -1,0 +1,612 @@
+warning: 5 bindings with single-character names in scope
+warning: adding items after statements is confusing, since items exist from the start of the scope
+warning: adding items after statements is confusing, since items exist from the start of the scope
+warning: adding items after statements is confusing, since items exist from the start of the scope
+warning: adding items after statements is confusing, since items exist from the start of the scope
+warning: adding items after statements is confusing, since items exist from the start of the scope
+warning: assigning the result of `Clone::clone()` may be inefficient
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: boolean to int conversion using if
+warning: boolean to int conversion using if
+warning: casting `f64` to `i32` may truncate the value
+warning: casting `f64` to `usize` may lose the sign of the value
+warning: casting `f64` to `usize` may lose the sign of the value
+warning: casting `f64` to `usize` may truncate the value
+warning: casting `f64` to `usize` may truncate the value
+warning: casting `i32` to `u16` may lose the sign of the value
+warning: casting `i32` to `u16` may lose the sign of the value
+warning: casting `i32` to `u16` may lose the sign of the value
+warning: casting `i32` to `u16` may lose the sign of the value
+warning: casting `i32` to `u16` may lose the sign of the value
+warning: casting `i32` to `u16` may truncate the value
+warning: casting `i32` to `u16` may truncate the value
+warning: casting `i32` to `u16` may truncate the value
+warning: casting `i32` to `u16` may truncate the value
+warning: casting `i32` to `u16` may truncate the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `u16` to `u8` may truncate the value
+warning: casting `u16` to `u8` may truncate the value
+warning: casting `u16` to `u8` may truncate the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `u16` may truncate the value
+warning: casting `u32` to `u16` may truncate the value
+warning: casting `u32` to `u16` may truncate the value
+warning: casting `u32` to `u8` may truncate the value
+warning: casting `u32` to `u8` may truncate the value
+warning: casting `u32` to `u8` may truncate the value
+warning: casting `u32` to `u8` may truncate the value
+warning: casting `u32` to `u8` may truncate the value
+warning: casting `u32` to `u8` may truncate the value
+warning: casting `u32` to `u8` may truncate the value
+warning: casting `u32` to `u8` may truncate the value
+warning: casting `u32` to `u8` may truncate the value
+warning: casting `u32` to `u8` may truncate the value
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u8` may truncate the value
+warning: casting `usize` to `u8` may truncate the value
+warning: casting `usize` to `u8` may truncate the value
+warning: casting `usize` to `u8` may truncate the value
+warning: casting `usize` to `u8` may truncate the value
+warning: casting `usize` to `u8` may truncate the value
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `bool` to `u32` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casts from `u16` to `u32` can be expressed infallibly using `From`
+warning: casts from `u16` to `u32` can be expressed infallibly using `From`
+warning: casts from `u16` to `u32` can be expressed infallibly using `From`
+warning: casts from `u16` to `u32` can be expressed infallibly using `From`
+warning: casts from `u16` to `u32` can be expressed infallibly using `From`
+warning: casts from `u16` to `u32` can be expressed infallibly using `From`
+warning: casts from `u16` to `u32` can be expressed infallibly using `From`
+warning: casts from `u16` to `u32` can be expressed infallibly using `From`
+warning: casts from `u16` to `u32` can be expressed infallibly using `From`
+warning: casts from `u16` to `u32` can be expressed infallibly using `From`
+warning: casts from `u16` to `u32` can be expressed infallibly using `From`
+warning: casts from `u16` to `u32` can be expressed infallibly using `From`
+warning: casts from `u16` to `u32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `u16` can be expressed infallibly using `From`
+warning: casts from `u8` to `u16` can be expressed infallibly using `From`
+warning: casts from `u8` to `u16` can be expressed infallibly using `From`
+warning: casts from `u8` to `u16` can be expressed infallibly using `From`
+warning: casts from `u8` to `u16` can be expressed infallibly using `From`
+warning: casts from `u8` to `u16` can be expressed infallibly using `From`
+warning: casts from `u8` to `u16` can be expressed infallibly using `From`
+warning: casts from `u8` to `u32` can be expressed infallibly using `From`
+warning: casts from `u8` to `u32` can be expressed infallibly using `From`
+warning: casts from `u8` to `u32` can be expressed infallibly using `From`
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: it is more concise to loop over references to containers instead of using explicit iteration methods
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: manually reimplementing `is_power_of_two`
+warning: matching over `()` is more explicit
+warning: more than 3 bools in function parameters
+warning: redundant closure
+warning: strict comparison of `f32` or `f64`
+warning: this argument is passed by value, but not consumed in the function body
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function has too many lines (118/100)
+warning: this function has too many lines (136/100)
+warning: this function has too many lines (140/100)
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import

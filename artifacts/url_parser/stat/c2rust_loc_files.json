@@ -1,0 +1,112 @@
+{
+  "Rust": {
+    "blanks": 3,
+    "children": {},
+    "code": 2127,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/url_parser/others/c2rust/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 14,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/url_parser/others/c2rust/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/url_parser/others/c2rust/src/gen_char_category_table.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 123,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/url_parser/others/c2rust/src/test.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 684,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/url_parser/others/c2rust/src/url.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1300,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/url_parser/others/c2rust/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 14,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/url_parser/others/c2rust/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/url_parser/others/c2rust/src/gen_char_category_table.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 123,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/url_parser/others/c2rust/src/test.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 684,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/url_parser/others/c2rust/src/url.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1300,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 2127,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,14 @@
+[package]
+name = "bzip2rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name="bzip2recover"
+path="src/bzip2recover_main.rs"
+
+[[bin]]
+name="bzip2"
+path="src/bzip2_main.rs"

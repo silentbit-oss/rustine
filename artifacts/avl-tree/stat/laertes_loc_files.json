@@ -1,0 +1,76 @@
+{
+  "Rust": {
+    "blanks": 80,
+    "children": {},
+    "code": 572,
+    "comments": 7,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/avl-tree/others/laertes/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/avl-tree/others/laertes/lib.rs",
+        "stats": {
+          "blanks": 76,
+          "blobs": {},
+          "code": 436,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/avl-tree/others/laertes/src/avl.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 130,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 80,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/avl-tree/others/laertes/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/avl-tree/others/laertes/lib.rs",
+          "stats": {
+            "blanks": 76,
+            "blobs": {},
+            "code": 436,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/avl-tree/others/laertes/src/avl.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 130,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 572,
+    "comments": 7,
+    "inaccurate": false,
+    "reports": []
+  }
+}

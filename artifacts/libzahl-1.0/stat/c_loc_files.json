@@ -1,0 +1,969 @@
+{
+  "C": {
+    "blanks": 346,
+    "children": {},
+    "code": 2438,
+    "comments": 77,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/libzahl-1.0/src/zand.c",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 31,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zbset.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 34,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zfree.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 27,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zset.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 13,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zmodmul.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 13,
+          "comments": 2
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zstr.c",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 50,
+          "comments": 5
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/test.c",
+        "stats": {
+          "blanks": 76,
+          "blobs": {},
+          "code": 936,
+          "comments": 3
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zerror.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 15,
+          "comments": 2
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zor.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 40,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zseti.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 11,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zmodsqr.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 13,
+          "comments": 2
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zsets.c",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 63,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zmodpowu.c",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 29,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zperror.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 12,
+          "comments": 2
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zsplit.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 17,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zgcd.c",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 52,
+          "comments": 4
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zadd.c",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 78,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zabs.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 7,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zcmp.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 8,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zrand.c",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 84,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zsave.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 13,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zbtest.c",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 13,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zneg.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 7,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zsetup.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 36,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zlsh.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 38,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/ztrunc.c",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 30,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zunsetup.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 24,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zdiv.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 6,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zptest.c",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 53,
+          "comments": 4
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zbits.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 17,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/znot.c",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 22,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zload.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 13,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zsub.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 76,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zcmpu.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 11,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zmodpow.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 49,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zlsb.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 17,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zmod.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 6,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zrsh.c",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 35,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zsqr.c",
+        "stats": {
+          "blanks": 16,
+          "blobs": {},
+          "code": 58,
+          "comments": 6
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zsetu.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 17,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zcmpi.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 11,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zxor.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 45,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zmul.c",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 74,
+          "comments": 6
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zpowu.c",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 22,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zcmpmag.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 26,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/allocator.c",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 32,
+          "comments": 2
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zswap.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 9,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zpow.c",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 43,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zdivmod.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 78,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/zstr_length.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 24,
+          "comments": 1
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 62,
+    "children": {},
+    "code": 137,
+    "comments": 26,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/libzahl-1.0/zahl.h",
+        "stats": {
+          "blanks": 51,
+          "blobs": {},
+          "code": 73,
+          "comments": 25
+        }
+      },
+      {
+        "name": "subjects/libzahl-1.0/src/internals.h",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 64,
+          "comments": 1
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 408,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/libzahl-1.0/src/zand.c",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 31,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zbset.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 34,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zfree.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 27,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zset.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 13,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zmodmul.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 13,
+            "comments": 2
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zstr.c",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 50,
+            "comments": 5
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/test.c",
+          "stats": {
+            "blanks": 76,
+            "blobs": {},
+            "code": 936,
+            "comments": 3
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zerror.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 15,
+            "comments": 2
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zor.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 40,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zseti.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 11,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zmodsqr.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 13,
+            "comments": 2
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zsets.c",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 63,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zmodpowu.c",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 29,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zperror.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 12,
+            "comments": 2
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zsplit.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 17,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zgcd.c",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 52,
+            "comments": 4
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zadd.c",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 78,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zabs.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 7,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zcmp.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 8,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zrand.c",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 84,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zsave.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 13,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zbtest.c",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 13,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zneg.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 7,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zsetup.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 36,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zlsh.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 38,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/ztrunc.c",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 30,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zunsetup.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 24,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zdiv.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 6,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zptest.c",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 53,
+            "comments": 4
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zbits.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 17,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/znot.c",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 22,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zload.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 13,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zsub.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 76,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zcmpu.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 11,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zmodpow.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 49,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zlsb.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 17,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zmod.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 6,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zrsh.c",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 35,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zsqr.c",
+          "stats": {
+            "blanks": 16,
+            "blobs": {},
+            "code": 58,
+            "comments": 6
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zsetu.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 17,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zcmpi.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 11,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zxor.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 45,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zmul.c",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 74,
+            "comments": 6
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zpowu.c",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 22,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zcmpmag.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 26,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/allocator.c",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 32,
+            "comments": 2
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zswap.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 9,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zpow.c",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 43,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zdivmod.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 78,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/zstr_length.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 24,
+            "comments": 1
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/libzahl-1.0/zahl.h",
+          "stats": {
+            "blanks": 51,
+            "blobs": {},
+            "code": 73,
+            "comments": 25
+          }
+        },
+        {
+          "name": "subjects/libzahl-1.0/src/internals.h",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 64,
+            "comments": 1
+          }
+        }
+      ]
+    },
+    "code": 2575,
+    "comments": 103,
+    "inaccurate": false,
+    "reports": []
+  }
+}

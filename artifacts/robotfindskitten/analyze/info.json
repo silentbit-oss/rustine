@@ -1,0 +1,902 @@
+{
+    "special_type": [
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "typedef struct \n{\n  int x;\n  int y;\n  int color;\n  bool bold;\n  char character;\n} screen_object",
+            "name": "screen_object",
+            "names": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "x",
+                        "type": "int",
+                        "definition": [
+                            "int x"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "y",
+                        "type": "int",
+                        "definition": [
+                            "int y"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "color",
+                        "type": "int",
+                        "definition": [
+                            "int color"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "bold",
+                        "type": "bool",
+                        "definition": [
+                            "bool bold"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "character",
+                        "type": "char",
+                        "definition": [
+                            "char character"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        }
+    ],
+    "global_variable": [
+        {
+            "path": null,
+            "name": "messages",
+            "type": "char *[]",
+            "definition": [
+                "static char *messages[] = {\"\\\"I pity the fool who mistakes me for kitten!\\\", sez Mr. T.\", \"That's just an old tin can.\", \"It's an altar to the horse god.\", \"A box of dancing mechanical pencils. They dance! They sing!\", \"It's an old Duke Ellington record.\", \"A box of fumigation pellets.\", \"A digital clock. It's stuck at 2:17 PM.\", \"That's just a charred human corpse.\", \"I don't know what that is, but it's not kitten.\", \"An empty shopping bag. Paper or plastic?\", \"Could it be... a big ugly bowling trophy?\", \"A coat hanger hovers in thin air. Odd.\", \"Not kitten, just a packet of Kool-Aid(tm).\", \"A freshly-baked pumpkin pie.\", \"A lone, forgotten comma, sits here, sobbing.\", \"ONE HUNDRED THOUSAND CARPET FIBERS!!!!!\", \"It's Richard Nixon's nose!\", \"It's Lucy Ricardo. \\\"Aaaah, Ricky!\\\", she says.\", \"You stumble upon Bill Gates' stand-up act.\", \"Just an autographed copy of the Kama Sutra.\", \"It's the Will Rogers Highway. Who was Will Rogers, anyway?\", \"It's another robot, more advanced in design than you but strangely immobile.\", \"Leonard Richardson is here, asking people to lick him.\", \"It's a stupid mask, fashioned after a beagle.\", \"Your State Farm Insurance(tm) representative!\", \"It's the local draft board.\", \"Seven 1/4\\\" screws and a piece of plastic.\", \"An 80286 machine.\", \"One of those stupid \\\"Homes of the Stars\\\" maps.\", \"A signpost saying \\\"TO KITTEN\\\". It points in no particular direction.\", \"A hammock stretched between a tree and a volleyball pole.\", \"A Texas Instruments of Destruction calculator.\", \"It's a dark, amphorous blob of matter.\", \"Just a pincushion.\", \"It's a mighty zombie talking about some love and prosperity.\", \"\\\"Dear robot, you may have already won our 10 MILLION DOLLAR prize...\\\"\", \"It's just an object.\", \"A mere collection of pixels.\", \"A badly dented high-hat cymbal lies on its side here.\", \"A marijuana brownie.\", \"A plush Chewbacca.\", \"Daily hunger conditioner from Australasia\", \"Just some stuff.\", \"Why are you touching this when you should be finding kitten?\", \"A glorious fan of peacock feathers.\", \"It's some compromising photos of Babar the Elephant.\", \"A copy of the Weekly World News. Watch out for the chambered nautilus!\", \"It's the proverbial wet blanket.\", \"A \\\"Get Out of Jail Free\\\" card.\", \"An incredibly expensive \\\"Mad About You\\\" collector plate.\", \"Paul Moyer's necktie.\", \"A haircut and a real job. Now you know where to get one!\", \"An automated robot-hater. It frowns disapprovingly at you.\", \"An automated robot-liker. It smiles at you.\", \"It's a black hole. Don't fall in!\", \"Just a big brick wall.\", \"You found kitten! No, just kidding.\", \"Heart of Darkness brand pistachio nuts.\", \"A smoking branding iron shaped like a 24-pin connector.\", \"It's a Java applet.\", \"An abandoned used-car lot.\", \"A shameless plug for Crummy: http://www.crummy.com/\", \"A shameless plug for the UCLA Linux Users Group: http://linux.ucla.edu/\", \"A can of Spam Lite.\", \"This is another fine mess you've gotten us into, Stanley.\", \"It's scenery for \\\"Waiting for Godot\\\".\", \"This grain elevator towers high above you.\", \"A Mentos wrapper.\", \"It's the constellation Pisces.\", \"It's a fly on the wall. Hi, fly!\", \"This kind of looks like kitten, but it's not.\", \"It's a banana! Oh, joy!\", \"A helicopter has crashed here.\", \"Carlos Tarango stands here, doing his best impression of Pat Smear.\", \"A patch of mushrooms grows here.\", \"A patch of grape jelly grows here.\", \"A spindle, and a grindle, and a bucka-wacka-woom!\", \"A geyser sprays water high into the air.\", \"A toenail? What good is a toenail?\", \"You've found the fish! Not that it does you much good in this game.\", \"A Buttertonsils bar.\", \"One of the few remaining discoes.\", \"Ah, the uniform of a Revolutionary-era minuteman.\", \"A punch bowl, filled with punch and lemon slices.\", \"It's nothing but a G-thang, baby.\", \"IT'S ALIVE! AH HA HA HA HA!\", \"This was no boating accident!\", \"Wait! This isn't the poker chip! You've been tricked! DAMN YOU, MENDEZ!\", \"A livery stable! Get your livery!\", \"It's a perpetual immobility machine.\", \"\\\"On this spot in 1962, Henry Winkler was sick.\\\"\", \"There's nothing here; it's just an optical illusion.\", \"The World's Biggest Motzah Ball!\", \"A tribe of cannibals lives here. They eat Malt-O-Meal for breakfast, you know.\", \"This appears to be a rather large stack of trashy romance novels.\", \"Look out! Exclamation points!\", \"A herd of wild coffee mugs slumbers here.\", \"It's a limbo bar! How low can you go?\", \"It's the horizon. Now THAT'S weird.\", \"A vase full of artificial flowers is stuck to the floor here.\", \"A large snake bars your way.\", \"A pair of saloon-style doors swing slowly back and forth here.\", \"It's an ordinary bust of Beethoven... but why is it painted green?\", \"It's TV's lovable wisecracking Crow! \\\"Bite me!\\\", he says.\", \"Hey, look, it's war. What is it good for? Absolutely nothing. Say it again.\", \"It's the amazing self-referential thing that's not kitten.\", \"A flamboyant feather boa. Now you can dress up like Carol Channing!\", \"\\\"Sure hope we get some rain soon,\\\" says Farmer Joe.\", \"\\\"How in heck can I wash my neck if it ain't gonna rain no more?\\\" asks Farmer Al.\", \"\\\"Topsoil's all gone, ma,\\\" weeps Lil' Greg.\", \"This is a large brown bear. Oddly enough, it's currently peeing in the woods.\", \"A team of arctic explorers is camped here.\", \"This object here appears to be Louis Farrakhan's bow tie.\", \"This is the world-famous Chain of Jockstraps.\", \"A trash compactor, compacting away.\", \"This toaster strudel is riddled with bullet holes!\", \"It's a hologram of a crashed helicopter.\", \"This is a television. On screen you see a robot strangely similar to yourself.\", \"This balogna has a first name, it's R-A-N-C-I-D.\", \"A salmon hatchery? Look again. It's merely a single salmon.\", \"It's a rim shot. Ba-da-boom!\", \"It's creepy and it's kooky, mysterious and spooky. It's also somewhat ooky.\", \"This is an anagram.\", \"This object is like an analogy.\", \"It's a symbol. You see in it a model for all symbols everywhere.\", \"The object pushes back at you.\", \"A traffic signal. It appears to have been recently vandalized.\", \"\\\"There is no kitten!\\\" cackles the old crone. You are shocked by her blasphemy.\", \"This is a Lagrange point. Don't come too close now.\", \"The dirty old tramp bemoans the loss of his harmonica.\", \"Look, it's Fanny the Irishman!\", \"What in blazes is this?\", \"It's the instruction manual for a previous version of this game.\", \"A brain cell. Oddly enough, it seems to be functioning.\", \"Tea and/or crumpets.\", \"This jukebox has nothing but Cliff Richards albums in it.\", \"It's a Quaker Oatmeal tube, converted into a drum.\", \"This is a remote control. Being a robot, you keep a wide berth.\", \"It's a roll of industrial-strength copper wire.\", \"Oh boy! Grub! Er, grubs.\", \"A puddle of mud, where the mudskippers play.\", \"Plenty of nothing.\", \"Look at that, it's the Crudmobile.\", \"Just Walter Mattheau and Jack Lemmon.\", \"Two crepes, two crepes in a box.\", \"An autographed copy of \\\"Primary Colors\\\", by Anonymous.\", \"Another rabbit? That's three today!\", \"It's a segmentation fault. Core dumped, by the way.\", \"A historical marker showing the actual location of /dev/null.\", \"Thar's Mobius Dick, the convoluted whale. Arrr!\", \"It's a charcoal briquette, smoking away.\", \"A pizza, melting in the sun.\", \"It's a \\\"HOME ALONE 2: Lost in New York\\\" novelty cup.\", \"A stack of 7 inch floppies wobbles precariously.\", \"It's nothing but a corrupted floppy. Coaster anyone?\", \"A section of glowing phosphor cells sings a song of radiation to you.\", \"This TRS-80 III is eerily silent.\", \"A toilet bowl occupies this space.\", \"This peg-leg is stuck in a knothole!\", \"It's a solitary vacuum tube.\", \"This corroded robot is clutching a mitten.\", \"\\\"Hi, I'm Anson Williams, TV's 'Potsy'.\\\"\", \"This subwoofer was blown out in 1974.\", \"Three half-pennies and a wooden nickel.\", \"It's the missing chapter to \\\"A Clockwork Orange\\\".\", \"It's a burrito stand flyer. \\\"Taqueria El Ranchito\\\".\", \"This smiling family is happy because they eat LARD.\", \"Roger Avery, persona un famoso de los Estados Unidos.\", \"Ne'er but a potted plant.\", \"A parrot, kipping on its back.\", \"A forgotten telephone switchboard.\", \"A forgotten telephone switchboard operator.\", \"It's an automated robot-disdainer. It pretends you're not there.\", \"It's a portable hole. A sign reads: \\\"Closed for the winter\\\".\", \"Just a moldy loaf of bread.\", \"A little glass tub of Carmex. ($.89) Too bad you have no lips.\", \"A Swiss-Army knife. All of its appendages are out. (toothpick lost)\", \"It's a zen simulation, trapped within an ASCII character.\", \"It's a copy of \\\"The Rubaiyat of Spike Schudy\\\".\", \"It's \\\"War and Peace\\\" (unabridged, very small print).\", \"A willing, ripe tomato bemoans your inability to digest fruit.\", \"A robot comedian. You feel amused.\", \"It's KITT, the talking car.\", \"Here's Pete Peterson. His batteries seem to have long gone dead.\", \"\\\"Blup, blup, blup\\\", says the mud pot.\", \"More grist for the mill.\", \"Grind 'em up, spit 'em out, they're twigs.\", \"The boom box cranks out an old Ethel Merman tune.\", \"It's \\\"Finding kitten\\\", published by O'Reilly and Associates.\", \"Pumpkin pie spice.\", \"It's the Bass-Matic '76! Mmm, that's good bass!\", \"\\\"Lend us a fiver 'til Thursday\\\", pleas Andy Capp.\", \"It's a tape of '70s rock. All original hits! All original artists!\", \"You've found the fabled America Online disk graveyard!\", \"Empty jewelboxes litter the landscape.\", \"It's the astounding meta-object.\", \"Ed McMahon stands here, lost in thought. Seeing you, he bellows, \\\"YES SIR!\\\"\", \"...thingy???\", \"It's 1000 secrets the government doesn't want you to know!\", \"The letters O and R.\", \"A magical... magic thing.\", \"It's a moment of silence.\", \"It's Sirhan-Sirhan, looking guilty.\", \"It's \\\"Chicken Soup for the Kitten-seeking Soulless Robot.\\\"\", \"It is a set of wind-up chatter teeth.\", \"It is a cloud shaped like an ox.\", \"You see a snowflake here, melting slowly.\", \"It's a big block of ice. Something seems to be frozen inside it.\", \"Vladimir Lenin's casket rests here.\", \"It's a copy of \\\"Zen and The Art of Robot Maintenance\\\".\", \"This invisible box contains a pantomime horse.\", \"A mason jar lies here open. It's label reads: \\\"do not open!\\\".\", \"A train of thought chugs through here.\", \"This jar of pickles expired in 1957.\", \"Someone's identity disk lies here.\", \"\\\"Yes!\\\" says the bit.\", \"\\\"No!\\\" says the bit.\", \"A dodecahedron bars your way.\", \"Mr. Hooper is here, surfing.\", \"It's a big smoking fish.\", \"You have new mail in /var/spool/robot\", \"Just a monitor with the blue element burnt out.\", \"A pile of coaxial plumbing lies here.\", \"It's a rotten old shoe.\", \"It's a hundred-dollar bill.\", \"It's a Dvorak keyboard.\", \"It's a cardboard box full of 8-tracks.\", \"Just a broken hard drive containg the archives of Nerth Pork.\", \"A broken metronome sits here, it's needle off to one side.\", \"A sign reads: \\\"Go home!\\\"\", \"A sign reads: \\\"No robots allowed!\\\"\", \"It's the handheld robotfindskitten game, by Tiger.\", \"This particular monstrosity appears to be ENIAC.\", \"This is a tasty-looking banana creme pie.\", \"A wireframe model of a hot dog rotates in space here.\", \"Just the empty husk of a locust.\", \"You disturb a murder of crows.\", \"It's a copy of the robotfindskitten EULA.\", \"It's Death.\", \"It's an autographed copy of \\\"Secondary Colors,\\\" by Bob Ross.\", \"It is a marzipan dreadnought that appears to have melted and stuck.\", \"It's a DVD of \\\"Crouching Monkey, Hidden Kitten\\\", region encoded for the moon.\", \"It's Kieran Hervold.  Damn dyslexia!\", \"A non-descript box of crackers.\", \"Carbonated Water, High Fructose Corn Syrup, Color, Phosphoric Acid, Flavors, Caffeine.\", \"\\\"Move along! Nothing to see here!\\\"\", \"It's the embalmed corpse of Vladimir Lenin.\", \"A coupon for one free steak-fish at your local family diner.\", \"A set of keys to a 2001 Rolls Royce. Worthless.\", \"A gravestone stands here.  \\\"Izchak Miller, ascended.\\\"\", \"Someone has written \\\"ad aerarium\\\" on the ground here.\", \"A large blue eye floats in midair.\", \"This appears to be a statue of Perseus.\", \"There is an opulent throne here.\", \"It's a squad of Keystone Kops.\", \"This seems to be junk mail addressed to the finder of the Eye of Larn.\", \"A wondrous and intricate golden amulet.  Too bad you have no neck.\", \"The swampy ground around you seems to stink with disease.\", \"An animate blob of acid.  Being metallic, you keep well away.\", \"It's a copy of Knuth with the chapter on kitten-search algorithms torn out.\", \"A crowd of people, and at the center, a popular misconception.\", \"It's a blind man. When you touch, he exclaims \\\"It's a kitten prospecting robot!\\\"\", \"It's a lost wallet. It's owner didn't have pets, so you discard it.\", \"This place is called Antarctica. There is no kitten here.\", \"It's a mousetrap, baited with soap.\", \"A book with \\\"Don't Panic\\\" in large friendly letters across the cover.\", \"A compendium of haiku about metals.\", \"A discredited cosmology, relic of a bygone era.\", \"A hollow voice says \\\"Plugh\\\".\", \"A knight who says \\\"Either I am an insane knave, or you will find kitten.\\\"\", \"A neural net -- maybe it's trying to recognize kitten.\", \"A screwdriver.\", \"A statue of a girl holding a goose like the one in Gottingen, Germany.\", \"A tetradrachm dated \\\"42 B.C.\\\"\", \"A voice booms out \\\"Onward, kitten soldiers...\\\"\", \"An eminently forgettable zahir.\", \"Apparently, it's Edmund Burke.\", \"For a moment, you feel something in your hands, but it disappears!\", \"Here is a book about Robert Kennedy.\", \"Hey, robot, leave those lists alone.\", \"Ho hum.  Another synthetic a posteriori.\", \"It's Asimov's Laws of Robotics.  You feel a strange affinity for them.\", \"It's Bach's Mass in B-minor!\", \"It's a bug.\", \"It's a synthetic a priori truth!  Immanuel would be so pleased!\", \"It's the Tiki Room.\", \"Just some old play by a Czech playwright, and you can't read Czech.\", \"Kitten is the letter 'Q'.  Oh, wait, maybe not.\", \"Quidquid Latine dictum sit, kitten non est.\", \"Sutro Tower is visible at some distance through the fog.\", \"The Digital Millennium Copyright Act of 1998.\", \"The United States Court of Appeals for the Federal Circuit.\", \"The non-kitten item like this but with \\\"false\\\" and \\\"true\\\" switched is true.\", \"The non-kitten item like this but with \\\"true\\\" and \\\"false\\\" switched is false.\", \"This is the chapter called \\\"A Map of the Cat?\\\" from Feynman's autobiography.\", \"This is the forest primeval.\", \"Werner's \\\"Pocket Field Guide to Things That Are Not Kitten\\\".\", \"You found nettik, but that's backwards.\", \"You have found some zinc, but you must not stop here, for you must find kitten.\", \"\\\"50 Years Among the Non-Kitten Items\\\", by Ann Droyd.\", \"\\\"Robot may not injure kitten, or, through inaction, ...\\\"\", \"\\\"Address Allocation for Private Internets\\\" by Yakov Rekhter et al.\", \"\\\"Mail Routing and the Domain System\\\" by Craig Partridge.\", \"\\\"The Theory and Practice of Oligarchical Collectivism\\\" by Emmanuel Goldstein.\", \"\\\"201 Kitten Verbs, Fully Conjugated\\\".  You look for \\\"find\\\".\", \"A card shark sits here, practicing his Faro shuffle.  He ignores you.\", \"A copy of DeCSS.  They're a dime a dozen these days.\", \"A demonic voice proclaims \\\"There is no kitten, only Zuul\\\".  You flee.\", \"A lotus.  You make an interesting pair.\", \"A milk carton, with a black and white picture of kitten on the side.\", \"Any ordinary robot could see from a mile away that this wasn't kitten.\", \"A stegosaurus, escaped from the stegosaurusfindsrobot game.  It finds you.\", \"Baling wire and chewing gum.\", \"Chewing gum and baling wire.\", \"Here is no kitten but only rock, rock and no kitten and the sandy road.\", \"Hey, I bet you thought this was kitten.\", \"It is an ancient mariner, and he stoppeth one of three.\", \"It pleases you to be kind to what appears to be kitten -- but it's not!\", \"It's a blatant plug for Ogg Vorbis, http://www.vorbis.com/\", \"It's a business plan for a new startup, kitten.net.\", \"It's a revised business plan for a new startup, my.kitten.net.\", \"It's a square.\", \"It seems to be a copy of \\\"A Tail of Two Kitties\\\".\", \"It's the Donation of Constantine!\", \"It's this message, nothing more.\", \"Lysine, an essential amino acid.  Well, maybe not for robots.\", \"No kitten here.\", \"The score for a Czech composer's \\\"Kitten-Finding Symphony in C\\\".\", \"This looks like Bradley's \\\"Appearance and Reality\\\", but it's really not.\", \"This non-kitten item no verb.\", \"You feel strangely unfulfilled.\", \"You hit the non-kitten item.  The non-kitten item fails to yowl.\", \"You suddenly yearn for your distant homeland.\", \"You've found the snows of yesteryear!  So that's where they all went to.\", \"Approaching.  One car.  J.  Followed by.  Two car.  M, M.  In five. Minutes.\", \"Free Jon Johansen!\", \"Free Dmitry Sklyarov!\", \"One person shouts \\\"What do we want?\\\" The crowd answers \\\"Free Dmitry!\\\"\", \"Judith Platt insults librarians.\", \"This map is not the territory.\", \"\\\"Go back to Libraria!\\\", says Pat Schroeder.\", \"This is a porcelain kitten-counter.  0, 0, 0, 0, 0...\", \"An old bootable business card, unfortunately cracked down the middle.\", \"A kitten sink, for washing kitten (if only kitten liked water).\", \"A kitten source (to match the kitten sink).\", \"If it's one thing, it's not another.\", \"If it's not one thing, it's another.\", \"A caboodle.\", \"A grin.\", \"A hedgehog.  It looks like it knows something important.\", \"You've found... Oh wait, that's just a cat.\", \"Robot should not be touching that.\", \"Air Guitar!!!  NA na NA na!!\", \"An aromatherapy candle burns with healing light.\", \"You find a bright shiny penny.\", \"It's a free Jon Johansen!\", \"It's a free Dmitry Sklyarov!\", \"The rothe hits!  The rothe hits!\", \"It's an Internet chain letter about sodium laureth sulfate.\", \"Ed Witten sits here, pondering string theory.\", \"Something is written here in the dust.  You read: \\\"rJbotf ndQkttten\\\".\", \"We wish you a merry kitten, and a happy New Year!\", \"Run away!  Run away!\", \"You can see right through this copy of Brin\\'s \\\"Transparent Society\\\".\", \"This copy of \\\"Steal This Book\\\" has been stolen from a bookstore.\", \"It's Roya Naini.\", \"This kit is the fourteenth in a series of kits named with Roman letters.\", \"This is the tenth key you've found so far.\", \"You find a fraud scheme in which loans are used as security for other loans.\", \"It's the phrase \\\"and her\\\", written in ancient Greek.\", \"It's the author of \\\"Randomness and Mathematical Proof\\\".\", \"It's the crusty exoskeleton of an arthropod!\", \"It's Emporer Shaddam the 4th's planet!\", \"It's the triangle leg adjacent to an angle divided by the leg opposite it.\", \"It's a bottle of nail polish remover.\", \"You found netkit! Way to go, robot!\", \"It's the ASCII Floating Head of Seth David Schoen!\", \"A frosted pink party-cake, half eaten.\", \"A bitchin' homemade tesla coil.\", \"Conan O'Brian, sans jawbone.\", \"It's either a mirror, or another soulless kitten-seeking robot.\", \"Preoccupation with finding kitten prevents you from investigating further.\", \"Fonzie sits here, mumbling incoherently about a shark and a pair of waterskis.\", \"The ghost of your dance instructor, his face a paper-white mask of evil.\", \"A bag of groceries taken off the shelf before the expiration date.\", \"A book: Feng Shui, Zen: the art of randomly arranging items that are not kitten.\", \"This might be the fountain of youth, but you'll never know.\", \"Tigerbot Hesh.\", \"Stimutacs.\", \"A canister of pressurized whipped cream, sans whipped cream.\", \"The non-kitten item bites!\", \"A chain hanging from two posts reminds you of the Gateway Arch.\", \"A mathematician calculates the halting probability of a Turing machine.\", \"A number of short theatrical productions are indexed 1, 2, 3, ... n.\", \"A technical university in Australia.\", \"It is -- I just feel something wonderful is about to happen.\", \"It's a Cat 5 cable.\", \"It's a U.S. president.\", \"It's a piece of cloth used to cover a stage in between performances.\", \"The ionosphere seems charged with meaning.\", \"This tomography is like, hella axial, man!\", \"It's your favorite game -- robotfindscatan!\", \"Just a man selling an albatross.\", \"The intermission from a 1930s silent movie.\", \"It's an inverted billiard ball!\", \"The spectre of Sherlock Holmes wills you onwards.\"}"
+            ]
+        },
+        {
+            "path": null,
+            "name": "robot",
+            "type": "screen_object",
+            "definition": [
+                "screen_object robot"
+            ]
+        },
+        {
+            "path": null,
+            "name": "kitten",
+            "type": "screen_object",
+            "definition": [
+                "screen_object kitten"
+            ]
+        },
+        {
+            "path": null,
+            "name": "num_bogus",
+            "type": "int",
+            "definition": [
+                "int num_bogus"
+            ]
+        },
+        {
+            "path": null,
+            "name": "bogus",
+            "type": "screen_object [(sizeof(messages)) / (sizeof(char *))]",
+            "definition": [
+                "screen_object bogus[(sizeof(messages)) / (sizeof(char *))]"
+            ]
+        },
+        {
+            "path": null,
+            "name": "bogus_messages",
+            "type": "int [(sizeof(messages)) / (sizeof(char *))]",
+            "definition": [
+                "int bogus_messages[(sizeof(messages)) / (sizeof(char *))]"
+            ]
+        },
+        {
+            "path": null,
+            "name": "used_messages",
+            "type": "int [(sizeof(messages)) / (sizeof(char *))]",
+            "definition": [
+                "int used_messages[(sizeof(messages)) / (sizeof(char *))]"
+            ]
+        },
+        {
+            "path": null,
+            "name": "screen",
+            "type": "int **",
+            "definition": [
+                "int **screen = 0"
+            ]
+        }
+    ],
+    "function": [
+        {
+            "path": null,
+            "name": "initialize_ncurses",
+            "header": "void initialize_ncurses()",
+            "params": [],
+            "definition": "void initialize_ncurses()\n{\n  signal(SIGINT, finish);\n  initscr();\n  keypad(stdscr, TRUE);\n  nonl();\n  intrflush(stdscr, FALSE);\n  noecho();\n  cbreak();\n  if (has_colors())\n  {\n    start_color();\n    init_pair(COLOR_BLACK, COLOR_BLACK, COLOR_BLACK);\n    init_pair(COLOR_GREEN, COLOR_GREEN, COLOR_BLACK);\n    init_pair(COLOR_RED, COLOR_RED, COLOR_BLACK);\n    init_pair(COLOR_CYAN, COLOR_CYAN, COLOR_BLACK);\n    init_pair(COLOR_WHITE, COLOR_WHITE, COLOR_BLACK);\n    init_pair(COLOR_MAGENTA, COLOR_MAGENTA, COLOR_BLACK);\n    init_pair(COLOR_BLUE, COLOR_BLUE, COLOR_BLACK);\n    init_pair(COLOR_YELLOW, COLOR_YELLOW, COLOR_BLACK);\n  }\n}\n\n",
+            "calle": [
+                "cbreak",
+                "finish",
+                "has_colors",
+                "init_pair",
+                "initscr",
+                "intrflush",
+                "keypad",
+                "noecho",
+                "nonl",
+                "signal",
+                "start_color"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "initialize_arrays",
+            "header": "void initialize_arrays()",
+            "params": [],
+            "definition": "void initialize_arrays()\n{\n  int counter;\n  int counter2;\n  screen_object empty;\n  int i = 0;\n  screen = malloc((sizeof(int *)) * ((COLS - 1) + 1));\n  for (i = 0; i < ((COLS - 1) + 1); i += 1)\n  {\n    screen[i] = malloc((sizeof(int)) * ((LINES - 1) + 1));\n  }\n\n  empty.x = -1;\n  empty.y = -1;\n  empty.color = 0;\n  empty.bold = FALSE;\n  empty.character = ' ';\n  for (counter = 0; counter <= (COLS - 1); counter += 1)\n  {\n    for (counter2 = 0; counter2 <= (LINES - 1); counter2 += 1)\n    {\n      screen[counter][counter2] = -1;\n    }\n\n  }\n\n  for (counter = 0; counter < ((sizeof(messages)) / (sizeof(char *))); counter += 1)\n  {\n    used_messages[counter] = 0;\n    bogus_messages[counter] = 0;\n    bogus[counter] = empty;\n  }\n\n}\n\n",
+            "calle": [
+                "malloc"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "counter",
+                        "type": "int",
+                        "definition": [
+                            "int counter"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "counter2",
+                        "type": "int",
+                        "definition": [
+                            "int counter2"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "empty",
+                        "type": "screen_object",
+                        "definition": [
+                            "screen_object empty"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "screen",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "messages",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "used_messages",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "bogus_messages",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "bogus",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "initialize_robot",
+            "header": "void initialize_robot()",
+            "params": [],
+            "definition": "void initialize_robot()\n{\n  robot.x = (rand() % (COLS - 1)) + 1;\n  robot.y = (rand() % (((LINES - 1) - 3) + 1)) + 3;\n  robot.character = '#';\n  robot.color = 0;\n  robot.bold = FALSE;\n  screen[robot.x][robot.y] = 0;\n}\n\n",
+            "calle": [
+                "rand"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "robot",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "screen",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "initialize_kitten",
+            "header": "void initialize_kitten()",
+            "params": [],
+            "definition": "void initialize_kitten()\n{\n  do\n  {\n    kitten.x = (rand() % (COLS - 1)) + 1;\n    kitten.y = (rand() % (((LINES - 1) - 3) + 1)) + 3;\n  }\n  while (screen[kitten.x][kitten.y] != (-1));\n  do\n  {\n    kitten.character = (rand() % ((126 - '!') + 1)) + '!';\n    ;\n  }\n  while (!validchar(kitten.character));\n  screen[kitten.x][kitten.y] = 1;\n  kitten.color = (rand() % 6) + 1;\n  kitten.bold = (rand() % 2) ? (TRUE) : (FALSE);\n}\n\n",
+            "calle": [
+                "rand",
+                "validchar"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "screen",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "kitten",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "initialize_bogus",
+            "header": "void initialize_bogus()",
+            "params": [],
+            "definition": "void initialize_bogus()\n{\n  int counter;\n  int index;\n  for (counter = 0; counter < num_bogus; counter += 1)\n  {\n    bogus[counter].color = (rand() % 6) + 1;\n    bogus[counter].bold = (rand() % 2) ? (TRUE) : (FALSE);\n    do\n    {\n      bogus[counter].character = (rand() % ((126 - '!') + 1)) + '!';\n      ;\n    }\n    while (!validchar(bogus[counter].character));\n    do\n    {\n      bogus[counter].x = (rand() % (COLS - 1)) + 1;\n      bogus[counter].y = (rand() % (((LINES - 1) - 3) + 1)) + 3;\n    }\n    while (screen[bogus[counter].x][bogus[counter].y] != (-1));\n    screen[bogus[counter].x][bogus[counter].y] = counter + 2;\n    do\n    {\n      index = rand() % ((sizeof(messages)) / (sizeof(char *)));\n    }\n    while (used_messages[index] != 0);\n    bogus_messages[counter] = index;\n    used_messages[index] = 1;\n  }\n\n}\n\n",
+            "calle": [
+                "rand",
+                "validchar"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "counter",
+                        "type": "int",
+                        "definition": [
+                            "int counter"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "index",
+                        "type": "int",
+                        "definition": [
+                            "int index"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "num_bogus",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "bogus",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "screen",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "used_messages",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "messages",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "bogus_messages",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "initialize_screen",
+            "header": "void initialize_screen()",
+            "params": [],
+            "definition": "void initialize_screen()\n{\n  int counter;\n  mvprintw(0, 0, \"robotfindskitten v%s\\n\\n\", ver);\n  for (counter = 0; counter <= (COLS - 1); counter += 1)\n  {\n    printw(\"%c\", 95);\n  }\n\n  for (counter = 0; counter < num_bogus; counter += 1)\n  {\n    draw(bogus[counter]);\n  }\n\n  draw(kitten);\n  draw(robot);\n  refresh();\n}\n\n",
+            "calle": [
+                "draw",
+                "mvprintw",
+                "printw",
+                "refresh"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "counter",
+                        "type": "int",
+                        "definition": [
+                            "int counter"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "num_bogus",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "bogus",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "kitten",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "robot",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "instructions",
+            "header": "void instructions()",
+            "params": [],
+            "definition": "void instructions()\n{\n  char dummy;\n  mvprintw(0, 0, \"robotfindskitten v%s\\n\", ver);\n  printw(\"By the illustrious Leonard Richardson (C) 1997, 2000\\n\");\n  printw(\"Written originally for the Nerth Pork robotfindskitten contest\\n\\n\");\n  printw(\"In this game, you are robot (\");\n  draw_in_place(robot);\n  printw(\"). Your job is to find kitten. This task\\n\");\n  printw(\"is complicated by the existence of various things which are not kitten.\\n\");\n  printw(\"Robot must touch items to determine if they are kitten or not. The game\\n\");\n  printw(\"ends when robotfindskitten. Alternatively, you may end the game by hitting\\n\");\n  printw(\"the Esc key. See the documentation for more information.\\n\\n\");\n  printw(\"Press any key to start.\\n\");\n  refresh();\n  dummy = getch();\n  clear();\n}\n\n",
+            "calle": [
+                "clear",
+                "draw_in_place",
+                "getch",
+                "mvprintw",
+                "printw",
+                "refresh"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "dummy",
+                        "type": "char",
+                        "definition": [
+                            "char dummy"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "robot",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "finish",
+            "header": "static void finish(int sig)",
+            "params": [
+                "int sig"
+            ],
+            "definition": "void finish(int sig)\n{\n  endwin();\n  printf(\"%c%c%c\", 27, '(', 'B');\n  exit(0);\n}\n\n",
+            "calle": [
+                "endwin",
+                "exit",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "sig",
+                        "type": "int",
+                        "definition": [
+                            "int sig"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "play_game",
+            "header": "void play_game()",
+            "params": [],
+            "definition": "void play_game()\n{\n  int old_x = robot.x;\n  int old_y = robot.y;\n  int input;\n  input = getch();\n  while (((input != 27) && (input != 'q')) && (input != 'Q'))\n  {\n    process_input(input);\n    if (!((old_x == robot.x) && (old_y == robot.y)))\n    {\n      mvaddch(old_y, old_x, ' ');\n      screen[old_x][old_y] = -1;\n      draw(robot);\n      refresh();\n      screen[robot.x][robot.y] = 0;\n      old_x = robot.x;\n      old_y = robot.y;\n    }\n    input = getch();\n  }\n\n  message(\"Bye!\");\n  refresh();\n  finish(0);\n}\n\n",
+            "calle": [
+                "draw",
+                "finish",
+                "getch",
+                "message",
+                "mvaddch",
+                "process_input",
+                "refresh"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "old_x",
+                        "type": "int",
+                        "definition": [
+                            "int old_x = robot.x"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "old_y",
+                        "type": "int",
+                        "definition": [
+                            "int old_y = robot.y"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "input",
+                        "type": "int",
+                        "definition": [
+                            "int input"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "robot",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "screen",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "process_input",
+            "header": "void process_input(int)",
+            "params": [
+                "int input"
+            ],
+            "definition": "void process_input(int input)\n{\n  int check_x = robot.x;\n  int check_y = robot.y;\n  switch (input)\n  {\n    case 'L' - 64:\n    {\n      wrefresh(curscr);\n      break;\n    }\n\n    case KEY_UP:\n\n    case 'k':\n\n    case 'K':\n\n    case 'P' - 64:\n    {\n      check_y -= 1;\n      break;\n    }\n\n    case KEY_HOME:\n\n    case 'y':\n\n    case 'Y':\n    {\n      check_x -= 1;\n      check_y -= 1;\n      break;\n    }\n\n    case KEY_PPAGE:\n\n    case 'u':\n\n    case 'U':\n    {\n      check_x += 1;\n      check_y -= 1;\n      break;\n    }\n\n    case KEY_DOWN:\n\n    case 'j':\n\n    case 'J':\n\n    case 'N' - 64:\n    {\n      check_y += 1;\n      break;\n    }\n\n    case KEY_END:\n\n    case 'b':\n\n    case 'B':\n    {\n      check_x -= 1;\n      check_y += 1;\n      break;\n    }\n\n    case KEY_NPAGE:\n\n    case 'n':\n\n    case 'N':\n    {\n      check_x += 1;\n      check_y += 1;\n      break;\n    }\n\n    case KEY_LEFT:\n\n    case 'h':\n\n    case 'H':\n\n    case 'B' - 64:\n    {\n      check_x -= 1;\n      break;\n    }\n\n    case KEY_RIGHT:\n\n    case 'l':\n\n    case 'L':\n\n    case 'F' - 64:\n    {\n      check_x += 1;\n      break;\n    }\n\n    case 0:\n    {\n      break;\n    }\n\n    default:\n    {\n      message(\"Invalid input: Use direction keys or Esc.\");\n      return;\n    }\n\n  }\n\n  if ((((check_y < 3) || (check_y > (LINES - 1))) || (check_x < 0)) || (check_x > (COLS - 1)))\n  {\n    return;\n  }\n  if (screen[check_x][check_y] != (-1))\n  {\n    switch (screen[check_x][check_y])\n    {\n      case 0:\n      {\n        break;\n      }\n\n      case 1:\n      {\n        move(1, 0);\n        clrtoeol();\n        play_animation(input);\n        break;\n      }\n\n      default:\n      {\n        message(messages[bogus_messages[screen[check_x][check_y] - 2]]);\n        break;\n      }\n\n    }\n\n    return;\n  }\n  robot.x = check_x;\n  robot.y = check_y;\n}\n\n",
+            "calle": [
+                "clrtoeol",
+                "message",
+                "move",
+                "play_animation",
+                "wrefresh"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "input",
+                        "type": "int",
+                        "definition": [
+                            "int input"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "check_x",
+                        "type": "int",
+                        "definition": [
+                            "int check_x = robot.x"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "check_y",
+                        "type": "int",
+                        "definition": [
+                            "int check_y = robot.y"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "robot",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "screen",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "messages",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "bogus_messages",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "validchar",
+            "header": "int validchar(char)",
+            "params": [
+                "char a"
+            ],
+            "definition": "int validchar(char a)\n{\n  switch (a)\n  {\n    case '#':\n\n    case ' ':\n\n    case 127:\n    {\n      return 0;\n    }\n\n  }\n\n  return 1;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "char",
+                        "definition": [
+                            "char a"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "play_animation",
+            "header": "void play_animation(int)",
+            "params": [
+                "int input"
+            ],
+            "definition": "void play_animation(int input)\n{\n  int counter;\n  for (counter = 4; counter > 0; counter -= 1)\n  {\n    mvaddch(1, (50 + counter) + 1, ' ');\n    move(1, 50 + counter);\n    if ((((input == KEY_RIGHT) || (input == KEY_DOWN)) || (input == KEY_C3)) || (input == KEY_A3))\n    {\n      draw_in_place(kitten);\n    }\n    else\n      draw_in_place(robot);\n    mvaddch(1, 50 - counter, ' ');\n    move(1, (50 - counter) + 1);\n    if ((((input == KEY_RIGHT) || (input == KEY_DOWN)) || (input == KEY_C3)) || (input == KEY_A3))\n    {\n      draw_in_place(robot);\n    }\n    else\n      draw_in_place(kitten);\n    refresh();\n    sleep(1);\n  }\n\n  move(1, 0);\n  addstr(\"You found kitten! Way to go, robot!\");\n  refresh();\n  finish(0);\n}\n\n",
+            "calle": [
+                "addstr",
+                "draw_in_place",
+                "finish",
+                "move",
+                "mvaddch",
+                "refresh",
+                "sleep"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "input",
+                        "type": "int",
+                        "definition": [
+                            "int input"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "counter",
+                        "type": "int",
+                        "definition": [
+                            "int counter"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "kitten",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "robot",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "full_draw",
+            "header": "",
+            "params": [
+                "screen_object o",
+                "bool in_place"
+            ],
+            "definition": "void full_draw(screen_object o, bool in_place)\n{\n  attr_t old;\n  short dummy;\n  attr_t new;\n  attr_get(&old, &dummy, 0);\n  new = COLOR_PAIR(o.color);\n  if (o.character == '#')\n  {\n    new |= A_DIM;\n  }\n  if (o.character <= '\\32')\n  {\n    new |= A_ALTCHARSET;\n  }\n  if (o.bold)\n  {\n    new |= A_BOLD;\n  }\n  attrset(new);\n  if (in_place)\n  {\n    printw(\"%c\", o.character);\n  }\n  else\n  {\n    mvprintw(o.y, o.x, \"%c\", o.character);\n    move(o.y, o.x);\n  }\n  attrset(old);\n}\n\n",
+            "calle": [
+                "COLOR_PAIR",
+                "attr_get",
+                "attrset",
+                "move",
+                "mvprintw",
+                "printw"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "o",
+                        "type": "screen_object",
+                        "definition": [
+                            "screen_object o"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "in_place",
+                        "type": "bool",
+                        "definition": [
+                            "bool in_place"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "old",
+                        "type": "attr_t",
+                        "definition": [
+                            "attr_t old"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "dummy",
+                        "type": "short",
+                        "definition": [
+                            "short dummy"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "new",
+                        "type": "attr_t",
+                        "definition": [
+                            "attr_t new"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "draw",
+            "header": "",
+            "params": [
+                "screen_object o"
+            ],
+            "definition": "void draw(screen_object o)\n{\n  full_draw(o, FALSE);\n}\n\n",
+            "calle": [
+                "full_draw"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "o",
+                        "type": "screen_object",
+                        "definition": [
+                            "screen_object o"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "draw_in_place",
+            "header": "",
+            "params": [
+                "screen_object o"
+            ],
+            "definition": "void draw_in_place(screen_object o)\n{\n  full_draw(o, TRUE);\n}\n\n",
+            "calle": [
+                "full_draw"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "o",
+                        "type": "screen_object",
+                        "definition": [
+                            "screen_object o"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "message",
+            "header": "",
+            "params": [
+                "char *message"
+            ],
+            "definition": "void message(char *message)\n{\n  move(1, 0);\n  clrtoeol();\n  mvprintw(1, 0, \"%.*s\", COLS, message);\n  move(robot.y, robot.x);\n  refresh();\n}\n\n",
+            "calle": [
+                "clrtoeol",
+                "message",
+                "move",
+                "mvprintw",
+                "refresh"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "message",
+                        "type": "char *",
+                        "definition": [
+                            "char *message"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "robot",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#robotfindskitten",
+            "header": "",
+            "params": [
+                "int argc",
+                "char *argv[]"
+            ],
+            "definition": "int main(int argc, char *argv[])\n{\n  if (argc == 1)\n  {\n    num_bogus = 20;\n  }\n  else\n  {\n    num_bogus = atoi(argv[1]);\n    if ((num_bogus < 0) || (num_bogus > ((sizeof(messages)) / (sizeof(char *)))))\n    {\n      printf(\"Run-time parameter must be between 0 and %d.\\n\", (sizeof(messages)) / (sizeof(char *)));\n      exit(0);\n    }\n  }\n  srand(time(0));\n  printf(\"%c%c%c\", 27, '(', 'U');\n  initialize_ncurses();\n  initialize_arrays();\n  initialize_robot();\n  initialize_kitten();\n  initialize_bogus();\n  instructions();\n  initialize_screen();\n  play_game();\n}\n\n",
+            "calle": [
+                "atoi",
+                "exit",
+                "initialize_arrays",
+                "initialize_bogus",
+                "initialize_kitten",
+                "initialize_ncurses",
+                "initialize_robot",
+                "initialize_screen",
+                "instructions",
+                "play_game",
+                "printf",
+                "srand",
+                "time"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "argc",
+                        "type": "int",
+                        "definition": [
+                            "int argc"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv",
+                        "type": "char *[]",
+                        "definition": [
+                            "char *argv[]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "num_bogus",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "messages",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        }
+    ],
+    "typedefs": []
+}

@@ -1,0 +1,126 @@
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: an inclusive range would be more readable
+warning: an inclusive range would be more readable
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: boolean to int conversion using if
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: borrow as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i64` to `u64` may lose the sign of the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u64` to `usize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `usize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `usize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `usize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `usize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `usize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u8` may truncate the value
+warning: casts from `u32` to `u64` can be expressed infallibly using `From`
+warning: casts from `u32` to `u64` can be expressed infallibly using `From`
+warning: casts from `u32` to `u64` can be expressed infallibly using `From`
+warning: casts from `u32` to `u64` can be expressed infallibly using `From`
+warning: casts from `u32` to `u64` can be expressed infallibly using `From`
+warning: casts from `u32` to `u64` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function returning `Result` missing `# Errors` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: long literal lacking separators
+warning: redundant else block
+warning: reference as raw pointer
+warning: reference as raw pointer
+warning: these match arms have identical bodies
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this could be rewritten as `let...else`
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function has too many lines (139/100)
+warning: this function has too many lines (477/100)
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this macro has been superseded by `std::sync::LazyLock`
+warning: this method could have a `#[must_use]` attribute
+warning: unnecessary `!=` operation
+warning: unnecessary `!=` operation
+warning: unnecessary `!=` operation
+warning: unnecessary `!=` operation
+warning: unused `std::result::Result` that must be used
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: usage of wildcard import
+warning: wildcard matches only a single variant and will also match any future added variants
+warning: you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`

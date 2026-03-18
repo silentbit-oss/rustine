@@ -1,0 +1,130 @@
+{
+  "Rust": {
+    "blanks": 127,
+    "children": {},
+    "code": 6469,
+    "comments": 444,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/snudown/others/laertes/lib.rs",
+        "stats": {
+          "blanks": 78,
+          "blobs": {},
+          "code": 440,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/laertes/src/buffer.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 164,
+          "comments": 14
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/laertes/src/stack.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 78,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/laertes/build.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/laertes/src/autolink.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 594,
+          "comments": 103
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/laertes/src/markdown.rs",
+        "stats": {
+          "blanks": 37,
+          "blobs": {},
+          "code": 5187,
+          "comments": 319
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 127,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/snudown/others/laertes/lib.rs",
+          "stats": {
+            "blanks": 78,
+            "blobs": {},
+            "code": 440,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/laertes/src/buffer.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 164,
+            "comments": 14
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/laertes/src/stack.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 78,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/laertes/build.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/laertes/src/autolink.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 594,
+            "comments": 103
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/laertes/src/markdown.rs",
+          "stats": {
+            "blanks": 37,
+            "blobs": {},
+            "code": 5187,
+            "comments": 319
+          }
+        }
+      ]
+    },
+    "code": 6469,
+    "comments": 444,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "Rust": {
+    "blanks": 3,
+    "children": {},
+    "code": 4197,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/libopenaptx/others/c2rust/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 14,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libopenaptx/others/c2rust/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/libopenaptx/others/c2rust/src/openaptxenc.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 306,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libopenaptx/others/c2rust/src/openaptxdec.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 464,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libopenaptx/others/c2rust/src/openaptx.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 3407,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/libopenaptx/others/c2rust/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 14,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libopenaptx/others/c2rust/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/libopenaptx/others/c2rust/src/openaptxenc.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 306,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libopenaptx/others/c2rust/src/openaptxdec.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 464,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libopenaptx/others/c2rust/src/openaptx.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 3407,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 4197,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

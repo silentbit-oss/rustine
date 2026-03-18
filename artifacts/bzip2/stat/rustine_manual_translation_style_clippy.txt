@@ -1,0 +1,101 @@
+31 | |         "{}: warning: output file(s) may be incomplete.",
+56 +     writeln!(io::stderr(), "{prog_name_str}: warning: output file(s) may be incomplete.").unwrap();
+56 -     writeln!(io::stderr(), "{}: warning: output file(s) may be incomplete.", prog_name_str).unwrap();
+56 |     writeln!(io::stderr(), "{}: warning: output file(s) may be incomplete.", prog_name_str).unwrap();
+64 +     eprintln!("{prog_name_str}: warning: output file(s) may be incomplete.");
+64 -     eprintln!("{}: warning: output file(s) may be incomplete.", prog_name_str);
+64 |     eprintln!("{}: warning: output file(s) may be incomplete.", prog_name_str);
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual implementation of an assign operation
+warning: manual implementation of an assign operation
+warning: manual implementation of an assign operation
+warning: redundant closure
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: the borrowed expression implements the required traits
+warning: the borrowed expression implements the required traits
+warning: the borrowed expression implements the required traits
+warning: the borrowed expression implements the required traits
+warning: the borrowed expression implements the required traits
+warning: the borrowed expression implements the required traits
+warning: the loop variable `i` is only used to index `bhtab`
+warning: the loop variable `i` is only used to index `ftab`
+warning: the loop variable `i` is only used to index `limit`
+warning: the loop variable `i` is only used to index `weight`
+warning: the loop variable `i` is used to index `eclass8`
+warning: the loop variable `i` is used to index `parent`
+warning: the loop variable `i` is used to index `runningOrder`
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: this `if` statement can be collapsed
+warning: this `match` expression can be replaced with `?`
+warning: this can be `std::io::Error::other(_)`
+warning: this can be `std::io::Error::other(_)`
+warning: this can be `std::io::Error::other(_)`
+warning: this can be `std::io::Error::other(_)`
+warning: this can be `std::io::Error::other(_)`
+warning: this can be `std::io::Error::other(_)`
+warning: this can be `std::io::Error::other(_)`
+warning: this let-binding has unit value
+warning: this multiplication by -1 can be written more succinctly
+warning: unneeded late initialization
+warning: use `std::ptr::eq` when comparing raw pointers
+warning: use of `char::is_digit` with literal radix of 10
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string

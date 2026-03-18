@@ -1,0 +1,76 @@
+{
+  "Rust": {
+    "blanks": 4,
+    "children": {},
+    "code": 109,
+    "comments": 43,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/bst/others/crown/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 16,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/bst/others/crown/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/bst/others/crown/src/bst.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 87,
+          "comments": 39
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 4,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/bst/others/crown/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 16,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/bst/others/crown/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/bst/others/crown/src/bst.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 87,
+            "comments": 39
+          }
+        }
+      ]
+    },
+    "code": 109,
+    "comments": 43,
+    "inaccurate": false,
+    "reports": []
+  }
+}

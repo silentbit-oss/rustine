@@ -1,0 +1,393 @@
+{
+  "C": {
+    "blanks": 653,
+    "children": {},
+    "code": 4807,
+    "comments": 357,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/snudown/houdini_html_e.c",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 60,
+          "comments": 14
+        }
+      },
+      {
+        "name": "subjects/snudown/markdown.c",
+        "stats": {
+          "blanks": 154,
+          "blobs": {},
+          "code": 2576,
+          "comments": 82
+        }
+      },
+      {
+        "name": "subjects/snudown/fuzzing/snudown-validator.c",
+        "stats": {
+          "blanks": 39,
+          "blobs": {},
+          "code": 178,
+          "comments": 9
+        }
+      },
+      {
+        "name": "subjects/snudown/snudown.c",
+        "stats": {
+          "blanks": 46,
+          "blobs": {},
+          "code": 186,
+          "comments": 7
+        }
+      },
+      {
+        "name": "subjects/snudown/html_smartypants.c",
+        "stats": {
+          "blanks": 53,
+          "blobs": {},
+          "code": 321,
+          "comments": 15
+        }
+      },
+      {
+        "name": "subjects/snudown/stack.c",
+        "stats": {
+          "blanks": 20,
+          "blobs": {},
+          "code": 61,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/snudown/buffer.c",
+        "stats": {
+          "blanks": 47,
+          "blobs": {},
+          "code": 160,
+          "comments": 29
+        }
+      },
+      {
+        "name": "subjects/snudown/siphash.c",
+        "stats": {
+          "blanks": 43,
+          "blobs": {},
+          "code": 245,
+          "comments": 41
+        }
+      },
+      {
+        "name": "subjects/snudown/html.c",
+        "stats": {
+          "blanks": 131,
+          "blobs": {},
+          "code": 649,
+          "comments": 35
+        }
+      },
+      {
+        "name": "subjects/snudown/houdini_href_e.c",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 63,
+          "comments": 39
+        }
+      },
+      {
+        "name": "subjects/snudown/autolink.c",
+        "stats": {
+          "blanks": 93,
+          "blobs": {},
+          "code": 308,
+          "comments": 86
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 96,
+    "children": {},
+    "code": 984,
+    "comments": 142,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/snudown/stack.h",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 21,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/snudown/siphash.h",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 3,
+          "comments": 36
+        }
+      },
+      {
+        "name": "subjects/snudown/html_blocks.h",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 185,
+          "comments": 3
+        }
+      },
+      {
+        "name": "subjects/snudown/buffer.h",
+        "stats": {
+          "blanks": 23,
+          "blobs": {},
+          "code": 45,
+          "comments": 32
+        }
+      },
+      {
+        "name": "subjects/snudown/html_entities.h",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 538,
+          "comments": 3
+        }
+      },
+      {
+        "name": "subjects/snudown/houdini.h",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 28,
+          "comments": 3
+        }
+      },
+      {
+        "name": "subjects/snudown/autolink.h",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 30,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/snudown/html.h",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 50,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/snudown/markdown.h",
+        "stats": {
+          "blanks": 25,
+          "blobs": {},
+          "code": 84,
+          "comments": 33
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 749,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/snudown/houdini_html_e.c",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 60,
+            "comments": 14
+          }
+        },
+        {
+          "name": "subjects/snudown/markdown.c",
+          "stats": {
+            "blanks": 154,
+            "blobs": {},
+            "code": 2576,
+            "comments": 82
+          }
+        },
+        {
+          "name": "subjects/snudown/fuzzing/snudown-validator.c",
+          "stats": {
+            "blanks": 39,
+            "blobs": {},
+            "code": 178,
+            "comments": 9
+          }
+        },
+        {
+          "name": "subjects/snudown/snudown.c",
+          "stats": {
+            "blanks": 46,
+            "blobs": {},
+            "code": 186,
+            "comments": 7
+          }
+        },
+        {
+          "name": "subjects/snudown/html_smartypants.c",
+          "stats": {
+            "blanks": 53,
+            "blobs": {},
+            "code": 321,
+            "comments": 15
+          }
+        },
+        {
+          "name": "subjects/snudown/stack.c",
+          "stats": {
+            "blanks": 20,
+            "blobs": {},
+            "code": 61,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/snudown/buffer.c",
+          "stats": {
+            "blanks": 47,
+            "blobs": {},
+            "code": 160,
+            "comments": 29
+          }
+        },
+        {
+          "name": "subjects/snudown/siphash.c",
+          "stats": {
+            "blanks": 43,
+            "blobs": {},
+            "code": 245,
+            "comments": 41
+          }
+        },
+        {
+          "name": "subjects/snudown/html.c",
+          "stats": {
+            "blanks": 131,
+            "blobs": {},
+            "code": 649,
+            "comments": 35
+          }
+        },
+        {
+          "name": "subjects/snudown/houdini_href_e.c",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 63,
+            "comments": 39
+          }
+        },
+        {
+          "name": "subjects/snudown/autolink.c",
+          "stats": {
+            "blanks": 93,
+            "blobs": {},
+            "code": 308,
+            "comments": 86
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/snudown/stack.h",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 21,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/snudown/siphash.h",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 3,
+            "comments": 36
+          }
+        },
+        {
+          "name": "subjects/snudown/html_blocks.h",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 185,
+            "comments": 3
+          }
+        },
+        {
+          "name": "subjects/snudown/buffer.h",
+          "stats": {
+            "blanks": 23,
+            "blobs": {},
+            "code": 45,
+            "comments": 32
+          }
+        },
+        {
+          "name": "subjects/snudown/html_entities.h",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 538,
+            "comments": 3
+          }
+        },
+        {
+          "name": "subjects/snudown/houdini.h",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 28,
+            "comments": 3
+          }
+        },
+        {
+          "name": "subjects/snudown/autolink.h",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 30,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/snudown/html.h",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 50,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/snudown/markdown.h",
+          "stats": {
+            "blanks": 25,
+            "blobs": {},
+            "code": 84,
+            "comments": 33
+          }
+        }
+      ]
+    },
+    "code": 5791,
+    "comments": 499,
+    "inaccurate": false,
+    "reports": []
+  }
+}

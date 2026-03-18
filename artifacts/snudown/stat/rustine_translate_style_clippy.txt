@@ -1,0 +1,88 @@
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `RangeInclusive::contains` implementation
+warning: manual `RangeInclusive::contains` implementation
+warning: manual `RangeInclusive::contains` implementation
+warning: manual saturating arithmetic
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: replacing an `Option` with `None`
+warning: the function `smartypants_cb__dash` doesn't need a mutable reference
+warning: the function `smartypants_cb__escape` doesn't need a mutable reference
+warning: the function `smartypants_cb__ltag` doesn't need a mutable reference
+warning: the function `smartypants_cb__number` doesn't need a mutable reference
+warning: the function `smartypants_cb__parens` doesn't need a mutable reference
+warning: the function `smartypants_cb__period` doesn't need a mutable reference
+warning: the loop variable `i` is only used to index `data`
+warning: the loop variable `i` is only used to index `items`
+warning: the loop variable `i` is only used to index `items`
+warning: the loop variable `i` is used to index `data`
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: there is no need to manually implement bit rotation
+warning: this `else { if .. }` block can be collapsed
+warning: this `else { if .. }` block can be collapsed
+warning: this `else { if .. }` block can be collapsed
+warning: this `if` has identical blocks
+warning: this `if` has identical blocks
+warning: this `if` has identical blocks
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this block may be rewritten with the `?` operator
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string

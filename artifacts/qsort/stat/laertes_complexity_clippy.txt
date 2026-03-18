@@ -1,0 +1,5 @@
+warning: the following explicit lifetimes could be elided: 'a1, 'a2
+warning: use of `default` to create a unit struct
+warning: the following explicit lifetimes could be elided: 'a
+warning: the following explicit lifetimes could be elided: 'a
+warning: casting raw pointers to the same type and constness is unnecessary (`*const ()` -> `*const ()`)

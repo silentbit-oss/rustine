@@ -1,0 +1,634 @@
+{
+  "Rust": {
+    "blanks": 474,
+    "children": {},
+    "code": 11261,
+    "comments": 106,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/build.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zsets.rs",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 564,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zpow.rs",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 398,
+          "comments": 7
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zmul.rs",
+        "stats": {
+          "blanks": 23,
+          "blobs": {},
+          "code": 245,
+          "comments": 13
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zrand.rs",
+        "stats": {
+          "blanks": 21,
+          "blobs": {},
+          "code": 459,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zsetup.rs",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 373,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zbset.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 130,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zmodpowu.rs",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 333,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zxor.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 553,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zstr_length.rs",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 378,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zsqr.rs",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 278,
+          "comments": 9
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zgcd.rs",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 440,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zperror.rs",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 133,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zerror.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 73,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/znot.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 119,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/c2rust-lib.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 49,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zadd.rs",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 464,
+          "comments": 7
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zpowu.rs",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 335,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zmodpow.rs",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 402,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zdivmod.rs",
+        "stats": {
+          "blanks": 25,
+          "blobs": {},
+          "code": 632,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/allocator.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 328,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zfree.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 85,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/ztrunc.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 261,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zload.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 265,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zlsh.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 533,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zmodmul.rs",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 269,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zrsh.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 573,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zand.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 196,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zor.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 539,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zmodsqr.rs",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 261,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zsub.rs",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 409,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zunsetup.rs",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 144,
+          "comments": 2
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zptest.rs",
+        "stats": {
+          "blanks": 23,
+          "blobs": {},
+          "code": 479,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/laertes/src/zstr.rs",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 555,
+          "comments": 9
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 474,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/build.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zsets.rs",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 564,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zpow.rs",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 398,
+            "comments": 7
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zmul.rs",
+          "stats": {
+            "blanks": 23,
+            "blobs": {},
+            "code": 245,
+            "comments": 13
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zrand.rs",
+          "stats": {
+            "blanks": 21,
+            "blobs": {},
+            "code": 459,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zsetup.rs",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 373,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zbset.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 130,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zmodpowu.rs",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 333,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zxor.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 553,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zstr_length.rs",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 378,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zsqr.rs",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 278,
+            "comments": 9
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zgcd.rs",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 440,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zperror.rs",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 133,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zerror.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 73,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/znot.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 119,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/c2rust-lib.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 49,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zadd.rs",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 464,
+            "comments": 7
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zpowu.rs",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 335,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zmodpow.rs",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 402,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zdivmod.rs",
+          "stats": {
+            "blanks": 25,
+            "blobs": {},
+            "code": 632,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/allocator.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 328,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zfree.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 85,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/ztrunc.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 261,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zload.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 265,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zlsh.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 533,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zmodmul.rs",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 269,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zrsh.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 573,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zand.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 196,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zor.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 539,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zmodsqr.rs",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 261,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zsub.rs",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 409,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zunsetup.rs",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 144,
+            "comments": 2
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zptest.rs",
+          "stats": {
+            "blanks": 23,
+            "blobs": {},
+            "code": 479,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/laertes/src/zstr.rs",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 555,
+            "comments": 9
+          }
+        }
+      ]
+    },
+    "code": 11261,
+    "comments": 106,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,63 @@
+warning: a dangling pointer will be produced because the temporary `std::boxed::Box<[u8]>` will be dropped
+warning: it looks like the same item is being pushed into this `Vec`
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual arithmetic check found
+warning: manual implementation of an assign operation
+warning: redundant closure
+warning: redundant closure
+warning: redundant closure
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: redundant pattern matching, consider using `is_err()`
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: the loop variable `i` is only used to index `CLCL_ORDER`
+warning: the loop variable `i` is only used to index `attempt`
+warning: the loop variable `i` is only used to index `bitlen`
+warning: the loop variable `i` is only used to index `bitlen`
+warning: the loop variable `i` is only used to index `bitlen`
+warning: the loop variable `i` is only used to index `bitlen`
+warning: the loop variable `i` is only used to index `data`
+warning: the loop variable `i` is only used to index `head`
+warning: the loop variable `i` is only used to index `headz`
+warning: the loop variable `i` is only used to index `in_data`
+warning: the loop variable `i` is only used to index `in_data`
+warning: the loop variable `i` is only used to index `in_data`
+warning: the loop variable `i` is only used to index `val`
+warning: the loop variable `i` is used to index `chain`
+warning: the loop variable `i` is used to index `chainz`
+warning: the loop variable `i` is used to index `data`
+warning: the loop variable `i` is used to index `frequencies`
+warning: the loop variable `i` is used to index `lengths`
+warning: the loop variable `i` is used to index `maxlens`
+warning: the loop variable `k` is only used to index `b`
+warning: the loop variable `type_` is only used to index `attempt`
+warning: the loop variable `x` is only used to index `count`
+warning: this `else { if .. }` block can be collapsed
+warning: this `if` has identical blocks
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: writing `&mut Vec` instead of `&mut [_]` involves a new object where a slice will do

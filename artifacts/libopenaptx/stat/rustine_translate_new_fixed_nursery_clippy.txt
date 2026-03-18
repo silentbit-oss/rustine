@@ -1,0 +1,3 @@
+warning: `if _ { .. } else { .. }` is an expression
+warning: this could be a `const fn`
+warning: this could be a `const fn`

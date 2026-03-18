@@ -1,0 +1,871 @@
+#include <assert.h>
+#include <buffer.h>
+#include <indicators.h>
+#include <math.h>
+#include <stdlib.h>
+#include <stoch.c>
+#include <string.h>
+
+const char *ti_version(void);
+long int ti_build(void);
+int ti_indicator_count(void);
+typedef int (*ti_indicator_start_function)(const double *options);
+typedef int (*ti_indicator_function)(int size, const double * const *inputs, const double *options, double * const *outputs);
+struct ti_stream;
+typedef struct ti_stream ti_stream;
+typedef int (*ti_indicator_stream_new)(const double *options, ti_stream **stream);
+typedef int (*ti_indicator_stream_run)(ti_stream *stream, int size, const double * const *inputs, double * const *outputs);
+typedef void (*ti_indicator_stream_free)(ti_stream *stream);
+typedef struct ti_indicator_info
+{
+  const char *name;
+  const char *full_name;
+  ti_indicator_start_function start;
+  ti_indicator_function indicator;
+  ti_indicator_function indicator_ref;
+  int type;
+  int inputs;
+  int options;
+  int outputs;
+  const char *input_names[16];
+  const char *option_names[16];
+  const char *output_names[16];
+  ti_indicator_stream_new stream_new;
+  ti_indicator_stream_run stream_run;
+  ti_indicator_stream_free stream_free;
+} ti_indicator_info;
+extern ti_indicator_info ti_indicators[];
+const ti_indicator_info *ti_find_indicator(const char *name);
+int ti_stream_run(ti_stream *stream, int size, const double * const *inputs, double * const *outputs);
+ti_indicator_info *ti_stream_get_info(ti_stream *stream);
+int ti_stream_get_progress(ti_stream *stream);
+void ti_stream_free(ti_stream *stream);
+int ti_abs_start(const double *options);
+int ti_abs(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_acos_start(const double *options);
+int ti_acos(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_ad_start(const double *options);
+int ti_ad(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_add_start(const double *options);
+int ti_add(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_adosc_start(const double *options);
+int ti_adosc(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_adx_start(const double *options);
+int ti_adx(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_adxr_start(const double *options);
+int ti_adxr(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_ao_start(const double *options);
+int ti_ao(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_apo_start(const double *options);
+int ti_apo(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_aroon_start(const double *options);
+int ti_aroon(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_aroonosc_start(const double *options);
+int ti_aroonosc(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_asin_start(const double *options);
+int ti_asin(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_atan_start(const double *options);
+int ti_atan(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_atr_start(const double *options);
+int ti_atr(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_atr_ref(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_atr_stream_new(const double *options, ti_stream **stream);
+int ti_atr_stream_run(ti_stream *stream, int size, const double * const *inputs, double * const *outputs);
+void ti_atr_stream_free(ti_stream *stream);
+int ti_avgprice_start(const double *options);
+int ti_avgprice(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_bbands_start(const double *options);
+int ti_bbands(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_bop_start(const double *options);
+int ti_bop(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_cci_start(const double *options);
+int ti_cci(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_ceil_start(const double *options);
+int ti_ceil(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_cmo_start(const double *options);
+int ti_cmo(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_cos_start(const double *options);
+int ti_cos(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_cosh_start(const double *options);
+int ti_cosh(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_crossany_start(const double *options);
+int ti_crossany(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_crossover_start(const double *options);
+int ti_crossover(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_cvi_start(const double *options);
+int ti_cvi(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_decay_start(const double *options);
+int ti_decay(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_dema_start(const double *options);
+int ti_dema(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_di_start(const double *options);
+int ti_di(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_div_start(const double *options);
+int ti_div(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_dm_start(const double *options);
+int ti_dm(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_dpo_start(const double *options);
+int ti_dpo(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_dx_start(const double *options);
+int ti_dx(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_edecay_start(const double *options);
+int ti_edecay(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_ema_start(const double *options);
+int ti_ema(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_emv_start(const double *options);
+int ti_emv(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_exp_start(const double *options);
+int ti_exp(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_fisher_start(const double *options);
+int ti_fisher(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_floor_start(const double *options);
+int ti_floor(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_fosc_start(const double *options);
+int ti_fosc(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_hma_start(const double *options);
+int ti_hma(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_kama_start(const double *options);
+int ti_kama(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_kvo_start(const double *options);
+int ti_kvo(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_lag_start(const double *options);
+int ti_lag(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_linreg_start(const double *options);
+int ti_linreg(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_linregintercept_start(const double *options);
+int ti_linregintercept(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_linregslope_start(const double *options);
+int ti_linregslope(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_ln_start(const double *options);
+int ti_ln(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_log10_start(const double *options);
+int ti_log10(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_macd_start(const double *options);
+int ti_macd(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_marketfi_start(const double *options);
+int ti_marketfi(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_mass_start(const double *options);
+int ti_mass(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_max_start(const double *options);
+int ti_max(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_max_ref(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_md_start(const double *options);
+int ti_md(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_medprice_start(const double *options);
+int ti_medprice(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_mfi_start(const double *options);
+int ti_mfi(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_min_start(const double *options);
+int ti_min(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_min_ref(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_mom_start(const double *options);
+int ti_mom(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_msw_start(const double *options);
+int ti_msw(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_mul_start(const double *options);
+int ti_mul(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_natr_start(const double *options);
+int ti_natr(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_nvi_start(const double *options);
+int ti_nvi(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_obv_start(const double *options);
+int ti_obv(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_ppo_start(const double *options);
+int ti_ppo(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_psar_start(const double *options);
+int ti_psar(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_pvi_start(const double *options);
+int ti_pvi(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_qstick_start(const double *options);
+int ti_qstick(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_roc_start(const double *options);
+int ti_roc(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_rocr_start(const double *options);
+int ti_rocr(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_round_start(const double *options);
+int ti_round(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_rsi_start(const double *options);
+int ti_rsi(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_sin_start(const double *options);
+int ti_sin(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_sinh_start(const double *options);
+int ti_sinh(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_sma_start(const double *options);
+int ti_sma(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_sma_stream_new(const double *options, ti_stream **stream);
+int ti_sma_stream_run(ti_stream *stream, int size, const double * const *inputs, double * const *outputs);
+void ti_sma_stream_free(ti_stream *stream);
+int ti_sqrt_start(const double *options);
+int ti_sqrt(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_stddev_start(const double *options);
+int ti_stddev(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_stderr_start(const double *options);
+int ti_stderr(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_stoch_start(const double *options);
+int ti_stoch(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_stochrsi_start(const double *options);
+int ti_stochrsi(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_sub_start(const double *options);
+int ti_sub(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_sum_start(const double *options);
+int ti_sum(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_tan_start(const double *options);
+int ti_tan(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_tanh_start(const double *options);
+int ti_tanh(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_tema_start(const double *options);
+int ti_tema(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_todeg_start(const double *options);
+int ti_todeg(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_torad_start(const double *options);
+int ti_torad(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_tr_start(const double *options);
+int ti_tr(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_trima_start(const double *options);
+int ti_trima(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_trix_start(const double *options);
+int ti_trix(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_trunc_start(const double *options);
+int ti_trunc(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_tsf_start(const double *options);
+int ti_tsf(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_typprice_start(const double *options);
+int ti_typprice(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_ultosc_start(const double *options);
+int ti_ultosc(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_var_start(const double *options);
+int ti_var(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_vhf_start(const double *options);
+int ti_vhf(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_vidya_start(const double *options);
+int ti_vidya(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_volatility_start(const double *options);
+int ti_volatility(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_vosc_start(const double *options);
+int ti_vosc(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_vwma_start(const double *options);
+int ti_vwma(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_wad_start(const double *options);
+int ti_wad(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_wcprice_start(const double *options);
+int ti_wcprice(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_wilders_start(const double *options);
+int ti_wilders(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_willr_start(const double *options);
+int ti_willr(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_wma_start(const double *options);
+int ti_wma(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_zlema_start(const double *options);
+int ti_zlema(int size, const double * const *inputs, const double *options, double * const *outputs);
+typedef struct 
+{
+  int size;
+  int pushes;
+  int index;
+  double sum;
+  double vals[1];
+} ti_buffer;
+ti_buffer *ti_buffer_new(int size);
+void ti_buffer_free(ti_buffer *buffer);
+int ti_stoch_start(const double *options)
+{
+  const int kperiod = (int) options[0];
+  const int kslow = (int) options[1];
+  const int dperiod = (int) options[2];
+  return ((kperiod + kslow) + dperiod) - 3;
+}
+
+int ti_stoch(int size, const double * const *inputs, const double *options, double * const *outputs)
+{
+  const double *high = inputs[0];
+  const double *low = inputs[1];
+  const double *close = inputs[2];
+  const int kperiod = (int) options[0];
+  const int kslow = (int) options[1];
+  const int dperiod = (int) options[2];
+  const double kper = 1.0 / kslow;
+  const double dper = 1.0 / dperiod;
+  double *stoch = outputs[0];
+  unsigned int stoch_idx = 0;
+  double *stoch_ma = outputs[1];
+  unsigned int stoch_ma_idx = 0;
+  if (kperiod < 1)
+  {
+    return 1;
+  }
+  if (kslow < 1)
+  {
+    return 1;
+  }
+  if (dperiod < 1)
+  {
+    return 1;
+  }
+  if (size <= ti_stoch_start(options))
+  {
+    return 0;
+  }
+  int trail = 0;
+  int maxi = -1;
+  int mini = -1;
+  double max = high[0];
+  double min = low[0];
+  double bar;
+  ti_buffer *k_sum = ti_buffer_new(kslow);
+  ti_buffer *d_sum = ti_buffer_new(dperiod);
+  int i;
+  int j;
+  for (i = 0; i < size; i += 1)
+  {
+    helper_ti_stoch_1(&stoch_idx, &stoch_ma_idx, &trail, &maxi, &mini, &max, &min, &bar, &j, high, low, close, kperiod, kslow, dperiod, kper, dper, stoch, stoch_ma, k_sum, d_sum, i);
+  }
+
+  ti_buffer_free(k_sum);
+  ti_buffer_free(d_sum);
+  assert(((&stoch[stoch_idx]) - outputs[0]) == (size - ti_stoch_start(options)));
+  assert(((&stoch_ma[stoch_ma_idx]) - outputs[1]) == (size - ti_stoch_start(options)));
+  return 0;
+}
+
+
+const char *ti_version(void);
+long int ti_build(void);
+int ti_indicator_count(void);
+typedef int (*ti_indicator_start_function)(const double *options);
+typedef int (*ti_indicator_function)(int size, const double * const *inputs, const double *options, double * const *outputs);
+struct ti_stream;
+typedef struct ti_stream ti_stream;
+typedef int (*ti_indicator_stream_new)(const double *options, ti_stream **stream);
+typedef int (*ti_indicator_stream_run)(ti_stream *stream, int size, const double * const *inputs, double * const *outputs);
+typedef void (*ti_indicator_stream_free)(ti_stream *stream);
+typedef struct ti_indicator_info
+{
+  const char *name;
+  const char *full_name;
+  ti_indicator_start_function start;
+  ti_indicator_function indicator;
+  ti_indicator_function indicator_ref;
+  int type;
+  int inputs;
+  int options;
+  int outputs;
+  const char *input_names[16];
+  const char *option_names[16];
+  const char *output_names[16];
+  ti_indicator_stream_new stream_new;
+  ti_indicator_stream_run stream_run;
+  ti_indicator_stream_free stream_free;
+} ti_indicator_info;
+extern ti_indicator_info ti_indicators[];
+const ti_indicator_info *ti_find_indicator(const char *name);
+int ti_stream_run(ti_stream *stream, int size, const double * const *inputs, double * const *outputs);
+ti_indicator_info *ti_stream_get_info(ti_stream *stream);
+int ti_stream_get_progress(ti_stream *stream);
+void ti_stream_free(ti_stream *stream);
+int ti_abs_start(const double *options);
+int ti_abs(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_acos_start(const double *options);
+int ti_acos(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_ad_start(const double *options);
+int ti_ad(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_add_start(const double *options);
+int ti_add(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_adosc_start(const double *options);
+int ti_adosc(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_adx_start(const double *options);
+int ti_adx(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_adxr_start(const double *options);
+int ti_adxr(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_ao_start(const double *options);
+int ti_ao(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_apo_start(const double *options);
+int ti_apo(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_aroon_start(const double *options);
+int ti_aroon(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_aroonosc_start(const double *options);
+int ti_aroonosc(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_asin_start(const double *options);
+int ti_asin(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_atan_start(const double *options);
+int ti_atan(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_atr_start(const double *options);
+int ti_atr(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_atr_ref(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_atr_stream_new(const double *options, ti_stream **stream);
+int ti_atr_stream_run(ti_stream *stream, int size, const double * const *inputs, double * const *outputs);
+void ti_atr_stream_free(ti_stream *stream);
+int ti_avgprice_start(const double *options);
+int ti_avgprice(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_bbands_start(const double *options);
+int ti_bbands(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_bop_start(const double *options);
+int ti_bop(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_cci_start(const double *options);
+int ti_cci(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_ceil_start(const double *options);
+int ti_ceil(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_cmo_start(const double *options);
+int ti_cmo(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_cos_start(const double *options);
+int ti_cos(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_cosh_start(const double *options);
+int ti_cosh(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_crossany_start(const double *options);
+int ti_crossany(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_crossover_start(const double *options);
+int ti_crossover(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_cvi_start(const double *options);
+int ti_cvi(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_decay_start(const double *options);
+int ti_decay(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_dema_start(const double *options);
+int ti_dema(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_di_start(const double *options);
+int ti_di(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_div_start(const double *options);
+int ti_div(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_dm_start(const double *options);
+int ti_dm(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_dpo_start(const double *options);
+int ti_dpo(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_dx_start(const double *options);
+int ti_dx(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_edecay_start(const double *options);
+int ti_edecay(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_ema_start(const double *options);
+int ti_ema(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_emv_start(const double *options);
+int ti_emv(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_exp_start(const double *options);
+int ti_exp(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_fisher_start(const double *options);
+int ti_fisher(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_floor_start(const double *options);
+int ti_floor(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_fosc_start(const double *options);
+int ti_fosc(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_hma_start(const double *options);
+int ti_hma(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_kama_start(const double *options);
+int ti_kama(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_kvo_start(const double *options);
+int ti_kvo(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_lag_start(const double *options);
+int ti_lag(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_linreg_start(const double *options);
+int ti_linreg(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_linregintercept_start(const double *options);
+int ti_linregintercept(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_linregslope_start(const double *options);
+int ti_linregslope(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_ln_start(const double *options);
+int ti_ln(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_log10_start(const double *options);
+int ti_log10(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_macd_start(const double *options);
+int ti_macd(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_marketfi_start(const double *options);
+int ti_marketfi(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_mass_start(const double *options);
+int ti_mass(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_max_start(const double *options);
+int ti_max(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_max_ref(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_md_start(const double *options);
+int ti_md(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_medprice_start(const double *options);
+int ti_medprice(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_mfi_start(const double *options);
+int ti_mfi(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_min_start(const double *options);
+int ti_min(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_min_ref(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_mom_start(const double *options);
+int ti_mom(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_msw_start(const double *options);
+int ti_msw(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_mul_start(const double *options);
+int ti_mul(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_natr_start(const double *options);
+int ti_natr(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_nvi_start(const double *options);
+int ti_nvi(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_obv_start(const double *options);
+int ti_obv(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_ppo_start(const double *options);
+int ti_ppo(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_psar_start(const double *options);
+int ti_psar(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_pvi_start(const double *options);
+int ti_pvi(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_qstick_start(const double *options);
+int ti_qstick(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_roc_start(const double *options);
+int ti_roc(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_rocr_start(const double *options);
+int ti_rocr(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_round_start(const double *options);
+int ti_round(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_rsi_start(const double *options);
+int ti_rsi(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_sin_start(const double *options);
+int ti_sin(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_sinh_start(const double *options);
+int ti_sinh(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_sma_start(const double *options);
+int ti_sma(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_sma_stream_new(const double *options, ti_stream **stream);
+int ti_sma_stream_run(ti_stream *stream, int size, const double * const *inputs, double * const *outputs);
+void ti_sma_stream_free(ti_stream *stream);
+int ti_sqrt_start(const double *options);
+int ti_sqrt(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_stddev_start(const double *options);
+int ti_stddev(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_stderr_start(const double *options);
+int ti_stderr(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_stoch_start(const double *options);
+int ti_stoch(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_stochrsi_start(const double *options);
+int ti_stochrsi(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_sub_start(const double *options);
+int ti_sub(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_sum_start(const double *options);
+int ti_sum(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_tan_start(const double *options);
+int ti_tan(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_tanh_start(const double *options);
+int ti_tanh(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_tema_start(const double *options);
+int ti_tema(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_todeg_start(const double *options);
+int ti_todeg(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_torad_start(const double *options);
+int ti_torad(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_tr_start(const double *options);
+int ti_tr(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_trima_start(const double *options);
+int ti_trima(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_trix_start(const double *options);
+int ti_trix(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_trunc_start(const double *options);
+int ti_trunc(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_tsf_start(const double *options);
+int ti_tsf(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_typprice_start(const double *options);
+int ti_typprice(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_ultosc_start(const double *options);
+int ti_ultosc(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_var_start(const double *options);
+int ti_var(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_vhf_start(const double *options);
+int ti_vhf(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_vidya_start(const double *options);
+int ti_vidya(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_volatility_start(const double *options);
+int ti_volatility(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_vosc_start(const double *options);
+int ti_vosc(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_vwma_start(const double *options);
+int ti_vwma(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_wad_start(const double *options);
+int ti_wad(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_wcprice_start(const double *options);
+int ti_wcprice(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_wilders_start(const double *options);
+int ti_wilders(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_willr_start(const double *options);
+int ti_willr(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_wma_start(const double *options);
+int ti_wma(int size, const double * const *inputs, const double *options, double * const *outputs);
+int ti_zlema_start(const double *options);
+int ti_zlema(int size, const double * const *inputs, const double *options, double * const *outputs);
+typedef struct 
+{
+  int size;
+  int pushes;
+  int index;
+  double sum;
+  double vals[1];
+} ti_buffer;
+ti_buffer *ti_buffer_new(int size);
+void ti_buffer_free(ti_buffer *buffer);
+int ti_stoch_start(const double *options)
+{
+  const int kperiod = (int) options[0];
+  const int kslow = (int) options[1];
+  const int dperiod = (int) options[2];
+  return ((kperiod + kslow) + dperiod) - 3;
+}
+
+int ti_stoch(int size, const double * const *inputs, const double *options, double * const *outputs)
+{
+  const double *high = inputs[0];
+  const double *low = inputs[1];
+  const double *close = inputs[2];
+  const int kperiod = (int) options[0];
+  const int kslow = (int) options[1];
+  const int dperiod = (int) options[2];
+  const double kper = 1.0 / kslow;
+  const double dper = 1.0 / dperiod;
+  double *stoch = outputs[0];
+  unsigned int stoch_idx = 0;
+  double *stoch_ma = outputs[1];
+  unsigned int stoch_ma_idx = 0;
+  if (kperiod < 1)
+  {
+    return 1;
+  }
+  if (kslow < 1)
+  {
+    return 1;
+  }
+  if (dperiod < 1)
+  {
+    return 1;
+  }
+  if (size <= ti_stoch_start(options))
+  {
+    return 0;
+  }
+  int trail = 0;
+  int maxi = -1;
+  int mini = -1;
+  double max = high[0];
+  double min = low[0];
+  double bar;
+  ti_buffer *k_sum = ti_buffer_new(kslow);
+  ti_buffer *d_sum = ti_buffer_new(dperiod);
+  int i;
+  int j;
+  for (i = 0; i < size; i += 1)
+  {
+    if (i >= kperiod)
+    {
+      trail += 1;
+    }
+    bar = high[i];
+    if (maxi < trail)
+    {
+      maxi = trail;
+      max = high[maxi];
+      j = trail;
+      while ((++j) <= i)
+      {
+        bar = high[j];
+        if (bar >= max)
+        {
+          max = bar;
+          maxi = j;
+        }
+      }
+
+    }
+    else
+      if (bar >= max)
+    {
+      maxi = i;
+      max = bar;
+    }
+    bar = low[i];
+    if (mini < trail)
+    {
+      mini = trail;
+      min = low[mini];
+      j = trail;
+      while ((++j) <= i)
+      {
+        bar = low[j];
+        if (bar <= min)
+        {
+          min = bar;
+          mini = j;
+        }
+      }
+
+    }
+    else
+      if (bar <= min)
+    {
+      mini = i;
+      min = bar;
+    }
+    const double kdiff = max - min;
+    const double kfast = (kdiff == 0.0) ? (0.0) : (100 * ((close[i] - min) / kdiff));
+    do
+    {
+      if (k_sum->pushes >= k_sum->size)
+      {
+        k_sum->sum -= k_sum->vals[k_sum->index];
+      }
+      k_sum->sum += kfast;
+      k_sum->vals[k_sum->index] = kfast;
+      k_sum->pushes += 1;
+      k_sum->index = k_sum->index + 1;
+      if (k_sum->index >= k_sum->size)
+      {
+        k_sum->index = 0;
+      }
+    }
+    while (0);
+    if (i >= (((kperiod - 1) + kslow) - 1))
+    {
+      const double k = k_sum->sum * kper;
+      do
+      {
+        if (d_sum->pushes >= d_sum->size)
+        {
+          d_sum->sum -= d_sum->vals[d_sum->index];
+        }
+        d_sum->sum += k;
+        d_sum->vals[d_sum->index] = k;
+        d_sum->pushes += 1;
+        d_sum->index = d_sum->index + 1;
+        if (d_sum->index >= d_sum->size)
+        {
+          d_sum->index = 0;
+        }
+      }
+      while (0);
+      if (i >= (((((kperiod - 1) + kslow) - 1) + dperiod) - 1))
+      {
+        stoch[stoch_idx] = k;
+        stoch_idx += 1;
+        stoch_ma[stoch_ma_idx] = d_sum->sum * dper;
+        stoch_ma_idx += 1;
+      }
+    }
+  }
+
+  ti_buffer_free(k_sum);
+  ti_buffer_free(d_sum);
+  assert(((&stoch[stoch_idx]) - outputs[0]) == (size - ti_stoch_start(options)));
+  assert(((&stoch_ma[stoch_ma_idx]) - outputs[1]) == (size - ti_stoch_start(options)));
+  return 0;
+}
+
+void helper_ti_stoch_1(unsigned int * const stoch_idx_ref, unsigned int * const stoch_ma_idx_ref, int * const trail_ref, int * const maxi_ref, int * const mini_ref, double * const max_ref, double * const min_ref, double * const bar_ref, int * const j_ref, const double * const high, const double * const low, const double * const close, const int kperiod, const int kslow, const int dperiod, const double kper, const double dper, double * const stoch, double * const stoch_ma, ti_buffer * const k_sum, ti_buffer * const d_sum, int i)
+{
+  unsigned int stoch_idx = *stoch_idx_ref;
+  unsigned int stoch_ma_idx = *stoch_ma_idx_ref;
+  int trail = *trail_ref;
+  int maxi = *maxi_ref;
+  int mini = *mini_ref;
+  double max = *max_ref;
+  double min = *min_ref;
+  double bar = *bar_ref;
+  int j = *j_ref;
+  if (i >= kperiod)
+  {
+    trail += 1;
+  }
+  bar = high[i];
+  if (maxi < trail)
+  {
+    maxi = trail;
+    max = high[maxi];
+    j = trail;
+    while ((++j) <= i)
+    {
+      bar = high[j];
+      if (bar >= max)
+      {
+        max = bar;
+        maxi = j;
+      }
+    }
+
+  }
+  else
+    if (bar >= max)
+  {
+    maxi = i;
+    max = bar;
+  }
+  bar = low[i];
+  if (mini < trail)
+  {
+    mini = trail;
+    min = low[mini];
+    j = trail;
+    while ((++j) <= i)
+    {
+      bar = low[j];
+      if (bar <= min)
+      {
+        min = bar;
+        mini = j;
+      }
+    }
+
+  }
+  else
+    if (bar <= min)
+  {
+    mini = i;
+    min = bar;
+  }
+  const double kdiff = max - min;
+  const double kfast = (kdiff == 0.0) ? (0.0) : (100 * ((close[i] - min) / kdiff));
+  do
+  {
+    if (k_sum->pushes >= k_sum->size)
+    {
+      k_sum->sum -= k_sum->vals[k_sum->index];
+    }
+    k_sum->sum += kfast;
+    k_sum->vals[k_sum->index] = kfast;
+    k_sum->pushes += 1;
+    k_sum->index = k_sum->index + 1;
+    if (k_sum->index >= k_sum->size)
+    {
+      k_sum->index = 0;
+    }
+  }
+  while (0);
+  if (i >= (((kperiod - 1) + kslow) - 1))
+  {
+    helper_helper_ti_stoch_1_1(&stoch_idx, &stoch_ma_idx, kperiod, kslow, dperiod, kper, dper, stoch, stoch_ma, k_sum, d_sum, i);
+  }
+  *stoch_idx_ref = stoch_idx;
+  *stoch_ma_idx_ref = stoch_ma_idx;
+  *trail_ref = trail;
+  *maxi_ref = maxi;
+  *mini_ref = mini;
+  *max_ref = max;
+  *min_ref = min;
+  *bar_ref = bar;
+  *j_ref = j;
+}
+
+void helper_helper_ti_stoch_1_1(unsigned int * const stoch_idx_ref, unsigned int * const stoch_ma_idx_ref, const int kperiod, const int kslow, const int dperiod, const double kper, const double dper, double * const stoch, double * const stoch_ma, ti_buffer * const k_sum, ti_buffer * const d_sum, int i)
+{
+  unsigned int stoch_idx = *stoch_idx_ref;
+  unsigned int stoch_ma_idx = *stoch_ma_idx_ref;
+  const double k = k_sum->sum * kper;
+  do
+  {
+    if (d_sum->pushes >= d_sum->size)
+    {
+      d_sum->sum -= d_sum->vals[d_sum->index];
+    }
+    d_sum->sum += k;
+    d_sum->vals[d_sum->index] = k;
+    d_sum->pushes += 1;
+    d_sum->index = d_sum->index + 1;
+    if (d_sum->index >= d_sum->size)
+    {
+      d_sum->index = 0;
+    }
+  }
+  while (0);
+  if (i >= (((((kperiod - 1) + kslow) - 1) + dperiod) - 1))
+  {
+    stoch[stoch_idx] = k;
+    stoch_idx += 1;
+    stoch_ma[stoch_ma_idx] = d_sum->sum * dper;
+    stoch_ma_idx += 1;
+  }
+  *stoch_idx_ref = stoch_idx;
+  *stoch_ma_idx_ref = stoch_ma_idx;
+}
+

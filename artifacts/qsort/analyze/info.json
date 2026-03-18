@@ -1,0 +1,172 @@
+{
+    "special_type": [],
+    "global_variable": [],
+    "function": [
+        {
+            "path": null,
+            "name": "swap",
+            "header": "",
+            "params": [
+                "int *a",
+                "int *b"
+            ],
+            "definition": "void swap(int *a, int *b)\n{\n  int t = *a;\n  *a = *b;\n  *b = t;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "int *",
+                        "definition": [
+                            "int *a"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "b",
+                        "type": "int *",
+                        "definition": [
+                            "int *b"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "t",
+                        "type": "int",
+                        "definition": [
+                            "int t = *a"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "partition",
+            "header": "",
+            "params": [
+                "int arr[]",
+                "int low",
+                "int high"
+            ],
+            "definition": "int partition(int arr[], int low, int high)\n{\n  int pivot = arr[high];\n  int i = low - 1;\n  for (int j = low; j <= (high - 1); j += 1)\n  {\n    if (arr[j] <= pivot)\n    {\n      i += 1;\n      swap(&arr[i], &arr[j]);\n    }\n  }\n\n  swap(&arr[i + 1], &arr[high]);\n  return i + 1;\n}\n\n",
+            "calle": [
+                "swap"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "arr",
+                        "type": "int []",
+                        "definition": [
+                            "int arr[]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "low",
+                        "type": "int",
+                        "definition": [
+                            "int low"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "high",
+                        "type": "int",
+                        "definition": [
+                            "int high"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "pivot",
+                        "type": "int",
+                        "definition": [
+                            "int pivot = arr[high]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i = low - 1"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j = low"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "quickSort",
+            "header": "",
+            "params": [
+                "int arr[]",
+                "int low",
+                "int high"
+            ],
+            "definition": "void quickSort(int arr[], int low, int high)\n{\n  if (low < high)\n  {\n    int i = partition(arr, low, high);\n    quickSort(arr, low, i - 1);\n    quickSort(arr, i + 1, high);\n  }\n}\n\n",
+            "calle": [
+                "partition",
+                "quickSort"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "arr",
+                        "type": "int []",
+                        "definition": [
+                            "int arr[]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "low",
+                        "type": "int",
+                        "definition": [
+                            "int low"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "high",
+                        "type": "int",
+                        "definition": [
+                            "int high"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i = partition(arr, low, high)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        }
+    ],
+    "typedefs": []
+}

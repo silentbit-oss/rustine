@@ -1,0 +1,16 @@
+[package]
+name = "translate"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lazy_static = "1.4.0"
+rand = "0.8.5"
+
+[[bin]]
+name="avl_test"
+path="src/avl_test_main.rs"
+
+[[bin]]
+name="avl_example"
+path="src/avl_example.rs"

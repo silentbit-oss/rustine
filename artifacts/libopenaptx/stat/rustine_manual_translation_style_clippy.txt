@@ -1,0 +1,17 @@
+warning: the loop variable `channel` is only used to index `samples`
+warning: the loop variable `channel` is only used to index `samples`
+warning: the loop variable `channel` is used to index `samples`
+warning: the loop variable `channel` is used to index `samples`
+warning: the loop variable `i` is used to index `MAP`
+warning: the loop variable `i` is used to index `input`
+warning: the loop variable `subband` is used to index `subband_samples`
+warning: the loop variable `subband` is used to index `subband_samples`
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string

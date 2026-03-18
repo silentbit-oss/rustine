@@ -1,0 +1,173 @@
+warning: redundant field names in struct initialization
+warning: redundant field names in struct initialization
+warning: redundant field names in struct initialization
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: this `else { if .. }` block can be collapsed
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: this `if` statement can be collapsed
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: the loop variable `i` is only used to index `references`
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: returning the result of a `let` binding from a block
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: this `if` statement can be collapsed
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: returning the result of a `let` binding from a block
+warning: `0 as *const _` detected
+warning: unneeded `return` statement
+warning: returning the result of a `let` binding from a block
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: returning the result of a `let` binding from a block
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: returning the result of a `let` binding from a block
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *const _` detected
+warning: `0 as *const _` detected
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *const _` detected
+warning: `0 as *const _` detected
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: returning the result of a `let` binding from a block
+warning: this `if` has identical blocks
+warning: this `if` has identical blocks
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: returning the result of a `let` binding from a block
+warning: `0 as *mut _` detected
+warning: returning the result of a `let` binding from a block
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *const _` detected
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: this `if` statement can be collapsed
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: returning the result of a `let` binding from a block
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: returning the result of a `let` binding from a block
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: this `if` has identical blocks
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `ref` on an entire `let` pattern is discouraged, take a reference with `&` instead
+warning: a dangling pointer will be produced because the temporary `std::boxed::Box<[u8]>` will be dropped
+warning: a dangling pointer will be produced because the temporary `std::vec::Vec<*mut std::ffi::c_void>` will be dropped

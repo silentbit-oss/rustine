@@ -1,0 +1,940 @@
+{
+  "Rust": {
+    "blanks": 3,
+    "children": {},
+    "code": 4581,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 60,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zsetu.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 45,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zbits.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 41,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zsplit.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 41,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/allocator.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 94,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zpowu.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 69,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zseti.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 25,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zlsh.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 113,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zcmpi.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 45,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/ztrunc.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 77,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zmodpow.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 143,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zmod.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 31,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zbtest.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 34,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zcmpmag.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 67,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zxor.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 138,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zmodpowu.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 94,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zrand.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 169,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zsets.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 372,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zswap.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 26,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zpow.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 110,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zbset.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 80,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zstr_length.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 62,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zlsb.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 40,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zmul.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 146,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zor.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 126,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zand.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 108,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zsub.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 140,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zabs.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 27,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zsetup.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 329,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zfree.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 61,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zload.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 57,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zrsh.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 97,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zneg.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 27,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zadd.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 179,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zmodmul.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 36,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zperror.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 16,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zset.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 43,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zerror.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 24,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zdiv.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 31,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zgcd.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 182,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zcmp.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 34,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zsqr.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 118,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zsave.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 56,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zmodsqr.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 35,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zunsetup.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 120,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zcmpu.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 37,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zptest.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 154,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zstr.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 145,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/znot.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 65,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libzahl-1.0/others/c2rust/src/zdivmod.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 206,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 60,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zsetu.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 45,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zbits.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 41,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zsplit.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 41,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/allocator.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 94,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zpowu.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 69,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zseti.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 25,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zlsh.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 113,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zcmpi.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 45,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/ztrunc.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 77,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zmodpow.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 143,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zmod.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 31,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zbtest.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 34,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zcmpmag.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 67,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zxor.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 138,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zmodpowu.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 94,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zrand.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 169,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zsets.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 372,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zswap.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 26,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zpow.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 110,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zbset.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 80,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zstr_length.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 62,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zlsb.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 40,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zmul.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 146,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zor.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 126,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zand.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 108,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zsub.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 140,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zabs.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 27,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zsetup.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 329,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zfree.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 61,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zload.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 57,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zrsh.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 97,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zneg.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 27,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zadd.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 179,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zmodmul.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 36,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zperror.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 16,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zset.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 43,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zerror.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 24,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zdiv.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 31,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zgcd.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 182,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zcmp.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 34,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zsqr.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 118,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zsave.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 56,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zmodsqr.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 35,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zunsetup.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 120,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zcmpu.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 37,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zptest.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 154,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zstr.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 145,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/znot.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 65,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libzahl-1.0/others/c2rust/src/zdivmod.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 206,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 4581,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

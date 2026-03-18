@@ -1,0 +1,4 @@
+warning: left-hand side of `&&` operator has no effect
+warning: this loop never actually loops
+warning: variables in the condition are not mutated in the loop body
+warning: written amount is not handled

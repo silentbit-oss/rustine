@@ -1,0 +1,110 @@
+     = warning: some moved values might need to be renamed to avoid wrong references
+warning: `if _ { .. } else { .. }` is an expression
+warning: `if _ { .. } else { .. }` is an expression
+warning: `if _ { .. } else { .. }` is an expression
+warning: `if _ { .. } else { .. }` is an expression
+warning: `if _ { .. } else { .. }` is an expression
+warning: `if _ { .. } else { .. }` is an expression
+warning: `if _ { .. } else { .. }` is an expression
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: all if blocks contain the same code at the end
+warning: manual implementation of `abs` method
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: redundant clone
+warning: temporary with significant `Drop` can be early dropped
+warning: the function has a cognitive complexity of (27/25)
+warning: the function has a cognitive complexity of (28/25)
+warning: the function has a cognitive complexity of (30/25)
+warning: the function has a cognitive complexity of (30/25)
+warning: the function has a cognitive complexity of (32/25)
+warning: the function has a cognitive complexity of (34/25)
+warning: the function has a cognitive complexity of (36/25)
+warning: the function has a cognitive complexity of (36/25)
+warning: the function has a cognitive complexity of (41/25)
+warning: the function has a cognitive complexity of (49/25)
+warning: the function has a cognitive complexity of (58/25)
+warning: the function has a cognitive complexity of (62/25)
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else
+warning: use Option::map_or_else instead of an if let/else
+warning: while condition comparing floats
+warning: while condition comparing floats
+warning: while condition comparing floats
+warning: while condition comparing floats

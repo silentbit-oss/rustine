@@ -1,0 +1,8 @@
+warning: package `translate_without_break_down` is missing `either package.license or package.license_file` metadata
+warning: package `translate_without_break_down` is missing `package.categories` metadata
+warning: package `translate_without_break_down` is missing `package.description` metadata
+warning: package `translate_without_break_down` is missing `package.keywords` metadata
+warning: package `translate_without_break_down` is missing `package.readme` metadata
+warning: package `translate_without_break_down` is missing `package.repository` metadata
+warning: the type `[std::option::Option<std::boxed::Box<[u32]>>; 64]` does not permit being left uninitialized
+warning: the type `[std::sync::atomic::AtomicUsize; 64]` does not permit being left uninitialized

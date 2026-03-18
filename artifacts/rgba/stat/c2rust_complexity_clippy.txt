@@ -1,0 +1,4 @@
+warning: this OR pattern can be rewritten using a range
+warning: this OR pattern can be rewritten using a range
+warning: this OR pattern can be rewritten using a range
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut *mut i8` -> `*mut *mut i8`)

@@ -1,0 +1,10 @@
+warning: exponent for bases 2 and e can be computed more accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this pattern matching can be expressed using `matches!`
+warning: while condition comparing floats

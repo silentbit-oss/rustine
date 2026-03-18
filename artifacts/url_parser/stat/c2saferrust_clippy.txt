@@ -1,0 +1,134 @@
+warning: the feature `core_intrinsics` is internal to the compiler or standard library
+warning: unused import: `std::ptr`
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: this `else` branch is empty
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: the feature `const_mut_refs` has been stable since 1.83.0 and no longer requires an attribute to enable
+warning: the feature `const_fn_fn_ptr_basics` has been stable since 1.61.0 and no longer requires an attribute to enable
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: unneeded `return` statement
+warning: variables can be used directly in the `format!` string
+warning: called `Iterator::last` on a `DoubleEndedIterator`; this will needlessly iterate the entire iterator
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: unneeded `return` statement
+warning: a dangling pointer will be produced because the temporary `std::vec::Vec<i8>` will be dropped

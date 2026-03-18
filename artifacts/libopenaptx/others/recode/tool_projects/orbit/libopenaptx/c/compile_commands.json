@@ -1,0 +1,50 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-W",
+      "-Wall",
+      "-O3",
+      "-I.",
+      "-c",
+      "-o",
+      "openaptx.o",
+      "openaptx.c"
+    ],
+    "directory": "/home/enumclass/Documents/Rustine-Dev/subjects/libopenaptx",
+    "file": "/home/enumclass/Documents/Rustine-Dev/subjects/libopenaptx/openaptx.c",
+    "output": "/home/enumclass/Documents/Rustine-Dev/subjects/libopenaptx/openaptx.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-W",
+      "-Wall",
+      "-O3",
+      "-I.",
+      "-c",
+      "-o",
+      "openaptxenc.o",
+      "openaptxenc.c"
+    ],
+    "directory": "/home/enumclass/Documents/Rustine-Dev/subjects/libopenaptx",
+    "file": "/home/enumclass/Documents/Rustine-Dev/subjects/libopenaptx/openaptxenc.c",
+    "output": "/home/enumclass/Documents/Rustine-Dev/subjects/libopenaptx/openaptxenc.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-W",
+      "-Wall",
+      "-O3",
+      "-I.",
+      "-c",
+      "-o",
+      "openaptxdec.o",
+      "openaptxdec.c"
+    ],
+    "directory": "/home/enumclass/Documents/Rustine-Dev/subjects/libopenaptx",
+    "file": "/home/enumclass/Documents/Rustine-Dev/subjects/libopenaptx/openaptxdec.c",
+    "output": "/home/enumclass/Documents/Rustine-Dev/subjects/libopenaptx/openaptxdec.o"
+  }
+]

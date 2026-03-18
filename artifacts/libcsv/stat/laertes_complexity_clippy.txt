@@ -1,0 +1,202 @@
+warning: the following explicit lifetimes could be elided: 'a1
+warning: this boolean expression can be simplified
+warning: deref which would be done by auto-deref
+warning: using `clone` on type `Option<&csv_parser>` which implements the `Copy` trait
+warning: the following explicit lifetimes could be elided: 'a1
+warning: deref which would be done by auto-deref
+warning: using `clone` on type `Option<&csv_parser>` which implements the `Copy` trait
+warning: the following explicit lifetimes could be elided: 'a1
+warning: deref which would be done by auto-deref
+warning: the following explicit lifetimes could be elided: 'a1
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: the following explicit lifetimes could be elided: 'a1
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: the following explicit lifetimes could be elided: 'a1
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+warning: called `expect` on `cb2` after checking its variant with `is_some`
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: wildcard pattern covers any other pattern as it will match anyway
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: the following explicit lifetimes could be elided: 'a1
+warning: this boolean expression can be simplified
+warning: deref which would be done by auto-deref
+warning: the following explicit lifetimes could be elided: 'a1
+warning: this boolean expression can be simplified
+warning: deref which would be done by auto-deref
+warning: the following explicit lifetimes could be elided: 'a1
+warning: this boolean expression can be simplified
+warning: deref which would be done by auto-deref
+warning: using `clone` on type `Option<&csv_parser>` which implements the `Copy` trait
+warning: the following explicit lifetimes could be elided: 'a1
+warning: this boolean expression can be simplified
+warning: deref which would be done by auto-deref
+warning: using `clone` on type `Option<&csv_parser>` which implements the `Copy` trait
+warning: the following explicit lifetimes could be elided: 'a1
+warning: this boolean expression can be simplified
+warning: deref which would be done by auto-deref
+warning: the following explicit lifetimes could be elided: 'a1
+warning: this boolean expression can be simplified
+warning: deref which would be done by auto-deref
+warning: the following explicit lifetimes could be elided: 'a1
+warning: this boolean expression can be simplified
+warning: deref which would be done by auto-deref
+warning: the following explicit lifetimes could be elided: 'a1
+warning: this boolean expression can be simplified
+warning: deref which would be done by auto-deref
+warning: the following explicit lifetimes could be elided: 'a1
+warning: this boolean expression can be simplified
+warning: deref which would be done by auto-deref
+warning: the following explicit lifetimes could be elided: 'a1
+warning: this boolean expression can be simplified
+warning: deref which would be done by auto-deref
+warning: using `clone` on type `Option<&csv_parser>` which implements the `Copy` trait
+warning: the following explicit lifetimes could be elided: 'a1
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: the following explicit lifetimes could be elided: 'a1
+warning: this boolean expression can be simplified
+warning: called `expect` on `is_space` after checking its variant with `is_some`
+warning: called `expect` on `is_term` after checking its variant with `is_some`
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+warning: called `expect` on `cb2` after checking its variant with `is_some`
+warning: called `expect` on `cb2` after checking its variant with `is_some`
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+warning: called `expect` on `is_term` after checking its variant with `is_some`
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+warning: called `expect` on `cb2` after checking its variant with `is_some`
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+warning: called `expect` on `cb2` after checking its variant with `is_some`
+warning: called `expect` on `is_space` after checking its variant with `is_some`
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: the following explicit lifetimes could be elided: 'a
+warning: the following explicit lifetimes could be elided: 'a

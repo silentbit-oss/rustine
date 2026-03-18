@@ -1,0 +1,10 @@
+warning: temporary with significant `Drop` in `if let` scrutinee will live until the end of the `if let` expression
+warning: these look like formatting arguments but are not part of a formatting macro
+warning: this could be a `const fn`
+warning: this looks like a formatting argument but it is not part of a formatting macro
+warning: this looks like a formatting argument but it is not part of a formatting macro
+warning: this looks like a formatting argument but it is not part of a formatting macro
+warning: this looks like a formatting argument but it is not part of a formatting macro
+warning: this looks like a formatting argument but it is not part of a formatting macro
+warning: this looks like a formatting argument but it is not part of a formatting macro
+warning: trailing zero-sized array in a struct which is not marked with a `repr` attribute

@@ -1,0 +1,3 @@
+warning: all if blocks contain the same code at the start
+warning: temporary with significant `Drop` can be early dropped
+warning: this could be a `const fn`

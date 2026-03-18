@@ -1,0 +1,11 @@
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: the function has a cognitive complexity of (51/25)
+warning: the function has a cognitive complexity of (29/25)
+warning: all if blocks contain the same code at the end
+warning: this could be a `const fn`
+warning: this argument is a mutable reference, but not used mutably
+warning: a dangling pointer will be produced because the temporary `std::boxed::Box<[u8]>` will be dropped
+warning: a dangling pointer will be produced because the temporary `std::vec::Vec<*mut std::ffi::c_void>` will be dropped

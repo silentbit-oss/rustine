@@ -1,0 +1,35 @@
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting to the same type is unnecessary (`u64` -> `u64`)
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against true are unnecessary
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this looks like you are swapping elements of `str` manually
+warning: this pattern reimplements `Option::unwrap_or`
+warning: this pattern reimplements `Result::unwrap_or`
+warning: unused `std::result::Result` that must be used
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: using `SeekFrom::Current` to start from current position
+warning: using `SeekFrom::Current` to start from current position
+warning: using `SeekFrom::Current` to start from current position

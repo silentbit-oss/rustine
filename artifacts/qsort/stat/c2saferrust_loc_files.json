@@ -1,0 +1,40 @@
+{
+  "Rust": {
+    "blanks": 4,
+    "children": {},
+    "code": 39,
+    "comments": 0,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/qsort/others/c2saferrust/qsort.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 39,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 4,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/qsort/others/c2saferrust/qsort.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 39,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 39,
+    "comments": 0,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "Rust": {
+    "blanks": 87,
+    "children": {},
+    "code": 2208,
+    "comments": 27,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/rgba/others/laertes/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/rgba/others/laertes/lib.rs",
+        "stats": {
+          "blanks": 76,
+          "blobs": {},
+          "code": 440,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/rgba/others/laertes/src/test.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 275,
+          "comments": 20
+        }
+      },
+      {
+        "name": "artifacts/rgba/others/laertes/src/src/rgba.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 1487,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 87,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/rgba/others/laertes/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/rgba/others/laertes/lib.rs",
+          "stats": {
+            "blanks": 76,
+            "blobs": {},
+            "code": 440,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/rgba/others/laertes/src/test.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 275,
+            "comments": 20
+          }
+        },
+        {
+          "name": "artifacts/rgba/others/laertes/src/src/rgba.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 1487,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 2208,
+    "comments": 27,
+    "inaccurate": false,
+    "reports": []
+  }
+}

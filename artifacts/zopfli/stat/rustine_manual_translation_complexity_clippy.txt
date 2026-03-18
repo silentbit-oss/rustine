@@ -1,0 +1,25 @@
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: casting integer literal to `usize` is unnecessary
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut u8` -> `*mut u8`)
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: manual absolute difference pattern without using `abs_diff`
+warning: manually reimplementing `div_ceil`
+warning: this `impl` can be derived
+warning: this `impl` can be derived
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (12/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (9/7)
+warning: this looks like you are swapping elements of `vec` manually
+warning: this operation has no effect
+warning: this operation has no effect
+warning: use of `writeln!(stderr(), ...).unwrap()`

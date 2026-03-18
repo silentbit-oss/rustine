@@ -1,0 +1,4 @@
+warning: equal expressions as operands to `!=`
+warning: equal expressions as operands to `!=`
+warning: equal expressions as operands to `<=`
+warning: this looks like you are trying to swap `buf_info.index_a` and `idx`

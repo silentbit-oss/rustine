@@ -1,0 +1,4 @@
+warning: match can be simplified with `.unwrap_or_default()`
+warning: transmute used without annotations
+warning: transmute used without annotations
+warning: unused `std::result::Result` that must be used

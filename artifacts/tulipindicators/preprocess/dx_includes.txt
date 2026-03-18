@@ -1,0 +1,8 @@
+#include <assert.h>
+#include <dx.c>
+#include <dx.h>
+#include <indicators.h>
+#include <math.h>
+#include <stdlib.h>
+#include <string.h>
+#include <truerange.h>

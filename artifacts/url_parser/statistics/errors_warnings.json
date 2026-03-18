@@ -1,0 +1,14 @@
+{
+    "translate (lib)": {
+        "warning": 20,
+        "error": 0
+    },
+    "gen_char_category_table (bin)": {
+        "warning": 2,
+        "error": 0
+    },
+    "test (bin)": {
+        "warning": 2,
+        "error": 0
+    }
+}

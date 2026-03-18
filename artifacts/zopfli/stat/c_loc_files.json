@@ -1,0 +1,555 @@
+{
+  "C": {
+    "blanks": 393,
+    "children": {},
+    "code": 2485,
+    "comments": 705,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/zopfli/src/zopfli/util.c",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 13,
+          "comments": 18
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/squeeze.c",
+        "stats": {
+          "blanks": 65,
+          "blobs": {},
+          "code": 383,
+          "comments": 112
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/tree.c",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 61,
+          "comments": 31
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/zopfli_bin.c",
+        "stats": {
+          "blanks": 24,
+          "blobs": {},
+          "code": 155,
+          "comments": 40
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/hash.c",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 100,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/katajainen.c",
+        "stats": {
+          "blanks": 33,
+          "blobs": {},
+          "code": 158,
+          "comments": 71
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/cache.c",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 89,
+          "comments": 24
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/deflate.c",
+        "stats": {
+          "blanks": 93,
+          "blobs": {},
+          "code": 681,
+          "comments": 157
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/blocksplitter.c",
+        "stats": {
+          "blanks": 39,
+          "blobs": {},
+          "code": 228,
+          "comments": 65
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/zopfli_lib.c",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 20,
+          "comments": 18
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/lz77.c",
+        "stats": {
+          "blanks": 67,
+          "blobs": {},
+          "code": 461,
+          "comments": 102
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/zlib_container.c",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 48,
+          "comments": 19
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/gzip_container.c",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 88,
+          "comments": 24
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 323,
+    "children": {},
+    "code": 1016,
+    "comments": 2263,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/zopfli/src/zopflipng/zopflipng_lib.h",
+        "stats": {
+          "blanks": 34,
+          "blobs": {},
+          "code": 64,
+          "comments": 46
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/symbols.h",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 193,
+          "comments": 34
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/hash.h",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 26,
+          "comments": 35
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/deflate.h",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 22,
+          "comments": 60
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/blocksplitter.h",
+        "stats": {
+          "blanks": 9,
+          "blobs": {},
+          "code": 16,
+          "comments": 48
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/zlib_container.h",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 13,
+          "comments": 30
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/tree.h",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 9,
+          "comments": 35
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopflipng/lodepng/lodepng_util.h",
+        "stats": {
+          "blanks": 25,
+          "blobs": {},
+          "code": 66,
+          "comments": 199
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/gzip_container.h",
+        "stats": {
+          "blanks": 7,
+          "blobs": {},
+          "code": 13,
+          "comments": 30
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/util.h",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 42,
+          "comments": 97
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/cache.h",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 21,
+          "comments": 34
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/zopfli.h",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 28,
+          "comments": 52
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/lz77.h",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 51,
+          "comments": 74
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/squeeze.h",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 12,
+          "comments": 43
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopfli/katajainen.h",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 6,
+          "comments": 32
+        }
+      },
+      {
+        "name": "subjects/zopfli/src/zopflipng/lodepng/lodepng.h",
+        "stats": {
+          "blanks": 129,
+          "blobs": {},
+          "code": 434,
+          "comments": 1414
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 716,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/zopfli/src/zopfli/util.c",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 13,
+            "comments": 18
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/squeeze.c",
+          "stats": {
+            "blanks": 65,
+            "blobs": {},
+            "code": 383,
+            "comments": 112
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/tree.c",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 61,
+            "comments": 31
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/zopfli_bin.c",
+          "stats": {
+            "blanks": 24,
+            "blobs": {},
+            "code": 155,
+            "comments": 40
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/hash.c",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 100,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/katajainen.c",
+          "stats": {
+            "blanks": 33,
+            "blobs": {},
+            "code": 158,
+            "comments": 71
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/cache.c",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 89,
+            "comments": 24
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/deflate.c",
+          "stats": {
+            "blanks": 93,
+            "blobs": {},
+            "code": 681,
+            "comments": 157
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/blocksplitter.c",
+          "stats": {
+            "blanks": 39,
+            "blobs": {},
+            "code": 228,
+            "comments": 65
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/zopfli_lib.c",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 20,
+            "comments": 18
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/lz77.c",
+          "stats": {
+            "blanks": 67,
+            "blobs": {},
+            "code": 461,
+            "comments": 102
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/zlib_container.c",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 48,
+            "comments": 19
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/gzip_container.c",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 88,
+            "comments": 24
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/zopfli/src/zopflipng/zopflipng_lib.h",
+          "stats": {
+            "blanks": 34,
+            "blobs": {},
+            "code": 64,
+            "comments": 46
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/symbols.h",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 193,
+            "comments": 34
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/hash.h",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 26,
+            "comments": 35
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/deflate.h",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 22,
+            "comments": 60
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/blocksplitter.h",
+          "stats": {
+            "blanks": 9,
+            "blobs": {},
+            "code": 16,
+            "comments": 48
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/zlib_container.h",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 13,
+            "comments": 30
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/tree.h",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 9,
+            "comments": 35
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopflipng/lodepng/lodepng_util.h",
+          "stats": {
+            "blanks": 25,
+            "blobs": {},
+            "code": 66,
+            "comments": 199
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/gzip_container.h",
+          "stats": {
+            "blanks": 7,
+            "blobs": {},
+            "code": 13,
+            "comments": 30
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/util.h",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 42,
+            "comments": 97
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/cache.h",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 21,
+            "comments": 34
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/zopfli.h",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 28,
+            "comments": 52
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/lz77.h",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 51,
+            "comments": 74
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/squeeze.h",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 12,
+            "comments": 43
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopfli/katajainen.h",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 6,
+            "comments": 32
+          }
+        },
+        {
+          "name": "subjects/zopfli/src/zopflipng/lodepng/lodepng.h",
+          "stats": {
+            "blanks": 129,
+            "blobs": {},
+            "code": 434,
+            "comments": 1414
+          }
+        }
+      ]
+    },
+    "code": 3501,
+    "comments": 2968,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "C": {
+    "blanks": 53,
+    "children": {},
+    "code": 396,
+    "comments": 85,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/rgba/test.c",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 67,
+          "comments": 18
+        }
+      },
+      {
+        "name": "subjects/rgba/src/rgba.c",
+        "stats": {
+          "blanks": 34,
+          "blobs": {},
+          "code": 329,
+          "comments": 67
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 11,
+    "children": {},
+    "code": 15,
+    "comments": 9,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/rgba/src/rgba.h",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 15,
+          "comments": 9
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 64,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/rgba/test.c",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 67,
+            "comments": 18
+          }
+        },
+        {
+          "name": "subjects/rgba/src/rgba.c",
+          "stats": {
+            "blanks": 34,
+            "blobs": {},
+            "code": 329,
+            "comments": 67
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/rgba/src/rgba.h",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 15,
+            "comments": 9
+          }
+        }
+      ]
+    },
+    "code": 411,
+    "comments": 94,
+    "inaccurate": false,
+    "reports": []
+  }
+}

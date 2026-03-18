@@ -1,0 +1,829 @@
+warning: #[allow] attribute found
+warning: `allow` attribute without specifying a reason
+warning: `b` is shadowed
+warning: `c` is shadowed
+warning: `d` is shadowed
+warning: `d` shadows a previous, unrelated binding
+warning: `d` shadows a previous, unrelated binding
+warning: `d` shadows a previous, unrelated binding
+warning: `d` shadows a previous, unrelated binding
+warning: `d` shadows a previous, unrelated binding
+warning: `d` shadows a previous, unrelated binding
+warning: `d` shadows a previous, unrelated binding
+warning: `d` shadows a previous, unrelated binding
+warning: `d` shadows a previous, unrelated binding
+warning: `d` shadows a previous, unrelated binding
+warning: `data` is shadowed
+warning: `data` shadows a previous, unrelated binding
+warning: `data` shadows a previous, unrelated binding
+warning: `data` shadows a previous, unrelated binding
+warning: `data` shadows a previous, unrelated binding
+warning: `data` shadows a previous, unrelated binding
+warning: `data` shadows a previous, unrelated binding
+warning: `e` is shadowed
+warning: `found_ptr` is shadowed
+warning: `label` is shadowed
+warning: `left` shadows a previous, unrelated binding
+warning: `left` shadows a previous, unrelated binding
+warning: `left` shadows a previous, unrelated binding
+warning: `left` shadows a previous, unrelated binding
+warning: `left` shadows a previous, unrelated binding
+warning: `left` shadows a previous, unrelated binding
+warning: `left` shadows a previous, unrelated binding
+warning: `n` is shadowed
+warning: `n` is shadowed
+warning: `n` is shadowed
+warning: `n` shadows a previous, unrelated binding
+warning: `n` shadows a previous, unrelated binding
+warning: `node` is shadowed
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `panic` should not be present in production code
+warning: `r` is shadowed
+warning: `ref mut right` shadows a previous, unrelated binding
+warning: `ref mut right` shadows a previous, unrelated binding
+warning: `ref mut right` shadows a previous, unrelated binding
+warning: `ref mut right` shadows a previous, unrelated binding
+warning: `s` is shadowed
+warning: `t` is shadowed
+warning: `u` is shadowed
+warning: `x_ptr` shadows a previous, unrelated binding
+warning: `x` is shadowed
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: casting function pointer `avlt.compare` to `*const ()`
+warning: casting function pointer `avlt.destroy` to `*const ()`
+warning: casting function pointer `compare_func` to `*const ()`
+warning: casting function pointer `destroy_func` to `*const ()`
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider moving the `;` outside the block for consistent formatting
+warning: consider moving the `;` outside the block for consistent formatting
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: default numeric fallback might occur
+warning: exported enums should not be exhaustive
+warning: exported enums should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: exported structs should not be exhaustive
+warning: importing trait that is only used anonymously
+warning: importing trait that is only used anonymously
+warning: importing trait that is only used anonymously
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: indexing may panic
+warning: integer literal has a better hexadecimal representation
+warning: integer literal has a better hexadecimal representation
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `#[inline]` for a function
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing documentation for the crate
+warning: non-binding `let` without a type annotation
+warning: non-binding `let` without a type annotation
+warning: non-binding `let` without a type annotation
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: the `?` operator was used
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: this `unsafe` block contains 2 unsafe operations, expected only one
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: type of pattern does not match the expression type
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: unsafe block missing a safety comment
+warning: usage of ref pattern
+warning: usage of ref pattern
+warning: usage of the `unreachable!` macro
+warning: usage of the `unreachable!` macro
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use of `println!`
+warning: use the `?` operator instead of an `and_then` call
+warning: use the `?` operator instead of an `and_then` call
+warning: use the `?` operator instead of an `and_then` call
+warning: use the `?` operator instead of an `and_then` call
+warning: use the `?` operator instead of an `and_then` call
+warning: use the `?` operator instead of an `and_then` call
+warning: use the `?` operator instead of an `and_then` call
+warning: use the `?` operator instead of an `and_then` call
+warning: use the `?` operator instead of an `and_then` call
+warning: use the `?` operator instead of an `and_then` call
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on a `Result` value
+warning: used `expect()` on an `Option` value
+warning: used `expect()` on an `Option` value
+warning: used `expect()` on an `Option` value
+warning: used `expect()` on an `Option` value
+warning: used `expect()` on an `Option` value
+warning: used `expect()` on an `Option` value
+warning: used `expect()` on an `Option` value
+warning: used `expect()` on an `Option` value
+warning: used `expect()` on an `Option` value
+warning: used `expect()` on an `Option` value
+warning: used `expect()` on an `Option` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on a `Result` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used `unwrap()` on an `Option` value
+warning: used import from `std` instead of `alloc`
+warning: used import from `std` instead of `alloc`
+warning: used import from `std` instead of `alloc`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: used import from `std` instead of `core`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using `pub use`
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: using inferred pointer cast
+warning: using inferred pointer cast
+warning: using inferred pointer cast
+warning: using inferred pointer cast
+warning: using inferred pointer cast
+warning: using inferred pointer cast
+warning: using inferred pointer cast
+warning: using inferred pointer cast

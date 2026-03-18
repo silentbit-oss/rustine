@@ -1,0 +1,108 @@
+warning: `assert!(false, ..)` should probably be replaced
+warning: `assert!(false, ..)` should probably be replaced
+warning: accessing first element with `inputs.get(0)`
+warning: accessing first element with `inputs.get(0)`
+warning: accessing first element with `inputs.get(0)`
+warning: accessing first element with `inputs.get(0)`
+warning: accessing first element with `inputs.get(0)`
+warning: accessing first element with `inputs.get(0)`
+warning: accessing first element with `inputs.get(0)`
+warning: accessing first element with `inputs.get(0)`
+warning: accessing first element with `inputs?.get(0)`
+warning: accessing first element with `inputs?.get(0)`
+warning: accessing first element with `options.get(0)`
+warning: accessing first element with `options.get(0)`
+warning: accessing first element with `options?.get(0)`
+warning: accessing first element with `options?.get(0)`
+warning: length comparison to one
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: redundant pattern matching, consider using `is_err()`
+warning: returning the result of a `let` binding from a block
+warning: the loop variable `i` is only used to index `in_`
+warning: the loop variable `i` is only used to index `input`
+warning: the loop variable `i` is only used to index `input`
+warning: the loop variable `i` is only used to index `input`
+warning: the loop variable `i` is only used to index `input`
+warning: the loop variable `i` is only used to index `input`
+warning: the loop variable `i` is only used to index `input`
+warning: the loop variable `i` is only used to index `input`
+warning: the loop variable `i` is only used to index `input`
+warning: the loop variable `i` is only used to index `input`
+warning: the loop variable `i` is only used to index `inputs`
+warning: the loop variable `i` is used to index `arr`
+warning: the loop variable `i` is used to index `input`
+warning: the loop variable `i` is used to index `input`
+warning: the loop variable `i` is used to index `input`
+warning: the loop variable `i` is used to index `input`
+warning: the loop variable `j` is used to index `output`
+warning: the loop variable `k` is only used to index `options`
+warning: the loop variable `s` is only used to index `SIZES`
+warning: this `if` has identical blocks
+warning: this `map_or` can be simplified
+warning: this `match` expression can be replaced with `?`
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this manual char comparison can be written more succinctly
+warning: unneeded `return` statement
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string

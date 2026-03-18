@@ -1,0 +1,4 @@
+warning: unused import: `crate::*`
+warning: this looks like you are swapping `*a` and `*b` manually
+warning: function `quickSort` should have a snake case name
+warning: function `test_quickSort` should have a snake case name

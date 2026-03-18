@@ -1,0 +1,166 @@
+{
+  "Rust": {
+    "blanks": 47,
+    "children": {},
+    "code": 2027,
+    "comments": 99,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/genann/others/crown/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/genann/others/crown/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 23,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/genann/others/crown/src/example2.rs",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 115,
+          "comments": 19
+        }
+      },
+      {
+        "name": "artifacts/genann/others/crown/src/example4.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 219,
+          "comments": 19
+        }
+      },
+      {
+        "name": "artifacts/genann/others/crown/src/example3.rs",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 113,
+          "comments": 19
+        }
+      },
+      {
+        "name": "artifacts/genann/others/crown/src/example1.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 105,
+          "comments": 19
+        }
+      },
+      {
+        "name": "artifacts/genann/others/crown/src/genann.rs",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 512,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/genann/others/crown/src/test.rs",
+        "stats": {
+          "blanks": 15,
+          "blobs": {},
+          "code": 934,
+          "comments": 19
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 47,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/genann/others/crown/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/genann/others/crown/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 23,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/genann/others/crown/src/example2.rs",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 115,
+            "comments": 19
+          }
+        },
+        {
+          "name": "artifacts/genann/others/crown/src/example4.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 219,
+            "comments": 19
+          }
+        },
+        {
+          "name": "artifacts/genann/others/crown/src/example3.rs",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 113,
+            "comments": 19
+          }
+        },
+        {
+          "name": "artifacts/genann/others/crown/src/example1.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 105,
+            "comments": 19
+          }
+        },
+        {
+          "name": "artifacts/genann/others/crown/src/genann.rs",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 512,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/genann/others/crown/src/test.rs",
+          "stats": {
+            "blanks": 15,
+            "blobs": {},
+            "code": 934,
+            "comments": 19
+          }
+        }
+      ]
+    },
+    "code": 2027,
+    "comments": 99,
+    "inaccurate": false,
+    "reports": []
+  }
+}

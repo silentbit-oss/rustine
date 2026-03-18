@@ -1,0 +1,220 @@
+{
+  "Rust": {
+    "blanks": 3,
+    "children": {},
+    "code": 1906,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/ht/others/c2rust/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/ht/others/c2rust/src/samples/demo.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 124,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/ht/others/c2rust/src/samples/stats.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 175,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/ht/others/c2rust/src/samples/dump.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 171,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/ht/others/c2rust/src/samples/perfget.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 235,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/ht/others/c2rust/src/samples/bsearch.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 154,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/ht/others/c2rust/src/ht.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 250,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/ht/others/c2rust/src/samples/perfset.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 241,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/ht/others/c2rust/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 23,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/ht/others/c2rust/src/samples/lsearch.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 99,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/ht/others/c2rust/src/samples/perflbh.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 428,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/ht/others/c2rust/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/ht/others/c2rust/src/samples/demo.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 124,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/ht/others/c2rust/src/samples/stats.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 175,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/ht/others/c2rust/src/samples/dump.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 171,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/ht/others/c2rust/src/samples/perfget.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 235,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/ht/others/c2rust/src/samples/bsearch.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 154,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/ht/others/c2rust/src/ht.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 250,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/ht/others/c2rust/src/samples/perfset.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 241,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/ht/others/c2rust/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 23,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/ht/others/c2rust/src/samples/lsearch.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 99,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/ht/others/c2rust/src/samples/perflbh.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 428,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 1906,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

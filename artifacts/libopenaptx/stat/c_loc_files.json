@@ -1,0 +1,105 @@
+{
+  "C": {
+    "blanks": 196,
+    "children": {},
+    "code": 1294,
+    "comments": 150,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/libopenaptx/openaptxdec.c",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 147,
+          "comments": 27
+        }
+      },
+      {
+        "name": "subjects/libopenaptx/openaptxenc.c",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 88,
+          "comments": 20
+        }
+      },
+      {
+        "name": "subjects/libopenaptx/openaptx.c",
+        "stats": {
+          "blanks": 164,
+          "blobs": {},
+          "code": 1059,
+          "comments": 103
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 14,
+    "children": {},
+    "code": 39,
+    "comments": 92,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/libopenaptx/openaptx.h",
+        "stats": {
+          "blanks": 14,
+          "blobs": {},
+          "code": 39,
+          "comments": 92
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 210,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/libopenaptx/openaptxdec.c",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 147,
+            "comments": 27
+          }
+        },
+        {
+          "name": "subjects/libopenaptx/openaptxenc.c",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 88,
+            "comments": 20
+          }
+        },
+        {
+          "name": "subjects/libopenaptx/openaptx.c",
+          "stats": {
+            "blanks": 164,
+            "blobs": {},
+            "code": 1059,
+            "comments": 103
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/libopenaptx/openaptx.h",
+          "stats": {
+            "blanks": 14,
+            "blobs": {},
+            "code": 39,
+            "comments": 92
+          }
+        }
+      ]
+    },
+    "code": 1333,
+    "comments": 242,
+    "inaccurate": false,
+    "reports": []
+  }
+}

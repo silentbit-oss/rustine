@@ -1,0 +1,76 @@
+{
+  "Rust": {
+    "blanks": 2,
+    "children": {},
+    "code": 8059,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/opl/others/crown/lib.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 13,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/opl/others/crown/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/opl/others/crown/src/main.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 8040,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 2,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/opl/others/crown/lib.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 13,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/opl/others/crown/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/opl/others/crown/src/main.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 8040,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 8059,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

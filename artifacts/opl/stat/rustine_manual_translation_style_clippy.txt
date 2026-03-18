@@ -1,0 +1,20 @@
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `RangeInclusive::contains` implementation
+warning: redundant pattern matching, consider using `is_err()`
+warning: returning the result of a `let` binding from a block
+warning: the loop variable `j` is used to index `buffer`
+warning: this `if` has identical blocks
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: variables can be used directly in the `format!` string

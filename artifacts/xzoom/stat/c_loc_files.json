@@ -1,0 +1,69 @@
+{
+  "C": {
+    "blanks": 171,
+    "children": {},
+    "code": 698,
+    "comments": 66,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/xzoom/xzoom.c",
+        "stats": {
+          "blanks": 171,
+          "blobs": {},
+          "code": 698,
+          "comments": 66
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 13,
+    "children": {},
+    "code": 78,
+    "comments": 11,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/xzoom/scale.h",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 78,
+          "comments": 11
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 184,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/xzoom/xzoom.c",
+          "stats": {
+            "blanks": 171,
+            "blobs": {},
+            "code": 698,
+            "comments": 66
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/xzoom/scale.h",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 78,
+            "comments": 11
+          }
+        }
+      ]
+    },
+    "code": 776,
+    "comments": 77,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,301 @@
+warning: binding's name is too similar to existing binding
+warning: redundant else block
+warning: redundant else block
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: long literal lacking separators
+warning: 5 bindings with single-character names in scope
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: this method could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: this function could have a `#[must_use]` attribute
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: this function could have a `#[must_use]` attribute
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: this function could have a `#[must_use]` attribute
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: this function could have a `#[must_use]` attribute
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: manually reimplementing `is_power_of_two`
+warning: this function could have a `#[must_use]` attribute
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: this function could have a `#[must_use]` attribute
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: docs for function which may panic missing `# Panics` section
+warning: this function could have a `#[must_use]` attribute
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: this function could have a `#[must_use]` attribute
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: you should put bare URLs between `<`/`>` or make a proper Markdown link
+warning: boolean to int conversion using if
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: this argument is passed by value, but not consumed in the function body
+warning: docs for function which may panic missing `# Panics` section
+warning: only a `panic!` in `if`-then statement
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: only a `panic!` in `if`-then statement
+warning: assigning the result of `Clone::clone()` may be inefficient
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: item in documentation is missing backticks
+warning: docs for function which may panic missing `# Panics` section
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: docs for function which may panic missing `# Panics` section
+warning: assigning the result of `Clone::clone()` may be inefficient
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: this function could have a `#[must_use]` attribute
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: it is more concise to loop over references to containers instead of using explicit iteration methods
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: `if` chain can be rewritten with `match`
+warning: it is more concise to loop over references to containers instead of using explicit iteration methods
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: this function could have a `#[must_use]` attribute
+warning: this function has too many lines (140/100)
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: this function could have a `#[must_use]` attribute
+warning: boolean to int conversion using if
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: docs for function which may panic missing `# Panics` section
+warning: casting `i32` to `u16` may truncate the value
+warning: casting `i32` to `u16` may lose the sign of the value
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u16` may truncate the value
+warning: casting `i32` to `u16` may lose the sign of the value
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: this function could have a `#[must_use]` attribute
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: item in documentation is missing backticks
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `u16` may truncate the value
+warning: casting `i32` to `u16` may lose the sign of the value
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `u16` may truncate the value
+warning: casting `i32` to `u16` may lose the sign of the value
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: this function could have a `#[must_use]` attribute
+warning: this function could have a `#[must_use]` attribute
+warning: casts from `u8` to `u32` can be expressed infallibly using `From`
+warning: casts from `u8` to `u16` can be expressed infallibly using `From`
+warning: casts from `u8` to `u16` can be expressed infallibly using `From`
+warning: docs for function which may panic missing `# Panics` section
+warning: casts from `u16` to `u32` can be expressed infallibly using `From`
+warning: casting `usize` to `u16` may truncate the value
+warning: docs for function which may panic missing `# Panics` section
+warning: casting `usize` to `u8` may truncate the value
+warning: casting `u16` to `u8` may truncate the value
+warning: casting `usize` to `u8` may truncate the value
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: docs for function which may panic missing `# Panics` section
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: item in documentation is missing backticks
+warning: item in documentation is missing backticks
+warning: docs for function which may panic missing `# Panics` section
+warning: this function has too many lines (126/100)
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `i32` to `u16` may truncate the value
+warning: casting `i32` to `u16` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: implicit borrow as raw pointer
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casts from `u8` to `u16` can be expressed infallibly using `From`
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casts from `u8` to `u16` can be expressed infallibly using `From`
+warning: casting `usize` to `u16` may truncate the value
+warning: item in documentation is missing backticks
+warning: item in documentation is missing backticks
+warning: item in documentation is missing backticks
+warning: item in documentation is missing backticks
+warning: casting `f64` to `usize` may truncate the value
+warning: casting `f64` to `usize` may lose the sign of the value
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `f64` to `usize` may truncate the value
+warning: casting `f64` to `usize` may lose the sign of the value
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: adding items after statements is confusing, since items exist from the start of the scope
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: it is more concise to loop over references to containers instead of using explicit iteration methods
+warning: this function could have a `#[must_use]` attribute
+warning: docs for function which may panic missing `# Panics` section
+warning: casting `f64` to `f32` may truncate the value
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `f64` to `f32` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casts from `u8` to `u32` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casting `f64` to `f32` may truncate the value
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers
+warning: casts from `u16` to `u32` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casting `f64` to `f32` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: docs for function which may panic missing `# Panics` section
+warning: casting `usize` to `u16` may truncate the value
+warning: casting `usize` to `u16` may truncate the value
+warning: casts from `u8` to `u16` can be expressed infallibly using `From`
+warning: docs for function which may panic missing `# Panics` section
+warning: this function has too many lines (111/100)
+warning: casting `f64` to `f32` may truncate the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `f64` to `i32` may truncate the value
+warning: strict comparison of `f32` or `f64`
+warning: this function could have a `#[must_use]` attribute
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: this function could have a `#[must_use]` attribute
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casts from `u16` to `u32` can be expressed infallibly using `From`
+warning: casts from `u16` to `u32` can be expressed infallibly using `From`
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `usize` to `u16` may truncate the value
+warning: boolean to int conversion using if
+warning: casting `u16` to `u8` may truncate the value
+warning: casting `u16` to `u8` may truncate the value
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
+warning: casting `usize` to `i32` may wrap around the value on targets with 32-bit wide pointers
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: this function has too many lines (136/100)
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: boolean to int conversion using if
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casting `usize` to `f64` causes a loss of precision on targets with 64-bit wide pointers (`usize` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)

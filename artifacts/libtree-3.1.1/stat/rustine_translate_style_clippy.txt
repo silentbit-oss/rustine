@@ -1,0 +1,23 @@
+warning: redundant pattern matching, consider using `is_err()`
+warning: the loop variable `i` is only used to index `arr`
+warning: this `else { if .. }` block can be collapsed
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unused `std::result::Result` that must be used
+warning: using `write!()` with a format string that ends in a single newline
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string

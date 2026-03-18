@@ -1,0 +1,50 @@
+warning: you are deriving `PartialEq` and can implement `Eq`
+warning: you are deriving `PartialEq` and can implement `Eq`
+warning: you are deriving `PartialEq` and can implement `Eq`
+warning: you are deriving `PartialEq` and can implement `Eq`
+warning: unnecessary structure name repetition
+warning: you are deriving `PartialEq` and can implement `Eq`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: first doc comment paragraph is too long
+warning: first doc comment paragraph is too long
+warning: this could be a `const fn`
+warning: first doc comment paragraph is too long
+warning: redundant clone
+warning: redundant clone
+warning: redundant clone
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: this could be a `const fn`
+warning: the function has a cognitive complexity of (33/25)
+warning: this could be a `const fn`
+warning: first doc comment paragraph is too long
+warning: first doc comment paragraph is too long
+warning: first doc comment paragraph is too long
+warning: all if blocks contain the same code at the start
+warning: first doc comment paragraph is too long
+warning: this could be a `const fn`
+warning: first doc comment paragraph is too long
+warning: this could be a `const fn`
+warning: first doc comment paragraph is too long
+warning: first doc comment paragraph is too long
+warning: first doc comment paragraph is too long
+warning: the function has a cognitive complexity of (33/25)
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: first doc comment paragraph is too long
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: this could be a `const fn`
+warning: first doc comment paragraph is too long
+warning: use Option::map_or instead of an if let/else
+warning: this could be a `const fn`
+warning: first doc comment paragraph is too long
+warning: first doc comment paragraph is too long
+warning: first doc comment paragraph is too long

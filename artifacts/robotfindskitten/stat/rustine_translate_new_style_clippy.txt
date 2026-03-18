@@ -1,0 +1,4 @@
+warning: literal with an empty format string
+warning: this `map_or` can be simplified
+warning: unneeded late initialization
+warning: variables can be used directly in the `format!` string

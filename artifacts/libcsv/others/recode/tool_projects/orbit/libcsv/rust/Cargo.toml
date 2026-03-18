@@ -1,0 +1,37 @@
+[package]
+name = "libcsv"
+version = "3.0.3"
+edition = "2021"
+authors = ["Robert Gamble (original C)", "Translated to Rust"]
+license = "LGPL-2.1"
+description = "A 1:1 Rust translation of libcsv - parse and write CSV data"
+
+[lib]
+name = "csv"
+path = "src/lib.rs"
+
+[[bin]]
+name = "test_csv"
+path = "src/bin/test_csv.rs"
+
+[[example]]
+name = "csvfix"
+path = "examples/csvfix.rs"
+
+[[example]]
+name = "csvinfo"
+path = "examples/csvinfo.rs"
+
+[[example]]
+name = "csvtest"
+path = "examples/csvtest.rs"
+
+[[example]]
+name = "csvvalid"
+path = "examples/csvvalid.rs"
+
+[dependencies]
+# No external dependencies
+
+[dev-dependencies]
+# No external dev dependencies

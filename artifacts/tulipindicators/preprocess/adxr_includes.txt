@@ -1,0 +1,9 @@
+#include <adxr.c>
+#include <assert.h>
+#include <buffer.h>
+#include <dx.h>
+#include <indicators.h>
+#include <math.h>
+#include <stdlib.h>
+#include <string.h>
+#include <truerange.h>

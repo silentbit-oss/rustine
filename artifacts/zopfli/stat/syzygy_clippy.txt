@@ -1,0 +1,130 @@
+warning: unused imports: `HashMap`, `HashSet`, and `VecDeque`
+warning: unused imports: `max` and `min`
+warning: unused import: `std::iter::FromIterator`
+warning: unnecessary `>= y + 1` or `x - 1 >=`
+warning: unnecessary `>= y + 1` or `x - 1 >=`
+warning: unused import: `std::f64::MAX`
+warning: unnecessary `>= y + 1` or `x - 1 >=`
+warning: redundant field names in struct initialization
+warning: redundant field names in struct initialization
+warning: variable `rle_bits_size` is assigned to, but never used
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `besti` is never read
+warning: value assigned to `dist` is never read
+warning: variable does not need to be mutable
+warning: value assigned to `lengthscore` is never read
+warning: value assigned to `prevlengthscore` is never read
+warning: value assigned to `lengthscore` is never read
+warning: value assigned to `pos` is never read
+warning: unused variable: `i`
+warning: unused variable: `k`
+warning: variable does not need to be mutable
+warning: value assigned to `pos` is never read
+warning: variable `total_length_test` is assigned to, but never used
+warning: unused variable: `options`
+warning: unused variable: `final_`
+warning: function `read_input_from_file` is never used
+warning: it looks like you're manually copying between slices
+warning: it looks like you're manually copying between slices
+warning: the loop variable `i` is only used to index `ll_counts`
+warning: the loop variable `i` is only used to index `d_counts`
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: writing `&mut Vec` instead of `&mut [_]` involves a new object where a slice will do
+warning: writing `&mut Vec` instead of `&mut [_]` involves a new object where a slice will do
+warning: the loop variable `i` is only used to index `ll_lengths`
+warning: the loop variable `i` is only used to index `ll_lengths`
+warning: the loop variable `i` is only used to index `ll_lengths`
+warning: the loop variable `i` is only used to index `ll_lengths`
+warning: the loop variable `i` is only used to index `d_lengths`
+warning: the loop variable `i` is only used to index `d_lengths`
+warning: the loop variable `i` is only used to index `symbols`
+warning: the loop variable `bits` is only used to index `bl_count`
+warning: the loop variable `i` is used to index `lengths`
+warning: variables can be used directly in the `format!` string
+warning: writing `&mut Vec` instead of `&mut [_]` involves a new object where a slice will do
+warning: the loop variable `i` is used to index `frequencies`
+warning: this function has too many arguments (8/7)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: manual absolute difference pattern without using `abs_diff`
+warning: returning the result of a `let` binding from a block
+warning: doc list item overindented
+warning: the loop variable `i` is used to index `vp`
+warning: the loop variable `i` is only used to index `splitpoints`
+warning: the loop variable `i` is only used to index `splitpoints`
+warning: doc list item overindented
+warning: importing a legacy numeric constant
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: variables can be used directly in the `format!` string
+warning: needlessly taken reference of both operands
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this function has too many arguments (9/7)
+warning: manual arithmetic check found
+warning: manual arithmetic check found
+warning: redundant pattern matching, consider using `is_err()`
+warning: variables can be used directly in the `format!` string
+warning: manually reimplementing `div_ceil`
+warning: approximate value of `f{32, 64}::consts::LOG2_E` found
+warning: the loop variable `i` is only used to index `count`
+warning: this function has too many arguments (9/7)
+warning: manual arithmetic check found
+warning: the loop variable `i` is only used to index `costs`
+warning: this function has too many arguments (8/7)
+warning: manual arithmetic check found
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: this function has too many arguments (12/7)
+warning: doc list item overindented
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: manual `Range::contains` implementation
+warning: this function has too many arguments (11/7)
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: manual `RangeInclusive::contains` implementation
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (10/7)
+warning: unneeded late initialization
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: variables can be used directly in the `format!` string
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (9/7)
+warning: doc list item overindented
+warning: doc list item overindented
+warning: doc list item overindented
+warning: doc list item overindented
+warning: doc list item overindented
+warning: doc list item overindented
+warning: this function has too many arguments (8/7)
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: function `ZopfliGetLengthSymbol` should have a snake case name
+warning: function `GetCostFixed` should have a snake case name
+warning: function `ZopfliInitLZ77Store` should have a snake case name
+warning: function `ZopfliCleanLZ77Store` should have a snake case name
+warning: function `ZopfliCleanCache` should have a snake case name
+warning: function `ZopfliCleanBlockState` should have a snake case name
+warning: function `ZopfliCopyLZ77Store` should have a snake case name
+warning: constant `zopfli_master_block_size` should have an upper case name

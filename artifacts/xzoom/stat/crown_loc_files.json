@@ -1,0 +1,76 @@
+{
+  "Rust": {
+    "blanks": 2,
+    "children": {},
+    "code": 2543,
+    "comments": 5,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/xzoom/others/crown/lib.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 7,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/xzoom/others/crown/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/xzoom/others/crown/src/xzoom.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 2530,
+          "comments": 1
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 2,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/xzoom/others/crown/lib.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 7,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/xzoom/others/crown/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/xzoom/others/crown/src/xzoom.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 2530,
+            "comments": 1
+          }
+        }
+      ]
+    },
+    "code": 2543,
+    "comments": 5,
+    "inaccurate": false,
+    "reports": []
+  }
+}

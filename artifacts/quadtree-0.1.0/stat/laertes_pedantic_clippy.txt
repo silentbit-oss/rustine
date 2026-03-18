@@ -1,0 +1,418 @@
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: redundant else block
+warning: redundant else block
+warning: redundant else block
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: binding's name is too similar to existing binding
+warning: this method could have a `#[must_use]` attribute
+warning: this method could have a `#[must_use]` attribute
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: this method could have a `#[must_use]` attribute
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: docs for function which may panic missing `# Panics` section
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: this method could have a `#[must_use]` attribute
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: unnecessary semicolon
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: strict comparison of `f32` or `f64`
+warning: strict comparison of `f32` or `f64`
+warning: implicit borrow as raw pointer
+warning: strict comparison of `f32` or `f64`
+warning: strict comparison of `f32` or `f64`
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: docs for function which may panic missing `# Panics` section
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: unnecessary semicolon
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: this function has too many lines (103/100)
+warning: unnecessary semicolon
+warning: unnecessary boolean `not` operation
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: strict comparison of `f32` or `f64`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: strict comparison of `f32` or `f64`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: strict comparison of `f32` or `f64`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: strict comparison of `f32` or `f64`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: strict comparison of `f32` or `f64`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: strict comparison of `f32` or `f64`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: strict comparison of `f32` or `f64`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: strict comparison of `f32` or `f64`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: strict comparison of `f32` or `f64`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: strict comparison of `f32` or `f64`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: this function has too many lines (225/100)
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: unnecessary semicolon
+warning: strict comparison of `f32` or `f64`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: strict comparison of `f32` or `f64`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: strict comparison of `f32` or `f64`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: strict comparison of `f32` or `f64`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: unnecessary `!=` operation
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: strict comparison of `f32` or `f64`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: strict comparison of `f32` or `f64`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: unnecessary `!=` operation
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: strict comparison of `f32` or `f64`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: unnecessary semicolon
+warning: strict comparison of `f32` or `f64`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: unnecessary semicolon
+warning: strict comparison of `f32` or `f64`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: transmute from a reference to a reference
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `isize` to `usize` may lose the sign of the value
+warning: casting `isize` to `usize` may lose the sign of the value
+warning: the following explicit lifetimes could be elided: 'a
+warning: the following explicit lifetimes could be elided: 'a
+warning: the following explicit lifetimes could be elided: 'a
+warning: the following explicit lifetimes could be elided: 'a
+warning: the following explicit lifetimes could be elided: 'a
+warning: the following explicit lifetimes could be elided: 'a
+warning: the following explicit lifetimes could be elided: 'a
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: casting `usize` to `isize` may wrap around the value
+warning: casting `usize` to `isize` may wrap around the value
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: redundant closure
+warning: redundant closure
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: redundant closure
+warning: redundant closure
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: `as` casting between raw pointers without changing their constness
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness

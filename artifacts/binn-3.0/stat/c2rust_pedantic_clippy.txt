@@ -1,0 +1,873 @@
+warning: redundant else block
+warning: long literal lacking separators
+warning: redundant else block
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: redundant else block
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: binding's name is too similar to existing binding
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: binding's name is too similar to existing binding
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: binding's name is too similar to existing binding
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: redundant else block
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: you have declared `#[inline(always)]` on `binn_list_add_value`. This is usually a bad idea
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: you have declared `#[inline(always)]` on `binn_map_set_value`. This is usually a bad idea
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: you have declared `#[inline(always)]` on `binn_object_set_value`. This is usually a bad idea
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: docs for function which may panic missing `# Panics` section
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: unnecessary boolean `not` operation
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: `as` casting between raw pointers without changing their constness
+warning: unnecessary boolean `not` operation
+warning: docs for function which may panic missing `# Panics` section
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `u64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: docs for function which may panic missing `# Panics` section
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `u64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: docs for function which may panic missing `# Panics` section
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut u32`) (1 < 4 bytes)
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut u32`) (1 < 4 bytes)
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut u32`) (1 < 4 bytes)
+warning: `as` casting between raw pointers without changing their constness
+warning: implicit borrow as raw pointer
+warning: casting `u64` to `i32` may truncate the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `u8` to `u64` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `u64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut u32`) (1 < 4 bytes)
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: casting `i64` to `i32` may truncate the value
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `i16` to `i64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `u32` to `u64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `u16` to `u64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casting `i64` to `u64` may lose the sign of the value
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casts from `u32` to `u64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: this function has too many lines (144/100)
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: casting `u64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u16` may truncate the value
+warning: casting `i32` to `u16` may lose the sign of the value
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut u16`) (1 < 2 bytes)
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut u16`) (1 < 2 bytes)
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut u32`) (1 < 4 bytes)
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut u64`) (1 < 8 bytes)
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut u32`) (1 < 4 bytes)
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `i8` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut u32`) (1 < 4 bytes)
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `u32` to `i32` may wrap around the value
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut u32`) (1 < 4 bytes)
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: docs for function which may panic missing `# Panics` section
+warning: unnecessary semicolon
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: docs for function which may panic missing `# Panics` section
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut u32`) (1 < 4 bytes)
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut u32`) (1 < 4 bytes)
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: implicit borrow as raw pointer
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: this function has too many lines (111/100)
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut u16`) (1 < 2 bytes)
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut u32`) (1 < 4 bytes)
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut u64`) (1 < 8 bytes)
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: casting from `*mut u8` to a more-strictly-aligned pointer (`*mut u32`) (1 < 4 bytes)
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: these match arms have identical bodies
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: implicit borrow as raw pointer
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `u8` to `u64` can be expressed infallibly using `From`
+warning: casting `i32` to `i8` may truncate the value
+warning: docs for function which may panic missing `# Panics` section
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `u64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: docs for function which may panic missing `# Panics` section
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `u64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: implicit borrow as raw pointer
+warning: casts from `u8` to `u16` can be expressed infallibly using `From`
+warning: casts from `u16` to `i32` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `u16` to `u64` can be expressed infallibly using `From`
+warning: casting `i32` to `i8` may truncate the value
+warning: casting `u16` to `isize` may wrap around the value on targets with 16-bit wide pointers
+warning: docs for function which may panic missing `# Panics` section
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `u64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: docs for function which may panic missing `# Panics` section
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `u64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: docs for function which may panic missing `# Panics` section
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `u64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: these match arms have identical bodies
+warning: `as` casting between raw pointers without changing their constness
+warning: these match arms have identical bodies
+warning: these match arms have identical bodies
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i8` to `i64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `i16` to `i64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `u8` to `u64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `u16` to `u64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `u32` to `u64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i64` to `u64` may lose the sign of the value
+warning: casting `u64` to `i64` may wrap around the value
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casting `i64` to `u64` may lose the sign of the value
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casting `i64` to `i8` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casting `i64` to `i16` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casting `i64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `u8` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `u16` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `u32` to `u64` can be expressed infallibly using `From`
+warning: casting `u64` to `u32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `f64` to `f32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: unnecessary semicolon
+warning: casting `i32` to `i8` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `i16` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: docs for function which may panic missing `# Panics` section
+warning: `as` casting between raw pointers without changing their constness
+warning: docs for function which may panic missing `# Panics` section
+warning: `as` casting between raw pointers without changing their constness
+warning: docs for function which may panic missing `# Panics` section
+warning: `as` casting between raw pointers without changing their constness
+warning: docs for function which may panic missing `# Panics` section
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `u64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: docs for function which may panic missing `# Panics` section
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `u64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: docs for function which may panic missing `# Panics` section
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `u64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: implicit borrow as raw pointer
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: implicit borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `u64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: docs for function which may panic missing `# Panics` section
+warning: implicit borrow as raw pointer
+warning: casting `u64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `u64` to `i32` may truncate the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: casts from `i8` to `i32` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: unnecessary `!=` operation
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: unnecessary `!=` operation
+warning: strict comparison of `f32` or `f64`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casting `f64` to `i32` may truncate the value
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f64` to `i32` may truncate the value
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casting `f64` to `i32` may truncate the value
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casting `f64` to `i32` may truncate the value
+warning: casting `f64` to `i32` may truncate the value
+warning: casting `f64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `f64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casting `f64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `f64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `f64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i64` to `f32` causes a loss of precision (`i64` is 64 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casting `i64` to `f32` causes a loss of precision (`i64` is 64 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casting `f64` to `i32` may truncate the value
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f32` to `i32` may truncate the value
+warning: casting `f64` to `i32` may truncate the value
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: casting `i64` to `f64` causes a loss of precision (`i64` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casting `i64` to `f64` causes a loss of precision (`i64` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: casting `f64` to `i32` may truncate the value
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casting `f64` to `i32` may truncate the value
+warning: casting `f64` to `i32` may truncate the value
+warning: casting `f64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `f64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: casting `f64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `f64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `f64` to `i32` may truncate the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: casting `i64` to `f64` causes a loss of precision (`i64` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i64` to `f64` causes a loss of precision (`i64` is 64 bits wide, but `f64`'s mantissa is only 52 bits wide)
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: unnecessary `!=` operation
+warning: casts from `i32` to `i64` can be expressed infallibly using `From`
+warning: unnecessary `!=` operation
+warning: strict comparison of `f32` or `f64`
+warning: casting `i32` to `f32` causes a loss of precision (`i32` is 32 bits wide, but `f32`'s mantissa is only 23 bits wide)
+warning: unnecessary `!=` operation
+warning: strict comparison of `f32` or `f64`
+warning: casts from `i32` to `f64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: borrow as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casts from `f32` to `f64` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness

@@ -1,0 +1,76 @@
+{
+  "Rust": {
+    "blanks": 6,
+    "children": {},
+    "code": 1517,
+    "comments": 23,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/robotfindskitten/others/crown/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 17,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/robotfindskitten/others/crown/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/robotfindskitten/others/crown/src/robotfindskitten.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 1494,
+          "comments": 19
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 6,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/robotfindskitten/others/crown/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 17,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/robotfindskitten/others/crown/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/robotfindskitten/others/crown/src/robotfindskitten.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 1494,
+            "comments": 19
+          }
+        }
+      ]
+    },
+    "code": 1517,
+    "comments": 23,
+    "inaccurate": false,
+    "reports": []
+  }
+}

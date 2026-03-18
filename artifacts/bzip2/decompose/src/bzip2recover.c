@@ -1,0 +1,765 @@
+static void readError(void)
+{
+  fprintf(stderr, "%s: I/O error reading `%s', possible reason follows.\n", progName, inFileName);
+  perror(progName);
+  fprintf(stderr, "%s: warning: output file(s) may be incomplete.\n", progName);
+  exit(1);
+}
+
+
+/*** DEPENDENCIES:
+Char progName[2000]
+----------------------------
+Char inFileName[2000]
+----------------------------
+***/
+
+
+static void writeError(void)
+{
+  fprintf(stderr, "%s: I/O error reading `%s', possible reason follows.\n", progName, inFileName);
+  perror(progName);
+  fprintf(stderr, "%s: warning: output file(s) may be incomplete.\n", progName);
+  exit(1);
+}
+
+
+/*** DEPENDENCIES:
+Char progName[2000]
+----------------------------
+Char inFileName[2000]
+----------------------------
+***/
+
+
+static void mallocFail(Int32 n)
+{
+  fprintf(stderr, "%s: malloc failed on request for %d bytes.\n", progName, n);
+  fprintf(stderr, "%s: warning: output file(s) may be incomplete.\n", progName);
+  exit(1);
+}
+
+
+/*** DEPENDENCIES:
+typedef int Int32
+----------------------------
+Char progName[2000]
+----------------------------
+***/
+
+
+static BitStream *bsOpenReadStream(FILE *stream)
+{
+  BitStream *bs = malloc(sizeof(BitStream));
+  if (bs == 0)
+  {
+    mallocFail(sizeof(BitStream));
+  }
+  bs->handle = stream;
+  bs->buffer = 0;
+  bs->buffLive = 0;
+  bs->mode = 'r';
+  return bs;
+}
+
+
+/*** DEPENDENCIES:
+typedef struct 
+{
+  FILE *handle;
+  Int32 buffer;
+  Int32 buffLive;
+  Char mode;
+} BitStream
+----------------------------
+static void mallocFail(Int32 n)
+{
+  fprintf(stderr, "%s: malloc failed on request for %d bytes.\n", progName, n);
+  fprintf(stderr, "%s: warning: output file(s) may be incomplete.\n", progName);
+  exit(1);
+}
+
+
+----------------------------
+***/
+
+
+static BitStream *bsOpenWriteStream(FILE *stream)
+{
+  BitStream *bs = malloc(sizeof(BitStream));
+  if (bs == 0)
+  {
+    mallocFail(sizeof(BitStream));
+  }
+  bs->handle = stream;
+  bs->buffer = 0;
+  bs->buffLive = 0;
+  bs->mode = 'w';
+  return bs;
+}
+
+
+/*** DEPENDENCIES:
+typedef struct 
+{
+  FILE *handle;
+  Int32 buffer;
+  Int32 buffLive;
+  Char mode;
+} BitStream
+----------------------------
+static void mallocFail(Int32 n)
+{
+  fprintf(stderr, "%s: malloc failed on request for %d bytes.\n", progName, n);
+  fprintf(stderr, "%s: warning: output file(s) may be incomplete.\n", progName);
+  exit(1);
+}
+
+
+----------------------------
+***/
+
+
+static Bool endsInBz2(Char *name)
+{
+  Int32 n = strlen(name);
+  if (n <= 4)
+  {
+    return (Bool) 0;
+  }
+  return (((name[n - 4] == '.') && (name[n - 3] == 'b')) && (name[n - 2] == 'z')) && (name[n - 1] == '2');
+}
+
+
+/*** DEPENDENCIES:
+typedef int Int32
+----------------------------
+typedef char Char
+----------------------------
+***/
+
+
+static void tooManyBlocks(Int32 max_handled_blocks)
+{
+  fprintf(stderr, "%s: `%s' appears to contain more than %d blocks\n", progName, inFileName, max_handled_blocks);
+  fprintf(stderr, "%s: and cannot be handled.  To fix, increase\n", progName);
+  fprintf(stderr, "%s: BZ_MAX_HANDLED_BLOCKS in bzip2recover.c, and recompile.\n", progName);
+  exit(1);
+}
+
+
+/*** DEPENDENCIES:
+typedef int Int32
+----------------------------
+Char progName[2000]
+----------------------------
+Char inFileName[2000]
+----------------------------
+***/
+
+
+static Int32 bsGetBit(BitStream *bs)
+{
+  if (bs->buffLive > 0)
+  {
+    bs->buffLive -= 1;
+    return (bs->buffer >> bs->buffLive) & 0x1;
+  }
+  else
+  {
+    Int32 retVal = getc(bs->handle);
+    if (retVal == EOF)
+    {
+      if (errno != 0)
+      {
+        readError();
+      }
+      return 2;
+    }
+    bs->buffLive = 7;
+    bs->buffer = retVal;
+    return (bs->buffer >> 7) & 0x1;
+  }
+}
+
+
+/*** DEPENDENCIES:
+typedef int Int32
+----------------------------
+static void readError(void)
+{
+  fprintf(stderr, "%s: I/O error reading `%s', possible reason follows.\n", progName, inFileName);
+  perror(progName);
+  fprintf(stderr, "%s: warning: output file(s) may be incomplete.\n", progName);
+  exit(1);
+}
+
+
+----------------------------
+typedef struct 
+{
+  FILE *handle;
+  Int32 buffer;
+  Int32 buffLive;
+  Char mode;
+} BitStream
+----------------------------
+***/
+
+
+static void bsPutBit(BitStream *bs, Int32 bit)
+{
+  if (bs->buffLive == 8)
+  {
+    Int32 retVal = putc((UChar) bs->buffer, bs->handle);
+    if (retVal == EOF)
+    {
+      writeError();
+    }
+    bytesOut += 1;
+    bs->buffLive = 1;
+    bs->buffer = bit & 0x1;
+  }
+  else
+  {
+    bs->buffer = (bs->buffer << 1) | (bit & 0x1);
+    bs->buffLive += 1;
+  }
+  ;
+}
+
+
+/*** DEPENDENCIES:
+typedef int Int32
+----------------------------
+MaybeUInt64 bytesOut = 0
+----------------------------
+typedef struct 
+{
+  FILE *handle;
+  Int32 buffer;
+  Int32 buffLive;
+  Char mode;
+} BitStream
+----------------------------
+static void writeError(void)
+{
+  fprintf(stderr, "%s: I/O error reading `%s', possible reason follows.\n", progName, inFileName);
+  perror(progName);
+  fprintf(stderr, "%s: warning: output file(s) may be incomplete.\n", progName);
+  exit(1);
+}
+
+
+----------------------------
+***/
+
+
+static void bsClose(BitStream *bs)
+{
+  Int32 retVal;
+  if (bs->mode == 'w')
+  {
+    while (bs->buffLive < 8)
+    {
+      bs->buffLive += 1;
+      bs->buffer <<= 1;
+    }
+
+    ;
+    retVal = putc((UChar) bs->buffer, bs->handle);
+    if (retVal == EOF)
+    {
+      writeError();
+    }
+    bytesOut += 1;
+    retVal = fflush(bs->handle);
+    if (retVal == EOF)
+    {
+      writeError();
+    }
+  }
+  retVal = fclose(bs->handle);
+  if (retVal == EOF)
+  {
+    if (bs->mode == 'w')
+    {
+      writeError();
+    }
+    else
+      readError();
+  }
+  free(bs);
+}
+
+
+/*** DEPENDENCIES:
+typedef int Int32
+----------------------------
+MaybeUInt64 bytesOut = 0
+----------------------------
+static void readError(void)
+{
+  fprintf(stderr, "%s: I/O error reading `%s', possible reason follows.\n", progName, inFileName);
+  perror(progName);
+  fprintf(stderr, "%s: warning: output file(s) may be incomplete.\n", progName);
+  exit(1);
+}
+
+
+----------------------------
+static void writeError(void)
+{
+  fprintf(stderr, "%s: I/O error reading `%s', possible reason follows.\n", progName, inFileName);
+  perror(progName);
+  fprintf(stderr, "%s: warning: output file(s) may be incomplete.\n", progName);
+  exit(1);
+}
+
+
+----------------------------
+typedef struct 
+{
+  FILE *handle;
+  Int32 buffer;
+  Int32 buffLive;
+  Char mode;
+} BitStream
+----------------------------
+***/
+
+
+Int32 main(Int32 argc, Char **argv)
+{
+  FILE *inFile;
+  unsigned int inFile_idx = 0;
+  FILE *outFile;
+  unsigned int outFile_idx = 0;
+  BitStream *bsIn;
+  unsigned int bsIn_idx = 0;
+  BitStream *bsWr;
+  unsigned int bsWr_idx = 0;
+  Int32 b;
+  Int32 wrBlock;
+  Int32 currBlock;
+  Int32 rbCtr;
+  MaybeUInt64 bitsRead;
+  UInt32 buffHi;
+  UInt32 buffLo;
+  UInt32 blockCRC;
+  Char *p;
+  unsigned int p_idx = 0;
+  strncpy(progName, argv[0], 2000 - 1);
+  progName[2000 - 1] = '\0';
+  inFileName[0] = (outFileName[0] = 0);
+  fprintf(stderr, "bzip2recover 1.0.6: extracts blocks from damaged .bz2 files.\n");
+  if (argc != 2)
+  {
+    fprintf(stderr, "%s: usage is `%s damaged_file_name'.\n", progName, progName);
+    switch (sizeof(MaybeUInt64))
+    {
+      case 8:
+        fprintf(stderr, "\trestrictions on size of recovered file: None\n");
+        break;
+
+      case 4:
+        fprintf(stderr, "\trestrictions on size of recovered file: 512 MB\n");
+        fprintf(stderr, "\tto circumvent, recompile with MaybeUInt64 as an\n\tunsigned 64-bit int.\n");
+        break;
+
+      default:
+        fprintf(stderr, "\tsizeof(MaybeUInt64) is not 4 or 8 -- configuration error.\n");
+        break;
+
+    }
+
+    exit(1);
+  }
+  if (strlen(argv[1]) >= (2000 - 20))
+  {
+    fprintf(stderr, "%s: supplied filename is suspiciously (>= %d chars) long.  Bye!\n", progName, (int) strlen(argv[1]));
+    exit(1);
+  }
+  strcpy(inFileName, argv[1]);
+  inFile_idx = fopen(inFileName, "rb");
+  if ((&inFile[inFile_idx]) == 0)
+  {
+    fprintf(stderr, "%s: can't read `%s'\n", progName, inFileName);
+    exit(1);
+  }
+  bsIn_idx = bsOpenReadStream(inFile);
+  fprintf(stderr, "%s: searching for block boundaries ...\n", progName);
+  bitsRead = 0;
+  buffHi = (buffLo = 0);
+  currBlock = 0;
+  bStart[currBlock] = 0;
+  rbCtr = 0;
+  while ((Bool) 1)
+  {
+    b = bsGetBit(bsIn);
+    bitsRead += 1;
+    if (b == 2)
+    {
+      if ((bitsRead >= bStart[currBlock]) && ((bitsRead - bStart[currBlock]) >= 40))
+      {
+        bEnd[currBlock] = bitsRead - 1;
+        if (currBlock > 0)
+        {
+          fprintf(stderr, "   block %d runs from %Lu to %Lu (incomplete)\n", currBlock, bStart[currBlock], bEnd[currBlock]);
+        }
+      }
+      else
+        currBlock--;
+      currBlock -= 1;
+      break;
+    }
+    buffHi = (buffHi << 1) | (buffLo >> 31);
+    buffLo = (buffLo << 1) | (b & 1);
+    if ((((buffHi & 0x0000ffff) == 0x00003141UL) && (buffLo == 0x59265359UL)) || (((buffHi & 0x0000ffff) == 0x00001772UL) && (buffLo == 0x45385090UL)))
+    {
+      if (bitsRead > 49)
+      {
+        bEnd[currBlock] = bitsRead - 49;
+      }
+      else
+      {
+        bEnd[currBlock] = 0;
+      }
+      if ((currBlock > 0) && ((bEnd[currBlock] - bStart[currBlock]) >= 130))
+      {
+        fprintf(stderr, "   block %d runs from %Lu to %Lu\n", rbCtr + 1, bStart[currBlock], bEnd[currBlock]);
+        rbStart[rbCtr] = bStart[currBlock];
+        rbEnd[rbCtr] = bEnd[currBlock];
+        rbCtr += 1;
+      }
+      if (currBlock >= 50000)
+      {
+        tooManyBlocks(50000);
+      }
+      currBlock += 1;
+      bStart[currBlock] = bitsRead;
+    }
+  }
+
+  bsClose(bsIn);
+  if (rbCtr < 1)
+  {
+    fprintf(stderr, "%s: sorry, I couldn't find any block boundaries.\n", progName);
+    exit(1);
+  }
+  ;
+  fprintf(stderr, "%s: splitting into blocks\n", progName);
+  inFile_idx = fopen(inFileName, "rb");
+  if ((&inFile[inFile_idx]) == 0)
+  {
+    fprintf(stderr, "%s: can't open `%s'\n", progName, inFileName);
+    exit(1);
+  }
+  bsIn_idx = bsOpenReadStream(inFile);
+  blockCRC = 0;
+  bsWr_idx = 0;
+  bitsRead = 0;
+  outFile_idx = 0;
+  wrBlock = 0;
+  while ((Bool) 1)
+  {
+    b = bsGetBit(bsIn);
+    if (b == 2)
+    {
+      break;
+    }
+    buffHi = (buffHi << 1) | (buffLo >> 31);
+    buffLo = (buffLo << 1) | (b & 1);
+    if (bitsRead == (47 + rbStart[wrBlock]))
+    {
+      blockCRC = (buffHi << 16) | (buffLo >> 16);
+    }
+    if ((((&outFile[outFile_idx]) != 0) && (bitsRead >= rbStart[wrBlock])) && (bitsRead <= rbEnd[wrBlock]))
+    {
+      bsPutBit(bsWr, b);
+    }
+    bitsRead += 1;
+    if (bitsRead == (rbEnd[wrBlock] + 1))
+    {
+      if ((&outFile[outFile_idx]) != 0)
+      {
+        bsPutUChar(bsWr, 0x17);
+        bsPutUChar(bsWr, 0x72);
+        bsPutUChar(bsWr, 0x45);
+        bsPutUChar(bsWr, 0x38);
+        bsPutUChar(bsWr, 0x50);
+        bsPutUChar(bsWr, 0x90);
+        bsPutUInt32(bsWr, blockCRC);
+        bsClose(bsWr);
+        outFile_idx = 0;
+      }
+      if (wrBlock >= rbCtr)
+      {
+        break;
+      }
+      wrBlock += 1;
+    }
+    else
+      if (bitsRead == rbStart[wrBlock])
+    {
+      Char *split;
+      unsigned int split_idx = 0;
+      Int32 ofs;
+      Int32 k;
+      for (k = 0; k < 2000; k += 1)
+        outFileName[k] = 0;
+
+      strcpy(outFileName, inFileName);
+      split_idx = strrchr(outFileName, '/');
+      if ((&split[split_idx]) == 0)
+      {
+        split_idx = outFileName;
+      }
+      else
+      {
+        split_idx += 1;
+      }
+      ofs = (&split[split_idx]) - outFileName;
+      sprintf(split, "rec%5d", wrBlock + 1);
+      for (p_idx = &split[split_idx]; p[p_idx] != 0; p_idx += 1)
+        if (p[p_idx] == ' ')
+      {
+        p[p_idx] = '0';
+      }
+
+      strcat(outFileName, inFileName + ofs);
+      if (!endsInBz2(outFileName))
+      {
+        strcat(outFileName, ".bz2");
+      }
+      fprintf(stderr, "   writing block %d to `%s' ...\n", wrBlock + 1, outFileName);
+      outFile_idx = fopen_output_safely(outFileName, "wb");
+      if ((&outFile[outFile_idx]) == 0)
+      {
+        fprintf(stderr, "%s: can't write `%s'\n", progName, outFileName);
+        exit(1);
+      }
+      bsWr_idx = bsOpenWriteStream(outFile);
+      bsPutUChar(bsWr, 0x42);
+      bsPutUChar(bsWr, 0x5a);
+      bsPutUChar(bsWr, 0x68);
+      bsPutUChar(bsWr, 0x30 + 9);
+      bsPutUChar(bsWr, 0x31);
+      bsPutUChar(bsWr, 0x41);
+      bsPutUChar(bsWr, 0x59);
+      bsPutUChar(bsWr, 0x26);
+      bsPutUChar(bsWr, 0x53);
+      bsPutUChar(bsWr, 0x59);
+    }
+  }
+
+  fprintf(stderr, "%s: finished\n", progName);
+  return 0;
+}
+
+
+/*** DEPENDENCIES:
+static void tooManyBlocks(Int32 max_handled_blocks)
+{
+  fprintf(stderr, "%s: `%s' appears to contain more than %d blocks\n", progName, inFileName, max_handled_blocks);
+  fprintf(stderr, "%s: and cannot be handled.  To fix, increase\n", progName);
+  fprintf(stderr, "%s: BZ_MAX_HANDLED_BLOCKS in bzip2recover.c, and recompile.\n", progName);
+  exit(1);
+}
+
+
+----------------------------
+static BitStream *bsOpenReadStream(FILE *stream)
+{
+  BitStream *bs = malloc(sizeof(BitStream));
+  if (bs == 0)
+  {
+    mallocFail(sizeof(BitStream));
+  }
+  bs->handle = stream;
+  bs->buffer = 0;
+  bs->buffLive = 0;
+  bs->mode = 'r';
+  return bs;
+}
+
+
+----------------------------
+typedef unsigned int UInt32
+----------------------------
+typedef struct 
+{
+  UChar b[8];
+} UInt64
+----------------------------
+MaybeUInt64 rbEnd[50000]
+----------------------------
+MaybeUInt64 rbStart[50000]
+----------------------------
+typedef char Char
+----------------------------
+static void bsClose(BitStream *bs)
+{
+  Int32 retVal;
+  if (bs->mode == 'w')
+  {
+    while (bs->buffLive < 8)
+    {
+      bs->buffLive += 1;
+      bs->buffer <<= 1;
+    }
+
+    ;
+    retVal = putc((UChar) bs->buffer, bs->handle);
+    if (retVal == EOF)
+    {
+      writeError();
+    }
+    bytesOut += 1;
+    retVal = fflush(bs->handle);
+    if (retVal == EOF)
+    {
+      writeError();
+    }
+  }
+  retVal = fclose(bs->handle);
+  if (retVal == EOF)
+  {
+    if (bs->mode == 'w')
+    {
+      writeError();
+    }
+    else
+      readError();
+  }
+  free(bs);
+}
+
+
+----------------------------
+typedef unsigned long long int MaybeUInt64
+----------------------------
+static void bsPutUChar(EState *s, UChar c)
+{
+  bsW(s, 8, (UInt32) c);
+}
+
+
+----------------------------
+static Int32 bsGetBit(BitStream *bs)
+{
+  if (bs->buffLive > 0)
+  {
+    bs->buffLive -= 1;
+    return (bs->buffer >> bs->buffLive) & 0x1;
+  }
+  else
+  {
+    Int32 retVal = getc(bs->handle);
+    if (retVal == EOF)
+    {
+      if (errno != 0)
+      {
+        readError();
+      }
+      return 2;
+    }
+    bs->buffLive = 7;
+    bs->buffer = retVal;
+    return (bs->buffer >> 7) & 0x1;
+  }
+}
+
+
+----------------------------
+typedef int Int32
+----------------------------
+static void bsPutUInt32(EState *s, UInt32 u)
+{
+  bsW(s, 8, (u >> 24) & 0xffL);
+  bsW(s, 8, (u >> 16) & 0xffL);
+  bsW(s, 8, (u >> 8) & 0xffL);
+  bsW(s, 8, u & 0xffL);
+}
+
+
+----------------------------
+Char progName[2000]
+----------------------------
+static FILE *fopen_output_safely(Char *name, const char *mode)
+{
+  return fopen(name, mode);
+}
+
+
+----------------------------
+static void bsPutBit(BitStream *bs, Int32 bit)
+{
+  if (bs->buffLive == 8)
+  {
+    Int32 retVal = putc((UChar) bs->buffer, bs->handle);
+    if (retVal == EOF)
+    {
+      writeError();
+    }
+    bytesOut += 1;
+    bs->buffLive = 1;
+    bs->buffer = bit & 0x1;
+  }
+  else
+  {
+    bs->buffer = (bs->buffer << 1) | (bit & 0x1);
+    bs->buffLive += 1;
+  }
+  ;
+}
+
+
+----------------------------
+static BitStream *bsOpenWriteStream(FILE *stream)
+{
+  BitStream *bs = malloc(sizeof(BitStream));
+  if (bs == 0)
+  {
+    mallocFail(sizeof(BitStream));
+  }
+  bs->handle = stream;
+  bs->buffer = 0;
+  bs->buffLive = 0;
+  bs->mode = 'w';
+  return bs;
+}
+
+
+----------------------------
+MaybeUInt64 bStart[50000]
+----------------------------
+Char inFileName[2000]
+----------------------------
+static Bool endsInBz2(Char *name)
+{
+  Int32 n = strlen(name);
+  if (n <= 4)
+  {
+    return (Bool) 0;
+  }
+  return (((name[n - 4] == '.') && (name[n - 3] == 'b')) && (name[n - 2] == 'z')) && (name[n - 1] == '2');
+}
+
+
+----------------------------
+Char outFileName[2000]
+----------------------------
+MaybeUInt64 bEnd[50000]
+----------------------------
+typedef struct 
+{
+  FILE *handle;
+  Int32 buffer;
+  Int32 buffLive;
+  Char mode;
+} BitStream
+----------------------------
+***/
+
+

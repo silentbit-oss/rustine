@@ -1,0 +1,4 @@
+warning: called `map(..).flatten()` on `Option`
+warning: called `unwrap` on `query_end` after checking its variant with `is_some`
+warning: called `unwrap` on `query_end` after checking its variant with `is_some`
+warning: using `Option.and_then(|x| Some(y))`, which is more succinctly expressed as `map(|x| y)`

@@ -1,0 +1,39 @@
+{
+  "retranslated": [
+    {
+      "unit": "genann_run",
+      "mode": "direct_snippet_replace"
+    },
+    {
+      "unit": "genann_train",
+      "mode": "direct_snippet_replace"
+    },
+    {
+      "unit": "main#example3",
+      "mode": "direct_snippet_replace"
+    },
+    {
+      "unit": "load_data",
+      "mode": "direct_snippet_replace"
+    }
+  ],
+  "skipped": [
+    {
+      "unit": "main#example1",
+      "reason": "no_match_for_replacement"
+    },
+    {
+      "unit": "main#example2",
+      "reason": "no_match_for_replacement"
+    },
+    {
+      "unit": "main#example4",
+      "reason": "no_match_for_replacement"
+    },
+    {
+      "unit": "main#test",
+      "reason": "no_match_for_replacement"
+    }
+  ],
+  "fix_failed": []
+}

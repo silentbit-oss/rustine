@@ -1,0 +1,14 @@
+warning: `if _ { .. } else { .. }` is an expression
+warning: collection is never read
+warning: redundant clone
+warning: redundant clone
+warning: redundant clone
+warning: redundant clone
+warning: the function has a cognitive complexity of (31/25)
+warning: the function has a cognitive complexity of (53/25)
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: unnecessary structure name repetition
+warning: unused `std::result::Result` that must be used
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else

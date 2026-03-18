@@ -1,0 +1,7 @@
+warning: replacing an `Option` with `None`
+warning: this `if` statement can be collapsed
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: this block may be rewritten with the `?` operator
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`

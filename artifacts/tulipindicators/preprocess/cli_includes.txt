@@ -1,0 +1,9 @@
+#include <assert.h>
+#include <candles.h>
+#include <cli.c>
+#include <indicators.h>
+#include <math.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>

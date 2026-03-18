@@ -1,0 +1,324 @@
+warning: redundant else block
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: redundant else block
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: redundant else block
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: long literal lacking separators
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: field marked as public but also inferred as unused because it's prefixed with `_`
+warning: calling `Option::default()` is more clear than this expression
+warning: calling `Option::default()` is more clear than this expression
+warning: calling `Option::default()` is more clear than this expression
+warning: calling `Option::default()` is more clear than this expression
+warning: calling `Option::default()` is more clear than this expression
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casting `i32` to `usize` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: docs for function which may panic missing `# Panics` section
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: docs for function which may panic missing `# Panics` section
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `i32` may truncate the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `i32` may truncate the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `i32` may truncate the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: docs for function which may panic missing `# Panics` section
+warning: unnecessary boolean `not` operation
+warning: docs for function which may panic missing `# Panics` section
+warning: unnecessary boolean `not` operation
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: docs for function which may panic missing `# Panics` section
+warning: unnecessary boolean `not` operation
+warning: docs for function which may panic missing `# Panics` section
+warning: unnecessary boolean `not` operation
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: docs for function which may panic missing `# Panics` section
+warning: unnecessary boolean `not` operation
+warning: unnecessary boolean `not` operation
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: unnecessary boolean `not` operation
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: docs for function which may panic missing `# Panics` section
+warning: this function has too many lines (410/100)
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u32` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `i32` may truncate the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `i32` may truncate the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `i32` may truncate the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `i32` may truncate the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `i32` may truncate the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `i32` may truncate the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `i32` may truncate the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `i32` may truncate the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `i32` may truncate the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `i32` may truncate the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casts from `bool` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `u64` to `isize` may truncate the value on targets with 32-bit wide pointers
+warning: casting `u64` to `isize` may wrap around the value on targets with 64-bit wide pointers
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: called `map(<f>).unwrap_or(<a>)` on an `Option` value
+warning: reference as raw pointer
+warning: casting `i32` to `u8` may truncate the value
+warning: casting `i32` to `u8` may lose the sign of the value
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casting `i32` to `u64` may lose the sign of the value
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: `as` casting between raw pointers without changing their constness
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`
+warning: casts from `u8` to `i32` can be expressed infallibly using `From`

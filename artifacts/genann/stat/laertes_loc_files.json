@@ -1,0 +1,310 @@
+{
+  "Rust": {
+    "blanks": 289,
+    "children": {},
+    "code": 4444,
+    "comments": 220,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/genann/others/laertes/genann/build.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/genann/others/laertes/c2rust-lib.rs",
+        "stats": {
+          "blanks": 79,
+          "blobs": {},
+          "code": 442,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/genann/others/laertes/genann/example1.rs",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 140,
+          "comments": 6
+        }
+      },
+      {
+        "name": "artifacts/genann/others/laertes/genann/example3.rs",
+        "stats": {
+          "blanks": 17,
+          "blobs": {},
+          "code": 178,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/genann/others/laertes/example2.rs",
+        "stats": {
+          "blanks": 12,
+          "blobs": {},
+          "code": 111,
+          "comments": 10
+        }
+      },
+      {
+        "name": "artifacts/genann/others/laertes/genann/c2rust-lib.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 19,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/genann/others/laertes/example4.rs",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 228,
+          "comments": 18
+        }
+      },
+      {
+        "name": "artifacts/genann/others/laertes/genann/example2.rs",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 132,
+          "comments": 10
+        }
+      },
+      {
+        "name": "artifacts/genann/others/laertes/genann.rs",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 506,
+          "comments": 36
+        }
+      },
+      {
+        "name": "artifacts/genann/others/laertes/genann/example4.rs",
+        "stats": {
+          "blanks": 19,
+          "blobs": {},
+          "code": 244,
+          "comments": 18
+        }
+      },
+      {
+        "name": "artifacts/genann/others/laertes/build.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/genann/others/laertes/example3.rs",
+        "stats": {
+          "blanks": 13,
+          "blobs": {},
+          "code": 158,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/genann/others/laertes/genann/genann.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 529,
+          "comments": 36
+        }
+      },
+      {
+        "name": "artifacts/genann/others/laertes/genann/test.rs",
+        "stats": {
+          "blanks": 33,
+          "blobs": {},
+          "code": 824,
+          "comments": 31
+        }
+      },
+      {
+        "name": "artifacts/genann/others/laertes/example1.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 121,
+          "comments": 6
+        }
+      },
+      {
+        "name": "artifacts/genann/others/laertes/test.rs",
+        "stats": {
+          "blanks": 27,
+          "blobs": {},
+          "code": 800,
+          "comments": 31
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 289,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/genann/others/laertes/genann/build.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/genann/others/laertes/c2rust-lib.rs",
+          "stats": {
+            "blanks": 79,
+            "blobs": {},
+            "code": 442,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/genann/others/laertes/genann/example1.rs",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 140,
+            "comments": 6
+          }
+        },
+        {
+          "name": "artifacts/genann/others/laertes/genann/example3.rs",
+          "stats": {
+            "blanks": 17,
+            "blobs": {},
+            "code": 178,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/genann/others/laertes/example2.rs",
+          "stats": {
+            "blanks": 12,
+            "blobs": {},
+            "code": 111,
+            "comments": 10
+          }
+        },
+        {
+          "name": "artifacts/genann/others/laertes/genann/c2rust-lib.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 19,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/genann/others/laertes/example4.rs",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 228,
+            "comments": 18
+          }
+        },
+        {
+          "name": "artifacts/genann/others/laertes/genann/example2.rs",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 132,
+            "comments": 10
+          }
+        },
+        {
+          "name": "artifacts/genann/others/laertes/genann.rs",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 506,
+            "comments": 36
+          }
+        },
+        {
+          "name": "artifacts/genann/others/laertes/genann/example4.rs",
+          "stats": {
+            "blanks": 19,
+            "blobs": {},
+            "code": 244,
+            "comments": 18
+          }
+        },
+        {
+          "name": "artifacts/genann/others/laertes/build.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/genann/others/laertes/example3.rs",
+          "stats": {
+            "blanks": 13,
+            "blobs": {},
+            "code": 158,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/genann/others/laertes/genann/genann.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 529,
+            "comments": 36
+          }
+        },
+        {
+          "name": "artifacts/genann/others/laertes/genann/test.rs",
+          "stats": {
+            "blanks": 33,
+            "blobs": {},
+            "code": 824,
+            "comments": 31
+          }
+        },
+        {
+          "name": "artifacts/genann/others/laertes/example1.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 121,
+            "comments": 6
+          }
+        },
+        {
+          "name": "artifacts/genann/others/laertes/test.rs",
+          "stats": {
+            "blanks": 27,
+            "blobs": {},
+            "code": 800,
+            "comments": 31
+          }
+        }
+      ]
+    },
+    "code": 4444,
+    "comments": 220,
+    "inaccurate": false,
+    "reports": []
+  }
+}

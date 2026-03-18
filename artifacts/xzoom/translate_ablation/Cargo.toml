@@ -1,0 +1,16 @@
+[[bin]]
+name = "xzoom"
+path = "src/xzoom_main.rs"
+
+[package]
+name = "translate"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libc = "0.2"
+lazy_static = "1.4.0"
+bindgen = "0.69"
+
+[build-dependencies]
+bindgen = "0.69.0"

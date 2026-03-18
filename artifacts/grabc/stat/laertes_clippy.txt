@@ -1,0 +1,124 @@
+warning: the feature `core_intrinsics` is internal to the compiler or standard library
+warning: type `size_t` should have an upper camel case name
+warning: type `__off_t` should have an upper camel case name
+warning: type `__off64_t` should have an upper camel case name
+warning: type `_IO_lock_t` should have an upper camel case name
+warning: `#[no_mangle]` has no effect on a foreign static
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign static
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `#[no_mangle]` has no effect on a foreign function
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: the feature `const_mut_refs` has been stable since 1.83.0 and no longer requires an attribute to enable
+warning: the feature `const_fn_fn_ptr_basics` has been stable since 1.61.0 and no longer requires an attribute to enable
+warning: value assigned to `display` is never read
+warning: value assigned to `status` is never read
+warning: value assigned to `cmap` is never read
+warning: value assigned to `i` is never read
+warning: value assigned to `r` is never read
+warning: value assigned to `g` is never read
+warning: value assigned to `b` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `target_cursor` is never read
+warning: value assigned to `status` is never read
+warning: value assigned to `target_window` is never read
+warning: value assigned to `root_window` is never read
+warning: variable does not need to be mutable
+warning: value assigned to `window` is never read
+warning: variable does not need to be mutable
+warning: variable `root_window` is assigned to, but never used
+warning: value assigned to `target_window` is never read
+warning: value assigned to `ximage` is never read
+warning: unused variable: `status`
+warning: value assigned to `root_window` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `xerrcode` is never read
+warning: unused variable: `display`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: function `laertes_init_cross_cursor` is never used
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: the following explicit lifetimes could be elided: 'a1, 'a2
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: the following explicit lifetimes could be elided: 'a1, 'a2
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: the following explicit lifetimes could be elided: 'a1
+warning: unneeded `return` statement
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: used `expect()` on `Some` value
+warning: deref which would be done by auto-deref
+warning: used `expect()` on `Some` value
+warning: unneeded `return` statement
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut *mut i8` -> `*mut *mut i8`)
+warning: `0 as *const _` detected
+warning: use of `default` to create a unit struct
+warning: this `map_or` can be simplified
+warning: the following explicit lifetimes could be elided: 'a
+warning: the following explicit lifetimes could be elided: 'a
+warning: casting raw pointers to the same type and constness is unnecessary (`*const ()` -> `*const ()`)
+warning: empty `loop {}` wastes CPU cycles
+warning: structure field `_IO_read_ptr` should have a snake case name
+warning: structure field `_IO_read_end` should have a snake case name
+warning: structure field `_IO_read_base` should have a snake case name
+warning: structure field `_IO_write_base` should have a snake case name
+warning: structure field `_IO_write_ptr` should have a snake case name
+warning: structure field `_IO_write_end` should have a snake case name
+warning: structure field `_IO_buf_base` should have a snake case name
+warning: structure field `_IO_buf_end` should have a snake case name
+warning: structure field `_IO_save_base` should have a snake case name
+warning: structure field `_IO_backup_base` should have a snake case name
+warning: structure field `_IO_save_end` should have a snake case name
+warning: static variable `cross_cursor` should have an upper case name
+warning: function `selectWindow` should have a snake case name
+warning: function `findSubWindow` should have a snake case name
+warning: function `getWindowColor` should have a snake case name
+warning: function `MXError` should have a snake case name

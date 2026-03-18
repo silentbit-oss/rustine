@@ -1,0 +1,18 @@
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+warning: called `expect` on `cb2` after checking its variant with `is_some`
+warning: wildcard pattern covers any other pattern as it will match anyway
+warning: called `expect` on `is_space` after checking its variant with `is_some`
+warning: called `expect` on `is_term` after checking its variant with `is_some`
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+warning: called `expect` on `cb2` after checking its variant with `is_some`
+warning: called `expect` on `cb2` after checking its variant with `is_some`
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+warning: called `expect` on `is_term` after checking its variant with `is_some`
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+warning: called `expect` on `cb2` after checking its variant with `is_some`
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+warning: called `expect` on `cb2` after checking its variant with `is_some`
+warning: called `expect` on `is_space` after checking its variant with `is_some`
+warning: this boolean expression can be simplified

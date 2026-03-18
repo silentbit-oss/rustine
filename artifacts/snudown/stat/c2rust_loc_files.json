@@ -1,0 +1,130 @@
+{
+  "Rust": {
+    "blanks": 47,
+    "children": {},
+    "code": 6033,
+    "comments": 441,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/snudown/others/c2rust/lib.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 17,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/c2rust/build.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/c2rust/src/stack.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 77,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/c2rust/src/buffer.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 163,
+          "comments": 14
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/c2rust/src/autolink.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 578,
+          "comments": 103
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/c2rust/src/markdown.rs",
+        "stats": {
+          "blanks": 29,
+          "blobs": {},
+          "code": 5192,
+          "comments": 319
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 47,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/snudown/others/c2rust/lib.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 17,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/c2rust/build.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/c2rust/src/stack.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 77,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/c2rust/src/buffer.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 163,
+            "comments": 14
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/c2rust/src/autolink.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 578,
+            "comments": 103
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/c2rust/src/markdown.rs",
+          "stats": {
+            "blanks": 29,
+            "blobs": {},
+            "code": 5192,
+            "comments": 319
+          }
+        }
+      ]
+    },
+    "code": 6033,
+    "comments": 441,
+    "inaccurate": false,
+    "reports": []
+  }
+}

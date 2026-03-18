@@ -1,0 +1,6 @@
+#include <assert.h>
+#include <indicators.h>
+#include <marketfi.c>
+#include <math.h>
+#include <stdlib.h>
+#include <string.h>

@@ -1,0 +1,4 @@
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (8/7)

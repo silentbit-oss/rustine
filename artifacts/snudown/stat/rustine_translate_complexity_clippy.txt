@@ -1,0 +1,89 @@
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_ref().map(|d| d.as_slice())` on an `Option` value
+warning: called `.as_ref().map(|n| &**n)` on an `Option` value
+warning: calling `CStr::new` with a byte string literal
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: manually constructing a nul-terminated string
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (14/7)
+warning: this function has too many arguments (14/7)
+warning: this function has too many arguments (14/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: using `clone` on type `Option<fn(Buf, Buf, Box<dyn Any>)>` which implements the `Copy` trait
+warning: using `clone` on type `Option<fn(Buf, Buf, Box<dyn Any>)>` which implements the `Copy` trait
+warning: using `clone` on type `Option<fn(Buf, Buf, Box<dyn Any>)>` which implements the `Copy` trait
+warning: using `clone` on type `Option<fn(Buf, Buf, Box<dyn Any>)>` which implements the `Copy` trait
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions

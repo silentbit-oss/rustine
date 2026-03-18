@@ -1,0 +1,38 @@
+[[bin]]
+name = "cli"
+path = "src/cli_main.rs"
+
+[[bin]]
+name = "example2"
+path = "src/example2.rs"
+
+[[bin]]
+name = "example1"
+path = "src/example1_main.rs"
+
+[[bin]]
+name = "fuzzer"
+path = "src/fuzzer_main.rs"
+
+[[bin]]
+name = "smoke"
+path = "src/smoke_main.rs"
+
+[[bin]]
+name = "sample"
+path = "src/sample.rs"
+
+[[bin]]
+name = "benchmark"
+path = "src/benchmark_main.rs"
+
+[package]
+name = "translate_without_break_down"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lazy_static = "1.4.0"
+libm = "0.2.8"
+rand = "0.8.5"
+libc = "0.2"

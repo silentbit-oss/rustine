@@ -1,0 +1,15 @@
+[package]
+name = "libtreers"
+version = "0.1.0"
+edition = "2024"
+description = "Turn ldd into a tree: show the dynamic dependency tree of ELF files and explain how each shared library is found."
+
+[dependencies]
+tempfile = "3"
+
+[[bin]]
+name = "libtree"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 2

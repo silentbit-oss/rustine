@@ -1,0 +1,6 @@
+warning: the feature `core_intrinsics` is internal to the compiler or standard library
+warning: this looks like you are swapping `*a` and `*b` manually
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: use of `offset` with a `usize` casted to an `isize`
+warning: use of `offset` with a `usize` casted to an `isize`

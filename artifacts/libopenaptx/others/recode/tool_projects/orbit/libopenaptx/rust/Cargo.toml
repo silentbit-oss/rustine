@@ -1,0 +1,39 @@
+[package]
+name = "libopenaptx"
+version = "0.2.1"
+authors = ["Pali Rohár <pali.rohar@gmail.com>", "Rust translation team"]
+edition = "2021"
+license = "GPL-3.0-or-later"
+description = "Open Source implementation of aptX and aptX HD audio codecs"
+keywords = ["audio", "codec", "aptx", "bluetooth"]
+categories = ["multimedia::audio"]
+
+[lib]
+name = "libopenaptx"
+path = "src/lib.rs"
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[[bin]]
+name = "openaptxenc"
+path = "src/bin/openaptxenc.rs"
+
+[[bin]]
+name = "openaptxdec"
+path = "src/bin/openaptxdec.rs"
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "encoding"
+harness = false
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+
+[profile.bench]
+inherits = "release"

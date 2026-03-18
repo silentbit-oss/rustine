@@ -1,0 +1,1467 @@
+warning: unused import: `crate::*`
+warning: unused import: `std::sync::atomic::AtomicI64`
+warning: unused import: `std::sync::atomic::AtomicU64`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: type `mi_arena_id_t` should have an upper camel case name
+warning: type `mi_subproc_id_t` should have an upper camel case name
+warning: type `mi_ssize_t` should have an upper camel case name
+warning: type `mi_atomic_once_t` should have an upper camel case name
+warning: type `mi_atomic_guard_t` should have an upper camel case name
+warning: type `mi_encoded_t` should have an upper camel case name
+warning: type `mi_threadid_t` should have an upper camel case name
+warning: type `mi_page_flags_t` should have an upper camel case name
+warning: type `mi_thread_free_t` should have an upper camel case name
+warning: type `mi_heaptag_t` should have an upper camel case name
+warning: type `mi_msecs_t` should have an upper camel case name
+warning: type `mi_bfield_t` should have an upper camel case name
+warning: type `mi_xset_t` should have an upper camel case name
+warning: type `__u_char` should have an upper camel case name
+warning: type `__u_short` should have an upper camel case name
+warning: type `__u_int` should have an upper camel case name
+warning: type `__u_long` should have an upper camel case name
+warning: type `__int8_t` should have an upper camel case name
+warning: type `__uint8_t` should have an upper camel case name
+warning: type `__int16_t` should have an upper camel case name
+warning: type `__uint16_t` should have an upper camel case name
+warning: type `__int32_t` should have an upper camel case name
+warning: type `__uint32_t` should have an upper camel case name
+warning: type `__int64_t` should have an upper camel case name
+warning: type `__uint64_t` should have an upper camel case name
+warning: type `__int_least8_t` should have an upper camel case name
+warning: type `__uint_least8_t` should have an upper camel case name
+warning: type `__int_least16_t` should have an upper camel case name
+warning: type `__uint_least16_t` should have an upper camel case name
+warning: type `__int_least32_t` should have an upper camel case name
+warning: type `__uint_least32_t` should have an upper camel case name
+warning: type `__int_least64_t` should have an upper camel case name
+warning: type `__uint_least64_t` should have an upper camel case name
+warning: type `__quad_t` should have an upper camel case name
+warning: type `__u_quad_t` should have an upper camel case name
+warning: type `__intmax_t` should have an upper camel case name
+warning: type `__uintmax_t` should have an upper camel case name
+warning: type `__dev_t` should have an upper camel case name
+warning: type `__uid_t` should have an upper camel case name
+warning: type `__gid_t` should have an upper camel case name
+warning: type `__ino_t` should have an upper camel case name
+warning: type `__ino64_t` should have an upper camel case name
+warning: type `__mode_t` should have an upper camel case name
+warning: type `__nlink_t` should have an upper camel case name
+warning: type `__off_t` should have an upper camel case name
+warning: type `__off64_t` should have an upper camel case name
+warning: type `__pid_t` should have an upper camel case name
+warning: type `__clock_t` should have an upper camel case name
+warning: type `__rlim_t` should have an upper camel case name
+warning: type `__rlim64_t` should have an upper camel case name
+warning: type `__id_t` should have an upper camel case name
+warning: type `__time_t` should have an upper camel case name
+warning: type `__useconds_t` should have an upper camel case name
+warning: type `__suseconds_t` should have an upper camel case name
+warning: type `__suseconds64_t` should have an upper camel case name
+warning: type `__daddr_t` should have an upper camel case name
+warning: type `__key_t` should have an upper camel case name
+warning: type `__clockid_t` should have an upper camel case name
+warning: type `__timer_t` should have an upper camel case name
+warning: type `__blksize_t` should have an upper camel case name
+warning: type `__blkcnt_t` should have an upper camel case name
+warning: type `__blkcnt64_t` should have an upper camel case name
+warning: type `__fsblkcnt_t` should have an upper camel case name
+warning: type `__fsblkcnt64_t` should have an upper camel case name
+warning: type `__fsfilcnt_t` should have an upper camel case name
+warning: type `__fsfilcnt64_t` should have an upper camel case name
+warning: type `__fsword_t` should have an upper camel case name
+warning: type `__ssize_t` should have an upper camel case name
+warning: type `__syscall_slong_t` should have an upper camel case name
+warning: type `__syscall_ulong_t` should have an upper camel case name
+warning: type `__loff_t` should have an upper camel case name
+warning: type `__caddr_t` should have an upper camel case name
+warning: type `__intptr_t` should have an upper camel case name
+warning: type `__socklen_t` should have an upper camel case name
+warning: type `__sig_atomic_t` should have an upper camel case name
+warning: type `off_t` should have an upper camel case name
+warning: type `mode_t` should have an upper camel case name
+warning: type `__s8` should have an upper camel case name
+warning: type `__u8` should have an upper camel case name
+warning: type `__s16` should have an upper camel case name
+warning: type `__u16` should have an upper camel case name
+warning: type `__s32` should have an upper camel case name
+warning: type `__u32` should have an upper camel case name
+warning: type `__s64` should have an upper camel case name
+warning: type `__u64` should have an upper camel case name
+warning: type `__kernel_key_t` should have an upper camel case name
+warning: type `__kernel_mqd_t` should have an upper camel case name
+warning: type `__kernel_old_uid_t` should have an upper camel case name
+warning: type `__kernel_old_gid_t` should have an upper camel case name
+warning: type `__kernel_old_dev_t` should have an upper camel case name
+warning: type `__kernel_long_t` should have an upper camel case name
+warning: type `__kernel_ulong_t` should have an upper camel case name
+warning: type `__kernel_ino_t` should have an upper camel case name
+warning: type `__kernel_mode_t` should have an upper camel case name
+warning: type `__kernel_pid_t` should have an upper camel case name
+warning: type `__kernel_ipc_pid_t` should have an upper camel case name
+warning: type `__kernel_uid_t` should have an upper camel case name
+warning: type `__kernel_gid_t` should have an upper camel case name
+warning: type `__kernel_suseconds_t` should have an upper camel case name
+warning: type `__kernel_daddr_t` should have an upper camel case name
+warning: type `__kernel_uid32_t` should have an upper camel case name
+warning: type `__kernel_gid32_t` should have an upper camel case name
+warning: type `__kernel_size_t` should have an upper camel case name
+warning: type `__kernel_ssize_t` should have an upper camel case name
+warning: type `__kernel_ptrdiff_t` should have an upper camel case name
+warning: type `__kernel_off_t` should have an upper camel case name
+warning: type `__kernel_loff_t` should have an upper camel case name
+warning: type `__kernel_old_time_t` should have an upper camel case name
+warning: type `__kernel_time_t` should have an upper camel case name
+warning: type `__kernel_time64_t` should have an upper camel case name
+warning: type `__kernel_clock_t` should have an upper camel case name
+warning: type `__kernel_timer_t` should have an upper camel case name
+warning: type `__kernel_clockid_t` should have an upper camel case name
+warning: type `__kernel_caddr_t` should have an upper camel case name
+warning: type `__kernel_uid16_t` should have an upper camel case name
+warning: type `__kernel_gid16_t` should have an upper camel case name
+warning: type `__s128` should have an upper camel case name
+warning: type `__u128` should have an upper camel case name
+warning: type `__le16` should have an upper camel case name
+warning: type `__be16` should have an upper camel case name
+warning: type `__le32` should have an upper camel case name
+warning: type `__be32` should have an upper camel case name
+warning: type `__le64` should have an upper camel case name
+warning: type `__be64` should have an upper camel case name
+warning: type `__sum16` should have an upper camel case name
+warning: type `__wsum` should have an upper camel case name
+warning: type `__poll_t` should have an upper camel case name
+warning: type `rlim_t` should have an upper camel case name
+warning: type `id_t` should have an upper camel case name
+warning: type `__rlimit_resource_t` should have an upper camel case name
+warning: type `__rusage_who_t` should have an upper camel case name
+warning: type `__priority_which_t` should have an upper camel case name
+warning: type `ino_t` should have an upper camel case name
+warning: type `dev_t` should have an upper camel case name
+warning: type `gid_t` should have an upper camel case name
+warning: type `nlink_t` should have an upper camel case name
+warning: type `uid_t` should have an upper camel case name
+warning: type `pid_t` should have an upper camel case name
+warning: type `ssize_t` should have an upper camel case name
+warning: type `clockid_t` should have an upper camel case name
+warning: type `time_t` should have an upper camel case name
+warning: type `timer_t` should have an upper camel case name
+warning: type `int8_t` should have an upper camel case name
+warning: type `int16_t` should have an upper camel case name
+warning: type `int32_t` should have an upper camel case name
+warning: type `int64_t` should have an upper camel case name
+warning: type `u_int8_t` should have an upper camel case name
+warning: type `u_int16_t` should have an upper camel case name
+warning: type `u_int32_t` should have an upper camel case name
+warning: type `u_int64_t` should have an upper camel case name
+warning: type `register_t` should have an upper camel case name
+warning: type `blkcnt_t` should have an upper camel case name
+warning: type `fsblkcnt_t` should have an upper camel case name
+warning: type `fsfilcnt_t` should have an upper camel case name
+warning: type `random_t` should have an upper camel case name
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: `mi_msecs_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_arena_id_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_arena_id_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_arena_id_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_arena_id_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_arena_id_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_arena_id_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_arena_id_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_arena_id_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_arena_id_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_arena_id_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_arena_id_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_arena_id_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_arena_id_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_arena_id_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_arena_id_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_arena_id_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_arena_id_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_msecs_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_arena_id_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: type `mi_error_fun` should have an upper camel case name
+warning: unused import: `mi_error_fun::*`
+warning: unused import: `crate::*`
+warning: type `mi_heap_area_t` should have an upper camel case name
+warning: unused import: `mi_heap_area_t::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: variant `MI_CBIN_SMALL` should have an upper camel case name
+warning: variant `MI_CBIN_OTHER` should have an upper camel case name
+warning: variant `MI_CBIN_MEDIUM` should have an upper camel case name
+warning: variant `MI_CBIN_LARGE` should have an upper camel case name
+warning: variant `MI_CBIN_NONE` should have an upper camel case name
+warning: variant `MI_CBIN_COUNT` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: type `mi_memkind_t` should have an upper camel case name
+warning: variant `MI_MEM_NONE` should have an upper camel case name
+warning: variant `MI_MEM_EXTERNAL` should have an upper camel case name
+warning: variant `MI_MEM_STATIC` should have an upper camel case name
+warning: variant `MI_MEM_META` should have an upper camel case name
+warning: variant `MI_MEM_OS` should have an upper camel case name
+warning: variant `MI_MEM_OS_HUGE` should have an upper camel case name
+warning: variant `MI_MEM_OS_REMAP` should have an upper camel case name
+warning: variant `MI_MEM_ARENA` should have an upper camel case name
+warning: unused import: `mi_memkind_t::*`
+warning: unused import: `crate::*`
+warning: unused import: `mi_memid_os_info_t::*`
+warning: unused import: `crate::*`
+warning: variant `MI_PAGE_SMALL` should have an upper camel case name
+warning: variant `MI_PAGE_MEDIUM` should have an upper camel case name
+warning: variant `MI_PAGE_LARGE` should have an upper camel case name
+warning: variant `MI_PAGE_SINGLETON` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: type `mi_option_init_t` should have an upper camel case name
+warning: variant `MI_OPTION_UNINIT` should have an upper camel case name
+warning: variant `MI_OPTION_DEFAULTED` should have an upper camel case name
+warning: variant `MI_OPTION_INITIALIZED` should have an upper camel case name
+warning: unused import: `mi_option_init_t::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: type `std_new_handler_t` should have an upper camel case name
+warning: unused import: `std_new_handler_t::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: type `mi_collect_t` should have an upper camel case name
+warning: variant `MI_NORMAL` should have an upper camel case name
+warning: variant `MI_FORCE` should have an upper camel case name
+warning: variant `MI_ABANDON` should have an upper camel case name
+warning: unused import: `mi_collect_t::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: type `__fsid_t` should have an upper camel case name
+warning: unused import: `__fsid_t::*`
+warning: unused import: `crate::*`
+warning: type `__kernel_fd_set` should have an upper camel case name
+warning: unused import: `__kernel_fd_set::*`
+warning: unused import: `crate::*`
+warning: type `__kernel_sighandler_t` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: type `__rusage_who` should have an upper camel case name
+warning: variant `RUSAGE_SELF` should have an upper camel case name
+warning: variant `RUSAGE_CHILDREN` should have an upper camel case name
+warning: unused import: `__rusage_who::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: unnecessary parentheses around const expression
+warning: type `iptr` should have an upper camel case name
+warning: type `mi_meta_page_t` should have an upper camel case name
+warning: type `mi_error_fun` should have an upper camel case name
+warning: redundant field names in struct initialization
+warning: redundant field names in struct initialization
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: `_mi_heap_default` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiHeapPtr` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_MI_PROCESS_IS_INITIALIZED` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MI_OS_MEM_CONFIG` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MI_OUT_DEFAULT` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: type `mi_error_fun` should have an upper camel case name
+warning: type `mi_atomic_once_t` should have an upper camel case name
+warning: type `mi_thread_free_t` should have an upper camel case name
+warning: type `mi_threadid_t` should have an upper camel case name
+warning: unnecessary parentheses around assigned value
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: `MiBlock` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiBlock` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiBlock` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiBlock` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiBlock` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiBlock` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_error_message` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_error_message` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_error_message` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_error_message` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiPage` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiBlock` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: unused import: `std::os::raw::c_char`
+warning: unused import: `std::ptr::null_mut`
+warning: unused import: `std::ptr`
+warning: unused import: `std::sync::Mutex`
+warning: unused import: `std::sync::atomic::AtomicI64`
+warning: unused import: `std::sync::atomic::AtomicPtr`
+warning: type `mi_bchunk_t` should have an upper camel case name
+warning: type `mi_bchunkmap_t` should have an upper camel case name
+warning: type `mi_bitmap_t` should have an upper camel case name
+warning: type `mi_bfield_t` should have an upper camel case name
+warning: type `mi_abandoned_page_visit_info_t` should have an upper camel case name
+warning: type `mi_block_visit_fun` should have an upper camel case name
+warning: unused import: `std::ffi::CStr`
+warning: unused import: `std::sync::atomic::AtomicI64`
+warning: unused import: `std::sync::atomic::AtomicPtr`
+warning: type `mi_subproc_id_t` should have an upper camel case name
+warning: unused import: `std::ffi::CStr`
+warning: unused import: `std::ffi::CString`
+warning: ambiguous glob re-exports
+warning: `_mi_snprintf` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_snprintf` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: type `mi_error_fun` should have an upper camel case name
+warning: ambiguous glob re-exports
+warning: unused import: `std::fs::File`
+warning: unused import: `std::ptr`
+warning: unused import: `std::sync::atomic::AtomicI32`
+warning: unused import: `std::sync::atomic::AtomicI64`
+warning: type `mi_msecs_t` should have an upper camel case name
+warning: ambiguous glob re-exports
+warning: `Timeval` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `Timeval` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: unused import: `std::ffi::CStr`
+warning: unused import: `std::ptr`
+warning: type `int8_t` should have an upper camel case name
+warning: type `random_t` should have an upper camel case name
+warning: type `iptr` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: type `mi_stat_count_t` should have an upper camel case name
+warning: unused import: `mi_stat_count_t::*`
+warning: unused import: `crate::*`
+warning: type `mi_stat_counter_t` should have an upper camel case name
+warning: unused import: `mi_stat_counter_t::*`
+warning: unused import: `crate::*`
+warning: unused import: `mi_memid_meta_info_t::*`
+warning: unused import: `std::sync::atomic::AtomicU64`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: unused import: `mi_block_t::*`
+warning: unused import: `crate::*`
+warning: unused import: `mi_bchunk_t::*`
+warning: unused import: `crate::*`
+warning: empty line after outer attribute
+warning: type `mi_bchunkmap_t` should have an upper camel case name
+warning: unused import: `mi_bchunkmap_t::*`
+warning: unused import: `crate::*`
+warning: type `mi_bitmap_t` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `mi_bbitmap_t::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: ambiguous glob re-exports
+warning: unused import: `mi_stats_t::*`
+warning: unused import: `crate::*`
+warning: unused import: `mi_padding_t::*`
+warning: unused import: `crate::*`
+warning: type `mi_random_ctx_t` should have an upper camel case name
+warning: unused import: `mi_random_ctx_t::*`
+warning: unused import: `crate::*`
+warning: type `mi_memid_t` should have an upper camel case name
+warning: type `mi_page_t` should have an upper camel case name
+warning: type `mi_heap_t` should have an upper camel case name
+warning: type `mi_tld_s` should have an upper camel case name
+warning: type `mi_tld_t` should have an upper camel case name
+warning: type `mi_page_queue_t` should have an upper camel case name
+warning: type `mi_arena_t` should have an upper camel case name
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: `MiMemidOsInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidMetaInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidMetaInfo` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidMetaInfo` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidMetaInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidMetaInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidMetaInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidMetaInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidMetaInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidMetaInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `mi_heap_t` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidMetaInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidMetaInfo` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `MiMemidOsInfo` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: unused import: `crate::*`
+warning: unused import: `std::sync::atomic::AtomicPtr`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: type `mi_submap_t` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: type `mi_msecs_t` should have an upper camel case name
+warning: unused import: `mi_process_info_t::*`
+warning: unused import: `crate::*`
+warning: type `mi_forall_set_fun_t` should have an upper camel case name
+warning: unused import: `mi_forall_set_fun_t::*`
+warning: unused import: `crate::*`
+warning: unused import: `mi_purge_visit_info_t::*`
+warning: unused import: `crate::*`
+warning: type `mi_heap_area_t` should have an upper camel case name
+warning: unused import: `mi_block_visit_fun::*`
+warning: unused import: `crate::*`
+warning: type `mi_block_visit_fun` should have an upper camel case name
+warning: unused import: `mi_abandoned_page_visit_info_t::*`
+warning: unused import: `crate::*`
+warning: type `mi_bitmap_visit_fun_t` should have an upper camel case name
+warning: unused import: `mi_bitmap_visit_fun_t::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: type `mi_bchunk_try_find_and_clear_fun_t` should have an upper camel case name
+warning: unused import: `mi_bchunk_try_find_and_clear_fun_t::*`
+warning: unused import: `crate::*`
+warning: unused import: `mi_visit_blocks_args_t::*`
+warning: unused import: `buffered_t::*`
+warning: unused import: `crate::*`
+warning: unused import: `timeval::*`
+warning: type `mi_meta_page_t` should have an upper camel case name
+warning: unused import: `mi_meta_page_t::*`
+warning: type `mi_option_desc_t` should have an upper camel case name
+warning: unused import: `mi_option_desc_t::*`
+warning: unused import: `std::mem`
+warning: type `mi_bfield_t` should have an upper camel case name
+warning: type `mi_bchunk_t` should have an upper camel case name
+warning: type `mi_bchunkmap_t` should have an upper camel case name
+warning: operator precedence might not be obvious
+warning: type `mi_bitmap_visit_fun_t` should have an upper camel case name
+warning: ambiguous glob re-exports
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: `_mi_assert_fail` is ambiguous
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+warning: unused import: `std::sync::atomic::AtomicPtr`
+warning: type `mi_bfield_t` should have an upper camel case name
+warning: unused import: `std::ptr::null_mut`
+warning: unused import: `std::sync::atomic::AtomicPtr`
+warning: unused import: `crate::*`
+warning: type `mi_heap_t` should have an upper camel case name
+warning: type `mi_arena_id_t` should have an upper camel case name
+warning: unnecessary parentheses around assigned value
+warning: consider removing unnecessary double parentheses
+warning: type `mi_msecs_t` should have an upper camel case name
+warning: consider removing unnecessary double parentheses
+warning: consider removing unnecessary double parentheses
+warning: consider removing unnecessary double parentheses
+warning: ambiguous glob re-exports
+warning: unused import: `crate::*`
+warning: type `mi_random_ctx_t` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: type `mi_claim_fun_data_s` should have an upper camel case name
+warning: type `mi_claim_fun_data_t` should have an upper camel case name
+warning: type `mi_atomic_once_t` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: type `int8_t` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: type `mi_heap_area_t` should have an upper camel case name
+warning: unused import: `mi_heap_area_ex_t::*`
+warning: type `mi_heap_area_ex_t` should have an upper camel case name
+warning: type `mi_heap_area_visit_fun` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused variable: `empty_page_queue`
+warning: unused variable: `p`
+warning: unused variable: `newsize`
+warning: unused variable: `mutex`
+warning: unused variable: `err`
+warning: unused variable: `fmt`
+warning: unused variable: `msg`
+warning: unused variable: `bsize`
+warning: unused variable: `delta`
+warning: unused variable: `page`
+warning: unused variable: `block`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `err`
+warning: unused variable: `block_ref`
+warning: unused variable: `next`
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: value assigned to `heap_idx` is never read
+warning: unnecessary `unsafe` block
+warning: variable `p_idx` is assigned to, but never used
+warning: value assigned to `p_idx` is never read
+warning: value assigned to `p_idx` is never read
+warning: value assigned to `p_idx` is never read
+warning: value assigned to `q_idx` is never read
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unused variable: `stats`
+warning: unnecessary `unsafe` block
+warning: variable does not need to be mutable
+warning: unnecessary `unsafe` block
+warning: unused variable: `subproc`
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unused variable: `req`
+warning: unused variable: `ptr`
+warning: unnecessary `unsafe` block
+warning: unused variable: `subproc`
+warning: unused variable: `size`
+warning: unused variable: `commit`
+warning: unused variable: `allow_large`
+warning: unused variable: `exclusive`
+warning: unused variable: `arena_id`
+warning: unused variable: `subproc`
+warning: unused variable: `req_size`
+warning: unused variable: `allow_large`
+warning: unused variable: `arena_id`
+warning: unused variable: `size`
+warning: variable does not need to be mutable
+warning: value assigned to `page` is never read
+warning: unnecessary `unsafe` block
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: value assigned to `c` is never read
+warning: unnecessary `unsafe` block
+warning: unused variable: `header1`
+warning: unused variable: `header2`
+warning: unused variable: `header3`
+warning: unused variable: `slice_count`
+warning: unused variable: `chunk_count`
+warning: unused variable: `chunks`
+warning: unused variable: `chunk_bins`
+warning: unused variable: `invert`
+warning: unused variable: `arena`
+warning: unused variable: `narrow`
+warning: unused variable: `start_ptr`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `tld_raw`
+warning: unused variable: `fmt`
+warning: unnecessary `unsafe` block
+warning: unused variable: `i`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `fmt_str`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `l`
+warning: unnecessary `unsafe` block
+warning: variable does not need to be mutable
+warning: unused variable: `stat_size`
+warning: unnecessary `unsafe` block
+warning: variable does not need to be mutable
+warning: unused variable: `subproc`
+warning: value assigned to `base_idx` is never read
+warning: unused variable: `assertion2`
+warning: unused variable: `assertion3`
+warning: value assigned to `allow_large` is never read
+warning: unused variable: `try_alignment`
+warning: unused variable: `hint_addr_ptr`
+warning: variable `allow_large` is assigned to, but never used
+warning: unused variable: `is_large`
+warning: variable does not need to be mutable
+warning: unused variable: `action`
+warning: value assigned to `err_code` is never read
+warning: variable does not need to be mutable
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unused variable: `data`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unnecessary `unsafe` block
+warning: unused variable: `bbitmap`
+warning: unused variable: `tseq`
+warning: unused variable: `n`
+warning: unused variable: `pidx`
+warning: unused variable: `on_find`
+warning: unused variable: `bbitmap`
+warning: unused variable: `tseq`
+warning: unused variable: `pidx`
+warning: unused variable: `bbitmap`
+warning: unused variable: `tseq`
+warning: unused variable: `n`
+warning: unused variable: `pidx`
+warning: unused variable: `bbitmap`
+warning: unused variable: `tseq`
+warning: unused variable: `pidx`
+warning: unused variable: `bitmap`
+warning: unused variable: `tseq`
+warning: unused variable: `count`
+warning: unused variable: `pidx`
+warning: unused variable: `visit_arg`
+warning: unused variable: `visit_data`
+warning: unused variable: `chunk_idx`
+warning: unused variable: `end`
+warning: unused variable: `idx`
+warning: unused variable: `sub`
+warning: unnecessary `unsafe` block
+warning: unused variable: `heap_empty`
+warning: unnecessary `unsafe` block
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `head_idx` is never read
+warning: variable `tail_idx` is assigned to, but never used
+warning: value assigned to `tail_idx` is never read
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unused variable: `page`
+warning: unused variable: `page_start`
+warning: unused variable: `page_ptr`
+warning: unused variable: `queue_ptr`
+warning: variable does not need to be mutable
+warning: unused variable: `page_queue_index`
+warning: unused variable: `pages_ptr`
+warning: variable `prev_idx` is assigned to, but never used
+warning: value assigned to `prev_idx` is never read
+warning: unused variable: `heap`
+warning: unused variable: `arg2`
+warning: unused variable: `bheap`
+warning: unused variable: `heap_tag`
+warning: unused variable: `allow_destroy`
+warning: unused variable: `arena_id`
+warning: variable `block_idx` is assigned to, but never used
+warning: variable `block_idx` is assigned to, but never used
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unused variable: `format`
+warning: variable does not need to be mutable
+warning: unused variable: `suffix_str`
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: variable does not need to be mutable
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unused variable: `numa_msg`
+warning: unused variable: `sys_time`
+warning: unused variable: `current_rss`
+warning: unused variable: `current_commit`
+warning: unused variable: `page_faults`
+warning: unused variable: `elapsed_msg`
+warning: unused variable: `process_msg`
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unused variable: `cbin`
+warning: unused variable: `prefix_ptr`
+warning: unused variable: `total`
+warning: unused variable: `peak`
+warning: unused variable: `current`
+warning: unused variable: `comma_cstr`
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: variable `mpage_idx` is assigned to, but never used
+warning: unused variable: `p`
+warning: unused variable: `tld`
+warning: value assigned to `p_idx` is never read
+warning: value assigned to `p_idx` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable

@@ -1,0 +1,12 @@
+#include <assert.h>
+#include <cache.h>
+#include <hash.h>
+#include <lz77.c>
+#include <lz77.h>
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <symbols.h>
+#include <util.h>
+#include <zopfli.h>

@@ -1,0 +1,32 @@
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: unused import: `std::time::Duration`
+warning: unused import: `std::sync::atomic::AtomicI32`
+warning: unused import: `std::alloc::Layout`
+warning: unused import: `std::alloc::alloc`
+warning: ambiguous glob re-exports
+warning: unused import: `std::fmt`
+warning: unused variable: `key`
+warning: unused variable: `node`
+warning: variable does not need to be mutable
+warning: unused variable: `point`
+warning: unused variable: `quadrant`
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: deref which would be done by auto-deref
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: local variable doesn't need to be boxed here
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: importing a legacy numeric constant
+warning: importing a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: importing a legacy numeric constant
+warning: importing a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: this `match` expression can be replaced with `?`
+warning: this `else { if .. }` block can be collapsed

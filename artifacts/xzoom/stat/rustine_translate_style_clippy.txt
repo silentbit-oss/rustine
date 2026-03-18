@@ -1,0 +1,2 @@
+warning: variables can be used directly in the `format!` string
+warning: you should consider adding a `Default` implementation for `Gc`

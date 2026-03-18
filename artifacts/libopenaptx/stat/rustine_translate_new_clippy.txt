@@ -1,0 +1,63 @@
+warning: unused import: `crate::*`
+warning: variant `NB_CHANNELS` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::assert_eq`
+warning: unused import: `std::alloc::Layout`
+warning: unused import: `std::alloc::alloc`
+warning: unused import: `rand::Rng`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::slice`
+warning: unnecessary parentheses around function argument
+warning: consider removing unnecessary double parentheses
+warning: unnecessary parentheses around method argument
+warning: unnecessary parentheses around index expression
+warning: unnecessary parentheses around index expression
+warning: unused variable: `ctx`
+warning: variable `min_idx` is assigned to, but never used
+warning: value assigned to `min_idx` is never read
+warning: value assigned to `min_idx` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `input_size_step` is never read
+warning: value assigned to `processed_step` is never read
+warning: value assigned to `processed_step` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: the loop variable `i` is used to index `input`
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: casting integer literal to `i32` is unnecessary
+warning: casting integer literal to `i32` is unnecessary
+warning: this operation has no effect
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: this operation has no effect
+warning: this operation has no effect
+warning: the loop variable `i` is used to index `MAP`
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: the loop variable `subband` is used to index `subband_samples`
+warning: the loop variable `channel` is used to index `samples`
+warning: the loop variable `channel` is only used to index `samples`
+warning: this operation has no effect
+warning: this operation has no effect
+warning: the loop variable `subband` is used to index `subband_samples`
+warning: the loop variable `channel` is used to index `samples`
+warning: the loop variable `channel` is only used to index `samples`
+warning: this function has too many arguments (11/7)
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: this function has too many arguments (12/7)
+warning: manually reimplementing `div_ceil`
+warning: module `aptx__q_m_f_analysis` should have a snake case name

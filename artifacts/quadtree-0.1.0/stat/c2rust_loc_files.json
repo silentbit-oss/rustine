@@ -1,0 +1,166 @@
+{
+  "Rust": {
+    "blanks": 3,
+    "children": {},
+    "code": 1373,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/quadtree-0.1.0/others/c2rust/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 19,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/quadtree-0.1.0/others/c2rust/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/quadtree-0.1.0/others/c2rust/src/src/point.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 31,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/quadtree-0.1.0/others/c2rust/src/src/bounds.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 67,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/quadtree-0.1.0/others/c2rust/src/benchmark.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 190,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/quadtree-0.1.0/others/c2rust/src/src/node.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 129,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/quadtree-0.1.0/others/c2rust/src/src/quadtree.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 289,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/quadtree-0.1.0/others/c2rust/src/test.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 642,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/quadtree-0.1.0/others/c2rust/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 19,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/quadtree-0.1.0/others/c2rust/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/quadtree-0.1.0/others/c2rust/src/src/point.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 31,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/quadtree-0.1.0/others/c2rust/src/src/bounds.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 67,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/quadtree-0.1.0/others/c2rust/src/benchmark.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 190,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/quadtree-0.1.0/others/c2rust/src/src/node.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 129,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/quadtree-0.1.0/others/c2rust/src/src/quadtree.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 289,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/quadtree-0.1.0/others/c2rust/src/test.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 642,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 1373,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

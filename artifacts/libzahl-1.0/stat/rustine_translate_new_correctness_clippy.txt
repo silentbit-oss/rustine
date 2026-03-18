@@ -1,0 +1,6 @@
+warning: the type `[std::option::Option<std::boxed::Box<[u32]>>; 64]` does not permit being left uninitialized
+warning: the type `[std::sync::atomic::AtomicUsize; 64]` does not permit being left uninitialized
+warning: this call for this type may be undefined behavior
+warning: this call for this type may be undefined behavior
+warning: this loop never actually loops
+warning: this loop never actually loops

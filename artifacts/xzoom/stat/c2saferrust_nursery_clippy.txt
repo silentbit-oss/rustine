@@ -1,0 +1,2 @@
+warning: the function has a cognitive complexity of (69/25)
+warning: casting the result of `as_ptr` to *mut u8

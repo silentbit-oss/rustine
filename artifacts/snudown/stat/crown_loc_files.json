@@ -1,0 +1,238 @@
+{
+  "Rust": {
+    "blanks": 3,
+    "children": {},
+    "code": 13032,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/snudown/others/crown/lib.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 24,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/crown/src/houdini_href_e.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 350,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/crown/src/siphash.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1022,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/crown/src/houdini_html_e.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 337,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/crown/src/stack.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 101,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/crown/src/buffer.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 449,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/crown/src/snudown.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 1098,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/crown/src/html_smartypants.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1216,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/crown/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/crown/src/autolink.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 622,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/crown/src/html.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1926,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/snudown/others/crown/src/markdown.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 5881,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/snudown/others/crown/lib.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 24,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/crown/src/houdini_href_e.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 350,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/crown/src/siphash.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1022,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/crown/src/houdini_html_e.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 337,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/crown/src/stack.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 101,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/crown/src/buffer.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 449,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/crown/src/snudown.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 1098,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/crown/src/html_smartypants.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1216,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/crown/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/crown/src/autolink.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 622,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/crown/src/html.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1926,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/snudown/others/crown/src/markdown.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 5881,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 13032,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "Rust": {
+    "blanks": 3,
+    "children": {},
+    "code": 4469,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/binn-3.0/others/c2rust/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 12,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/binn-3.0/others/c2rust/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/binn-3.0/others/c2rust/src/binn.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 4451,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/binn-3.0/others/c2rust/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 12,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/binn-3.0/others/c2rust/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/binn-3.0/others/c2rust/src/binn.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 4451,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 4469,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,88 @@
+warning: consider removing unnecessary double parentheses
+warning: unnecessary `>= y + 1` or `x - 1 >=`
+warning: unnecessary `>= y + 1` or `x - 1 >=`
+warning: unnecessary `>= y + 1` or `x - 1 >=`
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting a character literal to `u8` truncates
+warning: casting a character literal to `u8` truncates
+warning: casting a character literal to `u8` truncates
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+20 |     writeln!(io::stderr(), "{}: warning: output file(s) may be incomplete.", prog_name_str).unwrap();
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try: `eprintln!("{}: warning: output file(s) may be incomplete.", prog_name_str)`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: manual implementation of `ok`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: using `clone` on type `Option<&str>` which implements the `Copy` trait
+warning: using `clone` on type `Option<&str>` which implements the `Copy` trait
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: this function has too many arguments (8/7)
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: this function has too many arguments (8/7)
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: use of `writeln!(stderr(), ...).unwrap()`
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: deref which would be done by auto-deref
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut u32` -> `*mut u32`)
+warning: deref which would be done by auto-deref
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut u8` -> `*mut u8`)
+warning: deref which would be done by auto-deref
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut u16` -> `*mut u16`)
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: unnecessary operation
+warning: unnecessary operation
+warning: unnecessary operation
+warning: wildcard pattern covers any other pattern as it will match anyway
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting to the same type is unnecessary (`usize` -> `usize`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: unused `std::result::Result` that must be used
+warning: unused return value of `std::boxed::Box::<T>::from_raw` that must be used

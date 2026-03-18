@@ -1,0 +1,40 @@
+{
+  "C": {
+    "blanks": 3,
+    "children": {},
+    "code": 27,
+    "comments": 0,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/qsort/qsort.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 27,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 3,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/qsort/qsort.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 27,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 27,
+    "comments": 0,
+    "inaccurate": false,
+    "reports": []
+  }
+}

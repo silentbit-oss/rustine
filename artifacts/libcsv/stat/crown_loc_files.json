@@ -1,0 +1,76 @@
+{
+  "Rust": {
+    "blanks": 5,
+    "children": {},
+    "code": 978,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/libcsv/others/crown/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 18,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/libcsv/others/crown/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/libcsv/others/crown/src/libcsv.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 954,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 5,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/libcsv/others/crown/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 18,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/libcsv/others/crown/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/libcsv/others/crown/src/libcsv.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 954,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 978,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,851 @@
+diff --git a/artifacts/binn-3.0/translate/src/binn.rs b/artifacts/binn-3.0/translate/src/binn.rs
+index 8a7fea7aa..fd9a192f0 100644
+--- a/artifacts/binn-3.0/translate/src/binn.rs
++++ b/artifacts/binn-3.0/translate/src/binn.rs
+@@ -4766,7 +4766,7 @@ pub fn binn_get_str(value: Binn) -> Option<CString> {
+                 // SAFETY: We trust the C code that ptr points to a valid null-terminated string
+                 unsafe {
+                     let ptr = value.ptr.as_ref()?;
+-                    Some(CString::from_raw(ptr.as_ref() as *const () as *mut i8))
++                    Some(CString::from_raw(ptr.as_ref() as *const () as *mut u8))
+                 }
+             }
+             0x80061 => {
+@@ -4791,7 +4791,7 @@ fn goto_loc_convert_value(value: &mut Binn_Struct, buf: &[u8], len: usize) -> Op
+     let c_ptr = c_str.into_raw();
+     
+     // Store the raw pointer directly after casting to *mut ()
+-    let ptr = unsafe { std::mem::transmute::<*mut i8, *mut ()>(c_ptr) };
++    let ptr = unsafe { std::mem::transmute::<*mut u8, *mut ()>(c_ptr) };
+     value.ptr = Some(Box::new(unsafe { *ptr }));
+     value.freefn = Some(unsafe { std::mem::transmute(free as *const ()) });
+     value.type_ = 0xA0;
+@@ -4918,7 +4918,7 @@ pub fn binn_get_int32(value: Option<&Binn_Struct>, pint: Option<&mut i32>) -> BO
+             };
+         }
+         0xA0 => {
+-            let ptr_str = unsafe { std::ffi::CStr::from_ptr(value.ptr.as_ref().unwrap().as_ref() as *const _ as *const i8) };
++            let ptr_str = unsafe { std::ffi::CStr::from_ptr(value.ptr.as_ref().unwrap().as_ref() as *const _ as *const u8) };
+             let s = ptr_str.to_str().unwrap_or("");
+             
+             if is_integer(Some(s)) != 0 {
+@@ -5105,7 +5105,7 @@ pub fn binn_get_int64(value: Option<&Binn_Struct>, pint: Option<&mut int64>) ->
+             };
+         }
+         0xA0 => {
+-            let ptr = value.ptr.as_ref().map(|p| unsafe { CStr::from_ptr(p.as_ref() as *const _ as *const i8) });
++            let ptr = value.ptr.as_ref().map(|p| unsafe { CStr::from_ptr(p.as_ref() as *const _ as *const u8) });
+             let s = ptr.and_then(|cstr| cstr.to_str().ok());
+             
+             if is_integer(s) != 0 {
+@@ -5175,7 +5175,7 @@ pub fn binn_get_double(value: Option<&Binn_Struct>, pfloat: Option<&mut f64>) ->
+         }
+         0xA0 => {
+             let ptr_str = unsafe {
+-                CStr::from_ptr(value.ptr.as_ref().unwrap().as_ref() as *const _ as *const i8)
++                CStr::from_ptr(value.ptr.as_ref().unwrap().as_ref() as *const _ as *const u8)
+                     .to_str()
+                     .ok()
+             };
+diff --git a/artifacts/binn-3.0/translate/src/test_binn2.rs b/artifacts/binn-3.0/translate/src/test_binn2.rs
+index b0b21a10e..d6ebcf6b0 100644
+--- a/artifacts/binn-3.0/translate/src/test_binn2.rs
++++ b/artifacts/binn-3.0/translate/src/test_binn2.rs
+@@ -103,7 +103,7 @@ pub fn str_to_currency(str: Option<&str>) -> Option<i64> {
+     }
+     
+     // Convert to string and parse
+-    let result_str = unsafe { CStr::from_ptr(tmp.as_ptr() as *const i8) }.to_str().ok()?;
++    let result_str = unsafe { CStr::from_ptr(tmp.as_ptr() as *const u8) }.to_str().ok()?;
+     atoi64(Some(result_str))
+ }
+ 
+diff --git a/artifacts/binn-3.0/translate_without_break_down/src/binn.rs b/artifacts/binn-3.0/translate_without_break_down/src/binn.rs
+index 4bbc78671..646a47297 100644
+--- a/artifacts/binn-3.0/translate_without_break_down/src/binn.rs
++++ b/artifacts/binn-3.0/translate_without_break_down/src/binn.rs
+@@ -2336,7 +2336,7 @@ pub fn binn_value(
+             let pvalue = pvalue?;
+ 
+             if storage_type == 0xA0 && size == 0 {
+-                let c_str = unsafe { CStr::from_ptr(pvalue.as_ptr() as *const i8) };
++                let c_str = unsafe { CStr::from_ptr(pvalue.as_ptr() as *const u8) };
+                 size = c_str.to_bytes().len() as i32 + 1;
+             }
+ 
+@@ -4029,8 +4029,8 @@ pub fn binn_map_pair(map: Option<&[u8]>, pos: i32, pid: Option<&mut i32>) -> Opt
+                     // If downcast fails, free the allocation and return None
+                     if let Some(free_fn) = &mut *FREE_FN.lock().unwrap() {
+                         let raw_ptr = Box::into_raw(e);
+-                        let send_ptr = unsafe { Box::from_raw(raw_ptr as *mut (dyn std::any::Any + Send)) };
+-                        (free_fn.0)(Some(send_ptr));
++                        //let send_ptr = unsafe { Box::from_raw(raw_ptr as *mut (dyn std::any::Any + Send)) };
++                        //(free_fn.0)(Some(send_ptr));
+                     }
+                     return Option::None;
+                 }
+@@ -4405,7 +4405,7 @@ pub fn binn_get_str(value: binn) -> Option<Box<CString>> {
+         }
+         0xA0 => {
+             return value.ptr.as_ref().map(|p| {
+-                Box::new(unsafe { CString::from_raw(Box::into_raw(p.clone()) as *mut i8) })
++                Box::new(unsafe { CString::from_raw(Box::into_raw(p.clone()) as *mut u8) })
+             });
+         }
+         0x80061 => {
+@@ -4592,7 +4592,7 @@ pub fn binn_get_int32(value: Option<&BinnStruct>, pint: Option<&mut i32>) -> BOO
+             };
+         }
+         0xA0 => {
+-            let ptr = value.ptr.as_ref().map(|p| unsafe { CStr::from_ptr(p.as_ref() as *const _ as *const i8) });
++            let ptr = value.ptr.as_ref().map(|p| unsafe { CStr::from_ptr(p.as_ref() as *const _ as *const u8) });
+             if let Some(cstr) = ptr {
+                 if let Ok(s) = cstr.to_str() {
+                     if is_integer(Some(s)) != 0 {
+@@ -4796,7 +4796,7 @@ pub fn binn_get_int64(value: binn, pint: Option<&mut int64>) -> BOOL {
+         }
+         0xA0 => {
+             if let Some(ptr) = value.ptr.as_ref() {
+-                let c_str = unsafe { CStr::from_ptr(ptr.as_ref() as *const _ as *const i8) };
++                let c_str = unsafe { CStr::from_ptr(ptr.as_ref() as *const _ as *const u8) };
+                 if let Ok(s) = c_str.to_str() {
+                     if is_integer(Some(s)) != 0 {
+                         if let Some(val) = atoi64(Some(s)) {
+@@ -4868,7 +4868,7 @@ pub fn binn_get_double(value: Option<&BinnStruct>, pfloat: Option<&mut f64>) ->
+         }
+         0xA0 => {
+             let ptr_str = unsafe {
+-                CStr::from_ptr(value.ptr.as_ref().unwrap().as_ref() as *const _ as *const i8)
++                CStr::from_ptr(value.ptr.as_ref().unwrap().as_ref() as *const _ as *const u8)
+                     .to_str()
+                     .ok()
+             };
+diff --git a/artifacts/binn-3.0/translate_without_break_down/src/test_binn2.rs b/artifacts/binn-3.0/translate_without_break_down/src/test_binn2.rs
+index 5bd87229f..e6f6d1c78 100644
+--- a/artifacts/binn-3.0/translate_without_break_down/src/test_binn2.rs
++++ b/artifacts/binn-3.0/translate_without_break_down/src/test_binn2.rs
+@@ -126,7 +126,7 @@ pub fn str_to_currency(str: Option<&str>) -> Option<i64> {
+     }
+ 
+     // Convert to string and parse (line 37)
+-    let result_str = unsafe { CStr::from_ptr(tmp_slice.as_ptr() as *const i8) };
++    let result_str = unsafe { CStr::from_ptr(tmp_slice.as_ptr() as *const u8) };
+     atoi64(result_str.to_str().ok())
+ }
+ pub fn float_to_currency(value: f64) -> Option<i64> {
+@@ -554,7 +554,7 @@ pub fn test_create_object_2(psize: &mut i32) -> Option<CString> {
+         if ptr.is_null() {
+             None
+         } else {
+-            Some(CString::new(std::ffi::CStr::from_ptr(ptr as *const i8).to_bytes()).unwrap())
++            Some(CString::new(std::ffi::CStr::from_ptr(ptr as *const u8).to_bytes()).unwrap())
+         }
+     }
+ }
+diff --git a/artifacts/binn-3.0/translate_without_break_down_fix/src/binn.rs b/artifacts/binn-3.0/translate_without_break_down_fix/src/binn.rs
+index 9f6dde33b..c9eb3ef32 100644
+--- a/artifacts/binn-3.0/translate_without_break_down_fix/src/binn.rs
++++ b/artifacts/binn-3.0/translate_without_break_down_fix/src/binn.rs
+@@ -2423,7 +2423,7 @@ pub fn binn_value(
+             let pvalue = pvalue?;
+ 
+             if storage_type == 0xA0 && size == 0 {
+-                let c_str = unsafe { CStr::from_ptr(pvalue.as_ptr() as *const i8) };
++                let c_str = unsafe { CStr::from_ptr(pvalue.as_ptr() as *const u8) };
+                 size = c_str.to_bytes().len() as i32 + 1;
+             }
+ 
+@@ -4192,8 +4192,8 @@ pub fn binn_map_pair(map: Option<&[u8]>, pos: i32, pid: Option<&mut i32>) -> Opt
+                     // If downcast fails, free the allocation and return None
+                     if let Some(free_fn) = &mut *FREE_FN.lock().unwrap() {
+                         let raw_ptr = Box::into_raw(e);
+-                        let send_ptr = unsafe { Box::from_raw(raw_ptr as *mut (dyn std::any::Any + Send)) };
+-                        (free_fn.0)(Some(send_ptr));
++                        //let send_ptr = unsafe { Box::from_raw(raw_ptr as *mut (dyn std::any::Any + Send)) };
++                        //(free_fn.0)(Some(send_ptr));
+                     }
+                     return Option::None;
+                 }
+@@ -4577,7 +4577,7 @@ pub fn binn_get_str(value: binn) -> Option<Box<CString>> {
+         }
+         0xA0 => {
+             return value.ptr.as_ref().map(|p| {
+-                Box::new(unsafe { CString::from_raw(Box::into_raw(p.clone()) as *mut i8) })
++                Box::new(unsafe { CString::from_raw(Box::into_raw(p.clone()) as *mut u8) })
+             });
+         }
+         0x80061 => {
+@@ -4769,7 +4769,7 @@ pub fn binn_get_int32(value: Option<&BinnStruct>, pint: Option<&mut i32>) -> BOO
+             };
+         }
+         0xA0 => {
+-            let ptr = value.ptr.as_ref().map(|p| unsafe { CStr::from_ptr(p.as_ref() as *const _ as *const i8) });
++            let ptr = value.ptr.as_ref().map(|p| unsafe { CStr::from_ptr(p.as_ref() as *const _ as *const u8) });
+             if let Some(cstr) = ptr {
+                 if let Ok(s) = cstr.to_str() {
+                     if is_integer(Some(s)) != 0 {
+@@ -4978,7 +4978,7 @@ pub fn binn_get_int64(value: binn, pint: Option<&mut int64>) -> BOOL {
+         }
+         0xA0 => {
+             if let Some(ptr) = value.ptr.as_ref() {
+-                let c_str = unsafe { CStr::from_ptr(ptr.as_ref() as *const _ as *const i8) };
++                let c_str = unsafe { CStr::from_ptr(ptr.as_ref() as *const _ as *const u8) };
+                 if let Ok(s) = c_str.to_str() {
+                     if is_integer(Some(s)) != 0 {
+                         if let Some(val) = atoi64(Some(s)) {
+@@ -5051,7 +5051,7 @@ pub fn binn_get_double(value: Option<&BinnStruct>, pfloat: Option<&mut f64>) ->
+         }
+         0xA0 => {
+             let ptr_str = unsafe {
+-                CStr::from_ptr(value.ptr.as_ref().unwrap().as_ref() as *const _ as *const i8)
++                CStr::from_ptr(value.ptr.as_ref().unwrap().as_ref() as *const _ as *const u8)
+                     .to_str()
+                     .ok()
+             };
+diff --git a/artifacts/binn-3.0/translate_without_break_down_fix/src/test_binn2.rs b/artifacts/binn-3.0/translate_without_break_down_fix/src/test_binn2.rs
+index da568d32c..af485c0b2 100644
+--- a/artifacts/binn-3.0/translate_without_break_down_fix/src/test_binn2.rs
++++ b/artifacts/binn-3.0/translate_without_break_down_fix/src/test_binn2.rs
+@@ -130,7 +130,7 @@ pub fn str_to_currency(str: Option<&str>) -> Option<i64> {
+     }
+ 
+     // Convert to string and parse (line 37)
+-    let result_str = unsafe { CStr::from_ptr(tmp_slice.as_ptr() as *const i8) };
++    let result_str = unsafe { CStr::from_ptr(tmp_slice.as_ptr() as *const u8) };
+     atoi64(result_str.to_str().ok())
+ }
+ pub fn float_to_currency(value: f64) -> Option<i64> {
+@@ -568,7 +568,7 @@ pub fn test_create_object_2(psize: &mut i32) -> Option<CString> {
+         if ptr.is_null() {
+             None
+         } else {
+-            Some(CString::new(std::ffi::CStr::from_ptr(ptr as *const i8).to_bytes()).unwrap())
++            Some(CString::new(std::ffi::CStr::from_ptr(ptr as *const u8).to_bytes()).unwrap())
+         }
+     }
+ }
+diff --git a/artifacts/bzip2/translate_without_break_down/src/bzip2.rs b/artifacts/bzip2/translate_without_break_down/src/bzip2.rs
+index dc17fe8e8..74ed4ba1b 100644
+--- a/artifacts/bzip2/translate_without_break_down/src/bzip2.rs
++++ b/artifacts/bzip2/translate_without_break_down/src/bzip2.rs
+@@ -360,7 +360,7 @@ pub fn mkCell() -> Option<Box<Cell>> {
+ }
+ pub fn ioError() {
+     let prog_name = unsafe {
+-        CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const i8)
++        CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const u8)
+             .to_string_lossy()
+             .into_owned()
+     };
+@@ -694,7 +694,7 @@ pub fn testStream(mut zStream: File) -> Result<bool, Box<dyn std::error::Error>>
+             Some(&mut nUnused),
+         );
+         if bzerr != 0 {
+-            panic(unsafe { std::mem::transmute::<*const i8, *const Char>(
++            panic(unsafe { std::mem::transmute::<*const u8, *const Char>(
+                 std::ffi::CString::new("test:bzReadGetUnused").unwrap().as_ptr()
+             )});
+         }
+@@ -712,7 +712,7 @@ pub fn testStream(mut zStream: File) -> Result<bool, Box<dyn std::error::Error>>
+             bzf.as_mut().map(|b| unsafe { std::mem::transmute::<&mut BzFile, &mut BZFILE>(&mut **b) }),
+         );
+         if bzerr != 0 {
+-            panic(unsafe { std::mem::transmute::<*const i8, *const Char>(
++            panic(unsafe { std::mem::transmute::<*const u8, *const Char>(
+                 std::ffi::CString::new("test:bzReadGetUnused").unwrap().as_ptr()
+             )});
+         }
+@@ -767,7 +767,7 @@ pub fn testStream(mut zStream: File) -> Result<bool, Box<dyn std::error::Error>>
+             }
+         }
+         _ => {
+-            panic(unsafe { std::mem::transmute::<*const i8, *const Char>(
++            panic(unsafe { std::mem::transmute::<*const u8, *const Char>(
+                 std::ffi::CString::new("test:unexpected error").unwrap().as_ptr()
+             )});
+             Err(Box::new(std::io::Error::new(ErrorKind::Other, "Unexpected error")))
+@@ -1142,7 +1142,7 @@ pub fn uncompressStream(zStream: &mut File, stream: &mut File) -> bool {
+                         }
+                         _ => {
+                             let msg = std::ffi::CString::new("decompress:unexpected error").unwrap();
+-                            panic(unsafe { std::mem::transmute::<*const i8, *const Char>(msg.as_ptr()) });
++                            panic(unsafe { std::mem::transmute::<*const u8, *const Char>(msg.as_ptr()) });
+                         }
+                     }
+                 }
+@@ -1165,7 +1165,7 @@ pub fn uncompressStream(zStream: &mut File, stream: &mut File) -> bool {
+         BZ2_bzReadGetUnused(Some(&mut bzerr), bzf_ref, Some(&mut unusedTmp), Some(&mut nUnused));
+         if bzerr != 0 {
+             let msg = std::ffi::CString::new("decompress:bzReadGetUnused").unwrap();
+-            panic(unsafe { std::mem::transmute::<*const i8, *const Char>(msg.as_ptr()) });
++            panic(unsafe { std::mem::transmute::<*const u8, *const Char>(msg.as_ptr()) });
+         }
+ 
+         if let Some(ref unused_data) = unusedTmp {
+@@ -1178,7 +1178,7 @@ pub fn uncompressStream(zStream: &mut File, stream: &mut File) -> bool {
+         BZ2_bzReadClose(Some(&mut bzerr), bzf_ref);
+         if bzerr != 0 {
+             let msg = std::ffi::CString::new("decompress:bzReadGetUnused").unwrap();
+-            panic(unsafe { std::mem::transmute::<*const i8, *const Char>(msg.as_ptr()) });
++            panic(unsafe { std::mem::transmute::<*const u8, *const Char>(msg.as_ptr()) });
+         }
+ 
+         if nUnused == 0 && myfeof(zStream) {
+@@ -1568,19 +1568,19 @@ pub fn uncompress(name: Option<&[Char]>) {
+         if noisy.load(Ordering::SeqCst) {
+             eprintln!(
+                 "{}: There are no files matching `{}'.",
+-                unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap(),
+-                unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap()
++                unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap(),
++                unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap()
+             );
+         }
+         setExit(1);
+         return;
+     }
+ 
+-    if srcMode != 1 && fileExists(unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap()) == 0 {
++    if srcMode != 1 && fileExists(unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap()) == 0 {
+         eprintln!(
+             "{}: Can't open input file {}: {}.",
+-            unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap(),
+-            unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap(),
++            unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap(),
++            unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap(),
+             io::Error::last_os_error()
+         );
+         setExit(1);
+@@ -1591,8 +1591,8 @@ pub fn uncompress(name: Option<&[Char]>) {
+         if false {
+             eprintln!(
+                 "{}: Input file {} is a directory.",
+-                unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap(),
+-                unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap()
++                unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap(),
++                unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap()
+             );
+             setExit(1);
+             return;
+@@ -1603,8 +1603,8 @@ pub fn uncompress(name: Option<&[Char]>) {
+         if noisy.load(Ordering::SeqCst) {
+             eprintln!(
+                 "{}: Input file {} is not a normal file.",
+-                unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap(),
+-                unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap()
++                unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap(),
++                unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap()
+             );
+         }
+         setExit(1);
+@@ -1614,20 +1614,20 @@ pub fn uncompress(name: Option<&[Char]>) {
+     if cant_guess != 0 && noisy.load(Ordering::SeqCst) {
+         eprintln!(
+             "{}: Can't guess original name for {} -- using {}",
+-            unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap(),
+-            unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap(),
+-            unsafe { CStr::from_ptr(outName.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap()
++            unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap(),
++            unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap(),
++            unsafe { CStr::from_ptr(outName.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap()
+         );
+     }
+ 
+-    if srcMode == 3 && fileExists(unsafe { CStr::from_ptr(outName.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap()) != 0 {
++    if srcMode == 3 && fileExists(unsafe { CStr::from_ptr(outName.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap()) != 0 {
+         if forceOverwrite.load(Ordering::SeqCst) {
+-            std::fs::remove_file(Path::new(unsafe { CStr::from_ptr(outName.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap())).unwrap_or_else(|_| ioError());
++            std::fs::remove_file(Path::new(unsafe { CStr::from_ptr(outName.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap())).unwrap_or_else(|_| ioError());
+         } else {
+             eprintln!(
+                 "{}: Output file {} already exists.",
+-                unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap(),
+-                unsafe { CStr::from_ptr(outName.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap()
++                unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap(),
++                unsafe { CStr::from_ptr(outName.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap()
+             );
+             setExit(1);
+             return;
+@@ -1635,12 +1635,12 @@ pub fn uncompress(name: Option<&[Char]>) {
+     }
+ 
+     if srcMode == 3 && !forceOverwrite.load(Ordering::SeqCst) {
+-        n = countHardLinks(Some(unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap()));
++        n = countHardLinks(Some(unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap()));
+         if n > 0 {
+             eprintln!(
+                 "{}: Input file {} has {} other link{}.",
+-                unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap(),
+-                unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap(),
++                unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap(),
++                unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap(),
+                 n,
+                 if n > 1 { "s" } else { "" }
+             );
+@@ -1660,25 +1660,25 @@ pub fn uncompress(name: Option<&[Char]>) {
+             if unsafe { libc::isatty(libc::STDIN_FILENO) } != 0 {
+                 eprintln!(
+                     "{}: I won't read compressed data from a terminal.",
+-                    unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap()
++                    unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap()
+                 );
+                 eprintln!(
+                     "{}: For help, type: `{} --help'.",
+-                    unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap(),
+-                    unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap()
++                    unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap(),
++                    unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap()
+                 );
+                 setExit(1);
+                 return;
+             }
+         }
+         2 => {
+-            in_str = File::open(Path::new(unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap())).ok();
++            in_str = File::open(Path::new(unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap())).ok();
+             out_str = Some(unsafe { File::from_raw_fd(libc::STDOUT_FILENO) });
+             if in_str.is_none() {
+                 eprintln!(
+                     "{}: Can't open input file {}:{}.",
+-                    unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap(),
+-                    unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap(),
++                    unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap(),
++                    unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap(),
+                     io::Error::last_os_error()
+                 );
+                 setExit(1);
+@@ -1686,13 +1686,13 @@ pub fn uncompress(name: Option<&[Char]>) {
+             }
+         }
+         3 => {
+-            in_str = File::open(Path::new(unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap())).ok();
+-            out_str = fopen_output_safely(Some(Path::new(unsafe { CStr::from_ptr(outName.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap())), "wb");
++            in_str = File::open(Path::new(unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap())).ok();
++            out_str = fopen_output_safely(Some(Path::new(unsafe { CStr::from_ptr(outName.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap())), "wb");
+             if out_str.is_none() {
+                 eprintln!(
+                     "{}: Can't create output file {}: {}.",
+-                    unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap(),
+-                    unsafe { CStr::from_ptr(outName.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap(),
++                    unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap(),
++                    unsafe { CStr::from_ptr(outName.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap(),
+                     io::Error::last_os_error()
+                 );
+                 if in_str.is_some() {
+@@ -1704,8 +1704,8 @@ pub fn uncompress(name: Option<&[Char]>) {
+             if in_str.is_none() {
+                 eprintln!(
+                     "{}: Can't open input file {}: {}.",
+-                    unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap(),
+-                    unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap(),
++                    unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap(),
++                    unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap(),
+                     io::Error::last_os_error()
+                 );
+                 if out_str.is_some() {
+@@ -1721,7 +1721,7 @@ pub fn uncompress(name: Option<&[Char]>) {
+     }
+ 
+     if VERBOSITY.load(Ordering::SeqCst) >= 1 {
+-        eprint!("  {}: ", unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap());
++        eprint!("  {}: ", unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap());
+         pad(&IN_NAME.lock().unwrap()[..]);
+         io::stderr().flush().unwrap();
+     }
+@@ -1737,7 +1737,7 @@ pub fn uncompress(name: Option<&[Char]>) {
+             applySavedTimeInfoToOutputFile(outName.lock().unwrap()[0]);
+             DELETE_OUTPUT_ON_INTERRUPT.store(false, Ordering::SeqCst);
+             if !KEEP_INPUT_FILES.load(Ordering::SeqCst) {
+-                let ret_val = std::fs::remove_file(Path::new(unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap()));
++                let ret_val = std::fs::remove_file(Path::new(unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap()));
+                 if ret_val.is_err() {
+                     ioError();
+                 }
+@@ -1747,7 +1747,7 @@ pub fn uncompress(name: Option<&[Char]>) {
+         UNZ_FAILS_EXIST.store(true, Ordering::SeqCst);
+         DELETE_OUTPUT_ON_INTERRUPT.store(false, Ordering::SeqCst);
+         if srcMode == 3 {
+-            let ret_val = std::fs::remove_file(Path::new(unsafe { CStr::from_ptr(outName.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap()));
++            let ret_val = std::fs::remove_file(Path::new(unsafe { CStr::from_ptr(outName.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap()));
+             if ret_val.is_err() {
+                 ioError();
+             }
+@@ -1767,8 +1767,8 @@ pub fn uncompress(name: Option<&[Char]>) {
+         } else {
+             eprintln!(
+                 "{}: {} is not a bzip2 file.",
+-                unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap(),
+-                unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const i8) }.to_str().unwrap()
++                unsafe { CStr::from_ptr(PROG_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap(),
++                unsafe { CStr::from_ptr(IN_NAME.lock().unwrap().as_ptr() as *const u8) }.to_str().unwrap()
+             );
+         }
+     }
+diff --git a/artifacts/bzip2/translate_without_break_down/src/bzip2recover.rs b/artifacts/bzip2/translate_without_break_down/src/bzip2recover.rs
+index 145595c22..3db962102 100644
+--- a/artifacts/bzip2/translate_without_break_down/src/bzip2recover.rs
++++ b/artifacts/bzip2/translate_without_break_down/src/bzip2recover.rs
+@@ -96,10 +96,10 @@ pub fn tooManyBlocks(max_handled_blocks: Int32) {
+     
+     // Convert the C-style strings to Rust strings with proper pointer casting
+     let prog_name_str = unsafe { 
+-        std::ffi::CStr::from_ptr(prog_name.as_ptr() as *const i8) 
++        std::ffi::CStr::from_ptr(prog_name.as_ptr() as *const u8) 
+     }.to_string_lossy();
+     let in_file_name_str = unsafe { 
+-        std::ffi::CStr::from_ptr(in_file_name.as_ptr() as *const i8) 
++        std::ffi::CStr::from_ptr(in_file_name.as_ptr() as *const u8) 
+     }.to_string_lossy();
+ 
+     eprintln!(
+diff --git a/artifacts/libcsv/translate_without_break_down_fix/src/test_csv.rs b/artifacts/libcsv/translate_without_break_down_fix/src/test_csv.rs
+index 119d9ad78..4419d4241 100644
+--- a/artifacts/libcsv/translate_without_break_down_fix/src/test_csv.rs
++++ b/artifacts/libcsv/translate_without_break_down_fix/src/test_csv.rs
+@@ -98,7 +98,7 @@ pub static mut event_ptr: *mut Event = std::ptr::null_mut();
+ 
+ pub unsafe fn cb2(c: i32, t: *mut std::ffi::c_void) {
+ 	println!("* cb2");
+-    let test_name = CStr::from_ptr(t as *const i8).to_str().unwrap();
++    let test_name = CStr::from_ptr(t as *const u8).to_str().unwrap();
+     
+     if (*crate::event_ptr).event_type != 2 {
+         fail_parser(Some(test_name), Some("didn't expect end of row"));
+diff --git a/artifacts/libcsv/translate_without_break_down_original/src/test_csv.rs b/artifacts/libcsv/translate_without_break_down_original/src/test_csv.rs
+index d783c5f88..0bca98724 100644
+--- a/artifacts/libcsv/translate_without_break_down_original/src/test_csv.rs
++++ b/artifacts/libcsv/translate_without_break_down_original/src/test_csv.rs
+@@ -93,7 +93,7 @@ pub fn test_writer2(
+ pub static mut event_ptr: *mut Event = std::ptr::null_mut();
+ 
+ pub unsafe fn cb2(c: i32, t: *mut std::ffi::c_void) {
+-    let test_name = CStr::from_ptr(t as *const i8).to_str().unwrap();
++    let test_name = CStr::from_ptr(t as *const u8).to_str().unwrap();
+     
+     if (*crate::event_ptr).event_type != 2 {
+         fail_parser(Some(test_name), Some("didn't expect end of row"));
+diff --git a/artifacts/libtree-3.1.1/translate_new/src/libtree.rs b/artifacts/libtree-3.1.1/translate_new/src/libtree.rs
+index 0725ed1e6..282703f6f 100644
+--- a/artifacts/libtree-3.1.1/translate_new/src/libtree.rs
++++ b/artifacts/libtree-3.1.1/translate_new/src/libtree.rs
+@@ -406,7 +406,7 @@ pub fn apply_exclude_list(needed_not_found: &mut usize, needed_buf_offsets: &mut
+ 
+         // Get the string reference safely
+         let string_ptr = s.string_table.arr.as_ref().expect("string_table.arr should be initialized").as_ptr().wrapping_add(offset);
+-        let c_str = unsafe { std::ffi::CStr::from_ptr(string_ptr as *const i8) };
++        let c_str = unsafe { std::ffi::CStr::from_ptr(string_ptr as *const u8) };
+ 
+         let str_option = c_str.to_str().ok();
+         if is_in_exclude_list(str_option) != 0 {
+diff --git a/artifacts/libtree-3.1.1/translate_new/src/super_function_unit1.rs b/artifacts/libtree-3.1.1/translate_new/src/super_function_unit1.rs
+index 2ca87b186..320171fdc 100644
+--- a/artifacts/libtree-3.1.1/translate_new/src/super_function_unit1.rs
++++ b/artifacts/libtree-3.1.1/translate_new/src/super_function_unit1.rs
+@@ -84,7 +84,7 @@ pub fn helper_parse_ld_config_file_1(
+     }
+ 
+     line[line_len] = b'\0';
+-    let line_str = unsafe { std::ffi::CStr::from_ptr(line.as_ptr() as *const i8) };
++    let line_str = unsafe { std::ffi::CStr::from_ptr(line.as_ptr() as *const u8) };
+     let mut line_str = line_str.to_str().unwrap_or("");
+ 
+     // Trim leading whitespace
+diff --git a/artifacts/libtree-3.1.1/translate_new/src/super_function_unit2.rs b/artifacts/libtree-3.1.1/translate_new/src/super_function_unit2.rs
+index ecac97629..c065b1e5e 100644
+--- a/artifacts/libtree-3.1.1/translate_new/src/super_function_unit2.rs
++++ b/artifacts/libtree-3.1.1/translate_new/src/super_function_unit2.rs
+@@ -270,8 +270,9 @@ pub fn recurse(
+             st_mtime_nsec: stat.st_mtime_nsec,
+             st_ctime: stat.st_ctime,
+             st_ctime_nsec: stat.st_ctime_nsec,
+-            __pad0: 0,
+-            __unused: [0; 3],
++            __pad1: 0,
++            __pad2: 0,
++            __unused: [0; 2],
+         };
+         visited_files_append(&mut s.visited, &raw_stat);
+     }
+@@ -363,7 +364,7 @@ pub fn recurse(
+ 
+     let in_exclude_list = soname != u64::MAX && {
+         let soname_str = unsafe {
+-            CStr::from_ptr(s.string_table.arr.as_ref().unwrap().as_ptr().add(soname_buf_offset) as *const i8)
++            CStr::from_ptr(s.string_table.arr.as_ref().unwrap().as_ptr().add(soname_buf_offset) as *const u8)
+         };
+         is_in_exclude_list(Some(soname_str.to_str().unwrap())) != 0
+     };
+@@ -378,7 +379,7 @@ pub fn recurse(
+             current_file
+         } else {
+             unsafe {
+-                CStr::from_ptr(s.string_table.arr.as_ref().unwrap().as_ptr().add(soname_buf_offset) as *const i8)
++                CStr::from_ptr(s.string_table.arr.as_ref().unwrap().as_ptr().add(soname_buf_offset) as *const u8)
+                     .to_str().unwrap()
+             }
+         };
+@@ -433,7 +434,7 @@ pub fn recurse(
+         string_table_copy_from_file(&mut s.string_table, &mut fptr);
+         let curr_buf_size = s.string_table.n;
+         if interpolate_variables(s, s.rpath_offsets[depth], unsafe {
+-            CStr::from_ptr(origin.as_ptr() as *const i8).to_str().unwrap()
++            CStr::from_ptr(origin.as_ptr() as *const u8).to_str().unwrap()
+         }) != 0
+         {
+             s.rpath_offsets[depth] = curr_buf_size;
+@@ -446,7 +447,7 @@ pub fn recurse(
+         string_table_copy_from_file(&mut s.string_table, &mut fptr);
+         let curr_buf_size = s.string_table.n;
+         if interpolate_variables(s, runpath_buf_offset, unsafe {
+-            CStr::from_ptr(origin.as_ptr() as *const i8).to_str().unwrap()
++            CStr::from_ptr(origin.as_ptr() as *const u8).to_str().unwrap()
+         }) != 0
+         {
+             runpath_buf_offset = curr_buf_size;
+@@ -471,7 +472,7 @@ pub fn recurse(
+         current_file
+     } else {
+         unsafe {
+-            CStr::from_ptr(s.string_table.arr.as_ref().unwrap().as_ptr().add(soname_buf_offset) as *const i8)
++            CStr::from_ptr(s.string_table.arr.as_ref().unwrap().as_ptr().add(soname_buf_offset) as *const u8)
+                 .to_str().unwrap()
+         }
+     };
+@@ -612,7 +613,7 @@ pub fn recurse(
+                 None
+             } else {
+                 Some(unsafe {
+-                    CStr::from_ptr(s.string_table.arr.as_ref().unwrap().as_ptr().add(runpath_buf_offset) as *const i8)
++                    CStr::from_ptr(s.string_table.arr.as_ref().unwrap().as_ptr().add(runpath_buf_offset) as *const u8)
+                         .to_str().unwrap()
+                 })
+             },
+diff --git a/artifacts/libtree-3.1.1/translate_new_fix/src/libtree.rs b/artifacts/libtree-3.1.1/translate_new_fix/src/libtree.rs
+index 74192f2c3..48a8eb9c0 100644
+--- a/artifacts/libtree-3.1.1/translate_new_fix/src/libtree.rs
++++ b/artifacts/libtree-3.1.1/translate_new_fix/src/libtree.rs
+@@ -443,7 +443,7 @@ pub fn apply_exclude_list(needed_not_found: &mut usize, needed_buf_offsets: &mut
+ 
+         // Get the string reference safely
+         let string_ptr = s.string_table.arr.as_ref().expect("string_table.arr should be initialized").as_ptr().wrapping_add(offset);
+-        let c_str = unsafe { std::ffi::CStr::from_ptr(string_ptr as *const i8) };
++        let c_str = unsafe { std::ffi::CStr::from_ptr(string_ptr as *const u8) };
+ 
+         let str_option = c_str.to_str().ok();
+         if is_in_exclude_list(str_option) != 0 {
+diff --git a/artifacts/libtree-3.1.1/translate_new_fix/src/super_function_unit1.rs b/artifacts/libtree-3.1.1/translate_new_fix/src/super_function_unit1.rs
+index 165f42de0..625a5b7df 100644
+--- a/artifacts/libtree-3.1.1/translate_new_fix/src/super_function_unit1.rs
++++ b/artifacts/libtree-3.1.1/translate_new_fix/src/super_function_unit1.rs
+@@ -94,7 +94,7 @@ pub fn helper_parse_ld_config_file_1(
+     }
+ 
+     line[line_len] = b'\0';
+-    let line_str = unsafe { std::ffi::CStr::from_ptr(line.as_ptr() as *const i8) };
++    let line_str = unsafe { std::ffi::CStr::from_ptr(line.as_ptr() as *const u8) };
+     let mut line_str = line_str.to_str().unwrap_or("");
+ 
+     // Trim leading whitespace
+diff --git a/artifacts/libtree-3.1.1/translate_new_fix/src/super_function_unit2.rs b/artifacts/libtree-3.1.1/translate_new_fix/src/super_function_unit2.rs
+index e9ed93419..4ba04fee6 100644
+--- a/artifacts/libtree-3.1.1/translate_new_fix/src/super_function_unit2.rs
++++ b/artifacts/libtree-3.1.1/translate_new_fix/src/super_function_unit2.rs
+@@ -272,8 +272,9 @@ pub fn recurse(
+             st_mtime_nsec: stat.st_mtime_nsec,
+             st_ctime: stat.st_ctime,
+             st_ctime_nsec: stat.st_ctime_nsec,
+-            __pad0: 0,
+-            __unused: [0; 3],
++            __pad1: 0,
++            __pad2: 0,
++            __unused: [0; 2],
+         };
+         visited_files_append(&mut s.visited, &raw_stat);
+     }
+@@ -365,7 +366,7 @@ pub fn recurse(
+ 
+     let in_exclude_list = soname != u64::MAX && {
+         let soname_str = unsafe {
+-            CStr::from_ptr(s.string_table.arr.as_ref().unwrap().as_ptr().add(soname_buf_offset) as *const i8)
++            CStr::from_ptr(s.string_table.arr.as_ref().unwrap().as_ptr().add(soname_buf_offset) as *const u8)
+         };
+         is_in_exclude_list(Some(soname_str.to_str().unwrap())) != 0
+     };
+@@ -380,7 +381,7 @@ pub fn recurse(
+             current_file
+         } else {
+             unsafe {
+-                CStr::from_ptr(s.string_table.arr.as_ref().unwrap().as_ptr().add(soname_buf_offset) as *const i8)
++                CStr::from_ptr(s.string_table.arr.as_ref().unwrap().as_ptr().add(soname_buf_offset) as *const u8)
+                     .to_str().unwrap()
+             }
+         };
+@@ -435,7 +436,7 @@ pub fn recurse(
+         string_table_copy_from_file(&mut s.string_table, &mut fptr);
+         let curr_buf_size = s.string_table.n;
+         if interpolate_variables(s, s.rpath_offsets[depth], unsafe {
+-            CStr::from_ptr(origin.as_ptr() as *const i8).to_str().unwrap()
++            CStr::from_ptr(origin.as_ptr() as *const u8).to_str().unwrap()
+         }) != 0
+         {
+             s.rpath_offsets[depth] = curr_buf_size;
+@@ -448,7 +449,7 @@ pub fn recurse(
+         string_table_copy_from_file(&mut s.string_table, &mut fptr);
+         let curr_buf_size = s.string_table.n;
+         if interpolate_variables(s, runpath_buf_offset, unsafe {
+-            CStr::from_ptr(origin.as_ptr() as *const i8).to_str().unwrap()
++            CStr::from_ptr(origin.as_ptr() as *const u8).to_str().unwrap()
+         }) != 0
+         {
+             runpath_buf_offset = curr_buf_size;
+@@ -473,7 +474,7 @@ pub fn recurse(
+         current_file
+     } else {
+         unsafe {
+-            CStr::from_ptr(s.string_table.arr.as_ref().unwrap().as_ptr().add(soname_buf_offset) as *const i8)
++            CStr::from_ptr(s.string_table.arr.as_ref().unwrap().as_ptr().add(soname_buf_offset) as *const u8)
+                 .to_str().unwrap()
+         }
+     };
+@@ -614,7 +615,7 @@ pub fn recurse(
+                 None
+             } else {
+                 Some(unsafe {
+-                    CStr::from_ptr(s.string_table.arr.as_ref().unwrap().as_ptr().add(runpath_buf_offset) as *const i8)
++                    CStr::from_ptr(s.string_table.arr.as_ref().unwrap().as_ptr().add(runpath_buf_offset) as *const u8)
+                         .to_str().unwrap()
+                 })
+             },
+diff --git a/artifacts/lodepng/translate/src/lodepng.rs b/artifacts/lodepng/translate/src/lodepng.rs
+index f1c20f97f..5d2575279 100644
+--- a/artifacts/lodepng/translate/src/lodepng.rs
++++ b/artifacts/lodepng/translate/src/lodepng.rs
+@@ -2124,7 +2124,7 @@ pub fn helper_readChunk_zTXt_1(
+                         error = 112;
+                     }
+                     if error == 0 {
+-                        let key_cstr = unsafe { CStr::from_ptr(key.as_ptr() as *const i8) };
++                        let key_cstr = unsafe { CStr::from_ptr(key.as_ptr() as *const u8) };
+                         error = lodepng_add_text_sized(
+                             info,
+                             Some(key_cstr),
+@@ -2557,9 +2557,9 @@ pub fn helper_readChunk_iTXt_1(
+             error = 112;
+         }
+         if error == 0 {
+-            let key_cstr = unsafe { CStr::from_ptr(key.as_ptr() as *const i8) };
+-            let langtag_cstr = unsafe { CStr::from_ptr(langtag.as_ptr() as *const i8) };
+-            let transkey_cstr = unsafe { CStr::from_ptr(transkey.as_ptr() as *const i8) };
++            let key_cstr = unsafe { CStr::from_ptr(key.as_ptr() as *const u8) };
++            let langtag_cstr = unsafe { CStr::from_ptr(langtag.as_ptr() as *const u8) };
++            let transkey_cstr = unsafe { CStr::from_ptr(transkey.as_ptr() as *const u8) };
+             error = lodepng_add_itext_sized(
+                 info,
+                 Some(key_cstr),
+@@ -2573,9 +2573,9 @@ pub fn helper_readChunk_iTXt_1(
+             lodepng_free(Some(s.as_ptr() as *mut std::ffi::c_void));
+         }
+     } else {
+-        let key_cstr = unsafe { CStr::from_ptr(key.as_ptr() as *const i8) };
+-        let langtag_cstr = unsafe { CStr::from_ptr(langtag.as_ptr() as *const i8) };
+-        let transkey_cstr = unsafe { CStr::from_ptr(transkey.as_ptr() as *const i8) };
++        let key_cstr = unsafe { CStr::from_ptr(key.as_ptr() as *const u8) };
++        let langtag_cstr = unsafe { CStr::from_ptr(langtag.as_ptr() as *const u8) };
++        let transkey_cstr = unsafe { CStr::from_ptr(transkey.as_ptr() as *const u8) };
+         error = lodepng_add_itext_sized(
+             info,
+             Some(key_cstr),
+diff --git a/artifacts/lodepng/translate_with_test/src/test.rs b/artifacts/lodepng/translate_with_test/src/test.rs
+index e436537ba..d7bc47e65 100644
+--- a/artifacts/lodepng/translate_with_test/src/test.rs
++++ b/artifacts/lodepng/translate_with_test/src/test.rs
+@@ -5727,7 +5727,7 @@ pub fn extractChunkNames(png: &[u8], png_size: usize) -> Option<String> {
+         lodepng_chunk_type(&mut name, &chunk[chunk_idx..]);
+         
+         // Convert name to a string slice, ensuring it's null-terminated
+-        let name_str = unsafe { CStr::from_ptr(name.as_ptr() as *const i8) }
++        let name_str = unsafe { CStr::from_ptr(name.as_ptr() as *const u8) }
+             .to_str()
+             .unwrap_or("");
+         
+diff --git a/artifacts/snudown/translate/src/snudown.rs b/artifacts/snudown/translate/src/snudown.rs
+index ff5aaa8a8..227c0c80d 100644
+--- a/artifacts/snudown/translate/src/snudown.rs
++++ b/artifacts/snudown/translate/src/snudown.rs
+@@ -432,8 +432,8 @@ pub fn initsnudown() -> Option<PyObject> {
+     // Create PyModuleDef structure
+     let module_def = pyo3::ffi::PyModuleDef {
+         m_base: pyo3::ffi::PyModuleDef_HEAD_INIT,
+-        m_name: "snudown\0".as_ptr() as *const i8,
+-        m_doc: SNUDOWN_MODULE__DOC__.as_ptr() as *const i8,
++        m_name: "snudown\0".as_ptr() as *const u8,
++        m_doc: SNUDOWN_MODULE__DOC__.as_ptr() as *const u8,
+         m_size: 0,
+         m_methods: SNUDOWN_METHODS.lock().unwrap().as_ptr() as *mut _,
+         m_slots: std::ptr::null_mut(),
+@@ -459,8 +459,8 @@ pub fn initsnudown() -> Option<PyObject> {
+     unsafe {
+         pyo3::ffi::PyModule_AddStringConstant(
+             module.as_ptr(),
+-            "__version__\0".as_ptr() as *const i8,
+-            "1.7.0\0".as_ptr() as *const i8,
++            "__version__\0".as_ptr() as *const u8,
++            "1.7.0\0".as_ptr() as *const u8,
+         );
+     }
+     Some(module)
+diff --git a/artifacts/tulipindicators/translate/src/benchmark.rs b/artifacts/tulipindicators/translate/src/benchmark.rs
+index a88bfc5d6..904b7d5fa 100644
+--- a/artifacts/tulipindicators/translate/src/benchmark.rs
++++ b/artifacts/tulipindicators/translate/src/benchmark.rs
+@@ -623,8 +623,8 @@ pub fn run_ti_stream1(info: &mut TiIndicatorInfo, options: &[f64], goal: i32) ->
+         OUTSTREAM1.lock().unwrap()[0].as_ptr(),
+         OUTSTREAM1.lock().unwrap()[1].as_ptr(),
+         OUTSTREAM1.lock().unwrap()[2].as_ptr(),
+-        OUTSTREAM1.lock().unwrap()[3].as_ptr(),
+-        OUTSTREAM1.lock().unwrap()[4].as_ptr(),
++        //OUTSTREAM1.lock().unwrap()[3].as_ptr(),
++        //OUTSTREAM1.lock().unwrap()[4].as_ptr(),
+     ];
+ 
+     match goal {
+diff --git a/artifacts/xzoom/translate/src/xzoom.rs b/artifacts/xzoom/translate/src/xzoom.rs
+index 3a38b2d11..2f570b43b 100644
+--- a/artifacts/xzoom/translate/src/xzoom.rs
++++ b/artifacts/xzoom/translate/src/xzoom.rs
+@@ -338,7 +338,7 @@ pub fn helper_main_1(
+             Usage();
+         }
+ 
+-        let arg = CStr::from_ptr(*argv as *const i8).to_string_lossy();
++        let arg = CStr::from_ptr(*argv as *const u8).to_string_lossy();
+ 
+         if arg.starts_with('=') {
+             // Note: XParseGeometry would need FFI or replacement
+@@ -359,7 +359,7 @@ pub fn helper_main_1(
+                 Usage();
+             }
+             
+-            let mag_str = CStr::from_ptr(*argv as *const i8).to_string_lossy();
++            let mag_str = CStr::from_ptr(*argv as *const u8).to_string_lossy();
+             let magx_val = i32::from_str(&mag_str).unwrap_or(-1);
+             if magx_val <= 0 {
+                 Usage();
+@@ -371,7 +371,7 @@ pub fn helper_main_1(
+             }
+             
+             if argc > 1 {
+-                let mag_str = CStr::from_ptr(*argv.offset(1) as *const i8).to_string_lossy();
++                let mag_str = CStr::from_ptr(*argv.offset(1) as *const u8).to_string_lossy();
+                 let magy_val = i32::from_str(&mag_str).unwrap_or(-1);
+                 if magy_val <= 0 {
+                     {
+@@ -452,7 +452,7 @@ pub fn helper_main_1(
+             if argc < 1 {
+                 Usage();
+             }
+-            let delay_str = CStr::from_ptr(*argv as *const i8).to_string_lossy();
++            let delay_str = CStr::from_ptr(*argv as *const u8).to_string_lossy();
+             let delay_val = u32::from_str(&delay_str).unwrap_or_else(|_| {
+                 Usage();
+                 0

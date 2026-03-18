@@ -1,0 +1,159 @@
+{
+  "C": {
+    "blanks": 70,
+    "children": {},
+    "code": 365,
+    "comments": 8,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/quadtree-0.1.0/src/point.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 14,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/quadtree-0.1.0/src/quadtree.c",
+        "stats": {
+          "blanks": 25,
+          "blobs": {},
+          "code": 139,
+          "comments": 5
+        }
+      },
+      {
+        "name": "subjects/quadtree-0.1.0/test.c",
+        "stats": {
+          "blanks": 23,
+          "blobs": {},
+          "code": 83,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/quadtree-0.1.0/src/bounds.c",
+        "stats": {
+          "blanks": 4,
+          "blobs": {},
+          "code": 27,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/quadtree-0.1.0/src/node.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 59,
+          "comments": 3
+        }
+      },
+      {
+        "name": "subjects/quadtree-0.1.0/benchmark.c",
+        "stats": {
+          "blanks": 6,
+          "blobs": {},
+          "code": 43,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 30,
+    "children": {},
+    "code": 72,
+    "comments": 0,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/quadtree-0.1.0/src/quadtree.h",
+        "stats": {
+          "blanks": 30,
+          "blobs": {},
+          "code": 72,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 100,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/quadtree-0.1.0/src/point.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 14,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/quadtree-0.1.0/src/quadtree.c",
+          "stats": {
+            "blanks": 25,
+            "blobs": {},
+            "code": 139,
+            "comments": 5
+          }
+        },
+        {
+          "name": "subjects/quadtree-0.1.0/test.c",
+          "stats": {
+            "blanks": 23,
+            "blobs": {},
+            "code": 83,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/quadtree-0.1.0/src/bounds.c",
+          "stats": {
+            "blanks": 4,
+            "blobs": {},
+            "code": 27,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/quadtree-0.1.0/src/node.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 59,
+            "comments": 3
+          }
+        },
+        {
+          "name": "subjects/quadtree-0.1.0/benchmark.c",
+          "stats": {
+            "blanks": 6,
+            "blobs": {},
+            "code": 43,
+            "comments": 0
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/quadtree-0.1.0/src/quadtree.h",
+          "stats": {
+            "blanks": 30,
+            "blobs": {},
+            "code": 72,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 437,
+    "comments": 8,
+    "inaccurate": false,
+    "reports": []
+  }
+}

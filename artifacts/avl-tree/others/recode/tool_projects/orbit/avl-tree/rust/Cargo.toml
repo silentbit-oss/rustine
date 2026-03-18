@@ -1,0 +1,33 @@
+[package]
+name = "avl-tree"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["min"]
+min = []
+
+[lib]
+name = "avl_tree"
+path = "src/lib.rs"
+
+[[bin]]
+name = "avl_example"
+path = "src/bin/avl_example.rs"
+
+[[bin]]
+name = "avl_test"
+path = "src/bin/avl_test.rs"
+
+[[bin]]
+name = "avl_bf_test_generated"
+path = "src/bin/avl_bf_test_generated.rs"
+
+[[bin]]
+name = "avl_data_test_generated"
+path = "src/bin/avl_data_test_generated.rs"
+
+[dependencies]
+rand = "0.8"
+
+[dev-dependencies]

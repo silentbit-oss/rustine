@@ -1,0 +1,131 @@
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::mem::size_of`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::os::raw::c_int`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: variant `LD_LIBRARY_PATH` should have an upper camel case name
+warning: variant `LD_SO_CONF` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `std::fs::File`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::mem::MaybeUninit`
+warning: unused import: `crate::*`
+warning: ambiguous glob re-exports
+warning: ambiguous glob re-exports
+warning: unused import: `globals::*`
+warning: unused import: `libc::FILE`
+warning: unused import: `std::env`
+warning: unused import: `std::ptr`
+warning: unused import: `std::alloc::Layout`
+warning: unused import: `std::alloc::alloc`
+warning: unused import: `std::os::linux::raw::dev_t`
+warning: unused import: `std::os::linux::raw::ino_t`
+warning: unused import: `std::os::raw::c_longlong`
+warning: unused import: `std::os::raw::c_ulonglong`
+warning: unused import: `std::mem::ManuallyDrop`
+warning: unnecessary parentheses around index expression
+warning: consider removing unnecessary double parentheses
+warning: unnecessary parentheses around method argument
+warning: unused import: `std::fs::File`
+warning: unused import: `std::os::linux::raw::dev_t`
+warning: unused import: `std::os::linux::raw::ino_t`
+warning: unused import: `std::fs::File`
+warning: unused import: `std::os::linux::raw::dev_t`
+warning: unused import: `std::os::linux::raw::ino_t`
+warning: unused import: `std::ptr::copy_nonoverlapping`
+warning: unused import: `std::path::Path`
+warning: unused import: `std::os::raw`
+warning: unused import: `std::os::linux::raw::stat`
+warning: unused import: `std::ptr`
+warning: unused import: `std::ffi::CStr`
+warning: unused import: `glob::GlobError`
+warning: unused import: `glob::PatternError`
+warning: unused import: `std::path::Path`
+warning: unused import: `std::os::raw::c_char`
+warning: use of deprecated type alias `std::os::unix::raw::dev_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated type alias `std::os::unix::raw::ino_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated type alias `std::os::unix::raw::dev_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated type alias `std::os::unix::raw::ino_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated type alias `std::os::unix::raw::dev_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated type alias `std::os::unix::raw::ino_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated struct `std::os::linux::raw::stat`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated type alias `std::os::unix::raw::dev_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated type alias `std::os::unix::raw::ino_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated type alias `std::os::unix::raw::dev_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated type alias `std::os::unix::raw::ino_t`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated struct `std::os::linux::raw::stat`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated struct `std::os::linux::raw::stat`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::st_dev`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated field `std::os::linux::raw::stat::st_ino`: these type aliases are no longer supported by the standard library, the `libc` crate on crates.io should be used instead for the correct definitions
+warning: use of deprecated method `std::os::linux::fs::MetadataExt::as_raw_stat`: other methods of this trait are now preferred
+warning: unused import: `std::os::unix::ffi::OsStrExt`
+warning: unused variable: `pt_load_offset`
+warning: unused variable: `pt_load_vaddr`
+warning: unused variable: `prev_src_before`
+warning: unused variable: `curr_src_before`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable `line` is assigned to, but never used
+warning: value assigned to `line` is never read
+warning: value assigned to `c` is never read
+warning: trait `AsMutBytes` is never used
+warning: this looks like you are swapping elements of `str_slice` manually
+warning: match can be simplified with `.unwrap_or_default()`
+warning: variables can be used directly in the `format!` string
+warning: this function has too many arguments (10/7)
+warning: variables can be used directly in the `format!` string
+warning: the loop variable `i` is only used to index `arr`
+warning: this function has too many arguments (11/7)
+warning: casting to the same type is unnecessary (`u64` -> `u64`)
+warning: variables can be used directly in the `format!` string
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: using `write!()` with a format string that ends in a single newline
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: variables can be used directly in the `format!` string
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: use of `write!(stdout(), ...).unwrap()`
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: unsafe function's docs are missing a `# Safety` section
+warning: this function has too many arguments (9/7)
+warning: this `map_or` can be simplified
+warning: variables can be used directly in the `format!` string
+warning: this function has too many arguments (12/7)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: this function has too many arguments (11/7)
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: using `contains()` instead of `iter().any()` is more efficient
+warning: this boolean expression can be simplified
+warning: this boolean expression can be simplified
+warning: this `else { if .. }` block can be collapsed
+warning: transmute used without annotations
+warning: transmute used without annotations
+warning: this `map_or` can be simplified
+warning: redundant pattern matching, consider using `is_err()`
+warning: calling .bytes() is very inefficient when data is not in memory
+warning: variable `ORIGIN` should have a snake case name
+warning: variable `ORIGIN` should have a snake case name
+warning: unused `std::result::Result` that must be used
+warning: structure field `PLATFORM` should have a snake case name
+warning: structure field `LIB` should have a snake case name
+warning: structure field `OSNAME` should have a snake case name
+warning: structure field `OSREL` should have a snake case name

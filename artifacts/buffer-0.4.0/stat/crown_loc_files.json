@@ -1,0 +1,94 @@
+{
+  "Rust": {
+    "blanks": 25,
+    "children": {},
+    "code": 948,
+    "comments": 94,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/buffer-0.4.0/others/crown/lib.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 18,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/buffer-0.4.0/others/crown/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/buffer-0.4.0/others/crown/src/buffer.rs",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 335,
+          "comments": 33
+        }
+      },
+      {
+        "name": "artifacts/buffer-0.4.0/others/crown/src/test.rs",
+        "stats": {
+          "blanks": 20,
+          "blobs": {},
+          "code": 589,
+          "comments": 57
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 25,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/buffer-0.4.0/others/crown/lib.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 18,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/buffer-0.4.0/others/crown/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/buffer-0.4.0/others/crown/src/buffer.rs",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 335,
+            "comments": 33
+          }
+        },
+        {
+          "name": "artifacts/buffer-0.4.0/others/crown/src/test.rs",
+          "stats": {
+            "blanks": 20,
+            "blobs": {},
+            "code": 589,
+            "comments": 57
+          }
+        }
+      ]
+    },
+    "code": 948,
+    "comments": 94,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,455 @@
+warning: unused import: `crate::*`
+warning: type `int64` should have an upper camel case name
+warning: type `uint64` should have an upper camel case name
+warning: type `u16` should have an upper camel case name
+warning: type `u32` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: type `Binn_Mem_Free` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: type `Binn_Iter_Struct` should have an upper camel case name
+warning: type `Binn_Iter` should have an upper camel case name
+warning: type `Binn_Struct` should have an upper camel case name
+warning: unused import: `std::mem`
+warning: unused import: `std::cmp::Ordering`
+warning: unused import: `std::sync::atomic::Ordering`
+warning: type `vuint16` should have an upper camel case name
+warning: type `vuint8` should have an upper camel case name
+warning: unused import: `std::slice`
+warning: unused import: `std::ffi::CString`
+warning: unused import: `std::mem`
+warning: unused import: `lazy_static::lazy_static`
+warning: unused import: `std::sync::atomic::AtomicI32`
+warning: unused import: `std::sync::Mutex`
+warning: unused variable: `dest_type`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `p_idx` is never read
+warning: value assigned to `p_idx` is never read
+warning: value assigned to `p_idx` is never read
+warning: value assigned to `DataSize` is never read
+warning: value assigned to `DataSize` is never read
+warning: value assigned to `item` is never read
+warning: unused variable: `item_idx`
+warning: unused variable: `extra_bytes`
+warning: unused variable: `ptr_idx`
+warning: unused variable: `size`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unnecessary `unsafe` block
+warning: variable does not need to be mutable
+warning: value assigned to `value` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `type2` is never read
+warning: value assigned to `type2` is never read
+warning: value assigned to `type2` is never read
+warning: value assigned to `pvalue_idx` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `plimit_idx`
+warning: unused variable: `base`
+warning: variable `ptr_idx` is assigned to, but never used
+warning: value assigned to `ptr_idx` is never read
+warning: unused variable: `item_idx`
+warning: unused variable: `item_idx`
+warning: unnecessary `unsafe` block
+warning: unused variable: `value`
+warning: unused variable: `value`
+warning: unused variable: `v`
+warning: unused variable: `ptr_idx`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `pv`
+warning: unnecessary transmute
+warning: value assigned to `d1` is never read
+warning: value assigned to `f1` is never read
+warning: variable does not need to be mutable
+warning: value assigned to `list` is never read
+warning: value assigned to `map` is never read
+warning: value assigned to `obj` is never read
+warning: unused variable: `value`
+warning: unused variable: `vbool`
+warning: unused variable: `vint32`
+warning: unused variable: `vdouble`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `i`
+warning: unused variable: `id`
+warning: unused variable: `type_`
+warning: unused variable: `count`
+warning: unused variable: `size`
+warning: unused variable: `header_size`
+warning: unused variable: `blobsize`
+warning: unused variable: `ptr_idx`
+warning: unused variable: `p2`
+warning: unused variable: `p2_idx`
+warning: unused variable: `pstr`
+warning: unused variable: `pstr_idx`
+warning: unused variable: `key`
+warning: unused variable: `list_idx`
+warning: unused variable: `map_idx`
+warning: unused variable: `obj_idx`
+warning: unused variable: `obj1_idx`
+warning: unused variable: `value`
+warning: unused variable: `vbyte`
+warning: unused variable: `pblob`
+warning: unused variable: `pblob_idx`
+warning: unused variable: `vint16`
+warning: unused variable: `pint16`
+warning: unused variable: `pint16_idx`
+warning: unused variable: `vuint16`
+warning: unused variable: `puint16`
+warning: unused variable: `puint16_idx`
+warning: unused variable: `vint32`
+warning: unused variable: `pint32`
+warning: unused variable: `pint32_idx`
+warning: unused variable: `vuint32`
+warning: unused variable: `puint32`
+warning: unused variable: `puint32_idx`
+warning: unused variable: `pint64`
+warning: unused variable: `pint64_idx`
+warning: unused variable: `vuint64`
+warning: unused variable: `puint64`
+warning: unused variable: `puint64_idx`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `i`
+warning: unused variable: `blobsize`
+warning: value assigned to `ptr` is never read
+warning: variable `ptr_idx` is assigned to, but never used
+warning: unused variable: `p2`
+warning: unused variable: `p2_idx`
+warning: value assigned to `obj1` is never read
+warning: unused variable: `obj1_idx`
+warning: value assigned to `list` is never read
+warning: unused variable: `list_idx`
+warning: value assigned to `map` is never read
+warning: unused variable: `map_idx`
+warning: value assigned to `obj` is never read
+warning: unused variable: `obj_idx`
+warning: unused variable: `value`
+warning: unused variable: `vbyte`
+warning: unused variable: `pblob`
+warning: unused variable: `pblob_idx`
+warning: unused variable: `vint16`
+warning: unused variable: `vuint16`
+warning: unused variable: `vint32`
+warning: unused variable: `vuint32`
+warning: value assigned to `ptr_idx` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `list` is never read
+warning: value assigned to `ptr` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `obj_idx`
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable `list_idx` is assigned to, but never used
+warning: variable `map_idx` is assigned to, but never used
+warning: variable `obj_idx` is assigned to, but never used
+warning: variable `list2_idx` is assigned to, but never used
+warning: unused variable: `copy`
+warning: unused variable: `copy_idx`
+warning: unused variable: `iter2`
+warning: unused variable: `value`
+warning: unused variable: `value2`
+warning: value assigned to `blob_size` is never read
+warning: unused variable: `id`
+warning: unused variable: `id2`
+warning: variable `list2size` is assigned to, but never used
+warning: value assigned to `ptr` is never read
+warning: variable `ptr_idx` is assigned to, but never used
+warning: variable `blob_ptr_idx` is assigned to, but never used
+warning: unused variable: `key`
+warning: unused variable: `key2`
+warning: value assigned to `blob_ptr_idx` is never read
+warning: value assigned to `list_idx` is never read
+warning: value assigned to `list2_idx` is never read
+warning: value assigned to `map_idx` is never read
+warning: value assigned to `obj_idx` is never read
+warning: value assigned to `list2size` is never read
+warning: value assigned to `ptr_idx` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: variable does not need to be mutable
+warning: unused variable: `obj_idx`
+warning: unused variable: `list_idx`
+warning: variable does not need to be mutable
+warning: unneeded `return` statement
+warning: manual `!RangeInclusive::contains` implementation
+warning: this OR pattern can be rewritten using a range
+warning: this OR pattern can be rewritten using a range
+warning: this OR pattern can be rewritten using a range
+warning: length comparison to one
+warning: length comparison to one
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: manual implementation of `Option::map`
+warning: this block may be rewritten with the `?` operator
+warning: length comparison to one
+warning: length comparison to one
+warning: length comparison to one
+warning: length comparison to one
+warning: this OR pattern can be rewritten using a range
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: this public function might dereference a raw pointer but is not marked `unsafe`
+warning: needlessly taken reference of both operands
+warning: the following explicit lifetimes could be elided: 'a
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: passing a unit value to a function
+warning: length comparison to one
+warning: equality checks against false can be replaced by a negation
+warning: manual case-insensitive ASCII comparison
+warning: this OR pattern can be rewritten using a range
+warning: this OR pattern can be rewritten using a range
+warning: called `.as_mut().map(|v| v.as_mut_slice())` on an `Option` value
+warning: called `.as_mut().map(|v| &mut **v)` on an `Option` value
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut ()` -> `*mut ()`)
+warning: this function has too many arguments (13/7)
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: the following explicit lifetimes could be elided: 'a
+warning: passing a unit value to a function
+warning: the following explicit lifetimes could be elided: 'a
+warning: passing a unit value to a function
+warning: passing a unit value to a function
+warning: passing a unit value to a function
+warning: this block may be rewritten with the `?` operator
+warning: this block may be rewritten with the `?` operator
+warning: this block may be rewritten with the `?` operator
+warning: this `match` expression can be replaced with `?`
+warning: this `match` expression can be replaced with `?`
+warning: passing a unit value to a function
+warning: passing a unit value to a function
+warning: variables can be used directly in the `format!` string
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: passing a unit value to a function
+warning: transmute used without annotations
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: usage of a legacy numeric constant
+warning: usage of a legacy numeric constant
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: variables can be used directly in the `format!` string
+warning: redundant closure
+warning: redundant closure
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: the loop variable `i` is used to index `buffers`
+warning: variables can be used directly in the `format!` string
+warning: manual implementation of `Option::map`
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut u8` -> `*mut u8`)
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: using `Option.and_then(|x| Some(y))`, which is more succinctly expressed as `map(|x| y)`
+warning: variables can be used directly in the `format!` string
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|x| &mut **x)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: variables can be used directly in the `format!` string
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: variables can be used directly in the `format!` string
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: called `.as_mut().map(|b| &mut **b)` on an `Option` value
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: variables can be used directly in the `format!` string
+warning: using `clone` on type `[u8; 10]` which implements the `Copy` trait
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: variables can be used directly in the `format!` string
+warning: function `CalcAllocation` should have a snake case name
+warning: function `GetWriteConvertedData` should have a snake case name
+warning: function pointer comparisons do not produce meaningful results since their addresses are not guaranteed to be unique
+warning: function pointer comparisons do not produce meaningful results since their addresses are not guaranteed to be unique
+warning: function `IsValidBinnHeader` should have a snake case name
+warning: function `GetValue` should have a snake case name
+warning: variable `DataSize` should have a snake case name
+warning: function `helper_AdvanceDataPos_1` should have a snake case name
+warning: variable `DataSize_ref` should have a snake case name
+warning: variable `DataSize` should have a snake case name
+warning: function `helper_AdvanceDataPos_2` should have a snake case name
+warning: variable `DataSize_ref` should have a snake case name
+warning: variable `DataSize` should have a snake case name
+warning: function `AdvanceDataPos` should have a snake case name
+warning: variable `DataSize` should have a snake case name
+warning: function `SearchForID` should have a snake case name
+warning: function `SearchForKey` should have a snake case name
+warning: function `CheckAllocation` should have a snake case name
+warning: function `helper_AddValue_1` should have a snake case name
+warning: function `AddValue` should have a snake case name
+warning: variable `ArgSize` should have a snake case name
+warning: creating a shared reference to mutable static
+warning: static variable `vint64` should have an upper case name
+warning: static variable `local_value` should have an upper case name
+warning: function `AlmostEqualFloats` should have a snake case name
+warning: variable `A` should have a snake case name
+warning: variable `B` should have a snake case name
+warning: variable `maxUlps` should have a snake case name
+warning: variable `aInt` should have a snake case name
+warning: variable `bInt` should have a snake case name
+warning: variable `aInt` should have a snake case name
+warning: variable `bInt` should have a snake case name
+warning: variable `intDiff` should have a snake case name
+warning: function `AlmostEqualDoubles` should have a snake case name
+warning: variable `absDiff` should have a snake case name
+warning: variable `absA` should have a snake case name
+warning: variable `absB` should have a snake case name
+warning: variable `maxAbs` should have a snake case name
+warning: constant `fix_size` should have an upper case name
+warning: creating a shared reference to mutable static
+warning: creating a shared reference to mutable static

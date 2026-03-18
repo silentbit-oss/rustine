@@ -1,0 +1,18 @@
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: value assigned to `r` is never read
+warning: value assigned to `g` is never read
+warning: value assigned to `b` is never read
+warning: unnecessary `unsafe` block
+warning: unnecessary `unsafe` block
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: manual `RangeInclusive::contains` implementation
+warning: this public function might dereference a raw pointer but is not marked `unsafe`

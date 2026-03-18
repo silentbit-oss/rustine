@@ -1,0 +1,1946 @@
+{
+    "special_type": [
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "typedef struct url_data\n{\n  char *whole_url;\n  const char *protocol;\n  const char *userinfo;\n  const char *host;\n  const char *port;\n  const char *path;\n  const struct url_key_value *query;\n  const char *fragment;\n} url_data_t",
+            "name": "url_data_t",
+            "names": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "whole_url",
+                        "type": "char *",
+                        "definition": [
+                            "char *whole_url"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "protocol",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *protocol"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "userinfo",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *userinfo"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "host",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *host"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "port",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *port"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "path",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *path"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "struct url_key_value",
+                        "type": "const struct url_key_value *",
+                        "definition": [
+                            "const struct url_key_value *query"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "fragment",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *fragment"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Enum'>",
+            "definition": "enum Category\n{\n  Scheme = 0x01,\n  Unreserved = 0x02,\n  GenDelim = 0x04,\n  SubDelim = 0x08,\n  PCharSlash = 0x10,\n  HexDigit = 0x20,\n  Query = 0x40,\n  Fragment = 0x40,\n  Userinfo = 0x80,\n  IPv6Char = 0x100\n}",
+            "name": "Category",
+            "names": []
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "struct url_key_value\n{\n  const char *key;\n  const char *value;\n}",
+            "name": "url_key_value",
+            "names": [
+                "struct url_key_value"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "value",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *value"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        }
+    ],
+    "global_variable": [
+        {
+            "path": null,
+            "name": "char_cat",
+            "type": "const unsigned short [256]",
+            "definition": [
+                "static const unsigned short char_cat[256] = {0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x0d8, 0x000, 0x004, 0x0d8, 0x0d0, 0x0d8, 0x0d8, 0x0d8, 0x0d8, 0x0d8, 0x0d9, 0x0d8, 0x0d3, 0x0d3, 0x054, 0x1ff, 0x1ff, 0x1ff, 0x1ff, 0x1ff, 0x1ff, 0x1ff, 0x1ff, 0x1ff, 0x1ff, 0x1d4, 0x0d8, 0x000, 0x0d8, 0x000, 0x044, 0x054, 0x1ff, 0x1ff, 0x1ff, 0x1ff, 0x1ff, 0x1ff, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x004, 0x000, 0x004, 0x000, 0x0d2, 0x000, 0x1ff, 0x1ff, 0x1ff, 0x1ff, 0x1ff, 0x1ff, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x0df, 0x000, 0x000, 0x000, 0x0d2, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000, 0x000}"
+            ]
+        },
+        {
+            "path": null,
+            "name": "alnum",
+            "type": "const char * const",
+            "definition": [
+                "const char * const alnum = \"0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\""
+            ]
+        },
+        {
+            "path": null,
+            "name": "unreserved",
+            "type": "const char * const",
+            "definition": [
+                "const char * const unreserved = \"-._~\""
+            ]
+        },
+        {
+            "path": null,
+            "name": "subdelim",
+            "type": "const char * const",
+            "definition": [
+                "const char * const subdelim = \"!$&'()*+,;=\""
+            ]
+        },
+        {
+            "path": null,
+            "name": "URL_SCHEMES",
+            "type": "const char *[]",
+            "definition": [
+                "static const char *URL_SCHEMES[] = {\"aaa\", \"aaas\", \"about\", \"acap\", \"acct\", \"adiumxtra\", \"afp\", \"afs\", \"aim\", \"apt\", \"attachment\", \"aw\", \"beshare\", \"bitcoin\", \"bolo\", \"callto\", \"cap\", \"chrome\", \"crome-extension\", \"com-evenbrite-attendee\", \"cid\", \"coap\", \"coaps\", \"content\", \"crid\", \"cvs\", \"data\", \"dav\", \"dict\", \"lna-playsingle\", \"dln-playcontainer\", \"dns\", \"dtn\", \"dvb\", \"ed2k\", \"facetime\", \"fax\", \"feed\", \"file\", \"finger\", \"fish\", \"ftp\", \"geo\", \"gg\", \"git\", \"gizmoproject\", \"go\", \"gopher\", \"gtalk\", \"h323\", \"hcp\", \"http\", \"https\", \"iax\", \"icap\", \"icon\", \"im\", \"imap\", \"info\", \"ipn\", \"ipp\", \"irc\", \"irc6\", \"ircs\", \"iris\", \"iris.beep\", \"iris.xpc\", \"iris.xpcs\", \"iris.lws\", \"itms\", \"jabber\", \"jar\", \"jms\", \"keyparc\", \"lastfm\", \"ldap\", \"ldaps\", \"magnet\", \"mailserver\", \"mailto\", \"maps\", \"market\", \"message\", \"mid\", \"mms\", \"modem\", \"ms-help\", \"mssettings-power\", \"msnim\", \"msrp\", \"msrps\", \"mtqp\", \"mumble\", \"mupdate\", \"mvn\", \"news\", \"nfs\", \"ni\", \"nih\", \"nntp\", \"notes\", \"oid\", \"paquelocktoken\", \"pack\", \"palm\", \"paparazzi\", \"pkcs11\", \"platform\", \"pop\", \"pres\", \"prospero\", \"proxy\", \"psyc\", \"query\", \"reload\", \"res\", \"resource\", \"rmi\", \"rsync\", \"rtmp\", \"rtsp\", \"secondlife\", \"service\", \"session\", \"sftp\", \"sgn\", \"shttp\", \"sieve\", \"sip\", \"sips\", \"skype\", \"smb\", \"sms\", \"snews\", \"snmp\", \"soap.beep\", \"soap.beeps\", \"soldat\", \"spotify\", \"ssh\", \"steam\", \"svn\", \"tag\", \"teamspeak\", \"tel\", \"telnet\", \"tftp\", \"things\", \"thismessage\", \"tn3270\", \"tip\", \"tv\", \"udp\", \"unreal\", \"urn\", \"ut2004\", \"vemmi\", \"ventrilo\", \"videotex\", \"view-source\", \"wais\", \"webcal\", \"ws\", \"wss\", \"wtai\", \"wyciwyg\", \"xcon\", \"xcon-userid\", \"xfire\", \"xmlrpc.beep\", \"xmlrpc.beeps\", \"xmpp\", \"xri\", \"ymsgr\", \"javascript\", \"jdbc\", \"doi\"}"
+            ]
+        }
+    ],
+    "function": [
+        {
+            "path": null,
+            "name": "url_get_protocol",
+            "header": "",
+            "params": [
+                "const char *url"
+            ],
+            "definition": "inline char *url_get_protocol(const char *url)\n{\n  return url_get_scheme(url);\n}\n\n",
+            "calle": [
+                "url_get_scheme"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "url",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *url"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "url_get_hash",
+            "header": "",
+            "params": [
+                "const char *url"
+            ],
+            "definition": "inline char *url_get_hash(const char *url)\n{\n  return url_get_fragment(url);\n}\n\n",
+            "calle": [
+                "url_get_fragment"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "url",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *url"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#test",
+            "header": "",
+            "params": [
+                "void"
+            ],
+            "definition": "int main(void)\n{\n  char *gh_url = \"git://git@github.com:jwerle/url.h.git\";\n  char *url = \"http://user:pass@subdomain.host.com:8080/p/%C3%A5/t/h?qu%C3%ABry=strin%C4%9F&foo=bar=yuk&key%23%26%3D=%25&lol#h%C3%a6sh\";\n  url_data_t *parsed = url_parse(url);\n  url_data_t *gh_parsed = url_parse(gh_url);\n  assert(parsed);\n  assert(gh_parsed);\n  url_data_inspect(parsed);\n  url_data_inspect(gh_parsed);\n  assert(parsed->whole_url);\n  assert(parsed->protocol);\n  assert(parsed->userinfo);\n  assert(parsed->host);\n  assert(parsed->port);\n  assert(parsed->path);\n  assert(parsed->query);\n  assert(parsed->fragment);\n  assert(gh_parsed->whole_url);\n  assert(gh_parsed->protocol);\n  assert(gh_parsed->userinfo);\n  assert(gh_parsed->host);\n  assert(gh_parsed->path);\n  assert(url_is_protocol(\"http\"));\n  assert(url_is_protocol(\"https\"));\n  assert(url_is_protocol(\"git\"));\n  assert(url_is_protocol(\"ssh\"));\n  assert(url_is_protocol(\"sftp\"));\n  assert(url_is_protocol(\"ftp\"));\n  assert(url_is_protocol(\"javascript\"));\n  do\n  {\n    char *s = url_get_protocol(url);\n    assert(s);\n    assert(strcmp(\"http\", s) == 0);\n    free(s);\n  }\n  while (0);\n  do\n  {\n    char *s = url_get_userinfo(url);\n    assert(s);\n    assert(strcmp(\"user:pass\", s) == 0);\n    free(s);\n  }\n  while (0);\n  do\n  {\n    char *s = url_get_hostname(url);\n    assert(s);\n    assert(strcmp(\"subdomain.host.com\", s) == 0);\n    free(s);\n  }\n  while (0);\n  do\n  {\n    char *s = url_get_path(url);\n    assert(s);\n    assert(strcmp(\"/p/\\xc3\\xa5/t/h\", s) == 0);\n    free(s);\n  }\n  while (0);\n  assert(strcmp(\"strin\\xc4\\x9f\", url_get_query_value(parsed, \"qu\\xc3\\xabry\")) == 0);\n  assert(strcmp(\"bar=yuk\", url_get_query_value(parsed, \"foo\")) == 0);\n  assert(strcmp(\"%\", url_get_query_value(parsed, \"key#&=\")) == 0);\n  assert(strcmp(\"\", url_get_query_value(parsed, \"lol\")) == 0);\n  do\n  {\n    char *s = url_get_fragment(url);\n    assert(s);\n    assert(strcmp(\"h\u00e6sh\", s) == 0);\n    free(s);\n  }\n  while (0);\n  do\n  {\n    char *s = url_get_port(url);\n    assert(s);\n    assert(strcmp(\"8080\", s) == 0);\n    free(s);\n  }\n  while (0);\n  do\n  {\n    char *s = url_get_protocol(gh_url);\n    assert(s);\n    assert(strcmp(\"git\", s) == 0);\n    free(s);\n  }\n  while (0);\n  do\n  {\n    char *s = url_get_hostname(gh_url);\n    assert(s);\n    assert(strcmp(\"github.com\", s) == 0);\n    free(s);\n  }\n  while (0);\n  do\n  {\n    char *s = url_get_userinfo(gh_url);\n    assert(s);\n    assert(strcmp(\"git\", s) == 0);\n    free(s);\n  }\n  while (0);\n  do\n  {\n    char *s = url_get_path(gh_url);\n    assert(s);\n    assert(strcmp(\"jwerle/url.h.git\", s) == 0);\n    free(s);\n  }\n  while (0);\n  url_free(parsed);\n  url_free(gh_parsed);\n  return 0;\n}\n\n",
+            "calle": [
+                "assert",
+                "free",
+                "strcmp",
+                "url_data_inspect",
+                "url_free",
+                "url_get_fragment",
+                "url_get_hostname",
+                "url_get_path",
+                "url_get_port",
+                "url_get_protocol",
+                "url_get_query_value",
+                "url_get_userinfo",
+                "url_is_protocol",
+                "url_parse"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": null,
+                        "type": "void",
+                        "definition": [
+                            "void"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "gh_url",
+                        "type": "char *",
+                        "definition": [
+                            "char *gh_url = \"git://git@github.com:jwerle/url.h.git\""
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "url",
+                        "type": "char *",
+                        "definition": [
+                            "char *url = \"http://user:pass@subdomain.host.com:8080/p/%C3%A5/t/h?qu%C3%ABry=strin%C4%9F&foo=bar=yuk&key%23%26%3D=%25&lol#h%C3%a6sh\""
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "parsed",
+                        "type": "url_data_t *",
+                        "definition": [
+                            "url_data_t *parsed = url_parse(url)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "gh_parsed",
+                        "type": "url_data_t *",
+                        "definition": [
+                            "url_data_t *gh_parsed = url_parse(gh_url)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "s",
+                        "type": "char *",
+                        "definition": [
+                            "char *s = url_get_fragment(url)",
+                            "char *s = url_get_hostname(gh_url)",
+                            "char *s = url_get_hostname(url)",
+                            "char *s = url_get_path(gh_url)",
+                            "char *s = url_get_path(url)",
+                            "char *s = url_get_port(url)",
+                            "char *s = url_get_protocol(gh_url)",
+                            "char *s = url_get_protocol(url)",
+                            "char *s = url_get_userinfo(gh_url)",
+                            "char *s = url_get_userinfo(url)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "fill",
+            "header": "",
+            "params": [
+                "unsigned value",
+                "const char *alnum",
+                "const char *special"
+            ],
+            "definition": "void fill(unsigned value, const char *alnum, const char *special)\n{\n  unsigned int special_idx = 0;\n  unsigned int alnum_idx = 0;\n  for (; alnum[alnum_idx]; alnum_idx += 1)\n  {\n    char_cat[(unsigned char) alnum[alnum_idx]] |= value;\n  }\n\n  for (; special[special_idx]; special_idx += 1)\n  {\n    char_cat[(unsigned char) special[special_idx]] |= value;\n  }\n\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "value",
+                        "type": "unsigned",
+                        "definition": [
+                            "unsigned value"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "alnum",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *alnum"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "special",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *special"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "special_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int special_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "alnum_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int alnum_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "alnum",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "char_cat",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "print_table",
+            "header": "",
+            "params": [],
+            "definition": "void print_table()\n{\n  printf(\"// This file is generated by gen_char_category_table. DO NOT EDIT IT BY HAND!\\n\\nstatic const unsigned short char_cat[256] = {\\n//   .0     .1     .2     .3     .4     .5     .6     .7     .8     .9     .A     .B     .C     .D     .E     .F\\n\");\n  for (unsigned y = 0; y < 16; y += 1)\n  {\n    putchar(' ');\n    for (unsigned x = 0; x < 16; x += 1)\n    {\n      const unsigned offset = (y * 16) + x;\n      printf(\" 0x%03x%c\", char_cat[offset], (offset == 255) ? (' ') : (','));\n    }\n\n    printf(\" // %01X0 ... %01XF\\n\", y, y);\n  }\n\n  printf(\"};\\n\\n\");\n}\n\n",
+            "calle": [
+                "printf",
+                "putchar"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "y",
+                        "type": "unsigned",
+                        "definition": [
+                            "unsigned y = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "x",
+                        "type": "unsigned",
+                        "definition": [
+                            "unsigned x = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "offset",
+                        "type": "const unsigned",
+                        "definition": [
+                            "const unsigned offset = (y * 16) + x"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "char_cat",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#gen_char_category_table",
+            "header": "",
+            "params": [],
+            "definition": "int main()\n{\n  fill(Scheme, alnum, \"+-.\");\n  fill(Unreserved, alnum, unreserved);\n  fill(GenDelim, alnum, \":/?#[]@\");\n  fill(SubDelim, alnum, subdelim);\n  fill(PCharSlash, alnum, \":@/%\");\n  fill(PCharSlash, unreserved, subdelim);\n  fill(HexDigit, \"0123456789\", \"abcdefABCDEF\");\n  fill(Query, alnum, \"/?:@%\");\n  fill(Query, unreserved, subdelim);\n  fill(Userinfo, alnum, \":%\");\n  fill(Userinfo, unreserved, subdelim);\n  fill(IPv6Char, \"0123456789\", \"abcdefABCDEF:\");\n  print_table();\n}\n\n",
+            "calle": [
+                "fill",
+                "print_table"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "alnum",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "unreserved",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "subdelim",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "url_parse",
+            "header": "url_data_t *url_parse(const char *url)",
+            "params": [
+                "const char *url"
+            ],
+            "definition": "url_data_t *url_parse(const char *url)\n{\n  url_data_t *data = (url_data_t *) calloc(1, sizeof(url_data_t));\n  if (!data)\n  {\n    return 0;\n  }\n  char *p = strdup(url);\n  unsigned int p_idx = 0;\n  if (!(&p[p_idx]))\n  {\n    do\n    {\n      fprintf(stderr, \"ERROR %s Line %u! p=\u00ab%s\u00bb\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/url_parser/url.c\", 190, p);\n      goto error;\n    }\n    while (0);\n  }\n  data->whole_url = &p[p_idx];\n  const char * const p_end = (&p[p_idx]) + strlen(p);\n  char *protocol_end = scan_part(p, Scheme, ':', '\\0');\n  if ((!protocol_end) || ((*protocol_end) == '\\0'))\n  {\n    do\n    {\n      fprintf(stderr, \"ERROR %s Line %u! p=\u00ab%s\u00bb\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/url_parser/url.c\", 197, p);\n      goto error;\n    }\n    while (0);\n  }\n  *protocol_end = '\\0';\n  data->protocol = &p[p_idx];\n  const bool is_ssh = url_is_ssh(data->protocol);\n  p_idx = protocol_end + 1;\n  if (((&p[p_idx]) >= p_end) || (p[p_idx] != '/'))\n  {\n    do\n    {\n      fprintf(stderr, \"ERROR %s Line %u! p=\u00ab%s\u00bb\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/url_parser/url.c\", 205, p);\n      goto error;\n    }\n    while (0);\n  }\n  p_idx += 1;\n  if (((&p[p_idx]) >= p_end) || (p[p_idx] != '/'))\n  {\n    do\n    {\n      fprintf(stderr, \"ERROR %s Line %u! p=\u00ab%s\u00bb\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/url_parser/url.c\", 209, p);\n      goto error;\n    }\n    while (0);\n  }\n  char * const second_slash = p;\n  p_idx += 1;\n  if ((&p[p_idx]) >= p_end)\n  {\n    do\n    {\n      fprintf(stderr, \"ERROR %s Line %u! p=\u00ab%s\u00bb\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/url_parser/url.c\", 215, p);\n      goto error;\n    }\n    while (0);\n  }\n  char *userinfo_end = scan_part(p, Userinfo, '@', '\\0');\n  if (userinfo_end && ((*userinfo_end) == '@'))\n  {\n    *userinfo_end = '\\0';\n    data->userinfo = &p[p_idx];\n    p_idx = userinfo_end + 1;\n  }\n  if ((&p[p_idx]) >= p_end)\n  {\n    do\n    {\n      fprintf(stderr, \"ERROR %s Line %u! p=\u00ab%s\u00bb\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/url_parser/url.c\", 225, p);\n      goto error;\n    }\n    while (0);\n  }\n  char *hostname_end = 0;\n  unsigned int hostname_end_idx = 0;\n  if (p[p_idx] == '[')\n  {\n    helper_url_parse_4(&p_idx, &hostname_end_idx, data, p, p_end, is_ssh, hostname_end);\n  }\n  else\n  {\n    helper_url_parse_3(&p_idx, &hostname_end_idx, data, p, is_ssh, hostname_end);\n  }\n  memmove(second_slash, second_slash + 1, (&p[p_idx]) - second_slash);\n  if (data->userinfo)\n  {\n    data->userinfo -= 1;\n  }\n  data->host -= 1;\n  if (data->port)\n  {\n    data->port -= 1;\n  }\n  p[(-1) + p_idx] = '\\0';\n  if (is_ssh && (p[p_idx] == ':'))\n  {\n    p_idx += 1;\n  }\n  char *path_end = scan_part(p, PCharSlash, '?', '#');\n  if (!path_end)\n  {\n    do\n    {\n      fprintf(stderr, \"ERROR %s Line %u! p=\u00ab%s\u00bb\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/url_parser/url.c\", 295, p);\n      goto error;\n    }\n    while (0);\n  }\n  const bool has_query = (*path_end) == '?';\n  const bool has_fragment = (*path_end) == '#';\n  *path_end = '\\0';\n  data->path = decode_percent(p);\n  p_idx = path_end + 1;\n  if (has_query)\n  {\n    helper_url_parse_2(data, p);\n  }\n  else\n    if (has_fragment)\n  {\n    helper_url_parse_1(data, p);\n  }\n  return data;\n  error:\n  url_free(data);\n\n  return 0;\n}\n\n",
+            "calle": [
+                "calloc",
+                "decode_percent",
+                "fprintf",
+                "helper_url_parse_1",
+                "helper_url_parse_2",
+                "helper_url_parse_3",
+                "helper_url_parse_4",
+                "memmove",
+                "scan_part",
+                "strdup",
+                "strlen",
+                "url_free",
+                "url_is_ssh"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "url",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *url"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "url_data_t *",
+                        "definition": [
+                            "url_data_t *data = (url_data_t *) calloc(1, sizeof(url_data_t))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "char *",
+                        "definition": [
+                            "char *p = strdup(url)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_end",
+                        "type": "const char * const",
+                        "definition": [
+                            "const char * const p_end = (&p[p_idx]) + strlen(p)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "protocol_end",
+                        "type": "char *",
+                        "definition": [
+                            "char *protocol_end = scan_part(p, Scheme, ':', '\\0')"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "is_ssh",
+                        "type": "const bool",
+                        "definition": [
+                            "const bool is_ssh = url_is_ssh(data->protocol)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "second_slash",
+                        "type": "char * const",
+                        "definition": [
+                            "char * const second_slash = p"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "userinfo_end",
+                        "type": "char *",
+                        "definition": [
+                            "char *userinfo_end = scan_part(p, Userinfo, '@', '\\0')"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hostname_end",
+                        "type": "char *",
+                        "definition": [
+                            "char *hostname_end = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hostname_end_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int hostname_end_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "path_end",
+                        "type": "char *",
+                        "definition": [
+                            "char *path_end = scan_part(p, PCharSlash, '?', '#')"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "has_query",
+                        "type": "const bool",
+                        "definition": [
+                            "const bool has_query = (*path_end) == '?'"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "has_fragment",
+                        "type": "const bool",
+                        "definition": [
+                            "const bool has_fragment = (*path_end) == '#'"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "url_get_scheme",
+            "header": "char *url_get_scheme(const char *url)",
+            "params": [
+                "const char *url"
+            ],
+            "definition": "char *url_get_scheme(const char *url)\n{\n  char *protocol = (char *) malloc(32);\n  if (!protocol)\n  {\n    return 0;\n  }\n  sscanf(url, \"%[^://]\", protocol);\n  if (url_is_protocol(protocol))\n  {\n    return protocol;\n  }\n  free(protocol);\n  return 0;\n}\n\n",
+            "calle": [
+                "free",
+                "malloc",
+                "sscanf",
+                "url_is_protocol"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "url",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *url"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "protocol",
+                        "type": "char *",
+                        "definition": [
+                            "char *protocol = (char *) malloc(32)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "url_get_userinfo",
+            "header": "char *url_get_userinfo(const char *url)",
+            "params": [
+                "const char *url"
+            ],
+            "definition": "char *url_get_userinfo(const char *url)\n{\n  do\n  {\n    url_data_t *data = url_parse(url);\n    char *out = (data && data->userinfo) ? (strdup(data->userinfo)) : (0);\n    url_free(data);\n    return out;\n  }\n  while (0);\n}\n\n",
+            "calle": [
+                "strdup",
+                "url_free",
+                "url_parse"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "url",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *url"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "url_data_t *",
+                        "definition": [
+                            "url_data_t *data = url_parse(url)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "out",
+                        "type": "char *",
+                        "definition": [
+                            "char *out = (data && data->userinfo) ? (strdup(data->userinfo)) : (0)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "url_get_hostname",
+            "header": "char *url_get_hostname(const char *url)",
+            "params": [
+                "const char *url"
+            ],
+            "definition": "char *url_get_hostname(const char *url)\n{\n  do\n  {\n    url_data_t *data = url_parse(url);\n    char *out = (data && data->host) ? (strdup(data->host)) : (0);\n    url_free(data);\n    return out;\n  }\n  while (0);\n}\n\n",
+            "calle": [
+                "strdup",
+                "url_free",
+                "url_parse"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "url",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *url"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "url_data_t *",
+                        "definition": [
+                            "url_data_t *data = url_parse(url)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "out",
+                        "type": "char *",
+                        "definition": [
+                            "char *out = (data && data->host) ? (strdup(data->host)) : (0)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "url_get_path",
+            "header": "char *url_get_path(const char *url)",
+            "params": [
+                "const char *url"
+            ],
+            "definition": "char *url_get_path(const char *url)\n{\n  do\n  {\n    url_data_t *data = url_parse(url);\n    char *out = (data && data->path) ? (strdup(data->path)) : (0);\n    url_free(data);\n    return out;\n  }\n  while (0);\n}\n\n",
+            "calle": [
+                "strdup",
+                "url_free",
+                "url_parse"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "url",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *url"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "url_data_t *",
+                        "definition": [
+                            "url_data_t *data = url_parse(url)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "out",
+                        "type": "char *",
+                        "definition": [
+                            "char *out = (data && data->path) ? (strdup(data->path)) : (0)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "url_get_query_value",
+            "header": "const char *url_get_query_value(const url_data_t *url, const char *key)",
+            "params": [
+                "const url_data_t *url",
+                "const char *key"
+            ],
+            "definition": "const char *url_get_query_value(const url_data_t *url, const char *key)\n{\n  if (url->query == 0)\n  {\n    return 0;\n  }\n  for (const struct url_key_value *kv = url->query; kv->key; kv_idx += 1)\n  {\n    if (strcmp(kv->key, key) == 0)\n    {\n      return kv->value;\n    }\n  }\n\n  unsigned int kv_idx = 0;\n  return 0;\n}\n\n",
+            "calle": [
+                "strcmp"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "url",
+                        "type": "const url_data_t *",
+                        "definition": [
+                            "const url_data_t *url"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *key"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "struct url_key_value",
+                        "type": "const struct url_key_value *",
+                        "definition": [
+                            "const struct url_key_value *kv = url->query"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "kv_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int kv_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "url_get_fragment",
+            "header": "char *url_get_fragment(const char *url)",
+            "params": [
+                "const char *url"
+            ],
+            "definition": "char *url_get_fragment(const char *url)\n{\n  do\n  {\n    url_data_t *data = url_parse(url);\n    char *out = (data && data->fragment) ? (strdup(data->fragment)) : (0);\n    url_free(data);\n    return out;\n  }\n  while (0);\n}\n\n",
+            "calle": [
+                "strdup",
+                "url_free",
+                "url_parse"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "url",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *url"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "url_data_t *",
+                        "definition": [
+                            "url_data_t *data = url_parse(url)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "out",
+                        "type": "char *",
+                        "definition": [
+                            "char *out = (data && data->fragment) ? (strdup(data->fragment)) : (0)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "url_get_port",
+            "header": "char *url_get_port(const char *url)",
+            "params": [
+                "const char *url"
+            ],
+            "definition": "char *url_get_port(const char *url)\n{\n  do\n  {\n    url_data_t *data = url_parse(url);\n    char *out = (data && data->port) ? (strdup(data->port)) : (0);\n    url_free(data);\n    return out;\n  }\n  while (0);\n}\n\n",
+            "calle": [
+                "strdup",
+                "url_free",
+                "url_parse"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "url",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *url"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "url_data_t *",
+                        "definition": [
+                            "url_data_t *data = url_parse(url)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "out",
+                        "type": "char *",
+                        "definition": [
+                            "char *out = (data && data->port) ? (strdup(data->port)) : (0)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "url_free",
+            "header": "void url_free(url_data_t *data)",
+            "params": [
+                "url_data_t *data"
+            ],
+            "definition": "void url_free(url_data_t *data)\n{\n  if (!data)\n  {\n    return;\n  }\n  free(data->whole_url);\n  free((void *) data->query);\n  free(data);\n}\n\n",
+            "calle": [
+                "free"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "url_data_t *",
+                        "definition": [
+                            "url_data_t *data"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "url_is_protocol",
+            "header": "bool url_is_protocol(const char *str)",
+            "params": [
+                "const char *str"
+            ],
+            "definition": "bool url_is_protocol(const char *str)\n{\n  const unsigned count = (sizeof(URL_SCHEMES)) / (sizeof(URL_SCHEMES[0]));\n  for (unsigned i = 0; i < count; i += 1)\n  {\n    if (0 == strcmp(URL_SCHEMES[i], str))\n    {\n      return 1;\n    }\n  }\n\n  return 0;\n}\n\n",
+            "calle": [
+                "strcmp"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "str",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *str"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "count",
+                        "type": "const unsigned",
+                        "definition": [
+                            "const unsigned count = (sizeof(URL_SCHEMES)) / (sizeof(URL_SCHEMES[0]))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "unsigned",
+                        "definition": [
+                            "unsigned i = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "URL_SCHEMES",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "url_is_ssh",
+            "header": "bool url_is_ssh(const char *str)",
+            "params": [
+                "const char *str"
+            ],
+            "definition": "bool url_is_ssh(const char *str)\n{\n  if ((0 == strcmp(str, \"ssh\")) || (0 == strcmp(str, \"git\")))\n  {\n    return 1;\n  }\n  return 0;\n}\n\n",
+            "calle": [
+                "strcmp"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "str",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *str"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "url_inspect",
+            "header": "void url_inspect(const char *url)",
+            "params": [
+                "const char *url"
+            ],
+            "definition": "void url_inspect(const char *url)\n{\n  url_data_inspect(url_parse(url));\n}\n\n",
+            "calle": [
+                "url_data_inspect",
+                "url_parse"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "url",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *url"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "url_data_inspect",
+            "header": "void url_data_inspect(const url_data_t *data)",
+            "params": [
+                "const url_data_t *data"
+            ],
+            "definition": "void url_data_inspect(const url_data_t *data)\n{\n  printf(\"#url =>\\n\");\n  do\n  {\n    if (data->protocol)\n    {\n      printf(\"    .protocol: \\\"%s\\\"\\n\", data->protocol);\n    }\n    else\n      printf(\"    .protocol: (NULL)\\n\");\n  }\n  while (0);\n  do\n  {\n    if (data->host)\n    {\n      printf(\"    .host: \\\"%s\\\"\\n\", data->host);\n    }\n    else\n      printf(\"    .host: (NULL)\\n\");\n  }\n  while (0);\n  do\n  {\n    if (data->userinfo)\n    {\n      printf(\"    .userinfo: \\\"%s\\\"\\n\", data->userinfo);\n    }\n    else\n      printf(\"    .userinfo: (NULL)\\n\");\n  }\n  while (0);\n  do\n  {\n    if (data->host)\n    {\n      printf(\"    .host: \\\"%s\\\"\\n\", data->host);\n    }\n    else\n      printf(\"    .host: (NULL)\\n\");\n  }\n  while (0);\n  do\n  {\n    if (data->port)\n    {\n      printf(\"    .port: \\\"%s\\\"\\n\", data->port);\n    }\n    else\n      printf(\"    .port: (NULL)\\n\");\n  }\n  while (0);\n  do\n  {\n    if (data->path)\n    {\n      printf(\"    .path: \\\"%s\\\"\\n\", data->path);\n    }\n    else\n      printf(\"    .path: (NULL)\\n\");\n  }\n  while (0);\n  if (data->query)\n  {\n    for (unsigned nr = 0; data->query[nr].key; nr += 1)\n    {\n      printf(\"    .query[%u]: \\\"%s\\\" -> \", nr, data->query[nr].key);\n      if (data->query[nr].value)\n      {\n        printf(\"\\\"%s\\\"\\n\", data->query[nr].value);\n      }\n      else\n        printf(\"(NULL)\\n\");\n    }\n\n  }\n  do\n  {\n    if (data->fragment)\n    {\n      printf(\"    .fragment: \\\"%s\\\"\\n\", data->fragment);\n    }\n    else\n      printf(\"    .fragment: (NULL)\\n\");\n  }\n  while (0);\n}\n\n",
+            "calle": [
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "const url_data_t *",
+                        "definition": [
+                            "const url_data_t *data"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "nr",
+                        "type": "unsigned",
+                        "definition": [
+                            "unsigned nr = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "strdup",
+            "header": "",
+            "params": [
+                "const char *str"
+            ],
+            "definition": "char *strdup(const char *str)\n{\n  const int n = strlen(str) + 1;\n  char *dup = (char *) malloc(n);\n  if (dup)\n  {\n    strcpy(dup, str);\n  }\n  return dup;\n}\n\n",
+            "calle": [
+                "malloc",
+                "strcpy",
+                "strlen"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "str",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *str"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "n",
+                        "type": "const int",
+                        "definition": [
+                            "const int n = strlen(str) + 1"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "dup",
+                        "type": "char *",
+                        "definition": [
+                            "char *dup = (char *) malloc(n)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "unhex",
+            "header": "",
+            "params": [
+                "const char *s"
+            ],
+            "definition": "static int unhex(const char *s)\n{\n  if (((*s) >= '0') && ((*s) <= '9'))\n  {\n    return (*s) - '0';\n  }\n  if (((*s) >= 'A') && ((*s) <= 'F'))\n  {\n    return ((*s) - 'A') + 10;\n  }\n  if (((*s) >= 'a') && ((*s) <= 'f'))\n  {\n    return ((*s) - 'a') + 10;\n  }\n  return -1;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "s",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *s"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "decode_percent",
+            "header": "",
+            "params": [
+                "char *s"
+            ],
+            "definition": "static char *decode_percent(char *s)\n{\n  char *in = s;\n  unsigned int in_idx = 0;\n  char *out = s;\n  unsigned int out_idx = 0;\n  while (in[in_idx])\n  {\n    if (in[in_idx] == '%')\n    {\n      in_idx += 1;\n      const int high = unhex(in);\n      if ((high < 0) || (in[in_idx] == '\\0'))\n      {\n        return 0;\n      }\n      in_idx += 1;\n      const int low = unhex(in);\n      if ((low < 0) || (in[in_idx] == '\\0'))\n      {\n        return 0;\n      }\n      out[out_idx] = (char) ((high * 16u) + low);\n      ++(&out[out_idx]);\n      ++(&in[in_idx]);\n    }\n    else\n    {\n      out[out_idx] = in[in_idx];\n      in_idx += 1;\n      out_idx += 1;\n    }\n  }\n\n  out[out_idx] = '\\0';\n  return s;\n}\n\n",
+            "calle": [
+                "unhex"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "s",
+                        "type": "char *",
+                        "definition": [
+                            "char *s"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "in",
+                        "type": "char *",
+                        "definition": [
+                            "char *in = s"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "in_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int in_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "out",
+                        "type": "char *",
+                        "definition": [
+                            "char *out = s"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "out_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int out_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "high",
+                        "type": "const int",
+                        "definition": [
+                            "const int high = unhex(in)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "low",
+                        "type": "const int",
+                        "definition": [
+                            "const int low = unhex(in)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "scan_part",
+            "header": "",
+            "params": [
+                "char *start",
+                "enum Category category",
+                "char delimiter1",
+                "char delimiter2"
+            ],
+            "definition": "static char *scan_part(char *start, enum Category category, char delimiter1, char delimiter2)\n{\n  char *p = start;\n  unsigned int p_idx = 0;\n  for (;;)\n  {\n    if (((p[p_idx] == '\\0') || (p[p_idx] == delimiter1)) || (p[p_idx] == delimiter2))\n    {\n      return p;\n    }\n    if (char_cat[(unsigned char) p[p_idx]] & category)\n    {\n      p_idx += 1;\n    }\n    else\n    {\n      return 0;\n    }\n  }\n\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "start",
+                        "type": "char *",
+                        "definition": [
+                            "char *start"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "category",
+                        "type": "enum Category",
+                        "definition": [
+                            "enum Category category"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "delimiter1",
+                        "type": "char",
+                        "definition": [
+                            "char delimiter1"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "delimiter2",
+                        "type": "char",
+                        "definition": [
+                            "char delimiter2"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "char *",
+                        "definition": [
+                            "char *p = start"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "char_cat",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "scan_decimal_number",
+            "header": "",
+            "params": [
+                "char *start"
+            ],
+            "definition": "static char *scan_decimal_number(char *start)\n{\n  char *p = start;\n  unsigned int p_idx = 0;\n  while ((p[p_idx] >= '0') && (p[p_idx] <= '9'))\n  {\n    p_idx += 1;\n  }\n\n  return ((&p[p_idx]) != start) ? (p) : (0);\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "start",
+                        "type": "char *",
+                        "definition": [
+                            "char *start"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "char *",
+                        "definition": [
+                            "char *p = start"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "parse_query_string",
+            "header": "",
+            "params": [
+                "char *begin",
+                "char *end"
+            ],
+            "definition": "static struct url_key_value *parse_query_string(char *begin, char *end)\n{\n  unsigned elements = 1;\n  for (const char *p = begin; (&p[p_idx]) != end; p_idx += 1)\n  {\n    if ((p[p_idx] == '&') || (p[p_idx] == ';'))\n    {\n      elements += 1;\n    }\n  }\n\n  unsigned int p_idx = 0;\n  struct url_key_value *kv = calloc(elements + 1, sizeof(struct url_key_value));\n  if (!kv)\n  {\n    return 0;\n  }\n  char *p = begin;\n  unsigned int p_idx = 0;\n  for (unsigned element = 0; (element <= elements) && ((&p[p_idx]) < end); element += 1)\n  {\n    helper_parse_query_string_1(&p_idx, &p_idx, &element, p, kv, p);\n  }\n\n  return kv;\n  error:\n  free(kv);\n\n  return 0;\n}\n\n",
+            "calle": [
+                "calloc",
+                "free",
+                "helper_parse_query_string_1"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "begin",
+                        "type": "char *",
+                        "definition": [
+                            "char *begin"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "end",
+                        "type": "char *",
+                        "definition": [
+                            "char *end"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "elements",
+                        "type": "unsigned",
+                        "definition": [
+                            "unsigned elements = 1"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "const char *",
+                        "definition": [
+                            "char *p = begin",
+                            "const char *p = begin"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "struct url_key_value",
+                        "type": "struct url_key_value *",
+                        "definition": [
+                            "struct url_key_value *kv = calloc(elements + 1, sizeof(struct url_key_value))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "element",
+                        "type": "unsigned",
+                        "definition": [
+                            "unsigned element = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "url_get_host",
+            "header": "",
+            "params": [
+                "const char *url"
+            ],
+            "definition": "char *url_get_host(const char *url)\n{\n  do\n  {\n    url_data_t *data = url_parse(url);\n    char *out = (data && data->host) ? (strdup(data->host)) : (0);\n    url_free(data);\n    return out;\n  }\n  while (0);\n}\n\n",
+            "calle": [
+                "strdup",
+                "url_free",
+                "url_parse"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "url",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *url"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "url_data_t *",
+                        "definition": [
+                            "url_data_t *data = url_parse(url)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "out",
+                        "type": "char *",
+                        "definition": [
+                            "char *out = (data && data->host) ? (strdup(data->host)) : (0)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "url_get_pathname",
+            "header": "",
+            "params": [
+                "const char *url"
+            ],
+            "definition": "char *url_get_pathname(const char *url)\n{\n  do\n  {\n    url_data_t *data = url_parse(url);\n    char *out = (data && data->path) ? (strdup(data->path)) : (0);\n    url_free(data);\n    return out;\n  }\n  while (0);\n}\n\n",
+            "calle": [
+                "strdup",
+                "url_free",
+                "url_parse"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "url",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *url"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "url_data_t *",
+                        "definition": [
+                            "url_data_t *data = url_parse(url)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "out",
+                        "type": "char *",
+                        "definition": [
+                            "char *out = (data && data->path) ? (strdup(data->path)) : (0)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_parse_query_string_1",
+            "header": "",
+            "params": [
+                "unsigned int * const p_idx_ref",
+                "unsigned int * const p_idx_ref",
+                "unsigned * const element_ref",
+                "const char * const p",
+                "struct url_key_value * const kv",
+                "char * const p"
+            ],
+            "definition": "void helper_parse_query_string_1(unsigned int * const p_idx_ref, unsigned int * const p_idx_ref, unsigned * const element_ref, const char * const p, struct url_key_value * const kv, char * const p)\n{\n  unsigned int p_idx = *p_idx_ref;\n  unsigned int p_idx = *p_idx_ref;\n  unsigned element = *element_ref;\n  char *key = p;\n  char *kv_end = scan_part(p, Query, '&', ';');\n  if (!kv_end)\n  {\n    do\n    {\n      fprintf(stderr, \"ERROR %s Line %u! p=\u00ab%s\u00bb\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/url_parser/url.c\", 153, p);\n      goto error;\n    }\n    while (0);\n  }\n  *kv_end = '\\0';\n  char *key_end = scan_part(p, Query, '=', '\\0');\n  const bool has_value = (*key_end) == '=';\n  *key_end = '\\0';\n  kv[element].key = decode_percent(key);\n  if (has_value)\n  {\n    char *value = key_end + 1;\n    kv[element].value = decode_percent(value);\n  }\n  else\n  {\n    kv[element].value = key_end;\n  }\n  p_idx = kv_end + 1;\n  *p_idx_ref = p_idx;\n  *p_idx_ref = p_idx;\n  *element_ref = element;\n}\n\n",
+            "calle": [
+                "decode_percent",
+                "fprintf",
+                "scan_part"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "p_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const p_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "element_ref",
+                        "type": "unsigned * const",
+                        "definition": [
+                            "unsigned * const element_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "const char * const",
+                        "definition": [
+                            "char * const p",
+                            "const char * const p"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "struct url_key_value",
+                        "type": "struct url_key_value * const",
+                        "definition": [
+                            "struct url_key_value * const kv"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p_idx = *p_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "element",
+                        "type": "unsigned",
+                        "definition": [
+                            "unsigned element = *element_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key",
+                        "type": "char *",
+                        "definition": [
+                            "char *key = p"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "kv_end",
+                        "type": "char *",
+                        "definition": [
+                            "char *kv_end = scan_part(p, Query, '&', ';')"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "key_end",
+                        "type": "char *",
+                        "definition": [
+                            "char *key_end = scan_part(p, Query, '=', '\\0')"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "has_value",
+                        "type": "const bool",
+                        "definition": [
+                            "const bool has_value = (*key_end) == '='"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "value",
+                        "type": "char *",
+                        "definition": [
+                            "char *value = key_end + 1"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_url_parse_1",
+            "header": "",
+            "params": [
+                "url_data_t * const data",
+                "char * const p"
+            ],
+            "definition": "void helper_url_parse_1(url_data_t * const data, char * const p)\n{\n  char *fragment_end = scan_part(p, Fragment, '\\0', '\\0');\n  if (fragment_end)\n  {\n    data->fragment = decode_percent(p);\n  }\n  else\n  {\n    do\n    {\n      fprintf(stderr, \"ERROR %s Line %u! p=\u00ab%s\u00bb\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/url_parser/url.c\", 332, p);\n      goto error;\n    }\n    while (0);\n  }\n}\n\n",
+            "calle": [
+                "decode_percent",
+                "fprintf",
+                "scan_part"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "url_data_t * const",
+                        "definition": [
+                            "url_data_t * const data"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "char * const",
+                        "definition": [
+                            "char * const p"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "fragment_end",
+                        "type": "char *",
+                        "definition": [
+                            "char *fragment_end = scan_part(p, Fragment, '\\0', '\\0')"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_url_parse_2",
+            "header": "",
+            "params": [
+                "url_data_t * const data",
+                "char * const p"
+            ],
+            "definition": "void helper_url_parse_2(url_data_t * const data, char * const p)\n{\n  char *query_end = scan_part(p, Query, '#', '\\0');\n  if (query_end)\n  {\n    const bool has_fragment = (*query_end) == '#';\n    *query_end = '\\0';\n    data->query = parse_query_string(p, query_end);\n    if (has_fragment)\n    {\n      char *fragment_end = scan_part(query_end + 1, Fragment, '\\0', '\\0');\n      if (fragment_end)\n      {\n        data->fragment = decode_percent(query_end + 1);\n      }\n      else\n      {\n        do\n        {\n          fprintf(stderr, \"ERROR %s Line %u! p=\u00ab%s\u00bb\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/url_parser/url.c\", 319, p);\n          goto error;\n        }\n        while (0);\n      }\n    }\n  }\n  else\n  {\n    do\n    {\n      fprintf(stderr, \"ERROR %s Line %u! p=\u00ab%s\u00bb\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/url_parser/url.c\", 323, p);\n      goto error;\n    }\n    while (0);\n  }\n}\n\n",
+            "calle": [
+                "decode_percent",
+                "fprintf",
+                "parse_query_string",
+                "scan_part"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "url_data_t * const",
+                        "definition": [
+                            "url_data_t * const data"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "char * const",
+                        "definition": [
+                            "char * const p"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "query_end",
+                        "type": "char *",
+                        "definition": [
+                            "char *query_end = scan_part(p, Query, '#', '\\0')"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "has_fragment",
+                        "type": "const bool",
+                        "definition": [
+                            "const bool has_fragment = (*query_end) == '#'"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "fragment_end",
+                        "type": "char *",
+                        "definition": [
+                            "char *fragment_end = scan_part(query_end + 1, Fragment, '\\0', '\\0')"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_url_parse_3",
+            "header": "",
+            "params": [
+                "unsigned int * const p_idx_ref",
+                "unsigned int * const hostname_end_idx_ref",
+                "url_data_t * const data",
+                "char * const p",
+                "const bool is_ssh",
+                "char * const hostname_end"
+            ],
+            "definition": "void helper_url_parse_3(unsigned int * const p_idx_ref, unsigned int * const hostname_end_idx_ref, url_data_t * const data, char * const p, const bool is_ssh, char * const hostname_end)\n{\n  unsigned int p_idx = *p_idx_ref;\n  unsigned int hostname_end_idx = *hostname_end_idx_ref;\n  hostname_end_idx = scan_part(p, Unreserved | SubDelim, ':', '/');\n  if (!(&hostname_end[hostname_end_idx]))\n  {\n    do\n    {\n      fprintf(stderr, \"ERROR %s Line %u! p=\u00ab%s\u00bb\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/url_parser/url.c\", 255, p);\n      goto error;\n    }\n    while (0);\n  }\n  data->host = &p[p_idx];\n  if ((!is_ssh) && (hostname_end[hostname_end_idx] == ':'))\n  {\n    hostname_end[hostname_end_idx] = '\\0';\n    char *port_end = scan_decimal_number((&hostname_end[hostname_end_idx]) + 1);\n    if (port_end)\n    {\n      data->port = (&hostname_end[hostname_end_idx]) + 1;\n      p_idx = port_end;\n    }\n    else\n    {\n      do\n      {\n        fprintf(stderr, \"ERROR %s Line %u! p=\u00ab%s\u00bb\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/url_parser/url.c\", 267, p);\n        goto error;\n      }\n      while (0);\n    }\n  }\n  else\n  {\n    p_idx = &hostname_end[hostname_end_idx];\n  }\n  *p_idx_ref = p_idx;\n  *hostname_end_idx_ref = hostname_end_idx;\n}\n\n",
+            "calle": [
+                "fprintf",
+                "scan_decimal_number",
+                "scan_part"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "p_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const p_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hostname_end_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const hostname_end_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "url_data_t * const",
+                        "definition": [
+                            "url_data_t * const data"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "char * const",
+                        "definition": [
+                            "char * const p"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "is_ssh",
+                        "type": "const bool",
+                        "definition": [
+                            "const bool is_ssh"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hostname_end",
+                        "type": "char * const",
+                        "definition": [
+                            "char * const hostname_end"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p_idx = *p_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hostname_end_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int hostname_end_idx = *hostname_end_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "port_end",
+                        "type": "char *",
+                        "definition": [
+                            "char *port_end = scan_decimal_number((&hostname_end[hostname_end_idx]) + 1)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_url_parse_4",
+            "header": "",
+            "params": [
+                "unsigned int * const p_idx_ref",
+                "unsigned int * const hostname_end_idx_ref",
+                "url_data_t * const data",
+                "char * const p",
+                "const char * const p_end",
+                "const bool is_ssh",
+                "char * const hostname_end"
+            ],
+            "definition": "void helper_url_parse_4(unsigned int * const p_idx_ref, unsigned int * const hostname_end_idx_ref, url_data_t * const data, char * const p, const char * const p_end, const bool is_ssh, char * const hostname_end)\n{\n  unsigned int p_idx = *p_idx_ref;\n  unsigned int hostname_end_idx = *hostname_end_idx_ref;\n  p_idx += 1;\n  hostname_end_idx = scan_part(p, IPv6Char, ']', '\\0');\n  if (!(&hostname_end[hostname_end_idx]))\n  {\n    do\n    {\n      fprintf(stderr, \"ERROR %s Line %u! p=\u00ab%s\u00bb\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/url_parser/url.c\", 234, p);\n      goto error;\n    }\n    while (0);\n  }\n  hostname_end[hostname_end_idx] = '\\0';\n  data->host = &p[p_idx];\n  hostname_end_idx += 1;\n  if ((((&hostname_end[hostname_end_idx]) < p_end) && (!is_ssh)) && (hostname_end[hostname_end_idx] == ':'))\n  {\n    char *port_end = scan_decimal_number((&hostname_end[hostname_end_idx]) + 1);\n    if (port_end)\n    {\n      data->port = (&hostname_end[hostname_end_idx]) + 1;\n      p_idx = port_end;\n    }\n    else\n    {\n      do\n      {\n        fprintf(stderr, \"ERROR %s Line %u! p=\u00ab%s\u00bb\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/url_parser/url.c\", 247, p);\n        goto error;\n      }\n      while (0);\n    }\n  }\n  else\n  {\n    p_idx = &hostname_end[hostname_end_idx];\n  }\n  *p_idx_ref = p_idx;\n  *hostname_end_idx_ref = hostname_end_idx;\n}\n\n",
+            "calle": [
+                "fprintf",
+                "scan_decimal_number",
+                "scan_part"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "p_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const p_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hostname_end_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const hostname_end_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "url_data_t * const",
+                        "definition": [
+                            "url_data_t * const data"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "char * const",
+                        "definition": [
+                            "char * const p"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_end",
+                        "type": "const char * const",
+                        "definition": [
+                            "const char * const p_end"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "is_ssh",
+                        "type": "const bool",
+                        "definition": [
+                            "const bool is_ssh"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hostname_end",
+                        "type": "char * const",
+                        "definition": [
+                            "char * const hostname_end"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int p_idx = *p_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hostname_end_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int hostname_end_idx = *hostname_end_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "port_end",
+                        "type": "char *",
+                        "definition": [
+                            "char *port_end = scan_decimal_number((&hostname_end[hostname_end_idx]) + 1)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        }
+    ],
+    "typedefs": []
+}

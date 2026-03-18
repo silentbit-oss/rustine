@@ -1,0 +1,12 @@
+warning: all if blocks contain the same code at the end
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: multiply and add expressions can be calculated more efficiently and accurately
+warning: redundant clone
+warning: temporary with significant `Drop` in `if let` scrutinee will live until the end of the `if let` expression
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else

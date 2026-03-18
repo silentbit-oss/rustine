@@ -1,0 +1,30 @@
+[package]
+name = "libtree"
+version = "3.1.1"
+edition = "2021"
+authors = ["Original C Author", "Rust Translation Team"]
+license = "MIT"
+description = "Display the dependency tree of ELF binaries"
+repository = "https://github.com/haampie/libtree"
+readme = "README.md"
+
+[dependencies]
+goblin = "0.8"
+glob = "0.3"
+uname = "0.1"
+
+[dev-dependencies]
+tempfile = "3"
+
+[[bin]]
+name = "libtree"
+path = "src/main.rs"
+
+[lib]
+name = "libtree"
+path = "src/lib.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

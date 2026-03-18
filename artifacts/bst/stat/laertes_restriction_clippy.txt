@@ -1,0 +1,417 @@
+warning: missing documentation for the crate
+warning: `allow` attribute without specifying a reason
+warning: `allow` attribute without specifying a reason
+warning: `allow` attribute without specifying a reason
+warning: `allow` attribute without specifying a reason
+warning: `allow` attribute without specifying a reason
+warning: `allow` attribute without specifying a reason
+warning: `allow` attribute without specifying a reason
+warning: usage of `pub` without `in`
+warning: #[allow] attribute found
+warning: `allow` attribute without specifying a reason
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: usage of ref pattern
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: usage of ref pattern
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: usage of `pub` without `in`
+warning: #[allow] attribute found
+warning: `allow` attribute without specifying a reason
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: single-character lifetime names are likely uninformative
+warning: missing documentation for the crate
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: exported structs should not be exhaustive
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `#[inline]` for a method
+warning: missing `return` statement
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `#[inline]` for a method
+warning: missing `return` statement
+warning: missing `#[inline]` for a function
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: used import from `std` instead of `core`
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: missing `#[inline]` for a function
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `#[inline]` for a function
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `#[inline]` for a function
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `#[inline]` for a function
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: using a potentially dangerous silent `as` conversion
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing documentation for a module
+warning: used import from `std` instead of `core`
+warning: importing trait that is only used anonymously
+warning: missing documentation for a trait
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: missing documentation for a method
+warning: missing documentation for a method
+warning: missing `return` statement
+warning: missing documentation for a method
+warning: missing `return` statement
+warning: missing documentation for a method
+warning: missing `return` statement
+warning: missing documentation for a trait
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: missing documentation for a method
+warning: missing documentation for a method
+warning: missing `return` statement
+warning: missing documentation for a method
+warning: missing `return` statement
+warning: missing documentation for a method
+warning: missing `return` statement
+warning: missing documentation for a trait
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: missing documentation for a method
+warning: missing documentation for a method
+warning: missing `return` statement
+warning: missing documentation for a method
+warning: missing `return` statement
+warning: missing documentation for a method
+warning: missing `return` statement
+warning: missing documentation for a trait
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: missing documentation for a method
+warning: missing documentation for a method
+warning: missing `return` statement
+warning: missing documentation for a method
+warning: missing `return` statement
+warning: missing documentation for a method
+warning: missing `return` statement
+warning: missing documentation for a trait
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: missing documentation for a method
+warning: missing documentation for a method
+warning: missing `return` statement
+warning: missing documentation for a method
+warning: missing `return` statement
+warning: missing documentation for a method
+warning: missing `return` statement
+warning: missing documentation for an enum
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: missing documentation for a variant
+warning: missing documentation for a variant
+warning: missing documentation for a variant
+warning: missing documentation for a method
+warning: missing `return` statement
+warning: used `unwrap()` on an `Option` value
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: missing documentation for a struct
+warning: this ident consists of a single char
+warning: incorrect ordering of items (must be alphabetically ordered)
+warning: missing documentation for a struct field
+warning: missing documentation for a struct field
+warning: missing documentation for a struct field
+warning: missing documentation for an associated function
+warning: missing `return` statement
+warning: missing documentation for an associated function
+warning: missing `return` statement
+warning: missing documentation for an associated function
+warning: missing `return` statement
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: `panic` should not be present in production code
+warning: missing trait method provided by default: `into_slice_add`
+warning: missing trait method provided by default: `into_slice_sub`
+warning: missing trait method provided by default: `into_slice_offset`
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: missing trait method provided by default: `slice_add`
+warning: missing trait method provided by default: `slice_sub`
+warning: missing trait method provided by default: `slice_offset`
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: missing trait method provided by default: `slice_add`
+warning: missing trait method provided by default: `slice_sub`
+warning: missing trait method provided by default: `slice_offset`
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: missing trait method provided by default: `slice_add_mut`
+warning: missing trait method provided by default: `slice_sub_mut`
+warning: missing trait method provided by default: `slice_offset_mut`
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: missing trait method provided by default: `get_add`
+warning: missing trait method provided by default: `get_sub`
+warning: missing trait method provided by default: `get_offset`
+warning: missing `return` statement
+warning: indexing may panic
+warning: missing trait method provided by default: `get_add_mut`
+warning: missing trait method provided by default: `get_sub_mut`
+warning: missing trait method provided by default: `get_offset_mut`
+warning: missing `return` statement
+warning: indexing may panic
+warning: missing trait method provided by default: `get_add`
+warning: missing trait method provided by default: `get_sub`
+warning: missing trait method provided by default: `get_offset`
+warning: missing `return` statement
+warning: indexing may panic
+warning: missing trait method provided by default: `get_add`
+warning: missing trait method provided by default: `get_sub`
+warning: missing trait method provided by default: `get_offset`
+warning: missing `return` statement
+warning: indexing may panic
+warning: missing documentation for a trait
+warning: missing documentation for a method
+warning: missing `return` statement
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: missing `return` statement
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: missing `return` statement
+warning: using a potentially dangerous silent `as` conversion
+warning: missing `return` statement
+warning: using a potentially dangerous silent `as` conversion
+warning: missing `return` statement
+warning: using a potentially dangerous silent `as` conversion
+warning: missing `return` statement
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: used `expect()` on an `Option` value
+warning: use the `?` operator instead of an `and_then` call
+warning: missing `return` statement
+warning: `l` is shadowed
+warning: this ident consists of a single char
+warning: missing `return` statement
+warning: `r` is shadowed
+warning: this ident consists of a single char
+warning: arithmetic operation that can potentially result in unexpected side-effects
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: `panic` should not be present in production code
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: use the `?` operator instead of an `and_then` call
+warning: missing `return` statement
+warning: `l` is shadowed
+warning: this ident consists of a single char
+warning: use the `?` operator instead of an `and_then` call
+warning: missing `return` statement
+warning: missing `return` statement
+warning: `r` is shadowed
+warning: this ident consists of a single char
+warning: this could be simplified with `bool::then`
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: used `unwrap()` on an `Option` value
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: used `unwrap()` on an `Option` value
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: used `unwrap()` on an `Option` value
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: used `unwrap()` on an `Option` value
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: missing `return` statement
+warning: `s` is shadowed
+warning: this ident consists of a single char
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: missing `return` statement
+warning: `s` is shadowed
+warning: this ident consists of a single char
+warning: missing documentation for a module
+warning: missing documentation for a trait
+warning: missing documentation for a method
+warning: missing documentation for a trait
+warning: missing documentation for a method
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing `return` statement
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: missing `return` statement
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: missing `return` statement
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing `return` statement
+warning: `p` is shadowed
+warning: this ident consists of a single char
+warning: using a potentially dangerous silent `as` conversion
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: this ident consists of a single char
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: using a potentially dangerous silent `as` conversion
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: using a potentially dangerous silent `as` conversion
+warning: using a potentially dangerous silent `as` conversion
+warning: missing documentation for a function
+warning: missing `return` statement
+warning: this ident consists of a single char
+warning: consider bringing this path into scope with the `use` keyword
+warning: missing documentation for a function
+warning: infinite loop detected
+warning: this function is only used once
+warning: this function is only used once
+warning: this function is only used once
+warning: this function is only used once
+warning: this function is only used once
+warning: this function is only used once

@@ -1,0 +1,1694 @@
+{
+    "special_type": [
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "typedef struct \n{\n  size_t len;\n  char *alloc;\n  char *data;\n} buffer_t",
+            "name": "buffer_t",
+            "names": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "len",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t len"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "alloc",
+                        "type": "char *",
+                        "definition": [
+                            "char *alloc"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "data",
+                        "type": "char *",
+                        "definition": [
+                            "char *data"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        }
+    ],
+    "global_variable": [],
+    "function": [
+        {
+            "path": null,
+            "name": "buffer_new",
+            "header": "buffer_t *buffer_new()",
+            "params": [],
+            "definition": "buffer_t *buffer_new()\n{\n  return buffer_new_with_size(64);\n}\n\n",
+            "calle": [
+                "buffer_new_with_size"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_new_with_size",
+            "header": "buffer_t *buffer_new_with_size(size_t n)",
+            "params": [
+                "size_t n"
+            ],
+            "definition": "buffer_t *buffer_new_with_size(size_t n)\n{\n  buffer_t *self = malloc(sizeof(buffer_t));\n  if (!self)\n  {\n    return 0;\n  }\n  self->len = n;\n  self->data = (self->alloc = calloc(n + 1, 1));\n  return self;\n}\n\n",
+            "calle": [
+                "calloc",
+                "malloc"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "n",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t n"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self = malloc(sizeof(buffer_t))"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_new_with_string",
+            "header": "buffer_t *buffer_new_with_string(char *str)",
+            "params": [
+                "char *str"
+            ],
+            "definition": "buffer_t *buffer_new_with_string(char *str)\n{\n  return buffer_new_with_string_length(str, strlen(str));\n}\n\n",
+            "calle": [
+                "buffer_new_with_string_length",
+                "strlen"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "str",
+                        "type": "char *",
+                        "definition": [
+                            "char *str"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_new_with_string_length",
+            "header": "buffer_t *buffer_new_with_string_length(char *str, size_t len)",
+            "params": [
+                "char *str",
+                "size_t len"
+            ],
+            "definition": "buffer_t *buffer_new_with_string_length(char *str, size_t len)\n{\n  buffer_t *self = malloc(sizeof(buffer_t));\n  if (!self)\n  {\n    return 0;\n  }\n  self->len = len;\n  self->data = (self->alloc = str);\n  return self;\n}\n\n",
+            "calle": [
+                "malloc"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "str",
+                        "type": "char *",
+                        "definition": [
+                            "char *str"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "len",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t len"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self = malloc(sizeof(buffer_t))"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_new_with_copy",
+            "header": "buffer_t *buffer_new_with_copy(char *str)",
+            "params": [
+                "char *str"
+            ],
+            "definition": "buffer_t *buffer_new_with_copy(char *str)\n{\n  size_t len = strlen(str);\n  buffer_t *self = buffer_new_with_size(len);\n  if (!self)\n  {\n    return 0;\n  }\n  memcpy(self->alloc, str, len);\n  self->data = self->alloc;\n  return self;\n}\n\n",
+            "calle": [
+                "buffer_new_with_size",
+                "memcpy",
+                "strlen"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "str",
+                        "type": "char *",
+                        "definition": [
+                            "char *str"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "len",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t len = strlen(str)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self = buffer_new_with_size(len)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_size",
+            "header": "size_t buffer_size(buffer_t *self)",
+            "params": [
+                "buffer_t *self"
+            ],
+            "definition": "size_t buffer_size(buffer_t *self)\n{\n  return self->len;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_length",
+            "header": "size_t buffer_length(buffer_t *self)",
+            "params": [
+                "buffer_t *self"
+            ],
+            "definition": "size_t buffer_length(buffer_t *self)\n{\n  return strlen(self->data);\n}\n\n",
+            "calle": [
+                "strlen"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_free",
+            "header": "void buffer_free(buffer_t *self)",
+            "params": [
+                "buffer_t *self"
+            ],
+            "definition": "void buffer_free(buffer_t *self)\n{\n  free(self->alloc);\n  free(self);\n}\n\n",
+            "calle": [
+                "free"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_prepend",
+            "header": "int buffer_prepend(buffer_t *self, char *str)",
+            "params": [
+                "buffer_t *self",
+                "char *str"
+            ],
+            "definition": "int buffer_prepend(buffer_t *self, char *str)\n{\n  size_t len = strlen(str);\n  size_t prev = strlen(self->data);\n  size_t needed = len + prev;\n  if (self->len > needed)\n  {\n    goto move;\n  }\n  int ret = buffer_resize(self, needed);\n  if ((-1) == ret)\n  {\n    return -1;\n  }\n  move:\n  memmove(self->data + len, self->data, len + 1);\n\n  memcpy(self->data, str, len);\n  return 0;\n}\n\n",
+            "calle": [
+                "buffer_resize",
+                "memcpy",
+                "memmove",
+                "strlen"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "str",
+                        "type": "char *",
+                        "definition": [
+                            "char *str"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "len",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t len = strlen(str)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "prev",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t prev = strlen(self->data)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "needed",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t needed = len + prev"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ret",
+                        "type": "int",
+                        "definition": [
+                            "int ret = buffer_resize(self, needed)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_append",
+            "header": "int buffer_append(buffer_t *self, const char *str)",
+            "params": [
+                "buffer_t *self",
+                "const char *str"
+            ],
+            "definition": "int buffer_append(buffer_t *self, const char *str)\n{\n  return buffer_append_n(self, str, strlen(str));\n}\n\n",
+            "calle": [
+                "buffer_append_n",
+                "strlen"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "str",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *str"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_appendf",
+            "header": "int buffer_appendf(buffer_t *self, const char *format, ...)",
+            "params": [
+                "buffer_t *self",
+                "const char *format",
+                "..."
+            ],
+            "definition": "int buffer_appendf(buffer_t *self, const char *format, ...)\n{\n  va_list ap;\n  va_list tmpa;\n  char *dst = 0;\n  unsigned int dst_idx = 0;\n  int length = 0;\n  int required = 0;\n  int bytes = 0;\n  __builtin_va_start(ap);\n  length = buffer_length(self);\n  va_copy(tmpa, ap);\n  required = vsnprintf(0, 0, format, tmpa);\n  ;\n  if ((-1) == buffer_resize(self, length + required))\n  {\n    ;\n    return -1;\n  }\n  dst_idx = self->data + length;\n  bytes = vsnprintf(dst, 1 + required, format, ap);\n  ;\n  return (bytes < 0) ? (-1) : (0);\n}\n\n",
+            "calle": [
+                "__builtin_va_start",
+                "buffer_length",
+                "buffer_resize",
+                "va_copy",
+                "vsnprintf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "format",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *format"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ap",
+                        "type": "va_list",
+                        "definition": [
+                            "va_list ap"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "tmpa",
+                        "type": "va_list",
+                        "definition": [
+                            "va_list tmpa"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "dst",
+                        "type": "char *",
+                        "definition": [
+                            "char *dst = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "dst_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int dst_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "length",
+                        "type": "int",
+                        "definition": [
+                            "int length = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "required",
+                        "type": "int",
+                        "definition": [
+                            "int required = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "bytes",
+                        "type": "int",
+                        "definition": [
+                            "int bytes = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_append_n",
+            "header": "int buffer_append_n(buffer_t *self, const char *str, size_t len)",
+            "params": [
+                "buffer_t *self",
+                "const char *str",
+                "size_t len"
+            ],
+            "definition": "int buffer_append_n(buffer_t *self, const char *str, size_t len)\n{\n  size_t prev = strlen(self->data);\n  size_t needed = len + prev;\n  if (self->len > needed)\n  {\n    strncat(self->data, str, len);\n    return 0;\n  }\n  int ret = buffer_resize(self, needed);\n  if ((-1) == ret)\n  {\n    return -1;\n  }\n  strncat(self->data, str, len);\n  return 0;\n}\n\n",
+            "calle": [
+                "buffer_resize",
+                "strlen",
+                "strncat"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "str",
+                        "type": "const char *",
+                        "definition": [
+                            "const char *str"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "len",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t len"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "prev",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t prev = strlen(self->data)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "needed",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t needed = len + prev"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ret",
+                        "type": "int",
+                        "definition": [
+                            "int ret = buffer_resize(self, needed)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_equals",
+            "header": "int buffer_equals(buffer_t *self, buffer_t *other)",
+            "params": [
+                "buffer_t *self",
+                "buffer_t *other"
+            ],
+            "definition": "int buffer_equals(buffer_t *self, buffer_t *other)\n{\n  return 0 == strcmp(self->data, other->data);\n}\n\n",
+            "calle": [
+                "strcmp"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "other",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *other"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_indexof",
+            "header": "ssize_t buffer_indexof(buffer_t *self, char *str)",
+            "params": [
+                "buffer_t *self",
+                "char *str"
+            ],
+            "definition": "ssize_t buffer_indexof(buffer_t *self, char *str)\n{\n  char *sub = strstr(self->data, str);\n  if (!sub)\n  {\n    return -1;\n  }\n  return sub - self->data;\n}\n\n",
+            "calle": [
+                "strstr"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "str",
+                        "type": "char *",
+                        "definition": [
+                            "char *str"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "sub",
+                        "type": "char *",
+                        "definition": [
+                            "char *sub = strstr(self->data, str)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_slice",
+            "header": "buffer_t *buffer_slice(buffer_t *self, size_t from, ssize_t to)",
+            "params": [
+                "buffer_t *buf",
+                "size_t from",
+                "ssize_t to"
+            ],
+            "definition": "buffer_t *buffer_slice(buffer_t *buf, size_t from, ssize_t to)\n{\n  size_t len = strlen(buf->data);\n  if (to < from)\n  {\n    return 0;\n  }\n  if (to < 0)\n  {\n    to = len - (~to);\n  }\n  if (to > len)\n  {\n    to = len;\n  }\n  size_t n = to - from;\n  buffer_t *self = buffer_new_with_size(n);\n  memcpy(self->data, buf->data + from, n);\n  return self;\n}\n\n",
+            "calle": [
+                "buffer_new_with_size",
+                "memcpy",
+                "strlen"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "buf",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *buf"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "from",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t from"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "to",
+                        "type": "ssize_t",
+                        "definition": [
+                            "ssize_t to"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "len",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t len = strlen(buf->data)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "n",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t n = to - from"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self = buffer_new_with_size(n)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_compact",
+            "header": "ssize_t buffer_compact(buffer_t *self)",
+            "params": [
+                "buffer_t *self"
+            ],
+            "definition": "ssize_t buffer_compact(buffer_t *self)\n{\n  size_t len = buffer_length(self);\n  size_t rem = self->len - len;\n  char *buf = calloc(len + 1, 1);\n  if (!buf)\n  {\n    return -1;\n  }\n  memcpy(buf, self->data, len);\n  free(self->alloc);\n  self->len = len;\n  self->data = (self->alloc = buf);\n  return rem;\n}\n\n",
+            "calle": [
+                "buffer_length",
+                "calloc",
+                "free",
+                "memcpy"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "len",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t len = buffer_length(self)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "rem",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t rem = self->len - len"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "buf",
+                        "type": "char *",
+                        "definition": [
+                            "char *buf = calloc(len + 1, 1)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_fill",
+            "header": "void buffer_fill(buffer_t *self, int c)",
+            "params": [
+                "buffer_t *self",
+                "int c"
+            ],
+            "definition": "void buffer_fill(buffer_t *self, int c)\n{\n  memset(self->data, c, self->len);\n}\n\n",
+            "calle": [
+                "memset"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "c",
+                        "type": "int",
+                        "definition": [
+                            "int c"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_clear",
+            "header": "void buffer_clear(buffer_t *self)",
+            "params": [
+                "buffer_t *self"
+            ],
+            "definition": "void buffer_clear(buffer_t *self)\n{\n  buffer_fill(self, 0);\n}\n\n",
+            "calle": [
+                "buffer_fill"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_trim_left",
+            "header": "void buffer_trim_left(buffer_t *self)",
+            "params": [
+                "buffer_t *self"
+            ],
+            "definition": "void buffer_trim_left(buffer_t *self)\n{\n  int c;\n  while ((c = *self->data) && isspace(c))\n  {\n    self->data += 1;\n  }\n\n}\n\n",
+            "calle": [
+                "isspace"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "c",
+                        "type": "int",
+                        "definition": [
+                            "int c"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_trim_right",
+            "header": "void buffer_trim_right(buffer_t *self)",
+            "params": [
+                "buffer_t *self"
+            ],
+            "definition": "void buffer_trim_right(buffer_t *self)\n{\n  int c;\n  size_t i = buffer_length(self) - 1;\n  while ((c = self->data[i]) && isspace(c))\n  {\n    self->data[i] = 0;\n    i -= 1;\n  }\n\n}\n\n",
+            "calle": [
+                "buffer_length",
+                "isspace"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "c",
+                        "type": "int",
+                        "definition": [
+                            "int c"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t i = buffer_length(self) - 1"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_trim",
+            "header": "void buffer_trim(buffer_t *self)",
+            "params": [
+                "buffer_t *self"
+            ],
+            "definition": "void buffer_trim(buffer_t *self)\n{\n  buffer_trim_left(self);\n  buffer_trim_right(self);\n}\n\n",
+            "calle": [
+                "buffer_trim_left",
+                "buffer_trim_right"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_print",
+            "header": "void buffer_print(buffer_t *self)",
+            "params": [
+                "buffer_t *self"
+            ],
+            "definition": "void buffer_print(buffer_t *self)\n{\n  size_t len = self->len;\n  printf(\"\\n \");\n  for (int i = 0; i < len; i += 1)\n  {\n    printf(\" %02x\", self->alloc[i]);\n    if (((i + 1) % 8) == 0)\n    {\n      printf(\"\\n \");\n    }\n  }\n\n  printf(\"\\n\");\n}\n\n",
+            "calle": [
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "len",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t len = self->len"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "buffer_resize",
+            "header": "",
+            "params": [
+                "buffer_t *self",
+                "size_t n"
+            ],
+            "definition": "int buffer_resize(buffer_t *self, size_t n)\n{\n  n = (n + (1024 - 1)) & (~(1024 - 1));\n  self->len = n;\n  self->alloc = (self->data = realloc(self->alloc, n + 1));\n  if (!self->alloc)\n  {\n    return -1;\n  }\n  self->alloc[n] = '\\0';\n  return 0;\n}\n\n",
+            "calle": [
+                "realloc"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "self",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *self"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "n",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t n"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "equal",
+            "header": "",
+            "params": [
+                "char *a",
+                "char *b"
+            ],
+            "definition": "void equal(char *a, char *b)\n{\n  if (strcmp(a, b))\n  {\n    printf(\"\\n\");\n    printf(\"  expected: '%s'\\n\", a);\n    printf(\"    actual: '%s'\\n\", b);\n    printf(\"\\n\");\n    exit(1);\n  }\n}\n\n",
+            "calle": [
+                "exit",
+                "printf",
+                "strcmp"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "char *",
+                        "definition": [
+                            "char *a"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "b",
+                        "type": "char *",
+                        "definition": [
+                            "char *b"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_buffer_new",
+            "header": "",
+            "params": [],
+            "definition": "void test_buffer_new()\n{\n  buffer_t *buf = buffer_new();\n  assert(64 == buffer_size(buf));\n  assert(0 == buffer_length(buf));\n  buffer_free(buf);\n}\n\n",
+            "calle": [
+                "assert",
+                "buffer_free",
+                "buffer_length",
+                "buffer_new",
+                "buffer_size"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "buf",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *buf = buffer_new()"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_buffer_new_with_size",
+            "header": "",
+            "params": [],
+            "definition": "void test_buffer_new_with_size()\n{\n  buffer_t *buf = buffer_new_with_size(1024);\n  assert(1024 == buffer_size(buf));\n  assert(0 == buffer_length(buf));\n  buffer_free(buf);\n}\n\n",
+            "calle": [
+                "assert",
+                "buffer_free",
+                "buffer_length",
+                "buffer_new_with_size",
+                "buffer_size"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "buf",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *buf = buffer_new_with_size(1024)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_buffer_append",
+            "header": "",
+            "params": [],
+            "definition": "void test_buffer_append()\n{\n  buffer_t *buf = buffer_new();\n  assert(0 == buffer_append(buf, \"Hello\"));\n  assert(0 == buffer_append(buf, \" World\"));\n  assert(strlen(\"Hello World\") == buffer_length(buf));\n  equal(\"Hello World\", buf->data);\n  buffer_free(buf);\n}\n\n",
+            "calle": [
+                "assert",
+                "buffer_append",
+                "buffer_free",
+                "buffer_length",
+                "buffer_new",
+                "equal",
+                "strlen"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "buf",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *buf = buffer_new()"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_buffer_append_n",
+            "header": "",
+            "params": [],
+            "definition": "void test_buffer_append_n()\n{\n  buffer_t *buf = buffer_new();\n  assert(0 == buffer_append_n(buf, \"subway\", 3));\n  assert(0 == buffer_append_n(buf, \"marines\", 6));\n  assert(strlen(\"submarine\") == buffer_length(buf));\n  equal(\"submarine\", buf->data);\n  buffer_free(buf);\n}\n\n",
+            "calle": [
+                "assert",
+                "buffer_append_n",
+                "buffer_free",
+                "buffer_length",
+                "buffer_new",
+                "equal",
+                "strlen"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "buf",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *buf = buffer_new()"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_buffer_append__grow",
+            "header": "",
+            "params": [],
+            "definition": "void test_buffer_append__grow()\n{\n  buffer_t *buf = buffer_new_with_size(10);\n  assert(0 == buffer_append(buf, \"Hello\"));\n  assert(0 == buffer_append(buf, \" tobi\"));\n  assert(0 == buffer_append(buf, \" was\"));\n  assert(0 == buffer_append(buf, \" here\"));\n  char *str = \"Hello tobi was here\";\n  equal(str, buf->data);\n  assert(1024 == buffer_size(buf));\n  assert(strlen(str) == buffer_length(buf));\n  buffer_free(buf);\n}\n\n",
+            "calle": [
+                "assert",
+                "buffer_append",
+                "buffer_free",
+                "buffer_length",
+                "buffer_new_with_size",
+                "buffer_size",
+                "equal",
+                "strlen"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "buf",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *buf = buffer_new_with_size(10)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "str",
+                        "type": "char *",
+                        "definition": [
+                            "char *str = \"Hello tobi was here\""
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_buffer_prepend",
+            "header": "",
+            "params": [],
+            "definition": "void test_buffer_prepend()\n{\n  buffer_t *buf = buffer_new();\n  assert(0 == buffer_append(buf, \" World\"));\n  assert(0 == buffer_prepend(buf, \"Hello\"));\n  assert(strlen(\"Hello World\") == buffer_length(buf));\n  equal(\"Hello World\", buf->data);\n  buffer_free(buf);\n}\n\n",
+            "calle": [
+                "assert",
+                "buffer_append",
+                "buffer_free",
+                "buffer_length",
+                "buffer_new",
+                "buffer_prepend",
+                "equal",
+                "strlen"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "buf",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *buf = buffer_new()"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_buffer_slice",
+            "header": "",
+            "params": [],
+            "definition": "void test_buffer_slice()\n{\n  buffer_t *buf = buffer_new();\n  buffer_append(buf, \"Tobi Ferret\");\n  buffer_t *a = buffer_slice(buf, 2, 8);\n  equal(\"Tobi Ferret\", buf->data);\n  equal(\"bi Fer\", a->data);\n  buffer_free(buf);\n  buffer_free(a);\n}\n\n",
+            "calle": [
+                "buffer_append",
+                "buffer_free",
+                "buffer_new",
+                "buffer_slice",
+                "equal"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "buf",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *buf = buffer_new()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *a = buffer_slice(buf, 2, 8)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_buffer_slice__range_error",
+            "header": "",
+            "params": [],
+            "definition": "void test_buffer_slice__range_error()\n{\n  buffer_t *buf = buffer_new_with_copy(\"Tobi Ferret\");\n  buffer_t *a = buffer_slice(buf, 10, 2);\n  assert(0 == a);\n  buffer_free(buf);\n}\n\n",
+            "calle": [
+                "assert",
+                "buffer_free",
+                "buffer_new_with_copy",
+                "buffer_slice"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "buf",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *buf = buffer_new_with_copy(\"Tobi Ferret\")"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *a = buffer_slice(buf, 10, 2)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_buffer_slice__end",
+            "header": "",
+            "params": [],
+            "definition": "void test_buffer_slice__end()\n{\n  buffer_t *buf = buffer_new_with_copy(\"Tobi Ferret\");\n  buffer_t *a = buffer_slice(buf, 5, -1);\n  equal(\"Tobi Ferret\", buf->data);\n  equal(\"Ferret\", a->data);\n  buffer_t *b = buffer_slice(buf, 5, -3);\n  equal(\"Ferr\", b->data);\n  buffer_t *c = buffer_slice(buf, 8, -1);\n  equal(\"ret\", c->data);\n  buffer_free(buf);\n  buffer_free(a);\n  buffer_free(b);\n  buffer_free(c);\n}\n\n",
+            "calle": [
+                "buffer_free",
+                "buffer_new_with_copy",
+                "buffer_slice",
+                "equal"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "buf",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *buf = buffer_new_with_copy(\"Tobi Ferret\")"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *a = buffer_slice(buf, 5, -1)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "b",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *b = buffer_slice(buf, 5, -3)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "c",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *c = buffer_slice(buf, 8, -1)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_buffer_slice__end_overflow",
+            "header": "",
+            "params": [],
+            "definition": "void test_buffer_slice__end_overflow()\n{\n  buffer_t *buf = buffer_new_with_copy(\"Tobi Ferret\");\n  buffer_t *a = buffer_slice(buf, 5, 1000);\n  equal(\"Tobi Ferret\", buf->data);\n  equal(\"Ferret\", a->data);\n  buffer_free(a);\n  buffer_free(buf);\n}\n\n",
+            "calle": [
+                "buffer_free",
+                "buffer_new_with_copy",
+                "buffer_slice",
+                "equal"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "buf",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *buf = buffer_new_with_copy(\"Tobi Ferret\")"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *a = buffer_slice(buf, 5, 1000)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_buffer_equals",
+            "header": "",
+            "params": [],
+            "definition": "void test_buffer_equals()\n{\n  buffer_t *a = buffer_new_with_copy(\"Hello\");\n  buffer_t *b = buffer_new_with_copy(\"Hello\");\n  assert(1 == buffer_equals(a, b));\n  buffer_append(b, \" World\");\n  assert(0 == buffer_equals(a, b));\n  buffer_free(a);\n  buffer_free(b);\n}\n\n",
+            "calle": [
+                "assert",
+                "buffer_append",
+                "buffer_equals",
+                "buffer_free",
+                "buffer_new_with_copy"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *a = buffer_new_with_copy(\"Hello\")"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "b",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *b = buffer_new_with_copy(\"Hello\")"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_buffer_formatting",
+            "header": "",
+            "params": [],
+            "definition": "void test_buffer_formatting()\n{\n  buffer_t *buf = buffer_new();\n  int result = buffer_appendf(buf, \"%d %s\", 3, \"cow\");\n  assert(0 == result);\n  equal(\"3 cow\", buf->data);\n  result = buffer_appendf(buf, \" - 0x%08X\", 0xdeadbeef);\n  assert(0 == result);\n  equal(\"3 cow - 0xDEADBEEF\", buf->data);\n  buffer_free(buf);\n}\n\n",
+            "calle": [
+                "assert",
+                "buffer_appendf",
+                "buffer_free",
+                "buffer_new",
+                "equal"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "buf",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *buf = buffer_new()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "result",
+                        "type": "int",
+                        "definition": [
+                            "int result = buffer_appendf(buf, \"%d %s\", 3, \"cow\")"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_buffer_indexof",
+            "header": "",
+            "params": [],
+            "definition": "void test_buffer_indexof()\n{\n  buffer_t *buf = buffer_new_with_copy(\"Tobi is a ferret\");\n  ssize_t i = buffer_indexof(buf, \"is\");\n  assert(5 == i);\n  i = buffer_indexof(buf, \"a\");\n  assert(8 == i);\n  i = buffer_indexof(buf, \"something\");\n  assert((-1) == i);\n  buffer_free(buf);\n}\n\n",
+            "calle": [
+                "assert",
+                "buffer_free",
+                "buffer_indexof",
+                "buffer_new_with_copy"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "buf",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *buf = buffer_new_with_copy(\"Tobi is a ferret\")"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "ssize_t",
+                        "definition": [
+                            "ssize_t i = buffer_indexof(buf, \"is\")"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_buffer_fill",
+            "header": "",
+            "params": [],
+            "definition": "void test_buffer_fill()\n{\n  buffer_t *buf = buffer_new_with_copy(\"Hello\");\n  assert(5 == buffer_length(buf));\n  buffer_fill(buf, 0);\n  assert(0 == buffer_length(buf));\n  buffer_free(buf);\n}\n\n",
+            "calle": [
+                "assert",
+                "buffer_fill",
+                "buffer_free",
+                "buffer_length",
+                "buffer_new_with_copy"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "buf",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *buf = buffer_new_with_copy(\"Hello\")"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_buffer_clear",
+            "header": "",
+            "params": [],
+            "definition": "void test_buffer_clear()\n{\n  buffer_t *buf = buffer_new_with_copy(\"Hello\");\n  assert(5 == buffer_length(buf));\n  buffer_clear(buf);\n  assert(0 == buffer_length(buf));\n  buffer_free(buf);\n}\n\n",
+            "calle": [
+                "assert",
+                "buffer_clear",
+                "buffer_free",
+                "buffer_length",
+                "buffer_new_with_copy"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "buf",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *buf = buffer_new_with_copy(\"Hello\")"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_buffer_trim",
+            "header": "",
+            "params": [],
+            "definition": "void test_buffer_trim()\n{\n  buffer_t *buf = buffer_new_with_copy(\"  Hello\\n\\n \");\n  unsigned int buf_idx = 0;\n  buffer_trim(buf);\n  equal(\"Hello\", buf->data);\n  buffer_free(buf);\n  buf_idx = buffer_new_with_copy(\"  Hello\\n\\n \");\n  buffer_trim_left(buf);\n  equal(\"Hello\\n\\n \", buf->data);\n  buffer_free(buf);\n  buf_idx = buffer_new_with_copy(\"  Hello\\n\\n \");\n  buffer_trim_right(buf);\n  equal(\"  Hello\", buf->data);\n  buffer_free(buf);\n}\n\n",
+            "calle": [
+                "buffer_free",
+                "buffer_new_with_copy",
+                "buffer_trim",
+                "buffer_trim_left",
+                "buffer_trim_right",
+                "equal"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "buf",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *buf = buffer_new_with_copy(\"  Hello\\n\\n \")"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "buf_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int buf_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "test_buffer_compact",
+            "header": "",
+            "params": [],
+            "definition": "void test_buffer_compact()\n{\n  buffer_t *buf = buffer_new_with_copy(\"  Hello\\n\\n \");\n  buffer_trim(buf);\n  assert(5 == buffer_length(buf));\n  assert(10 == buffer_size(buf));\n  ssize_t removed = buffer_compact(buf);\n  assert(5 == removed);\n  assert(5 == buffer_length(buf));\n  assert(5 == buffer_size(buf));\n  equal(\"Hello\", buf->data);\n  buffer_free(buf);\n}\n\n",
+            "calle": [
+                "assert",
+                "buffer_compact",
+                "buffer_free",
+                "buffer_length",
+                "buffer_new_with_copy",
+                "buffer_size",
+                "buffer_trim",
+                "equal"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "buf",
+                        "type": "buffer_t *",
+                        "definition": [
+                            "buffer_t *buf = buffer_new_with_copy(\"  Hello\\n\\n \")"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "removed",
+                        "type": "ssize_t",
+                        "definition": [
+                            "ssize_t removed = buffer_compact(buf)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#test",
+            "header": "",
+            "params": [],
+            "definition": "int main()\n{\n  test_buffer_new();\n  test_buffer_new_with_size();\n  test_buffer_append();\n  test_buffer_append__grow();\n  test_buffer_append_n();\n  test_buffer_prepend();\n  test_buffer_slice();\n  test_buffer_slice__range_error();\n  test_buffer_slice__end();\n  test_buffer_slice__end_overflow();\n  test_buffer_equals();\n  test_buffer_formatting();\n  test_buffer_indexof();\n  test_buffer_fill();\n  test_buffer_clear();\n  test_buffer_trim();\n  test_buffer_compact();\n  printf(\"\\n  \\e[32m\\u2713 \\e[90mok\\e[0m\\n\\n\");\n  return 0;\n}\n\n",
+            "calle": [
+                "printf",
+                "test_buffer_append",
+                "test_buffer_append__grow",
+                "test_buffer_append_n",
+                "test_buffer_clear",
+                "test_buffer_compact",
+                "test_buffer_equals",
+                "test_buffer_fill",
+                "test_buffer_formatting",
+                "test_buffer_indexof",
+                "test_buffer_new",
+                "test_buffer_new_with_size",
+                "test_buffer_prepend",
+                "test_buffer_slice",
+                "test_buffer_slice__end",
+                "test_buffer_slice__end_overflow",
+                "test_buffer_slice__range_error",
+                "test_buffer_trim"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [],
+                "function": [],
+                "typedefs": []
+            }
+        }
+    ],
+    "typedefs": []
+}

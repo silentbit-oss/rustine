@@ -1,0 +1,213 @@
+{
+  "C": {
+    "blanks": 1944,
+    "children": {},
+    "code": 5688,
+    "comments": 630,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/binn-3.0/test/test_binn_json.c",
+        "stats": {
+          "blanks": 10,
+          "blobs": {},
+          "code": 30,
+          "comments": 1
+        }
+      },
+      {
+        "name": "subjects/binn-3.0/conversions/json/binn_json.c",
+        "stats": {
+          "blanks": 54,
+          "blobs": {},
+          "code": 194,
+          "comments": 9
+        }
+      },
+      {
+        "name": "subjects/binn-3.0/src/win32/dllmain.c",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 11,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/binn-3.0/test/test_binn.c",
+        "stats": {
+          "blanks": 442,
+          "blobs": {},
+          "code": 1342,
+          "comments": 150
+        }
+      },
+      {
+        "name": "subjects/binn-3.0/examples/reading.c",
+        "stats": {
+          "blanks": 21,
+          "blobs": {},
+          "code": 40,
+          "comments": 16
+        }
+      },
+      {
+        "name": "subjects/binn-3.0/src/binn.c",
+        "stats": {
+          "blanks": 857,
+          "blobs": {},
+          "code": 2350,
+          "comments": 266
+        }
+      },
+      {
+        "name": "subjects/binn-3.0/test/test_binn2.c",
+        "stats": {
+          "blanks": 534,
+          "blobs": {},
+          "code": 1686,
+          "comments": 167
+        }
+      },
+      {
+        "name": "subjects/binn-3.0/examples/writing.c",
+        "stats": {
+          "blanks": 23,
+          "blobs": {},
+          "code": 35,
+          "comments": 21
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 153,
+    "children": {},
+    "code": 675,
+    "comments": 105,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/binn-3.0/conversions/json/binn_json.h",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 7,
+          "comments": 0
+        }
+      },
+      {
+        "name": "subjects/binn-3.0/src/binn.h",
+        "stats": {
+          "blanks": 150,
+          "blobs": {},
+          "code": 668,
+          "comments": 105
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 2097,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/binn-3.0/test/test_binn_json.c",
+          "stats": {
+            "blanks": 10,
+            "blobs": {},
+            "code": 30,
+            "comments": 1
+          }
+        },
+        {
+          "name": "subjects/binn-3.0/conversions/json/binn_json.c",
+          "stats": {
+            "blanks": 54,
+            "blobs": {},
+            "code": 194,
+            "comments": 9
+          }
+        },
+        {
+          "name": "subjects/binn-3.0/src/win32/dllmain.c",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 11,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/binn-3.0/test/test_binn.c",
+          "stats": {
+            "blanks": 442,
+            "blobs": {},
+            "code": 1342,
+            "comments": 150
+          }
+        },
+        {
+          "name": "subjects/binn-3.0/examples/reading.c",
+          "stats": {
+            "blanks": 21,
+            "blobs": {},
+            "code": 40,
+            "comments": 16
+          }
+        },
+        {
+          "name": "subjects/binn-3.0/src/binn.c",
+          "stats": {
+            "blanks": 857,
+            "blobs": {},
+            "code": 2350,
+            "comments": 266
+          }
+        },
+        {
+          "name": "subjects/binn-3.0/test/test_binn2.c",
+          "stats": {
+            "blanks": 534,
+            "blobs": {},
+            "code": 1686,
+            "comments": 167
+          }
+        },
+        {
+          "name": "subjects/binn-3.0/examples/writing.c",
+          "stats": {
+            "blanks": 23,
+            "blobs": {},
+            "code": 35,
+            "comments": 21
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/binn-3.0/conversions/json/binn_json.h",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 7,
+            "comments": 0
+          }
+        },
+        {
+          "name": "subjects/binn-3.0/src/binn.h",
+          "stats": {
+            "blanks": 150,
+            "blobs": {},
+            "code": 668,
+            "comments": 105
+          }
+        }
+      ]
+    },
+    "code": 6363,
+    "comments": 735,
+    "inaccurate": false,
+    "reports": []
+  }
+}

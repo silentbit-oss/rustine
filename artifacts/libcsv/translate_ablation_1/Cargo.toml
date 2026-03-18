@@ -1,0 +1,11 @@
+[package]
+name = "translate_without_break_down"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lazy_static = "1.4.0"
+
+[[bin]]
+name="test_csv"
+path="src/test_csv_main.rs"

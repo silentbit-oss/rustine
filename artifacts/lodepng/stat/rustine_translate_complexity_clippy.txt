@@ -1,0 +1,142 @@
+warning: a dangling pointer will be produced because the temporary `std::boxed::Box<[u8]>` will be dropped
+warning: called `.as_mut().map(|v: &mut Vec<u8>| v.as_mut_slice())` on an `Option` value
+warning: called `.as_ref().map(|c| c.as_c_str())` on an `Option` value
+warning: called `.as_ref().map(|s| s.as_str())` on an `Option` value
+warning: called `unwrap` on `key_ptr` after checking its variant with `is_none`
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: clamp-like pattern without using clamp function
+warning: consider removing unnecessary double parentheses
+warning: consider removing unnecessary double parentheses
+warning: consider removing unnecessary double parentheses
+warning: consider removing unnecessary double parentheses
+warning: consider removing unnecessary double parentheses
+warning: consider removing unnecessary double parentheses
+warning: consider removing unnecessary double parentheses
+warning: consider removing unnecessary double parentheses
+warning: consider removing unnecessary double parentheses
+warning: consider removing unnecessary double parentheses
+warning: deref which would be done by auto-deref
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: the variable `j` is used as a loop counter
+warning: the variable `j` is used as a loop counter
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (10/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (12/7)
+warning: this function has too many arguments (12/7)
+warning: this function has too many arguments (12/7)
+warning: this function has too many arguments (12/7)
+warning: this function has too many arguments (13/7)
+warning: this function has too many arguments (13/7)
+warning: this function has too many arguments (13/7)
+warning: this function has too many arguments (13/7)
+warning: this function has too many arguments (14/7)
+warning: this function has too many arguments (15/7)
+warning: this function has too many arguments (16/7)
+warning: this function has too many arguments (16/7)
+warning: this function has too many arguments (16/7)
+warning: this function has too many arguments (16/7)
+warning: this function has too many arguments (17/7)
+warning: this function has too many arguments (22/7)
+warning: this function has too many arguments (31/7)
+warning: this function has too many arguments (32/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (9/7)
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this pattern reimplements `Option::unwrap_or`
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions

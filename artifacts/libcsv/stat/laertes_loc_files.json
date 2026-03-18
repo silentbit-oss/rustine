@@ -1,0 +1,76 @@
+{
+  "Rust": {
+    "blanks": 22,
+    "children": {},
+    "code": 1020,
+    "comments": 56,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/libcsv/others/laertes/c2rust-lib.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 11,
+          "comments": 1
+        }
+      },
+      {
+        "name": "artifacts/libcsv/others/laertes/build.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/libcsv/others/laertes/libcsv.rs",
+        "stats": {
+          "blanks": 11,
+          "blobs": {},
+          "code": 1003,
+          "comments": 51
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 22,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/libcsv/others/laertes/c2rust-lib.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 11,
+            "comments": 1
+          }
+        },
+        {
+          "name": "artifacts/libcsv/others/laertes/build.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/libcsv/others/laertes/libcsv.rs",
+          "stats": {
+            "blanks": 11,
+            "blobs": {},
+            "code": 1003,
+            "comments": 51
+          }
+        }
+      ]
+    },
+    "code": 1020,
+    "comments": 56,
+    "inaccurate": false,
+    "reports": []
+  }
+}

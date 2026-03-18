@@ -1,0 +1,53 @@
+warning: this method could have a `#[must_use]` attribute
+warning: `as` casting between raw pointers without changing their constness
+warning: `if` chain can be rewritten with `match`
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: casting `isize` to `usize` may lose the sign of the value
+warning: casting `isize` to `usize` may lose the sign of the value
+warning: the following explicit lifetimes could be elided: 'a
+warning: the following explicit lifetimes could be elided: 'a
+warning: the following explicit lifetimes could be elided: 'a
+warning: the following explicit lifetimes could be elided: 'a
+warning: the following explicit lifetimes could be elided: 'a
+warning: the following explicit lifetimes could be elided: 'a
+warning: the following explicit lifetimes could be elided: 'a
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers without changing their constness
+warning: reference as raw pointer
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: casting `usize` to `isize` may wrap around the value
+warning: casting `usize` to `isize` may wrap around the value
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: redundant closure
+warning: redundant closure
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: redundant closure
+warning: redundant closure
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: `as` casting between raw pointers without changing their constness
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: this argument is passed by value, but not consumed in the function body
+warning: it is more idiomatic to use `Option<&T>` instead of `&Option<T>`
+warning: `as` casting between raw pointers without changing their constness
+warning: `as` casting between raw pointers while changing only its constness
+warning: `as` casting between raw pointers without changing their constness

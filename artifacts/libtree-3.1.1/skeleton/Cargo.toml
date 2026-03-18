@@ -1,0 +1,10 @@
+[package]
+name = "treers"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name="libtree"
+path="src/libtree_main.rs"

@@ -1,0 +1,40 @@
+{
+  "Rust": {
+    "blanks": 41,
+    "children": {},
+    "code": 938,
+    "comments": 46,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/grabc/others/c2saferrust/grabc.rs",
+        "stats": {
+          "blanks": 41,
+          "blobs": {},
+          "code": 938,
+          "comments": 46
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 41,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/grabc/others/c2saferrust/grabc.rs",
+          "stats": {
+            "blanks": 41,
+            "blobs": {},
+            "code": 938,
+            "comments": 46
+          }
+        }
+      ]
+    },
+    "code": 938,
+    "comments": 46,
+    "inaccurate": false,
+    "reports": []
+  }
+}

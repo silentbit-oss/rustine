@@ -1,0 +1,7 @@
+warning: calling `set_len()` immediately after reserving a buffer creates uninitialized values
+warning: calling `set_len()` immediately after reserving a buffer creates uninitialized values
+warning: this loop never actually loops
+warning: this loop never actually loops
+warning: this loop never actually loops
+warning: this loop never actually loops
+warning: this loop never actually loops

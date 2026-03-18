@@ -1,0 +1,71 @@
+warning: the feature `label_break_value` has been stable since 1.65.0 and no longer requires an attribute to enable
+warning: the feature `raw_ref_op` has been stable since 1.82.0 and no longer requires an attribute to enable
+warning: the feature `strict_provenance` has been stable since 1.84.0 and no longer requires an attribute to enable
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: statement with no effect
+warning: statement with no effect
+warning: unsafe function's docs are missing a `# Safety` section
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: statement with no effect
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: statement with no effect
+warning: `0 as *mut _` detected
+warning: this boolean expression can be simplified
+warning: unneeded `return` statement
+warning: statement with no effect
+warning: statement with no effect
+warning: `0 as *const _` detected
+warning: derefed type is same as origin
+warning: statement with no effect
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: statement with no effect
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: statement with no effect
+warning: statement with no effect
+warning: `0 as *const _` detected
+warning: this `if` statement can be collapsed
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: `0 as *const _` detected
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: derefed type is same as origin
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: `0 as *const _` detected
+warning: `0 as *mut _` detected
+warning: `0 as *mut _` detected
+warning: unsafe function's docs are missing a `# Safety` section
+warning: unneeded `return` statement
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: deref which would be done by auto-deref
+warning: statement with no effect

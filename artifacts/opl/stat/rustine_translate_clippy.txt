@@ -1,0 +1,108 @@
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: variant `OPL_EMU_EG_ATTACK` should have an upper camel case name
+warning: variant `OPL_EMU_EG_DECAY` should have an upper camel case name
+warning: variant `OPL_EMU_EG_SUSTAIN` should have an upper camel case name
+warning: variant `OPL_EMU_EG_RELEASE` should have an upper camel case name
+warning: variant `OPL_EMU_EG_STATES` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: variant `OPL_EMU_KEYON_NORMAL` should have an upper camel case name
+warning: variant `OPL_EMU_KEYON_RHYTHM` should have an upper camel case name
+warning: variant `OPL_EMU_KEYON_CSM` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: variant `OP2_FIXEDPITCH` should have an upper camel case name
+warning: variant `OP2_UNUSED` should have an upper camel case name
+warning: variant `OP2_DOUBLEVOICE` should have an upper camel case name
+warning: unused import: `std::sync::atomic::Ordering`
+warning: unused import: `crate::Op2FlagsT::OP2_DOUBLEVOICE`
+warning: unused import: `OplEmuEnvelopeState::*`
+warning: unused import: `std::sync::atomic::AtomicI32`
+warning: unused import: `std::ptr`
+warning: unused import: `std::fmt::Write`
+warning: unused import: `std::os::raw::c_char`
+warning: unnecessary parentheses around block return value
+warning: operator precedence might not be obvious
+warning: unused import: `rand::Rng`
+warning: value assigned to `lfo_pm_counter_idx` is never read
+warning: unused variable: `chnum`
+warning: variable does not need to be mutable
+warning: unused variable: `out2_index`
+warning: unused variable: `out3_index`
+warning: unused variable: `clipmax`
+warning: unused variable: `choffs`
+warning: unused variable: `period`
+warning: unused variable: `result`
+warning: variable does not need to be mutable
+warning: this operation has no effect
+warning: equal expressions as operands to `!=`
+warning: literal with an empty format string
+warning: equal expressions as operands to `!=`
+warning: literal with an empty format string
+warning: equal expressions as operands to `!=`
+warning: literal with an empty format string
+warning: equal expressions as operands to `!=`
+warning: literal with an empty format string
+warning: manual `!RangeInclusive::contains` implementation
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: this function has too many arguments (8/7)
+warning: this `if` statement can be collapsed
+warning: redundant pattern matching, consider using `is_err()`
+warning: returning the result of a `let` binding from a block
+warning: this operation has no effect
+warning: equal expressions as operands to `>=`
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: equal expressions as operands to `|`
+warning: this operation has no effect
+warning: equal expressions as operands to `|`
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this function has too many arguments (8/7)
+warning: this `if` statement can be collapsed
+warning: manual `RangeInclusive::contains` implementation
+warning: literal with an empty format string
+warning: variables can be used directly in the `format!` string
+warning: literal with an empty format string
+warning: the loop variable `j` is used to index `buffer`
+warning: this comparison involving the minimum or maximum element for this type contains a case that is always true or always false
+warning: literal with an empty format string
+warning: literal with an empty format string
+warning: comparison is useless due to type limits

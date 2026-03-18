@@ -1,0 +1,69 @@
+64 | |     eprintln!("{}: warning: output file(s) may be incomplete.", prog_name_str);
+warning: collection is never read
+warning: dereferencing a reference to an uninhabited type is undefined behavior
+warning: dereferencing a reference to an uninhabited type is undefined behavior
+warning: dereferencing a reference to an uninhabited type is undefined behavior
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: the function has a cognitive complexity of (26/25)
+warning: the function has a cognitive complexity of (27/25)
+warning: the function has a cognitive complexity of (30/25)
+warning: the function has a cognitive complexity of (31/25)
+warning: the function has a cognitive complexity of (33/25)
+warning: the function has a cognitive complexity of (39/25)
+warning: the function has a cognitive complexity of (40/25)
+warning: the function has a cognitive complexity of (41/25)
+warning: the function has a cognitive complexity of (73/25)
+warning: this argument is a mutable reference, but not used mutably
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this function may allocate 800008 bytes on the stack
+warning: this function may allocate 800008 bytes on the stack
+warning: this function may allocate 800008 bytes on the stack
+warning: this function may allocate 800008 bytes on the stack
+warning: unnecessary structure name repetition
+warning: unnecessary structure name repetition
+warning: unnecessary structure name repetition
+warning: unnecessary structure name repetition
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else

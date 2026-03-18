@@ -1,0 +1,3765 @@
+{
+    "special_type": [
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.Struct'>",
+            "definition": "typedef struct genann\n{\n  int inputs;\n  int hidden_layers;\n  int hidden;\n  int outputs;\n  genann_actfun activation_hidden;\n  genann_actfun activation_output;\n  int total_weights;\n  int total_neurons;\n  double *weight;\n  double *output;\n  double *delta;\n} genann",
+            "name": "genann",
+            "names": [
+                "struct genann"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "inputs",
+                        "type": "int",
+                        "definition": [
+                            "int inputs"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hidden_layers",
+                        "type": "int",
+                        "definition": [
+                            "int hidden_layers"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hidden",
+                        "type": "int",
+                        "definition": [
+                            "int hidden"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "outputs",
+                        "type": "int",
+                        "definition": [
+                            "int outputs"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "activation_hidden",
+                        "type": "genann_actfun",
+                        "definition": [
+                            "genann_actfun activation_hidden"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "activation_output",
+                        "type": "genann_actfun",
+                        "definition": [
+                            "genann_actfun activation_output"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "total_weights",
+                        "type": "int",
+                        "definition": [
+                            "int total_weights"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "total_neurons",
+                        "type": "int",
+                        "definition": [
+                            "int total_neurons"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "weight",
+                        "type": "double *",
+                        "definition": [
+                            "double *weight"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "output",
+                        "type": "double *",
+                        "definition": [
+                            "double *output"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "delta",
+                        "type": "double *",
+                        "definition": [
+                            "double *delta"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "type": "<class 'pycparser.c_ast.FuncDecl'>",
+            "definition": "typedef double (*genann_actfun)(const struct genann *ann, double a)",
+            "name": "genann_actfun",
+            "names": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "struct genann",
+                        "type": "const struct genann *",
+                        "definition": [
+                            "const struct genann *ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "double",
+                        "definition": [
+                            "double a"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        }
+    ],
+    "global_variable": [
+        {
+            "path": null,
+            "name": "ltests",
+            "type": "int",
+            "definition": [
+                "static int ltests = 0"
+            ]
+        },
+        {
+            "path": null,
+            "name": "lfails",
+            "type": "int",
+            "definition": [
+                "static int lfails = 0"
+            ]
+        },
+        {
+            "path": null,
+            "name": "sigmoid_dom_min",
+            "type": "const double",
+            "definition": [
+                "const double sigmoid_dom_min = -15.0"
+            ]
+        },
+        {
+            "path": null,
+            "name": "sigmoid_dom_max",
+            "type": "const double",
+            "definition": [
+                "const double sigmoid_dom_max = 15.0"
+            ]
+        },
+        {
+            "path": null,
+            "name": "interval",
+            "type": "double",
+            "definition": [
+                "double interval"
+            ]
+        },
+        {
+            "path": null,
+            "name": "lookup",
+            "type": "double [4096]",
+            "definition": [
+                "double lookup[4096]"
+            ]
+        },
+        {
+            "path": null,
+            "name": "save_name",
+            "type": "const char *",
+            "definition": [
+                "const char *save_name = \"example/xor.ann\""
+            ]
+        },
+        {
+            "path": null,
+            "name": "iris_data",
+            "type": "const char *",
+            "definition": [
+                "const char *iris_data = \"example/iris.data\""
+            ]
+        },
+        {
+            "path": null,
+            "name": "input",
+            "type": "double *",
+            "definition": [
+                "double *input"
+            ]
+        },
+        {
+            "path": null,
+            "name": "class",
+            "type": "double *",
+            "definition": [
+                "double *class"
+            ]
+        },
+        {
+            "path": null,
+            "name": "samples",
+            "type": "int",
+            "definition": [
+                "int samples"
+            ]
+        },
+        {
+            "path": null,
+            "name": "class_names",
+            "type": "const char *[]",
+            "definition": [
+                "const char *class_names[] = {\"Iris-setosa\", \"Iris-versicolor\", \"Iris-virginica\"}"
+            ]
+        }
+    ],
+    "function": [
+        {
+            "path": null,
+            "name": "basic",
+            "header": "",
+            "params": [],
+            "definition": "void basic()\n{\n  genann *ann = genann_init(1, 0, 0, 1);\n  do\n  {\n    ltests += 1;\n    if (ann->total_weights != 2)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 37, ann->total_weights, 2);\n    }\n  }\n  while (0);\n  double a;\n  a = 0;\n  ann->weight[0] = 0;\n  ann->weight[1] = 0;\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) 0.5) - ((double) (*genann_run(ann, &a)))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 44, (double) 0.5, (double) (*genann_run(ann, &a)));\n    }\n  }\n  while (0);\n  a = 1;\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) 0.5) - ((double) (*genann_run(ann, &a)))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 47, (double) 0.5, (double) (*genann_run(ann, &a)));\n    }\n  }\n  while (0);\n  a = 11;\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) 0.5) - ((double) (*genann_run(ann, &a)))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 50, (double) 0.5, (double) (*genann_run(ann, &a)));\n    }\n  }\n  while (0);\n  a = 1;\n  ann->weight[0] = 1;\n  ann->weight[1] = 1;\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) 0.5) - ((double) (*genann_run(ann, &a)))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 55, (double) 0.5, (double) (*genann_run(ann, &a)));\n    }\n  }\n  while (0);\n  a = 10;\n  ann->weight[0] = 1;\n  ann->weight[1] = 1;\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) 1.0) - ((double) (*genann_run(ann, &a)))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 60, (double) 1.0, (double) (*genann_run(ann, &a)));\n    }\n  }\n  while (0);\n  a = -10;\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) 0.0) - ((double) (*genann_run(ann, &a)))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 63, (double) 0.0, (double) (*genann_run(ann, &a)));\n    }\n  }\n  while (0);\n  genann_free(ann);\n}\n\n",
+            "calle": [
+                "fabs",
+                "genann_free",
+                "genann_init",
+                "genann_run",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "genann *",
+                        "definition": [
+                            "genann *ann = genann_init(1, 0, 0, 1)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "double",
+                        "definition": [
+                            "double a"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ltests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "lfails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "xor",
+            "header": "",
+            "params": [],
+            "definition": "void xor()\n{\n  genann *ann = genann_init(2, 1, 2, 1);\n  ann->activation_hidden = genann_act_threshold;\n  ann->activation_output = genann_act_threshold;\n  do\n  {\n    ltests += 1;\n    if (ann->total_weights != 9)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 74, ann->total_weights, 9);\n    }\n  }\n  while (0);\n  ann->weight[0] = .5;\n  ann->weight[1] = 1;\n  ann->weight[2] = 1;\n  ann->weight[3] = 1;\n  ann->weight[4] = 1;\n  ann->weight[5] = 1;\n  ann->weight[6] = .5;\n  ann->weight[7] = 1;\n  ann->weight[8] = -1;\n  double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};\n  double output[4] = {0, 1, 1, 0};\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[0]) - ((double) (*genann_run(ann, input[0])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 95, (double) output[0], (double) (*genann_run(ann, input[0])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[1]) - ((double) (*genann_run(ann, input[1])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 96, (double) output[1], (double) (*genann_run(ann, input[1])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[2]) - ((double) (*genann_run(ann, input[2])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 97, (double) output[2], (double) (*genann_run(ann, input[2])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[3]) - ((double) (*genann_run(ann, input[3])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 98, (double) output[3], (double) (*genann_run(ann, input[3])));\n    }\n  }\n  while (0);\n  genann_free(ann);\n}\n\n",
+            "calle": [
+                "fabs",
+                "genann_act_threshold",
+                "genann_free",
+                "genann_init",
+                "genann_run",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "genann *",
+                        "definition": [
+                            "genann *ann = genann_init(2, 1, 2, 1)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "input",
+                        "type": "double [4][2]",
+                        "definition": [
+                            "double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}}"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "output",
+                        "type": "double [4]",
+                        "definition": [
+                            "double output[4] = {0, 1, 1, 0}"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ltests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "lfails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "backprop",
+            "header": "",
+            "params": [],
+            "definition": "void backprop()\n{\n  genann *ann = genann_init(1, 0, 0, 1);\n  double input;\n  double output;\n  input = .5;\n  output = 1;\n  double first_try = *genann_run(ann, &input);\n  genann_train(ann, &input, &output, .5);\n  double second_try = *genann_run(ann, &input);\n  do\n  {\n    ltests += 1;\n    if (!(fabs(first_try - output) > fabs(second_try - output)))\n    {\n      lfails += 1;\n      printf(\"%s:%d error \\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 114);\n    }\n  }\n  while (0);\n  genann_free(ann);\n}\n\n",
+            "calle": [
+                "fabs",
+                "genann_free",
+                "genann_init",
+                "genann_run",
+                "genann_train",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "genann *",
+                        "definition": [
+                            "genann *ann = genann_init(1, 0, 0, 1)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "input",
+                        "type": "double",
+                        "definition": [
+                            "double input"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "output",
+                        "type": "double",
+                        "definition": [
+                            "double output"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "first_try",
+                        "type": "double",
+                        "definition": [
+                            "double first_try = *genann_run(ann, &input)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "second_try",
+                        "type": "double",
+                        "definition": [
+                            "double second_try = *genann_run(ann, &input)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ltests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "lfails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "train_and",
+            "header": "",
+            "params": [],
+            "definition": "void train_and()\n{\n  double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};\n  double output[4] = {0, 0, 0, 1};\n  genann *ann = genann_init(2, 0, 0, 1);\n  int i;\n  int j;\n  for (i = 0; i < 50; i += 1)\n  {\n    for (j = 0; j < 4; j += 1)\n    {\n      genann_train(ann, input[j], output + j, .8);\n    }\n\n  }\n\n  ann->activation_output = genann_act_threshold;\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[0]) - ((double) (*genann_run(ann, input[0])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 135, (double) output[0], (double) (*genann_run(ann, input[0])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[1]) - ((double) (*genann_run(ann, input[1])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 136, (double) output[1], (double) (*genann_run(ann, input[1])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[2]) - ((double) (*genann_run(ann, input[2])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 137, (double) output[2], (double) (*genann_run(ann, input[2])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[3]) - ((double) (*genann_run(ann, input[3])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 138, (double) output[3], (double) (*genann_run(ann, input[3])));\n    }\n  }\n  while (0);\n  genann_free(ann);\n}\n\n",
+            "calle": [
+                "fabs",
+                "genann_act_threshold",
+                "genann_free",
+                "genann_init",
+                "genann_run",
+                "genann_train",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "input",
+                        "type": "double [4][2]",
+                        "definition": [
+                            "double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}}"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "output",
+                        "type": "double [4]",
+                        "definition": [
+                            "double output[4] = {0, 0, 0, 1}"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "genann *",
+                        "definition": [
+                            "genann *ann = genann_init(2, 0, 0, 1)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ltests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "lfails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "train_or",
+            "header": "",
+            "params": [],
+            "definition": "void train_or()\n{\n  double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};\n  double output[4] = {0, 1, 1, 1};\n  genann *ann = genann_init(2, 0, 0, 1);\n  genann_randomize(ann);\n  int i;\n  int j;\n  for (i = 0; i < 50; i += 1)\n  {\n    for (j = 0; j < 4; j += 1)\n    {\n      genann_train(ann, input[j], output + j, .8);\n    }\n\n  }\n\n  ann->activation_output = genann_act_threshold;\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[0]) - ((double) (*genann_run(ann, input[0])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 160, (double) output[0], (double) (*genann_run(ann, input[0])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[1]) - ((double) (*genann_run(ann, input[1])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 161, (double) output[1], (double) (*genann_run(ann, input[1])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[2]) - ((double) (*genann_run(ann, input[2])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 162, (double) output[2], (double) (*genann_run(ann, input[2])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[3]) - ((double) (*genann_run(ann, input[3])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 163, (double) output[3], (double) (*genann_run(ann, input[3])));\n    }\n  }\n  while (0);\n  genann_free(ann);\n}\n\n",
+            "calle": [
+                "fabs",
+                "genann_act_threshold",
+                "genann_free",
+                "genann_init",
+                "genann_randomize",
+                "genann_run",
+                "genann_train",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "input",
+                        "type": "double [4][2]",
+                        "definition": [
+                            "double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}}"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "output",
+                        "type": "double [4]",
+                        "definition": [
+                            "double output[4] = {0, 1, 1, 1}"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "genann *",
+                        "definition": [
+                            "genann *ann = genann_init(2, 0, 0, 1)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ltests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "lfails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "train_xor",
+            "header": "",
+            "params": [],
+            "definition": "void train_xor()\n{\n  double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};\n  double output[4] = {0, 1, 1, 0};\n  genann *ann = genann_init(2, 1, 2, 1);\n  int i;\n  int j;\n  for (i = 0; i < 500; i += 1)\n  {\n    for (j = 0; j < 4; j += 1)\n    {\n      genann_train(ann, input[j], output + j, 3);\n    }\n\n  }\n\n  ann->activation_output = genann_act_threshold;\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[0]) - ((double) (*genann_run(ann, input[0])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 186, (double) output[0], (double) (*genann_run(ann, input[0])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[1]) - ((double) (*genann_run(ann, input[1])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 187, (double) output[1], (double) (*genann_run(ann, input[1])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[2]) - ((double) (*genann_run(ann, input[2])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 188, (double) output[2], (double) (*genann_run(ann, input[2])));\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (fabs(((double) output[3]) - ((double) (*genann_run(ann, input[3])))) > 0.001)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 189, (double) output[3], (double) (*genann_run(ann, input[3])));\n    }\n  }\n  while (0);\n  genann_free(ann);\n}\n\n",
+            "calle": [
+                "fabs",
+                "genann_act_threshold",
+                "genann_free",
+                "genann_init",
+                "genann_run",
+                "genann_train",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "input",
+                        "type": "double [4][2]",
+                        "definition": [
+                            "double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}}"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "output",
+                        "type": "double [4]",
+                        "definition": [
+                            "double output[4] = {0, 1, 1, 0}"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "genann *",
+                        "definition": [
+                            "genann *ann = genann_init(2, 1, 2, 1)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ltests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "lfails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "persist",
+            "header": "",
+            "params": [],
+            "definition": "void persist()\n{\n  genann *first = genann_init(1000, 5, 50, 10);\n  FILE *out = fopen(\"persist.txt\", \"w\");\n  genann_write(first, out);\n  fclose(out);\n  FILE *in = fopen(\"persist.txt\", \"r\");\n  genann *second = genann_read(in);\n  fclose(in);\n  do\n  {\n    ltests += 1;\n    if (first->inputs != second->inputs)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 208, first->inputs, second->inputs);\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (first->hidden_layers != second->hidden_layers)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 209, first->hidden_layers, second->hidden_layers);\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (first->hidden != second->hidden)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 210, first->hidden, second->hidden);\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (first->outputs != second->outputs)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 211, first->outputs, second->outputs);\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (first->total_weights != second->total_weights)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 212, first->total_weights, second->total_weights);\n    }\n  }\n  while (0);\n  int i;\n  for (i = 0; i < first->total_weights; i += 1)\n  {\n    do\n    {\n      ltests += 1;\n      if (!(first->weight[i] == second->weight[i]))\n      {\n        lfails += 1;\n        printf(\"%s:%d error \\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 216);\n      }\n    }\n    while (0);\n  }\n\n  genann_free(first);\n  genann_free(second);\n}\n\n",
+            "calle": [
+                "fclose",
+                "fopen",
+                "genann_free",
+                "genann_init",
+                "genann_read",
+                "genann_write",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "first",
+                        "type": "genann *",
+                        "definition": [
+                            "genann *first = genann_init(1000, 5, 50, 10)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "out",
+                        "type": "FILE *",
+                        "definition": [
+                            "FILE *out = fopen(\"persist.txt\", \"w\")"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "in",
+                        "type": "FILE *",
+                        "definition": [
+                            "FILE *in = fopen(\"persist.txt\", \"r\")"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "second",
+                        "type": "genann *",
+                        "definition": [
+                            "genann *second = genann_read(in)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ltests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "lfails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "copy",
+            "header": "",
+            "params": [],
+            "definition": "void copy()\n{\n  genann *first = genann_init(1000, 5, 50, 10);\n  genann *second = genann_copy(first);\n  do\n  {\n    ltests += 1;\n    if (first->inputs != second->inputs)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 229, first->inputs, second->inputs);\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (first->hidden_layers != second->hidden_layers)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 230, first->hidden_layers, second->hidden_layers);\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (first->hidden != second->hidden)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 231, first->hidden, second->hidden);\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (first->outputs != second->outputs)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 232, first->outputs, second->outputs);\n    }\n  }\n  while (0);\n  do\n  {\n    ltests += 1;\n    if (first->total_weights != second->total_weights)\n    {\n      lfails += 1;\n      printf(\"%s:%d (%d != %d)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 233, first->total_weights, second->total_weights);\n    }\n  }\n  while (0);\n  int i;\n  for (i = 0; i < first->total_weights; i += 1)\n  {\n    do\n    {\n      ltests += 1;\n      if (fabs(((double) first->weight[i]) - ((double) second->weight[i])) > 0.001)\n      {\n        lfails += 1;\n        printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 237, (double) first->weight[i], (double) second->weight[i]);\n      }\n    }\n    while (0);\n  }\n\n  genann_free(first);\n  genann_free(second);\n}\n\n",
+            "calle": [
+                "fabs",
+                "genann_copy",
+                "genann_free",
+                "genann_init",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "first",
+                        "type": "genann *",
+                        "definition": [
+                            "genann *first = genann_init(1000, 5, 50, 10)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "second",
+                        "type": "genann *",
+                        "definition": [
+                            "genann *second = genann_copy(first)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ltests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "lfails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "sigmoid",
+            "header": "",
+            "params": [],
+            "definition": "void sigmoid()\n{\n  double i = -20;\n  const double max = 20;\n  const double d = .0001;\n  while (i < max)\n  {\n    do\n    {\n      ltests += 1;\n      if (fabs(((double) genann_act_sigmoid(0, i)) - ((double) genann_act_sigmoid_cached(0, i))) > 0.001)\n      {\n        lfails += 1;\n        printf(\"%s:%d (%f != %f)\\n\", \"/home/enumclass/Documents/C2RustTranslation/bkp/genann/test.c\", 251, (double) genann_act_sigmoid(0, i), (double) genann_act_sigmoid_cached(0, i));\n      }\n    }\n    while (0);\n    i += d;\n  }\n\n}\n\n",
+            "calle": [
+                "fabs",
+                "genann_act_sigmoid",
+                "genann_act_sigmoid_cached",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "double",
+                        "definition": [
+                            "double i = -20"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "max",
+                        "type": "const double",
+                        "definition": [
+                            "const double max = 20"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "d",
+                        "type": "const double",
+                        "definition": [
+                            "const double d = .0001"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ltests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "lfails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#test",
+            "header": "",
+            "params": [
+                "int argc",
+                "char *argv[]"
+            ],
+            "definition": "int main(int argc, char *argv[])\n{\n  printf(\"GENANN TEST SUITE\\n\");\n  srand(100);\n  do\n  {\n    helper_main_1();\n  }\n  while (0);\n  do\n  {\n    helper_main_2();\n  }\n  while (0);\n  do\n  {\n    helper_main_3();\n  }\n  while (0);\n  do\n  {\n    helper_main_4();\n  }\n  while (0);\n  do\n  {\n    helper_main_5();\n  }\n  while (0);\n  do\n  {\n    helper_main_6();\n  }\n  while (0);\n  do\n  {\n    helper_main_7();\n  }\n  while (0);\n  do\n  {\n    helper_main_8();\n  }\n  while (0);\n  do\n  {\n    helper_main_9();\n  }\n  while (0);\n  do\n  {\n    if (lfails == 0)\n    {\n      printf(\"ALL TESTS PASSED (%d/%d)\\n\", ltests, ltests);\n    }\n    else\n    {\n      printf(\"SOME TESTS FAILED (%d/%d)\\n\", ltests - lfails, ltests);\n    }\n  }\n  while (0);\n  return lfails != 0;\n}\n\n",
+            "calle": [
+                "helper_main_1",
+                "helper_main_2",
+                "helper_main_3",
+                "helper_main_4",
+                "helper_main_5",
+                "helper_main_6",
+                "helper_main_7",
+                "helper_main_8",
+                "helper_main_9",
+                "printf",
+                "srand"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "argc",
+                        "type": "int",
+                        "definition": [
+                            "int argc"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv",
+                        "type": "char *[]",
+                        "definition": [
+                            "char *argv[]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "lfails",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "ltests",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_main_1",
+            "header": "",
+            "params": [],
+            "definition": "void helper_main_1()\n{\n  const int ts = ltests;\n  const int fs = lfails;\n  const clock_t start = clock();\n  printf(\"\\t%-14s\", \"basic\");\n  basic();\n  printf(\"pass:%2d   fail:%2d   %4dms\\n\", (ltests - ts) - (lfails - fs), lfails - fs, (int) (((clock() - start) * 1000) / CLOCKS_PER_SEC));\n}\n\n",
+            "calle": [
+                "basic",
+                "clock",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ts",
+                        "type": "const int",
+                        "definition": [
+                            "const int ts = ltests"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "fs",
+                        "type": "const int",
+                        "definition": [
+                            "const int fs = lfails"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "start",
+                        "type": "const clock_t",
+                        "definition": [
+                            "const clock_t start = clock()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ltests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "lfails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_main_2",
+            "header": "",
+            "params": [],
+            "definition": "void helper_main_2()\n{\n  const int ts = ltests;\n  const int fs = lfails;\n  const clock_t start = clock();\n  printf(\"\\t%-14s\", \"xor\");\n  xor();\n  printf(\"pass:%2d   fail:%2d   %4dms\\n\", (ltests - ts) - (lfails - fs), lfails - fs, (int) (((clock() - start) * 1000) / CLOCKS_PER_SEC));\n}\n\n",
+            "calle": [
+                "clock",
+                "printf",
+                "xor"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ts",
+                        "type": "const int",
+                        "definition": [
+                            "const int ts = ltests"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "fs",
+                        "type": "const int",
+                        "definition": [
+                            "const int fs = lfails"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "start",
+                        "type": "const clock_t",
+                        "definition": [
+                            "const clock_t start = clock()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ltests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "lfails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_main_3",
+            "header": "",
+            "params": [],
+            "definition": "void helper_main_3()\n{\n  const int ts = ltests;\n  const int fs = lfails;\n  const clock_t start = clock();\n  printf(\"\\t%-14s\", \"backprop\");\n  backprop();\n  printf(\"pass:%2d   fail:%2d   %4dms\\n\", (ltests - ts) - (lfails - fs), lfails - fs, (int) (((clock() - start) * 1000) / CLOCKS_PER_SEC));\n}\n\n",
+            "calle": [
+                "backprop",
+                "clock",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ts",
+                        "type": "const int",
+                        "definition": [
+                            "const int ts = ltests"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "fs",
+                        "type": "const int",
+                        "definition": [
+                            "const int fs = lfails"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "start",
+                        "type": "const clock_t",
+                        "definition": [
+                            "const clock_t start = clock()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ltests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "lfails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_main_4",
+            "header": "",
+            "params": [],
+            "definition": "void helper_main_4()\n{\n  const int ts = ltests;\n  const int fs = lfails;\n  const clock_t start = clock();\n  printf(\"\\t%-14s\", \"train and\");\n  train_and();\n  printf(\"pass:%2d   fail:%2d   %4dms\\n\", (ltests - ts) - (lfails - fs), lfails - fs, (int) (((clock() - start) * 1000) / CLOCKS_PER_SEC));\n}\n\n",
+            "calle": [
+                "clock",
+                "printf",
+                "train_and"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ts",
+                        "type": "const int",
+                        "definition": [
+                            "const int ts = ltests"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "fs",
+                        "type": "const int",
+                        "definition": [
+                            "const int fs = lfails"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "start",
+                        "type": "const clock_t",
+                        "definition": [
+                            "const clock_t start = clock()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ltests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "lfails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_main_5",
+            "header": "",
+            "params": [],
+            "definition": "void helper_main_5()\n{\n  const int ts = ltests;\n  const int fs = lfails;\n  const clock_t start = clock();\n  printf(\"\\t%-14s\", \"train or\");\n  train_or();\n  printf(\"pass:%2d   fail:%2d   %4dms\\n\", (ltests - ts) - (lfails - fs), lfails - fs, (int) (((clock() - start) * 1000) / CLOCKS_PER_SEC));\n}\n\n",
+            "calle": [
+                "clock",
+                "printf",
+                "train_or"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ts",
+                        "type": "const int",
+                        "definition": [
+                            "const int ts = ltests"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "fs",
+                        "type": "const int",
+                        "definition": [
+                            "const int fs = lfails"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "start",
+                        "type": "const clock_t",
+                        "definition": [
+                            "const clock_t start = clock()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ltests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "lfails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_main_6",
+            "header": "",
+            "params": [],
+            "definition": "void helper_main_6()\n{\n  const int ts = ltests;\n  const int fs = lfails;\n  const clock_t start = clock();\n  printf(\"\\t%-14s\", \"train xor\");\n  train_xor();\n  printf(\"pass:%2d   fail:%2d   %4dms\\n\", (ltests - ts) - (lfails - fs), lfails - fs, (int) (((clock() - start) * 1000) / CLOCKS_PER_SEC));\n}\n\n",
+            "calle": [
+                "clock",
+                "printf",
+                "train_xor"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ts",
+                        "type": "const int",
+                        "definition": [
+                            "const int ts = ltests"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "fs",
+                        "type": "const int",
+                        "definition": [
+                            "const int fs = lfails"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "start",
+                        "type": "const clock_t",
+                        "definition": [
+                            "const clock_t start = clock()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ltests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "lfails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_main_7",
+            "header": "",
+            "params": [],
+            "definition": "void helper_main_7()\n{\n  const int ts = ltests;\n  const int fs = lfails;\n  const clock_t start = clock();\n  printf(\"\\t%-14s\", \"persist\");\n  persist();\n  printf(\"pass:%2d   fail:%2d   %4dms\\n\", (ltests - ts) - (lfails - fs), lfails - fs, (int) (((clock() - start) * 1000) / CLOCKS_PER_SEC));\n}\n\n",
+            "calle": [
+                "clock",
+                "persist",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ts",
+                        "type": "const int",
+                        "definition": [
+                            "const int ts = ltests"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "fs",
+                        "type": "const int",
+                        "definition": [
+                            "const int fs = lfails"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "start",
+                        "type": "const clock_t",
+                        "definition": [
+                            "const clock_t start = clock()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ltests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "lfails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_main_8",
+            "header": "",
+            "params": [],
+            "definition": "void helper_main_8()\n{\n  const int ts = ltests;\n  const int fs = lfails;\n  const clock_t start = clock();\n  printf(\"\\t%-14s\", \"copy\");\n  copy();\n  printf(\"pass:%2d   fail:%2d   %4dms\\n\", (ltests - ts) - (lfails - fs), lfails - fs, (int) (((clock() - start) * 1000) / CLOCKS_PER_SEC));\n}\n\n",
+            "calle": [
+                "clock",
+                "copy",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ts",
+                        "type": "const int",
+                        "definition": [
+                            "const int ts = ltests"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "fs",
+                        "type": "const int",
+                        "definition": [
+                            "const int fs = lfails"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "start",
+                        "type": "const clock_t",
+                        "definition": [
+                            "const clock_t start = clock()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ltests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "lfails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_main_9",
+            "header": "",
+            "params": [],
+            "definition": "void helper_main_9()\n{\n  const int ts = ltests;\n  const int fs = lfails;\n  const clock_t start = clock();\n  printf(\"\\t%-14s\", \"sigmoid\");\n  sigmoid();\n  printf(\"pass:%2d   fail:%2d   %4dms\\n\", (ltests - ts) - (lfails - fs), lfails - fs, (int) (((clock() - start) * 1000) / CLOCKS_PER_SEC));\n}\n\n",
+            "calle": [
+                "clock",
+                "printf",
+                "sigmoid"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ts",
+                        "type": "const int",
+                        "definition": [
+                            "const int ts = ltests"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "fs",
+                        "type": "const int",
+                        "definition": [
+                            "const int fs = lfails"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "start",
+                        "type": "const clock_t",
+                        "definition": [
+                            "const clock_t start = clock()"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ltests",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "lfails",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "genann_init",
+            "header": "genann *genann_init(int inputs, int hidden_layers, int hidden, int outputs)",
+            "params": [
+                "int inputs",
+                "int hidden_layers",
+                "int hidden",
+                "int outputs"
+            ],
+            "definition": "genann *genann_init(int inputs, int hidden_layers, int hidden, int outputs)\n{\n  if (hidden_layers < 0)\n  {\n    return 0;\n  }\n  if (inputs < 1)\n  {\n    return 0;\n  }\n  if (outputs < 1)\n  {\n    return 0;\n  }\n  if ((hidden_layers > 0) && (hidden < 1))\n  {\n    return 0;\n  }\n  const int hidden_weights = (hidden_layers) ? (((inputs + 1) * hidden) + (((hidden_layers - 1) * (hidden + 1)) * hidden)) : (0);\n  const int output_weights = ((hidden_layers) ? (hidden + 1) : (inputs + 1)) * outputs;\n  const int total_weights = hidden_weights + output_weights;\n  const int total_neurons = (inputs + (hidden * hidden_layers)) + outputs;\n  const int size = (sizeof(genann)) + ((sizeof(double)) * ((total_weights + total_neurons) + (total_neurons - inputs)));\n  genann *ret = malloc(size);\n  if (!ret)\n  {\n    return 0;\n  }\n  ret->inputs = inputs;\n  ret->hidden_layers = hidden_layers;\n  ret->hidden = hidden;\n  ret->outputs = outputs;\n  ret->total_weights = total_weights;\n  ret->total_neurons = total_neurons;\n  ret->weight = (double *) (((char *) ret) + (sizeof(genann)));\n  ret->output = ret->weight + ret->total_weights;\n  ret->delta = ret->output + ret->total_neurons;\n  genann_randomize(ret);\n  ret->activation_hidden = genann_act_sigmoid_cached;\n  ret->activation_output = genann_act_sigmoid_cached;\n  genann_init_sigmoid_lookup(ret);\n  return ret;\n}\n\n",
+            "calle": [
+                "genann_act_sigmoid_cached",
+                "genann_init_sigmoid_lookup",
+                "genann_randomize",
+                "malloc"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "inputs",
+                        "type": "int",
+                        "definition": [
+                            "int inputs"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hidden_layers",
+                        "type": "int",
+                        "definition": [
+                            "int hidden_layers"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hidden",
+                        "type": "int",
+                        "definition": [
+                            "int hidden"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "outputs",
+                        "type": "int",
+                        "definition": [
+                            "int outputs"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hidden_weights",
+                        "type": "const int",
+                        "definition": [
+                            "const int hidden_weights = (hidden_layers) ? (((inputs + 1) * hidden) + (((hidden_layers - 1) * (hidden + 1)) * hidden)) : (0)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "output_weights",
+                        "type": "const int",
+                        "definition": [
+                            "const int output_weights = ((hidden_layers) ? (hidden + 1) : (inputs + 1)) * outputs"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "total_weights",
+                        "type": "const int",
+                        "definition": [
+                            "const int total_weights = hidden_weights + output_weights"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "total_neurons",
+                        "type": "const int",
+                        "definition": [
+                            "const int total_neurons = (inputs + (hidden * hidden_layers)) + outputs"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "size",
+                        "type": "const int",
+                        "definition": [
+                            "const int size = (sizeof(genann)) + ((sizeof(double)) * ((total_weights + total_neurons) + (total_neurons - inputs)))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ret",
+                        "type": "genann *",
+                        "definition": [
+                            "genann *ret = malloc(size)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "genann_read",
+            "header": "genann *genann_read(FILE *in)",
+            "params": [
+                "FILE *in"
+            ],
+            "definition": "genann *genann_read(FILE *in)\n{\n  int inputs;\n  int hidden_layers;\n  int hidden;\n  int outputs;\n  int rc;\n  errno = 0;\n  rc = fscanf(in, \"%d %d %d %d\", &inputs, &hidden_layers, &hidden, &outputs);\n  if ((rc < 4) || (errno != 0))\n  {\n    perror(\"fscanf\");\n    return 0;\n  }\n  genann *ann = genann_init(inputs, hidden_layers, hidden, outputs);\n  int i;\n  for (i = 0; i < ann->total_weights; i += 1)\n  {\n    errno = 0;\n    rc = fscanf(in, \" %le\", ann->weight + i);\n    if ((rc < 1) || (errno != 0))\n    {\n      perror(\"fscanf\");\n      genann_free(ann);\n      return 0;\n    }\n  }\n\n  return ann;\n}\n\n",
+            "calle": [
+                "fscanf",
+                "genann_free",
+                "genann_init",
+                "perror"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "in",
+                        "type": "FILE *",
+                        "definition": [
+                            "FILE *in"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "inputs",
+                        "type": "int",
+                        "definition": [
+                            "int inputs"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hidden_layers",
+                        "type": "int",
+                        "definition": [
+                            "int hidden_layers"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "hidden",
+                        "type": "int",
+                        "definition": [
+                            "int hidden"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "outputs",
+                        "type": "int",
+                        "definition": [
+                            "int outputs"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "rc",
+                        "type": "int",
+                        "definition": [
+                            "int rc"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "genann *",
+                        "definition": [
+                            "genann *ann = genann_init(inputs, hidden_layers, hidden, outputs)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "genann_randomize",
+            "header": "void genann_randomize(genann *ann)",
+            "params": [
+                "genann *ann"
+            ],
+            "definition": "void genann_randomize(genann *ann)\n{\n  int i;\n  for (i = 0; i < ann->total_weights; i += 1)\n  {\n    double r = ((double) rand()) / 32767;\n    ann->weight[i] = r - 0.5;\n  }\n\n}\n\n",
+            "calle": [
+                "rand"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "genann *",
+                        "definition": [
+                            "genann *ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "r",
+                        "type": "double",
+                        "definition": [
+                            "double r = ((double) rand()) / 32767"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "genann_copy",
+            "header": "genann *genann_copy(const genann *ann)",
+            "params": [
+                "const genann *ann"
+            ],
+            "definition": "genann *genann_copy(const genann *ann)\n{\n  const int size = (sizeof(genann)) + ((sizeof(double)) * ((ann->total_weights + ann->total_neurons) + (ann->total_neurons - ann->inputs)));\n  genann *ret = malloc(size);\n  if (!ret)\n  {\n    return 0;\n  }\n  memcpy(ret, ann, size);\n  ret->weight = (double *) (((char *) ret) + (sizeof(genann)));\n  ret->output = ret->weight + ret->total_weights;\n  ret->delta = ret->output + ret->total_neurons;\n  return ret;\n}\n\n",
+            "calle": [
+                "malloc",
+                "memcpy"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "const genann *",
+                        "definition": [
+                            "const genann *ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "size",
+                        "type": "const int",
+                        "definition": [
+                            "const int size = (sizeof(genann)) + ((sizeof(double)) * ((ann->total_weights + ann->total_neurons) + (ann->total_neurons - ann->inputs)))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ret",
+                        "type": "genann *",
+                        "definition": [
+                            "genann *ret = malloc(size)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "genann_free",
+            "header": "void genann_free(genann *ann)",
+            "params": [
+                "genann *ann"
+            ],
+            "definition": "void genann_free(genann *ann)\n{\n  free(ann);\n}\n\n",
+            "calle": [
+                "free"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "genann *",
+                        "definition": [
+                            "genann *ann"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "genann_run",
+            "header": "const double *genann_run(const genann *ann, const double *inputs)",
+            "params": [
+                "const genann *ann",
+                "const double *inputs"
+            ],
+            "definition": "const double *genann_run(const genann *ann, const double *inputs)\n{\n  const double *w = ann->weight;\n  unsigned int w_idx = 0;\n  double *o = ann->output + ann->inputs;\n  const double *i = ann->output;\n  unsigned int i_idx = 0;\n  memcpy(ann->output, inputs, (sizeof(double)) * ann->inputs);\n  int h;\n  int j;\n  int k;\n  if (!ann->hidden_layers)\n  {\n    helper_genann_run_4(&w_idx, &j, &k, ann, w, o, i, i_idx);\n  }\n  for (j = 0; j < ann->hidden; j += 1)\n  {\n    helper_genann_run_1(&w_idx, &k, ann, w, o, i, i_idx);\n  }\n\n  i_idx += ann->inputs;\n  for (h = 1; h < ann->hidden_layers; h += 1)\n  {\n    helper_genann_run_3(&w_idx, &i_idx, &j, &k, ann, w, o, i);\n  }\n\n  const double *ret = o;\n  for (j = 0; j < ann->outputs; j += 1)\n  {\n    helper_genann_run_2(&w_idx, &k, ann, w, o, i, i_idx);\n  }\n\n  assert(((&w[w_idx]) - ann->weight) == ann->total_weights);\n  assert((o - ann->output) == ann->total_neurons);\n  return ret;\n}\n\n",
+            "calle": [
+                "assert",
+                "helper_genann_run_1",
+                "helper_genann_run_2",
+                "helper_genann_run_3",
+                "helper_genann_run_4",
+                "memcpy"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "const genann *",
+                        "definition": [
+                            "const genann *ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "inputs",
+                        "type": "const double *",
+                        "definition": [
+                            "const double *inputs"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "w",
+                        "type": "const double *",
+                        "definition": [
+                            "const double *w = ann->weight"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "w_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int w_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "o",
+                        "type": "double *",
+                        "definition": [
+                            "double *o = ann->output + ann->inputs"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "const double *",
+                        "definition": [
+                            "const double *i = ann->output"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int i_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "h",
+                        "type": "int",
+                        "definition": [
+                            "int h"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k",
+                        "type": "int",
+                        "definition": [
+                            "int k"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ret",
+                        "type": "const double *",
+                        "definition": [
+                            "const double *ret = o"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "genann_train",
+            "header": "void genann_train(const genann *ann, const double *inputs, const double *desired_outputs, double learning_rate)",
+            "params": [
+                "const genann *ann",
+                "const double *inputs",
+                "const double *desired_outputs",
+                "double learning_rate"
+            ],
+            "definition": "void genann_train(const genann *ann, const double *inputs, const double *desired_outputs, double learning_rate)\n{\n  genann_run(ann, inputs);\n  int h;\n  int j;\n  int k;\n  {\n    helper_genann_train_4(&j, ann, desired_outputs);\n  }\n  for (h = ann->hidden_layers - 1; h >= 0; h -= 1)\n  {\n    helper_genann_train_3(&j, &k, ann, h);\n  }\n\n  {\n    helper_genann_train_2(&j, &k, ann, learning_rate);\n  }\n  for (h = ann->hidden_layers - 1; h >= 0; h -= 1)\n  {\n    helper_genann_train_1(&j, &k, ann, learning_rate, h);\n  }\n\n}\n\n",
+            "calle": [
+                "genann_run",
+                "helper_genann_train_1",
+                "helper_genann_train_2",
+                "helper_genann_train_3",
+                "helper_genann_train_4"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "const genann *",
+                        "definition": [
+                            "const genann *ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "inputs",
+                        "type": "const double *",
+                        "definition": [
+                            "const double *inputs"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "desired_outputs",
+                        "type": "const double *",
+                        "definition": [
+                            "const double *desired_outputs"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "learning_rate",
+                        "type": "double",
+                        "definition": [
+                            "double learning_rate"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "h",
+                        "type": "int",
+                        "definition": [
+                            "int h"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k",
+                        "type": "int",
+                        "definition": [
+                            "int k"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "genann_write",
+            "header": "void genann_write(const genann *ann, FILE *out)",
+            "params": [
+                "const genann *ann",
+                "FILE *out"
+            ],
+            "definition": "void genann_write(const genann *ann, FILE *out)\n{\n  fprintf(out, \"%d %d %d %d\", ann->inputs, ann->hidden_layers, ann->hidden, ann->outputs);\n  int i;\n  for (i = 0; i < ann->total_weights; i += 1)\n  {\n    fprintf(out, \" %.20e\", ann->weight[i]);\n  }\n\n}\n\n",
+            "calle": [
+                "fprintf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "const genann *",
+                        "definition": [
+                            "const genann *ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "out",
+                        "type": "FILE *",
+                        "definition": [
+                            "FILE *out"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "genann_init_sigmoid_lookup",
+            "header": "void genann_init_sigmoid_lookup(const genann *ann)",
+            "params": [
+                "const genann *ann"
+            ],
+            "definition": "void genann_init_sigmoid_lookup(const genann *ann)\n{\n  const double f = (sigmoid_dom_max - sigmoid_dom_min) / 4096;\n  int i;\n  interval = 4096 / (sigmoid_dom_max - sigmoid_dom_min);\n  for (i = 0; i < 4096; i += 1)\n  {\n    lookup[i] = genann_act_sigmoid(ann, sigmoid_dom_min + (f * i));\n  }\n\n}\n\n",
+            "calle": [
+                "genann_act_sigmoid"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "const genann *",
+                        "definition": [
+                            "const genann *ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "f",
+                        "type": "const double",
+                        "definition": [
+                            "const double f = (sigmoid_dom_max - sigmoid_dom_min) / 4096"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "sigmoid_dom_max",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "sigmoid_dom_min",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "interval",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "lookup",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "genann_act_sigmoid",
+            "header": "double genann_act_sigmoid(const genann *ann, double a)",
+            "params": [
+                "const genann *ann",
+                "double a"
+            ],
+            "definition": "double genann_act_sigmoid(const genann *ann, double a)\n{\n  if (a < (-45.0))\n  {\n    return 0;\n  }\n  if (a > 45.0)\n  {\n    return 1;\n  }\n  return 1.0 / (1 + exp(-a));\n}\n\n",
+            "calle": [
+                "exp"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "const genann *",
+                        "definition": [
+                            "const genann *ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "double",
+                        "definition": [
+                            "double a"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "genann_act_sigmoid_cached",
+            "header": "double genann_act_sigmoid_cached(const genann *ann, double a)",
+            "params": [
+                "const genann *ann",
+                "double a"
+            ],
+            "definition": "double genann_act_sigmoid_cached(const genann *ann, double a)\n{\n  assert(!isnan(a));\n  if (a < sigmoid_dom_min)\n  {\n    return lookup[0];\n  }\n  if (a >= sigmoid_dom_max)\n  {\n    return lookup[4096 - 1];\n  }\n  size_t j = (size_t) (((a - sigmoid_dom_min) * interval) + 0.5);\n  if (__builtin_expect(!(!(j >= 4096)), 0))\n  {\n    return lookup[4096 - 1];\n  }\n  return lookup[j];\n}\n\n",
+            "calle": [
+                "__builtin_expect",
+                "assert",
+                "isnan"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "const genann *",
+                        "definition": [
+                            "const genann *ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "double",
+                        "definition": [
+                            "double a"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "size_t",
+                        "definition": [
+                            "size_t j = (size_t) (((a - sigmoid_dom_min) * interval) + 0.5)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "sigmoid_dom_min",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "lookup",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "sigmoid_dom_max",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "interval",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "genann_act_threshold",
+            "header": "double genann_act_threshold(const genann *ann, double a)",
+            "params": [
+                "const struct genann *ann",
+                "double a"
+            ],
+            "definition": "double genann_act_threshold(const struct genann *ann, double a)\n{\n  return a > 0;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "struct genann",
+                        "type": "const struct genann *",
+                        "definition": [
+                            "const struct genann *ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "double",
+                        "definition": [
+                            "double a"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "genann_act_linear",
+            "header": "double genann_act_linear(const genann *ann, double a)",
+            "params": [
+                "const struct genann *ann",
+                "double a"
+            ],
+            "definition": "double genann_act_linear(const struct genann *ann, double a)\n{\n  return a;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "struct genann",
+                        "type": "const struct genann *",
+                        "definition": [
+                            "const struct genann *ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "double",
+                        "definition": [
+                            "double a"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "genann_act_hidden_indirect",
+            "header": "",
+            "params": [
+                "const struct genann *ann",
+                "double a"
+            ],
+            "definition": "double genann_act_hidden_indirect(const struct genann *ann, double a)\n{\n  return ann->activation_hidden(ann, a);\n}\n\n",
+            "calle": [
+                "ann->activation_hidden"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "struct genann",
+                        "type": "const struct genann *",
+                        "definition": [
+                            "const struct genann *ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "double",
+                        "definition": [
+                            "double a"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "genann_act_output_indirect",
+            "header": "",
+            "params": [
+                "const struct genann *ann",
+                "double a"
+            ],
+            "definition": "double genann_act_output_indirect(const struct genann *ann, double a)\n{\n  return ann->activation_output(ann, a);\n}\n\n",
+            "calle": [
+                "ann->activation_output"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "struct genann",
+                        "type": "const struct genann *",
+                        "definition": [
+                            "const struct genann *ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "a",
+                        "type": "double",
+                        "definition": [
+                            "double a"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_genann_run_1",
+            "header": "",
+            "params": [
+                "unsigned int * const w_idx_ref",
+                "int * const k_ref",
+                "const genann * const ann",
+                "const double * const w",
+                "double * const o",
+                "const double * const i",
+                "unsigned int i_idx"
+            ],
+            "definition": "void helper_genann_run_1(unsigned int * const w_idx_ref, int * const k_ref, const genann * const ann, const double * const w, double * const o, const double * const i, unsigned int i_idx)\n{\n  unsigned int w_idx = *w_idx_ref;\n  int k = *k_ref;\n  double sum = w[w_idx] * (-1.0);\n  w_idx += 1;\n  for (k = 0; k < ann->inputs; k += 1)\n  {\n    sum += w[w_idx] * i[k + i_idx];\n    w_idx += 1;\n  }\n\n  *(o++) = genann_act_hidden_indirect(ann, sum);\n  *w_idx_ref = w_idx;\n  *k_ref = k;\n}\n\n",
+            "calle": [
+                "genann_act_hidden_indirect"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "w_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const w_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "const genann * const",
+                        "definition": [
+                            "const genann * const ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "w",
+                        "type": "const double * const",
+                        "definition": [
+                            "const double * const w"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "o",
+                        "type": "double * const",
+                        "definition": [
+                            "double * const o"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "const double * const",
+                        "definition": [
+                            "const double * const i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int i_idx"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "w_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int w_idx = *w_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k",
+                        "type": "int",
+                        "definition": [
+                            "int k = *k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "sum",
+                        "type": "double",
+                        "definition": [
+                            "double sum = w[w_idx] * (-1.0)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_genann_run_2",
+            "header": "",
+            "params": [
+                "unsigned int * const w_idx_ref",
+                "int * const k_ref",
+                "const genann * const ann",
+                "const double * const w",
+                "double * const o",
+                "const double * const i",
+                "unsigned int i_idx"
+            ],
+            "definition": "void helper_genann_run_2(unsigned int * const w_idx_ref, int * const k_ref, const genann * const ann, const double * const w, double * const o, const double * const i, unsigned int i_idx)\n{\n  unsigned int w_idx = *w_idx_ref;\n  int k = *k_ref;\n  double sum = w[w_idx] * (-1.0);\n  w_idx += 1;\n  for (k = 0; k < ann->hidden; k += 1)\n  {\n    sum += w[w_idx] * i[k + i_idx];\n    w_idx += 1;\n  }\n\n  *(o++) = genann_act_output_indirect(ann, sum);\n  *w_idx_ref = w_idx;\n  *k_ref = k;\n}\n\n",
+            "calle": [
+                "genann_act_output_indirect"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "w_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const w_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "const genann * const",
+                        "definition": [
+                            "const genann * const ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "w",
+                        "type": "const double * const",
+                        "definition": [
+                            "const double * const w"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "o",
+                        "type": "double * const",
+                        "definition": [
+                            "double * const o"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "const double * const",
+                        "definition": [
+                            "const double * const i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int i_idx"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "w_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int w_idx = *w_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k",
+                        "type": "int",
+                        "definition": [
+                            "int k = *k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "sum",
+                        "type": "double",
+                        "definition": [
+                            "double sum = w[w_idx] * (-1.0)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_genann_run_3",
+            "header": "",
+            "params": [
+                "unsigned int * const w_idx_ref",
+                "unsigned int * const i_idx_ref",
+                "int * const j_ref",
+                "int * const k_ref",
+                "const genann * const ann",
+                "const double * const w",
+                "double * const o",
+                "const double * const i"
+            ],
+            "definition": "void helper_genann_run_3(unsigned int * const w_idx_ref, unsigned int * const i_idx_ref, int * const j_ref, int * const k_ref, const genann * const ann, const double * const w, double * const o, const double * const i)\n{\n  unsigned int w_idx = *w_idx_ref;\n  unsigned int i_idx = *i_idx_ref;\n  int j = *j_ref;\n  int k = *k_ref;\n  for (j = 0; j < ann->hidden; j += 1)\n  {\n    double sum = w[w_idx] * (-1.0);\n    w_idx += 1;\n    for (k = 0; k < ann->hidden; k += 1)\n    {\n      sum += w[w_idx] * i[k + i_idx];\n      w_idx += 1;\n    }\n\n    *(o++) = genann_act_hidden_indirect(ann, sum);\n  }\n\n  i_idx += ann->hidden;\n  *w_idx_ref = w_idx;\n  *i_idx_ref = i_idx;\n  *j_ref = j;\n  *k_ref = k;\n}\n\n",
+            "calle": [
+                "genann_act_hidden_indirect"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "w_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const w_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const i_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const j_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "const genann * const",
+                        "definition": [
+                            "const genann * const ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "w",
+                        "type": "const double * const",
+                        "definition": [
+                            "const double * const w"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "o",
+                        "type": "double * const",
+                        "definition": [
+                            "double * const o"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "const double * const",
+                        "definition": [
+                            "const double * const i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "w_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int w_idx = *w_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int i_idx = *i_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j = *j_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k",
+                        "type": "int",
+                        "definition": [
+                            "int k = *k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "sum",
+                        "type": "double",
+                        "definition": [
+                            "double sum = w[w_idx] * (-1.0)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_genann_run_4",
+            "header": "",
+            "params": [
+                "unsigned int * const w_idx_ref",
+                "int * const j_ref",
+                "int * const k_ref",
+                "const genann * const ann",
+                "const double * const w",
+                "double * const o",
+                "const double * const i",
+                "unsigned int i_idx"
+            ],
+            "definition": "const double *helper_genann_run_4(unsigned int * const w_idx_ref, int * const j_ref, int * const k_ref, const genann * const ann, const double * const w, double * const o, const double * const i, unsigned int i_idx)\n{\n  unsigned int w_idx = *w_idx_ref;\n  int j = *j_ref;\n  int k = *k_ref;\n  double *ret = o;\n  for (j = 0; j < ann->outputs; j += 1)\n  {\n    double sum = w[w_idx] * (-1.0);\n    w_idx += 1;\n    for (k = 0; k < ann->inputs; k += 1)\n    {\n      sum += w[w_idx] * i[k + i_idx];\n      w_idx += 1;\n    }\n\n    *(o++) = genann_act_output_indirect(ann, sum);\n  }\n\n  return ret;\n  *w_idx_ref = w_idx;\n  *j_ref = j;\n  *k_ref = k;\n}\n\n",
+            "calle": [
+                "genann_act_output_indirect"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "w_idx_ref",
+                        "type": "unsigned int * const",
+                        "definition": [
+                            "unsigned int * const w_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const j_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "const genann * const",
+                        "definition": [
+                            "const genann * const ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "w",
+                        "type": "const double * const",
+                        "definition": [
+                            "const double * const w"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "o",
+                        "type": "double * const",
+                        "definition": [
+                            "double * const o"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "const double * const",
+                        "definition": [
+                            "const double * const i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int i_idx"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "w_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int w_idx = *w_idx_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j = *j_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k",
+                        "type": "int",
+                        "definition": [
+                            "int k = *k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ret",
+                        "type": "double *",
+                        "definition": [
+                            "double *ret = o"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "sum",
+                        "type": "double",
+                        "definition": [
+                            "double sum = w[w_idx] * (-1.0)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_genann_train_1",
+            "header": "",
+            "params": [
+                "int * const j_ref",
+                "int * const k_ref",
+                "const genann * const ann",
+                "double learning_rate",
+                "int h"
+            ],
+            "definition": "void helper_genann_train_1(int * const j_ref, int * const k_ref, const genann * const ann, double learning_rate, int h)\n{\n  int j = *j_ref;\n  int k = *k_ref;\n  const double *d = ann->delta + (h * ann->hidden);\n  unsigned int d_idx = 0;\n  const double *i = ann->output + ((h) ? (ann->inputs + (ann->hidden * (h - 1))) : (0));\n  double *w = ann->weight + ((h) ? (((ann->inputs + 1) * ann->hidden) + (((ann->hidden + 1) * ann->hidden) * (h - 1))) : (0));\n  unsigned int w_idx = 0;\n  for (j = 0; j < ann->hidden; j += 1)\n  {\n    w[w_idx] += (d[d_idx] * learning_rate) * (-1.0);\n    w_idx += 1;\n    for (k = 1; k < (((h == 0) ? (ann->inputs) : (ann->hidden)) + 1); k += 1)\n    {\n      w[w_idx] += (d[d_idx] * learning_rate) * i[k - 1];\n      w_idx += 1;\n    }\n\n    ++(&d[d_idx]);\n  }\n\n  *j_ref = j;\n  *k_ref = k;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "j_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const j_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "const genann * const",
+                        "definition": [
+                            "const genann * const ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "learning_rate",
+                        "type": "double",
+                        "definition": [
+                            "double learning_rate"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "h",
+                        "type": "int",
+                        "definition": [
+                            "int h"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j = *j_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k",
+                        "type": "int",
+                        "definition": [
+                            "int k = *k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "d",
+                        "type": "const double *",
+                        "definition": [
+                            "const double *d = ann->delta + (h * ann->hidden)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "d_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int d_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "const double *",
+                        "definition": [
+                            "const double *i = ann->output + ((h) ? (ann->inputs + (ann->hidden * (h - 1))) : (0))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "w",
+                        "type": "double *",
+                        "definition": [
+                            "double *w = ann->weight + ((h) ? (((ann->inputs + 1) * ann->hidden) + (((ann->hidden + 1) * ann->hidden) * (h - 1))) : (0))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "w_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int w_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_genann_train_2",
+            "header": "",
+            "params": [
+                "int * const j_ref",
+                "int * const k_ref",
+                "const genann * const ann",
+                "double learning_rate"
+            ],
+            "definition": "void helper_genann_train_2(int * const j_ref, int * const k_ref, const genann * const ann, double learning_rate)\n{\n  int j = *j_ref;\n  int k = *k_ref;\n  const double *d = ann->delta + (ann->hidden * ann->hidden_layers);\n  unsigned int d_idx = 0;\n  double *w = ann->weight + ((ann->hidden_layers) ? (((ann->inputs + 1) * ann->hidden) + (((ann->hidden + 1) * ann->hidden) * (ann->hidden_layers - 1))) : (0));\n  unsigned int w_idx = 0;\n  const double * const i = ann->output + ((ann->hidden_layers) ? (ann->inputs + (ann->hidden * (ann->hidden_layers - 1))) : (0));\n  for (j = 0; j < ann->outputs; j += 1)\n  {\n    w[w_idx] += (d[d_idx] * learning_rate) * (-1.0);\n    w_idx += 1;\n    for (k = 1; k < (((ann->hidden_layers) ? (ann->hidden) : (ann->inputs)) + 1); k += 1)\n    {\n      w[w_idx] += (d[d_idx] * learning_rate) * i[k - 1];\n      w_idx += 1;\n    }\n\n    ++(&d[d_idx]);\n  }\n\n  assert(((&w[w_idx]) - ann->weight) == ann->total_weights);\n  *j_ref = j;\n  *k_ref = k;\n}\n\n",
+            "calle": [
+                "assert"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "j_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const j_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "const genann * const",
+                        "definition": [
+                            "const genann * const ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "learning_rate",
+                        "type": "double",
+                        "definition": [
+                            "double learning_rate"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j = *j_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k",
+                        "type": "int",
+                        "definition": [
+                            "int k = *k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "d",
+                        "type": "const double *",
+                        "definition": [
+                            "const double *d = ann->delta + (ann->hidden * ann->hidden_layers)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "d_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int d_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "w",
+                        "type": "double *",
+                        "definition": [
+                            "double *w = ann->weight + ((ann->hidden_layers) ? (((ann->inputs + 1) * ann->hidden) + (((ann->hidden + 1) * ann->hidden) * (ann->hidden_layers - 1))) : (0))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "w_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int w_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "const double * const",
+                        "definition": [
+                            "const double * const i = ann->output + ((ann->hidden_layers) ? (ann->inputs + (ann->hidden * (ann->hidden_layers - 1))) : (0))"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_genann_train_3",
+            "header": "",
+            "params": [
+                "int * const j_ref",
+                "int * const k_ref",
+                "const genann * const ann",
+                "int h"
+            ],
+            "definition": "void helper_genann_train_3(int * const j_ref, int * const k_ref, const genann * const ann, int h)\n{\n  int j = *j_ref;\n  int k = *k_ref;\n  const double *o = (ann->output + ann->inputs) + (h * ann->hidden);\n  unsigned int o_idx = 0;\n  double *d = ann->delta + (h * ann->hidden);\n  unsigned int d_idx = 0;\n  const double * const dd = ann->delta + ((h + 1) * ann->hidden);\n  const double * const ww = (ann->weight + ((ann->inputs + 1) * ann->hidden)) + (((ann->hidden + 1) * ann->hidden) * h);\n  for (j = 0; j < ann->hidden; j += 1)\n  {\n    double delta = 0;\n    for (k = 0; k < ((h == (ann->hidden_layers - 1)) ? (ann->outputs) : (ann->hidden)); k += 1)\n    {\n      const double forward_delta = dd[k];\n      const int windex = (k * (ann->hidden + 1)) + (j + 1);\n      const double forward_weight = ww[windex];\n      delta += forward_delta * forward_weight;\n    }\n\n    d[d_idx] = (o[o_idx] * (1.0 - o[o_idx])) * delta;\n    d_idx += 1;\n    o_idx += 1;\n  }\n\n  *j_ref = j;\n  *k_ref = k;\n}\n\n",
+            "calle": [],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "j_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const j_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "const genann * const",
+                        "definition": [
+                            "const genann * const ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "h",
+                        "type": "int",
+                        "definition": [
+                            "int h"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j = *j_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "k",
+                        "type": "int",
+                        "definition": [
+                            "int k = *k_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "o",
+                        "type": "const double *",
+                        "definition": [
+                            "const double *o = (ann->output + ann->inputs) + (h * ann->hidden)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "o_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int o_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "d",
+                        "type": "double *",
+                        "definition": [
+                            "double *d = ann->delta + (h * ann->hidden)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "d_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int d_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "dd",
+                        "type": "const double * const",
+                        "definition": [
+                            "const double * const dd = ann->delta + ((h + 1) * ann->hidden)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ww",
+                        "type": "const double * const",
+                        "definition": [
+                            "const double * const ww = (ann->weight + ((ann->inputs + 1) * ann->hidden)) + (((ann->hidden + 1) * ann->hidden) * h)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "delta",
+                        "type": "double",
+                        "definition": [
+                            "double delta = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "forward_delta",
+                        "type": "const double",
+                        "definition": [
+                            "const double forward_delta = dd[k]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "windex",
+                        "type": "const int",
+                        "definition": [
+                            "const int windex = (k * (ann->hidden + 1)) + (j + 1)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "forward_weight",
+                        "type": "const double",
+                        "definition": [
+                            "const double forward_weight = ww[windex]"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_genann_train_4",
+            "header": "",
+            "params": [
+                "int * const j_ref",
+                "const genann * const ann",
+                "const double * const desired_outputs"
+            ],
+            "definition": "void helper_genann_train_4(int * const j_ref, const genann * const ann, const double * const desired_outputs)\n{\n  int j = *j_ref;\n  const double *o = (ann->output + ann->inputs) + (ann->hidden * ann->hidden_layers);\n  unsigned int o_idx = 0;\n  double *d = ann->delta + (ann->hidden * ann->hidden_layers);\n  unsigned int d_idx = 0;\n  const double *t = desired_outputs;\n  unsigned int t_idx = 0;\n  if ((genann_act_output_indirect == genann_act_linear) || (ann->activation_output == genann_act_linear))\n  {\n    for (j = 0; j < ann->outputs; j += 1)\n    {\n      d[d_idx] = t[t_idx] - o[o_idx];\n      o_idx += 1;\n      t_idx += 1;\n      d_idx += 1;\n    }\n\n  }\n  else\n  {\n    for (j = 0; j < ann->outputs; j += 1)\n    {\n      d[d_idx] = ((t[t_idx] - o[o_idx]) * o[o_idx]) * (1.0 - o[o_idx]);\n      d_idx += 1;\n      o_idx += 1;\n      ++(&t[t_idx]);\n    }\n\n  }\n  *j_ref = j;\n}\n\n",
+            "calle": [
+                "genann_act_linear",
+                "genann_act_output_indirect"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "j_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const j_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "const genann * const",
+                        "definition": [
+                            "const genann * const ann"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "desired_outputs",
+                        "type": "const double * const",
+                        "definition": [
+                            "const double * const desired_outputs"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j = *j_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "o",
+                        "type": "const double *",
+                        "definition": [
+                            "const double *o = (ann->output + ann->inputs) + (ann->hidden * ann->hidden_layers)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "o_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int o_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "d",
+                        "type": "double *",
+                        "definition": [
+                            "double *d = ann->delta + (ann->hidden * ann->hidden_layers)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "d_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int d_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "t",
+                        "type": "const double *",
+                        "definition": [
+                            "const double *t = desired_outputs"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "t_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int t_idx = 0"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#example1",
+            "header": "",
+            "params": [
+                "int argc",
+                "char *argv[]"
+            ],
+            "definition": "int main(int argc, char *argv[])\n{\n  printf(\"GENANN example 1.\\n\");\n  printf(\"Train a small ANN to the XOR function using backpropagation.\\n\");\n  srand(time(0));\n  const double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};\n  const double output[4] = {0, 1, 1, 0};\n  int i;\n  genann *ann = genann_init(2, 1, 2, 1);\n  for (i = 0; i < 500; i += 1)\n  {\n    genann_train(ann, input[0], output + 0, 3);\n    genann_train(ann, input[1], output + 1, 3);\n    genann_train(ann, input[2], output + 2, 3);\n    genann_train(ann, input[3], output + 3, 3);\n  }\n\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[0][0], input[0][1], *genann_run(ann, input[0]));\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[1][0], input[1][1], *genann_run(ann, input[1]));\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[2][0], input[2][1], *genann_run(ann, input[2]));\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[3][0], input[3][1], *genann_run(ann, input[3]));\n  genann_free(ann);\n  return 0;\n}\n\n",
+            "calle": [
+                "genann_free",
+                "genann_init",
+                "genann_run",
+                "genann_train",
+                "printf",
+                "srand",
+                "time"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "argc",
+                        "type": "int",
+                        "definition": [
+                            "int argc"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv",
+                        "type": "char *[]",
+                        "definition": [
+                            "char *argv[]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "input",
+                        "type": "const double [4][2]",
+                        "definition": [
+                            "const double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}}"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "output",
+                        "type": "const double [4]",
+                        "definition": [
+                            "const double output[4] = {0, 1, 1, 0}"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "genann *",
+                        "definition": [
+                            "genann *ann = genann_init(2, 1, 2, 1)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#example2",
+            "header": "",
+            "params": [
+                "int argc",
+                "char *argv[]"
+            ],
+            "definition": "int main(int argc, char *argv[])\n{\n  printf(\"GENANN example 2.\\n\");\n  printf(\"Train a small ANN to the XOR function using random search.\\n\");\n  srand(time(0));\n  const double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};\n  const double output[4] = {0, 1, 1, 0};\n  int i;\n  genann *ann = genann_init(2, 1, 2, 1);\n  unsigned int ann_idx = 0;\n  double err;\n  double last_err = 1000;\n  int count = 0;\n  do\n  {\n    count += 1;\n    if ((count % 1000) == 0)\n    {\n      genann_randomize(ann);\n      last_err = 1000;\n    }\n    genann *save = genann_copy(ann);\n    for (i = 0; i < ann->total_weights; i += 1)\n    {\n      ann->weight[i] += (((double) rand()) / 32767) - 0.5;\n    }\n\n    err = 0;\n    err += pow((*genann_run(ann, input[0])) - output[0], 2.0);\n    err += pow((*genann_run(ann, input[1])) - output[1], 2.0);\n    err += pow((*genann_run(ann, input[2])) - output[2], 2.0);\n    err += pow((*genann_run(ann, input[3])) - output[3], 2.0);\n    if (err < last_err)\n    {\n      genann_free(save);\n      last_err = err;\n    }\n    else\n    {\n      genann_free(ann);\n      ann_idx = save;\n    }\n  }\n  while (err > 0.01);\n  printf(\"Finished in %d loops.\\n\", count);\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[0][0], input[0][1], *genann_run(ann, input[0]));\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[1][0], input[1][1], *genann_run(ann, input[1]));\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[2][0], input[2][1], *genann_run(ann, input[2]));\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[3][0], input[3][1], *genann_run(ann, input[3]));\n  genann_free(ann);\n  return 0;\n}\n\n",
+            "calle": [
+                "genann_copy",
+                "genann_free",
+                "genann_init",
+                "genann_randomize",
+                "genann_run",
+                "pow",
+                "printf",
+                "rand",
+                "srand",
+                "time"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "argc",
+                        "type": "int",
+                        "definition": [
+                            "int argc"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv",
+                        "type": "char *[]",
+                        "definition": [
+                            "char *argv[]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "input",
+                        "type": "const double [4][2]",
+                        "definition": [
+                            "const double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}}"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "output",
+                        "type": "const double [4]",
+                        "definition": [
+                            "const double output[4] = {0, 1, 1, 0}"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "genann *",
+                        "definition": [
+                            "genann *ann = genann_init(2, 1, 2, 1)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ann_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int ann_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "err",
+                        "type": "double",
+                        "definition": [
+                            "double err"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "last_err",
+                        "type": "double",
+                        "definition": [
+                            "double last_err = 1000"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "count",
+                        "type": "int",
+                        "definition": [
+                            "int count = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "save",
+                        "type": "genann *",
+                        "definition": [
+                            "genann *save = genann_copy(ann)"
+                        ]
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#example3",
+            "header": "",
+            "params": [
+                "int argc",
+                "char *argv[]"
+            ],
+            "definition": "int main(int argc, char *argv[])\n{\n  printf(\"GENANN example 3.\\n\");\n  printf(\"Load a saved ANN to solve the XOR function.\\n\");\n  FILE *saved = fopen(save_name, \"r\");\n  if (!saved)\n  {\n    printf(\"Couldn't open file: %s\\n\", save_name);\n    exit(1);\n  }\n  genann *ann = genann_read(saved);\n  fclose(saved);\n  if (!ann)\n  {\n    printf(\"Error loading ANN from file: %s.\", save_name);\n    exit(1);\n  }\n  const double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[0][0], input[0][1], *genann_run(ann, input[0]));\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[1][0], input[1][1], *genann_run(ann, input[1]));\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[2][0], input[2][1], *genann_run(ann, input[2]));\n  printf(\"Output for [%1.f, %1.f] is %1.f.\\n\", input[3][0], input[3][1], *genann_run(ann, input[3]));\n  genann_free(ann);\n  return 0;\n}\n\n",
+            "calle": [
+                "exit",
+                "fclose",
+                "fopen",
+                "genann_free",
+                "genann_read",
+                "genann_run",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "argc",
+                        "type": "int",
+                        "definition": [
+                            "int argc"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv",
+                        "type": "char *[]",
+                        "definition": [
+                            "char *argv[]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "saved",
+                        "type": "FILE *",
+                        "definition": [
+                            "FILE *saved = fopen(save_name, \"r\")"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "genann *",
+                        "definition": [
+                            "genann *ann = genann_read(saved)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "input",
+                        "type": "const double [4][2]",
+                        "definition": [
+                            "const double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}}"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "save_name",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "load_data",
+            "header": "",
+            "params": [],
+            "definition": "void load_data()\n{\n  FILE *in = fopen(\"example/iris.data\", \"r\");\n  if (!in)\n  {\n    printf(\"Could not open file: %s\\n\", iris_data);\n    exit(1);\n  }\n  char line[1024];\n  while ((!feof(in)) && fgets(line, 1024, in))\n  {\n    samples += 1;\n  }\n\n  fseek(in, 0, 0);\n  printf(\"Loading %d data points from %s\\n\", samples, iris_data);\n  input = malloc(((sizeof(double)) * samples) * 4);\n  class = malloc(((sizeof(double)) * samples) * 3);\n  int i;\n  int j;\n  for (i = 0; i < samples; i += 1)\n  {\n    helper_load_data_1(&j, in, line, i);\n  }\n\n  fclose(in);\n}\n\n",
+            "calle": [
+                "exit",
+                "fclose",
+                "feof",
+                "fgets",
+                "fopen",
+                "fseek",
+                "helper_load_data_1",
+                "malloc",
+                "printf"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "in",
+                        "type": "FILE *",
+                        "definition": [
+                            "FILE *in = fopen(\"example/iris.data\", \"r\")"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "line",
+                        "type": "char [1024]",
+                        "definition": [
+                            "char line[1024]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "iris_data",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "samples",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "input",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "class",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "main#example4",
+            "header": "",
+            "params": [
+                "int argc",
+                "char *argv[]"
+            ],
+            "definition": "int main(int argc, char *argv[])\n{\n  printf(\"GENANN example 4.\\n\");\n  printf(\"Train an ANN on the IRIS dataset using backpropagation.\\n\");\n  srand(time(0));\n  load_data();\n  genann *ann = genann_init(4, 1, 4, 3);\n  int i;\n  int j;\n  int loops = 5000;\n  printf(\"Training for %d loops over data.\\n\", loops);\n  for (i = 0; i < loops; i += 1)\n  {\n    for (j = 0; j < samples; j += 1)\n    {\n      genann_train(ann, input + (j * 4), class + (j * 3), .01);\n    }\n\n  }\n\n  int correct = 0;\n  for (j = 0; j < samples; j += 1)\n  {\n    const double *guess = genann_run(ann, input + (j * 4));\n    if (class[(j * 3) + 0] == 1.0)\n    {\n      if ((guess[0] > guess[1]) && (guess[0] > guess[2]))\n      {\n        correct += 1;\n      }\n    }\n    else\n      if (class[(j * 3) + 1] == 1.0)\n    {\n      if ((guess[1] > guess[0]) && (guess[1] > guess[2]))\n      {\n        correct += 1;\n      }\n    }\n    else\n      if (class[(j * 3) + 2] == 1.0)\n    {\n      if ((guess[2] > guess[0]) && (guess[2] > guess[1]))\n      {\n        correct += 1;\n      }\n    }\n    else\n    {\n      printf(\"Logic error.\\n\");\n      exit(1);\n    }\n  }\n\n  printf(\"%d/%d correct (%0.1f%%).\\n\", correct, samples, (((double) correct) / samples) * 100.0);\n  genann_free(ann);\n  free(input);\n  free(class);\n  return 0;\n}\n\n",
+            "calle": [
+                "exit",
+                "free",
+                "genann_free",
+                "genann_init",
+                "genann_run",
+                "genann_train",
+                "load_data",
+                "printf",
+                "srand",
+                "time"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "argc",
+                        "type": "int",
+                        "definition": [
+                            "int argc"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "argv",
+                        "type": "char *[]",
+                        "definition": [
+                            "char *argv[]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "ann",
+                        "type": "genann *",
+                        "definition": [
+                            "genann *ann = genann_init(4, 1, 4, 3)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "loops",
+                        "type": "int",
+                        "definition": [
+                            "int loops = 5000"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "correct",
+                        "type": "int",
+                        "definition": [
+                            "int correct = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "guess",
+                        "type": "const double *",
+                        "definition": [
+                            "const double *guess = genann_run(ann, input + (j * 4))"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "samples",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "input",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "class",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        },
+        {
+            "path": null,
+            "name": "helper_load_data_1",
+            "header": "",
+            "params": [
+                "int * const j_ref",
+                "FILE * const in",
+                "char line[1024]",
+                "int i"
+            ],
+            "definition": "void helper_load_data_1(int * const j_ref, FILE * const in, char line[1024], int i)\n{\n  int j = *j_ref;\n  double *p = input + (i * 4);\n  double *c = class + (i * 3);\n  c[0] = (c[1] = (c[2] = 0.0));\n  if (fgets(line, 1024, in) == 0)\n  {\n    perror(\"fgets\");\n    exit(1);\n  }\n  char *split = strtok(line, \",\");\n  unsigned int split_idx = 0;\n  for (j = 0; j < 4; j += 1)\n  {\n    p[j] = atof(split);\n    split_idx = strtok(0, \",\");\n  }\n\n  split[(strlen(split) - 1) + split_idx] = 0;\n  if (strcmp(split, class_names[0]) == 0)\n  {\n    c[0] = 1.0;\n  }\n  else\n    if (strcmp(split, class_names[1]) == 0)\n  {\n    c[1] = 1.0;\n  }\n  else\n    if (strcmp(split, class_names[2]) == 0)\n  {\n    c[2] = 1.0;\n  }\n  else\n  {\n    printf(\"Unknown class %s.\\n\", split);\n    exit(1);\n  }\n  *j_ref = j;\n}\n\n",
+            "calle": [
+                "atof",
+                "exit",
+                "fgets",
+                "perror",
+                "printf",
+                "strcmp",
+                "strlen",
+                "strtok"
+            ],
+            "inner": {
+                "special_type": [],
+                "global_variable": [
+                    {
+                        "path": null,
+                        "name": "j_ref",
+                        "type": "int * const",
+                        "definition": [
+                            "int * const j_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "in",
+                        "type": "FILE * const",
+                        "definition": [
+                            "FILE * const in"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "line",
+                        "type": "char [1024]",
+                        "definition": [
+                            "char line[1024]"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "i",
+                        "type": "int",
+                        "definition": [
+                            "int i"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "j",
+                        "type": "int",
+                        "definition": [
+                            "int j = *j_ref"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "p",
+                        "type": "double *",
+                        "definition": [
+                            "double *p = input + (i * 4)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "c",
+                        "type": "double *",
+                        "definition": [
+                            "double *c = class + (i * 3)"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "split",
+                        "type": "char *",
+                        "definition": [
+                            "char *split = strtok(line, \",\")"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "split_idx",
+                        "type": "unsigned int",
+                        "definition": [
+                            "unsigned int split_idx = 0"
+                        ]
+                    },
+                    {
+                        "path": null,
+                        "name": "input",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "class",
+                        "type": "None",
+                        "definition": []
+                    },
+                    {
+                        "path": null,
+                        "name": "class_names",
+                        "type": "None",
+                        "definition": []
+                    }
+                ],
+                "function": [],
+                "typedefs": []
+            }
+        }
+    ],
+    "typedefs": []
+}

@@ -1,0 +1,76 @@
+{
+  "Rust": {
+    "blanks": 77,
+    "children": {},
+    "code": 4838,
+    "comments": 7,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/binn-3.0/others/laertes/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/binn-3.0/others/laertes/lib.rs",
+        "stats": {
+          "blanks": 73,
+          "blobs": {},
+          "code": 436,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/binn-3.0/others/laertes/src/binn.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 4396,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 77,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/binn-3.0/others/laertes/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/binn-3.0/others/laertes/lib.rs",
+          "stats": {
+            "blanks": 73,
+            "blobs": {},
+            "code": 436,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/binn-3.0/others/laertes/src/binn.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 4396,
+            "comments": 0
+          }
+        }
+      ]
+    },
+    "code": 4838,
+    "comments": 7,
+    "inaccurate": false,
+    "reports": []
+  }
+}

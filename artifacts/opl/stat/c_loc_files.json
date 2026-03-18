@@ -1,0 +1,69 @@
+{
+  "C": {
+    "blanks": 2,
+    "children": {},
+    "code": 7,
+    "comments": 0,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/opl/main.c",
+        "stats": {
+          "blanks": 2,
+          "blobs": {},
+          "code": 7,
+          "comments": 0
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 466,
+    "children": {},
+    "code": 1635,
+    "comments": 795,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/opl/opl.h",
+        "stats": {
+          "blanks": 466,
+          "blobs": {},
+          "code": 1635,
+          "comments": 795
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 468,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/opl/main.c",
+          "stats": {
+            "blanks": 2,
+            "blobs": {},
+            "code": 7,
+            "comments": 0
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/opl/opl.h",
+          "stats": {
+            "blanks": 466,
+            "blobs": {},
+            "code": 1635,
+            "comments": 795
+          }
+        }
+      ]
+    },
+    "code": 1642,
+    "comments": 795,
+    "inaccurate": false,
+    "reports": []
+  }
+}

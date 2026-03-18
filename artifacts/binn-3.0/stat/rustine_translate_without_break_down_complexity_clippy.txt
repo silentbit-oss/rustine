@@ -1,0 +1,72 @@
+warning: called `.as_mut().map(|p| &mut **p)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: called `.as_ref().map(|p| &**p)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| &**v)` on an `Option` value
+warning: called `.as_ref().map(|v| v.as_slice())` on an `Option` value
+warning: called `map(..).flatten()` on `Option`
+warning: called `map(..).flatten()` on `Option`
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut u8` -> `*mut u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut u8` -> `*mut u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut u8` -> `*mut u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*mut u8` -> `*mut u8`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: equality checks against false can be replaced by a negation
+warning: manual implementation of `ok`
+warning: manual implementation of `ok`
+warning: manually constructing a nul-terminated string
+warning: statement with no effect
+warning: this OR pattern can be rewritten using a range
+warning: this OR pattern can be rewritten using a range
+warning: this OR pattern can be rewritten using a range
+warning: this OR pattern can be rewritten using a range
+warning: this OR pattern can be rewritten using a range
+warning: this OR pattern can be rewritten using a range
+warning: transmute from a reference to a pointer
+warning: transmute from a reference to a pointer
+warning: unnecessary `>= y + 1` or `x - 1 >=`
+warning: unnecessary map of the identity function
+warning: unused return value of `std::boxed::Box::<T, A>::into_raw` that must be used
+warning: unused return value of `std::boxed::Box::<T, A>::into_raw` that must be used
+warning: unused return value of `std::boxed::Box::<T>::from_raw` that must be used
+warning: use of `writeln!(stdout(), ...).unwrap()`
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions

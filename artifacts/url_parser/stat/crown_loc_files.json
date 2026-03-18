@@ -1,0 +1,76 @@
+{
+  "Rust": {
+    "blanks": 4,
+    "children": {},
+    "code": 1190,
+    "comments": 8,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/url_parser/others/crown/lib.rs",
+        "stats": {
+          "blanks": 3,
+          "blobs": {},
+          "code": 19,
+          "comments": 0
+        }
+      },
+      {
+        "name": "artifacts/url_parser/others/crown/build.rs",
+        "stats": {
+          "blanks": 1,
+          "blobs": {},
+          "code": 6,
+          "comments": 4
+        }
+      },
+      {
+        "name": "artifacts/url_parser/others/crown/src/test.rs",
+        "stats": {
+          "blanks": 0,
+          "blobs": {},
+          "code": 1165,
+          "comments": 4
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 4,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/url_parser/others/crown/lib.rs",
+          "stats": {
+            "blanks": 3,
+            "blobs": {},
+            "code": 19,
+            "comments": 0
+          }
+        },
+        {
+          "name": "artifacts/url_parser/others/crown/build.rs",
+          "stats": {
+            "blanks": 1,
+            "blobs": {},
+            "code": 6,
+            "comments": 4
+          }
+        },
+        {
+          "name": "artifacts/url_parser/others/crown/src/test.rs",
+          "stats": {
+            "blanks": 0,
+            "blobs": {},
+            "code": 1165,
+            "comments": 4
+          }
+        }
+      ]
+    },
+    "code": 1190,
+    "comments": 8,
+    "inaccurate": false,
+    "reports": []
+  }
+}

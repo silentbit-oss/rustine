@@ -1,0 +1,3 @@
+warning: `c` is never greater than `255` and has therefore no effect
+warning: casting to the same type is unnecessary (`u8` -> `u8`)
+warning: stripping a prefix manually

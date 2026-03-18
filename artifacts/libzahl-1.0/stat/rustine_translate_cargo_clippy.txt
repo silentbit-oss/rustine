@@ -1,0 +1,7 @@
+warning: package `translate` is missing `either package.license or package.license_file` metadata
+warning: package `translate` is missing `package.categories` metadata
+warning: package `translate` is missing `package.description` metadata
+warning: package `translate` is missing `package.keywords` metadata
+warning: package `translate` is missing `package.readme` metadata
+warning: package `translate` is missing `package.repository` metadata
+warning: the type `[std::option::Option<std::boxed::Box<[u32]>>; 64]` does not permit being left uninitialized

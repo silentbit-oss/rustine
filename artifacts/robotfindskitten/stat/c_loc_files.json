@@ -1,0 +1,87 @@
+{
+  "C": {
+    "blanks": 83,
+    "children": {},
+    "code": 398,
+    "comments": 114,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/robotfindskitten/src/robotfindskitten.c",
+        "stats": {
+          "blanks": 83,
+          "blobs": {},
+          "code": 398,
+          "comments": 114
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 13,
+    "children": {},
+    "code": 440,
+    "comments": 8,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/robotfindskitten/src/draw.h",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 30,
+          "comments": 2
+        }
+      },
+      {
+        "name": "subjects/robotfindskitten/src/messages.h",
+        "stats": {
+          "blanks": 5,
+          "blobs": {},
+          "code": 410,
+          "comments": 6
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 96,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/robotfindskitten/src/robotfindskitten.c",
+          "stats": {
+            "blanks": 83,
+            "blobs": {},
+            "code": 398,
+            "comments": 114
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/robotfindskitten/src/draw.h",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 30,
+            "comments": 2
+          }
+        },
+        {
+          "name": "subjects/robotfindskitten/src/messages.h",
+          "stats": {
+            "blanks": 5,
+            "blobs": {},
+            "code": 410,
+            "comments": 6
+          }
+        }
+      ]
+    },
+    "code": 838,
+    "comments": 122,
+    "inaccurate": false,
+    "reports": []
+  }
+}

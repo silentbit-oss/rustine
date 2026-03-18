@@ -1,0 +1,574 @@
+warning: unused import: `crate::*`
+warning: variant `LCT_GREY` should have an upper camel case name
+warning: variant `LCT_RGB` should have an upper camel case name
+warning: variant `LCT_PALETTE` should have an upper camel case name
+warning: variant `LCT_GREY_ALPHA` should have an upper camel case name
+warning: variant `LCT_RGBA` should have an upper camel case name
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::vec::Vec`
+warning: unused import: `crate::*`
+warning: unused import: `crate::*`
+warning: unused import: `std::os::raw::c_void`
+warning: unused import: `std::cmp`
+warning: unused import: `std::os::raw::c_uchar`
+warning: unnecessary parentheses around index expression
+warning: unnecessary parentheses around index expression
+warning: unnecessary parentheses around index expression
+warning: unnecessary parentheses around index expression
+warning: unnecessary parentheses around index expression
+warning: unnecessary parentheses around index expression
+warning: consider removing unnecessary double parentheses
+warning: unnecessary parentheses around method argument
+warning: consider removing unnecessary double parentheses
+warning: unnecessary parentheses around method argument
+warning: consider removing unnecessary double parentheses
+warning: unnecessary parentheses around method argument
+warning: consider removing unnecessary double parentheses
+warning: unnecessary parentheses around method argument
+warning: consider removing unnecessary double parentheses
+warning: unnecessary parentheses around method argument
+warning: consider removing unnecessary double parentheses
+warning: unnecessary parentheses around method argument
+warning: consider removing unnecessary double parentheses
+warning: unnecessary parentheses around method argument
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around assigned value
+warning: unnecessary parentheses around match arm expression
+warning: consider removing unnecessary double parentheses
+warning: unnecessary parentheses around method argument
+warning: consider removing unnecessary double parentheses
+warning: unnecessary parentheses around method argument
+warning: consider removing unnecessary double parentheses
+warning: unnecessary parentheses around method argument
+warning: unnecessary parentheses around `if` condition
+warning: unnecessary parentheses around index expression
+warning: unnecessary parentheses around index expression
+warning: unnecessary parentheses around index expression
+warning: unnecessary parentheses around index expression
+warning: unnecessary parentheses around index expression
+warning: unnecessary parentheses around index expression
+warning: unnecessary parentheses around index expression
+warning: unnecessary parentheses around index expression
+warning: unnecessary parentheses around index expression
+warning: unnecessary parentheses around index expression
+warning: unnecessary parentheses around index expression
+warning: variable does not need to be mutable
+warning: value assigned to `critical_pos` is never read
+warning: variable does not need to be mutable
+warning: value assigned to `i` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unused variable: `custom_inflate`
+warning: value assigned to `error` is never read
+warning: value assigned to `length` is never read
+warning: value assigned to `error` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `error` is never read
+warning: value assigned to `error` is never read
+warning: value assigned to `i` is never read
+warning: value assigned to `length` is never read
+warning: value assigned to `begin` is never read
+warning: value assigned to `compressed` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unreachable pattern
+warning: value assigned to `unknown` is never read
+warning: unreachable pattern
+warning: value assigned to `expected_size` is never read
+warning: unreachable pattern
+warning: value assigned to `i` is never read
+warning: value assigned to `i` is never read
+warning: unused variable: `i`
+warning: variable does not need to be mutable
+warning: value assigned to `chunk_idx` is never read
+warning: value assigned to `idat` is never read
+warning: value assigned to `outsize` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `current_length` is never read
+warning: unused variable: `in_data`
+warning: unused variable: `lastptr`
+warning: value assigned to `current_offset` is never read
+warning: value assigned to `lazy` is never read
+warning: variable does not need to be mutable
+warning: value assigned to `offset` is never read
+warning: value assigned to `length` is never read
+warning: value assigned to `hashval` is never read
+warning: value assigned to `prev_offset` is never read
+warning: value assigned to `lastptr_idx` is never read
+warning: value assigned to `hashpos` is never read
+warning: value assigned to `error` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: value assigned to `error` is never read
+warning: value assigned to `error` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: unreachable pattern
+warning: variable does not need to be mutable
+warning: value assigned to `error` is never read
+warning: value assigned to `error` is never read
+warning: unreachable pattern
+warning: unreachable pattern
+warning: value assigned to `r` is never read
+warning: value assigned to `g` is never read
+warning: value assigned to `b` is never read
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: variable does not need to be mutable
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: it looks like you're manually copying between slices
+warning: redundant pattern matching, consider using `is_err()`
+warning: creating a `Box` from a void raw pointer
+warning: redundant pattern matching, consider using `is_err()`
+warning: manually reimplementing `div_ceil`
+warning: manual implementation of an assign operation
+warning: this `map_or` can be simplified
+warning: this function has too many arguments (8/7)
+warning: redundant closure
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this function has too many arguments (8/7)
+warning: this `if` statement can be collapsed
+warning: the loop variable `i` is used to index `maxlens`
+warning: the loop variable `i` is used to index `lengths`
+warning: this function has too many arguments (10/7)
+warning: unneeded late initialization
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (16/7)
+warning: this operation has no effect
+warning: returning the result of a `let` binding from a block
+warning: returning the result of a `let` binding from a block
+warning: it looks like the same item is being pushed into this `Vec`
+warning: the loop variable `i` is only used to index `bitlen`
+warning: the loop variable `i` is only used to index `bitlen`
+warning: the loop variable `i` is only used to index `bitlen`
+warning: the loop variable `i` is only used to index `bitlen`
+warning: unneeded late initialization
+warning: returning the result of a `let` binding from a block
+warning: this function has too many arguments (12/7)
+warning: manual `!RangeInclusive::contains` implementation
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: called `.as_mut().map(|v: &mut Vec<u8>| v.as_mut_slice())` on an `Option` value
+warning: this function has too many arguments (8/7)
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual arithmetic check found
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: manual `!RangeInclusive::contains` implementation
+warning: unneeded `return` statement
+warning: this function has too many arguments (16/7)
+warning: manual `!RangeInclusive::contains` implementation
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: casting raw pointers to the same type and constness is unnecessary (`*const u8` -> `*const u8`)
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this function has too many arguments (11/7)
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: match can be simplified with `.unwrap_or_default()`
+warning: this `if` statement can be collapsed
+warning: this function has too many arguments (8/7)
+warning: this operation has no effect
+warning: this operation has no effect
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: calling `CStr::new` with a byte string literal
+warning: transmute used without annotations
+warning: the variable `j` is used as a loop counter
+warning: the variable `j` is used as a loop counter
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: this function has too many arguments (8/7)
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: this function has too many arguments (8/7)
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: this operation has no effect
+warning: the loop variable `i` is only used to index `in_data`
+warning: this operation has no effect
+warning: this function has too many arguments (8/7)
+warning: the loop variable `i` is only used to index `in_data`
+warning: the loop variable `i` is only used to index `in_data`
+warning: this function has too many arguments (8/7)
+warning: this operation has no effect
+warning: this function has too many arguments (9/7)
+warning: deref which would be done by auto-deref
+warning: unneeded `return` statement
+warning: this function has too many arguments (14/7)
+warning: the loop variable `x` is only used to index `count`
+warning: this function has too many arguments (10/7)
+warning: the loop variable `type_` is only used to index `attempt`
+warning: the loop variable `i` is only used to index `attempt`
+warning: this `if` statement can be collapsed
+warning: the loop variable `k` is only used to index `b`
+warning: the loop variable `i` is used to index `frequencies`
+warning: this operation has no effect
+warning: this function has too many arguments (16/7)
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: this function has too many arguments (22/7)
+warning: this function has too many arguments (12/7)
+warning: this function has too many arguments (13/7)
+warning: this operation has no effect
+warning: this function has too many arguments (13/7)
+warning: this function has too many arguments (31/7)
+warning: this `if` has identical blocks
+warning: this function has too many arguments (9/7)
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: this function has too many arguments (32/7)
+warning: the loop variable `i` is used to index `data`
+warning: it looks like you're manually copying between slices
+warning: it looks like you're manually copying between slices
+warning: the loop variable `i` is only used to index `CLCL_ORDER`
+warning: casting to the same type is unnecessary (`u32` -> `u32`)
+warning: the loop variable `i` is only used to index `data`
+warning: the loop variable `i` is only used to index `head`
+warning: the loop variable `i` is only used to index `val`
+warning: the loop variable `i` is used to index `chain`
+warning: the loop variable `i` is only used to index `headz`
+warning: the loop variable `i` is used to index `chainz`
+warning: manually reimplementing `div_ceil`
+warning: clamp-like pattern without using clamp function
+warning: manually reimplementing `div_ceil`
+warning: redundant closure
+warning: redundant closure
+warning: slow zero-filling initialization
+warning: it looks like you're manually copying between slices
+warning: this function has too many arguments (17/7)
+warning: this function has too many arguments (11/7)
+warning: this function has too many arguments (13/7)
+warning: this function has too many arguments (10/7)
+warning: manually reimplementing `div_ceil`
+warning: this function has too many arguments (9/7)
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: manually reimplementing `div_ceil`
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (15/7)
+warning: writing `&mut Vec` instead of `&mut [_]` involves a new object where a slice will do
+warning: manually reimplementing `div_ceil`
+warning: this function has too many arguments (9/7)
+warning: manually reimplementing `div_ceil`
+warning: called `.as_ref().map(|s| s.as_str())` on an `Option` value
+warning: called `.as_ref().map(|c| c.as_c_str())` on an `Option` value
+warning: manual `!RangeInclusive::contains` implementation
+warning: this function has too many arguments (12/7)
+warning: this `else { if .. }` block can be collapsed
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: this `map_or` can be simplified
+warning: manual `!RangeInclusive::contains` implementation
+warning: this function has too many arguments (8/7)
+warning: calling `CStr::new` with a byte string literal
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (12/7)
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (8/7)
+warning: this function has too many arguments (9/7)
+warning: this function has too many arguments (16/7)
+warning: this function has too many arguments (13/7)
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded `return` statement
+warning: this `if` statement can be collapsed
+warning: redundant pattern matching, consider using `is_err()`
+warning: unneeded `return` statement
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: calling `CStr::new` with a byte string literal
+warning: this `if` statement can be collapsed
+warning: function `lodepng_read32bitInt` should have a snake case name
+warning: function `lodepng_set32bitInt` should have a snake case name
+warning: function `reverseBits` should have a snake case name
+warning: function `searchCodeIndex` should have a snake case name
+warning: function `readBitFromReversedStream` should have a snake case name
+warning: function `setBitOfReversedStream` should have a snake case name
+warning: function `addColorBits` should have a snake case name
+warning: function `getValueRequiredBits` should have a snake case name
+warning: function `paethPredictor` should have a snake case name
+warning: function `isGrayICCProfile` should have a snake case name
+warning: function `isRGBICCProfile` should have a snake case name
+warning: function `helper_helper_helper_deflateDynamic_1_1_1` should have a snake case name
+warning: function `helper_helper_helper_unfilterScanline_1_1_1` should have a snake case name
+warning: function `helper_helper_helper_unfilterScanline_1_1_2` should have a snake case name
+warning: function `readChunk_gAMA` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_pHYs` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `helper_helper_decodeGeneric_2_1` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `inflateNoCompression` should have a snake case name
+warning: variable `LEN` should have a snake case name
+warning: variable `NLEN` should have a snake case name
+warning: function `peekBits` should have a snake case name
+warning: function `advanceBits` should have a snake case name
+warning: function `readBits` should have a snake case name
+warning: function `HuffmanTree_cleanup` should have a snake case name
+warning: function `HuffmanTree_init` should have a snake case name
+warning: function `ensureBits32` should have a snake case name
+warning: function `ensureBits25` should have a snake case name
+warning: function `huffmanDecodeSymbol` should have a snake case name
+warning: function `helper_helper_inflateHuffmanBlock_1_1` should have a snake case name
+warning: function `helper_inflateHuffmanBlock_1` should have a snake case name
+warning: function `helper_helper_HuffmanTree_makeTable_1_1` should have a snake case name
+warning: function `helper_HuffmanTree_makeTable_1` should have a snake case name
+warning: function `HuffmanTree_makeTable` should have a snake case name
+warning: function `HuffmanTree_makeFromLengths2` should have a snake case name
+warning: function `HuffmanTree_makeFromLengths` should have a snake case name
+warning: function `helper_helper_helper_getTreeInflateDynamic_1_1_1` should have a snake case name
+warning: variable `HLIT_ref` should have a snake case name
+warning: variable `HDIST` should have a snake case name
+warning: variable `HLIT` should have a snake case name
+warning: function `helper_helper_getTreeInflateDynamic_1_1` should have a snake case name
+warning: variable `HLIT_ref` should have a snake case name
+warning: variable `HDIST` should have a snake case name
+warning: variable `HLIT` should have a snake case name
+warning: function `ensureBits9` should have a snake case name
+warning: function `helper_getTreeInflateDynamic_1` should have a snake case name
+warning: variable `HLIT_ref` should have a snake case name
+warning: variable `HDIST` should have a snake case name
+warning: variable `HCLEN` should have a snake case name
+warning: variable `HLIT` should have a snake case name
+warning: function `ensureBits17` should have a snake case name
+warning: function `getTreeInflateDynamic` should have a snake case name
+warning: variable `HLIT` should have a snake case name
+warning: variable `HDIST` should have a snake case name
+warning: variable `HCLEN` should have a snake case name
+warning: function `generateFixedDistanceTree` should have a snake case name
+warning: function `generateFixedLitLenTree` should have a snake case name
+warning: function `getTreeInflateFixed` should have a snake case name
+warning: function `inflateHuffmanBlock` should have a snake case name
+warning: constant `reserved_size` should have an upper case name
+warning: function `LodePNGBitReader_init` should have a snake case name
+warning: variable `BFINAL` should have a snake case name
+warning: variable `BTYPE` should have a snake case name
+warning: variable `CM` should have a snake case name
+warning: variable `CINFO` should have a snake case name
+warning: variable `FDICT` should have a snake case name
+warning: variable `ADLER32` should have a snake case name
+warning: function `helper_readChunk_zTXt_1` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_zTXt` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_tRNS` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `helper_readChunk_tEXt_1` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_tEXt` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_iCCP` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `helper_readChunk_iTXt_1` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_iTXt` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_sRGB` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_cHRM` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_PLTE` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_tIME` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `helper_readChunk_sBIT_1` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_sBIT` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `readChunk_bKGD` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `helper_decodeGeneric_2` should have a snake case name
+warning: variable `IEND_ref` should have a snake case name
+warning: variable `IEND` should have a snake case name
+warning: variable `chunkLength` should have a snake case name
+warning: function `getNumColorChannels` should have a snake case name
+warning: function `helper_decodeGeneric_1` should have a snake case name
+warning: function `LodePNGUnknownChunks_cleanup` should have a snake case name
+warning: function `LodePNGIText_cleanup` should have a snake case name
+warning: function `LodePNGText_cleanup` should have a snake case name
+warning: function `LodePNGUnknownChunks_init` should have a snake case name
+warning: function `LodePNGText_init` should have a snake case name
+warning: function `LodePNGIText_init` should have a snake case name
+warning: function `checkColorValidity` should have a snake case name
+warning: function `helper_helper_unfilterScanline_1_1` should have a snake case name
+warning: function `helper_unfilterScanline_1` should have a snake case name
+warning: function `helper_helper_helper_unfilterScanline_2_1_1` should have a snake case name
+warning: function `helper_helper_helper_unfilterScanline_2_1_2` should have a snake case name
+warning: function `helper_helper_helper_unfilterScanline_2_1_3` should have a snake case name
+warning: function `helper_helper_unfilterScanline_2_1` should have a snake case name
+warning: function `helper_unfilterScanline_2` should have a snake case name
+warning: function `unfilterScanline` should have a snake case name
+warning: variable `filterType` should have a snake case name
+warning: variable `filterType` should have a snake case name
+warning: function `removePaddingBits` should have a snake case name
+warning: function `helper_postProcessScanlines_1` should have a snake case name
+warning: function `helper_Adam7_deinterlace_1` should have a snake case name
+warning: function `Adam7_getpassvalues` should have a snake case name
+warning: function `Adam7_deinterlace` should have a snake case name
+warning: function `helper_postProcessScanlines_2` should have a snake case name
+warning: function `postProcessScanlines` should have a snake case name
+warning: function `decodeGeneric` should have a snake case name
+warning: variable `IEND` should have a snake case name
+warning: function `readBitsFromReversedStream` should have a snake case name
+warning: function `helper_getPixelColorRGBA8_2` should have a snake case name
+warning: function `helper_getPixelColorRGBA8_1` should have a snake case name
+warning: function `getPixelColorRGBA8` should have a snake case name
+warning: function `helper_getPixelColorsRGBA8_1` should have a snake case name
+warning: function `helper_getPixelColorsRGBA8_2` should have a snake case name
+warning: function `getPixelColorsRGBA8` should have a snake case name
+warning: function `getPixelColorRGBA16` should have a snake case name
+warning: function `rgba16ToPixel` should have a snake case name
+warning: function `rgba8ToPixel` should have a snake case name
+warning: function `getPixelColorsRGB8` should have a snake case name
+warning: function `filterScanline` should have a snake case name
+warning: variable `filterType` should have a snake case name
+warning: variable `bestSum_ref` should have a snake case name
+warning: variable `bestType_ref` should have a snake case name
+warning: variable `bestSum` should have a snake case name
+warning: variable `bestType` should have a snake case name
+warning: variable `bestSum` should have a snake case name
+warning: variable `bestType` should have a snake case name
+warning: function `boundaryPM` should have a snake case name
+warning: function `HuffmanTree_makeFromFrequencies` should have a snake case name
+warning: function `writeBits` should have a snake case name
+warning: function `countZeros` should have a snake case name
+warning: function `getHash` should have a snake case name
+warning: function `updateHashChain` should have a snake case name
+warning: function `helper_helper_helper_encodeLZ77_1_3_1` should have a snake case name
+warning: function `helper_helper_encodeLZ77_1_3` should have a snake case name
+warning: function `helper_helper_helper_encodeLZ77_1_2_1` should have a snake case name
+warning: function `helper_helper_encodeLZ77_1_2` should have a snake case name
+warning: function `addLengthDistance` should have a snake case name
+warning: function `helper_helper_encodeLZ77_1_1` should have a snake case name
+warning: function `helper_encodeLZ77_1` should have a snake case name
+warning: function `encodeLZ77` should have a snake case name
+warning: function `helper_helper_deflateDynamic_1_1` should have a snake case name
+warning: function `writeBitsReversed` should have a snake case name
+warning: function `writeLZ77data` should have a snake case name
+warning: function `helper_deflateDynamic_1` should have a snake case name
+warning: variable `HLIT_ref` should have a snake case name
+warning: variable `HDIST_ref` should have a snake case name
+warning: variable `HCLEN_ref` should have a snake case name
+warning: variable `BFINAL` should have a snake case name
+warning: variable `HLIT` should have a snake case name
+warning: variable `HDIST` should have a snake case name
+warning: variable `HCLEN` should have a snake case name
+warning: function `deflateDynamic` should have a snake case name
+warning: variable `BFINAL` should have a snake case name
+warning: variable `HLIT` should have a snake case name
+warning: variable `HDIST` should have a snake case name
+warning: variable `HCLEN` should have a snake case name
+warning: function `deflateFixed` should have a snake case name
+warning: variable `BFINAL` should have a snake case name
+warning: function `LodePNGBitWriter_init` should have a snake case name
+warning: function `deflateNoCompression` should have a snake case name
+warning: variable `BFINAL` should have a snake case name
+warning: variable `BTYPE` should have a snake case name
+warning: variable `LEN` should have a snake case name
+warning: variable `NLEN` should have a snake case name
+warning: variable `bestType_ref` should have a snake case name
+warning: variable `bestType` should have a snake case name
+warning: variable `bestType` should have a snake case name
+warning: variable `bestType_ref` should have a snake case name
+warning: variable `bestType` should have a snake case name
+warning: variable `bestType` should have a snake case name
+warning: function `addPaddingBits` should have a snake case name
+warning: function `helper_preProcessScanlines_1` should have a snake case name
+warning: function `helper_Adam7_interlace_1` should have a snake case name
+warning: function `Adam7_interlace` should have a snake case name
+warning: function `helper_helper_preProcessScanlines_2_1` should have a snake case name
+warning: function `helper_preProcessScanlines_2` should have a snake case name
+warning: function `preProcessScanlines` should have a snake case name
+warning: function `LodePNGText_copy` should have a snake case name
+warning: function `LodePNGUnknownChunks_copy` should have a snake case name
+warning: function `LodePNGIText_copy` should have a snake case name
+warning: function `helper_addChunk_sBIT_1` should have a snake case name
+warning: function `helper_addChunk_sBIT_3` should have a snake case name
+warning: function `helper_addChunk_sBIT_2` should have a snake case name
+warning: function `addChunk_sBIT` should have a snake case name
+warning: function `addChunk_IEND` should have a snake case name
+warning: function `addChunk_sRGB` should have a snake case name
+warning: function `writeSignature` should have a snake case name
+warning: function `addChunk_iCCP` should have a snake case name
+warning: function `addChunk_IHDR` should have a snake case name
+warning: function `addUnknownChunks` should have a snake case name
+warning: function `helper_addChunk_iTXt_1` should have a snake case name
+warning: function `addChunk_iTXt` should have a snake case name
+warning: a dangling pointer will be produced because the temporary `std::boxed::Box<[u8]>` will be dropped
+warning: function `addChunk_tEXt` should have a snake case name
+warning: function `addChunk_PLTE` should have a snake case name
+warning: function `addChunk_IDAT` should have a snake case name
+warning: function `helper_addChunk_tRNS_1` should have a snake case name
+warning: function `helper_addChunk_tRNS_2` should have a snake case name
+warning: function `addChunk_tRNS` should have a snake case name
+warning: function `addChunk_bKGD` should have a snake case name
+warning: function `addChunk_tIME` should have a snake case name
+warning: function `addChunk_zTXt` should have a snake case name
+warning: function `addChunk_pHYs` should have a snake case name
+warning: function `addChunk_gAMA` should have a snake case name
+warning: function `addChunk_cHRM` should have a snake case name

@@ -1,0 +1,6 @@
+#include <aroonosc.c>
+#include <assert.h>
+#include <indicators.h>
+#include <math.h>
+#include <stdlib.h>
+#include <string.h>

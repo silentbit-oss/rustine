@@ -1,0 +1,45 @@
+use crate::*;
+use std::ffi::c_longlong;
+
+
+#[derive(Clone)]
+pub struct MiStatsS {
+    pub version: i32,
+    pub pages: MiStatCountS,
+    pub reserved: MiStatCountS,
+    pub committed: MiStatCountS,
+    pub reset: MiStatCountS,
+    pub purged: MiStatCountS,
+    pub page_committed: MiStatCountS,
+    pub pages_abandoned: MiStatCountS,
+    pub threads: MiStatCountS,
+    pub malloc_normal: MiStatCountS,
+    pub malloc_huge: MiStatCountS,
+    pub malloc_requested: MiStatCountS,
+    pub mmap_calls: MiStatCounterS,
+    pub commit_calls: MiStatCounterS,
+    pub reset_calls: MiStatCounterS,
+    pub purge_calls: MiStatCounterS,
+    pub arena_count: MiStatCounterS,
+    pub malloc_normal_count: MiStatCounterS,
+    pub malloc_huge_count: MiStatCounterS,
+    pub malloc_guarded_count: MiStatCounterS,
+    pub arena_rollback_count: MiStatCounterS,
+    pub arena_purges: MiStatCounterS,
+    pub pages_extended: MiStatCounterS,
+    pub pages_retire: MiStatCounterS,
+    pub page_searches: MiStatCounterS,
+    pub segments: MiStatCountS,
+    pub segments_abandoned: MiStatCountS,
+    pub segments_cache: MiStatCountS,
+    pub _segments_reserved: MiStatCountS,
+    pub pages_reclaim_on_alloc: MiStatCounterS,
+    pub pages_reclaim_on_free: MiStatCounterS,
+    pub pages_reabandon_full: MiStatCounterS,
+    pub pages_unabandon_busy_wait: MiStatCounterS,
+    pub _stat_reserved: [MiStatCountS; 4],
+    pub _stat_counter_reserved: [MiStatCounterS; 4],
+    pub malloc_bins: [MiStatCountS; 74],
+    pub page_bins: [MiStatCountS; 74],
+}
+

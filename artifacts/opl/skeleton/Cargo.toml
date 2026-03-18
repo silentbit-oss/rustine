@@ -1,0 +1,14 @@
+[package]
+name = "oplrs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name="main"
+path="src/main.rs"
+
+[[bin]]
+name="test"
+path="src/test_main.rs"

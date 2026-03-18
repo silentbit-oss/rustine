@@ -1,0 +1,60 @@
+warning: this sequence of operators looks suspiciously like a bug
+warning: this sequence of operators looks suspiciously like a bug
+warning: unnecessary structure name repetition
+warning: unnecessary structure name repetition
+warning: unnecessary structure name repetition
+warning: this could be a `const fn`
+warning: unnecessary structure name repetition
+warning: this could be a `const fn`
+warning: unnecessary structure name repetition
+warning: unnecessary structure name repetition
+warning: unnecessary structure name repetition
+warning: this could be a `const fn`
+warning: unnecessary structure name repetition
+warning: this could be a `const fn`
+warning: unnecessary structure name repetition
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: the function has a cognitive complexity of (29/25)
+warning: use Option::map_or instead of an if let/else
+warning: use Option::map_or instead of an if let/else
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: temporary with significant `Drop` can be early dropped
+warning: use Option::map_or_else instead of an if let/else
+warning: this could be a `const fn`
+warning: unnecessary structure name repetition
+warning: unnecessary structure name repetition
+warning: unnecessary structure name repetition
+warning: unnecessary structure name repetition
+warning: unnecessary structure name repetition
+warning: the function has a cognitive complexity of (55/25)
+warning: the function has a cognitive complexity of (31/25)
+warning: all if blocks contain the same code at the end
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: redundant clone
+warning: you are deriving `PartialEq` and can implement `Eq`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: casting the result of `as_ptr` to *mut i8
+warning: this could be a `const fn`
+warning: redundant clone
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: this could be a `const fn`
+warning: the function has a cognitive complexity of (71/25)
+warning: this could be a `const fn`
+warning: unused `std::result::Result` that must be used
+warning: unused return value of `std::boxed::Box::<T>::from_raw` that must be used
+warning: the function has a cognitive complexity of (30/25)

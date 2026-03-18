@@ -1,0 +1,6 @@
+warning: casting integer literal to `usize` is unnecessary
+warning: casting integer literal to `usize` is unnecessary
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: casting to the same type is unnecessary (`i32` -> `i32`)
+warning: very complex type used. Consider factoring parts into `type` definitions
+warning: very complex type used. Consider factoring parts into `type` definitions

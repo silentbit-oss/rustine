@@ -1,0 +1,48 @@
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `!RangeInclusive::contains` implementation
+warning: manual `RangeInclusive::contains` implementation
+warning: manual arithmetic check found
+warning: manual arithmetic check found
+warning: manual implementation of an assign operation
+warning: manual saturating arithmetic
+warning: redundant pattern matching, consider using `is_err()`
+warning: replacing an `Option` with `None`
+warning: the loop variable `i` is only used to index `bitlen`
+warning: the loop variable `i` is only used to index `data`
+warning: the loop variable `i` is only used to index `dst`
+warning: the loop variable `i` is only used to index `in_data`
+warning: the loop variable `i` is only used to index `in_data`
+warning: the loop variable `i` is only used to index `in_data`
+warning: the loop variable `i` is only used to index `in_data`
+warning: the loop variable `i` is only used to index `table_len`
+warning: the loop variable `i` is used to index `frequencies`
+warning: the loop variable `i` is used to index `maxlens`
+warning: this `else { if .. }` block can be collapsed
+warning: this `else { if .. }` block can be collapsed
+warning: this `if` has identical blocks
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this `if` statement can be collapsed
+warning: this `map_or` can be simplified
+warning: this `map_or` can be simplified
+warning: this `repeat().take()` can be written more concisely
+warning: this `repeat().take()` can be written more concisely
+warning: this `repeat().take()` can be written more concisely
+warning: this `repeat().take()` can be written more concisely
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: this expression creates a reference which is immediately dereferenced by the compiler
+warning: unneeded `return` statement
+warning: unneeded `return` statement
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unneeded late initialization
+warning: unsafe function's docs are missing a `# Safety` section

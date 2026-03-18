@@ -1,0 +1,13 @@
+#include <assert.h>
+#include <buffer.h>
+#include <candles.h>
+#include <indicators.h>
+#include <localbuffer.h>
+#include <math.h>
+#include <minctest.h>
+#include <smoke.c>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>

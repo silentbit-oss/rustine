@@ -1,0 +1,87 @@
+{
+  "C": {
+    "blanks": 109,
+    "children": {},
+    "code": 395,
+    "comments": 101,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/buffer-0.4.0/buffer.c",
+        "stats": {
+          "blanks": 68,
+          "blobs": {},
+          "code": 188,
+          "comments": 96
+        }
+      },
+      {
+        "name": "subjects/buffer-0.4.0/test.c",
+        "stats": {
+          "blanks": 41,
+          "blobs": {},
+          "code": 207,
+          "comments": 5
+        }
+      }
+    ]
+  },
+  "C Header": {
+    "blanks": 32,
+    "children": {},
+    "code": 57,
+    "comments": 12,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "subjects/buffer-0.4.0/buffer.h",
+        "stats": {
+          "blanks": 32,
+          "blobs": {},
+          "code": 57,
+          "comments": 12
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 141,
+    "children": {
+      "C": [
+        {
+          "name": "subjects/buffer-0.4.0/buffer.c",
+          "stats": {
+            "blanks": 68,
+            "blobs": {},
+            "code": 188,
+            "comments": 96
+          }
+        },
+        {
+          "name": "subjects/buffer-0.4.0/test.c",
+          "stats": {
+            "blanks": 41,
+            "blobs": {},
+            "code": 207,
+            "comments": 5
+          }
+        }
+      ],
+      "CHeader": [
+        {
+          "name": "subjects/buffer-0.4.0/buffer.h",
+          "stats": {
+            "blanks": 32,
+            "blobs": {},
+            "code": 57,
+            "comments": 12
+          }
+        }
+      ]
+    },
+    "code": 452,
+    "comments": 113,
+    "inaccurate": false,
+    "reports": []
+  }
+}

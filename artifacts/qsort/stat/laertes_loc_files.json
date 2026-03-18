@@ -1,0 +1,40 @@
+{
+  "Rust": {
+    "blanks": 71,
+    "children": {},
+    "code": 463,
+    "comments": 2,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/qsort/others/laertes/qsort.rs",
+        "stats": {
+          "blanks": 71,
+          "blobs": {},
+          "code": 463,
+          "comments": 2
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 71,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/qsort/others/laertes/qsort.rs",
+          "stats": {
+            "blanks": 71,
+            "blobs": {},
+            "code": 463,
+            "comments": 2
+          }
+        }
+      ]
+    },
+    "code": 463,
+    "comments": 2,
+    "inaccurate": false,
+    "reports": []
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "Rust": {
+    "blanks": 82,
+    "children": {},
+    "code": 2667,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": [
+      {
+        "name": "artifacts/url_parser/others/laertes/test.rs",
+        "stats": {
+          "blanks": 74,
+          "blobs": {},
+          "code": 1515,
+          "comments": 3
+        }
+      },
+      {
+        "name": "artifacts/url_parser/others/laertes/urlparser/test.rs",
+        "stats": {
+          "blanks": 8,
+          "blobs": {},
+          "code": 1152,
+          "comments": 1
+        }
+      }
+    ]
+  },
+  "Total": {
+    "blanks": 82,
+    "children": {
+      "Rust": [
+        {
+          "name": "artifacts/url_parser/others/laertes/test.rs",
+          "stats": {
+            "blanks": 74,
+            "blobs": {},
+            "code": 1515,
+            "comments": 3
+          }
+        },
+        {
+          "name": "artifacts/url_parser/others/laertes/urlparser/test.rs",
+          "stats": {
+            "blanks": 8,
+            "blobs": {},
+            "code": 1152,
+            "comments": 1
+          }
+        }
+      ]
+    },
+    "code": 2667,
+    "comments": 4,
+    "inaccurate": false,
+    "reports": []
+  }
+}
